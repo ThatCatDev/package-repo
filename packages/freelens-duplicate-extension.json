@@ -1,7 +1,8 @@
 {
-  "name": "freelens-duplicate-extension",
+  "name": "@omarluq/freelens-duplicate-extension",
+  "repoName": "freelens-duplicate-extension",
   "fullName": "omarluq/freelens-duplicate-extension",
-  "description": "Create duplicate k8s resources from freelens",
+  "description": "Create duplicate debug pods from freelens",
   "homepage": "https://www.npmjs.com/package/@omarluq/freelens-duplicate-extension",
   "stars": 4,
   "forks": 0,
@@ -119,5 +120,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-22T17:39:27.459Z"
+  "lastScanned": "2025-11-22T17:43:24.585Z"
 }

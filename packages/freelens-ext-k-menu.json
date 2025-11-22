@@ -1,7 +1,8 @@
 {
-  "name": "freelens-ext-k-menu",
+  "name": "@thatcatdev/k-menu",
+  "repoName": "freelens-ext-k-menu",
   "fullName": "ThatCatDev/freelens-ext-k-menu",
-  "description": "cmd+k searchable menu for freelens",
+  "description": "K-Menu: A powerful command palette for Freelens",
   "homepage": "https://github.com/ThatCatDev/freelens-ext-k-menu",
   "stars": 0,
   "forks": 0,
@@ -175,5 +176,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-22T17:39:29.487Z"
+  "lastScanned": "2025-11-22T17:43:27.902Z"
 }

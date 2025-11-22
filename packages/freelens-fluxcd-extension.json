@@ -1,7 +1,8 @@
 {
-  "name": "freelens-fluxcd-extension",
+  "name": "@freelensapp/fluxcd-extension",
+  "repoName": "freelens-fluxcd-extension",
   "fullName": "freelensapp/freelens-fluxcd-extension",
-  "description": "Freelens FluxCD extension",
+  "description": "Freelens extension for FluxCD",
   "homepage": "https://freelens.app",
   "stars": 95,
   "forks": 7,
@@ -612,5 +613,5 @@
   },
   "totalReleases": 9,
   "hasTarFiles": true,
-  "lastScanned": "2025-11-22T17:39:25.198Z"
+  "lastScanned": "2025-11-22T17:43:21.371Z"
 }

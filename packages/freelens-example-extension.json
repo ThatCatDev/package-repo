@@ -1,5 +1,6 @@
 {
-  "name": "freelens-example-extension",
+  "name": "@freelensapp/example-extension",
+  "repoName": "freelens-example-extension",
   "fullName": "freelensapp/freelens-example-extension",
   "description": "Example of a Freelens extension",
   "homepage": "https://freelens.app",
@@ -847,5 +848,5 @@
   },
   "totalReleases": 14,
   "hasTarFiles": true,
-  "lastScanned": "2025-11-22T17:39:26.417Z"
+  "lastScanned": "2025-11-22T17:43:23.035Z"
 }

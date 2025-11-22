@@ -1,7 +1,8 @@
 {
-  "name": "freelens-resource-map-extension",
+  "name": "@freelensapp/freelens-resource-map-extension",
+  "repoName": "freelens-resource-map-extension",
   "fullName": "freelensapp/freelens-resource-map-extension",
-  "description": "Freelens - Free IDE for Kubernetes extension that displays Kubernetes resources and their relations as a force graph.",
+  "description": "FreeLens extension to visualize Kubernetes resources and their relations",
   "homepage": "https://github.com/freelensapp/freelens-resource-map-extension",
   "stars": 6,
   "forks": 0,
@@ -160,5 +161,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-22T17:39:27.014Z"
+  "lastScanned": "2025-11-22T17:43:23.845Z"
 }

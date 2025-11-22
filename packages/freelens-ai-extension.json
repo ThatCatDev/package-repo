@@ -1,7 +1,8 @@
 {
-  "name": "freelens-ai-extension",
+  "name": "@freelensapp/ai-extension",
+  "repoName": "freelens-ai-extension",
   "fullName": "freelensapp/freelens-ai-extension",
-  "description": "Freelens AI extension",
+  "description": "AI capabilities for Freelens",
   "homepage": "https://freelens.app/",
   "stars": 16,
   "forks": 4,
@@ -358,5 +359,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2025-11-22T17:39:25.825Z"
+  "lastScanned": "2025-11-22T17:43:22.145Z"
 }

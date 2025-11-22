@@ -1,7 +1,8 @@
 {
-  "name": "freelens-kamaji-extension",
+  "name": "@freelensapp/kamaji-extension",
+  "repoName": "freelens-kamaji-extension",
   "fullName": "freelensapp/freelens-kamaji-extension",
-  "description": "Freelens extension for Kamaji, the Kubernetes Control Plane Manager",
+  "description": "Kamaji of a Freelens extension",
   "homepage": "https://freelens.app/",
   "stars": 3,
   "forks": 0,
@@ -115,5 +116,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-22T17:39:27.889Z"
+  "lastScanned": "2025-11-22T17:43:25.344Z"
 }

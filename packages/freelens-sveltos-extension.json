@@ -1,5 +1,6 @@
 {
   "name": "freelens-sveltos-extension",
+  "repoName": "freelens-sveltos-extension",
   "fullName": "freelensapp/freelens-sveltos-extension",
   "description": "About Freelens extension for Sveltos",
   "homepage": "https://github.com/freelensapp/freelens-sveltos-extension",
@@ -30,5 +31,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-22T17:39:28.978Z"
+  "lastScanned": "2025-11-22T17:43:27.096Z"
 }
