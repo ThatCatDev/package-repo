@@ -153,5 +153,12 @@
       "**/*": "prettier --write --ignore-unknown"
     }
   },
-  "lastScanned": "2025-11-22T03:58:04.574Z"
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2025-11-22T04:04:42.864Z"
 }

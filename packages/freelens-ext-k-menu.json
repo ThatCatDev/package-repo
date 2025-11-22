@@ -122,5 +122,58 @@
     ],
     "packageManager": "pnpm@10.22.0"
   },
-  "lastScanned": "2025-11-22T03:58:06.471Z"
+  "releases": [
+    {
+      "id": 264491733,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-11-22T02:12:28Z",
+      "publishedAt": "2025-11-22T02:12:30Z",
+      "body": "# 1.0.0 (2025-11-22)\n\n\n### Bug Fixes\n\n* linting ([f256bc1](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/f256bc1e63ead942bc47ed9423934331ec37b378))\n\n\n### Features\n\n* initial version ([9639144](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/96391440e064ef82d2225855a572720404efb835))\n\n\n\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "v1.0.0",
+      "commitSha": "3fa8d9c0febc0ab0c2f2d649d168ded05a501456",
+      "commitUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/commits/3fa8d9c0febc0ab0c2f2d649d168ded05a501456",
+      "zipballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/tarball/refs/tags/v1.0.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2025-11-22T02:12:30Z",
+      "isPrerelease": false,
+      "notes": "# 1.0.0 (2025-11-22)\n\n\n### Bug Fixes\n\n* linting ([f256bc1](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/f256bc1e63ead942bc47ed9423934331ec37b378))\n\n\n### Features\n\n* initial version ([9639144](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/96391440e064ef82d2225855a572720404efb835))\n\n\n\n"
+    }
+  ],
+  "tarFiles": [],
+  "latestRelease": {
+    "id": 264491733,
+    "tagName": "v1.0.0",
+    "name": "v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2025-11-22T02:12:28Z",
+    "publishedAt": "2025-11-22T02:12:30Z",
+    "body": "# 1.0.0 (2025-11-22)\n\n\n### Bug Fixes\n\n* linting ([f256bc1](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/f256bc1e63ead942bc47ed9423934331ec37b378))\n\n\n### Features\n\n* initial version ([9639144](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/96391440e064ef82d2225855a572720404efb835))\n\n\n\n",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": []
+  },
+  "totalReleases": 1,
+  "hasTarFiles": false,
+  "lastScanned": "2025-11-22T04:04:45.700Z"
 }

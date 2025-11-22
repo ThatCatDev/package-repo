@@ -126,5 +126,491 @@
     ],
     "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
   },
-  "lastScanned": "2025-11-22T03:58:03.795Z"
+  "releases": [
+    {
+      "id": 263386748,
+      "tagName": "v5.2.0",
+      "name": "v5.2.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-11-18T18:01:55Z",
+      "publishedAt": "2025-11-18T18:02:39Z",
+      "body": "## What's Changed\r\n* ResourceSets by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/136\r\n* Correct handling of multiple Flux APIs by @MatiasRoje in https://github.com/freelensapp/freelens-fluxcd-extension/pull/144\r\n\r\n## New Contributors\r\n* @MatiasRoje made their first contribution in https://github.com/freelensapp/freelens-fluxcd-extension/pull/144\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v5.1.0...v5.2.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-fluxcd-extension-5.2.0.tgz",
+          "size": 281679,
+          "downloadCount": 14,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.0/freelensapp-fluxcd-extension-5.2.0.tgz",
+          "createdAt": "2025-11-18T18:02:39Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 258513581,
+      "tagName": "v5.1.0",
+      "name": "v5.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-10-30T15:06:52Z",
+      "publishedAt": "2025-10-30T15:07:47Z",
+      "body": "## What's Changed\r\n* Flux instances and reports by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/126\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v5.0.0...v5.1.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-fluxcd-extension-5.1.0.tgz",
+          "size": 268436,
+          "downloadCount": 38,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.1.0/freelensapp-fluxcd-extension-5.1.0.tgz",
+          "createdAt": "2025-10-30T15:07:48Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 257257727,
+      "tagName": "v5.0.0",
+      "name": "v5.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-10-25T21:27:42Z",
+      "publishedAt": "2025-10-25T21:28:28Z",
+      "body": "## What's Changed\r\n\r\n* Support multiple apiVersions by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/118\r\n* image.toolkit.fluxcd.io/v1 provided in Flux 2.7 by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/120\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v4.0.1...v5.0.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-fluxcd-extension-5.0.0.tgz",
+          "size": 254313,
+          "downloadCount": 20,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.0.0/freelensapp-fluxcd-extension-5.0.0.tgz",
+          "createdAt": "2025-10-25T21:28:28Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 246179079,
+      "tagName": "v4.0.1",
+      "name": "v4.0.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-09-10T13:33:40Z",
+      "publishedAt": "2025-09-10T13:34:24Z",
+      "body": "## What's Changed\r\n* HelmRepository with type `oci` always has a state Ready.\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v4.0.0...v4.0.1",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-fluxcd-extension-4.0.1.tgz",
+          "size": 227465,
+          "downloadCount": 91,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.1/freelensapp-fluxcd-extension-4.0.1.tgz",
+          "createdAt": "2025-09-10T13:34:24Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 240681014,
+      "tagName": "v4.0.0",
+      "name": "v4.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-08-18T17:50:47Z",
+      "publishedAt": "2025-08-18T17:51:28Z",
+      "body": "## What's Changed\r\n* Major refactoring with new features implemented by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/66\r\n* Requires Freelens >= v1.5.3\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v3.2.0...v4.0.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-fluxcd-extension-4.0.0.tgz",
+          "size": 226817,
+          "downloadCount": 36,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.0/freelensapp-fluxcd-extension-4.0.0.tgz",
+          "createdAt": "2025-08-18T17:51:28Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 223819729,
+      "tagName": "v3.2.0",
+      "name": "v3.2.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-06-07T21:01:35Z",
+      "publishedAt": "2025-06-07T21:02:17Z",
+      "body": "## What's Changed\r\n* More detailed view for Kustomizations.\r\n* Additional tweaks in a view for HelmReleases.\r\n* More secure types are provided by the newer Freelens v1.3.1.\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-extension-fluxcd/compare/v3.1.0...v3.2.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-extension-fluxcd-3.2.0.tgz",
+          "size": 208755,
+          "downloadCount": 388,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.2.0/freelensapp-extension-fluxcd-3.2.0.tgz",
+          "createdAt": "2025-06-07T21:02:17Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 221671260,
+      "tagName": "v3.1.1-0",
+      "name": "v3.1.1-0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-05-28T20:43:19Z",
+      "publishedAt": "2025-05-28T20:44:27Z",
+      "body": "",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-extension-fluxcd-3.1.1-0.tgz",
+          "size": 225760,
+          "downloadCount": 16,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.1-0/freelensapp-extension-fluxcd-3.1.1-0.tgz",
+          "createdAt": "2025-05-28T20:44:28Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 220376804,
+      "tagName": "v3.1.0",
+      "name": "v3.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-05-22T13:27:20Z",
+      "publishedAt": "2025-05-22T13:28:04Z",
+      "body": "## What's Changed\r\n* More detailed HelmRelease view by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/18\r\n* More optional chaining operators to prevent crashing by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/23\r\n* Update dependency @types/react to ^17.0.86 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/20\r\n* Update dependency sass to ^1.89.0 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/13\r\n* Update dependency @types/node to ^22.15.21 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/14\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-extension-fluxcd/compare/v3.0.0...v3.1.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-extension-fluxcd-3.1.0.tgz",
+          "size": 225750,
+          "downloadCount": 21,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.0/freelensapp-extension-fluxcd-3.1.0.tgz",
+          "createdAt": "2025-05-22T13:28:04Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 218931076,
+      "tagName": "v3.0.0",
+      "name": "v3.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-05-15T17:08:45Z",
+      "publishedAt": "2025-05-15T18:51:10Z",
+      "body": "## What's Changed\r\n* Enabled pie charts by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/6\r\n* Update dependency knip to v5.56.0 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/5\r\n* Update dependency @types/node to ^22.15.18 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/4\r\n* Update dependency sass to ^1.88.0 - autoclosed by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/1\r\n* Updated FluxCD APIs by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/11\r\n\r\n## New Contributors\r\n* @dex4er made their first contribution in https://github.com/freelensapp/freelens-extension-fluxcd/pull/6\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-extension-fluxcd/commits/v3.0.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-extension-fluxcd-3.0.0.tgz",
+          "size": 145415,
+          "downloadCount": 15,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.0.0/freelensapp-extension-fluxcd-3.0.0.tgz",
+          "createdAt": "2025-05-15T18:51:11Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "v5.2.0",
+      "commitSha": "33e578f9285d06922a50a75ec018bf16cbda4a53",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/33e578f9285d06922a50a75ec018bf16cbda4a53",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v5.2.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v5.2.0"
+    },
+    {
+      "name": "v5.1.0",
+      "commitSha": "3226140d6d154d81bb40b58ec7ed2036c2ef12a0",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/3226140d6d154d81bb40b58ec7ed2036c2ef12a0",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v5.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v5.1.0"
+    },
+    {
+      "name": "v5.0.0",
+      "commitSha": "f834152fbbf7f3a9bfb623bd7846ef5eed617c0a",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/f834152fbbf7f3a9bfb623bd7846ef5eed617c0a",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v5.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v5.0.0"
+    },
+    {
+      "name": "v4.0.1",
+      "commitSha": "2169660c1743c1cbc88c43507710cce49a56b67a",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/2169660c1743c1cbc88c43507710cce49a56b67a",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v4.0.1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v4.0.1"
+    },
+    {
+      "name": "v4.0.0",
+      "commitSha": "5f6ee55a5837920c160721df51f8596bf6757071",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/5f6ee55a5837920c160721df51f8596bf6757071",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v4.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v4.0.0"
+    },
+    {
+      "name": "v3.2.0",
+      "commitSha": "a6bd0602d3713f07ec016a58fe738f654bfcc48d",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/a6bd0602d3713f07ec016a58fe738f654bfcc48d",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v3.2.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v3.2.0"
+    },
+    {
+      "name": "v3.1.1-0",
+      "commitSha": "a7590b4631ad498c6e08900640d9b4d2f347bdbe",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/a7590b4631ad498c6e08900640d9b4d2f347bdbe",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v3.1.1-0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v3.1.1-0"
+    },
+    {
+      "name": "v3.1.0",
+      "commitSha": "5e43efe6983f2995d6cda4ec707f294a4eb5e5a2",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/5e43efe6983f2995d6cda4ec707f294a4eb5e5a2",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v3.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v3.1.0"
+    },
+    {
+      "name": "v3.0.0",
+      "commitSha": "ecb135b1298feafad17f38c39e9220bab3b72ed5",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/ecb135b1298feafad17f38c39e9220bab3b72ed5",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v3.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v3.0.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v5.2.0",
+      "name": "v5.2.0",
+      "publishedAt": "2025-11-18T18:02:39Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* ResourceSets by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/136\r\n* Correct handling of multiple Flux APIs by @MatiasRoje in https://github.com/freelensapp/freelens-fluxcd-extension/pull/144\r\n\r\n## New Contributors\r\n* @MatiasRoje made their first contribution in https://github.com/freelensapp/freelens-fluxcd-extension/pull/144\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v5.1.0...v5.2.0"
+    },
+    {
+      "version": "v5.1.0",
+      "name": "v5.1.0",
+      "publishedAt": "2025-10-30T15:07:47Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Flux instances and reports by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/126\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v5.0.0...v5.1.0"
+    },
+    {
+      "version": "v5.0.0",
+      "name": "v5.0.0",
+      "publishedAt": "2025-10-25T21:28:28Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n\r\n* Support multiple apiVersions by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/118\r\n* image.toolkit.fluxcd.io/v1 provided in Flux 2.7 by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/120\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v4.0.1...v5.0.0"
+    },
+    {
+      "version": "v4.0.1",
+      "name": "v4.0.1",
+      "publishedAt": "2025-09-10T13:34:24Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* HelmRepository with type `oci` always has a state Ready.\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v4.0.0...v4.0.1"
+    },
+    {
+      "version": "v4.0.0",
+      "name": "v4.0.0",
+      "publishedAt": "2025-08-18T17:51:28Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Major refactoring with new features implemented by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/66\r\n* Requires Freelens >= v1.5.3\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v3.2.0...v4.0.0"
+    },
+    {
+      "version": "v3.2.0",
+      "name": "v3.2.0",
+      "publishedAt": "2025-06-07T21:02:17Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* More detailed view for Kustomizations.\r\n* Additional tweaks in a view for HelmReleases.\r\n* More secure types are provided by the newer Freelens v1.3.1.\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-extension-fluxcd/compare/v3.1.0...v3.2.0"
+    },
+    {
+      "version": "v3.1.1-0",
+      "name": "v3.1.1-0",
+      "publishedAt": "2025-05-28T20:44:27Z",
+      "isPrerelease": false,
+      "notes": ""
+    },
+    {
+      "version": "v3.1.0",
+      "name": "v3.1.0",
+      "publishedAt": "2025-05-22T13:28:04Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* More detailed HelmRelease view by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/18\r\n* More optional chaining operators to prevent crashing by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/23\r\n* Update dependency @types/react to ^17.0.86 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/20\r\n* Update dependency sass to ^1.89.0 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/13\r\n* Update dependency @types/node to ^22.15.21 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/14\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-extension-fluxcd/compare/v3.0.0...v3.1.0"
+    },
+    {
+      "version": "v3.0.0",
+      "name": "v3.0.0",
+      "publishedAt": "2025-05-15T18:51:10Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Enabled pie charts by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/6\r\n* Update dependency knip to v5.56.0 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/5\r\n* Update dependency @types/node to ^22.15.18 by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/4\r\n* Update dependency sass to ^1.88.0 - autoclosed by @renovate in https://github.com/freelensapp/freelens-extension-fluxcd/pull/1\r\n* Updated FluxCD APIs by @dex4er in https://github.com/freelensapp/freelens-extension-fluxcd/pull/11\r\n\r\n## New Contributors\r\n* @dex4er made their first contribution in https://github.com/freelensapp/freelens-extension-fluxcd/pull/6\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-extension-fluxcd/commits/v3.0.0"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-fluxcd-extension-5.2.0.tgz",
+      "releaseTag": "v5.2.0",
+      "releaseName": "v5.2.0",
+      "size": 281679,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.0/freelensapp-fluxcd-extension-5.2.0.tgz",
+      "downloadCount": 14,
+      "type": "tar.gz",
+      "createdAt": "2025-11-18T18:02:39Z"
+    },
+    {
+      "filename": "freelensapp-fluxcd-extension-5.1.0.tgz",
+      "releaseTag": "v5.1.0",
+      "releaseName": "v5.1.0",
+      "size": 268436,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.1.0/freelensapp-fluxcd-extension-5.1.0.tgz",
+      "downloadCount": 38,
+      "type": "tar.gz",
+      "createdAt": "2025-10-30T15:07:48Z"
+    },
+    {
+      "filename": "freelensapp-fluxcd-extension-5.0.0.tgz",
+      "releaseTag": "v5.0.0",
+      "releaseName": "v5.0.0",
+      "size": 254313,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.0.0/freelensapp-fluxcd-extension-5.0.0.tgz",
+      "downloadCount": 20,
+      "type": "tar.gz",
+      "createdAt": "2025-10-25T21:28:28Z"
+    },
+    {
+      "filename": "freelensapp-fluxcd-extension-4.0.1.tgz",
+      "releaseTag": "v4.0.1",
+      "releaseName": "v4.0.1",
+      "size": 227465,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.1/freelensapp-fluxcd-extension-4.0.1.tgz",
+      "downloadCount": 91,
+      "type": "tar.gz",
+      "createdAt": "2025-09-10T13:34:24Z"
+    },
+    {
+      "filename": "freelensapp-fluxcd-extension-4.0.0.tgz",
+      "releaseTag": "v4.0.0",
+      "releaseName": "v4.0.0",
+      "size": 226817,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.0/freelensapp-fluxcd-extension-4.0.0.tgz",
+      "downloadCount": 36,
+      "type": "tar.gz",
+      "createdAt": "2025-08-18T17:51:28Z"
+    },
+    {
+      "filename": "freelensapp-extension-fluxcd-3.2.0.tgz",
+      "releaseTag": "v3.2.0",
+      "releaseName": "v3.2.0",
+      "size": 208755,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.2.0/freelensapp-extension-fluxcd-3.2.0.tgz",
+      "downloadCount": 388,
+      "type": "tar.gz",
+      "createdAt": "2025-06-07T21:02:17Z"
+    },
+    {
+      "filename": "freelensapp-extension-fluxcd-3.1.1-0.tgz",
+      "releaseTag": "v3.1.1-0",
+      "releaseName": "v3.1.1-0",
+      "size": 225760,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.1-0/freelensapp-extension-fluxcd-3.1.1-0.tgz",
+      "downloadCount": 16,
+      "type": "tar.gz",
+      "createdAt": "2025-05-28T20:44:28Z"
+    },
+    {
+      "filename": "freelensapp-extension-fluxcd-3.1.0.tgz",
+      "releaseTag": "v3.1.0",
+      "releaseName": "v3.1.0",
+      "size": 225750,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.0/freelensapp-extension-fluxcd-3.1.0.tgz",
+      "downloadCount": 21,
+      "type": "tar.gz",
+      "createdAt": "2025-05-22T13:28:04Z"
+    },
+    {
+      "filename": "freelensapp-extension-fluxcd-3.0.0.tgz",
+      "releaseTag": "v3.0.0",
+      "releaseName": "v3.0.0",
+      "size": 145415,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.0.0/freelensapp-extension-fluxcd-3.0.0.tgz",
+      "downloadCount": 15,
+      "type": "tar.gz",
+      "createdAt": "2025-05-15T18:51:11Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 263386748,
+    "tagName": "v5.2.0",
+    "name": "v5.2.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2025-11-18T18:01:55Z",
+    "publishedAt": "2025-11-18T18:02:39Z",
+    "body": "## What's Changed\r\n* ResourceSets by @dex4er in https://github.com/freelensapp/freelens-fluxcd-extension/pull/136\r\n* Correct handling of multiple Flux APIs by @MatiasRoje in https://github.com/freelensapp/freelens-fluxcd-extension/pull/144\r\n\r\n## New Contributors\r\n* @MatiasRoje made their first contribution in https://github.com/freelensapp/freelens-fluxcd-extension/pull/144\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v5.1.0...v5.2.0",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-fluxcd-extension-5.2.0.tgz",
+        "size": 281679,
+        "downloadCount": 14,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.0/freelensapp-fluxcd-extension-5.2.0.tgz",
+        "createdAt": "2025-11-18T18:02:39Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 9,
+  "hasTarFiles": true,
+  "lastScanned": "2025-11-22T04:04:40.664Z"
 }

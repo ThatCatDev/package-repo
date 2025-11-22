@@ -23,5 +23,12 @@
     "sshUrl": "git@github.com:freelensapp/freelens-sveltos-extension.git"
   },
   "packageJson": null,
-  "lastScanned": "2025-11-22T03:58:05.756Z"
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2025-11-22T04:04:45.114Z"
 }

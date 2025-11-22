@@ -112,5 +112,12 @@
     ],
     "packageManager": "pnpm@10.13.1"
   },
-  "lastScanned": "2025-11-22T03:58:04.833Z"
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2025-11-22T04:04:43.301Z"
 }
