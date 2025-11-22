@@ -4,69 +4,99 @@
     "fullName": "CardonexInc/argo-rollouts-freelens-extension",
     "description": "",
     "stars": 1,
-    "updatedAt": "2025-07-15T20:13:01Z"
+    "updatedAt": "2025-07-15T20:13:01Z",
+    "latestVersion": "0.0.4",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-ai-extension",
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "Freelens AI extension",
     "stars": 16,
-    "updatedAt": "2025-09-24T20:32:45Z"
+    "updatedAt": "2025-09-24T20:32:45Z",
+    "latestVersion": "v0.4.1",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-duplicate-extension",
     "fullName": "omarluq/freelens-duplicate-extension",
     "description": "Create duplicate k8s resources from freelens",
     "stars": 4,
-    "updatedAt": "2025-09-22T15:33:23Z"
+    "updatedAt": "2025-09-22T15:33:23Z",
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-example-extension",
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 4,
-    "updatedAt": "2025-11-19T20:56:16Z"
+    "updatedAt": "2025-11-19T20:56:16Z",
+    "latestVersion": "v1.6.2",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-ext-k-menu",
     "fullName": "ThatCatDev/freelens-ext-k-menu",
     "description": "cmd+k searchable menu for freelens",
     "stars": 0,
-    "updatedAt": "2025-11-22T02:38:45Z"
+    "updatedAt": "2025-11-22T02:38:45Z",
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens FluxCD extension",
     "stars": 95,
-    "updatedAt": "2025-11-19T16:17:15Z"
+    "updatedAt": "2025-11-19T16:17:15Z",
+    "latestVersion": "v5.2.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-jobset-extension",
     "fullName": "mike-callahan/freelens-jobset-extension",
     "description": "",
     "stars": 2,
-    "updatedAt": "2025-10-03T00:24:44Z"
+    "updatedAt": "2025-10-03T00:24:44Z",
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-kamaji-extension",
     "fullName": "freelensapp/freelens-kamaji-extension",
     "description": "Freelens extension for Kamaji, the Kubernetes Control Plane Manager",
     "stars": 3,
-    "updatedAt": "2025-11-20T19:28:57Z"
+    "updatedAt": "2025-11-20T19:28:57Z",
+    "latestVersion": "1.3.1-40",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
     "description": "Freelens - Free IDE for Kubernetes extension that displays Kubernetes resources and their relations as a force graph.",
     "stars": 6,
-    "updatedAt": "2025-07-19T07:49:38Z"
+    "updatedAt": "2025-07-19T07:49:38Z",
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-sveltos-extension",
     "fullName": "freelensapp/freelens-sveltos-extension",
     "description": "About Freelens extension for Sveltos",
     "stars": 2,
-    "updatedAt": "2025-09-22T15:32:21Z"
+    "updatedAt": "2025-09-22T15:32:21Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
   }
 ]
