@@ -1,34 +1,34 @@
 {
-  "name": "freelens-ext-k-menu",
-  "fullName": "ThatCatDev/freelens-ext-k-menu",
-  "description": "cmd+k searchable menu for freelens",
-  "homepage": "https://github.com/ThatCatDev/freelens-ext-k-menu",
-  "stars": 0,
-  "forks": 0,
+  "name": "freelens-example-extension",
+  "fullName": "freelensapp/freelens-example-extension",
+  "description": "Example of a Freelens extension",
+  "homepage": "https://freelens.app",
+  "stars": 4,
+  "forks": 4,
   "language": "TypeScript",
-  "createdAt": "2025-11-20T13:16:49Z",
-  "updatedAt": "2025-11-22T02:38:45Z",
-  "pushedAt": "2025-11-22T02:38:42Z",
+  "createdAt": "2025-04-14T15:33:57Z",
+  "updatedAt": "2025-11-19T20:56:16Z",
+  "pushedAt": "2025-11-21T10:51:12Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
   "owner": {
-    "login": "ThatCatDev",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/94362358?v=4",
-    "url": "https://github.com/ThatCatDev"
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
   },
   "repository": {
-    "url": "https://github.com/ThatCatDev/freelens-ext-k-menu",
-    "cloneUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu.git",
-    "sshUrl": "git@github.com:ThatCatDev/freelens-ext-k-menu.git"
+    "url": "https://github.com/freelensapp/freelens-example-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-example-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-example-extension.git"
   },
   "packageJson": {
-    "name": "@thatcatdev/k-menu",
-    "version": "1.0.0",
-    "description": "K-Menu: A powerful command palette for Freelens",
+    "name": "@freelensapp/example-extension",
+    "version": "1.6.2",
+    "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/ThatCatDev/freelens-ext-k-menu.git",
+      "url": "git+https://github.com/freelensapp/freelens-example-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -40,11 +40,11 @@
       "node": ">= 22.16.0",
       "freelens": "^1.6.0"
     },
-    "copyright": "© 2025 James Trotter",
+    "copyright": "© 2025 Freelens Authors",
     "license": "MIT",
     "author": {
-      "name": "James Trotter",
-      "email": "jamestrotter@users.noreply.github.com"
+      "name": "Freelens Authors",
+      "email": "freelens@freelens.app"
     },
     "publishConfig": {
       "access": "public",
@@ -77,26 +77,18 @@
       "build:force": "electron-vite build",
       "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
       "pack:dev": "corepack pnpm bump-version prerelease && corepack pnpm build:force && corepack pnpm build && corepack pnpm clean:tgz && corepack pnpm pack && corepack pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
-      "dev": "./scripts/dev-watch.sh",
-      "install:freelens": "./scripts/install-to-freelens.sh",
-      "uninstall:freelens": "./scripts/uninstall-from-freelens.sh",
       "clean": "corepack pnpm clean:out",
       "clean:dts": "corepack pnpm dlx shx@0.4.0 rm -f \"src/**/*.scss.d.ts\"",
       "clean:node_modules": "corepack pnpm dlx shx@0.4.0 rm -rf node_modules",
       "clean:out": "corepack pnpm dlx shx@0.4.0 rm -rf out",
       "clean:tgz": "corepack pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
       "clean:all": "corepack pnpm \"/^clean:(dts|node_modules|out|tgz)\\$/\"",
-      "postupdate": "corepack pnpm biome:migrate",
-      "semantic-release": "semantic-release"
+      "postupdate": "corepack pnpm biome:migrate"
     },
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.28.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
       "@freelensapp/extensions": "^1.6.1",
-      "@semantic-release/changelog": "^6.0.3",
-      "@semantic-release/git": "^10.0.1",
-      "@semantic-release/github": "^12.0.2",
-      "@semantic-release/npm": "^13.1.2",
       "@types/node": "~22.15.35",
       "@types/react": "^17.0.90",
       "@vitejs/plugin-react": "^5.1.1",
@@ -105,7 +97,6 @@
       "mobx-react": "7.6.0",
       "react": "17.0.2",
       "sass": "^1.94.1",
-      "semantic-release": "^25.0.2",
       "typescript": "5.9.3",
       "vite": "^7.2.2",
       "vite-plugin-external": "^6.2.2",
@@ -114,13 +105,11 @@
     "keywords": [
       "extension",
       "freelensapp",
-      "freelens",
-      "command-palette",
-      "k-menu",
-      "kubernetes",
-      "navigation"
+      "lens",
+      "openlens",
+      "freelens"
     ],
     "packageManager": "pnpm@10.22.0"
   },
-  "lastScanned": "2025-11-22T03:34:12.242Z"
+  "lastScanned": "2025-11-22T03:34:09.617Z"
 }

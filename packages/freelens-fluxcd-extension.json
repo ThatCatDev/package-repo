@@ -1,34 +1,40 @@
 {
-  "name": "freelens-ext-k-menu",
-  "fullName": "ThatCatDev/freelens-ext-k-menu",
-  "description": "cmd+k searchable menu for freelens",
-  "homepage": "https://github.com/ThatCatDev/freelens-ext-k-menu",
-  "stars": 0,
-  "forks": 0,
+  "name": "freelens-fluxcd-extension",
+  "fullName": "freelensapp/freelens-fluxcd-extension",
+  "description": "Freelens FluxCD extension",
+  "homepage": "https://freelens.app",
+  "stars": 95,
+  "forks": 7,
   "language": "TypeScript",
-  "createdAt": "2025-11-20T13:16:49Z",
-  "updatedAt": "2025-11-22T02:38:45Z",
-  "pushedAt": "2025-11-22T02:38:42Z",
+  "createdAt": "2025-05-13T15:46:23Z",
+  "updatedAt": "2025-11-19T16:17:15Z",
+  "pushedAt": "2025-11-21T11:02:15Z",
   "defaultBranch": "main",
-  "topics": [],
-  "license": "MIT",
+  "topics": [
+    "fluxcd",
+    "freelens",
+    "gitops",
+    "kubernetes",
+    "ui"
+  ],
+  "license": "NOASSERTION",
   "owner": {
-    "login": "ThatCatDev",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/94362358?v=4",
-    "url": "https://github.com/ThatCatDev"
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
   },
   "repository": {
-    "url": "https://github.com/ThatCatDev/freelens-ext-k-menu",
-    "cloneUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu.git",
-    "sshUrl": "git@github.com:ThatCatDev/freelens-ext-k-menu.git"
+    "url": "https://github.com/freelensapp/freelens-fluxcd-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-fluxcd-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-fluxcd-extension.git"
   },
   "packageJson": {
-    "name": "@thatcatdev/k-menu",
-    "version": "1.0.0",
-    "description": "K-Menu: A powerful command palette for Freelens",
+    "name": "@freelensapp/fluxcd-extension",
+    "version": "5.2.1-0",
+    "description": "Freelens extension for FluxCD",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/ThatCatDev/freelens-ext-k-menu.git",
+      "url": "git+https://github.com/freelensapp/freelens-fluxcd-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -40,11 +46,11 @@
       "node": ">= 22.16.0",
       "freelens": "^1.6.0"
     },
-    "copyright": "© 2025 James Trotter",
+    "copyright": "© 2025 Freelens Authors",
     "license": "MIT",
     "author": {
-      "name": "James Trotter",
-      "email": "jamestrotter@users.noreply.github.com"
+      "name": "Freelens Authors",
+      "email": "freelens@freelens.app"
     },
     "publishConfig": {
       "access": "public",
@@ -55,9 +61,9 @@
       "biome:check": "corepack pnpm biome check",
       "biome:fix": "corepack pnpm biome check --fix",
       "biome:migrate": "corepack pnpm biome migrate --write",
-      "prettier": "corepack pnpm dlx prettier@3.6.2",
-      "prettier:check": "corepack pnpm prettier --check .",
-      "prettier:fix": "corepack pnpm prettier --write .",
+      "prettier": "pnpm dlx prettier@3.6.2",
+      "prettier:check": "pnpm prettier --check .",
+      "prettier:fix": "pnpm prettier --write .",
       "trunk": "corepack pnpm dlx @trunkio/launcher@1.3.4",
       "trunk:check": "corepack pnpm trunk check",
       "trunk:check:all": "corepack pnpm trunk check --all",
@@ -77,35 +83,33 @@
       "build:force": "electron-vite build",
       "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
       "pack:dev": "corepack pnpm bump-version prerelease && corepack pnpm build:force && corepack pnpm build && corepack pnpm clean:tgz && corepack pnpm pack && corepack pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
-      "dev": "./scripts/dev-watch.sh",
-      "install:freelens": "./scripts/install-to-freelens.sh",
-      "uninstall:freelens": "./scripts/uninstall-from-freelens.sh",
       "clean": "corepack pnpm clean:out",
       "clean:dts": "corepack pnpm dlx shx@0.4.0 rm -f \"src/**/*.scss.d.ts\"",
       "clean:node_modules": "corepack pnpm dlx shx@0.4.0 rm -rf node_modules",
       "clean:out": "corepack pnpm dlx shx@0.4.0 rm -rf out",
       "clean:tgz": "corepack pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
       "clean:all": "corepack pnpm \"/^clean:(dts|node_modules|out|tgz)\\$/\"",
-      "postupdate": "corepack pnpm biome:migrate",
-      "semantic-release": "semantic-release"
+      "postupdate": "corepack pnpm biome:migrate"
     },
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.28.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.6.1",
-      "@semantic-release/changelog": "^6.0.3",
-      "@semantic-release/git": "^10.0.1",
-      "@semantic-release/github": "^12.0.2",
-      "@semantic-release/npm": "^13.1.2",
-      "@types/node": "~22.15.35",
+      "@freelensapp/extensions": "^1.5.3",
+      "@freelensapp/kube-object": "^1.6.2",
+      "@types/chart.js": "^2.9.41",
+      "@types/js-yaml": "^4.0.9",
+      "@types/node": "^22.16.4",
       "@types/react": "^17.0.90",
+      "@types/react-router-dom": "^5.3.3",
       "@vitejs/plugin-react": "^5.1.1",
       "electron-vite": "^4.0.1",
+      "js-base64": "^3.7.8",
+      "js-yaml": "^4.1.1",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
+      "moment": "^2.30.1",
       "react": "17.0.2",
       "sass": "^1.94.1",
-      "semantic-release": "^25.0.2",
       "typescript": "5.9.3",
       "vite": "^7.2.2",
       "vite-plugin-external": "^6.2.2",
@@ -114,13 +118,13 @@
     "keywords": [
       "extension",
       "freelensapp",
+      "lens",
+      "openlens",
       "freelens",
-      "command-palette",
-      "k-menu",
-      "kubernetes",
-      "navigation"
+      "flux",
+      "fluxcd"
     ],
-    "packageManager": "pnpm@10.22.0"
+    "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
   },
-  "lastScanned": "2025-11-22T03:34:12.242Z"
+  "lastScanned": "2025-11-22T03:34:08.828Z"
 }

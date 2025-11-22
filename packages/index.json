@@ -1,9 +1,72 @@
 [
   {
+    "name": "argo-rollouts-freelens-extension",
+    "fullName": "CardonexInc/argo-rollouts-freelens-extension",
+    "description": "",
+    "stars": 1,
+    "updatedAt": "2025-07-15T20:13:01Z"
+  },
+  {
+    "name": "freelens-ai-extension",
+    "fullName": "freelensapp/freelens-ai-extension",
+    "description": "Freelens AI extension",
+    "stars": 16,
+    "updatedAt": "2025-09-24T20:32:45Z"
+  },
+  {
+    "name": "freelens-duplicate-extension",
+    "fullName": "omarluq/freelens-duplicate-extension",
+    "description": "Create duplicate k8s resources from freelens",
+    "stars": 4,
+    "updatedAt": "2025-09-22T15:33:23Z"
+  },
+  {
+    "name": "freelens-example-extension",
+    "fullName": "freelensapp/freelens-example-extension",
+    "description": "Example of a Freelens extension",
+    "stars": 4,
+    "updatedAt": "2025-11-19T20:56:16Z"
+  },
+  {
     "name": "freelens-ext-k-menu",
     "fullName": "ThatCatDev/freelens-ext-k-menu",
     "description": "cmd+k searchable menu for freelens",
     "stars": 0,
     "updatedAt": "2025-11-22T02:38:45Z"
+  },
+  {
+    "name": "freelens-fluxcd-extension",
+    "fullName": "freelensapp/freelens-fluxcd-extension",
+    "description": "Freelens FluxCD extension",
+    "stars": 95,
+    "updatedAt": "2025-11-19T16:17:15Z"
+  },
+  {
+    "name": "freelens-jobset-extension",
+    "fullName": "mike-callahan/freelens-jobset-extension",
+    "description": "",
+    "stars": 2,
+    "updatedAt": "2025-10-03T00:24:44Z"
+  },
+  {
+    "name": "freelens-kamaji-extension",
+    "fullName": "freelensapp/freelens-kamaji-extension",
+    "description": "Freelens extension for Kamaji, the Kubernetes Control Plane Manager",
+    "stars": 3,
+    "updatedAt": "2025-11-20T19:28:57Z"
+  },
+  {
+    "name": "freelens-resource-map-extension",
+    "fullName": "freelensapp/freelens-resource-map-extension",
+    "description": "Freelens - Free IDE for Kubernetes extension that displays Kubernetes resources and their relations as a force graph.",
+    "stars": 6,
+    "updatedAt": "2025-07-19T07:49:38Z"
+  },
+  {
+    "name": "freelens-sveltos-extension",
+    "fullName": "freelensapp/freelens-sveltos-extension",
+    "description": "About Freelens extension for Sveltos",
+    "stars": 2,
+    "updatedAt": "2025-09-22T15:32:21Z"
   }
 ]

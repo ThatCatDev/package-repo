@@ -1,0 +1,27 @@
+{
+  "name": "freelens-sveltos-extension",
+  "fullName": "freelensapp/freelens-sveltos-extension",
+  "description": "About Freelens extension for Sveltos",
+  "homepage": "https://github.com/freelensapp/freelens-sveltos-extension",
+  "stars": 2,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2025-09-21T15:51:23Z",
+  "updatedAt": "2025-09-22T15:32:21Z",
+  "pushedAt": "2025-09-21T15:51:52Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-sveltos-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-sveltos-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-sveltos-extension.git"
+  },
+  "packageJson": null,
+  "lastScanned": "2025-11-22T03:34:11.867Z"
+}
