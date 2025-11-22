@@ -1,0 +1,20 @@
+name = "freelens-registry-api"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables (set these via `wrangler secret put`)
+# GITHUB_TOKEN - GitHub Personal Access Token with repo access
+# REGISTRY_REPO - Your registry repo (e.g., "username/package-repo")
+# API_KEY - Optional API key for authentication
+
+[vars]
+# REGISTRY_REPO = "username/package-repo"  # Uncomment and set your repo
+
+# Deploy to workers.dev subdomain (free tier)
+workers_dev = true
+
+# Production environment example
+# [env.production]
+# name = "freelens-registry-api"
+# workers_dev = false
+# route = "api.yourdomain.com/*"

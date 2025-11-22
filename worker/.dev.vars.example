@@ -1,0 +1,11 @@
+# Copy this file to .dev.vars for local development
+# DO NOT commit .dev.vars to git
+
+# GitHub Personal Access Token with repo access
+GITHUB_TOKEN=ghp_your_token_here
+
+# Your registry repository (format: owner/repo)
+REGISTRY_REPO=yourusername/package-repo
+
+# Optional: API key for authentication
+API_KEY=your_secret_api_key
