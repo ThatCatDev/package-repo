@@ -225,11 +225,15 @@ async function main() {
       });
     });
 
+    // Use package name from package.json if available, fallback to repo name
+    const packageName = packageJson?.name || repo.name;
+
     // Create package metadata
     const metadata = {
-      name: repo.name,
+      name: packageName,
+      repoName: repo.name,
       fullName: repo.full_name,
-      description: details.description || '',
+      description: packageJson?.description || details.description || '',
       homepage: details.homepage || details.html_url,
       stars: details.stargazers_count,
       forks: details.forks_count,
@@ -294,6 +298,7 @@ async function main() {
 
     return {
       name: content.name,
+      repoName: content.repoName,
       fullName: content.fullName,
       description: content.description,
       stars: content.stars,
