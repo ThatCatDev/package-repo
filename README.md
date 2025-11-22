@@ -1,12 +1,12 @@
 # FreeLens Extension Registry
 
-Automated package registry for FreeLens extensions. This registry automatically scans GitHub for repositories starting with `freelens-ext-` and provides an HTTP API for manual registration.
+Automated package registry for FreeLens extensions. This registry automatically scans GitHub for repositories containing both "freelens" and "ext" in the name, and provides an HTTP API for manual registration.
 
 ## How It Works
 
 ### Automatic Scanning (GitHub Actions)
 - Runs every 5 minutes via GitHub Actions cron job
-- Searches for all repos named `freelens-ext-*`
+- Searches for all repos containing both "freelens" and "ext" in the name
 - Fetches repo metadata and package.json
 - Creates/updates JSON files in the `packages/` directory
 - Generates an index at `packages/index.json`
@@ -161,12 +161,15 @@ Each extension is stored as a JSON file in `packages/` with the following struct
 ## For Extension Developers
 
 ### Naming Convention
-Your repository MUST start with `freelens-ext-` to be included in the registry.
+Your repository name MUST contain both "freelens" and "ext" to be included in the registry.
 
 Examples:
 - ✅ `freelens-ext-kubernetes`
-- ✅ `freelens-ext-metrics-dashboard`
-- ❌ `my-freelens-extension` (won't be detected)
+- ✅ `my-freelens-ext`
+- ✅ `awesome-ext-for-freelens`
+- ✅ `freelens-metrics-ext`
+- ❌ `my-freelens-plugin` (missing "ext")
+- ❌ `kubernetes-ext` (missing "freelens")
 
 ### Automatic Inclusion
 Once you create a repo with the correct naming:

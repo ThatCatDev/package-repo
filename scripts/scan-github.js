@@ -81,23 +81,23 @@ async function getPackageJson(owner, repo) {
 }
 
 async function main() {
-  console.log('Scanning GitHub for freelens-ext-* repositories...');
+  console.log('Scanning GitHub for FreeLens extension repositories...');
 
   // Ensure packages directory exists
   if (!fs.existsSync(PACKAGES_DIR)) {
     fs.mkdirSync(PACKAGES_DIR, { recursive: true });
   }
 
-  // Search for repos starting with freelens-ext-
-  const searchResults = await searchGitHub('freelens-ext- in:name');
+  // Search for repos containing both "freelens" and "ext" in the name
+  const searchResults = await searchGitHub('freelens ext in:name');
 
   console.log(`Found ${searchResults.total_count} repositories`);
 
   for (const repo of searchResults.items) {
-    const repoName = repo.name;
+    const repoName = repo.name.toLowerCase();
 
-    // Only process repos that start with freelens-ext-
-    if (!repoName.startsWith('freelens-ext-')) {
+    // Only process repos that contain both "freelens" and "ext"
+    if (!repoName.includes('freelens') || !repoName.includes('ext')) {
       continue;
     }
 
@@ -111,7 +111,7 @@ async function main() {
 
     // Create package metadata
     const metadata = {
-      name: repoName,
+      name: repo.name,
       fullName: repo.full_name,
       description: details.description || '',
       homepage: details.homepage || details.html_url,
@@ -139,7 +139,7 @@ async function main() {
     };
 
     // Write to packages directory
-    const filename = `${repoName}.json`;
+    const filename = `${repo.name}.json`;
     const filepath = path.join(PACKAGES_DIR, filename);
 
     fs.writeFileSync(filepath, JSON.stringify(metadata, null, 2));

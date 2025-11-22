@@ -77,10 +77,11 @@ async function handleRegister(request, env, corsHeaders) {
 
     const [, owner, repoName] = repoMatch;
 
-    // Validate repo name starts with freelens-ext-
-    if (!repoName.startsWith('freelens-ext-')) {
+    // Validate repo name contains both "freelens" and "ext"
+    const nameLower = repoName.toLowerCase();
+    if (!nameLower.includes('freelens') || !nameLower.includes('ext')) {
       return new Response(JSON.stringify({
-        error: 'Repository name must start with "freelens-ext-"'
+        error: 'Repository name must contain both "freelens" and "ext"'
       }), {
         status: 400,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
