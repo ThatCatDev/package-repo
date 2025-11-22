@@ -80,6 +80,87 @@ async function getPackageJson(owner, repo) {
   }
 }
 
+async function getReleases(owner, repo) {
+  try {
+    const response = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/releases?per_page=100`,
+      {
+        headers: {
+          'Authorization': `Bearer ${GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28'
+        }
+      }
+    );
+
+    if (!response.ok) {
+      return [];
+    }
+
+    const releases = await response.json();
+
+    return releases.map(release => ({
+      id: release.id,
+      tagName: release.tag_name,
+      name: release.name,
+      draft: release.draft,
+      prerelease: release.prerelease,
+      createdAt: release.created_at,
+      publishedAt: release.published_at,
+      body: release.body,
+      author: {
+        login: release.author.login,
+        avatarUrl: release.author.avatar_url
+      },
+      assets: release.assets.map(asset => ({
+        name: asset.name,
+        size: asset.size,
+        downloadCount: asset.download_count,
+        contentType: asset.content_type,
+        downloadUrl: asset.browser_download_url,
+        createdAt: asset.created_at,
+        isTarGz: asset.name.endsWith('.tar.gz') || asset.name.endsWith('.tgz'),
+        isTar: asset.name.endsWith('.tar')
+      }))
+    }));
+  } catch (error) {
+    console.warn(`Could not fetch releases for ${owner}/${repo}:`, error.message);
+    return [];
+  }
+}
+
+async function getTags(owner, repo) {
+  try {
+    const response = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/tags?per_page=100`,
+      {
+        headers: {
+          'Authorization': `Bearer ${GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28'
+        }
+      }
+    );
+
+    if (!response.ok) {
+      return [];
+    }
+
+    const tags = await response.json();
+
+    return tags.map(tag => ({
+      name: tag.name,
+      commitSha: tag.commit.sha,
+      commitUrl: tag.commit.url,
+      zipballUrl: tag.zipball_url,
+      tarballUrl: tag.tarball_url
+    }));
+  } catch (error) {
+    console.warn(`Could not fetch tags for ${owner}/${repo}:`, error.message);
+    return [];
+  }
+}
+
 async function main() {
   console.log('Scanning GitHub for FreeLens extension repositories...');
 
@@ -109,6 +190,41 @@ async function main() {
     // Try to get package.json
     const packageJson = await getPackageJson(repo.owner.login, repo.name);
 
+    // Get releases and tags
+    const releases = await getReleases(repo.owner.login, repo.name);
+    const tags = await getTags(repo.owner.login, repo.name);
+
+    // Build version history from releases
+    const versionHistory = releases
+      .filter(r => !r.draft)
+      .map(r => ({
+        version: r.tagName,
+        name: r.name,
+        publishedAt: r.publishedAt,
+        isPrerelease: r.prerelease,
+        notes: r.body
+      }))
+      .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+    // Check for tar/targz files across all releases
+    const tarFiles = [];
+    releases.forEach(release => {
+      release.assets.forEach(asset => {
+        if (asset.isTar || asset.isTarGz) {
+          tarFiles.push({
+            filename: asset.name,
+            releaseTag: release.tagName,
+            releaseName: release.name,
+            size: asset.size,
+            downloadUrl: asset.downloadUrl,
+            downloadCount: asset.downloadCount,
+            type: asset.isTarGz ? 'tar.gz' : 'tar',
+            createdAt: asset.createdAt
+          });
+        }
+      });
+    });
+
     // Create package metadata
     const metadata = {
       name: repo.name,
@@ -135,6 +251,13 @@ async function main() {
         sshUrl: details.ssh_url
       },
       packageJson: packageJson,
+      releases: releases,
+      tags: tags,
+      versionHistory: versionHistory,
+      tarFiles: tarFiles,
+      latestRelease: releases.find(r => !r.draft && !r.prerelease) || null,
+      totalReleases: releases.filter(r => !r.draft).length,
+      hasTarFiles: tarFiles.length > 0,
       lastScanned: new Date().toISOString()
     };
 
