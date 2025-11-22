@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-resource-map-extension",
   "description": "FreeLens extension to visualize Kubernetes resources and their relations",
   "homepage": "https://github.com/freelensapp/freelens-resource-map-extension",
-  "stars": 6,
+  "stars": 7,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-04-23T16:59:51Z",
-  "updatedAt": "2025-11-22T17:28:53Z",
+  "updatedAt": "2025-11-22T20:45:02Z",
   "pushedAt": "2025-11-22T17:28:50Z",
   "defaultBranch": "main",
   "topics": [],
@@ -161,5 +161,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-22T20:42:26.548Z"
+  "lastScanned": "2025-11-22T20:49:14.388Z"
 }
