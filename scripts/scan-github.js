@@ -275,12 +275,32 @@ async function main() {
 
   const index = packageFiles.map(f => {
     const content = JSON.parse(fs.readFileSync(path.join(PACKAGES_DIR, f), 'utf-8'));
+
+    // Extract latest version from various sources
+    let latestVersion = null;
+
+    // First try from latestRelease
+    if (content.latestRelease?.tagName) {
+      latestVersion = content.latestRelease.tagName;
+    }
+    // Fallback to first version in versionHistory
+    else if (content.versionHistory?.length > 0) {
+      latestVersion = content.versionHistory[0].version;
+    }
+    // Fallback to package.json version
+    else if (content.packageJson?.version) {
+      latestVersion = content.packageJson.version;
+    }
+
     return {
       name: content.name,
       fullName: content.fullName,
       description: content.description,
       stars: content.stars,
-      updatedAt: content.updatedAt
+      updatedAt: content.updatedAt,
+      latestVersion: latestVersion,
+      hasReleases: content.totalReleases > 0,
+      hasTarFiles: content.hasTarFiles || false
     };
   });
 
