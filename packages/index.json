@@ -55,6 +55,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "package-manager",
+    "repoName": "freelens-ext-package-manager",
+    "fullName": "ThatCatDev/freelens-ext-package-manager",
+    "description": "A Freelens extension for package management",
+    "stars": 0,
+    "updatedAt": "2025-11-23T04:14:00Z",
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
+  },
+  {
     "name": "@freelensapp/fluxcd-extension",
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",

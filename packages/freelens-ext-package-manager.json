@@ -1,15 +1,15 @@
 {
-  "name": "@thatcatdev/k-menu",
-  "repoName": "freelens-ext-k-menu",
-  "fullName": "ThatCatDev/freelens-ext-k-menu",
-  "description": "K-Menu: A powerful command palette for Freelens",
-  "homepage": "https://github.com/ThatCatDev/freelens-ext-k-menu",
+  "name": "package-manager",
+  "repoName": "freelens-ext-package-manager",
+  "fullName": "ThatCatDev/freelens-ext-package-manager",
+  "description": "A Freelens extension for package management",
+  "homepage": "https://github.com/ThatCatDev/freelens-ext-package-manager",
   "stars": 0,
   "forks": 0,
   "language": "TypeScript",
-  "createdAt": "2025-11-20T13:16:49Z",
-  "updatedAt": "2025-11-22T02:38:45Z",
-  "pushedAt": "2025-11-22T02:38:42Z",
+  "createdAt": "2025-11-22T22:31:36Z",
+  "updatedAt": "2025-11-23T04:14:00Z",
+  "pushedAt": "2025-11-22T23:53:08Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -19,17 +19,17 @@
     "url": "https://github.com/ThatCatDev"
   },
   "repository": {
-    "url": "https://github.com/ThatCatDev/freelens-ext-k-menu",
-    "cloneUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu.git",
-    "sshUrl": "git@github.com:ThatCatDev/freelens-ext-k-menu.git"
+    "url": "https://github.com/ThatCatDev/freelens-ext-package-manager",
+    "cloneUrl": "https://github.com/ThatCatDev/freelens-ext-package-manager.git",
+    "sshUrl": "git@github.com:ThatCatDev/freelens-ext-package-manager.git"
   },
   "packageJson": {
-    "name": "@thatcatdev/k-menu",
+    "name": "package-manager",
     "version": "1.0.0",
-    "description": "K-Menu: A powerful command palette for Freelens",
+    "description": "A Freelens extension for package management",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/ThatCatDev/freelens-ext-k-menu.git",
+      "url": "",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -76,6 +76,7 @@
       "build": "electron-vite build",
       "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
       "build:force": "electron-vite build",
+      "prepublishOnly": "corepack pnpm build:production",
       "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
       "pack:dev": "corepack pnpm bump-version prerelease && corepack pnpm build:force && corepack pnpm build && corepack pnpm clean:tgz && corepack pnpm pack && corepack pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
       "dev": "./scripts/dev-watch.sh",
@@ -100,6 +101,7 @@
       "@semantic-release/npm": "^13.1.2",
       "@types/node": "~22.15.35",
       "@types/react": "^17.0.90",
+      "@types/tar": "^6.1.13",
       "@vitejs/plugin-react": "^5.1.1",
       "electron-vite": "^4.0.1",
       "mobx": "6.13.7",
@@ -116,65 +118,99 @@
       "extension",
       "freelensapp",
       "freelens",
-      "command-palette",
-      "k-menu",
-      "kubernetes",
-      "navigation"
+      "package-manager",
+      "kubernetes"
     ],
-    "packageManager": "pnpm@10.22.0"
+    "packageManager": "pnpm@10.22.0",
+    "dependencies": {
+      "tar": "^7.5.2"
+    }
   },
   "releases": [
     {
-      "id": 264491733,
+      "id": 264567912,
       "tagName": "v1.0.0",
       "name": "v1.0.0",
       "draft": false,
       "prerelease": false,
-      "createdAt": "2025-11-22T02:12:28Z",
-      "publishedAt": "2025-11-22T02:12:30Z",
-      "body": "# 1.0.0 (2025-11-22)\n\n\n### Bug Fixes\n\n* linting ([f256bc1](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/f256bc1e63ead942bc47ed9423934331ec37b378))\n\n\n### Features\n\n* initial version ([9639144](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/96391440e064ef82d2225855a572720404efb835))\n\n\n\n",
+      "createdAt": "2025-11-22T23:42:50Z",
+      "publishedAt": "2025-11-22T23:42:54Z",
+      "body": "# 1.0.0 (2025-11-22)\n\n\n### Features\n\n* initial release ([4c5f8b2](https://github.com/ThatCatDev/freelens-ext-package-manager/commit/4c5f8b21678337adea57ab1c458f7edca2f3a23c))\n\n\n\n",
       "author": {
         "login": "github-actions[bot]",
         "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
       },
-      "assets": []
+      "assets": [
+        {
+          "name": "package-manager-1.0.0.tgz",
+          "size": 161204,
+          "downloadCount": 1,
+          "contentType": "text/plain",
+          "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-package-manager/releases/download/v1.0.0/package-manager-1.0.0.tgz",
+          "createdAt": "2025-11-22T23:42:53Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
     }
   ],
   "tags": [
     {
       "name": "v1.0.0",
-      "commitSha": "3fa8d9c0febc0ab0c2f2d649d168ded05a501456",
-      "commitUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/commits/3fa8d9c0febc0ab0c2f2d649d168ded05a501456",
-      "zipballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/zipball/refs/tags/v1.0.0",
-      "tarballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/tarball/refs/tags/v1.0.0"
+      "commitSha": "ab099f8d00857c771f36ca905db1eb4d9c4074c8",
+      "commitUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-package-manager/commits/ab099f8d00857c771f36ca905db1eb4d9c4074c8",
+      "zipballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-package-manager/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-package-manager/tarball/refs/tags/v1.0.0"
     }
   ],
   "versionHistory": [
     {
       "version": "v1.0.0",
       "name": "v1.0.0",
-      "publishedAt": "2025-11-22T02:12:30Z",
+      "publishedAt": "2025-11-22T23:42:54Z",
       "isPrerelease": false,
-      "notes": "# 1.0.0 (2025-11-22)\n\n\n### Bug Fixes\n\n* linting ([f256bc1](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/f256bc1e63ead942bc47ed9423934331ec37b378))\n\n\n### Features\n\n* initial version ([9639144](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/96391440e064ef82d2225855a572720404efb835))\n\n\n\n"
+      "notes": "# 1.0.0 (2025-11-22)\n\n\n### Features\n\n* initial release ([4c5f8b2](https://github.com/ThatCatDev/freelens-ext-package-manager/commit/4c5f8b21678337adea57ab1c458f7edca2f3a23c))\n\n\n\n"
     }
   ],
-  "tarFiles": [],
+  "tarFiles": [
+    {
+      "filename": "package-manager-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 161204,
+      "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-package-manager/releases/download/v1.0.0/package-manager-1.0.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2025-11-22T23:42:53Z"
+    }
+  ],
   "latestRelease": {
-    "id": 264491733,
+    "id": 264567912,
     "tagName": "v1.0.0",
     "name": "v1.0.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2025-11-22T02:12:28Z",
-    "publishedAt": "2025-11-22T02:12:30Z",
-    "body": "# 1.0.0 (2025-11-22)\n\n\n### Bug Fixes\n\n* linting ([f256bc1](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/f256bc1e63ead942bc47ed9423934331ec37b378))\n\n\n### Features\n\n* initial version ([9639144](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/96391440e064ef82d2225855a572720404efb835))\n\n\n\n",
+    "createdAt": "2025-11-22T23:42:50Z",
+    "publishedAt": "2025-11-22T23:42:54Z",
+    "body": "# 1.0.0 (2025-11-22)\n\n\n### Features\n\n* initial release ([4c5f8b2](https://github.com/ThatCatDev/freelens-ext-package-manager/commit/4c5f8b21678337adea57ab1c458f7edca2f3a23c))\n\n\n\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
-    "assets": []
+    "assets": [
+      {
+        "name": "package-manager-1.0.0.tgz",
+        "size": 161204,
+        "downloadCount": 1,
+        "contentType": "text/plain",
+        "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-package-manager/releases/download/v1.0.0/package-manager-1.0.0.tgz",
+        "createdAt": "2025-11-22T23:42:53Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
   },
   "totalReleases": 1,
-  "hasTarFiles": false,
-  "lastScanned": "2025-11-23T04:36:09.228Z"
+  "hasTarFiles": true,
+  "lastScanned": "2025-11-23T04:36:09.694Z"
 }
