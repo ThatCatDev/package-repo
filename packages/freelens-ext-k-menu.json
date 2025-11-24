@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-11-20T13:16:49Z",
-  "updatedAt": "2025-11-24T03:22:34Z",
-  "pushedAt": "2025-11-24T03:22:32Z",
+  "updatedAt": "2025-11-24T03:27:11Z",
+  "pushedAt": "2025-11-24T03:27:09Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@thatcatdev/k-menu",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "K-Menu: A powerful command palette for Freelens",
     "repository": {
       "type": "git",
@@ -125,6 +125,32 @@
   },
   "releases": [
     {
+      "id": 264671929,
+      "tagName": "v1.0.3",
+      "name": "v1.0.3",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-11-24T03:27:07Z",
+      "publishedAt": "2025-11-24T03:27:11Z",
+      "body": "## [1.0.3](https://github.com/ThatCatDev/freelens-ext-k-menu/compare/v1.0.2...v1.0.3) (2025-11-24)\n\n\n### Bug Fixes\n\n* release name ([8bfd8a5](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/8bfd8a5f02ec97550a800ac5ff7002f20b1f61e0))\n\n\n\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "thatcatdev-k-menu-1.0.3.tgz",
+          "size": 66621,
+          "downloadCount": 0,
+          "contentType": "text/plain",
+          "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.3/thatcatdev-k-menu-1.0.3.tgz",
+          "createdAt": "2025-11-24T03:27:10Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 264671551,
       "tagName": "v1.0.2",
       "name": "v1.0.2",
@@ -141,7 +167,7 @@
         {
           "name": "thatcatdev-k-menu-1.0.2.tgz",
           "size": 66623,
-          "downloadCount": 0,
+          "downloadCount": 2,
           "contentType": "text/plain",
           "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.2/thatcatdev-k-menu-1.0.2.tgz",
           "createdAt": "2025-11-24T03:22:33Z",
@@ -183,6 +209,13 @@
   ],
   "tags": [
     {
+      "name": "v1.0.3",
+      "commitSha": "44add2799869d6059207e9220330a9a40754469a",
+      "commitUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/commits/44add2799869d6059207e9220330a9a40754469a",
+      "zipballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/zipball/refs/tags/v1.0.3",
+      "tarballUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/tarball/refs/tags/v1.0.3"
+    },
+    {
       "name": "v1.0.2",
       "commitSha": "0269070a76b6ff7d1be6c1e05e85f7db6d260da3",
       "commitUrl": "https://api.github.com/repos/ThatCatDev/freelens-ext-k-menu/commits/0269070a76b6ff7d1be6c1e05e85f7db6d260da3",
@@ -205,6 +238,13 @@
     }
   ],
   "versionHistory": [
+    {
+      "version": "v1.0.3",
+      "name": "v1.0.3",
+      "publishedAt": "2025-11-24T03:27:11Z",
+      "isPrerelease": false,
+      "notes": "## [1.0.3](https://github.com/ThatCatDev/freelens-ext-k-menu/compare/v1.0.2...v1.0.3) (2025-11-24)\n\n\n### Bug Fixes\n\n* release name ([8bfd8a5](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/8bfd8a5f02ec97550a800ac5ff7002f20b1f61e0))\n\n\n\n"
+    },
     {
       "version": "v1.0.2",
       "name": "v1.0.2",
@@ -229,43 +269,53 @@
   ],
   "tarFiles": [
     {
+      "filename": "thatcatdev-k-menu-1.0.3.tgz",
+      "releaseTag": "v1.0.3",
+      "releaseName": "v1.0.3",
+      "size": 66621,
+      "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.3/thatcatdev-k-menu-1.0.3.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2025-11-24T03:27:10Z"
+    },
+    {
       "filename": "thatcatdev-k-menu-1.0.2.tgz",
       "releaseTag": "v1.0.2",
       "releaseName": "v1.0.2",
       "size": 66623,
       "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.2/thatcatdev-k-menu-1.0.2.tgz",
-      "downloadCount": 0,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2025-11-24T03:22:33Z"
     }
   ],
   "latestRelease": {
-    "id": 264671551,
-    "tagName": "v1.0.2",
-    "name": "v1.0.2",
+    "id": 264671929,
+    "tagName": "v1.0.3",
+    "name": "v1.0.3",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2025-11-24T03:22:31Z",
-    "publishedAt": "2025-11-24T03:22:34Z",
-    "body": "## [1.0.2](https://github.com/ThatCatDev/freelens-ext-k-menu/compare/v1.0.1...v1.0.2) (2025-11-24)\n\n\n### Bug Fixes\n\n* add tar release ([c30d222](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/c30d2229b65137d1b6515caab60f3bab4433cc89))\n\n\n\n",
+    "createdAt": "2025-11-24T03:27:07Z",
+    "publishedAt": "2025-11-24T03:27:11Z",
+    "body": "## [1.0.3](https://github.com/ThatCatDev/freelens-ext-k-menu/compare/v1.0.2...v1.0.3) (2025-11-24)\n\n\n### Bug Fixes\n\n* release name ([8bfd8a5](https://github.com/ThatCatDev/freelens-ext-k-menu/commit/8bfd8a5f02ec97550a800ac5ff7002f20b1f61e0))\n\n\n\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "thatcatdev-k-menu-1.0.2.tgz",
-        "size": 66623,
+        "name": "thatcatdev-k-menu-1.0.3.tgz",
+        "size": 66621,
         "downloadCount": 0,
         "contentType": "text/plain",
-        "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.2/thatcatdev-k-menu-1.0.2.tgz",
-        "createdAt": "2025-11-24T03:22:33Z",
+        "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.3/thatcatdev-k-menu-1.0.3.tgz",
+        "createdAt": "2025-11-24T03:27:10Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 3,
+  "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2025-11-24T03:24:50.299Z"
+  "lastScanned": "2025-11-24T03:38:40.118Z"
 }
