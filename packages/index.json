@@ -49,10 +49,10 @@
     "fullName": "ThatCatDev/freelens-ext-k-menu",
     "description": "K-Menu: A powerful command palette for Freelens",
     "stars": 0,
-    "updatedAt": "2025-11-22T02:38:45Z",
-    "latestVersion": "v1.0.0",
+    "updatedAt": "2025-11-24T03:22:34Z",
+    "latestVersion": "v1.0.2",
     "hasReleases": true,
-    "hasTarFiles": false
+    "hasTarFiles": true
   },
   {
     "name": "package-manager",
