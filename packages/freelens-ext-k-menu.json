@@ -141,7 +141,7 @@
         {
           "name": "thatcatdev-k-menu-1.0.3.tgz",
           "size": 66621,
-          "downloadCount": 2,
+          "downloadCount": 4,
           "contentType": "text/plain",
           "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.3/thatcatdev-k-menu-1.0.3.tgz",
           "createdAt": "2025-11-24T03:27:10Z",
@@ -274,7 +274,7 @@
       "releaseName": "v1.0.3",
       "size": 66621,
       "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.3/thatcatdev-k-menu-1.0.3.tgz",
-      "downloadCount": 2,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-11-24T03:27:10Z"
     },
@@ -306,7 +306,7 @@
       {
         "name": "thatcatdev-k-menu-1.0.3.tgz",
         "size": 66621,
-        "downloadCount": 2,
+        "downloadCount": 4,
         "contentType": "text/plain",
         "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-k-menu/releases/download/v1.0.3/thatcatdev-k-menu-1.0.3.tgz",
         "createdAt": "2025-11-24T03:27:10Z",
@@ -317,5 +317,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2025-11-24T05:36:09.704Z"
+  "lastScanned": "2025-11-24T05:48:23.884Z"
 }
