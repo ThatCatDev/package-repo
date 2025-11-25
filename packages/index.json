@@ -22,13 +22,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-domino-delete-pods-extension",
+    "name": "@mirtxa/freelens-pod-domino-delete-extension",
     "repoName": "freelens-domino-delete-pods-extension",
     "fullName": "mirtxa/freelens-domino-delete-pods-extension",
-    "description": "",
+    "description": "Safe, sequential pod deletion with countdown, zero-downtime waiting, and progress tracking",
     "stars": 0,
-    "updatedAt": "2025-11-25T23:49:57Z",
-    "latestVersion": null,
+    "updatedAt": "2025-11-25T23:51:42Z",
+    "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
