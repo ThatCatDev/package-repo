@@ -4,12 +4,12 @@
   "fullName": "freelensapp/freelens-fluxcd-extension",
   "description": "Freelens extension for FluxCD",
   "homepage": "https://freelens.app",
-  "stars": 94,
+  "stars": 95,
   "forks": 7,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2025-11-25T21:45:34Z",
-  "pushedAt": "2025-11-25T21:45:31Z",
+  "updatedAt": "2025-11-25T22:29:16Z",
+  "pushedAt": "2025-11-25T22:20:48Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -58,7 +58,7 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "corepack pnpm dlx @biomejs/biome@2.3.6",
+      "biome": "corepack pnpm dlx @biomejs/biome@2.3.7",
       "biome:check": "corepack pnpm biome check",
       "biome:fix": "corepack pnpm biome check --fix",
       "biome:migrate": "corepack pnpm biome migrate --write",
@@ -73,7 +73,7 @@
       "lint": "corepack pnpm lint:check",
       "lint:check": "corepack pnpm \"/^(biome|prettier):check\\$/\"",
       "lint:fix": "corepack pnpm \"/^(biome|prettier):fix\\$/\"",
-      "knip": "corepack pnpm dlx knip@5.70.0 --dependencies --no-gitignore",
+      "knip": "corepack pnpm dlx knip@5.70.2 --dependencies --no-gitignore",
       "knip:check": "corepack pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "corepack pnpm knip",
       "knip:production": "corepack pnpm knip --production --strict",
@@ -613,5 +613,5 @@
   },
   "totalReleases": 9,
   "hasTarFiles": true,
-  "lastScanned": "2025-11-25T22:09:43.125Z"
+  "lastScanned": "2025-11-25T22:32:56.318Z"
 }
