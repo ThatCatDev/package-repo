@@ -1,0 +1,35 @@
+{
+  "name": "freelens-domino-delete-pods-extension",
+  "repoName": "freelens-domino-delete-pods-extension",
+  "fullName": "mirtxa/freelens-domino-delete-pods-extension",
+  "description": "",
+  "homepage": "https://github.com/mirtxa/freelens-domino-delete-pods-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2025-11-25T23:46:00Z",
+  "updatedAt": "2025-11-25T23:49:57Z",
+  "pushedAt": "2025-11-25T23:49:54Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": null,
+  "owner": {
+    "login": "mirtxa",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/23210801?v=4",
+    "url": "https://github.com/mirtxa"
+  },
+  "repository": {
+    "url": "https://github.com/mirtxa/freelens-domino-delete-pods-extension",
+    "cloneUrl": "https://github.com/mirtxa/freelens-domino-delete-pods-extension.git",
+    "sshUrl": "git@github.com:mirtxa/freelens-domino-delete-pods-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2025-11-25T23:50:02.537Z"
+}
