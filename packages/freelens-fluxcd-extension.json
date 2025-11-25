@@ -8,8 +8,8 @@
   "forks": 7,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2025-11-24T18:10:54Z",
-  "pushedAt": "2025-11-25T06:37:45Z",
+  "updatedAt": "2025-11-25T21:18:33Z",
+  "pushedAt": "2025-11-25T21:18:32Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -31,7 +31,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/fluxcd-extension",
-    "version": "5.2.1-0",
+    "version": "5.2.1-1",
     "description": "Freelens extension for FluxCD",
     "repository": {
       "type": "git",
@@ -613,5 +613,5 @@
   },
   "totalReleases": 9,
   "hasTarFiles": true,
-  "lastScanned": "2025-11-25T21:12:25.685Z"
+  "lastScanned": "2025-11-25T21:29:30.892Z"
 }
