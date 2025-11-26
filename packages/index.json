@@ -110,6 +110,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "freelens-pod-domino-delete-extension",
+    "repoName": "freelens-pod-domino-delete-extension",
+    "fullName": "mirtxa/freelens-pod-domino-delete-extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2025-11-26T12:41:08Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@freelensapp/freelens-resource-map-extension",
     "repoName": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
