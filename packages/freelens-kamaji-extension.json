@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2025-11-27T19:22:53Z",
-  "pushedAt": "2025-11-27T19:22:57Z",
+  "updatedAt": "2025-11-27T19:24:10Z",
+  "pushedAt": "2025-11-27T19:27:32Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -76,7 +76,7 @@
       "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
       "clean": "corepack pnpm dlx rimraf@6.0.1 binaries dist static/build",
       "clean:node_modules": "corepack pnpm dlx rimraf@6.0.1 node_modules",
-      "knip": "corepack pnpm dlx knip@5.61.0 --dependencies",
+      "knip": "corepack pnpm dlx knip@5.70.2 --dependencies",
       "knip:development": "corepack pnpm knip",
       "knip:production": "corepack pnpm knip --production --strict",
       "lint": "corepack pnpm biome:check",
@@ -116,5 +116,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-27T19:23:26.291Z"
+  "lastScanned": "2025-11-27T19:30:28.664Z"
 }
