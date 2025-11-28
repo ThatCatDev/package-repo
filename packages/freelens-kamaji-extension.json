@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2025-11-28T11:19:58Z",
-  "pushedAt": "2025-11-28T11:33:27Z",
+  "updatedAt": "2025-11-28T11:44:16Z",
+  "pushedAt": "2025-11-28T11:46:27Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -92,7 +92,7 @@
       "@types/react-router-dom": "^5.3.3",
       "@vitejs/plugin-react": "^4.5.2",
       "electron-vite": "^3.1.0",
-      "mobx": "^6.13.7",
+      "mobx": "^6.15.0",
       "mobx-react": "^9.2.1",
       "react": "^17.0.2",
       "sass": "^1.89.2",
@@ -116,5 +116,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-28T11:40:18.795Z"
+  "lastScanned": "2025-11-28T11:47:31.382Z"
 }
