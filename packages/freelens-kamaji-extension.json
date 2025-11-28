@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
   "updatedAt": "2025-11-28T11:19:58Z",
-  "pushedAt": "2025-11-28T11:20:09Z",
+  "pushedAt": "2025-11-28T11:33:27Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -116,5 +116,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-11-28T11:30:47.430Z"
+  "lastScanned": "2025-11-28T11:40:18.795Z"
 }
