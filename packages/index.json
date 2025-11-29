@@ -15,8 +15,8 @@
     "repoName": "freelens-ai-extension",
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
-    "stars": 18,
-    "updatedAt": "2025-11-25T22:26:08Z",
+    "stars": 19,
+    "updatedAt": "2025-11-29T16:26:51Z",
     "latestVersion": "v0.4.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -103,8 +103,8 @@
     "repoName": "freelens-kamaji-extension",
     "fullName": "freelensapp/freelens-kamaji-extension",
     "description": "Kamaji of a Freelens extension",
-    "stars": 3,
-    "updatedAt": "2025-11-28T22:07:18Z",
+    "stars": 4,
+    "updatedAt": "2025-11-29T16:26:39Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
