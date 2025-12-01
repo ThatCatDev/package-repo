@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2025-12-01T11:47:04Z",
-  "pushedAt": "2025-12-01T11:49:01Z",
+  "updatedAt": "2025-12-01T14:11:01Z",
+  "pushedAt": "2025-12-01T14:13:31Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -85,9 +85,9 @@
     },
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.28.0",
-      "@electron-toolkit/tsconfig": "^1.0.1",
+      "@electron-toolkit/tsconfig": "^2.0.0",
       "@freelensapp/extensions": "^1.3.2",
-      "@types/node": "^22.15.31",
+      "@types/node": "^22.19.1",
       "@types/react": "^17.0.90",
       "@types/react-router-dom": "^5.3.3",
       "@vitejs/plugin-react": "^5.1.1",
@@ -119,5 +119,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-12-01T13:57:36.045Z"
+  "lastScanned": "2025-12-01T14:19:37.023Z"
 }
