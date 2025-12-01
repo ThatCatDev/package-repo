@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2025-12-01T15:42:13Z",
-  "pushedAt": "2025-12-01T15:42:13Z",
+  "updatedAt": "2025-12-01T16:16:15Z",
+  "pushedAt": "2025-12-01T16:16:15Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -119,5 +119,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-12-01T15:58:05.880Z"
+  "lastScanned": "2025-12-01T16:27:54.236Z"
 }
