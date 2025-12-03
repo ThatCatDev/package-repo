@@ -145,7 +145,7 @@
         {
           "name": "freelensapp-fluxcd-extension-5.2.1.tgz",
           "size": 288649,
-          "downloadCount": 15,
+          "downloadCount": 16,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.1/freelensapp-fluxcd-extension-5.2.1.tgz",
           "createdAt": "2025-11-26T23:21:41Z",
@@ -540,7 +540,7 @@
       "releaseName": "v5.2.1",
       "size": 288649,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.1/freelensapp-fluxcd-extension-5.2.1.tgz",
-      "downloadCount": 15,
+      "downloadCount": 16,
       "type": "tar.gz",
       "createdAt": "2025-11-26T23:21:41Z"
     },
@@ -652,7 +652,7 @@
       {
         "name": "freelensapp-fluxcd-extension-5.2.1.tgz",
         "size": 288649,
-        "downloadCount": 15,
+        "downloadCount": 16,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.1/freelensapp-fluxcd-extension-5.2.1.tgz",
         "createdAt": "2025-11-26T23:21:41Z",
@@ -663,5 +663,5 @@
   },
   "totalReleases": 10,
   "hasTarFiles": true,
-  "lastScanned": "2025-12-03T17:02:19.430Z"
+  "lastScanned": "2025-12-03T17:30:24.164Z"
 }
