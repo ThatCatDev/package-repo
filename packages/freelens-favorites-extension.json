@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-12-04T08:40:11Z",
-  "updatedAt": "2025-12-04T09:25:38Z",
-  "pushedAt": "2025-12-04T09:25:35Z",
+  "updatedAt": "2025-12-04T09:37:13Z",
+  "pushedAt": "2025-12-04T09:37:09Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -29,7 +29,7 @@
     "description": "FreeLens extension that adds a favorites/bookmarking system for sidebar navigation items with drag-and-drop reordering",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/dieg666/freelens-favorites-extension.git",
+      "url": "git+https://github.com/delgadodiaz/freelens-favorites-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -38,13 +38,13 @@
       "out/**/*"
     ],
     "engines": {
-      "node": ">= 18.0.0",
-      "freelens": ">=1.5.0"
+      "node": ">= 22.16.0",
+      "freelens": "^1.6.0"
     },
     "license": "MIT",
     "author": {
-      "name": "dieg666",
-      "email": "ddd.barna@hotmail.com"
+      "name": "delgadodiaz",
+      "email": "delgadodiaz@users.noreply.github.com"
     },
     "publishConfig": {
       "access": "public",
@@ -57,20 +57,25 @@
       "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
       "clean": "rm -rf out",
       "clean:all": "rm -rf out node_modules",
-      "pack:dev": "pnpm build && pnpm pack"
+      "pack:dev": "pnpm build && pnpm pack",
+      "test": "jest",
+      "test:watch": "jest --watch"
     },
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.28.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.7.0",
+      "@freelensapp/extensions": "^1.6.1",
+      "@types/jest": "^29.5.12",
       "@types/node": "~22.15.35",
       "@types/react": "^17.0.90",
       "@vitejs/plugin-react": "^5.1.1",
       "electron-vite": "^4.0.1",
+      "jest": "^29.7.0",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
       "react": "17.0.2",
       "sass": "^1.94.1",
+      "ts-jest": "^29.2.5",
       "typescript": "5.9.3",
       "vite": "^7.2.2",
       "vite-plugin-external": "^6.2.2",
@@ -94,5 +99,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-12-04T09:33:35.899Z"
+  "lastScanned": "2025-12-04T09:48:36.431Z"
 }
