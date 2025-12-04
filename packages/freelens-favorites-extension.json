@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-12-04T08:40:11Z",
-  "updatedAt": "2025-12-04T08:44:23Z",
-  "pushedAt": "2025-12-04T08:44:20Z",
+  "updatedAt": "2025-12-04T09:00:24Z",
+  "pushedAt": "2025-12-04T09:00:21Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -38,8 +38,8 @@
       "out/**/*"
     ],
     "engines": {
-      "node": ">= 22.16.0",
-      "freelens": "^1.6.0"
+      "node": ">= 18.0.0",
+      "freelens": ">=1.5.0"
     },
     "license": "MIT",
     "author": {
@@ -49,6 +49,12 @@
     "publishConfig": {
       "access": "public",
       "registry": "https://registry.npmjs.org/"
+    },
+    "peerDependencies": {
+      "@freelensapp/extensions": "^1.5.0 || ^1.6.0",
+      "mobx": "^6.0.0",
+      "mobx-react": "^7.0.0",
+      "react": "^17.0.0"
     },
     "scripts": {
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
@@ -62,7 +68,7 @@
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.28.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.6.1",
+      "@freelensapp/extensions": "^1.5.0",
       "@types/node": "~22.15.35",
       "@types/react": "^17.0.90",
       "@vitejs/plugin-react": "^5.1.1",
@@ -94,5 +100,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2025-12-04T08:50:54.818Z"
+  "lastScanned": "2025-12-04T09:02:10.871Z"
 }
