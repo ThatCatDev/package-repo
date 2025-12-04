@@ -77,6 +77,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-favorites-extension",
+    "repoName": "freelens-favorites-extension",
+    "fullName": "dieg666/freelens-favorites-extension",
+    "description": "FreeLens extension that adds a favorites/bookmarking system for sidebar navigation items with drag-and-drop reordering",
+    "stars": 0,
+    "updatedAt": "2025-12-04T08:44:23Z",
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@freelensapp/fluxcd-extension",
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
