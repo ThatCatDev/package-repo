@@ -15,8 +15,8 @@
     "repoName": "freelens-ai-extension",
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
-    "stars": 20,
-    "updatedAt": "2025-12-01T10:05:27Z",
+    "stars": 21,
+    "updatedAt": "2025-12-05T04:41:46Z",
     "latestVersion": "v0.4.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -49,7 +49,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 4,
-    "updatedAt": "2025-11-19T20:56:16Z",
+    "updatedAt": "2025-12-05T04:42:45Z",
     "latestVersion": "v1.6.2",
     "hasReleases": true,
     "hasTarFiles": true
@@ -92,8 +92,8 @@
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
-    "stars": 99,
-    "updatedAt": "2025-12-04T10:42:54Z",
+    "stars": 100,
+    "updatedAt": "2025-12-05T04:31:48Z",
     "latestVersion": "v5.2.1",
     "hasReleases": true,
     "hasTarFiles": true
