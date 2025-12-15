@@ -22,6 +22,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "@oguzhan-yilmaz/freelens-debug-extension",
+    "repoName": "freelens-debug-extension",
+    "fullName": "oguzhan-yilmaz/freelens-debug-extension",
+    "description": "Freelens kubectl debug extension",
+    "stars": 0,
+    "updatedAt": "2025-12-15T19:38:11Z",
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@mirtxa/freelens-pod-domino-delete-extension",
     "repoName": "freelens-domino-delete-pods-extension",
     "fullName": "mirtxa/freelens-domino-delete-pods-extension",
