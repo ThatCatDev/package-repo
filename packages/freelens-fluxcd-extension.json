@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-fluxcd-extension",
   "description": "Freelens extension for FluxCD",
   "homepage": "https://freelens.app",
-  "stars": 101,
+  "stars": 102,
   "forks": 9,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2026-01-12T13:23:34Z",
+  "updatedAt": "2026-01-12T17:10:00Z",
   "pushedAt": "2026-01-12T14:00:22Z",
   "defaultBranch": "main",
   "topics": [
@@ -663,5 +663,5 @@
   },
   "totalReleases": 10,
   "hasTarFiles": true,
-  "lastScanned": "2026-01-12T17:02:23.072Z"
+  "lastScanned": "2026-01-12T17:31:59.298Z"
 }

@@ -15,8 +15,8 @@
     "repoName": "freelens-ai-extension",
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
-    "stars": 22,
-    "updatedAt": "2026-01-06T15:16:17Z",
+    "stars": 23,
+    "updatedAt": "2026-01-12T17:09:53Z",
     "latestVersion": "v0.4.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -103,8 +103,8 @@
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
-    "stars": 101,
-    "updatedAt": "2026-01-12T13:23:34Z",
+    "stars": 102,
+    "updatedAt": "2026-01-12T17:10:00Z",
     "latestVersion": "v5.2.1",
     "hasReleases": true,
     "hasTarFiles": true
