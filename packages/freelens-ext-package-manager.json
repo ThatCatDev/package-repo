@@ -144,7 +144,7 @@
         {
           "name": "package-manager-1.1.0.tgz",
           "size": 174153,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "text/plain",
           "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-package-manager/releases/download/v1.1.0/package-manager-1.1.0.tgz",
           "createdAt": "2025-11-24T03:49:49Z",
@@ -219,7 +219,7 @@
       "releaseName": "v1.1.0",
       "size": 174153,
       "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-package-manager/releases/download/v1.1.0/package-manager-1.1.0.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-11-24T03:49:49Z"
     },
@@ -251,7 +251,7 @@
       {
         "name": "package-manager-1.1.0.tgz",
         "size": 174153,
-        "downloadCount": 3,
+        "downloadCount": 4,
         "contentType": "text/plain",
         "downloadUrl": "https://github.com/ThatCatDev/freelens-ext-package-manager/releases/download/v1.1.0/package-manager-1.1.0.tgz",
         "createdAt": "2025-11-24T03:49:49Z",
@@ -262,5 +262,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-01-26T07:17:18.669Z"
+  "lastScanned": "2026-01-26T07:43:09.341Z"
 }
