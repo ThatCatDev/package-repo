@@ -1,15 +1,15 @@
 {
-  "name": "freelens-hotkey-extension",
-  "repoName": "freelens-hotkey-extension",
-  "fullName": "YoranSys/freelens-hotkey-extension",
-  "description": "Hotkey helpers for Freelens",
-  "homepage": "https://github.com/YoranSys/freelens-hotkey-extension",
+  "name": "freelens-sre-stats-extension",
+  "repoName": "freelens-sre-stats-extension",
+  "fullName": "YoranSys/freelens-sre-stats-extension",
+  "description": "SRE investigation stats for Freelens clusters",
+  "homepage": "https://github.com/YoranSys/freelens-sre-stats-extension",
   "stars": 0,
   "forks": 0,
   "language": "TypeScript",
-  "createdAt": "2026-02-03T18:33:24Z",
-  "updatedAt": "2026-02-03T19:17:19Z",
-  "pushedAt": "2026-02-03T19:17:15Z",
+  "createdAt": "2026-02-03T18:33:51Z",
+  "updatedAt": "2026-02-03T19:04:11Z",
+  "pushedAt": "2026-02-03T19:03:16Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -19,17 +19,17 @@
     "url": "https://github.com/YoranSys"
   },
   "repository": {
-    "url": "https://github.com/YoranSys/freelens-hotkey-extension",
-    "cloneUrl": "https://github.com/YoranSys/freelens-hotkey-extension.git",
-    "sshUrl": "git@github.com:YoranSys/freelens-hotkey-extension.git"
+    "url": "https://github.com/YoranSys/freelens-sre-stats-extension",
+    "cloneUrl": "https://github.com/YoranSys/freelens-sre-stats-extension.git",
+    "sshUrl": "git@github.com:YoranSys/freelens-sre-stats-extension.git"
   },
   "packageJson": {
-    "name": "freelens-hotkey-extension",
+    "name": "freelens-sre-stats-extension",
     "version": "0.1.0",
-    "description": "Hotkey helpers for Freelens",
+    "description": "SRE investigation stats for Freelens clusters",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/yoransys/freelens-hotkey-extension.git",
+      "url": "git+https://github.com/yoransys/freelens-sre-stats-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -89,7 +89,8 @@
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.28.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.6.1",
+      "@freelensapp/extensions": "^1.8.0",
+      "@freelensapp/kube-object": "^1.8.0",
       "@types/node": "~22.15.35",
       "@types/react": "^17.0.90",
       "@vitejs/plugin-react": "^5.1.1",
@@ -110,16 +111,21 @@
       "openlens",
       "freelens"
     ],
-    "packageManager": "pnpm@10.22.0"
+    "packageManager": "pnpm@10.22.0",
+    "pnpm": {
+      "overrides": {
+        "@freelensapp/kube-object": "^1.8.0"
+      }
+    }
   },
   "releases": [],
   "tags": [
     {
       "name": "v0.1.0",
-      "commitSha": "25bd6e51426a56bdf6dd86d0352cb47c83eaa494",
-      "commitUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/commits/25bd6e51426a56bdf6dd86d0352cb47c83eaa494",
-      "zipballUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/zipball/refs/tags/v0.1.0",
-      "tarballUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/tarball/refs/tags/v0.1.0"
+      "commitSha": "ddf8d9b82329aff39428f58f1c1e6a6b996e9592",
+      "commitUrl": "https://api.github.com/repos/YoranSys/freelens-sre-stats-extension/commits/ddf8d9b82329aff39428f58f1c1e6a6b996e9592",
+      "zipballUrl": "https://api.github.com/repos/YoranSys/freelens-sre-stats-extension/zipball/refs/tags/v0.1.0",
+      "tarballUrl": "https://api.github.com/repos/YoranSys/freelens-sre-stats-extension/tarball/refs/tags/v0.1.0"
     }
   ],
   "versionHistory": [],
@@ -127,5 +133,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-02-03T19:29:16.963Z"
+  "lastScanned": "2026-02-03T19:29:19.956Z"
 }
