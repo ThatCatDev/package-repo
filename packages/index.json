@@ -110,6 +110,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-hotkey-extension",
+    "repoName": "freelens-hotkey-extension",
+    "fullName": "YoranSys/freelens-hotkey-extension",
+    "description": "Hotkey helpers for Freelens",
+    "stars": 0,
+    "updatedAt": "2026-02-03T18:33:33Z",
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@mike-callahan/jobset-extension",
     "repoName": "freelens-jobset-extension",
     "fullName": "mike-callahan/freelens-jobset-extension",
