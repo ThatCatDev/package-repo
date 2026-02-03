@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2025-12-05T04:42:45Z",
-  "pushedAt": "2026-02-03T17:01:20Z",
+  "updatedAt": "2026-02-03T21:59:34Z",
+  "pushedAt": "2026-02-03T22:05:05Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "1.6.2",
+    "version": "1.8.0-1",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -38,8 +38,8 @@
       "out/**/*"
     ],
     "engines": {
-      "node": ">= 22.16.0",
-      "freelens": "^1.6.0"
+      "node": ">= 22.0.0",
+      "freelens": "^1.8.0"
     },
     "copyright": "© 2025 Freelens Authors",
     "license": "MIT",
@@ -89,8 +89,8 @@
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.28.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.6.1",
-      "@types/node": "~22.15.35",
+      "@freelensapp/extensions": "^1.8.0",
+      "@types/node": "~22.19.3",
       "@types/react": "^17.0.90",
       "@vitejs/plugin-react": "^5.1.1",
       "electron-vite": "^4.0.1",
@@ -848,5 +848,5 @@
   },
   "totalReleases": 14,
   "hasTarFiles": true,
-  "lastScanned": "2026-02-03T21:47:27.748Z"
+  "lastScanned": "2026-02-03T22:15:26.097Z"
 }
