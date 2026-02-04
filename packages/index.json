@@ -60,7 +60,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 4,
-    "updatedAt": "2026-02-04T00:56:13Z",
+    "updatedAt": "2026-02-04T16:24:23Z",
     "latestVersion": "v1.6.2",
     "hasReleases": true,
     "hasTarFiles": true
@@ -115,10 +115,10 @@
     "fullName": "YoranSys/freelens-hotkey-extension",
     "description": "Hotkey helpers for Freelens",
     "stars": 0,
-    "updatedAt": "2026-02-04T13:29:53Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-02-04T15:53:07Z",
+    "latestVersion": "v0.1.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@mike-callahan/jobset-extension",
@@ -170,10 +170,10 @@
     "fullName": "YoranSys/freelens-sre-stats-extension",
     "description": "SRE investigation stats for Freelens clusters",
     "stars": 0,
-    "updatedAt": "2026-02-04T13:29:55Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-02-04T15:52:01Z",
+    "latestVersion": "v0.1.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-sveltos-extension",

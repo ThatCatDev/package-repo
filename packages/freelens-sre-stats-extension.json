@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-02-03T18:33:51Z",
-  "updatedAt": "2026-02-04T13:29:55Z",
-  "pushedAt": "2026-02-04T13:32:57Z",
+  "updatedAt": "2026-02-04T15:52:01Z",
+  "pushedAt": "2026-02-04T16:01:08Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -118,20 +118,91 @@
       }
     }
   },
-  "releases": [],
+  "releases": [
+    {
+      "id": 283027754,
+      "tagName": "v0.1.0",
+      "name": "v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-02-04T15:51:17Z",
+      "publishedAt": "2026-02-04T16:01:40Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelens-stats-extension-0.1.0.tgz",
+          "size": 722027,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/YoranSys/freelens-sre-stats-extension/releases/download/v0.1.0/freelens-stats-extension-0.1.0.tgz",
+          "createdAt": "2026-02-04T16:01:40Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
   "tags": [
     {
       "name": "v0.1.0",
-      "commitSha": "ddf8d9b82329aff39428f58f1c1e6a6b996e9592",
-      "commitUrl": "https://api.github.com/repos/YoranSys/freelens-sre-stats-extension/commits/ddf8d9b82329aff39428f58f1c1e6a6b996e9592",
+      "commitSha": "3cf57f5c303312bc672cb7db42a22a9ccc37bc45",
+      "commitUrl": "https://api.github.com/repos/YoranSys/freelens-sre-stats-extension/commits/3cf57f5c303312bc672cb7db42a22a9ccc37bc45",
       "zipballUrl": "https://api.github.com/repos/YoranSys/freelens-sre-stats-extension/zipball/refs/tags/v0.1.0",
       "tarballUrl": "https://api.github.com/repos/YoranSys/freelens-sre-stats-extension/tarball/refs/tags/v0.1.0"
     }
   ],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-02-04T15:41:12.266Z"
+  "versionHistory": [
+    {
+      "version": "v0.1.0",
+      "name": "v0.1.0",
+      "publishedAt": "2026-02-04T16:01:40Z",
+      "isPrerelease": false,
+      "notes": null
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelens-stats-extension-0.1.0.tgz",
+      "releaseTag": "v0.1.0",
+      "releaseName": "v0.1.0",
+      "size": 722027,
+      "downloadUrl": "https://github.com/YoranSys/freelens-sre-stats-extension/releases/download/v0.1.0/freelens-stats-extension-0.1.0.tgz",
+      "downloadCount": 2,
+      "type": "tar.gz",
+      "createdAt": "2026-02-04T16:01:40Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 283027754,
+    "tagName": "v0.1.0",
+    "name": "v0.1.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-02-04T15:51:17Z",
+    "publishedAt": "2026-02-04T16:01:40Z",
+    "body": null,
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelens-stats-extension-0.1.0.tgz",
+        "size": 722027,
+        "downloadCount": 2,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/YoranSys/freelens-sre-stats-extension/releases/download/v0.1.0/freelens-stats-extension-0.1.0.tgz",
+        "createdAt": "2026-02-04T16:01:40Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-02-04T16:26:53.264Z"
 }
