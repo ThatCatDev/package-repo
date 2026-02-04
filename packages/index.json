@@ -115,8 +115,8 @@
     "fullName": "YoranSys/freelens-hotkey-extension",
     "description": "Hotkey helpers for Freelens",
     "stars": 0,
-    "updatedAt": "2026-02-04T15:53:07Z",
-    "latestVersion": "v0.1.0",
+    "updatedAt": "2026-02-04T19:36:14Z",
+    "latestVersion": "v0.1.1",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -170,8 +170,8 @@
     "fullName": "YoranSys/freelens-sre-stats-extension",
     "description": "SRE investigation stats for Freelens clusters",
     "stars": 0,
-    "updatedAt": "2026-02-04T15:52:01Z",
-    "latestVersion": "v0.1.0",
+    "updatedAt": "2026-02-04T19:35:33Z",
+    "latestVersion": "v0.1.1",
     "hasReleases": true,
     "hasTarFiles": true
   },

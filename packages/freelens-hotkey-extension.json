@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-02-03T18:33:24Z",
-  "updatedAt": "2026-02-04T15:53:07Z",
-  "pushedAt": "2026-02-04T16:00:31Z",
+  "updatedAt": "2026-02-04T19:36:14Z",
+  "pushedAt": "2026-02-04T19:36:25Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "freelens-hotkey-extension",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Hotkey helpers for Freelens",
     "repository": {
       "type": "git",
@@ -114,6 +114,32 @@
   },
   "releases": [
     {
+      "id": 283107407,
+      "tagName": "v0.1.1",
+      "name": "v0.1.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-02-04T19:35:58Z",
+      "publishedAt": "2026-02-04T19:36:52Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelens-hotkey-extension-0.1.1.tgz",
+          "size": 10300,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
+          "createdAt": "2026-02-04T19:36:51Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 283027498,
       "tagName": "v0.1.0",
       "name": "v0.1.0",
@@ -142,6 +168,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.1",
+      "commitSha": "8ce8db2ded418d225d9d3fe6da4d8a1a22d734f9",
+      "commitUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/commits/8ce8db2ded418d225d9d3fe6da4d8a1a22d734f9",
+      "zipballUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/zipball/refs/tags/v0.1.1",
+      "tarballUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/tarball/refs/tags/v0.1.1"
+    },
+    {
       "name": "v0.1.0",
       "commitSha": "0eda9654ebc8ad637bbb87ac8724df90cdaa0572",
       "commitUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/commits/0eda9654ebc8ad637bbb87ac8724df90cdaa0572",
@@ -151,6 +184,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.1.1",
+      "name": "v0.1.1",
+      "publishedAt": "2026-02-04T19:36:52Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v0.1.0",
       "name": "v0.1.0",
       "publishedAt": "2026-02-04T16:00:59Z",
@@ -159,6 +199,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelens-hotkey-extension-0.1.1.tgz",
+      "releaseTag": "v0.1.1",
+      "releaseName": "v0.1.1",
+      "size": 10300,
+      "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-02-04T19:36:51Z"
+    },
     {
       "filename": "freelens-hotkey-extension-0.1.0.tgz",
       "releaseTag": "v0.1.0",
@@ -171,13 +221,13 @@
     }
   ],
   "latestRelease": {
-    "id": 283027498,
-    "tagName": "v0.1.0",
-    "name": "v0.1.0",
+    "id": 283107407,
+    "tagName": "v0.1.1",
+    "name": "v0.1.1",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-02-04T15:52:47Z",
-    "publishedAt": "2026-02-04T16:00:59Z",
+    "createdAt": "2026-02-04T19:35:58Z",
+    "publishedAt": "2026-02-04T19:36:52Z",
     "body": null,
     "author": {
       "login": "github-actions[bot]",
@@ -185,18 +235,18 @@
     },
     "assets": [
       {
-        "name": "freelens-hotkey-extension-0.1.0.tgz",
-        "size": 10299,
-        "downloadCount": 2,
+        "name": "freelens-hotkey-extension-0.1.1.tgz",
+        "size": 10300,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.0/freelens-hotkey-extension-0.1.0.tgz",
-        "createdAt": "2026-02-04T16:00:59Z",
+        "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
+        "createdAt": "2026-02-04T19:36:51Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 1,
+  "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-02-04T19:02:24.226Z"
+  "lastScanned": "2026-02-04T19:41:49.028Z"
 }
