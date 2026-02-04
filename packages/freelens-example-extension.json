@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-02-04T17:26:56Z",
-  "pushedAt": "2026-02-04T17:30:34Z",
+  "updatedAt": "2026-02-04T18:19:40Z",
+  "pushedAt": "2026-02-04T18:18:49Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -113,6 +113,32 @@
     "packageManager": "pnpm@10.28.2"
   },
   "releases": [
+    {
+      "id": 283081728,
+      "tagName": "v1.8.0",
+      "name": "v1.8.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-02-04T18:18:01Z",
+      "publishedAt": "2026-02-04T18:19:23Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-example-extension-1.8.0.tgz",
+          "size": 17561,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.8.0/freelensapp-example-extension-1.8.0.tgz",
+          "createdAt": "2026-02-04T18:19:22Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 263786570,
       "tagName": "v1.6.2",
@@ -480,6 +506,13 @@
   ],
   "tags": [
     {
+      "name": "v1.8.0",
+      "commitSha": "b58825643e53b61a479fc1ba74e1c511d2170781",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/b58825643e53b61a479fc1ba74e1c511d2170781",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/zipball/refs/tags/v1.8.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/tarball/refs/tags/v1.8.0"
+    },
+    {
       "name": "v1.6.2",
       "commitSha": "6fd14304afc76ebc9d2c0b16e1f3a97e6f41320b",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/6fd14304afc76ebc9d2c0b16e1f3a97e6f41320b",
@@ -580,6 +613,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v1.8.0",
+      "name": "v1.8.0",
+      "publishedAt": "2026-02-04T18:19:23Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v1.6.2",
       "name": "v1.6.2",
       "publishedAt": "2025-11-19T21:04:08Z",
@@ -679,6 +719,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-example-extension-1.8.0.tgz",
+      "releaseTag": "v1.8.0",
+      "releaseName": "v1.8.0",
+      "size": 17561,
+      "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.8.0/freelensapp-example-extension-1.8.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-02-04T18:19:22Z"
+    },
     {
       "filename": "freelensapp-example-extension-1.6.2.tgz",
       "releaseTag": "v1.6.2",
@@ -821,32 +871,32 @@
     }
   ],
   "latestRelease": {
-    "id": 263786570,
-    "tagName": "v1.6.2",
-    "name": "v1.6.2",
+    "id": 283081728,
+    "tagName": "v1.8.0",
+    "name": "v1.8.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2025-11-19T20:56:09Z",
-    "publishedAt": "2025-11-19T21:04:08Z",
-    "body": "## What's Changed\r\n* CI: Use Turbo cache for tests and builds by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/178\r\n* Vite config as Javascript to not confuse type checks for application by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/179\r\n* CI: clean up workflows by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/181\r\n* CI: Correct pnpm to use Github cache by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/182\r\n* Return the page for available version by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/183\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.6.1...v1.6.2",
+    "createdAt": "2026-02-04T18:18:01Z",
+    "publishedAt": "2026-02-04T18:19:23Z",
+    "body": null,
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-example-extension-1.6.2.tgz",
-        "size": 17553,
-        "downloadCount": 2,
+        "name": "freelensapp-example-extension-1.8.0.tgz",
+        "size": 17561,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.2/freelensapp-example-extension-1.6.2.tgz",
-        "createdAt": "2025-11-19T21:04:08Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.8.0/freelensapp-example-extension-1.8.0.tgz",
+        "createdAt": "2026-02-04T18:19:22Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 14,
+  "totalReleases": 15,
   "hasTarFiles": true,
-  "lastScanned": "2026-02-04T18:02:59.020Z"
+  "lastScanned": "2026-02-04T19:02:19.130Z"
 }
