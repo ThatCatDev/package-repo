@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-02-03T23:15:21Z",
-  "pushedAt": "2026-02-03T23:21:39Z",
+  "updatedAt": "2026-02-04T00:56:13Z",
+  "pushedAt": "2026-02-04T00:56:11Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -67,7 +67,7 @@
       "lint": "corepack pnpm lint:check",
       "lint:check": "corepack pnpm \"/^(biome|prettier):check\\$/\"",
       "lint:fix": "corepack pnpm \"/^(biome|prettier):fix\\$/\"",
-      "knip": "corepack pnpm dlx knip@5.70.0 --dependencies --no-gitignore",
+      "knip": "corepack pnpm dlx knip@5.83.0 --dependencies --no-gitignore",
       "knip:check": "corepack pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "corepack pnpm knip",
       "knip:production": "corepack pnpm knip --production --strict",
@@ -848,5 +848,5 @@
   },
   "totalReleases": 14,
   "hasTarFiles": true,
-  "lastScanned": "2026-02-03T23:58:33.594Z"
+  "lastScanned": "2026-02-04T02:03:34.791Z"
 }
