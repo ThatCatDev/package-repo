@@ -8,8 +8,8 @@
   "forks": 9,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2026-02-11T14:57:03Z",
-  "pushedAt": "2026-02-11T14:57:01Z",
+  "updatedAt": "2026-02-11T15:13:30Z",
+  "pushedAt": "2026-02-11T15:43:21Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -73,7 +73,7 @@
       "lint": "corepack pnpm lint:check",
       "lint:check": "corepack pnpm \"/^(biome|prettier):check\\$/\"",
       "lint:fix": "corepack pnpm \"/^(biome|prettier):fix\\$/\"",
-      "knip": "corepack pnpm dlx knip@5.70.2 --dependencies --no-gitignore",
+      "knip": "corepack pnpm dlx knip@5.83.1 --dependencies --no-gitignore",
       "knip:check": "corepack pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "corepack pnpm knip",
       "knip:production": "corepack pnpm knip --production --strict",
@@ -93,7 +93,7 @@
       "postupdate": "corepack pnpm biome:migrate"
     },
     "devDependencies": {
-      "@babel/plugin-proposal-decorators": "^7.28.0",
+      "@babel/plugin-proposal-decorators": "^7.29.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
       "@freelensapp/extensions": "^1.5.3",
       "@freelensapp/kube-object": "^1.6.2",
@@ -103,14 +103,14 @@
       "@types/react": "^17.0.91",
       "@types/react-router-dom": "^5.3.3",
       "@vitejs/plugin-react": "^5.1.1",
-      "electron-vite": "^4.0.1",
+      "electron-vite": "^5.0.0",
       "js-base64": "^3.7.8",
       "js-yaml": "^4.1.1",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
       "moment": "^2.30.1",
       "react": "17.0.2",
-      "sass": "^1.94.2",
+      "sass": "^1.97.3",
       "typescript": "5.9.3",
       "vite": "^7.3.1",
       "vite-plugin-external": "^6.2.2",
@@ -663,5 +663,5 @@
   },
   "totalReleases": 10,
   "hasTarFiles": true,
-  "lastScanned": "2026-02-11T14:57:24.068Z"
+  "lastScanned": "2026-02-11T15:58:09.725Z"
 }
