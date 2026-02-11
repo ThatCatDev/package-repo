@@ -104,8 +104,8 @@
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
     "stars": 106,
-    "updatedAt": "2026-02-11T17:04:16Z",
-    "latestVersion": "v5.2.1",
+    "updatedAt": "2026-02-11T18:18:23Z",
+    "latestVersion": "v5.2.2",
     "hasReleases": true,
     "hasTarFiles": true
   },
