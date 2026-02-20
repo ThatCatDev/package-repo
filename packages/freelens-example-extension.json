@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-example-extension",
   "description": "Example of a Freelens extension",
   "homepage": "https://freelens.app",
-  "stars": 4,
+  "stars": 5,
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-02-04T18:19:40Z",
+  "updatedAt": "2026-02-20T14:52:01Z",
   "pushedAt": "2026-02-20T07:05:58Z",
   "defaultBranch": "main",
   "topics": [],
@@ -898,5 +898,5 @@
   },
   "totalReleases": 15,
   "hasTarFiles": true,
-  "lastScanned": "2026-02-20T14:23:03.682Z"
+  "lastScanned": "2026-02-20T15:04:05.036Z"
 }
