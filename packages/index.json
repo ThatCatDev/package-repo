@@ -48,8 +48,8 @@
     "repoName": "freelens-duplicate-extension",
     "fullName": "omarluq/freelens-duplicate-extension",
     "description": "Create duplicate debug pods from freelens",
-    "stars": 4,
-    "updatedAt": "2026-02-04T12:24:37Z",
+    "stars": 5,
+    "updatedAt": "2026-02-27T07:31:04Z",
     "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false
@@ -125,8 +125,8 @@
     "repoName": "freelens-jobset-extension",
     "fullName": "mike-callahan/freelens-jobset-extension",
     "description": "Extension that adds information on sigs.k8s.io JobSets",
-    "stars": 2,
-    "updatedAt": "2025-10-03T00:24:44Z",
+    "stars": 3,
+    "updatedAt": "2026-02-27T07:31:08Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true

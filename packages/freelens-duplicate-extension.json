@@ -4,11 +4,11 @@
   "fullName": "omarluq/freelens-duplicate-extension",
   "description": "Create duplicate debug pods from freelens",
   "homepage": "https://www.npmjs.com/package/@omarluq/freelens-duplicate-extension",
-  "stars": 4,
+  "stars": 5,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-07-23T04:17:22Z",
-  "updatedAt": "2026-02-04T12:24:37Z",
+  "updatedAt": "2026-02-27T07:31:04Z",
   "pushedAt": "2026-02-22T06:26:59Z",
   "defaultBranch": "main",
   "topics": [],
@@ -120,5 +120,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-02-27T07:09:09.799Z"
+  "lastScanned": "2026-02-27T07:53:01.761Z"
 }
