@@ -61,9 +61,9 @@
     "description": "Example of a Freelens extension",
     "stars": 5,
     "updatedAt": "2026-02-20T14:52:01Z",
-    "latestVersion": "1.8.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v1.8.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@thatcatdev/k-menu",
