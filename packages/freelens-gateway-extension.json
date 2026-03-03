@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-03-03T10:20:28Z",
-  "updatedAt": "2026-03-03T10:22:29Z",
-  "pushedAt": "2026-03-03T10:22:25Z",
+  "updatedAt": "2026-03-03T10:45:00Z",
+  "pushedAt": "2026-03-03T10:44:55Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "freelens-gateway-extension",
-    "version": "0.1.1-dev.0",
+    "version": "0.1.0",
     "description": "Freelens extension for Kubernetes Gateway API and NGINX Gateway Fabric resources",
     "main": "out/main/index.js",
     "renderer": "out/renderer/index.js",
@@ -85,5 +85,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-03-03T10:33:43.661Z"
+  "lastScanned": "2026-03-03T11:07:34.096Z"
 }
