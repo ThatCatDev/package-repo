@@ -1,0 +1,89 @@
+{
+  "name": "freelens-gateway-extension",
+  "repoName": "freelens-gateway-extension",
+  "fullName": "ganey/freelens-gateway-extension",
+  "description": "Freelens extension for Kubernetes Gateway API and NGINX Gateway Fabric resources",
+  "homepage": "https://github.com/ganey/freelens-gateway-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": "TypeScript",
+  "createdAt": "2026-03-03T10:20:28Z",
+  "updatedAt": "2026-03-03T10:22:29Z",
+  "pushedAt": "2026-03-03T10:22:25Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "ganey",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1401832?v=4",
+    "url": "https://github.com/ganey"
+  },
+  "repository": {
+    "url": "https://github.com/ganey/freelens-gateway-extension",
+    "cloneUrl": "https://github.com/ganey/freelens-gateway-extension.git",
+    "sshUrl": "git@github.com:ganey/freelens-gateway-extension.git"
+  },
+  "packageJson": {
+    "name": "freelens-gateway-extension",
+    "version": "0.1.1-dev.0",
+    "description": "Freelens extension for Kubernetes Gateway API and NGINX Gateway Fabric resources",
+    "main": "out/main/index.js",
+    "renderer": "out/renderer/index.js",
+    "files": [
+      "out/**/*"
+    ],
+    "engines": {
+      "node": ">= 22.0.0",
+      "freelens": "^1.8.0"
+    },
+    "scripts": {
+      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
+      "build": "pnpm type:check && electron-vite build",
+      "build:force": "electron-vite build",
+      "pack:dev": "npm version prerelease --preid dev --no-git-tag-version && pnpm build && pnpm pack",
+      "lint:check": "biome check . && prettier --check .",
+      "lint:fix": "biome check --write . && prettier --write .",
+      "clean": "rm -rf out",
+      "clean:all": "rm -rf out node_modules *.tgz src/**/*.d.scss.ts"
+    },
+    "dependencies": {
+      "mobx": "6.13.7",
+      "mobx-react": "7.6.0"
+    },
+    "devDependencies": {
+      "@babel/plugin-proposal-decorators": "^7.29.0",
+      "@biomejs/biome": "^1.9.4",
+      "@electron-toolkit/tsconfig": "^2.0.0",
+      "@freelensapp/extensions": "^1.8.1",
+      "@types/node": "~22.19.11",
+      "@types/react": "^17.0.90",
+      "@vitejs/plugin-react": "^5.1.3",
+      "electron-vite": "^5.0.0",
+      "prettier": "^3.5.3",
+      "react": "17.0.2",
+      "sass": "^1.97.3",
+      "typescript": "5.9.3",
+      "vite": "^7.3.1",
+      "vite-plugin-external": "^6.2.2",
+      "vite-plugin-sass-dts": "^1.3.35"
+    },
+    "packageManager": "pnpm@10.8.1",
+    "keywords": [
+      "extension",
+      "freelensapp",
+      "freelens",
+      "gateway-api",
+      "nginx-gateway-fabric",
+      "kubernetes"
+    ],
+    "license": "MIT"
+  },
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-03-03T10:33:43.661Z"
+}

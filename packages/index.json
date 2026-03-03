@@ -110,6 +110,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-gateway-extension",
+    "repoName": "freelens-gateway-extension",
+    "fullName": "ganey/freelens-gateway-extension",
+    "description": "Freelens extension for Kubernetes Gateway API and NGINX Gateway Fabric resources",
+    "stars": 0,
+    "updatedAt": "2026-03-03T10:22:29Z",
+    "latestVersion": "0.1.1-dev.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-hotkey-extension",
     "repoName": "freelens-hotkey-extension",
     "fullName": "YoranSys/freelens-hotkey-extension",
