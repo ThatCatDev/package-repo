@@ -88,6 +88,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "@ganey/freelens-externalsecrets-extension",
+    "repoName": "freelens-externalsecrets-extension",
+    "fullName": "ganey/freelens-externalsecrets-extension",
+    "description": "Freelens extension for External Secrets Operator",
+    "stars": 0,
+    "updatedAt": "2026-03-07T01:29:29Z",
+    "latestVersion": "0.3.2",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-favorites-extension",
     "repoName": "freelens-favorites-extension",
     "fullName": "dieg666/freelens-favorites-extension",
