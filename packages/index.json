@@ -94,9 +94,9 @@
     "description": "Freelens extension for External Secrets Operator",
     "stars": 0,
     "updatedAt": "2026-03-08T20:39:47Z",
-    "latestVersion": "v0.3.3",
+    "latestVersion": "v0.3.4",
     "hasReleases": true,
-    "hasTarFiles": false
+    "hasTarFiles": true
   },
   {
     "name": "freelens-favorites-extension",
