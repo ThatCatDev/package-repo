@@ -114,8 +114,8 @@
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
-    "stars": 110,
-    "updatedAt": "2026-03-19T07:27:42Z",
+    "stars": 112,
+    "updatedAt": "2026-03-27T10:38:03Z",
     "latestVersion": "v5.2.2",
     "hasReleases": true,
     "hasTarFiles": true
