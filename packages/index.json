@@ -165,6 +165,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "freelens-karpenter-extension",
+    "repoName": "freelens-karpenter-extension",
+    "fullName": "ricardocunha/freelens-karpenter-extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2026-03-27T15:30:37Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-pod-domino-delete-extension",
     "repoName": "freelens-pod-domino-delete-extension",
     "fullName": "mirtxa/freelens-pod-domino-delete-extension",

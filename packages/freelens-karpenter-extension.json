@@ -1,0 +1,35 @@
+{
+  "name": "freelens-karpenter-extension",
+  "repoName": "freelens-karpenter-extension",
+  "fullName": "ricardocunha/freelens-karpenter-extension",
+  "description": "",
+  "homepage": "https://github.com/ricardocunha/freelens-karpenter-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-03-27T15:30:37Z",
+  "updatedAt": "2026-03-27T15:30:37Z",
+  "pushedAt": "2026-03-27T15:30:37Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": null,
+  "owner": {
+    "login": "ricardocunha",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1058969?v=4",
+    "url": "https://github.com/ricardocunha"
+  },
+  "repository": {
+    "url": "https://github.com/ricardocunha/freelens-karpenter-extension",
+    "cloneUrl": "https://github.com/ricardocunha/freelens-karpenter-extension.git",
+    "sshUrl": "git@github.com:ricardocunha/freelens-karpenter-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-03-27T15:31:33.813Z"
+}
