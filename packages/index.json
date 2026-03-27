@@ -168,10 +168,10 @@
     "name": "freelens-karpenter-extension",
     "repoName": "freelens-karpenter-extension",
     "fullName": "ricardocunha/freelens-karpenter-extension",
-    "description": "",
+    "description": "FreeLens extension for Karpenter CRD visibility and operational insights",
     "stars": 0,
-    "updatedAt": "2026-03-27T15:30:37Z",
-    "latestVersion": null,
+    "updatedAt": "2026-03-27T16:15:22Z",
+    "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
