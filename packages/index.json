@@ -22,6 +22,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-argocd-extension",
+    "repoName": "freelens-argocd-extension",
+    "fullName": "jhajali/freelens-argocd-extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2026-03-30T14:30:17Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@oguzhan-yilmaz/freelens-debug-extension",
     "repoName": "freelens-debug-extension",
     "fullName": "oguzhan-yilmaz/freelens-debug-extension",
