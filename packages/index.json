@@ -22,15 +22,15 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-argocd-extension",
+    "name": "@freelensapp/argocd-extension",
     "repoName": "freelens-argocd-extension",
     "fullName": "jhajali/freelens-argocd-extension",
-    "description": "",
+    "description": "Freelens extension for ArgoCD",
     "stars": 0,
-    "updatedAt": "2026-03-30T14:30:17Z",
-    "latestVersion": null,
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-03-30T15:09:59Z",
+    "latestVersion": "v0.1.1",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@oguzhan-yilmaz/freelens-debug-extension",
@@ -172,6 +172,17 @@
     "stars": 4,
     "updatedAt": "2025-12-03T22:14:01Z",
     "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
+    "name": "freelens-kargo-extension",
+    "repoName": "freelens-kargo-extension",
+    "fullName": "jhajali/freelens-kargo-extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2026-03-30T15:21:57Z",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },

@@ -1,0 +1,35 @@
+{
+  "name": "freelens-kargo-extension",
+  "repoName": "freelens-kargo-extension",
+  "fullName": "jhajali/freelens-kargo-extension",
+  "description": "",
+  "homepage": "https://github.com/jhajali/freelens-kargo-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-03-30T15:18:15Z",
+  "updatedAt": "2026-03-30T15:21:57Z",
+  "pushedAt": "2026-03-30T15:18:22Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "jhajali",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/123369524?v=4",
+    "url": "https://github.com/jhajali"
+  },
+  "repository": {
+    "url": "https://github.com/jhajali/freelens-kargo-extension",
+    "cloneUrl": "https://github.com/jhajali/freelens-kargo-extension.git",
+    "sshUrl": "git@github.com:jhajali/freelens-kargo-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-03-30T16:01:51.076Z"
+}
