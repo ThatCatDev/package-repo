@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-03-31T20:13:44Z",
-  "updatedAt": "2026-04-01T23:25:53Z",
-  "pushedAt": "2026-04-01T23:25:49Z",
+  "updatedAt": "2026-04-01T23:42:00Z",
+  "pushedAt": "2026-04-01T23:41:56Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -104,8 +104,46 @@
       ]
     }
   },
-  "releases": [],
+  "releases": [
+    {
+      "id": 304454356,
+      "tagName": "0.2.0",
+      "name": "0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-04-01T23:29:10Z",
+      "publishedAt": "2026-04-01T23:48:49Z",
+      "body": "## What's Changed\r\n* Feat/improvements workflow by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/6\r\n* Feat/add memory to reduce context by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/8\r\n* feat: add SRE mode options and object-aware prompt functionality to c… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/compare/0.1.0...0.2.0",
+      "author": {
+        "login": "b-iurea",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/120199048?v=4"
+      },
+      "assets": []
+    },
+    {
+      "id": 304454116,
+      "tagName": "0.1.0",
+      "name": "0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-04-01T21:41:27Z",
+      "publishedAt": "2026-04-01T23:47:29Z",
+      "body": "## What's Changed\r\n* fix: model no change by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/1\r\n* refactor: fix graphic bugs by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/2\r\n* feat(params): enable edit param of models directly from pugin by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/3\r\n* Fix remote access by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/4\r\n* refactor: better context pipeline flow by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/5\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/commits/0.1.0",
+      "author": {
+        "login": "b-iurea",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/120199048?v=4"
+      },
+      "assets": []
+    }
+  ],
   "tags": [
+    {
+      "name": "0.2.0",
+      "commitSha": "07fe0463d56ea74301649a1bff8c6113f6cf7850",
+      "commitUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/commits/07fe0463d56ea74301649a1bff8c6113f6cf7850",
+      "zipballUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/zipball/refs/tags/0.2.0",
+      "tarballUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/tarball/refs/tags/0.2.0"
+    },
     {
       "name": "0.1.0",
       "commitSha": "bf9ec141e633b158d9b71610882076536fb84bca",
@@ -114,10 +152,39 @@
       "tarballUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/tarball/refs/tags/0.1.0"
     }
   ],
-  "versionHistory": [],
+  "versionHistory": [
+    {
+      "version": "0.2.0",
+      "name": "0.2.0",
+      "publishedAt": "2026-04-01T23:48:49Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Feat/improvements workflow by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/6\r\n* Feat/add memory to reduce context by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/8\r\n* feat: add SRE mode options and object-aware prompt functionality to c… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/compare/0.1.0...0.2.0"
+    },
+    {
+      "version": "0.1.0",
+      "name": "0.1.0",
+      "publishedAt": "2026-04-01T23:47:29Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* fix: model no change by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/1\r\n* refactor: fix graphic bugs by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/2\r\n* feat(params): enable edit param of models directly from pugin by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/3\r\n* Fix remote access by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/4\r\n* refactor: better context pipeline flow by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/5\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/commits/0.1.0"
+    }
+  ],
   "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
+  "latestRelease": {
+    "id": 304454356,
+    "tagName": "0.2.0",
+    "name": "0.2.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-04-01T23:29:10Z",
+    "publishedAt": "2026-04-01T23:48:49Z",
+    "body": "## What's Changed\r\n* Feat/improvements workflow by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/6\r\n* Feat/add memory to reduce context by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/8\r\n* feat: add SRE mode options and object-aware prompt functionality to c… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/compare/0.1.0...0.2.0",
+    "author": {
+      "login": "b-iurea",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/120199048?v=4"
+    },
+    "assets": []
+  },
+  "totalReleases": 2,
   "hasTarFiles": false,
-  "lastScanned": "2026-04-01T23:26:47.884Z"
+  "lastScanned": "2026-04-01T23:55:24.259Z"
 }
