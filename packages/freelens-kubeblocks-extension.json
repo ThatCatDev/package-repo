@@ -1,0 +1,35 @@
+{
+  "name": "freelens-kubeblocks-extension",
+  "repoName": "freelens-kubeblocks-extension",
+  "fullName": "jhajali/freelens-kubeblocks-extension",
+  "description": "",
+  "homepage": "https://github.com/jhajali/freelens-kubeblocks-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-04-01T07:21:40Z",
+  "updatedAt": "2026-04-01T07:21:45Z",
+  "pushedAt": "2026-04-01T07:21:41Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "jhajali",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/123369524?v=4",
+    "url": "https://github.com/jhajali"
+  },
+  "repository": {
+    "url": "https://github.com/jhajali/freelens-kubeblocks-extension",
+    "cloneUrl": "https://github.com/jhajali/freelens-kubeblocks-extension.git",
+    "sshUrl": "git@github.com:jhajali/freelens-kubeblocks-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-04-01T07:48:57.514Z"
+}

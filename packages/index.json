@@ -176,15 +176,15 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-kargo-extension",
+    "name": "@freelensapp/kargo-extension",
     "repoName": "freelens-kargo-extension",
     "fullName": "jhajali/freelens-kargo-extension",
-    "description": "",
+    "description": "Freelens extension for Kargo",
     "stars": 0,
-    "updatedAt": "2026-03-30T15:21:57Z",
-    "latestVersion": null,
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-04-01T07:17:18Z",
+    "latestVersion": "v0.1.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-karpenter-extension",
@@ -194,6 +194,17 @@
     "stars": 0,
     "updatedAt": "2026-03-27T16:15:22Z",
     "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
+    "name": "freelens-kubeblocks-extension",
+    "repoName": "freelens-kubeblocks-extension",
+    "fullName": "jhajali/freelens-kubeblocks-extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2026-04-01T07:21:45Z",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
