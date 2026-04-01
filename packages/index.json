@@ -198,15 +198,15 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-kubeblocks-extension",
+    "name": "@freelensapp/kubeblocks-extension",
     "repoName": "freelens-kubeblocks-extension",
     "fullName": "jhajali/freelens-kubeblocks-extension",
-    "description": "",
+    "description": "Freelens extension for KubeBlocks",
     "stars": 0,
-    "updatedAt": "2026-04-01T07:21:45Z",
-    "latestVersion": null,
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-04-01T11:03:09Z",
+    "latestVersion": "v0.1.2",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-pod-domino-delete-extension",
