@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-03-31T20:13:44Z",
-  "updatedAt": "2026-04-01T20:18:36Z",
-  "pushedAt": "2026-04-01T21:41:32Z",
+  "updatedAt": "2026-04-01T23:25:53Z",
+  "pushedAt": "2026-04-01T23:25:49Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -30,7 +30,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/k8s-sre-assistant",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Kubernetes SRE AI Assistant for Freelens - Chat with Ollama to manage and troubleshoot your clusters",
     "repository": {
       "type": "git",
@@ -119,5 +119,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-04-01T22:54:32.501Z"
+  "lastScanned": "2026-04-01T23:26:47.884Z"
 }
