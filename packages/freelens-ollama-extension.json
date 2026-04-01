@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-03-31T20:13:44Z",
   "updatedAt": "2026-04-01T20:18:36Z",
-  "pushedAt": "2026-04-01T21:36:36Z",
+  "pushedAt": "2026-04-01T21:41:32Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -105,11 +105,19 @@
     }
   },
   "releases": [],
-  "tags": [],
+  "tags": [
+    {
+      "name": "0.1.0",
+      "commitSha": "bf9ec141e633b158d9b71610882076536fb84bca",
+      "commitUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/commits/bf9ec141e633b158d9b71610882076536fb84bca",
+      "zipballUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/zipball/refs/tags/0.1.0",
+      "tarballUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/tarball/refs/tags/0.1.0"
+    }
+  ],
   "versionHistory": [],
   "tarFiles": [],
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-04-01T21:37:36.734Z"
+  "lastScanned": "2026-04-01T22:07:09.329Z"
 }
