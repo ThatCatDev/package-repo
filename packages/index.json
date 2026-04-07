@@ -209,12 +209,12 @@
     "hasTarFiles": true
   },
   {
-    "name": "@freelensapp/k8s-sre-assistant",
+    "name": "@b-iurea/k8s-ollama-extension",
     "repoName": "freelens-ollama-extension",
     "fullName": "b-iurea/freelens-ollama-extension",
     "description": "Kubernetes SRE AI Assistant for Freelens - Chat with Ollama to manage and troubleshoot your clusters",
     "stars": 3,
-    "updatedAt": "2026-04-07T22:43:58Z",
+    "updatedAt": "2026-04-07T23:36:26Z",
     "latestVersion": "0.3.2",
     "hasReleases": true,
     "hasTarFiles": false

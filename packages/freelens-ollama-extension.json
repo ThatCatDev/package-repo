@@ -1,5 +1,5 @@
 {
-  "name": "@freelensapp/k8s-sre-assistant",
+  "name": "@b-iurea/k8s-ollama-extension",
   "repoName": "freelens-ollama-extension",
   "fullName": "b-iurea/freelens-ollama-extension",
   "description": "Kubernetes SRE AI Assistant for Freelens - Chat with Ollama to manage and troubleshoot your clusters",
@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-03-31T20:13:44Z",
-  "updatedAt": "2026-04-07T22:43:58Z",
-  "pushedAt": "2026-04-07T22:43:55Z",
+  "updatedAt": "2026-04-07T23:36:26Z",
+  "pushedAt": "2026-04-07T23:36:19Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -29,12 +29,12 @@
     "sshUrl": "git@github.com:b-iurea/freelens-ollama-extension.git"
   },
   "packageJson": {
-    "name": "@freelensapp/k8s-sre-assistant",
+    "name": "@b-iurea/k8s-ollama-extension",
     "version": "0.3.2",
     "description": "Kubernetes SRE AI Assistant for Freelens - Chat with Ollama to manage and troubleshoot your clusters",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/biurea/freelens-k8s-sre-assistant.git",
+      "url": "git+https://github.com/b-iurea/freelens-k8s-ollama-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -46,11 +46,11 @@
       "node": ">= 22.0.0",
       "freelens": "^1.4.0"
     },
-    "copyright": "© 2026 Freelens K8s SRE Assistant Authors",
+    "copyright": "© 2026 b-iurea",
     "license": "MIT",
     "author": {
-      "name": "biurea",
-      "email": "biurea@users.noreply.github.com"
+      "name": "b-iurea",
+      "email": "b-iurea@users.noreply.github.com"
     },
     "publishConfig": {
       "access": "public",
@@ -215,5 +215,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": false,
-  "lastScanned": "2026-04-07T23:01:28.512Z"
+  "lastScanned": "2026-04-07T23:48:11.616Z"
 }
