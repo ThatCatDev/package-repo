@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-03-31T20:13:44Z",
-  "updatedAt": "2026-04-06T22:58:28Z",
-  "pushedAt": "2026-04-06T23:00:07Z",
+  "updatedAt": "2026-04-07T22:18:06Z",
+  "pushedAt": "2026-04-07T22:18:02Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -30,7 +30,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/k8s-sre-assistant",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Kubernetes SRE AI Assistant for Freelens - Chat with Ollama to manage and troubleshoot your clusters",
     "repository": {
       "type": "git",
@@ -106,6 +106,21 @@
   },
   "releases": [
     {
+      "id": 306318215,
+      "tagName": "0.3.2",
+      "name": "0.3.2",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-04-07T22:02:45Z",
+      "publishedAt": "2026-04-07T22:06:57Z",
+      "body": "## What's Changed\r\n* feat: update README for version 0.3.0, enhance toolbar UI, and improv… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/11\r\n* refactor: enable on/off tools from UI by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/12\r\n* feat: Enhance pod log handling and relationship resolution in K8sCont… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/13\r\n* Refactor/allow large cluster context by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/14\r\n* feat: update to version 0.3.2, add workload analysis shortcuts and fl… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/15\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/compare/0.2.0...0.3.2",
+      "author": {
+        "login": "b-iurea",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/120199048?v=4"
+      },
+      "assets": []
+    },
+    {
       "id": 304454356,
       "tagName": "0.2.0",
       "name": "0.2.0",
@@ -138,6 +153,13 @@
   ],
   "tags": [
     {
+      "name": "0.3.2",
+      "commitSha": "d533e8434bbae494cec351182b9c4bcc7d9f833c",
+      "commitUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/commits/d533e8434bbae494cec351182b9c4bcc7d9f833c",
+      "zipballUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/zipball/refs/tags/0.3.2",
+      "tarballUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/tarball/refs/tags/0.3.2"
+    },
+    {
       "name": "0.2.0",
       "commitSha": "07fe0463d56ea74301649a1bff8c6113f6cf7850",
       "commitUrl": "https://api.github.com/repos/b-iurea/freelens-ollama-extension/commits/07fe0463d56ea74301649a1bff8c6113f6cf7850",
@@ -153,6 +175,13 @@
     }
   ],
   "versionHistory": [
+    {
+      "version": "0.3.2",
+      "name": "0.3.2",
+      "publishedAt": "2026-04-07T22:06:57Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* feat: update README for version 0.3.0, enhance toolbar UI, and improv… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/11\r\n* refactor: enable on/off tools from UI by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/12\r\n* feat: Enhance pod log handling and relationship resolution in K8sCont… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/13\r\n* Refactor/allow large cluster context by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/14\r\n* feat: update to version 0.3.2, add workload analysis shortcuts and fl… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/15\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/compare/0.2.0...0.3.2"
+    },
     {
       "version": "0.2.0",
       "name": "0.2.0",
@@ -170,21 +199,21 @@
   ],
   "tarFiles": [],
   "latestRelease": {
-    "id": 304454356,
-    "tagName": "0.2.0",
-    "name": "0.2.0",
+    "id": 306318215,
+    "tagName": "0.3.2",
+    "name": "0.3.2",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-04-01T23:29:10Z",
-    "publishedAt": "2026-04-01T23:48:49Z",
-    "body": "## What's Changed\r\n* Feat/improvements workflow by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/6\r\n* Feat/add memory to reduce context by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/8\r\n* feat: add SRE mode options and object-aware prompt functionality to c… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/compare/0.1.0...0.2.0",
+    "createdAt": "2026-04-07T22:02:45Z",
+    "publishedAt": "2026-04-07T22:06:57Z",
+    "body": "## What's Changed\r\n* feat: update README for version 0.3.0, enhance toolbar UI, and improv… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/11\r\n* refactor: enable on/off tools from UI by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/12\r\n* feat: Enhance pod log handling and relationship resolution in K8sCont… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/13\r\n* Refactor/allow large cluster context by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/14\r\n* feat: update to version 0.3.2, add workload analysis shortcuts and fl… by @b-iurea in https://github.com/b-iurea/freelens-ollama-extension/pull/15\r\n\r\n\r\n**Full Changelog**: https://github.com/b-iurea/freelens-ollama-extension/compare/0.2.0...0.3.2",
     "author": {
       "login": "b-iurea",
       "avatarUrl": "https://avatars.githubusercontent.com/u/120199048?v=4"
     },
     "assets": []
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": false,
-  "lastScanned": "2026-04-07T21:41:24.585Z"
+  "lastScanned": "2026-04-07T22:21:19.460Z"
 }

@@ -214,8 +214,8 @@
     "fullName": "b-iurea/freelens-ollama-extension",
     "description": "Kubernetes SRE AI Assistant for Freelens - Chat with Ollama to manage and troubleshoot your clusters",
     "stars": 3,
-    "updatedAt": "2026-04-06T22:58:28Z",
-    "latestVersion": "0.2.0",
+    "updatedAt": "2026-04-07T22:18:06Z",
+    "latestVersion": "0.3.2",
     "hasReleases": true,
     "hasTarFiles": false
   },
