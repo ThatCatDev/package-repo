@@ -92,7 +92,7 @@
         {
           "name": "freelensapp-argocd-extension-0.1.0.tgz",
           "size": 189372,
-          "downloadCount": 1,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
           "createdAt": "2026-03-30T15:10:26Z",
@@ -167,7 +167,7 @@
       "releaseName": "v0.1.1",
       "size": 189372,
       "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2026-03-30T15:10:26Z"
     },
@@ -199,7 +199,7 @@
       {
         "name": "freelensapp-argocd-extension-0.1.0.tgz",
         "size": 189372,
-        "downloadCount": 1,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
         "createdAt": "2026-03-30T15:10:26Z",
@@ -210,5 +210,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-04-09T15:59:21.407Z"
+  "lastScanned": "2026-04-09T17:08:15.851Z"
 }
