@@ -1,5 +1,5 @@
 {
-  "name": "freelens-pod-debug-extension",
+  "name": "@rguleryuz/freelens-debug-pod-extension",
   "repoName": "freelens-debug-pod-extension",
   "fullName": "rguleryuz/freelens-debug-pod-extension",
   "description": "FreeLens extension that adds a kubectl debug action for pods",
@@ -8,11 +8,11 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-04-10T10:59:34Z",
-  "updatedAt": "2026-04-10T11:03:11Z",
-  "pushedAt": "2026-04-10T11:00:57Z",
+  "updatedAt": "2026-04-10T11:18:57Z",
+  "pushedAt": "2026-04-10T11:18:54Z",
   "defaultBranch": "main",
   "topics": [],
-  "license": null,
+  "license": "MIT",
   "owner": {
     "login": "rguleryuz",
     "avatarUrl": "https://avatars.githubusercontent.com/u/60223464?v=4",
@@ -24,13 +24,28 @@
     "sshUrl": "git@github.com:rguleryuz/freelens-debug-pod-extension.git"
   },
   "packageJson": {
-    "name": "freelens-pod-debug-extension",
-    "version": "0.1.0",
+    "name": "@rguleryuz/freelens-debug-pod-extension",
+    "version": "0.1.1",
     "description": "FreeLens extension that adds a kubectl debug action for pods",
-    "author": "orion",
+    "author": "rguleryuz",
     "license": "MIT",
+    "publishConfig": {
+      "access": "public"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/rguleryuz/freelens-debug-pod-extension.git"
+    },
+    "files": [
+      "dist",
+      "main.ts",
+      "renderer.tsx",
+      "src",
+      "README.md",
+      "LICENSE"
+    ],
     "engines": {
-      "lens": ">=6.0.0"
+      "freelens": ">=6.0.0"
     },
     "main": "dist/main.js",
     "renderer": "dist/renderer.js",
@@ -56,5 +71,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-04-10T11:12:26.859Z"
+  "lastScanned": "2026-04-10T11:58:42.046Z"
 }

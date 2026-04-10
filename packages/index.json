@@ -44,13 +44,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-pod-debug-extension",
+    "name": "@rguleryuz/freelens-debug-pod-extension",
     "repoName": "freelens-debug-pod-extension",
     "fullName": "rguleryuz/freelens-debug-pod-extension",
     "description": "FreeLens extension that adds a kubectl debug action for pods",
     "stars": 0,
-    "updatedAt": "2026-04-10T11:03:11Z",
-    "latestVersion": "0.1.0",
+    "updatedAt": "2026-04-10T11:18:57Z",
+    "latestVersion": "0.1.1",
     "hasReleases": false,
     "hasTarFiles": false
   },
