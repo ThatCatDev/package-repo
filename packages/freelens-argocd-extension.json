@@ -4,11 +4,11 @@
   "fullName": "jhajali/freelens-argocd-extension",
   "description": "Freelens extension for ArgoCD",
   "homepage": "https://github.com/jhajali/freelens-argocd-extension",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-03-30T14:29:41Z",
-  "updatedAt": "2026-03-30T15:09:59Z",
+  "updatedAt": "2026-04-13T15:50:44Z",
   "pushedAt": "2026-03-30T15:09:56Z",
   "defaultBranch": "main",
   "topics": [],
@@ -92,7 +92,7 @@
         {
           "name": "freelensapp-argocd-extension-0.1.0.tgz",
           "size": 189372,
-          "downloadCount": 5,
+          "downloadCount": 6,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
           "createdAt": "2026-03-30T15:10:26Z",
@@ -167,7 +167,7 @@
       "releaseName": "v0.1.1",
       "size": 189372,
       "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
-      "downloadCount": 5,
+      "downloadCount": 6,
       "type": "tar.gz",
       "createdAt": "2026-03-30T15:10:26Z"
     },
@@ -199,7 +199,7 @@
       {
         "name": "freelensapp-argocd-extension-0.1.0.tgz",
         "size": 189372,
-        "downloadCount": 5,
+        "downloadCount": 6,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
         "createdAt": "2026-03-30T15:10:26Z",
@@ -210,5 +210,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-04-13T15:49:40.147Z"
+  "lastScanned": "2026-04-13T16:47:55.232Z"
 }

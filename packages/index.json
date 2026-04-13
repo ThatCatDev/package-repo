@@ -26,8 +26,8 @@
     "repoName": "freelens-argocd-extension",
     "fullName": "jhajali/freelens-argocd-extension",
     "description": "Freelens extension for ArgoCD",
-    "stars": 0,
-    "updatedAt": "2026-03-30T15:09:59Z",
+    "stars": 1,
+    "updatedAt": "2026-04-13T15:50:44Z",
     "latestVersion": "v0.1.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -247,7 +247,7 @@
     "fullName": "freelensapp/freelens-resource-map-extension",
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
     "stars": 9,
-    "updatedAt": "2026-04-05T14:53:34Z",
+    "updatedAt": "2026-04-13T15:57:40Z",
     "latestVersion": "0.0.1",
     "hasReleases": false,
     "hasTarFiles": false
