@@ -1,18 +1,18 @@
 {
-  "name": "@rguleryuz/freelens-debug-pod-extension",
+  "name": "freelens-debug-pod-extension",
   "repoName": "freelens-debug-pod-extension",
   "fullName": "rguleryuz/freelens-debug-pod-extension",
-  "description": "FreeLens extension that adds a kubectl debug action for pods",
+  "description": "",
   "homepage": "https://github.com/rguleryuz/freelens-debug-pod-extension",
   "stars": 0,
   "forks": 0,
-  "language": "TypeScript",
+  "language": null,
   "createdAt": "2026-04-10T10:59:34Z",
-  "updatedAt": "2026-04-10T11:18:57Z",
-  "pushedAt": "2026-04-10T11:18:54Z",
+  "updatedAt": "2026-04-13T13:38:26Z",
+  "pushedAt": "2026-04-13T13:38:22Z",
   "defaultBranch": "main",
   "topics": [],
-  "license": "MIT",
+  "license": null,
   "owner": {
     "login": "rguleryuz",
     "avatarUrl": "https://avatars.githubusercontent.com/u/60223464?v=4",
@@ -23,47 +23,7 @@
     "cloneUrl": "https://github.com/rguleryuz/freelens-debug-pod-extension.git",
     "sshUrl": "git@github.com:rguleryuz/freelens-debug-pod-extension.git"
   },
-  "packageJson": {
-    "name": "@rguleryuz/freelens-debug-pod-extension",
-    "version": "0.1.1",
-    "description": "FreeLens extension that adds a kubectl debug action for pods",
-    "author": "rguleryuz",
-    "license": "MIT",
-    "publishConfig": {
-      "access": "public"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/rguleryuz/freelens-debug-pod-extension.git"
-    },
-    "files": [
-      "dist",
-      "main.ts",
-      "renderer.tsx",
-      "src",
-      "README.md",
-      "LICENSE"
-    ],
-    "engines": {
-      "freelens": ">=6.0.0"
-    },
-    "main": "dist/main.js",
-    "renderer": "dist/renderer.js",
-    "scripts": {
-      "build": "npm run clean && webpack",
-      "clean": "rm -rf dist",
-      "dev": "webpack --watch"
-    },
-    "devDependencies": {
-      "@k8slens/extensions": "^6.0.0",
-      "@types/node": "^20.14.10",
-      "@types/react": "^18.3.3",
-      "ts-loader": "^9.5.1",
-      "typescript": "^5.5.3",
-      "webpack": "^5.92.1",
-      "webpack-cli": "^5.1.4"
-    }
-  },
+  "packageJson": null,
   "releases": [],
   "tags": [],
   "versionHistory": [],
@@ -71,5 +31,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-04-13T12:45:29.834Z"
+  "lastScanned": "2026-04-13T14:20:04.041Z"
 }
