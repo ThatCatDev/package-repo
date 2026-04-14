@@ -4,11 +4,11 @@
   "fullName": "jhajali/freelens-argocd-extension",
   "description": "Freelens extension for ArgoCD",
   "homepage": "https://github.com/jhajali/freelens-argocd-extension",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-03-30T14:29:41Z",
-  "updatedAt": "2026-04-13T15:50:44Z",
+  "updatedAt": "2026-04-14T20:06:33Z",
   "pushedAt": "2026-03-30T15:09:56Z",
   "defaultBranch": "main",
   "topics": [],
@@ -210,5 +210,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-04-14T19:56:52.549Z"
+  "lastScanned": "2026-04-14T20:47:01.283Z"
 }
