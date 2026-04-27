@@ -28,9 +28,9 @@
     "description": "Freelens extension for ArgoCD",
     "stars": 3,
     "updatedAt": "2026-04-27T02:58:47Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.1",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@oguzhan-yilmaz/freelens-debug-extension",
@@ -171,9 +171,9 @@
     "description": "Extension that adds information on sigs.k8s.io JobSets",
     "stars": 3,
     "updatedAt": "2026-02-27T07:31:08Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0-0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/kamaji-extension",
@@ -193,9 +193,9 @@
     "description": "Freelens extension for Kargo",
     "stars": 0,
     "updatedAt": "2026-04-01T07:17:18Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-karpenter-extension",
@@ -215,9 +215,9 @@
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
     "updatedAt": "2026-04-01T11:03:09Z",
-    "latestVersion": "0.1.2",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.2",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@b-iurea/k8s-ollama-extension",

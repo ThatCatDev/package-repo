@@ -74,7 +74,34 @@
     },
     "packageManager": "pnpm@10.29.3"
   },
-  "releases": [],
+  "releases": [
+    {
+      "id": 304044629,
+      "tagName": "v0.1.0",
+      "name": "v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-04-01T07:17:03Z",
+      "publishedAt": "2026-04-01T07:17:45Z",
+      "body": "**Full Changelog**: https://github.com/jhajali/freelens-kargo-extension/commits/v0.1.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-kargo-extension-0.1.0.tgz",
+          "size": 218127,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/jhajali/freelens-kargo-extension/releases/download/v0.1.0/freelensapp-kargo-extension-0.1.0.tgz",
+          "createdAt": "2026-04-01T07:17:45Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
   "tags": [
     {
       "name": "v0.1.0",
@@ -84,10 +111,54 @@
       "tarballUrl": "https://api.github.com/repos/jhajali/freelens-kargo-extension/tarball/refs/tags/v0.1.0"
     }
   ],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-04-27T19:44:39.681Z"
+  "versionHistory": [
+    {
+      "version": "v0.1.0",
+      "name": "v0.1.0",
+      "publishedAt": "2026-04-01T07:17:45Z",
+      "isPrerelease": false,
+      "notes": "**Full Changelog**: https://github.com/jhajali/freelens-kargo-extension/commits/v0.1.0"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-kargo-extension-0.1.0.tgz",
+      "releaseTag": "v0.1.0",
+      "releaseName": "v0.1.0",
+      "size": 218127,
+      "downloadUrl": "https://github.com/jhajali/freelens-kargo-extension/releases/download/v0.1.0/freelensapp-kargo-extension-0.1.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-04-01T07:17:45Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 304044629,
+    "tagName": "v0.1.0",
+    "name": "v0.1.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-04-01T07:17:03Z",
+    "publishedAt": "2026-04-01T07:17:45Z",
+    "body": "**Full Changelog**: https://github.com/jhajali/freelens-kargo-extension/commits/v0.1.0",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-kargo-extension-0.1.0.tgz",
+        "size": 218127,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/jhajali/freelens-kargo-extension/releases/download/v0.1.0/freelensapp-kargo-extension-0.1.0.tgz",
+        "createdAt": "2026-04-01T07:17:45Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-04-27T20:42:57.668Z"
 }
