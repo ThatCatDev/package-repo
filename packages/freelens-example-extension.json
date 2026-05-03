@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-05-03T10:03:15Z",
-  "pushedAt": "2026-05-03T10:03:11Z",
+  "updatedAt": "2026-05-03T15:40:11Z",
+  "pushedAt": "2026-05-03T15:40:07Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -92,6 +92,7 @@
       "@freelensapp/extensions": "^1.8.1",
       "@types/node": "~22.19.17",
       "@types/react": "^17.0.91",
+      "@types/react-router-dom": "^5.3.3",
       "@vitejs/plugin-react": "^6.0.1",
       "electron-vite": "^5.0.0",
       "mobx": "6.13.7",
@@ -898,5 +899,5 @@
   },
   "totalReleases": 15,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-03T15:28:37.906Z"
+  "lastScanned": "2026-05-03T16:08:14.709Z"
 }
