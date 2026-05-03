@@ -82,7 +82,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-05-02T22:10:35Z",
+    "updatedAt": "2026-05-03T10:03:15Z",
     "latestVersion": "v1.8.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -137,7 +137,7 @@
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
     "stars": 113,
-    "updatedAt": "2026-05-03T09:52:06Z",
+    "updatedAt": "2026-05-03T10:26:26Z",
     "latestVersion": "v5.2.2",
     "hasReleases": true,
     "hasTarFiles": true
