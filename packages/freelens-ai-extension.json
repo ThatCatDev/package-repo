@@ -8,8 +8,8 @@
   "forks": 7,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-05-07T18:38:23Z",
-  "pushedAt": "2026-05-07T18:38:57Z",
+  "updatedAt": "2026-05-07T22:16:26Z",
+  "pushedAt": "2026-05-07T22:16:23Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -34,7 +34,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/ai-extension",
-    "version": "0.5.0",
+    "version": "0.5.1-0",
     "description": "AI capabilities for Freelens",
     "repository": {
       "type": "git",
@@ -409,5 +409,5 @@
   },
   "totalReleases": 5,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-07T21:39:18.282Z"
+  "lastScanned": "2026-05-07T22:40:13.186Z"
 }
