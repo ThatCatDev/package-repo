@@ -16,8 +16,8 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 28,
-    "updatedAt": "2026-05-07T17:37:53Z",
-    "latestVersion": "v0.4.1",
+    "updatedAt": "2026-05-07T18:38:23Z",
+    "latestVersion": "v0.5.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -161,6 +161,17 @@
     "stars": 0,
     "updatedAt": "2026-02-04T19:36:14Z",
     "latestVersion": "v0.1.1",
+    "hasReleases": true,
+    "hasTarFiles": true
+  },
+  {
+    "name": "freelens-istio-extension",
+    "repoName": "freelens-istio-extension",
+    "fullName": "edwardccg/freelens-istio-extension",
+    "description": "Freelens extension for Istio service mesh visibility",
+    "stars": 0,
+    "updatedAt": "2026-05-07T17:50:51Z",
+    "latestVersion": "v0.1.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
