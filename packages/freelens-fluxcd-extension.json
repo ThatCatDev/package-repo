@@ -327,7 +327,7 @@
         {
           "name": "freelensapp-extension-fluxcd-3.2.0.tgz",
           "size": 208755,
-          "downloadCount": 391,
+          "downloadCount": 392,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.2.0/freelensapp-extension-fluxcd-3.2.0.tgz",
           "createdAt": "2025-06-07T21:02:17Z",
@@ -650,7 +650,7 @@
       "releaseName": "v3.2.0",
       "size": 208755,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.2.0/freelensapp-extension-fluxcd-3.2.0.tgz",
-      "downloadCount": 391,
+      "downloadCount": 392,
       "type": "tar.gz",
       "createdAt": "2025-06-07T21:02:17Z"
     },
@@ -713,5 +713,5 @@
   },
   "totalReleases": 11,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-08T04:25:15.261Z"
+  "lastScanned": "2026-05-08T06:13:01.885Z"
 }
