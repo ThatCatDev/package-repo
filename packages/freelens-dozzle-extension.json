@@ -1,0 +1,78 @@
+{
+  "name": "@ellickjohnson/freelens-dozzle-extension",
+  "repoName": "freelens-dozzle-extension",
+  "fullName": "ellickjohnson/freelens-dozzle-extension",
+  "description": "Freelens extension that embeds Dozzle – a realtime Docker log viewer – as a cluster page with iframe integration",
+  "homepage": "https://github.com/ellickjohnson/freelens-dozzle-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": "TypeScript",
+  "createdAt": "2026-05-08T20:57:35Z",
+  "updatedAt": "2026-05-08T20:58:26Z",
+  "pushedAt": "2026-05-08T20:58:15Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "ellickjohnson",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1778396?v=4",
+    "url": "https://github.com/ellickjohnson"
+  },
+  "repository": {
+    "url": "https://github.com/ellickjohnson/freelens-dozzle-extension",
+    "cloneUrl": "https://github.com/ellickjohnson/freelens-dozzle-extension.git",
+    "sshUrl": "git@github.com:ellickjohnson/freelens-dozzle-extension.git"
+  },
+  "packageJson": {
+    "name": "@ellickjohnson/freelens-dozzle-extension",
+    "version": "1.0.0",
+    "description": "Freelens extension that embeds Dozzle – a realtime Docker log viewer – as a cluster page with iframe integration",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ellickjohnson/freelens-dozzle-extension.git"
+    },
+    "main": "out/main/index.js",
+    "renderer": "out/renderer/index.js",
+    "files": [
+      "out/**/*"
+    ],
+    "engines": {
+      "node": ">= 22.0.0",
+      "freelens": "^1.8.0"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "Ellick Johnson"
+    },
+    "scripts": {
+      "build": "electron-vite build",
+      "build:production": "VITE_PRESERVE_MODULES=false electron-vita build",
+      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
+      "prebuild": "pnpm type:check",
+      "clean": "rm -rf out"
+    },
+    "devDependencies": {
+      "@electron-toolkit/tsconfig": "^2.0.0",
+      "@freelensapp/extensions": "^1.8.0",
+      "@types/node": "~22.19.8",
+      "@types/react": "^19.0.0",
+      "@types/react-dom": "^19.0.0",
+      "electron-vite": "^3.0.0",
+      "typescript": "^5.7.0",
+      "vite": "^6.0.0"
+    },
+    "peerDependencies": {
+      "@freelensapp/extensions": "^1.8.0",
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    }
+  },
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-05-08T21:17:16.237Z"
+}

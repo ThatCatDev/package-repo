@@ -66,6 +66,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "@ellickjohnson/freelens-dozzle-extension",
+    "repoName": "freelens-dozzle-extension",
+    "fullName": "ellickjohnson/freelens-dozzle-extension",
+    "description": "Freelens extension that embeds Dozzle – a realtime Docker log viewer – as a cluster page with iframe integration",
+    "stars": 0,
+    "updatedAt": "2026-05-08T20:58:26Z",
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@omarluq/freelens-duplicate-extension",
     "repoName": "freelens-duplicate-extension",
     "fullName": "omarluq/freelens-duplicate-extension",
