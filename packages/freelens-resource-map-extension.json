@@ -1,5 +1,5 @@
 {
-  "name": "@freelensapp/freelens-resource-map-extension",
+  "name": "@freelensapp/resource-map-extension",
   "repoName": "freelens-resource-map-extension",
   "fullName": "freelensapp/freelens-resource-map-extension",
   "description": "FreeLens extension to visualize Kubernetes resources and their relations",
@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2025-04-23T16:59:51Z",
-  "updatedAt": "2026-05-09T15:17:14Z",
-  "pushedAt": "2026-05-09T15:17:10Z",
+  "updatedAt": "2026-05-09T16:15:52Z",
+  "pushedAt": "2026-05-09T16:15:48Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "NOASSERTION",
@@ -24,7 +24,7 @@
     "sshUrl": "git@github.com:freelensapp/freelens-resource-map-extension.git"
   },
   "packageJson": {
-    "name": "@freelensapp/freelens-resource-map-extension",
+    "name": "@freelensapp/resource-map-extension",
     "version": "1.0.0",
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
     "homepage": "https://github.com/freelensapp/freelens-resource-map-extension",
@@ -147,19 +147,11 @@
     "packageManager": "pnpm@10.12.4+sha256.cadfd9e6c9fcc2cb76fe7c0779a5250b632898aea5f53d833a73690c77a778d9"
   },
   "releases": [],
-  "tags": [
-    {
-      "name": "v1.0.0",
-      "commitSha": "1ad346a9179c1a34689ed53b3370a985c71a3e0f",
-      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-resource-map-extension/commits/1ad346a9179c1a34689ed53b3370a985c71a3e0f",
-      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-resource-map-extension/zipball/refs/tags/v1.0.0",
-      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-resource-map-extension/tarball/refs/tags/v1.0.0"
-    }
-  ],
+  "tags": [],
   "versionHistory": [],
   "tarFiles": [],
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-05-09T15:33:41.336Z"
+  "lastScanned": "2026-05-09T16:30:35.570Z"
 }
