@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-05-08T23:58:25Z",
-  "pushedAt": "2026-05-09T20:38:04Z",
+  "updatedAt": "2026-05-09T21:56:38Z",
+  "pushedAt": "2026-05-09T21:56:43Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "1.9.0-0",
+    "version": "1.9.0",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -113,6 +113,32 @@
     "packageManager": "pnpm@10.33.4+sha512.1c67b3b359b2d408119ba1ed289f34b8fc3c6873412bec6fd264fbdc82489e510fcbecb9ce9d22dae7f3b76269d8441046014bdca53b9979cd7a561ad631b800"
   },
   "releases": [
+    {
+      "id": 320011908,
+      "tagName": "v1.9.0",
+      "name": "v1.9.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-09T21:56:34Z",
+      "publishedAt": "2026-05-09T21:57:21Z",
+      "body": "## What's Changed\r\n* Update dependency @types/react to ^17.0.91 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/211\r\n* Update pnpm to v10.33.2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/214\r\n* Update dependency @types/node to ~22.19.17 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/212\r\n* Update dependency @vitejs/plugin-react to ^5.2.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/215\r\n* Update dependency vite to v8 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/233\r\n* Update dependency @vitejs/plugin-react to v6 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/222\r\n* Update dependency vite-plugin-sass-dts to ^1.3.37 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/225\r\n* Update dependency sass to ^1.99.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/221\r\n* Update dependency node to v22.22.1 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/234\r\n* Update dependency knip to v6 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/227\r\n* Options for Vite 8 with decorators by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/236\r\n* Speed up electron builder by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/237\r\n* Test with v1.9.0 or later by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/240\r\n* Compatibiity with Vite 8 and rolldown by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/246\r\n* pnpm from corepack by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/248\r\n* Update dependency @freelensapp/extensions to ^1.9.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/247\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.8.0...v1.9.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-example-extension-1.9.0.tgz",
+          "size": 15354,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
+          "createdAt": "2026-05-09T21:57:20Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 283081728,
       "tagName": "v1.8.0",
@@ -506,6 +532,13 @@
   ],
   "tags": [
     {
+      "name": "v1.9.0",
+      "commitSha": "54e17541eea95d7f953535a8a589afca788b69e0",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/54e17541eea95d7f953535a8a589afca788b69e0",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/zipball/refs/tags/v1.9.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/tarball/refs/tags/v1.9.0"
+    },
+    {
       "name": "v1.8.0",
       "commitSha": "b58825643e53b61a479fc1ba74e1c511d2170781",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/b58825643e53b61a479fc1ba74e1c511d2170781",
@@ -613,6 +646,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v1.9.0",
+      "name": "v1.9.0",
+      "publishedAt": "2026-05-09T21:57:21Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Update dependency @types/react to ^17.0.91 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/211\r\n* Update pnpm to v10.33.2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/214\r\n* Update dependency @types/node to ~22.19.17 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/212\r\n* Update dependency @vitejs/plugin-react to ^5.2.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/215\r\n* Update dependency vite to v8 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/233\r\n* Update dependency @vitejs/plugin-react to v6 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/222\r\n* Update dependency vite-plugin-sass-dts to ^1.3.37 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/225\r\n* Update dependency sass to ^1.99.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/221\r\n* Update dependency node to v22.22.1 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/234\r\n* Update dependency knip to v6 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/227\r\n* Options for Vite 8 with decorators by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/236\r\n* Speed up electron builder by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/237\r\n* Test with v1.9.0 or later by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/240\r\n* Compatibiity with Vite 8 and rolldown by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/246\r\n* pnpm from corepack by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/248\r\n* Update dependency @freelensapp/extensions to ^1.9.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/247\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.8.0...v1.9.0"
+    },
+    {
       "version": "v1.8.0",
       "name": "v1.8.0",
       "publishedAt": "2026-02-04T18:19:23Z",
@@ -719,6 +759,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-example-extension-1.9.0.tgz",
+      "releaseTag": "v1.9.0",
+      "releaseName": "v1.9.0",
+      "size": 15354,
+      "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-05-09T21:57:20Z"
+    },
     {
       "filename": "freelensapp-example-extension-1.8.0.tgz",
       "releaseTag": "v1.8.0",
@@ -871,32 +921,32 @@
     }
   ],
   "latestRelease": {
-    "id": 283081728,
-    "tagName": "v1.8.0",
-    "name": "v1.8.0",
+    "id": 320011908,
+    "tagName": "v1.9.0",
+    "name": "v1.9.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-02-04T18:18:01Z",
-    "publishedAt": "2026-02-04T18:19:23Z",
-    "body": null,
+    "createdAt": "2026-05-09T21:56:34Z",
+    "publishedAt": "2026-05-09T21:57:21Z",
+    "body": "## What's Changed\r\n* Update dependency @types/react to ^17.0.91 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/211\r\n* Update pnpm to v10.33.2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/214\r\n* Update dependency @types/node to ~22.19.17 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/212\r\n* Update dependency @vitejs/plugin-react to ^5.2.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/215\r\n* Update dependency vite to v8 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/233\r\n* Update dependency @vitejs/plugin-react to v6 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/222\r\n* Update dependency vite-plugin-sass-dts to ^1.3.37 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/225\r\n* Update dependency sass to ^1.99.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/221\r\n* Update dependency node to v22.22.1 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/234\r\n* Update dependency knip to v6 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/227\r\n* Options for Vite 8 with decorators by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/236\r\n* Speed up electron builder by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/237\r\n* Test with v1.9.0 or later by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/240\r\n* Compatibiity with Vite 8 and rolldown by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/246\r\n* pnpm from corepack by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/248\r\n* Update dependency @freelensapp/extensions to ^1.9.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/247\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.8.0...v1.9.0",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-example-extension-1.8.0.tgz",
-        "size": 17561,
-        "downloadCount": 6,
+        "name": "freelensapp-example-extension-1.9.0.tgz",
+        "size": 15354,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.8.0/freelensapp-example-extension-1.8.0.tgz",
-        "createdAt": "2026-02-04T18:19:22Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
+        "createdAt": "2026-05-09T21:57:20Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 15,
+  "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-09T21:51:44.297Z"
+  "lastScanned": "2026-05-09T22:28:28.772Z"
 }
