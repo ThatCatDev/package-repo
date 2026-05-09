@@ -268,11 +268,11 @@
     "repoName": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
-    "stars": 9,
-    "updatedAt": "2026-05-09T16:15:52Z",
-    "latestVersion": "1.0.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "stars": 10,
+    "updatedAt": "2026-05-09T17:19:00Z",
+    "latestVersion": "v1.0.1",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-stats-extension",
