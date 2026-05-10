@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2026-05-10T10:55:05Z",
-  "pushedAt": "2026-05-10T10:59:28Z",
+  "updatedAt": "2026-05-10T21:45:20Z",
+  "pushedAt": "2026-05-10T21:48:09Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -90,11 +90,14 @@
       "@types/react": "^19.1.13",
       "@vitejs/plugin-react": "^5.0.2",
       "electron-vite": "4.0.0",
+      "mobx": "6.13.7",
+      "mobx-react": "7.6.0",
       "react": "^19.1.1",
       "sass": "^1.92.1",
       "typescript": "5.9.2",
       "vite": "^7.1.5",
-      "vite-plugin-external": "^6.2.2"
+      "vite-plugin-external": "^6.2.2",
+      "yaml": "^2.8.4"
     },
     "keywords": [
       "kamaji",
@@ -115,5 +118,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-05-10T20:58:53.743Z"
+  "lastScanned": "2026-05-10T21:49:20.473Z"
 }

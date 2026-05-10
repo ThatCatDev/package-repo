@@ -1,0 +1,39 @@
+{
+  "name": "freelens-gateway-api-extension",
+  "repoName": "freelens-gateway-api-extension",
+  "fullName": "freelensapp/freelens-gateway-api-extension",
+  "description": "Freelens Gateway API Extension",
+  "homepage": "https://freelens.app/",
+  "stars": 1,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-05-10T21:47:03Z",
+  "updatedAt": "2026-05-10T21:47:44Z",
+  "pushedAt": "2026-05-10T21:47:04Z",
+  "defaultBranch": "main",
+  "topics": [
+    "freelens",
+    "gateway-api",
+    "kubernetes"
+  ],
+  "license": "MIT",
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-gateway-api-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-gateway-api-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-gateway-api-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-05-10T21:49:35.633Z"
+}

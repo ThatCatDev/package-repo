@@ -154,6 +154,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-gateway-api-extension",
+    "repoName": "freelens-gateway-api-extension",
+    "fullName": "freelensapp/freelens-gateway-api-extension",
+    "description": "Freelens Gateway API Extension",
+    "stars": 1,
+    "updatedAt": "2026-05-10T21:47:44Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-gateway-extension",
     "repoName": "freelens-gateway-extension",
     "fullName": "ganey/freelens-gateway-extension",
@@ -203,7 +214,7 @@
     "fullName": "freelensapp/freelens-kamaji-extension",
     "description": "Kamaji extension",
     "stars": 4,
-    "updatedAt": "2026-05-10T10:55:05Z",
+    "updatedAt": "2026-05-10T21:45:20Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
