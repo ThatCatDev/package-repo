@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-05-09T21:56:38Z",
-  "pushedAt": "2026-05-09T21:56:43Z",
+  "updatedAt": "2026-05-10T01:13:15Z",
+  "pushedAt": "2026-05-10T01:13:11Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "1.9.0",
+    "version": "1.9.1-0",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -41,7 +41,7 @@
       "node": ">= 22.0.0",
       "freelens": "^1.8.0"
     },
-    "copyright": "© 2025 Freelens Authors",
+    "copyright": "© 2025-2026 Freelens Authors",
     "license": "MIT",
     "author": {
       "name": "Freelens Authors",
@@ -948,5 +948,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-10T00:02:45.491Z"
+  "lastScanned": "2026-05-10T04:04:52.388Z"
 }
