@@ -8,8 +8,8 @@
   "forks": 12,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2026-05-09T22:43:10Z",
-  "pushedAt": "2026-05-09T22:43:06Z",
+  "updatedAt": "2026-05-09T23:29:49Z",
+  "pushedAt": "2026-05-09T23:29:45Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -45,7 +45,7 @@
     ],
     "engines": {
       "node": ">= 22.0.0",
-      "freelens": "^1.6.0"
+      "freelens": "^1.6.2"
     },
     "copyright": "© 2025 Freelens Authors",
     "license": "MIT",
@@ -713,5 +713,5 @@
   },
   "totalReleases": 11,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-09T23:12:08.911Z"
+  "lastScanned": "2026-05-10T00:02:43.946Z"
 }
