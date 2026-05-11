@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2026-05-10T21:45:20Z",
-  "pushedAt": "2026-05-11T10:25:14Z",
+  "updatedAt": "2026-05-11T16:15:13Z",
+  "pushedAt": "2026-05-11T16:08:27Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -41,7 +41,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/kamaji-extension",
-    "version": "0.1.0",
+    "version": "1.0.0-0",
     "description": "Kamaji extension",
     "repository": {
       "type": "git",
@@ -118,5 +118,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-05-11T14:07:52.123Z"
+  "lastScanned": "2026-05-11T16:41:36.475Z"
 }
