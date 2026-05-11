@@ -147,8 +147,8 @@
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
-    "stars": 117,
-    "updatedAt": "2026-05-10T14:53:22Z",
+    "stars": 118,
+    "updatedAt": "2026-05-11T12:15:57Z",
     "latestVersion": "v5.3.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -279,8 +279,8 @@
     "repoName": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
-    "stars": 10,
-    "updatedAt": "2026-05-09T17:19:00Z",
+    "stars": 11,
+    "updatedAt": "2026-05-11T13:22:02Z",
     "latestVersion": "v1.0.1",
     "hasReleases": true,
     "hasTarFiles": true
