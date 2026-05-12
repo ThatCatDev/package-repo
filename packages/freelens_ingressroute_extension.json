@@ -1,0 +1,35 @@
+{
+  "name": "freelens_ingressroute_extension",
+  "repoName": "freelens_ingressroute_extension",
+  "fullName": "JohanSmag/freelens_ingressroute_extension",
+  "description": "",
+  "homepage": "https://github.com/JohanSmag/freelens_ingressroute_extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-05-12T07:46:07Z",
+  "updatedAt": "2026-05-12T07:48:57Z",
+  "pushedAt": "2026-05-12T07:46:08Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "JohanSmag",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/276980233?v=4",
+    "url": "https://github.com/JohanSmag"
+  },
+  "repository": {
+    "url": "https://github.com/JohanSmag/freelens_ingressroute_extension",
+    "cloneUrl": "https://github.com/JohanSmag/freelens_ingressroute_extension.git",
+    "sshUrl": "git@github.com:JohanSmag/freelens_ingressroute_extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-05-12T10:08:15.835Z"
+}

@@ -306,5 +306,16 @@
     "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
+  },
+  {
+    "name": "freelens_ingressroute_extension",
+    "repoName": "freelens_ingressroute_extension",
+    "fullName": "JohanSmag/freelens_ingressroute_extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2026-05-12T07:48:57Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
   }
 ]
