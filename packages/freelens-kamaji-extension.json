@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-kamaji-extension",
   "description": "Kamaji extension",
   "homepage": "https://freelens.app/",
-  "stars": 4,
+  "stars": 5,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2026-05-12T21:35:45Z",
+  "updatedAt": "2026-05-13T15:18:44Z",
   "pushedAt": "2026-05-13T08:48:18Z",
   "defaultBranch": "main",
   "topics": [
@@ -197,5 +197,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-13T12:30:25.421Z"
+  "lastScanned": "2026-05-13T15:24:54.822Z"
 }
