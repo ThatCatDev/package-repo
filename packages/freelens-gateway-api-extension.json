@@ -4,12 +4,12 @@
   "fullName": "freelensapp/freelens-gateway-api-extension",
   "description": "Freelens extension for Gateway API",
   "homepage": "https://freelens.app/",
-  "stars": 1,
+  "stars": 3,
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-05-12T21:26:39Z",
-  "pushedAt": "2026-05-12T21:28:11Z",
+  "updatedAt": "2026-05-13T00:40:33Z",
+  "pushedAt": "2026-05-13T00:14:51Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -29,7 +29,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/gateway-api-extension",
-    "version": "0.1.0-0",
+    "version": "0.1.0-1",
     "description": "Freelens extension for Gateway API",
     "repository": {
       "type": "git",
@@ -98,8 +98,6 @@
       "@types/react": "^17.0.91",
       "@vitejs/plugin-react": "^6.0.1",
       "electron-vite": "^5.0.0",
-      "mobx": "6.13.7",
-      "mobx-react": "7.6.0",
       "react": "17.0.2",
       "sass": "^1.99.0",
       "typescript": "5.9.3",
@@ -124,5 +122,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-05-12T23:43:59.731Z"
+  "lastScanned": "2026-05-13T01:28:11.024Z"
 }
