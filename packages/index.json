@@ -297,13 +297,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-sveltos-extension",
+    "name": "@freelensapp/sveltos-extension",
     "repoName": "freelens-sveltos-extension",
     "fullName": "freelensapp/freelens-sveltos-extension",
-    "description": "Freelens extension for Sveltos",
+    "description": "Sveltos Freelens extension",
     "stars": 2,
-    "updatedAt": "2026-04-30T17:26:32Z",
-    "latestVersion": null,
+    "updatedAt": "2026-05-14T11:17:18Z",
+    "latestVersion": "1.0.0-0",
     "hasReleases": false,
     "hasTarFiles": false
   },
