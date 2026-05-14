@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-09-21T15:51:23Z",
-  "updatedAt": "2026-05-14T15:05:21Z",
-  "pushedAt": "2026-05-14T15:05:17Z",
+  "updatedAt": "2026-05-14T15:58:55Z",
+  "pushedAt": "2026-05-14T16:46:57Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -122,5 +122,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-05-14T15:33:46.145Z"
+  "lastScanned": "2026-05-14T17:22:31.494Z"
 }
