@@ -8,8 +8,8 @@
   "forks": 7,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-05-07T22:16:26Z",
-  "pushedAt": "2026-05-15T08:49:31Z",
+  "updatedAt": "2026-05-15T17:42:56Z",
+  "pushedAt": "2026-05-15T17:43:01Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -34,7 +34,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/ai-extension",
-    "version": "0.5.1-0",
+    "version": "0.6.0",
     "description": "AI capabilities for Freelens",
     "repository": {
       "type": "git",
@@ -124,6 +124,32 @@
     "packageManager": "pnpm@10.12.4"
   },
   "releases": [
+    {
+      "id": 323397470,
+      "tagName": "v0.6.0",
+      "name": "v0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-15T17:42:51Z",
+      "publishedAt": "2026-05-15T17:43:49Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-0.6.0.tgz",
+          "size": 2373681,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
+          "createdAt": "2026-05-15T17:43:49Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 319111306,
       "tagName": "v0.5.0",
@@ -257,6 +283,13 @@
   ],
   "tags": [
     {
+      "name": "v0.6.0",
+      "commitSha": "8c84740e72daf5ac482cb9790ba0b48c7d74f759",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/commits/8c84740e72daf5ac482cb9790ba0b48c7d74f759",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/zipball/refs/tags/v0.6.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/tarball/refs/tags/v0.6.0"
+    },
+    {
       "name": "v0.5.0",
       "commitSha": "762a9a685efa83a4f68096d8f9edf64cc7f929e3",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/commits/762a9a685efa83a4f68096d8f9edf64cc7f929e3",
@@ -294,6 +327,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.6.0",
+      "name": "v0.6.0",
+      "publishedAt": "2026-05-15T17:43:49Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v0.5.0",
       "name": "v0.5.0",
       "publishedAt": "2026-05-07T18:39:51Z",
@@ -330,6 +370,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-ai-extension-0.6.0.tgz",
+      "releaseTag": "v0.6.0",
+      "releaseName": "v0.6.0",
+      "size": 2373681,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-05-15T17:43:49Z"
+    },
     {
       "filename": "freelensapp-ai-extension-0.5.0.tgz",
       "releaseTag": "v0.5.0",
@@ -382,13 +432,13 @@
     }
   ],
   "latestRelease": {
-    "id": 319111306,
-    "tagName": "v0.5.0",
-    "name": "v0.5.0",
+    "id": 323397470,
+    "tagName": "v0.6.0",
+    "name": "v0.6.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-05-07T18:38:09Z",
-    "publishedAt": "2026-05-07T18:39:51Z",
+    "createdAt": "2026-05-15T17:42:51Z",
+    "publishedAt": "2026-05-15T17:43:49Z",
     "body": null,
     "author": {
       "login": "github-actions[bot]",
@@ -396,18 +446,18 @@
     },
     "assets": [
       {
-        "name": "freelensapp-ai-extension-0.5.0.tgz",
-        "size": 2371835,
-        "downloadCount": 2,
+        "name": "freelensapp-ai-extension-0.6.0.tgz",
+        "size": 2373681,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.5.0/freelensapp-ai-extension-0.5.0.tgz",
-        "createdAt": "2026-05-07T18:39:50Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
+        "createdAt": "2026-05-15T17:43:49Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 5,
+  "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-15T16:22:40.792Z"
+  "lastScanned": "2026-05-15T17:55:51.968Z"
 }
