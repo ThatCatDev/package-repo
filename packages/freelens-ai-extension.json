@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-ai-extension",
   "description": "AI capabilities for Freelens",
   "homepage": "https://freelens.app/",
-  "stars": 28,
+  "stars": 29,
   "forks": 7,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-05-15T17:42:56Z",
+  "updatedAt": "2026-05-16T00:00:24Z",
   "pushedAt": "2026-05-15T17:43:01Z",
   "defaultBranch": "main",
   "topics": [
@@ -459,5 +459,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-15T23:30:26.942Z"
+  "lastScanned": "2026-05-16T01:16:11.957Z"
 }
