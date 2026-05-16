@@ -141,7 +141,7 @@
         {
           "name": "freelensapp-ai-extension-0.6.0.tgz",
           "size": 2373681,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
           "createdAt": "2026-05-15T17:43:49Z",
@@ -376,7 +376,7 @@
       "releaseName": "v0.6.0",
       "size": 2373681,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-05-15T17:43:49Z"
     },
@@ -448,7 +448,7 @@
       {
         "name": "freelensapp-ai-extension-0.6.0.tgz",
         "size": 2373681,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
         "createdAt": "2026-05-15T17:43:49Z",
@@ -459,5 +459,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-16T10:04:59.184Z"
+  "lastScanned": "2026-05-16T11:12:25.594Z"
 }
