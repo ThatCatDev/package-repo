@@ -1,35 +1,35 @@
 {
-  "name": "@freelensapp/argocd-extension",
+  "name": "@sebastian-prokesch/freelens-argocd-extension",
   "repoName": "freelens-argocd-extension",
-  "fullName": "jhajali/freelens-argocd-extension",
-  "description": "Freelens extension for ArgoCD",
-  "homepage": "https://github.com/jhajali/freelens-argocd-extension",
-  "stars": 3,
+  "fullName": "Sebastian-Prokesch/freelens-argocd-extension",
+  "description": "Freelens Extension for ArgoCD resources",
+  "homepage": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension",
+  "stars": 0,
   "forks": 0,
   "language": "TypeScript",
-  "createdAt": "2026-03-30T14:29:41Z",
-  "updatedAt": "2026-04-27T02:58:47Z",
-  "pushedAt": "2026-03-30T15:09:56Z",
+  "createdAt": "2025-08-06T08:54:35Z",
+  "updatedAt": "2026-05-17T10:31:53Z",
+  "pushedAt": "2026-05-15T14:55:58Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
   "owner": {
-    "login": "jhajali",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/123369524?v=4",
-    "url": "https://github.com/jhajali"
+    "login": "Sebastian-Prokesch",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4",
+    "url": "https://github.com/Sebastian-Prokesch"
   },
   "repository": {
-    "url": "https://github.com/jhajali/freelens-argocd-extension",
-    "cloneUrl": "https://github.com/jhajali/freelens-argocd-extension.git",
-    "sshUrl": "git@github.com:jhajali/freelens-argocd-extension.git"
+    "url": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension",
+    "cloneUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension.git",
+    "sshUrl": "git@github.com:Sebastian-Prokesch/freelens-argocd-extension.git"
   },
   "packageJson": {
-    "name": "@freelensapp/argocd-extension",
-    "version": "0.1.0",
-    "description": "Freelens extension for ArgoCD",
+    "name": "@sebastian-prokesch/freelens-argocd-extension",
+    "version": "0.1.0-beta.3",
+    "description": "Freelens Extension for ArgoCD resources",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/freelensapp/freelens-argocd-extension.git",
+      "url": "git+https://github.com/Sebastian-Prokesch/freelens-argocd-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -39,89 +39,246 @@
     ],
     "engines": {
       "node": ">= 22.16.0",
-      "freelens": "^1.6.0"
+      "freelens": "^1.9.0"
     },
+    "copyright": "© 2025 Freelens Authors",
     "license": "MIT",
+    "author": {
+      "name": "Sebastian Prokesch",
+      "email": "mail@example.com"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
     "scripts": {
+      "biome": "corepack pnpm dlx @biomejs/biome@2.1.2",
+      "biome:check": "corepack pnpm biome check",
+      "biome:fix": "corepack pnpm biome check --fix",
+      "biome:migrate": "corepack pnpm biome migrate --write",
+      "prettier": "pnpm dlx prettier@3.6.2",
+      "prettier:check": "pnpm prettier --check .",
+      "prettier:fix": "pnpm prettier --write .",
+      "trunk": "pnpm dlx @trunkio/launcher@1.3.4",
+      "trunk:check": "pnpm trunk check",
+      "trunk:fix": "pnpm trunk check --fix",
+      "lint": "corepack pnpm lint:check",
+      "lint:check": "corepack pnpm \"/^(biome|prettier):check$/\"",
+      "lint:fix": "corepack pnpm \"/^(biome|prettier):fix$/\"",
+      "knip": "corepack pnpm dlx knip@5.62.0 --dependencies",
+      "knip:check": "corepack pnpm \"/^knip:(development|production)$/\"",
+      "knip:development": "corepack pnpm knip",
+      "knip:production": "corepack pnpm knip --production --strict",
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
-      "prebuild": "pnpm type:check",
+      "prebuild": "corepack pnpm type:check",
       "build": "electron-vite build",
-      "build:force": "electron-vite build",
-      "clean": "rm -rf out",
-      "pack:dev": "pnpm version prerelease --no-commit-hooks --no-git-tag-version && pnpm build:force && pnpm pack"
+      "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
+      "clean": "corepack pnpm clean:out",
+      "clean:dts": "corepack pnpm dlx shx@0.4.0 rm -f \"src/**/*.scss.d.ts\"",
+      "clean:node_modules": "corepack pnpm dlx shx@0.4.0 rm -rf node_modules",
+      "clean:out": "corepack pnpm dlx shx@0.4.0 rm -rf out",
+      "clean:tgz": "corepack pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
+      "clean:all": "corepack pnpm \"/^clean:(dts|node_modules|out|tgz)$/\"",
+      "test": "corepack pnpm test:unit",
+      "test:unit": "jest -c jest.unit.config.cjs",
+      "test:watch": "corepack pnpm test:unit --watch",
+      "test:integration": "jest -c jest.integration.config.cjs",
+      "postupdate": "corepack pnpm biome:migrate"
     },
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^7.29.0",
-      "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.5.3",
-      "@freelensapp/kube-object": "^1.6.2",
-      "@types/node": "^22.16.4",
+      "@electron-toolkit/tsconfig": "^1.0.1",
+      "@freelensapp/extensions": "^1.9.0",
+      "@jest/test-sequencer": "^29.7.0",
+      "@kubernetes-models/argo-cd": "^2.7.2",
+      "@kubernetes-models/argo-rollouts": "^1.0.1",
+      "@kubernetes-models/argo-workflows": "^1.0.1",
+      "@testing-library/jest-dom": "^6.9.1",
+      "@testing-library/react": "^12.1.5",
+      "@testing-library/user-event": "^14.6.1",
+      "@types/jest": "^29.5.14",
+      "@types/node": "~22.15.35",
       "@types/react": "^17.0.91",
+      "@types/react-dom": "^17.0.26",
       "@types/react-router-dom": "^5.3.3",
-      "@vitejs/plugin-react": "^5.1.4",
-      "electron-vite": "^5.0.0",
-      "js-yaml": "^4.1.1",
-      "@types/js-yaml": "^4.0.9",
+      "@vitejs/plugin-react": "^4.7.0",
+      "electron-vite": "^4.0.1",
+      "identity-obj-proxy": "^3.0.0",
+      "jest": "^29.7.0",
+      "jest-environment-jsdom": "^29.7.0",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
-      "moment": "^2.30.1",
+      "playwright": "^1.60.0",
       "react": "17.0.2",
-      "sass": "^1.97.3",
-      "typescript": "5.9.3",
-      "vite": "^7.3.1",
+      "react-dom": "17.0.2",
+      "sass": "^1.99.0",
+      "ts-jest": "^29.4.9",
+      "typescript": "5.8.3",
+      "vite": "^7.3.3",
       "vite-plugin-external": "^6.2.2",
-      "vite-plugin-sass-dts": "^1.3.35"
+      "vite-plugin-sass-dts": "^1.3.37"
     },
-    "packageManager": "pnpm@10.29.3"
+    "keywords": [
+      "extension",
+      "freelensapp",
+      "lens",
+      "openlens",
+      "freelens"
+    ],
+    "packageManager": "pnpm@11.1.1"
   },
   "releases": [
     {
-      "id": 303244260,
-      "tagName": "v0.1.1",
-      "name": "v0.1.1",
+      "id": 322768060,
+      "tagName": "0.1.0-beta.3",
+      "name": "0.1.0-beta.3",
       "draft": false,
       "prerelease": false,
-      "createdAt": "2026-03-30T15:09:10Z",
-      "publishedAt": "2026-03-30T15:10:26Z",
-      "body": "**Full Changelog**: https://github.com/jhajali/freelens-argocd-extension/compare/v0.1.0...v0.1.1",
+      "createdAt": "2026-05-14T19:36:33Z",
+      "publishedAt": "2026-05-14T19:37:59Z",
+      "body": "## What's Changed\r\n* Redact repo URLs and add Argo config loaders by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/13\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/0.1.0-beta.2...0.1.0-beta.3",
       "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+        "login": "Sebastian-Prokesch",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4"
       },
       "assets": [
         {
-          "name": "freelensapp-argocd-extension-0.1.0.tgz",
-          "size": 189372,
-          "downloadCount": 7,
+          "name": "sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.3.tgz",
+          "size": 180925,
+          "downloadCount": 0,
           "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
-          "createdAt": "2026-03-30T15:10:26Z",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/0.1.0-beta.3/sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.3.tgz",
+          "createdAt": "2026-05-14T19:39:16Z",
           "isTarGz": true,
           "isTar": false
         }
       ]
     },
     {
-      "id": 303240151,
-      "tagName": "v0.1.0",
-      "name": "v0.1.0",
+      "id": 322090814,
+      "tagName": "0.1.0-beta.2",
+      "name": "0.1.0-beta.2",
       "draft": false,
       "prerelease": false,
-      "createdAt": "2026-03-30T15:00:16Z",
-      "publishedAt": "2026-03-30T15:01:30Z",
-      "body": "**Full Changelog**: https://github.com/jhajali/freelens-argocd-extension/commits/v0.1.0",
+      "createdAt": "2026-05-13T19:36:33Z",
+      "publishedAt": "2026-05-13T19:37:53Z",
+      "body": "## What's Changed\r\n* Increment version to 0.1.0-beta.2 and remove Argo preferences from renderer by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/11\r\n* Increment version to 0.1.0-beta.2 and remove Argo preferences from renderer by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/12\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/0.1.0-beta.1...0.1.0-beta.2",
       "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+        "login": "Sebastian-Prokesch",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4"
       },
       "assets": [
         {
-          "name": "freelensapp-argocd-extension-0.1.0.tgz",
-          "size": 189470,
+          "name": "sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.2.tgz",
+          "size": 176884,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/0.1.0-beta.2/sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.2.tgz",
+          "createdAt": "2026-05-13T19:38:46Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 321431268,
+      "tagName": "0.1.0-beta.1",
+      "name": "0.1.0-beta.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-12T21:01:07Z",
+      "publishedAt": "2026-05-12T21:03:41Z",
+      "body": "## What's Changed\r\n* Update version to 0.0.12 by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/7\r\n* Refactor StatusBadge and ConditionsList by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/8\r\n* Increment version to 0.0.15 and enhance ArgoCD configuration handling by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/9\r\n* Increment version to 0.1.0-beta.1 and enhance ArgoCD extension features by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/10\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.0.7-alpha...0.1.0-beta.1",
+      "author": {
+        "login": "Sebastian-Prokesch",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.1.tgz",
+          "size": 178156,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/0.1.0-beta.1/sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.1.tgz",
+          "createdAt": "2026-05-12T21:04:32Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 317989527,
+      "tagName": "v0.0.7-alpha",
+      "name": "v0.0.7-alpha",
+      "draft": false,
+      "prerelease": true,
+      "createdAt": "2026-05-04T20:22:18Z",
+      "publishedAt": "2026-05-05T18:41:34Z",
+      "body": "## What's Changed\r\n* Update version to 0.0.7 and add support for Argo Rollouts by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/6\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.0.6-alpha...v0.0.7-alpha",
+      "author": {
+        "login": "Sebastian-Prokesch",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argocd-extension-0.0.7.tgz",
+          "size": 111240,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.0.7-alpha/sebastian-prokesch-freelens-argocd-extension-0.0.7.tgz",
+          "createdAt": "2026-05-05T18:42:43Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 314205518,
+      "tagName": "v0.0.6-alpha",
+      "name": "v0.0.6-alpha",
+      "draft": false,
+      "prerelease": true,
+      "createdAt": "2026-04-27T18:30:54Z",
+      "publishedAt": "2026-04-27T18:33:46Z",
+      "body": "## What's Changed\r\n* Add example ArgoCD resource templates for AppProject, Application, an… by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/4\r\n* Update ArgoCD extension to support ApplicationSets and enhance UI by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/5\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.0.3-alpha...v0.0.6-alpha",
+      "author": {
+        "login": "Sebastian-Prokesch",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argocd-extension-0.0.6.tgz",
+          "size": 88452,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.0.6-alpha/sebastian-prokesch-freelens-argocd-extension-0.0.6.tgz",
+          "createdAt": "2026-04-27T18:34:50Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 287246165,
+      "tagName": "v0.0.3-alpha",
+      "name": "v0.0.3-alpha",
+      "draft": false,
+      "prerelease": true,
+      "createdAt": "2026-02-17T12:29:57Z",
+      "publishedAt": "2026-02-17T12:59:27Z",
+      "body": "## What's Changed\r\n* Add CI and Release workflows for automated testing and deployment by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/3\r\n\r\n## New Contributors\r\n* @Sebastian-Prokesch made their first contribution in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/3\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/commits/v0.0.3-alpha",
+      "author": {
+        "login": "Sebastian-Prokesch",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argocd-extension-0.0.3.tgz",
+          "size": 75660,
           "downloadCount": 1,
           "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.0/freelensapp-argocd-extension-0.1.0.tgz",
-          "createdAt": "2026-03-30T15:01:29Z",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.0.3-alpha/sebastian-prokesch-freelens-argocd-extension-0.0.3.tgz",
+          "createdAt": "2026-02-17T13:00:17Z",
           "isTarGz": true,
           "isTar": false
         }
@@ -130,85 +287,181 @@
   ],
   "tags": [
     {
-      "name": "v0.1.1",
-      "commitSha": "3862f851950d473a81ac703ceb8043082b690016",
-      "commitUrl": "https://api.github.com/repos/jhajali/freelens-argocd-extension/commits/3862f851950d473a81ac703ceb8043082b690016",
-      "zipballUrl": "https://api.github.com/repos/jhajali/freelens-argocd-extension/zipball/refs/tags/v0.1.1",
-      "tarballUrl": "https://api.github.com/repos/jhajali/freelens-argocd-extension/tarball/refs/tags/v0.1.1"
+      "name": "v0.0.7-alpha",
+      "commitSha": "f18816ec109624cdde6c56152dd50bb4425dd95a",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/f18816ec109624cdde6c56152dd50bb4425dd95a",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.0.7-alpha",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.0.7-alpha"
     },
     {
-      "name": "v0.1.0",
-      "commitSha": "3046d6dec9f8894e17486c0f126e49b1e74a5b44",
-      "commitUrl": "https://api.github.com/repos/jhajali/freelens-argocd-extension/commits/3046d6dec9f8894e17486c0f126e49b1e74a5b44",
-      "zipballUrl": "https://api.github.com/repos/jhajali/freelens-argocd-extension/zipball/refs/tags/v0.1.0",
-      "tarballUrl": "https://api.github.com/repos/jhajali/freelens-argocd-extension/tarball/refs/tags/v0.1.0"
+      "name": "v0.0.6-alpha",
+      "commitSha": "9beadb53a5f3237739e01f0e705b50b6d0a39f38",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/9beadb53a5f3237739e01f0e705b50b6d0a39f38",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.0.6-alpha",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.0.6-alpha"
+    },
+    {
+      "name": "v0.0.3-alpha",
+      "commitSha": "8bfb9d03da8ade554c2602d3be8da9ceeb8cc935",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/8bfb9d03da8ade554c2602d3be8da9ceeb8cc935",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.0.3-alpha",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.0.3-alpha"
+    },
+    {
+      "name": "0.1.0-beta.3",
+      "commitSha": "f08c6f97739984d54ee6283835b29847196d056d",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/f08c6f97739984d54ee6283835b29847196d056d",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/0.1.0-beta.3",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/0.1.0-beta.3"
+    },
+    {
+      "name": "0.1.0-beta.2",
+      "commitSha": "f9d03e555df74afd20a8186084cc9657c0d07a41",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/f9d03e555df74afd20a8186084cc9657c0d07a41",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/0.1.0-beta.2",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/0.1.0-beta.2"
+    },
+    {
+      "name": "0.1.0-beta.1",
+      "commitSha": "ff8cf3d5bd6490416ddb16fcb1ed6c2f43202c38",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/ff8cf3d5bd6490416ddb16fcb1ed6c2f43202c38",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/0.1.0-beta.1",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/0.1.0-beta.1"
     }
   ],
   "versionHistory": [
     {
-      "version": "v0.1.1",
-      "name": "v0.1.1",
-      "publishedAt": "2026-03-30T15:10:26Z",
+      "version": "0.1.0-beta.3",
+      "name": "0.1.0-beta.3",
+      "publishedAt": "2026-05-14T19:37:59Z",
       "isPrerelease": false,
-      "notes": "**Full Changelog**: https://github.com/jhajali/freelens-argocd-extension/compare/v0.1.0...v0.1.1"
+      "notes": "## What's Changed\r\n* Redact repo URLs and add Argo config loaders by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/13\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/0.1.0-beta.2...0.1.0-beta.3"
     },
     {
-      "version": "v0.1.0",
-      "name": "v0.1.0",
-      "publishedAt": "2026-03-30T15:01:30Z",
+      "version": "0.1.0-beta.2",
+      "name": "0.1.0-beta.2",
+      "publishedAt": "2026-05-13T19:37:53Z",
       "isPrerelease": false,
-      "notes": "**Full Changelog**: https://github.com/jhajali/freelens-argocd-extension/commits/v0.1.0"
+      "notes": "## What's Changed\r\n* Increment version to 0.1.0-beta.2 and remove Argo preferences from renderer by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/11\r\n* Increment version to 0.1.0-beta.2 and remove Argo preferences from renderer by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/12\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/0.1.0-beta.1...0.1.0-beta.2"
+    },
+    {
+      "version": "0.1.0-beta.1",
+      "name": "0.1.0-beta.1",
+      "publishedAt": "2026-05-12T21:03:41Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Update version to 0.0.12 by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/7\r\n* Refactor StatusBadge and ConditionsList by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/8\r\n* Increment version to 0.0.15 and enhance ArgoCD configuration handling by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/9\r\n* Increment version to 0.1.0-beta.1 and enhance ArgoCD extension features by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/10\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.0.7-alpha...0.1.0-beta.1"
+    },
+    {
+      "version": "v0.0.7-alpha",
+      "name": "v0.0.7-alpha",
+      "publishedAt": "2026-05-05T18:41:34Z",
+      "isPrerelease": true,
+      "notes": "## What's Changed\r\n* Update version to 0.0.7 and add support for Argo Rollouts by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/6\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.0.6-alpha...v0.0.7-alpha"
+    },
+    {
+      "version": "v0.0.6-alpha",
+      "name": "v0.0.6-alpha",
+      "publishedAt": "2026-04-27T18:33:46Z",
+      "isPrerelease": true,
+      "notes": "## What's Changed\r\n* Add example ArgoCD resource templates for AppProject, Application, an… by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/4\r\n* Update ArgoCD extension to support ApplicationSets and enhance UI by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/5\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.0.3-alpha...v0.0.6-alpha"
+    },
+    {
+      "version": "v0.0.3-alpha",
+      "name": "v0.0.3-alpha",
+      "publishedAt": "2026-02-17T12:59:27Z",
+      "isPrerelease": true,
+      "notes": "## What's Changed\r\n* Add CI and Release workflows for automated testing and deployment by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/3\r\n\r\n## New Contributors\r\n* @Sebastian-Prokesch made their first contribution in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/3\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/commits/v0.0.3-alpha"
     }
   ],
   "tarFiles": [
     {
-      "filename": "freelensapp-argocd-extension-0.1.0.tgz",
-      "releaseTag": "v0.1.1",
-      "releaseName": "v0.1.1",
-      "size": 189372,
-      "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
-      "downloadCount": 7,
+      "filename": "sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.3.tgz",
+      "releaseTag": "0.1.0-beta.3",
+      "releaseName": "0.1.0-beta.3",
+      "size": 180925,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/0.1.0-beta.3/sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.3.tgz",
+      "downloadCount": 0,
       "type": "tar.gz",
-      "createdAt": "2026-03-30T15:10:26Z"
+      "createdAt": "2026-05-14T19:39:16Z"
     },
     {
-      "filename": "freelensapp-argocd-extension-0.1.0.tgz",
-      "releaseTag": "v0.1.0",
-      "releaseName": "v0.1.0",
-      "size": 189470,
-      "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.0/freelensapp-argocd-extension-0.1.0.tgz",
+      "filename": "sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.2.tgz",
+      "releaseTag": "0.1.0-beta.2",
+      "releaseName": "0.1.0-beta.2",
+      "size": 176884,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/0.1.0-beta.2/sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.2.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-05-13T19:38:46Z"
+    },
+    {
+      "filename": "sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.1.tgz",
+      "releaseTag": "0.1.0-beta.1",
+      "releaseName": "0.1.0-beta.1",
+      "size": 178156,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/0.1.0-beta.1/sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.1.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-05-12T21:04:32Z"
+    },
+    {
+      "filename": "sebastian-prokesch-freelens-argocd-extension-0.0.7.tgz",
+      "releaseTag": "v0.0.7-alpha",
+      "releaseName": "v0.0.7-alpha",
+      "size": 111240,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.0.7-alpha/sebastian-prokesch-freelens-argocd-extension-0.0.7.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-05-05T18:42:43Z"
+    },
+    {
+      "filename": "sebastian-prokesch-freelens-argocd-extension-0.0.6.tgz",
+      "releaseTag": "v0.0.6-alpha",
+      "releaseName": "v0.0.6-alpha",
+      "size": 88452,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.0.6-alpha/sebastian-prokesch-freelens-argocd-extension-0.0.6.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-04-27T18:34:50Z"
+    },
+    {
+      "filename": "sebastian-prokesch-freelens-argocd-extension-0.0.3.tgz",
+      "releaseTag": "v0.0.3-alpha",
+      "releaseName": "v0.0.3-alpha",
+      "size": 75660,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.0.3-alpha/sebastian-prokesch-freelens-argocd-extension-0.0.3.tgz",
       "downloadCount": 1,
       "type": "tar.gz",
-      "createdAt": "2026-03-30T15:01:29Z"
+      "createdAt": "2026-02-17T13:00:17Z"
     }
   ],
   "latestRelease": {
-    "id": 303244260,
-    "tagName": "v0.1.1",
-    "name": "v0.1.1",
+    "id": 322768060,
+    "tagName": "0.1.0-beta.3",
+    "name": "0.1.0-beta.3",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-03-30T15:09:10Z",
-    "publishedAt": "2026-03-30T15:10:26Z",
-    "body": "**Full Changelog**: https://github.com/jhajali/freelens-argocd-extension/compare/v0.1.0...v0.1.1",
+    "createdAt": "2026-05-14T19:36:33Z",
+    "publishedAt": "2026-05-14T19:37:59Z",
+    "body": "## What's Changed\r\n* Redact repo URLs and add Argo config loaders by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/13\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/0.1.0-beta.2...0.1.0-beta.3",
     "author": {
-      "login": "github-actions[bot]",
-      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      "login": "Sebastian-Prokesch",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1169889?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-argocd-extension-0.1.0.tgz",
-        "size": 189372,
-        "downloadCount": 7,
+        "name": "sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.3.tgz",
+        "size": 180925,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/jhajali/freelens-argocd-extension/releases/download/v0.1.1/freelensapp-argocd-extension-0.1.0.tgz",
-        "createdAt": "2026-03-30T15:10:26Z",
+        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/0.1.0-beta.3/sebastian-prokesch-freelens-argocd-extension-0.1.0-beta.3.tgz",
+        "createdAt": "2026-05-14T19:39:16Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 2,
+  "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-17T09:26:04.433Z"
+  "lastScanned": "2026-05-17T10:48:04.092Z"
 }
