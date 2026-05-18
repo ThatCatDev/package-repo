@@ -5,11 +5,11 @@
   "description": "AI capabilities for Freelens",
   "homepage": "https://freelens.app/",
   "stars": 30,
-  "forks": 7,
+  "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
   "updatedAt": "2026-05-16T05:43:34Z",
-  "pushedAt": "2026-05-17T08:22:50Z",
+  "pushedAt": "2026-05-18T10:04:49Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -459,5 +459,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-18T08:33:34.859Z"
+  "lastScanned": "2026-05-18T12:00:23.263Z"
 }
