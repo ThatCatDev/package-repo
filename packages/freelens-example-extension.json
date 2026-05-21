@@ -5,11 +5,11 @@
   "description": "Example of a Freelens extension",
   "homepage": "https://freelens.app",
   "stars": 5,
-  "forks": 5,
+  "forks": 6,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
   "updatedAt": "2026-05-10T01:13:15Z",
-  "pushedAt": "2026-05-20T09:49:04Z",
+  "pushedAt": "2026-05-21T09:55:30Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -948,5 +948,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-21T09:29:09.914Z"
+  "lastScanned": "2026-05-21T12:30:56.099Z"
 }

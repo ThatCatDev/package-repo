@@ -158,8 +158,8 @@
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
-    "stars": 4,
-    "updatedAt": "2026-05-13T07:03:20Z",
+    "stars": 5,
+    "updatedAt": "2026-05-21T12:27:30Z",
     "latestVersion": "0.1.0-1",
     "hasReleases": false,
     "hasTarFiles": false
@@ -280,8 +280,8 @@
     "fullName": "freelensapp/freelens-resource-map-extension",
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
     "stars": 12,
-    "updatedAt": "2026-05-12T18:12:49Z",
-    "latestVersion": "v1.0.1",
+    "updatedAt": "2026-05-21T11:02:09Z",
+    "latestVersion": "v1.0.2",
     "hasReleases": true,
     "hasTarFiles": true
   },
