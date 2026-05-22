@@ -124,10 +124,10 @@
     "name": "freelens-extension-k8s-advisor",
     "repoName": "freelens-extension-k8s-advisor",
     "fullName": "Gear5Jedi/freelens-extension-k8s-advisor",
-    "description": "SRE-focused Kubernetes troubleshooting and observability extension for Freelens with pod diagnostics, node insights, log intelligence, and RCA workflows.",
+    "description": "Pod Scheduling Advisor extension for FreeLens",
     "stars": 0,
-    "updatedAt": "2026-05-22T06:32:22Z",
-    "latestVersion": null,
+    "updatedAt": "2026-05-22T15:27:23Z",
+    "latestVersion": "1.0.2",
     "hasReleases": false,
     "hasTarFiles": false
   },

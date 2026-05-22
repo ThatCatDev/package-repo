@@ -2,17 +2,17 @@
   "name": "freelens-extension-k8s-advisor",
   "repoName": "freelens-extension-k8s-advisor",
   "fullName": "Gear5Jedi/freelens-extension-k8s-advisor",
-  "description": "SRE-focused Kubernetes troubleshooting and observability extension for Freelens with pod diagnostics, node insights, log intelligence, and RCA workflows.",
+  "description": "Pod Scheduling Advisor extension for FreeLens",
   "homepage": "https://github.com/Gear5Jedi/freelens-extension-k8s-advisor",
   "stars": 0,
   "forks": 0,
-  "language": null,
+  "language": "TypeScript",
   "createdAt": "2026-05-22T06:32:17Z",
-  "updatedAt": "2026-05-22T06:32:22Z",
-  "pushedAt": "2026-05-22T06:32:18Z",
+  "updatedAt": "2026-05-22T15:27:23Z",
+  "pushedAt": "2026-05-22T15:27:19Z",
   "defaultBranch": "main",
   "topics": [],
-  "license": null,
+  "license": "MIT",
   "owner": {
     "login": "Gear5Jedi",
     "avatarUrl": "https://avatars.githubusercontent.com/u/272727983?v=4",
@@ -23,13 +23,58 @@
     "cloneUrl": "https://github.com/Gear5Jedi/freelens-extension-k8s-advisor.git",
     "sshUrl": "git@github.com:Gear5Jedi/freelens-extension-k8s-advisor.git"
   },
-  "packageJson": null,
+  "packageJson": {
+    "name": "freelens-extension-k8s-advisor",
+    "version": "1.0.2",
+    "description": "Pod Scheduling Advisor extension for FreeLens",
+    "main": "out/main/index.js",
+    "renderer": "out/renderer/index.js",
+    "files": [
+      "out/**/*"
+    ],
+    "engines": {
+      "node": ">= 22.14.0",
+      "freelens": "^1.3.0"
+    },
+    "scripts": {
+      "build": "electron-vite build",
+      "build-extension": "npm version patch && npm run build && npm pack"
+    },
+    "devDependencies": {
+      "@electron-toolkit/tsconfig": "^1.0.1",
+      "@freelensapp/extensions": "^1.3.0",
+      "@types/node": "^22.15.24",
+      "@types/react": "^17.0.87",
+      "@vitejs/plugin-react": "^4.5.0",
+      "electron-vite": "^3.1.0",
+      "typescript": "5.8.3",
+      "vite": "^6.3.5",
+      "vite-plugin-css-injected-by-js": "^5.0.1",
+      "vite-plugin-external": "^6.2.2"
+    },
+    "dependencies": {
+      "clsx": "^2.1.1",
+      "lucide-react": "^1.16.0",
+      "mobx": "^6.13.7",
+      "mobx-react": "^9.2.0",
+      "recharts": "^3.8.1",
+      "tailwind-merge": "^3.6.0"
+    }
+  },
   "releases": [],
-  "tags": [],
+  "tags": [
+    {
+      "name": "v1.0.1",
+      "commitSha": "35734c6171e26b4b6c8a07ee04f52b98824e5716",
+      "commitUrl": "https://api.github.com/repos/Gear5Jedi/freelens-extension-k8s-advisor/commits/35734c6171e26b4b6c8a07ee04f52b98824e5716",
+      "zipballUrl": "https://api.github.com/repos/Gear5Jedi/freelens-extension-k8s-advisor/zipball/refs/tags/v1.0.1",
+      "tarballUrl": "https://api.github.com/repos/Gear5Jedi/freelens-extension-k8s-advisor/tarball/refs/tags/v1.0.1"
+    }
+  ],
   "versionHistory": [],
   "tarFiles": [],
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-05-22T13:43:32.563Z"
+  "lastScanned": "2026-05-22T16:06:29.185Z"
 }
