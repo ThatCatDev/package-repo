@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-sveltos-extension",
   "description": "Sveltos Freelens extension",
   "homepage": "https://freelens.app/",
-  "stars": 4,
+  "stars": 5,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-09-21T15:51:23Z",
-  "updatedAt": "2026-05-16T13:45:50Z",
+  "updatedAt": "2026-05-22T02:12:28Z",
   "pushedAt": "2026-05-22T00:09:30Z",
   "defaultBranch": "main",
   "topics": [
@@ -201,5 +201,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-22T01:34:24.750Z"
+  "lastScanned": "2026-05-22T05:45:46.683Z"
 }
