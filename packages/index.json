@@ -121,6 +121,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-extension-k8s-advisor",
+    "repoName": "freelens-extension-k8s-advisor",
+    "fullName": "Gear5Jedi/freelens-extension-k8s-advisor",
+    "description": "SRE-focused Kubernetes troubleshooting and observability extension for Freelens with pod diagnostics, node insights, log intelligence, and RCA workflows.",
+    "stars": 0,
+    "updatedAt": "2026-05-22T06:32:22Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-externalsecrets-extension",
     "repoName": "freelens-externalsecrets-extension",
     "fullName": "ganey/freelens-externalsecrets-extension",

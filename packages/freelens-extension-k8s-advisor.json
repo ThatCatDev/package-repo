@@ -1,0 +1,35 @@
+{
+  "name": "freelens-extension-k8s-advisor",
+  "repoName": "freelens-extension-k8s-advisor",
+  "fullName": "Gear5Jedi/freelens-extension-k8s-advisor",
+  "description": "SRE-focused Kubernetes troubleshooting and observability extension for Freelens with pod diagnostics, node insights, log intelligence, and RCA workflows.",
+  "homepage": "https://github.com/Gear5Jedi/freelens-extension-k8s-advisor",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-05-22T06:32:17Z",
+  "updatedAt": "2026-05-22T06:32:22Z",
+  "pushedAt": "2026-05-22T06:32:18Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": null,
+  "owner": {
+    "login": "Gear5Jedi",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/272727983?v=4",
+    "url": "https://github.com/Gear5Jedi"
+  },
+  "repository": {
+    "url": "https://github.com/Gear5Jedi/freelens-extension-k8s-advisor",
+    "cloneUrl": "https://github.com/Gear5Jedi/freelens-extension-k8s-advisor.git",
+    "sshUrl": "git@github.com:Gear5Jedi/freelens-extension-k8s-advisor.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-05-22T08:39:54.824Z"
+}
