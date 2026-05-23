@@ -139,7 +139,15 @@
       ]
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "name": "v1.0.0",
+      "commitSha": "daf99bfa68bcafa423bbdfd6e6948a8773c175f4",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/commits/daf99bfa68bcafa423bbdfd6e6948a8773c175f4",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/tarball/refs/tags/v1.0.0"
+    }
+  ],
   "versionHistory": [
     {
       "version": "v1.0.0",
@@ -189,5 +197,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-23T16:15:19.783Z"
+  "lastScanned": "2026-05-23T17:17:53.997Z"
 }
