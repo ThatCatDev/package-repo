@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-09-21T15:51:23Z",
   "updatedAt": "2026-05-22T02:12:28Z",
-  "pushedAt": "2026-05-23T08:28:45Z",
+  "pushedAt": "2026-05-23T15:46:56Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -133,7 +133,7 @@
         {
           "name": "freelensapp-sveltos-extension-1.0.0.tgz",
           "size": 46604,
-          "downloadCount": 0,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v1.0.0/freelensapp-sveltos-extension-1.0.0.tgz",
           "createdAt": "2026-05-14T17:46:01Z",
@@ -143,15 +143,7 @@
       ]
     }
   ],
-  "tags": [
-    {
-      "name": "v1.0.0",
-      "commitSha": "78415d673dbab824e760ec61cd529ffe7807ade7",
-      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-sveltos-extension/commits/78415d673dbab824e760ec61cd529ffe7807ade7",
-      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-sveltos-extension/zipball/refs/tags/v1.0.0",
-      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-sveltos-extension/tarball/refs/tags/v1.0.0"
-    }
-  ],
+  "tags": [],
   "versionHistory": [
     {
       "version": "v1.0.0",
@@ -168,7 +160,7 @@
       "releaseName": "v1.0.0",
       "size": 46604,
       "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v1.0.0/freelensapp-sveltos-extension-1.0.0.tgz",
-      "downloadCount": 0,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-05-14T17:46:01Z"
     }
@@ -190,7 +182,7 @@
       {
         "name": "freelensapp-sveltos-extension-1.0.0.tgz",
         "size": 46604,
-        "downloadCount": 0,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v1.0.0/freelensapp-sveltos-extension-1.0.0.tgz",
         "createdAt": "2026-05-14T17:46:01Z",
@@ -201,5 +193,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-23T15:18:40.446Z"
+  "lastScanned": "2026-05-23T16:15:20.686Z"
 }
