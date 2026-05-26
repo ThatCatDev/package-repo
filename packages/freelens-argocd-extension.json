@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-08-06T08:54:35Z",
-  "updatedAt": "2026-05-19T15:09:55Z",
-  "pushedAt": "2026-05-26T17:43:05Z",
+  "updatedAt": "2026-05-26T18:28:50Z",
+  "pushedAt": "2026-05-26T18:30:39Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@sebastian-prokesch/freelens-argo-extension",
-    "version": "0.1.1",
+    "version": "0.1.4",
     "description": "Freelens Extension for Argo resources",
     "repository": {
       "type": "git",
@@ -366,6 +366,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.4",
+      "commitSha": "998bfaf7df8f667edd96c45cbcd0ff815748fb38",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/998bfaf7df8f667edd96c45cbcd0ff815748fb38",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.1.4",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.1.4"
+    },
+    {
       "name": "v0.1.1",
       "commitSha": "1766a55c848706e0d8bf7572bc75f5d53da4f4e6",
       "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/1766a55c848706e0d8bf7572bc75f5d53da4f4e6",
@@ -614,5 +621,5 @@
   },
   "totalReleases": 9,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-26T17:48:57.411Z"
+  "lastScanned": "2026-05-26T19:47:55.479Z"
 }
