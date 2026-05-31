@@ -130,7 +130,7 @@
         {
           "name": "freelens-hotkey-extension-0.1.1.tgz",
           "size": 10300,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
           "createdAt": "2026-02-04T19:36:51Z",
@@ -205,7 +205,7 @@
       "releaseName": "v0.1.1",
       "size": 10300,
       "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
-      "downloadCount": 7,
+      "downloadCount": 8,
       "type": "tar.gz",
       "createdAt": "2026-02-04T19:36:51Z"
     },
@@ -237,7 +237,7 @@
       {
         "name": "freelens-hotkey-extension-0.1.1.tgz",
         "size": 10300,
-        "downloadCount": 7,
+        "downloadCount": 8,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
         "createdAt": "2026-02-04T19:36:51Z",
@@ -248,5 +248,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-05-31T11:08:31.201Z"
+  "lastScanned": "2026-05-31T12:18:19.097Z"
 }
