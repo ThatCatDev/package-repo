@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-05-26T15:43:52Z",
-  "pushedAt": "2026-06-01T11:15:07Z",
+  "updatedAt": "2026-06-01T15:11:17Z",
+  "pushedAt": "2026-06-01T14:41:25Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -94,7 +94,7 @@
       "@babel/plugin-proposal-decorators": "^7.29.0",
       "@electron-toolkit/tsconfig": "^2.0.0",
       "@freelensapp/extensions": "^1.9.0",
-      "@types/node": "~22.19.17",
+      "@types/node": "~24.12.4",
       "@types/react": "^17.0.91",
       "@vitejs/plugin-react": "^6.0.1",
       "electron-vite": "^5.0.0",
@@ -122,5 +122,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-06-01T12:48:28.498Z"
+  "lastScanned": "2026-06-01T18:29:25.178Z"
 }

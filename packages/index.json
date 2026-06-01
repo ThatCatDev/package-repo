@@ -27,8 +27,8 @@
     "fullName": "Sebastian-Prokesch/freelens-argocd-extension",
     "description": "Freelens Extension for Argo resources",
     "stars": 1,
-    "updatedAt": "2026-05-26T18:28:50Z",
-    "latestVersion": "v0.1.1",
+    "updatedAt": "2026-06-01T16:19:10Z",
+    "latestVersion": "v0.1.5",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -93,7 +93,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-05-10T01:13:15Z",
+    "updatedAt": "2026-06-01T18:13:02Z",
     "latestVersion": "v1.9.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -170,7 +170,7 @@
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
     "stars": 7,
-    "updatedAt": "2026-05-26T15:43:52Z",
+    "updatedAt": "2026-06-01T15:11:17Z",
     "latestVersion": "0.1.0-1",
     "hasReleases": false,
     "hasTarFiles": false

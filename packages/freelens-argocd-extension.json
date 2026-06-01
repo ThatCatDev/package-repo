@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-08-06T08:54:35Z",
-  "updatedAt": "2026-05-26T18:28:50Z",
-  "pushedAt": "2026-05-26T18:30:39Z",
+  "updatedAt": "2026-06-01T16:19:10Z",
+  "pushedAt": "2026-06-01T16:04:44Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@sebastian-prokesch/freelens-argo-extension",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Freelens Extension for Argo resources",
     "repository": {
       "type": "git",
@@ -129,6 +129,58 @@
     "packageManager": "pnpm@11.1.1"
   },
   "releases": [
+    {
+      "id": 332610571,
+      "tagName": "v0.1.5",
+      "name": "v0.1.5",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-06-01T16:03:15Z",
+      "publishedAt": "2026-06-01T16:06:48Z",
+      "body": "## What's Changed\r\n* standardize ArgoCD mutation safety layer  by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/17\r\n* standardize ArgoCD mutation safety layer  (#17) by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/18\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.4...v0.1.5",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
+          "size": 153403,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.5/sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
+          "createdAt": "2026-06-01T16:05:57Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 329614432,
+      "tagName": "v0.1.4",
+      "name": "v0.1.4",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-26T18:28:44Z",
+      "publishedAt": "2026-06-01T16:05:36Z",
+      "body": "## What's Changed\r\n* Centralizes Argo mutation logic and error handling by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/16\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.1...v0.1.4",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argo-extension-0.1.4.tgz",
+          "size": 151534,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.4/sebastian-prokesch-freelens-argo-extension-0.1.4.tgz",
+          "createdAt": "2026-05-26T18:31:48Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 323883687,
       "tagName": "v0.1.1",
@@ -366,6 +418,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.5",
+      "commitSha": "78c3b686fbe7904b22e5f87b85096b4e05ae98fb",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/78c3b686fbe7904b22e5f87b85096b4e05ae98fb",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.1.5",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.1.5"
+    },
+    {
       "name": "v0.1.4",
       "commitSha": "998bfaf7df8f667edd96c45cbcd0ff815748fb38",
       "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/998bfaf7df8f667edd96c45cbcd0ff815748fb38",
@@ -438,6 +497,20 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.1.5",
+      "name": "v0.1.5",
+      "publishedAt": "2026-06-01T16:06:48Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* standardize ArgoCD mutation safety layer  by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/17\r\n* standardize ArgoCD mutation safety layer  (#17) by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/18\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.4...v0.1.5"
+    },
+    {
+      "version": "v0.1.4",
+      "name": "v0.1.4",
+      "publishedAt": "2026-06-01T16:05:36Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Centralizes Argo mutation logic and error handling by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/16\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.1...v0.1.4"
+    },
+    {
       "version": "v0.1.1",
       "name": "v0.1.1",
       "publishedAt": "2026-05-17T12:24:47Z",
@@ -502,6 +575,26 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
+      "releaseTag": "v0.1.5",
+      "releaseName": "v0.1.5",
+      "size": 153403,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.5/sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-06-01T16:05:57Z"
+    },
+    {
+      "filename": "sebastian-prokesch-freelens-argo-extension-0.1.4.tgz",
+      "releaseTag": "v0.1.4",
+      "releaseName": "v0.1.4",
+      "size": 151534,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.4/sebastian-prokesch-freelens-argo-extension-0.1.4.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-05-26T18:31:48Z"
+    },
     {
       "filename": "sebastian-prokesch-freelens-argo-extension-0.1.1.tgz",
       "releaseTag": "v0.1.1",
@@ -594,32 +687,32 @@
     }
   ],
   "latestRelease": {
-    "id": 323883687,
-    "tagName": "v0.1.1",
-    "name": "v0.1.1",
+    "id": 332610571,
+    "tagName": "v0.1.5",
+    "name": "v0.1.5",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-05-17T12:20:04Z",
-    "publishedAt": "2026-05-17T12:24:47Z",
-    "body": "## What's Changed\r\n* Release 0.1.1: Address renderer loading issues and improve build process by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/15\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.0...v0.1.1",
+    "createdAt": "2026-06-01T16:03:15Z",
+    "publishedAt": "2026-06-01T16:06:48Z",
+    "body": "## What's Changed\r\n* standardize ArgoCD mutation safety layer  by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/17\r\n* standardize ArgoCD mutation safety layer  (#17) by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/18\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.4...v0.1.5",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "sebastian-prokesch-freelens-argo-extension-0.1.1.tgz",
-        "size": 149938,
-        "downloadCount": 1,
+        "name": "sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
+        "size": 153403,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.1/sebastian-prokesch-freelens-argo-extension-0.1.1.tgz",
-        "createdAt": "2026-05-17T12:21:55Z",
+        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.5/sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
+        "createdAt": "2026-06-01T16:05:57Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 9,
+  "totalReleases": 11,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-01T12:48:38.665Z"
+  "lastScanned": "2026-06-01T18:29:33.856Z"
 }
