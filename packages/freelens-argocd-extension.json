@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-08-06T08:54:35Z",
-  "updatedAt": "2026-06-01T16:19:10Z",
-  "pushedAt": "2026-06-02T18:08:15Z",
+  "updatedAt": "2026-06-02T19:48:01Z",
+  "pushedAt": "2026-06-02T19:48:28Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@sebastian-prokesch/freelens-argo-extension",
-    "version": "0.1.5",
+    "version": "0.1.7",
     "description": "Freelens Extension for Argo resources",
     "repository": {
       "type": "git",
@@ -129,6 +129,32 @@
     "packageManager": "pnpm@11.1.1"
   },
   "releases": [
+    {
+      "id": 333342552,
+      "tagName": "v0.1.7",
+      "name": "v0.1.7",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-06-02T19:47:10Z",
+      "publishedAt": "2026-06-02T19:50:27Z",
+      "body": "## What's Changed\r\n* Add Application refresh actions and standardize mutation handlers on guarded flow by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/19\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.5...v0.1.7",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argo-extension-0.1.7.tgz",
+          "size": 154574,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.7/sebastian-prokesch-freelens-argo-extension-0.1.7.tgz",
+          "createdAt": "2026-06-02T19:49:36Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 332610571,
       "tagName": "v0.1.5",
@@ -418,6 +444,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.7",
+      "commitSha": "80cbf382121010c1de96b805053fffc4da309d89",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/80cbf382121010c1de96b805053fffc4da309d89",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.1.7",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.1.7"
+    },
+    {
       "name": "v0.1.5",
       "commitSha": "78c3b686fbe7904b22e5f87b85096b4e05ae98fb",
       "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/78c3b686fbe7904b22e5f87b85096b4e05ae98fb",
@@ -497,6 +530,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.1.7",
+      "name": "v0.1.7",
+      "publishedAt": "2026-06-02T19:50:27Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Add Application refresh actions and standardize mutation handlers on guarded flow by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/19\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.5...v0.1.7"
+    },
+    {
       "version": "v0.1.5",
       "name": "v0.1.5",
       "publishedAt": "2026-06-01T16:06:48Z",
@@ -575,6 +615,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "sebastian-prokesch-freelens-argo-extension-0.1.7.tgz",
+      "releaseTag": "v0.1.7",
+      "releaseName": "v0.1.7",
+      "size": 154574,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.7/sebastian-prokesch-freelens-argo-extension-0.1.7.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-06-02T19:49:36Z"
+    },
     {
       "filename": "sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
       "releaseTag": "v0.1.5",
@@ -687,32 +737,32 @@
     }
   ],
   "latestRelease": {
-    "id": 332610571,
-    "tagName": "v0.1.5",
-    "name": "v0.1.5",
+    "id": 333342552,
+    "tagName": "v0.1.7",
+    "name": "v0.1.7",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-06-01T16:03:15Z",
-    "publishedAt": "2026-06-01T16:06:48Z",
-    "body": "## What's Changed\r\n* standardize ArgoCD mutation safety layer  by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/17\r\n* standardize ArgoCD mutation safety layer  (#17) by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/18\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.4...v0.1.5",
+    "createdAt": "2026-06-02T19:47:10Z",
+    "publishedAt": "2026-06-02T19:50:27Z",
+    "body": "## What's Changed\r\n* Add Application refresh actions and standardize mutation handlers on guarded flow by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/19\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.5...v0.1.7",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
-        "size": 153403,
+        "name": "sebastian-prokesch-freelens-argo-extension-0.1.7.tgz",
+        "size": 154574,
         "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.5/sebastian-prokesch-freelens-argo-extension-0.1.5.tgz",
-        "createdAt": "2026-06-01T16:05:57Z",
+        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.7/sebastian-prokesch-freelens-argo-extension-0.1.7.tgz",
+        "createdAt": "2026-06-02T19:49:36Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 11,
+  "totalReleases": 12,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-02T18:26:02.828Z"
+  "lastScanned": "2026-06-02T21:27:38.569Z"
 }

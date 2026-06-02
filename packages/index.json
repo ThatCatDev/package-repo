@@ -27,8 +27,8 @@
     "fullName": "Sebastian-Prokesch/freelens-argocd-extension",
     "description": "Freelens Extension for Argo resources",
     "stars": 1,
-    "updatedAt": "2026-06-01T16:19:10Z",
-    "latestVersion": "v0.1.5",
+    "updatedAt": "2026-06-02T19:48:01Z",
+    "latestVersion": "v0.1.7",
     "hasReleases": true,
     "hasTarFiles": true
   },
