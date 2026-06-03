@@ -132,6 +132,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "freelens-extensions",
+    "repoName": "freelens-extensions",
+    "fullName": "maytanthegeek/freelens-extensions",
+    "description": "Monorepo of Freelens extensions and shared tooling.",
+    "stars": 0,
+    "updatedAt": "2026-06-03T14:16:57Z",
+    "latestVersion": "0.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-externalsecrets-extension",
     "repoName": "freelens-externalsecrets-extension",
     "fullName": "ganey/freelens-externalsecrets-extension",
