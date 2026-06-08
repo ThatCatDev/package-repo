@@ -130,7 +130,7 @@
         {
           "name": "freelensapp-example-extension-1.9.0.tgz",
           "size": 15354,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
           "createdAt": "2026-05-09T21:57:20Z",
@@ -234,7 +234,7 @@
         {
           "name": "freelensapp-example-extension-1.6.0.tgz",
           "size": 16223,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.0/freelensapp-example-extension-1.6.0.tgz",
           "createdAt": "2025-10-14T18:36:32Z",
@@ -765,7 +765,7 @@
       "releaseName": "v1.9.0",
       "size": 15354,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2026-05-09T21:57:20Z"
     },
@@ -805,7 +805,7 @@
       "releaseName": "v1.6.0",
       "size": 16223,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.0/freelensapp-example-extension-1.6.0.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2025-10-14T18:36:32Z"
     },
@@ -937,7 +937,7 @@
       {
         "name": "freelensapp-example-extension-1.9.0.tgz",
         "size": 15354,
-        "downloadCount": 3,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
         "createdAt": "2026-05-09T21:57:20Z",
@@ -948,5 +948,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-08T11:22:35.473Z"
+  "lastScanned": "2026-06-08T14:52:55.458Z"
 }
