@@ -141,7 +141,7 @@
         {
           "name": "freelensapp-ai-extension-0.6.0.tgz",
           "size": 2373681,
-          "downloadCount": 6,
+          "downloadCount": 7,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
           "createdAt": "2026-05-15T17:43:49Z",
@@ -271,7 +271,7 @@
         {
           "name": "freelensapp-ai-extension-0.1.0.tgz",
           "size": 2361310,
-          "downloadCount": 19,
+          "downloadCount": 20,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.1.0/freelensapp-ai-extension-0.1.0.tgz",
           "createdAt": "2025-07-14T17:01:12Z",
@@ -376,7 +376,7 @@
       "releaseName": "v0.6.0",
       "size": 2373681,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
-      "downloadCount": 6,
+      "downloadCount": 7,
       "type": "tar.gz",
       "createdAt": "2026-05-15T17:43:49Z"
     },
@@ -426,7 +426,7 @@
       "releaseName": "v0.1.0",
       "size": 2361310,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.1.0/freelensapp-ai-extension-0.1.0.tgz",
-      "downloadCount": 19,
+      "downloadCount": 20,
       "type": "tar.gz",
       "createdAt": "2025-07-14T17:01:12Z"
     }
@@ -448,7 +448,7 @@
       {
         "name": "freelensapp-ai-extension-0.6.0.tgz",
         "size": 2373681,
-        "downloadCount": 6,
+        "downloadCount": 7,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
         "createdAt": "2026-05-15T17:43:49Z",
@@ -459,5 +459,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-09T13:19:24.938Z"
+  "lastScanned": "2026-06-09T16:13:34.264Z"
 }
