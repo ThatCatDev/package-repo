@@ -5,7 +5,7 @@
   "description": "Example of a Freelens extension",
   "homepage": "https://freelens.app",
   "stars": 5,
-  "forks": 7,
+  "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
   "updatedAt": "2026-06-01T18:13:02Z",
@@ -948,5 +948,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-12T10:53:51.328Z"
+  "lastScanned": "2026-06-12T13:55:25.981Z"
 }
