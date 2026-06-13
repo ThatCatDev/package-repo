@@ -8,8 +8,8 @@
   "forks": 2,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-06-13T16:33:49Z",
-  "pushedAt": "2026-06-13T16:37:56Z",
+  "updatedAt": "2026-06-13T17:00:23Z",
+  "pushedAt": "2026-06-13T17:07:04Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -29,7 +29,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/gateway-api-extension",
-    "version": "0.1.0-1",
+    "version": "0.1.0",
     "description": "Freelens extension for Gateway API",
     "repository": {
       "type": "git",
@@ -119,11 +119,19 @@
     "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
   },
   "releases": [],
-  "tags": [],
+  "tags": [
+    {
+      "name": "v0.1.0",
+      "commitSha": "e586ac46d3442e1b93f34d4a3f7f3fe897a64965",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/commits/e586ac46d3442e1b93f34d4a3f7f3fe897a64965",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/zipball/refs/tags/v0.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/tarball/refs/tags/v0.1.0"
+    }
+  ],
   "versionHistory": [],
   "tarFiles": [],
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-06-13T16:40:51.305Z"
+  "lastScanned": "2026-06-13T17:55:47.675Z"
 }
