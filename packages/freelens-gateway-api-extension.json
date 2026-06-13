@@ -8,8 +8,8 @@
   "forks": 2,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-06-13T17:00:23Z",
-  "pushedAt": "2026-06-13T17:07:04Z",
+  "updatedAt": "2026-06-13T20:20:16Z",
+  "pushedAt": "2026-06-13T20:21:06Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -118,20 +118,91 @@
     ],
     "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
   },
-  "releases": [],
+  "releases": [
+    {
+      "id": 339042281,
+      "tagName": "v0.1.0",
+      "name": "v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-06-13T20:20:05Z",
+      "publishedAt": "2026-06-13T20:21:45Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-gateway-api-extension-0.1.0.tgz",
+          "size": 44551,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.1.0/freelensapp-gateway-api-extension-0.1.0.tgz",
+          "createdAt": "2026-06-13T20:21:44Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
   "tags": [
     {
       "name": "v0.1.0",
-      "commitSha": "e586ac46d3442e1b93f34d4a3f7f3fe897a64965",
-      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/commits/e586ac46d3442e1b93f34d4a3f7f3fe897a64965",
+      "commitSha": "a9900c9bce830d6953223166ceebdfa8c6e278cf",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/commits/a9900c9bce830d6953223166ceebdfa8c6e278cf",
       "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/zipball/refs/tags/v0.1.0",
       "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/tarball/refs/tags/v0.1.0"
     }
   ],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-06-13T19:10:33.547Z"
+  "versionHistory": [
+    {
+      "version": "v0.1.0",
+      "name": "v0.1.0",
+      "publishedAt": "2026-06-13T20:21:45Z",
+      "isPrerelease": false,
+      "notes": null
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-gateway-api-extension-0.1.0.tgz",
+      "releaseTag": "v0.1.0",
+      "releaseName": "v0.1.0",
+      "size": 44551,
+      "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.1.0/freelensapp-gateway-api-extension-0.1.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-06-13T20:21:44Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 339042281,
+    "tagName": "v0.1.0",
+    "name": "v0.1.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-06-13T20:20:05Z",
+    "publishedAt": "2026-06-13T20:21:45Z",
+    "body": null,
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-gateway-api-extension-0.1.0.tgz",
+        "size": 44551,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.1.0/freelensapp-gateway-api-extension-0.1.0.tgz",
+        "createdAt": "2026-06-13T20:21:44Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-06-13T20:38:45.600Z"
 }
