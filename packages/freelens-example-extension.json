@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-06-14T09:54:59Z",
-  "pushedAt": "2026-06-14T09:56:08Z",
+  "updatedAt": "2026-06-14T16:34:26Z",
+  "pushedAt": "2026-06-14T16:34:22Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -52,7 +52,7 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "pnpm dlx @biomejs/biome@2.4.16",
+      "biome": "pnpm dlx @biomejs/biome@2.5.0",
       "biome:check": "pnpm biome check",
       "biome:fix": "pnpm biome check --fix",
       "biome:migrate": "pnpm biome migrate --write",
@@ -948,5 +948,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-14T16:06:31.408Z"
+  "lastScanned": "2026-06-14T17:40:32.183Z"
 }
