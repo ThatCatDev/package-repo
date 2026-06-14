@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-06-14T09:48:02Z",
-  "pushedAt": "2026-06-14T10:16:32Z",
+  "updatedAt": "2026-06-14T11:24:11Z",
+  "pushedAt": "2026-06-14T12:14:30Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -47,10 +47,10 @@
       "out/**/*"
     ],
     "engines": {
-      "node": ">= 22.15.1",
+      "node": ">= 22.0.0",
       "freelens": "^1.4.0"
     },
-    "copyright": "© 2025 Freelens Authors",
+    "copyright": "© 2025-2026 Freelens Authors",
     "license": "MIT",
     "author": {
       "name": "Freelens Authors",
@@ -61,42 +61,54 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "corepack pnpm dlx @biomejs/biome@2.0.6",
-      "biome:check": "corepack pnpm biome check",
-      "biome:fix": "corepack pnpm biome check --fix",
+      "biome": "pnpm dlx @biomejs/biome@2.0.6",
+      "biome:check": "pnpm biome check",
+      "biome:fix": "pnpm biome check --fix",
+      "biome:migrate": "pnpm biome migrate --write",
       "prettier": "pnpm dlx prettier@3.6.2",
       "prettier:check": "pnpm prettier --check .",
       "prettier:fix": "pnpm prettier --write .",
       "trunk": "pnpm dlx @trunkio/launcher@1.3.4",
       "trunk:check": "pnpm trunk check",
+      "trunk:check:all": "pnpm trunk check --all",
       "trunk:fix": "pnpm trunk check --fix",
-      "prebuild": "corepack pnpm typecheck",
-      "knip": "corepack pnpm dlx knip@5.61.3 --dependencies",
-      "knip:development": "corepack pnpm knip",
-      "knip:production": "corepack pnpm knip --production --strict",
-      "build": "electron-vite build --mode prod",
-      "build:dev": "electron-vite build --mode dev",
-      "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
-      "clean": "corepack pnpm dlx rimraf@6.0.1 binaries dist static/build",
-      "clean:node_modules": "corepack pnpm dlx rimraf@6.0.1 node_modules",
-      "lint": "corepack pnpm biome:check",
-      "lint:fix": "corepack pnpm biome:fix",
-      "typecheck": "tsc --noEmit -p tsconfig.json --composite false"
+      "trunk:fix:all": "pnpm trunk check --fix --all",
+      "lint": "pnpm lint:check",
+      "lint:check": "pnpm \"/^(biome|prettier):check\\$/\"",
+      "lint:fix": "pnpm \"/^(biome|prettier):fix\\$/\"",
+      "knip": "pnpm dlx knip@5.61.3 --dependencies --no-gitignore",
+      "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
+      "knip:development": "pnpm knip",
+      "knip:production": "pnpm knip --production --strict",
+      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
+      "prebuild": "pnpm type:check",
+      "build": "electron-vite build",
+      "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
+      "build:force": "electron-vite build",
+      "bump-version": "pnpm version --no-commit-hooks --no-git-tag-version",
+      "pack:dev": "pnpm bump-version prerelease && pnpm build:force && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
+      "clean": "pnpm clean:out",
+      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
+      "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
+      "clean:out": "pnpm dlx shx@0.4.0 rm -rf out",
+      "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
+      "clean:all": "pnpm \"/^clean:(dts|node_modules|out|tgz)\\$/\"",
+      "postupdate": "pnpm biome:migrate"
     },
     "devDependencies": {
-      "@babel/plugin-proposal-decorators": "^7.28.0",
-      "@electron-toolkit/tsconfig": "^1.0.1",
+      "@babel/plugin-proposal-decorators": "^7.29.0",
+      "@electron-toolkit/tsconfig": "^2.0.0",
       "@freelensapp/extensions": "^1.4.0",
       "@langchain/core": "^0.3.61",
       "@langchain/google-genai": "^0.2.13",
       "@langchain/langgraph": "^0.2.74",
       "@langchain/mcp-adapters": "^0.5.2",
       "@langchain/openai": "^0.5.15",
-      "@types/node": "~22.15.33",
+      "@types/node": "~24.12.4",
       "@types/react": "^17.0.87",
       "@types/react-syntax-highlighter": "^15.5.13",
-      "@vitejs/plugin-react": "^4.6.0",
-      "electron-vite": "^3.1.0",
+      "@vitejs/plugin-react": "^6.0.1",
+      "electron-vite": "^5.0.0",
       "loglevel": "^1.9.2",
       "lucide-react": "^0.510.0",
       "mobx": "6.13.7",
@@ -106,9 +118,10 @@
       "react-select": "5.10.2",
       "react-syntax-highlighter": "^15.6.1",
       "sass": "^1.89.2",
-      "typescript": "5.8.3",
-      "vite": "^6.3.6",
+      "typescript": "5.9.3",
+      "vite": "^8.0.16",
       "vite-plugin-external": "^6.2.2",
+      "vite-plugin-sass-dts": "^1.3.37",
       "zod": "^3.25.67"
     },
     "keywords": [
@@ -121,7 +134,7 @@
       "openai",
       "openlens"
     ],
-    "packageManager": "pnpm@10.12.4"
+    "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264"
   },
   "releases": [
     {
@@ -141,7 +154,7 @@
         {
           "name": "freelensapp-ai-extension-0.6.0.tgz",
           "size": 2373681,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
           "createdAt": "2026-05-15T17:43:49Z",
@@ -376,7 +389,7 @@
       "releaseName": "v0.6.0",
       "size": 2373681,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
-      "downloadCount": 7,
+      "downloadCount": 8,
       "type": "tar.gz",
       "createdAt": "2026-05-15T17:43:49Z"
     },
@@ -448,7 +461,7 @@
       {
         "name": "freelensapp-ai-extension-0.6.0.tgz",
         "size": 2373681,
-        "downloadCount": 7,
+        "downloadCount": 8,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
         "createdAt": "2026-05-15T17:43:49Z",
@@ -459,5 +472,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-14T10:16:33.649Z"
+  "lastScanned": "2026-06-14T12:16:21.597Z"
 }
