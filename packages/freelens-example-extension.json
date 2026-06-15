@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-06-14T16:34:26Z",
-  "pushedAt": "2026-06-14T16:34:22Z",
+  "updatedAt": "2026-06-15T08:26:17Z",
+  "pushedAt": "2026-06-15T08:26:13Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -948,5 +948,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-15T02:35:41.715Z"
+  "lastScanned": "2026-06-15T08:38:53.058Z"
 }
