@@ -8,8 +8,8 @@
   "forks": 2,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-06-15T21:27:45Z",
-  "pushedAt": "2026-06-15T21:27:43Z",
+  "updatedAt": "2026-06-15T22:31:01Z",
+  "pushedAt": "2026-06-15T22:31:10Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -29,7 +29,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/gateway-api-extension",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Freelens extension for Gateway API",
     "repository": {
       "type": "git",
@@ -120,6 +120,32 @@
   },
   "releases": [
     {
+      "id": 339825468,
+      "tagName": "v0.2.0",
+      "name": "v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-06-15T22:30:57Z",
+      "publishedAt": "2026-06-15T22:31:47Z",
+      "body": "## What's Changed\r\n* Replace always-false Ready field with Accepted and Programmed in Gateway details by @claude[bot] in https://github.com/freelensapp/freelens-gateway-api-extension/pull/37\r\n* Add Gateway API overview page by @dex4er in https://github.com/freelensapp/freelens-gateway-api-extension/pull/39\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-gateway-api-extension/compare/v0.1.0...v0.2.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-gateway-api-extension-0.2.0.tgz",
+          "size": 57546,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.0/freelensapp-gateway-api-extension-0.2.0.tgz",
+          "createdAt": "2026-06-15T22:31:46Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 339042281,
       "tagName": "v0.1.0",
       "name": "v0.1.0",
@@ -148,6 +174,13 @@
   ],
   "tags": [
     {
+      "name": "v0.2.0",
+      "commitSha": "72981590656ac85d5fcf8a37612b944f530046dc",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/commits/72981590656ac85d5fcf8a37612b944f530046dc",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/zipball/refs/tags/v0.2.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/tarball/refs/tags/v0.2.0"
+    },
+    {
       "name": "v0.1.0",
       "commitSha": "a9900c9bce830d6953223166ceebdfa8c6e278cf",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/commits/a9900c9bce830d6953223166ceebdfa8c6e278cf",
@@ -157,6 +190,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.2.0",
+      "name": "v0.2.0",
+      "publishedAt": "2026-06-15T22:31:47Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Replace always-false Ready field with Accepted and Programmed in Gateway details by @claude[bot] in https://github.com/freelensapp/freelens-gateway-api-extension/pull/37\r\n* Add Gateway API overview page by @dex4er in https://github.com/freelensapp/freelens-gateway-api-extension/pull/39\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-gateway-api-extension/compare/v0.1.0...v0.2.0"
+    },
+    {
       "version": "v0.1.0",
       "name": "v0.1.0",
       "publishedAt": "2026-06-13T20:21:45Z",
@@ -165,6 +205,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-gateway-api-extension-0.2.0.tgz",
+      "releaseTag": "v0.2.0",
+      "releaseName": "v0.2.0",
+      "size": 57546,
+      "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.0/freelensapp-gateway-api-extension-0.2.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-06-15T22:31:46Z"
+    },
     {
       "filename": "freelensapp-gateway-api-extension-0.1.0.tgz",
       "releaseTag": "v0.1.0",
@@ -177,32 +227,32 @@
     }
   ],
   "latestRelease": {
-    "id": 339042281,
-    "tagName": "v0.1.0",
-    "name": "v0.1.0",
+    "id": 339825468,
+    "tagName": "v0.2.0",
+    "name": "v0.2.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-06-13T20:20:05Z",
-    "publishedAt": "2026-06-13T20:21:45Z",
-    "body": null,
+    "createdAt": "2026-06-15T22:30:57Z",
+    "publishedAt": "2026-06-15T22:31:47Z",
+    "body": "## What's Changed\r\n* Replace always-false Ready field with Accepted and Programmed in Gateway details by @claude[bot] in https://github.com/freelensapp/freelens-gateway-api-extension/pull/37\r\n* Add Gateway API overview page by @dex4er in https://github.com/freelensapp/freelens-gateway-api-extension/pull/39\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-gateway-api-extension/compare/v0.1.0...v0.2.0",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-gateway-api-extension-0.1.0.tgz",
-        "size": 44551,
-        "downloadCount": 3,
+        "name": "freelensapp-gateway-api-extension-0.2.0.tgz",
+        "size": 57546,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.1.0/freelensapp-gateway-api-extension-0.1.0.tgz",
-        "createdAt": "2026-06-13T20:21:44Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.0/freelensapp-gateway-api-extension-0.2.0.tgz",
+        "createdAt": "2026-06-15T22:31:46Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 1,
+  "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-15T21:36:52.692Z"
+  "lastScanned": "2026-06-15T23:21:56.527Z"
 }
