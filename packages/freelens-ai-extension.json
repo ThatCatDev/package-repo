@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-06-15T08:03:47Z",
-  "pushedAt": "2026-06-15T18:46:07Z",
+  "updatedAt": "2026-06-15T21:14:52Z",
+  "pushedAt": "2026-06-15T21:14:48Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -80,6 +80,7 @@
       "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "pnpm knip",
       "knip:production": "pnpm knip --production --strict",
+      "test:unit": "vitest run",
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
       "prebuild": "pnpm type:check",
       "build": "electron-vite build",
@@ -122,6 +123,7 @@
       "vite": "^8.0.16",
       "vite-plugin-external": "^6.2.2",
       "vite-plugin-sass-dts": "^1.3.37",
+      "vitest": "^4.1.9",
       "zod": "^3.25.67"
     },
     "keywords": [
@@ -472,5 +474,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-15T18:52:44.633Z"
+  "lastScanned": "2026-06-15T21:36:51.167Z"
 }
