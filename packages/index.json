@@ -16,7 +16,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 30,
-    "updatedAt": "2026-06-16T09:00:36Z",
+    "updatedAt": "2026-06-16T16:53:09Z",
     "latestVersion": "v0.6.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -180,8 +180,8 @@
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
-    "stars": 9,
-    "updatedAt": "2026-06-16T06:21:20Z",
+    "stars": 10,
+    "updatedAt": "2026-06-16T15:29:11Z",
     "latestVersion": "v0.2.0",
     "hasReleases": true,
     "hasTarFiles": true
