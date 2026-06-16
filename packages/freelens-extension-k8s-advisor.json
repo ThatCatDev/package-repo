@@ -8,11 +8,11 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-05-22T06:32:17Z",
-  "updatedAt": "2026-05-22T15:27:23Z",
-  "pushedAt": "2026-05-22T15:27:19Z",
+  "updatedAt": "2026-06-16T06:54:39Z",
+  "pushedAt": "2026-06-16T06:54:35Z",
   "defaultBranch": "main",
   "topics": [],
-  "license": "MIT",
+  "license": null,
   "owner": {
     "login": "Gear5Jedi",
     "avatarUrl": "https://avatars.githubusercontent.com/u/272727983?v=4",
@@ -76,5 +76,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-06-16T02:02:43.144Z"
+  "lastScanned": "2026-06-16T07:36:37.617Z"
 }

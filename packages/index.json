@@ -16,7 +16,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 30,
-    "updatedAt": "2026-06-15T21:14:52Z",
+    "updatedAt": "2026-06-16T07:12:27Z",
     "latestVersion": "v0.6.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -126,7 +126,7 @@
     "fullName": "Gear5Jedi/freelens-extension-k8s-advisor",
     "description": "Pod Scheduling Advisor extension for FreeLens",
     "stars": 0,
-    "updatedAt": "2026-05-22T15:27:23Z",
+    "updatedAt": "2026-06-16T06:54:39Z",
     "latestVersion": "1.0.2",
     "hasReleases": false,
     "hasTarFiles": false
@@ -180,8 +180,8 @@
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
-    "stars": 8,
-    "updatedAt": "2026-06-15T22:31:01Z",
+    "stars": 9,
+    "updatedAt": "2026-06-16T06:21:20Z",
     "latestVersion": "v0.2.0",
     "hasReleases": true,
     "hasTarFiles": true
