@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-06-18T13:38:19Z",
-  "pushedAt": "2026-06-18T17:19:55Z",
+  "updatedAt": "2026-06-18T17:54:57Z",
+  "pushedAt": "2026-06-18T19:05:49Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -124,7 +124,7 @@
       "vite-plugin-external": "^6.2.2",
       "vite-plugin-sass-dts": "^1.3.37",
       "vitest": "^4.1.9",
-      "yaml": "^2.7.1",
+      "yaml": "^2.8.3",
       "zod": "^3.25.67"
     },
     "keywords": [
@@ -475,5 +475,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-18T17:35:02.891Z"
+  "lastScanned": "2026-06-18T19:50:13.218Z"
 }
