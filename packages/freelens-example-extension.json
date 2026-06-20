@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-06-20T16:41:14Z",
-  "pushedAt": "2026-06-20T16:43:07Z",
+  "updatedAt": "2026-06-20T17:22:31Z",
+  "pushedAt": "2026-06-20T17:24:53Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -100,7 +100,6 @@
       "sass": "^1.99.0",
       "typescript": "5.9.3",
       "vite": "^8.0.16",
-      "vite-plugin-external": "^6.2.2",
       "vite-plugin-sass-dts": "^1.3.37"
     },
     "keywords": [
@@ -948,5 +947,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-20T16:44:00.029Z"
+  "lastScanned": "2026-06-20T17:59:57.794Z"
 }
