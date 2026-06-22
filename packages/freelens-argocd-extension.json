@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-08-06T08:54:35Z",
-  "updatedAt": "2026-06-11T19:41:47Z",
-  "pushedAt": "2026-06-17T18:56:28Z",
+  "updatedAt": "2026-06-22T20:52:27Z",
+  "pushedAt": "2026-06-22T20:53:21Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@sebastian-prokesch/freelens-argo-extension",
-    "version": "0.1.10",
+    "version": "0.1.12",
     "description": "Freelens Extension for Argo resources",
     "repository": {
       "type": "git",
@@ -38,7 +38,7 @@
       "out/**/*"
     ],
     "engines": {
-      "node": ">= 22.16.0",
+      "node": ">=24.0.0",
       "freelens": "^1.9.0"
     },
     "copyright": "© 2026 Freelens Authors & Sebastian Prokesch",
@@ -126,9 +126,35 @@
       "argo",
       "argocd"
     ],
-    "packageManager": "pnpm@11.1.1"
+    "packageManager": "pnpm@11.7.0"
   },
   "releases": [
+    {
+      "id": 343157653,
+      "tagName": "v0.1.12",
+      "name": "v0.1.12",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-06-22T20:52:19Z",
+      "publishedAt": "2026-06-22T20:55:11Z",
+      "body": "## What's Changed\r\n* Enhances Argo CD app management with advanced sync and rollback by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/21\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.10...v0.1.12",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
+          "size": 175403,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.12/sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
+          "createdAt": "2026-06-22T20:54:30Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 338195920,
       "tagName": "v0.1.10",
@@ -470,6 +496,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.12",
+      "commitSha": "289e695d1422cf556210cce5a357629e05d11450",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/289e695d1422cf556210cce5a357629e05d11450",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.1.12",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.1.12"
+    },
+    {
       "name": "v0.1.10",
       "commitSha": "d3fe2e3f78083a9bc885f5e696bc5e8232ce3e93",
       "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/d3fe2e3f78083a9bc885f5e696bc5e8232ce3e93",
@@ -563,6 +596,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.1.12",
+      "name": "v0.1.12",
+      "publishedAt": "2026-06-22T20:55:11Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Enhances Argo CD app management with advanced sync and rollback by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/21\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.10...v0.1.12"
+    },
+    {
       "version": "v0.1.10",
       "name": "v0.1.10",
       "publishedAt": "2026-06-11T19:44:50Z",
@@ -655,6 +695,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
+      "releaseTag": "v0.1.12",
+      "releaseName": "v0.1.12",
+      "size": 175403,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.12/sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-06-22T20:54:30Z"
+    },
     {
       "filename": "sebastian-prokesch-freelens-argo-extension-0.1.10.tgz",
       "releaseTag": "v0.1.10",
@@ -787,32 +837,32 @@
     }
   ],
   "latestRelease": {
-    "id": 338195920,
-    "tagName": "v0.1.10",
-    "name": "v0.1.10",
+    "id": 343157653,
+    "tagName": "v0.1.12",
+    "name": "v0.1.12",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-06-11T19:39:47Z",
-    "publishedAt": "2026-06-11T19:44:50Z",
-    "body": "## What's Changed\r\n* Enhances ArgoCD views with diagnostics and signals by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/20\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.7...v0.1.10",
+    "createdAt": "2026-06-22T20:52:19Z",
+    "publishedAt": "2026-06-22T20:55:11Z",
+    "body": "## What's Changed\r\n* Enhances Argo CD app management with advanced sync and rollback by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/21\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.10...v0.1.12",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "sebastian-prokesch-freelens-argo-extension-0.1.10.tgz",
-        "size": 165317,
-        "downloadCount": 4,
+        "name": "sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
+        "size": 175403,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.10/sebastian-prokesch-freelens-argo-extension-0.1.10.tgz",
-        "createdAt": "2026-06-11T19:43:09Z",
+        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.12/sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
+        "createdAt": "2026-06-22T20:54:30Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 13,
+  "totalReleases": 14,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-22T18:17:59.833Z"
+  "lastScanned": "2026-06-22T21:14:59.198Z"
 }
