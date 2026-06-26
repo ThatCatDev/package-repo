@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-06-26T17:58:08Z",
-  "pushedAt": "2026-06-26T17:58:03Z",
+  "updatedAt": "2026-06-26T20:52:26Z",
+  "pushedAt": "2026-06-26T20:52:23Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -103,10 +103,10 @@
       "@langchain/openai": "^1.5.1",
       "@types/node": "~24.12.4",
       "@types/react": "^17.0.93",
-      "@vitejs/plugin-react": "^6.0.2",
+      "@vitejs/plugin-react": "^6.0.3",
       "electron-vite": "^5.0.0",
       "loglevel": "^1.9.2",
-      "lucide-react": "^0.577.0",
+      "lucide-react": "^1.21.0",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
       "react": "17.0.2",
@@ -115,7 +115,7 @@
       "remark-gfm": "^1.0.0",
       "sass": "^1.101.0",
       "typescript": "5.9.3",
-      "vite": "^8.0.16",
+      "vite": "^8.1.0",
       "vite-plugin-sass-dts": "^1.3.37",
       "vitest": "^4.1.9",
       "yaml": "^2.9.0",
@@ -469,5 +469,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-26T19:10:23.701Z"
+  "lastScanned": "2026-06-26T20:53:00.053Z"
 }
