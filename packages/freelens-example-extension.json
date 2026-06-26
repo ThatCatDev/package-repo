@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-06-26T15:34:46Z",
-  "pushedAt": "2026-06-26T15:34:52Z",
+  "updatedAt": "2026-06-26T16:20:39Z",
+  "pushedAt": "2026-06-26T17:04:49Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "1.10.0",
+    "version": "1.10.1-0",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -120,7 +120,7 @@
       "prerelease": false,
       "createdAt": "2026-06-26T15:34:41Z",
       "publishedAt": "2026-06-26T15:35:38Z",
-      "body": null,
+      "body": "## What's Changed\r\n* Make builds deterministic with a globalExternals plugin by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/275\r\n\r\n## Updates\r\n* Update dependency node to v24.15.0 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/260\r\n* Update dependency kubernetes-sigs/kind to v0.32.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/264\r\n* Update pnpm to v10.34.4 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/274\r\n* Update dependency knip to v6.21.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/241\r\n* Update dependency @types/react to ^17.0.93 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/258\r\n* Update dependency sass to ^1.101.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/259\r\n* Update dependency @biomejs/biome to v2.5.1 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/277\r\n* Update dependency @babel/plugin-proposal-decorators to v8 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/271\r\n* Update dependency @vitejs/plugin-react to ^6.0.3 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/278\r\n* Update dependency prettier to v3.8.5 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/279\r\n* Update dependency vite to ^8.1.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/281\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.9.0...v1.10.0",
       "author": {
         "login": "github-actions[bot]",
         "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
@@ -682,7 +682,7 @@
       "name": "v1.10.0",
       "publishedAt": "2026-06-26T15:35:38Z",
       "isPrerelease": false,
-      "notes": null
+      "notes": "## What's Changed\r\n* Make builds deterministic with a globalExternals plugin by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/275\r\n\r\n## Updates\r\n* Update dependency node to v24.15.0 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/260\r\n* Update dependency kubernetes-sigs/kind to v0.32.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/264\r\n* Update pnpm to v10.34.4 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/274\r\n* Update dependency knip to v6.21.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/241\r\n* Update dependency @types/react to ^17.0.93 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/258\r\n* Update dependency sass to ^1.101.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/259\r\n* Update dependency @biomejs/biome to v2.5.1 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/277\r\n* Update dependency @babel/plugin-proposal-decorators to v8 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/271\r\n* Update dependency @vitejs/plugin-react to ^6.0.3 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/278\r\n* Update dependency prettier to v3.8.5 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/279\r\n* Update dependency vite to ^8.1.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/281\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.9.0...v1.10.0"
     },
     {
       "version": "v1.9.0",
@@ -977,7 +977,7 @@
     "prerelease": false,
     "createdAt": "2026-06-26T15:34:41Z",
     "publishedAt": "2026-06-26T15:35:38Z",
-    "body": null,
+    "body": "## What's Changed\r\n* Make builds deterministic with a globalExternals plugin by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/275\r\n\r\n## Updates\r\n* Update dependency node to v24.15.0 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/260\r\n* Update dependency kubernetes-sigs/kind to v0.32.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/264\r\n* Update pnpm to v10.34.4 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/274\r\n* Update dependency knip to v6.21.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/241\r\n* Update dependency @types/react to ^17.0.93 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/258\r\n* Update dependency sass to ^1.101.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/259\r\n* Update dependency @biomejs/biome to v2.5.1 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/277\r\n* Update dependency @babel/plugin-proposal-decorators to v8 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/271\r\n* Update dependency @vitejs/plugin-react to ^6.0.3 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/278\r\n* Update dependency prettier to v3.8.5 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/279\r\n* Update dependency vite to ^8.1.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/281\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.9.0...v1.10.0",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
@@ -997,5 +997,5 @@
   },
   "totalReleases": 17,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-26T15:39:34.001Z"
+  "lastScanned": "2026-06-26T17:20:59.334Z"
 }
