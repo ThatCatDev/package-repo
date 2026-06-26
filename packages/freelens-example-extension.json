@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-06-26T20:43:33Z",
-  "pushedAt": "2026-06-26T20:45:51Z",
+  "updatedAt": "2026-06-26T20:54:01Z",
+  "pushedAt": "2026-06-26T20:54:06Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "1.10.1-0",
+    "version": "1.10.1",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -115,6 +115,62 @@
     "packageManager": "pnpm@10.34.4+sha512.8768be55200ae3f2226b6527fcca2687e14bc4e5f12d7721a0f25da3df47915177058648db4177baf348120fa0ba2752d8d8d93f6beaf1fe64ae18da8de961af"
   },
   "releases": [
+    {
+      "id": 345528921,
+      "tagName": "v1.10.1",
+      "name": "v1.10.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-06-26T20:53:57Z",
+      "publishedAt": "2026-06-26T20:55:03Z",
+      "body": "## What's Changed\r\n* Migrate from prettier to biome for SCSS by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/286\r\n* Add vitest unit tests as a template by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/291\r\n* Publish SBOM and sha256 checksums with release artifacts by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/294\r\n* Cache Electron app build in integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/297\r\n\r\n## Updates\r\n* Test with v1.10.0 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/288\r\n* Update dependency @freelensapp/extensions to ^1.10.1 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/276\r\n* Lock @testing-library/react below v13 in Renovate config by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/295\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.0...v1.10.1",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-example-extension-1.10.1-spdx.json",
+          "size": 1883636,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1-spdx.json",
+          "createdAt": "2026-06-26T20:55:03Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-1.10.1-spdx.json.sha256",
+          "size": 113,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1-spdx.json.sha256",
+          "createdAt": "2026-06-26T20:55:03Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-1.10.1.tgz",
+          "size": 16079,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz",
+          "createdAt": "2026-06-26T20:55:03Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-1.10.1.tgz.sha256",
+          "size": 107,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz.sha256",
+          "createdAt": "2026-06-26T20:55:03Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 345399577,
       "tagName": "v1.10.0",
@@ -560,6 +616,13 @@
   ],
   "tags": [
     {
+      "name": "v1.10.1",
+      "commitSha": "e30ffb89e84b9658f51dbada4fc7420e85085c5a",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/e30ffb89e84b9658f51dbada4fc7420e85085c5a",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/zipball/refs/tags/v1.10.1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/tarball/refs/tags/v1.10.1"
+    },
+    {
       "name": "v1.10.0",
       "commitSha": "b083a88acd817d7c6d2153b7c29fd82849ee8f0e",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/b083a88acd817d7c6d2153b7c29fd82849ee8f0e",
@@ -681,6 +744,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v1.10.1",
+      "name": "v1.10.1",
+      "publishedAt": "2026-06-26T20:55:03Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Migrate from prettier to biome for SCSS by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/286\r\n* Add vitest unit tests as a template by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/291\r\n* Publish SBOM and sha256 checksums with release artifacts by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/294\r\n* Cache Electron app build in integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/297\r\n\r\n## Updates\r\n* Test with v1.10.0 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/288\r\n* Update dependency @freelensapp/extensions to ^1.10.1 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/276\r\n* Lock @testing-library/react below v13 in Renovate config by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/295\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.0...v1.10.1"
+    },
+    {
       "version": "v1.10.0",
       "name": "v1.10.0",
       "publishedAt": "2026-06-26T15:35:38Z",
@@ -801,6 +871,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-example-extension-1.10.1.tgz",
+      "releaseTag": "v1.10.1",
+      "releaseName": "v1.10.1",
+      "size": 16079,
+      "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-06-26T20:55:03Z"
+    },
     {
       "filename": "freelensapp-example-extension-1.10.0.tgz",
       "releaseTag": "v1.10.0",
@@ -973,32 +1053,62 @@
     }
   ],
   "latestRelease": {
-    "id": 345399577,
-    "tagName": "v1.10.0",
-    "name": "v1.10.0",
+    "id": 345528921,
+    "tagName": "v1.10.1",
+    "name": "v1.10.1",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-06-26T15:34:41Z",
-    "publishedAt": "2026-06-26T15:35:38Z",
-    "body": "## What's Changed\r\n* Make builds deterministic with a globalExternals plugin by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/275\r\n\r\n## Updates\r\n* Update dependency node to v24.15.0 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/260\r\n* Update dependency kubernetes-sigs/kind to v0.32.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/264\r\n* Update pnpm to v10.34.4 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/274\r\n* Update dependency knip to v6.21.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/241\r\n* Update dependency @types/react to ^17.0.93 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/258\r\n* Update dependency sass to ^1.101.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/259\r\n* Update dependency @biomejs/biome to v2.5.1 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/277\r\n* Update dependency @babel/plugin-proposal-decorators to v8 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/271\r\n* Update dependency @vitejs/plugin-react to ^6.0.3 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/278\r\n* Update dependency prettier to v3.8.5 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/279\r\n* Update dependency vite to ^8.1.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/281\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.9.0...v1.10.0",
+    "createdAt": "2026-06-26T20:53:57Z",
+    "publishedAt": "2026-06-26T20:55:03Z",
+    "body": "## What's Changed\r\n* Migrate from prettier to biome for SCSS by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/286\r\n* Add vitest unit tests as a template by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/291\r\n* Publish SBOM and sha256 checksums with release artifacts by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/294\r\n* Cache Electron app build in integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/297\r\n\r\n## Updates\r\n* Test with v1.10.0 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/288\r\n* Update dependency @freelensapp/extensions to ^1.10.1 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/276\r\n* Lock @testing-library/react below v13 in Renovate config by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/295\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.0...v1.10.1",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-example-extension-1.10.0.tgz",
-        "size": 16116,
+        "name": "freelensapp-example-extension-1.10.1-spdx.json",
+        "size": 1883636,
+        "downloadCount": 0,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1-spdx.json",
+        "createdAt": "2026-06-26T20:55:03Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-example-extension-1.10.1-spdx.json.sha256",
+        "size": 113,
         "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.0/freelensapp-example-extension-1.10.0.tgz",
-        "createdAt": "2026-06-26T15:35:38Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1-spdx.json.sha256",
+        "createdAt": "2026-06-26T20:55:03Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-example-extension-1.10.1.tgz",
+        "size": 16079,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz",
+        "createdAt": "2026-06-26T20:55:03Z",
         "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-example-extension-1.10.1.tgz.sha256",
+        "size": 107,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz.sha256",
+        "createdAt": "2026-06-26T20:55:03Z",
+        "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 17,
+  "totalReleases": 18,
   "hasTarFiles": true,
-  "lastScanned": "2026-06-26T20:53:00.993Z"
+  "lastScanned": "2026-06-26T21:57:28.090Z"
 }
