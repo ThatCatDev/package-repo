@@ -16,7 +16,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 31,
-    "updatedAt": "2026-06-24T13:00:36Z",
+    "updatedAt": "2026-06-26T15:08:29Z",
     "latestVersion": "v0.6.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -93,8 +93,8 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-06-20T17:22:31Z",
-    "latestVersion": "v1.9.0",
+    "updatedAt": "2026-06-26T15:34:46Z",
+    "latestVersion": "v1.10.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
