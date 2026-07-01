@@ -93,8 +93,8 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-06-28T18:34:57Z",
-    "latestVersion": "v1.10.1",
+    "updatedAt": "2026-07-01T12:39:47Z",
+    "latestVersion": "v1.10.2",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -181,7 +181,7 @@
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
     "stars": 10,
-    "updatedAt": "2026-06-30T21:48:26Z",
+    "updatedAt": "2026-07-01T12:42:50Z",
     "latestVersion": "v0.2.0",
     "hasReleases": true,
     "hasTarFiles": true
