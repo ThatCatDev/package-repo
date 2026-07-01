@@ -180,9 +180,9 @@
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
-    "stars": 10,
-    "updatedAt": "2026-07-01T12:42:50Z",
-    "latestVersion": "v0.2.0",
+    "stars": 11,
+    "updatedAt": "2026-07-01T13:37:47Z",
+    "latestVersion": "v0.2.1",
     "hasReleases": true,
     "hasTarFiles": true
   },
