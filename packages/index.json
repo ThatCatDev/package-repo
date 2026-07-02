@@ -33,6 +33,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-claude-extension",
+    "repoName": "freelens-claude-extension",
+    "fullName": "freelensapp/freelens-claude-extension",
+    "description": "Freelens Claude Extension",
+    "stars": 1,
+    "updatedAt": "2026-07-02T18:27:57Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@oguzhan-yilmaz/freelens-debug-extension",
     "repoName": "freelens-debug-extension",
     "fullName": "oguzhan-yilmaz/freelens-debug-extension",
