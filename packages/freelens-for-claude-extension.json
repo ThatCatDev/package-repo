@@ -1,0 +1,35 @@
+{
+  "name": "freelens-for-claude-extension",
+  "repoName": "freelens-for-claude-extension",
+  "fullName": "freelensapp/freelens-for-claude-extension",
+  "description": "Freelens extension for Claude",
+  "homepage": "https://github.com/freelensapp/freelens-for-claude-extension",
+  "stars": 1,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-07-02T19:58:37Z",
+  "updatedAt": "2026-07-02T19:58:43Z",
+  "pushedAt": "2026-07-02T19:58:38Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-for-claude-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-for-claude-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-for-claude-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-07-02T20:08:23.812Z"
+}

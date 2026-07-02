@@ -187,6 +187,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-for-claude-extension",
+    "repoName": "freelens-for-claude-extension",
+    "fullName": "freelensapp/freelens-for-claude-extension",
+    "description": "Freelens extension for Claude",
+    "stars": 1,
+    "updatedAt": "2026-07-02T19:58:43Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@freelensapp/gateway-api-extension",
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
