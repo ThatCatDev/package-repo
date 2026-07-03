@@ -8,8 +8,8 @@
   "forks": 13,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2026-07-03T07:59:28Z",
-  "pushedAt": "2026-07-03T08:03:40Z",
+  "updatedAt": "2026-07-03T09:28:31Z",
+  "pushedAt": "2026-07-03T09:59:05Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -62,7 +62,7 @@
       "biome:check": "pnpm biome check",
       "biome:fix": "pnpm biome check --fix",
       "biome:migrate": "pnpm biome migrate --write",
-      "prettier": "pnpm dlx prettier@3.8.3",
+      "prettier": "pnpm dlx prettier@3.9.4",
       "prettier:check": "pnpm prettier --check .",
       "prettier:fix": "pnpm prettier --write .",
       "trunk": "pnpm dlx @trunkio/launcher@1.3.4",
@@ -93,27 +93,25 @@
       "postupdate": "pnpm biome:migrate"
     },
     "devDependencies": {
-      "@babel/plugin-proposal-decorators": "^7.29.0",
+      "@babel/plugin-proposal-decorators": "^8.0.2",
       "@electron-toolkit/tsconfig": "^2.0.0",
       "@freelensapp/extensions": "^1.10.2",
       "@freelensapp/kube-object": "^1.10.2",
       "@types/chart.js": "^2.9.41",
-      "@types/js-yaml": "^4.0.9",
       "@types/node": "^22.16.4",
-      "@types/react": "^17.0.91",
+      "@types/react": "^17.0.93",
       "@types/react-router-dom": "^5.3.3",
-      "@vitejs/plugin-react": "^6.0.1",
+      "@vitejs/plugin-react": "^6.0.3",
       "electron-vite": "^5.0.0",
-      "js-base64": "^3.7.8",
-      "js-yaml": "^4.1.1",
+      "js-base64": "^3.8.0",
+      "js-yaml": "^5.2.1",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
       "moment": "^2.30.1",
       "react": "17.0.2",
-      "sass": "^1.99.0",
+      "sass": "^1.101.0",
       "typescript": "5.9.3",
-      "vite": "^8.0.16",
-      "vite-plugin-external": "^6.2.2",
+      "vite": "^8.1.3",
       "vite-plugin-sass-dts": "^1.3.37"
     },
     "keywords": [
@@ -763,5 +761,5 @@
   },
   "totalReleases": 12,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-03T08:05:58.280Z"
+  "lastScanned": "2026-07-03T10:47:03.222Z"
 }
