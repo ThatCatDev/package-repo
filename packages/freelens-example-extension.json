@@ -634,7 +634,7 @@
         {
           "name": "freelensapp-extension-example-1.0.1.tgz",
           "size": 7635,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
           "createdAt": "2025-05-09T16:42:07Z",
@@ -1117,7 +1117,7 @@
       "releaseName": "v1.0.1",
       "size": 7635,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-05-09T16:42:07Z"
     },
@@ -1190,5 +1190,5 @@
   },
   "totalReleases": 19,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-03T01:14:50.582Z"
+  "lastScanned": "2026-07-03T04:57:13.502Z"
 }
