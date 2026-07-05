@@ -192,8 +192,19 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Freelens extension for Claude",
     "stars": 1,
-    "updatedAt": "2026-07-02T21:17:21Z",
+    "updatedAt": "2026-07-05T22:57:08Z",
     "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
+    "name": "freelens-for-opencode-extension",
+    "repoName": "freelens-for-opencode-extension",
+    "fullName": "freelensapp/freelens-for-opencode-extension",
+    "description": "Freelens for OpenCode Extension ",
+    "stars": 1,
+    "updatedAt": "2026-07-05T22:58:55Z",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
