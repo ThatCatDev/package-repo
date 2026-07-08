@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
   "updatedAt": "2026-07-03T07:31:19Z",
-  "pushedAt": "2026-07-08T02:48:57Z",
+  "pushedAt": "2026-07-08T09:38:49Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -634,7 +634,7 @@
         {
           "name": "freelensapp-extension-example-1.0.1.tgz",
           "size": 7635,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
           "createdAt": "2025-05-09T16:42:07Z",
@@ -1117,7 +1117,7 @@
       "releaseName": "v1.0.1",
       "size": 7635,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
-      "downloadCount": 4,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2025-05-09T16:42:07Z"
     },
@@ -1190,5 +1190,5 @@
   },
   "totalReleases": 19,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-08T09:13:20.754Z"
+  "lastScanned": "2026-07-08T11:16:49.206Z"
 }
