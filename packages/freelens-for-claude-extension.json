@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-07-02T19:58:37Z",
-  "updatedAt": "2026-07-08T20:26:22Z",
-  "pushedAt": "2026-07-08T20:54:12Z",
+  "updatedAt": "2026-07-08T22:37:22Z",
+  "pushedAt": "2026-07-08T22:39:30Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -90,6 +90,7 @@
       "@electron-toolkit/tsconfig": "^2.0.0",
       "@freelensapp/extensions": "^1.10.2",
       "@testing-library/react": "^12.1.5",
+      "@types/diff": "^7.0.0",
       "@types/node": "~24.12.4",
       "@types/react": "^17.0.93",
       "@vitejs/plugin-react": "^6.0.3",
@@ -117,6 +118,7 @@
     "dependencies": {
       "@anthropic-ai/claude-agent-sdk": "^0.3.204",
       "@kubernetes/client-node": "^1.4.0",
+      "diff": "^7.0.0",
       "react-markdown": "^8.0.7",
       "remark-gfm": "^3.0.1",
       "zod": "^4.4.3"
@@ -129,5 +131,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-07-08T21:52:12.624Z"
+  "lastScanned": "2026-07-08T22:49:12.414Z"
 }
