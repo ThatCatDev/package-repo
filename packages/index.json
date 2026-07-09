@@ -190,9 +190,9 @@
     "name": "@freelensapp/for-claude-extension",
     "repoName": "freelens-for-claude-extension",
     "fullName": "freelensapp/freelens-for-claude-extension",
-    "description": "Freelens extension for Claude",
+    "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 1,
-    "updatedAt": "2026-07-09T19:57:55Z",
+    "updatedAt": "2026-07-09T21:05:05Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false

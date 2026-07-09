@@ -132,7 +132,7 @@
         {
           "name": "freelensapp-gateway-api-extension-0.2.1-spdx.json",
           "size": 1642322,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1-spdx.json",
           "createdAt": "2026-07-01T12:51:08Z",
@@ -152,7 +152,7 @@
         {
           "name": "freelensapp-gateway-api-extension-0.2.1.tgz",
           "size": 56735,
-          "downloadCount": 8,
+          "downloadCount": 9,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1.tgz",
           "createdAt": "2026-07-01T12:51:08Z",
@@ -277,7 +277,7 @@
       "releaseName": "v0.2.1",
       "size": 56735,
       "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1.tgz",
-      "downloadCount": 8,
+      "downloadCount": 9,
       "type": "tar.gz",
       "createdAt": "2026-07-01T12:51:08Z"
     },
@@ -319,7 +319,7 @@
       {
         "name": "freelensapp-gateway-api-extension-0.2.1-spdx.json",
         "size": 1642322,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1-spdx.json",
         "createdAt": "2026-07-01T12:51:08Z",
@@ -339,7 +339,7 @@
       {
         "name": "freelensapp-gateway-api-extension-0.2.1.tgz",
         "size": 56735,
-        "downloadCount": 8,
+        "downloadCount": 9,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1.tgz",
         "createdAt": "2026-07-01T12:51:08Z",
@@ -360,5 +360,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-09T20:11:48.532Z"
+  "lastScanned": "2026-07-09T21:42:20.810Z"
 }
