@@ -192,7 +192,7 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 1,
-    "updatedAt": "2026-07-09T21:05:05Z",
+    "updatedAt": "2026-07-10T09:32:58Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
@@ -214,7 +214,7 @@
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
     "stars": 12,
-    "updatedAt": "2026-07-05T06:56:17Z",
+    "updatedAt": "2026-07-10T09:55:52Z",
     "latestVersion": "v0.2.1",
     "hasReleases": true,
     "hasTarFiles": true
