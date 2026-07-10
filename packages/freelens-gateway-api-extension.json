@@ -8,8 +8,8 @@
   "forks": 3,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-07-10T09:55:52Z",
-  "pushedAt": "2026-07-10T09:54:59Z",
+  "updatedAt": "2026-07-10T10:20:52Z",
+  "pushedAt": "2026-07-10T10:22:33Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -29,7 +29,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/gateway-api-extension",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Freelens extension for Gateway API",
     "repository": {
       "type": "git",
@@ -115,6 +115,62 @@
     "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
   },
   "releases": [
+    {
+      "id": 352027298,
+      "tagName": "v0.2.2",
+      "name": "v0.2.2",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-07-10T10:20:44Z",
+      "publishedAt": "2026-07-10T10:21:46Z",
+      "body": "## What's Changed\r\n* Add v1 API version for TCPRoute and UDPRoute by @dex4er in https://github.com/freelensapp/freelens-gateway-api-extension/pull/66\r\n* Remove duplicate Hostnames row in HTTPRoute details by @kappa8219 in https://github.com/freelensapp/freelens-gateway-api-extension/pull/70\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-gateway-api-extension/compare/v0.2.1...v0.2.2",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-gateway-api-extension-0.2.2-spdx.json",
+          "size": 1642322,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2-spdx.json",
+          "createdAt": "2026-07-10T10:21:45Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gateway-api-extension-0.2.2-spdx.json.sha256",
+          "size": 116,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2-spdx.json.sha256",
+          "createdAt": "2026-07-10T10:21:45Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
+          "size": 58460,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
+          "createdAt": "2026-07-10T10:21:45Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
+          "size": 110,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
+          "createdAt": "2026-07-10T10:21:45Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 347456584,
       "tagName": "v0.2.1",
@@ -226,6 +282,13 @@
   ],
   "tags": [
     {
+      "name": "v0.2.2",
+      "commitSha": "97d0430e69c73c5087129120e232c96b6af37424",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/commits/97d0430e69c73c5087129120e232c96b6af37424",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/zipball/refs/tags/v0.2.2",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/tarball/refs/tags/v0.2.2"
+    },
+    {
       "name": "v0.2.1",
       "commitSha": "c7fd904ab8dc0f2ac6195b62a494ec822089f93d",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gateway-api-extension/commits/c7fd904ab8dc0f2ac6195b62a494ec822089f93d",
@@ -249,6 +312,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.2.2",
+      "name": "v0.2.2",
+      "publishedAt": "2026-07-10T10:21:46Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Add v1 API version for TCPRoute and UDPRoute by @dex4er in https://github.com/freelensapp/freelens-gateway-api-extension/pull/66\r\n* Remove duplicate Hostnames row in HTTPRoute details by @kappa8219 in https://github.com/freelensapp/freelens-gateway-api-extension/pull/70\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-gateway-api-extension/compare/v0.2.1...v0.2.2"
+    },
+    {
       "version": "v0.2.1",
       "name": "v0.2.1",
       "publishedAt": "2026-07-01T12:51:09Z",
@@ -271,6 +341,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-gateway-api-extension-0.2.2.tgz",
+      "releaseTag": "v0.2.2",
+      "releaseName": "v0.2.2",
+      "size": 58460,
+      "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-07-10T10:21:45Z"
+    },
     {
       "filename": "freelensapp-gateway-api-extension-0.2.1.tgz",
       "releaseTag": "v0.2.1",
@@ -303,62 +383,62 @@
     }
   ],
   "latestRelease": {
-    "id": 347456584,
-    "tagName": "v0.2.1",
-    "name": "v0.2.1",
+    "id": 352027298,
+    "tagName": "v0.2.2",
+    "name": "v0.2.2",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-07-01T12:50:03Z",
-    "publishedAt": "2026-07-01T12:51:09Z",
-    "body": null,
+    "createdAt": "2026-07-10T10:20:44Z",
+    "publishedAt": "2026-07-10T10:21:46Z",
+    "body": "## What's Changed\r\n* Add v1 API version for TCPRoute and UDPRoute by @dex4er in https://github.com/freelensapp/freelens-gateway-api-extension/pull/66\r\n* Remove duplicate Hostnames row in HTTPRoute details by @kappa8219 in https://github.com/freelensapp/freelens-gateway-api-extension/pull/70\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-gateway-api-extension/compare/v0.2.1...v0.2.2",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-gateway-api-extension-0.2.1-spdx.json",
+        "name": "freelensapp-gateway-api-extension-0.2.2-spdx.json",
         "size": 1642322,
-        "downloadCount": 2,
+        "downloadCount": 0,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1-spdx.json",
-        "createdAt": "2026-07-01T12:51:08Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2-spdx.json",
+        "createdAt": "2026-07-10T10:21:45Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-gateway-api-extension-0.2.1-spdx.json.sha256",
+        "name": "freelensapp-gateway-api-extension-0.2.2-spdx.json.sha256",
         "size": 116,
         "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1-spdx.json.sha256",
-        "createdAt": "2026-07-01T12:51:08Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2-spdx.json.sha256",
+        "createdAt": "2026-07-10T10:21:45Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-gateway-api-extension-0.2.1.tgz",
-        "size": 56735,
-        "downloadCount": 10,
+        "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
+        "size": 58460,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1.tgz",
-        "createdAt": "2026-07-01T12:51:08Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
+        "createdAt": "2026-07-10T10:21:45Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-gateway-api-extension-0.2.1.tgz.sha256",
+        "name": "freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
         "size": 110,
         "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1.tgz.sha256",
-        "createdAt": "2026-07-01T12:51:08Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
+        "createdAt": "2026-07-10T10:21:45Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 3,
+  "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-10T09:55:58.523Z"
+  "lastScanned": "2026-07-10T12:20:41.155Z"
 }
