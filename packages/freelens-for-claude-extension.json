@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-07-02T19:58:37Z",
-  "updatedAt": "2026-07-10T11:21:35Z",
-  "pushedAt": "2026-07-10T14:37:44Z",
+  "updatedAt": "2026-07-10T16:26:50Z",
+  "pushedAt": "2026-07-10T16:45:18Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -127,6 +127,7 @@
       "diff": "^7.0.0",
       "react-markdown": "^8.0.7",
       "remark-gfm": "^3.0.1",
+      "yaml": "^2.9.0",
       "zod": "^4.4.3"
     }
   },
@@ -137,5 +138,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-07-10T15:06:08.580Z"
+  "lastScanned": "2026-07-10T17:04:05.500Z"
 }
