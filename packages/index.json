@@ -116,9 +116,9 @@
     "description": "K-Menu: A powerful command palette for Freelens",
     "stars": 0,
     "updatedAt": "2025-11-24T03:27:11Z",
-    "latestVersion": "v1.0.3",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.3",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "package-manager",
@@ -237,9 +237,9 @@
     "description": "Hotkey helpers for Freelens",
     "stars": 0,
     "updatedAt": "2026-02-04T19:36:14Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-istio-extension",
@@ -336,9 +336,9 @@
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
     "stars": 12,
     "updatedAt": "2026-05-21T11:02:09Z",
-    "latestVersion": "v1.0.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-stats-extension",
