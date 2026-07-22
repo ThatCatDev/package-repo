@@ -146,7 +146,7 @@
         {
           "name": "sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
           "size": 175403,
-          "downloadCount": 8,
+          "downloadCount": 12,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.12/sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
           "createdAt": "2026-06-22T20:54:30Z",
@@ -701,7 +701,7 @@
       "releaseName": "v0.1.12",
       "size": 175403,
       "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.12/sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
-      "downloadCount": 8,
+      "downloadCount": 12,
       "type": "tar.gz",
       "createdAt": "2026-06-22T20:54:30Z"
     },
@@ -853,7 +853,7 @@
       {
         "name": "sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
         "size": 175403,
-        "downloadCount": 8,
+        "downloadCount": 12,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.12/sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
         "createdAt": "2026-06-22T20:54:30Z",
@@ -864,5 +864,5 @@
   },
   "totalReleases": 14,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-22T03:35:27.130Z"
+  "lastScanned": "2026-07-22T06:11:57.918Z"
 }

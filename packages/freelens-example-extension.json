@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
   "updatedAt": "2026-07-03T07:31:19Z",
-  "pushedAt": "2026-07-21T10:52:29Z",
+  "pushedAt": "2026-07-22T05:09:10Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -132,7 +132,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2-spdx.json",
           "size": 1883636,
-          "downloadCount": 0,
+          "downloadCount": 4,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -142,7 +142,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2-spdx.json.sha256",
           "size": 113,
-          "downloadCount": 0,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json.sha256",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -152,7 +152,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2.tgz",
           "size": 16078,
-          "downloadCount": 0,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -162,7 +162,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2.tgz.sha256",
           "size": 107,
-          "downloadCount": 0,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz.sha256",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -947,7 +947,7 @@
       "releaseName": "v1.10.2",
       "size": 16078,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz",
-      "downloadCount": 0,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2026-07-01T12:40:48Z"
     },
@@ -1149,7 +1149,7 @@
       {
         "name": "freelensapp-example-extension-1.10.2-spdx.json",
         "size": 1883636,
-        "downloadCount": 0,
+        "downloadCount": 4,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json",
         "createdAt": "2026-07-01T12:40:48Z",
@@ -1159,7 +1159,7 @@
       {
         "name": "freelensapp-example-extension-1.10.2-spdx.json.sha256",
         "size": 113,
-        "downloadCount": 0,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json.sha256",
         "createdAt": "2026-07-01T12:40:48Z",
@@ -1169,7 +1169,7 @@
       {
         "name": "freelensapp-example-extension-1.10.2.tgz",
         "size": 16078,
-        "downloadCount": 0,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz",
         "createdAt": "2026-07-01T12:40:48Z",
@@ -1179,7 +1179,7 @@
       {
         "name": "freelensapp-example-extension-1.10.2.tgz.sha256",
         "size": 107,
-        "downloadCount": 0,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz.sha256",
         "createdAt": "2026-07-01T12:40:48Z",
@@ -1190,5 +1190,5 @@
   },
   "totalReleases": 19,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-22T03:35:18.359Z"
+  "lastScanned": "2026-07-22T06:11:51.474Z"
 }
