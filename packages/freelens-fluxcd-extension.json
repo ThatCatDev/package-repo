@@ -8,8 +8,8 @@
   "forks": 13,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2026-07-22T17:05:46Z",
-  "pushedAt": "2026-07-22T17:04:30Z",
+  "updatedAt": "2026-07-22T17:34:20Z",
+  "pushedAt": "2026-07-22T17:41:13Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -763,5 +763,5 @@
   },
   "totalReleases": 12,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-22T17:06:50.377Z"
+  "lastScanned": "2026-07-22T18:18:50.315Z"
 }
