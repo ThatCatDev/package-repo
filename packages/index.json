@@ -237,9 +237,9 @@
     "description": "Hotkey helpers for Freelens",
     "stars": 0,
     "updatedAt": "2026-02-04T19:36:14Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-istio-extension",
@@ -259,9 +259,9 @@
     "description": "Extension that adds information on sigs.k8s.io JobSets",
     "stars": 3,
     "updatedAt": "2026-02-27T07:31:08Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0-0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/kamaji-extension",
@@ -336,9 +336,9 @@
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
     "stars": 12,
     "updatedAt": "2026-05-21T11:02:09Z",
-    "latestVersion": "v1.0.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-stats-extension",
