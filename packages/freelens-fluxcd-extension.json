@@ -8,8 +8,8 @@
   "forks": 13,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2026-07-21T15:28:13Z",
-  "pushedAt": "2026-07-22T12:38:59Z",
+  "updatedAt": "2026-07-22T15:08:34Z",
+  "pushedAt": "2026-07-22T15:06:39Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -96,8 +96,8 @@
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^8.0.2",
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.10.2",
-      "@freelensapp/kube-object": "^1.10.2",
+      "@freelensapp/extensions": "^1.10.3",
+      "@freelensapp/kube-object": "^1.10.3",
       "@types/chart.js": "^2.9.41",
       "@types/node": "^22.16.4",
       "@types/react": "^17.0.93",
@@ -763,5 +763,5 @@
   },
   "totalReleases": 12,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-22T14:24:45.987Z"
+  "lastScanned": "2026-07-22T15:55:11.134Z"
 }
