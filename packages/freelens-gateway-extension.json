@@ -108,7 +108,15 @@
       ]
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "name": "v0.1.1",
+      "commitSha": "0a030da23ec4ff3cd35f731aa2797dba1d244212",
+      "commitUrl": "https://api.github.com/repos/ganey/freelens-gateway-extension/commits/0a030da23ec4ff3cd35f731aa2797dba1d244212",
+      "zipballUrl": "https://api.github.com/repos/ganey/freelens-gateway-extension/zipball/refs/tags/v0.1.1",
+      "tarballUrl": "https://api.github.com/repos/ganey/freelens-gateway-extension/tarball/refs/tags/v0.1.1"
+    }
+  ],
   "versionHistory": [
     {
       "version": "v0.1.1",
@@ -158,5 +166,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-22T23:41:26.970Z"
+  "lastScanned": "2026-07-23T01:10:41.497Z"
 }
