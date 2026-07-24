@@ -4,12 +4,12 @@
   "fullName": "freelensapp/freelens-for-opencode-extension",
   "description": "Freelens for OpenCode Extension ",
   "homepage": "https://github.com/freelensapp/freelens-for-opencode-extension",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
   "language": null,
   "createdAt": "2026-07-05T22:58:44Z",
-  "updatedAt": "2026-07-05T22:58:55Z",
-  "pushedAt": "2026-07-05T22:58:45Z",
+  "updatedAt": "2026-07-24T12:24:03Z",
+  "pushedAt": "2026-07-24T12:21:25Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -31,5 +31,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-07-24T12:06:56.986Z"
+  "lastScanned": "2026-07-24T14:06:09.094Z"
 }

@@ -107,7 +107,7 @@
         {
           "name": "freelens-istio-extension-0.1.0.tgz",
           "size": 39987,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/edwardccg/freelens-istio-extension/releases/download/v0.1.0/freelens-istio-extension-0.1.0.tgz",
           "createdAt": "2026-05-06T21:58:55Z",
@@ -142,7 +142,7 @@
       "releaseName": "v0.1.0",
       "size": 39987,
       "downloadUrl": "https://github.com/edwardccg/freelens-istio-extension/releases/download/v0.1.0/freelens-istio-extension-0.1.0.tgz",
-      "downloadCount": 4,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2026-05-06T21:58:55Z"
     }
@@ -164,7 +164,7 @@
       {
         "name": "freelens-istio-extension-0.1.0.tgz",
         "size": 39987,
-        "downloadCount": 4,
+        "downloadCount": 5,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/edwardccg/freelens-istio-extension/releases/download/v0.1.0/freelens-istio-extension-0.1.0.tgz",
         "createdAt": "2026-05-06T21:58:55Z",
@@ -175,5 +175,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-24T12:06:47.956Z"
+  "lastScanned": "2026-07-24T14:06:12.897Z"
 }
