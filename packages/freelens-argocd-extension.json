@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-08-06T08:54:35Z",
-  "updatedAt": "2026-07-21T21:36:50Z",
-  "pushedAt": "2026-07-27T19:05:28Z",
+  "updatedAt": "2026-07-27T19:13:05Z",
+  "pushedAt": "2026-07-27T19:14:11Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@sebastian-prokesch/freelens-argo-extension",
-    "version": "0.1.12",
+    "version": "0.1.13",
     "description": "Freelens Extension for Argo resources",
     "repository": {
       "type": "git",
@@ -126,9 +126,35 @@
       "argo",
       "argocd"
     ],
-    "packageManager": "pnpm@11.7.0"
+    "packageManager": "pnpm@11.15.1"
   },
   "releases": [
+    {
+      "id": 360652727,
+      "tagName": "v0.1.13",
+      "name": "v0.1.13",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-07-27T19:12:55Z",
+      "publishedAt": "2026-07-27T19:17:06Z",
+      "body": "## What's Changed\r\n* Adds resource diff view and streamlines dev setup by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/22\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.12...v0.1.13",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "sebastian-prokesch-freelens-argo-extension-0.1.13.tgz",
+          "size": 177853,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.13/sebastian-prokesch-freelens-argo-extension-0.1.13.tgz",
+          "createdAt": "2026-07-27T19:15:34Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 343157653,
       "tagName": "v0.1.12",
@@ -496,6 +522,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.13",
+      "commitSha": "fa482d35872a219d54e89704e77d44497861a3af",
+      "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/fa482d35872a219d54e89704e77d44497861a3af",
+      "zipballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/zipball/refs/tags/v0.1.13",
+      "tarballUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/tarball/refs/tags/v0.1.13"
+    },
+    {
       "name": "v0.1.12",
       "commitSha": "289e695d1422cf556210cce5a357629e05d11450",
       "commitUrl": "https://api.github.com/repos/Sebastian-Prokesch/freelens-argocd-extension/commits/289e695d1422cf556210cce5a357629e05d11450",
@@ -596,6 +629,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.1.13",
+      "name": "v0.1.13",
+      "publishedAt": "2026-07-27T19:17:06Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Adds resource diff view and streamlines dev setup by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/22\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.12...v0.1.13"
+    },
+    {
       "version": "v0.1.12",
       "name": "v0.1.12",
       "publishedAt": "2026-06-22T20:55:11Z",
@@ -695,6 +735,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "sebastian-prokesch-freelens-argo-extension-0.1.13.tgz",
+      "releaseTag": "v0.1.13",
+      "releaseName": "v0.1.13",
+      "size": 177853,
+      "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.13/sebastian-prokesch-freelens-argo-extension-0.1.13.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-07-27T19:15:34Z"
+    },
     {
       "filename": "sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
       "releaseTag": "v0.1.12",
@@ -837,32 +887,32 @@
     }
   ],
   "latestRelease": {
-    "id": 343157653,
-    "tagName": "v0.1.12",
-    "name": "v0.1.12",
+    "id": 360652727,
+    "tagName": "v0.1.13",
+    "name": "v0.1.13",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-06-22T20:52:19Z",
-    "publishedAt": "2026-06-22T20:55:11Z",
-    "body": "## What's Changed\r\n* Enhances Argo CD app management with advanced sync and rollback by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/21\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.10...v0.1.12",
+    "createdAt": "2026-07-27T19:12:55Z",
+    "publishedAt": "2026-07-27T19:17:06Z",
+    "body": "## What's Changed\r\n* Adds resource diff view and streamlines dev setup by @Sebastian-Prokesch in https://github.com/Sebastian-Prokesch/freelens-argocd-extension/pull/22\r\n\r\n\r\n**Full Changelog**: https://github.com/Sebastian-Prokesch/freelens-argocd-extension/compare/v0.1.12...v0.1.13",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
-        "size": 175403,
-        "downloadCount": 13,
+        "name": "sebastian-prokesch-freelens-argo-extension-0.1.13.tgz",
+        "size": 177853,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.12/sebastian-prokesch-freelens-argo-extension-0.1.12.tgz",
-        "createdAt": "2026-06-22T20:54:30Z",
+        "downloadUrl": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension/releases/download/v0.1.13/sebastian-prokesch-freelens-argo-extension-0.1.13.tgz",
+        "createdAt": "2026-07-27T19:15:34Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 14,
+  "totalReleases": 15,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-27T19:10:01.664Z"
+  "lastScanned": "2026-07-27T20:40:50.596Z"
 }
