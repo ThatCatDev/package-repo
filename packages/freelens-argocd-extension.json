@@ -4,11 +4,11 @@
   "fullName": "Sebastian-Prokesch/freelens-argocd-extension",
   "description": "Freelens Extension for Argo resources",
   "homepage": "https://github.com/Sebastian-Prokesch/freelens-argocd-extension",
-  "stars": 3,
+  "stars": 4,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-08-06T08:54:35Z",
-  "updatedAt": "2026-07-27T19:13:05Z",
+  "updatedAt": "2026-07-28T19:22:49Z",
   "pushedAt": "2026-07-27T19:14:11Z",
   "defaultBranch": "main",
   "topics": [],
@@ -914,5 +914,5 @@
   },
   "totalReleases": 15,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-28T18:20:17.807Z"
+  "lastScanned": "2026-07-28T19:55:56.594Z"
 }
