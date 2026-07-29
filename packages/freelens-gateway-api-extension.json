@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-gateway-api-extension",
   "description": "Freelens extension for Gateway API",
   "homepage": "https://freelens.app/",
-  "stars": 13,
+  "stars": 14,
   "forks": 3,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-07-21T21:39:20Z",
+  "updatedAt": "2026-07-29T02:35:49Z",
   "pushedAt": "2026-07-28T12:16:55Z",
   "defaultBranch": "main",
   "topics": [
@@ -440,5 +440,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-29T00:07:55.285Z"
+  "lastScanned": "2026-07-29T03:32:40.656Z"
 }
