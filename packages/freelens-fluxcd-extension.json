@@ -165,7 +165,7 @@
         {
           "name": "freelensapp-fluxcd-extension-5.3.1.tgz",
           "size": 258678,
-          "downloadCount": 15,
+          "downloadCount": 16,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.3.1/freelensapp-fluxcd-extension-5.3.1.tgz",
           "createdAt": "2026-07-22T18:48:27Z",
@@ -227,7 +227,7 @@
         {
           "name": "freelensapp-fluxcd-extension-5.2.2.tgz",
           "size": 288857,
-          "downloadCount": 95,
+          "downloadCount": 96,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.2/freelensapp-fluxcd-extension-5.2.2.tgz",
           "createdAt": "2026-02-11T18:26:05Z",
@@ -690,7 +690,7 @@
       "releaseName": "v5.3.1",
       "size": 258678,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.3.1/freelensapp-fluxcd-extension-5.3.1.tgz",
-      "downloadCount": 15,
+      "downloadCount": 16,
       "type": "tar.gz",
       "createdAt": "2026-07-22T18:48:27Z"
     },
@@ -710,7 +710,7 @@
       "releaseName": "v5.2.2",
       "size": 288857,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.2/freelensapp-fluxcd-extension-5.2.2.tgz",
-      "downloadCount": 95,
+      "downloadCount": 96,
       "type": "tar.gz",
       "createdAt": "2026-02-11T18:26:05Z"
     },
@@ -852,7 +852,7 @@
       {
         "name": "freelensapp-fluxcd-extension-5.3.1.tgz",
         "size": 258678,
-        "downloadCount": 15,
+        "downloadCount": 16,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.3.1/freelensapp-fluxcd-extension-5.3.1.tgz",
         "createdAt": "2026-07-22T18:48:27Z",
@@ -873,5 +873,5 @@
   },
   "totalReleases": 13,
   "hasTarFiles": true,
-  "lastScanned": "2026-07-31T19:01:47.963Z"
+  "lastScanned": "2026-07-31T20:24:12.177Z"
 }
