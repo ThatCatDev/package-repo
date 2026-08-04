@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-07-05T22:58:44Z",
-  "updatedAt": "2026-08-04T10:37:37Z",
-  "pushedAt": "2026-08-04T10:37:28Z",
+  "updatedAt": "2026-08-04T19:48:12Z",
+  "pushedAt": "2026-08-04T19:48:01Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/opencode-extension",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Freelens extension: one-click opencode agent session per cluster",
     "repository": {
       "type": "git",
@@ -111,5 +111,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-04T18:58:33.117Z"
+  "lastScanned": "2026-08-04T20:22:27.122Z"
 }
