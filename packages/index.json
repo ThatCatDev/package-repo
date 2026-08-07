@@ -198,12 +198,12 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/opencode-extension",
+    "name": "@freelensapp/ai-cli-extension",
     "repoName": "freelens-for-opencode-extension",
     "fullName": "freelensapp/freelens-for-opencode-extension",
-    "description": "Freelens extension: one-click opencode agent session per cluster",
+    "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 2,
-    "updatedAt": "2026-08-06T08:06:18Z",
+    "updatedAt": "2026-08-06T21:04:13Z",
     "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false
