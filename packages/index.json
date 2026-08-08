@@ -11,6 +11,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "@freelensapp/agentbridge-extension",
+    "repoName": "freelens-agentbridge-extension",
+    "fullName": "freelensapp/freelens-agentbridge-extension",
+    "description": "Freelens extension for per-cluster AI CLI sessions",
+    "stars": 2,
+    "updatedAt": "2026-08-08T18:44:13Z",
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@freelensapp/ai-extension",
     "repoName": "freelens-ai-extension",
     "fullName": "freelensapp/freelens-ai-extension",
@@ -203,7 +214,7 @@
     "fullName": "freelensapp/freelens-for-opencode-extension",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 2,
-    "updatedAt": "2026-08-07T16:00:27Z",
+    "updatedAt": "2026-08-08T18:17:37Z",
     "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false

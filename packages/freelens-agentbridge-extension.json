@@ -1,15 +1,15 @@
 {
-  "name": "@freelensapp/ai-cli-extension",
-  "repoName": "freelens-for-opencode-extension",
-  "fullName": "freelensapp/freelens-for-opencode-extension",
+  "name": "@freelensapp/agentbridge-extension",
+  "repoName": "freelens-agentbridge-extension",
+  "fullName": "freelensapp/freelens-agentbridge-extension",
   "description": "Freelens extension for per-cluster AI CLI sessions",
-  "homepage": "https://github.com/freelensapp/freelens-for-opencode-extension",
+  "homepage": "https://github.com/freelensapp/freelens-agentbridge-extension",
   "stars": 2,
   "forks": 0,
   "language": "TypeScript",
-  "createdAt": "2026-07-05T22:58:44Z",
-  "updatedAt": "2026-08-08T18:17:37Z",
-  "pushedAt": "2026-08-08T18:27:34Z",
+  "createdAt": "2026-08-08T18:04:42Z",
+  "updatedAt": "2026-08-08T18:44:13Z",
+  "pushedAt": "2026-08-08T18:44:09Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -19,17 +19,17 @@
     "url": "https://github.com/freelensapp"
   },
   "repository": {
-    "url": "https://github.com/freelensapp/freelens-for-opencode-extension",
-    "cloneUrl": "https://github.com/freelensapp/freelens-for-opencode-extension.git",
-    "sshUrl": "git@github.com:freelensapp/freelens-for-opencode-extension.git"
+    "url": "https://github.com/freelensapp/freelens-agentbridge-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-agentbridge-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-agentbridge-extension.git"
   },
   "packageJson": {
-    "name": "@freelensapp/ai-cli-extension",
+    "name": "@freelensapp/agentbridge-extension",
     "version": "1.0.0",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/freelensapp/freelens-for-opencode-extension.git",
+      "url": "git+https://github.com/freelensapp/freelens-agentbridge-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -104,7 +104,7 @@
       "claude-code",
       "github-copilot",
       "ai-agent",
-      "ai-cli"
+      "agentbridge"
     ],
     "packageManager": "pnpm@10.34.4+sha512.8768be55200ae3f2226b6527fcca2687e14bc4e5f12d7721a0f25da3df47915177058648db4177baf348120fa0ba2752d8d8d93f6beaf1fe64ae18da8de961af"
   },
@@ -115,5 +115,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-08T18:51:21.750Z"
+  "lastScanned": "2026-08-08T18:51:21.118Z"
 }
