@@ -152,7 +152,7 @@
         {
           "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
           "size": 58460,
-          "downloadCount": 10,
+          "downloadCount": 11,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
           "createdAt": "2026-07-10T10:21:45Z",
@@ -347,7 +347,7 @@
       "releaseName": "v0.2.2",
       "size": 58460,
       "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
-      "downloadCount": 10,
+      "downloadCount": 11,
       "type": "tar.gz",
       "createdAt": "2026-07-10T10:21:45Z"
     },
@@ -419,7 +419,7 @@
       {
         "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
         "size": 58460,
-        "downloadCount": 10,
+        "downloadCount": 11,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
         "createdAt": "2026-07-10T10:21:45Z",
@@ -440,5 +440,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-08-12T15:41:39.576Z"
+  "lastScanned": "2026-08-12T16:34:08.599Z"
 }
