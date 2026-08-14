@@ -1,0 +1,35 @@
+{
+  "name": "freelens-product-navigation-extension",
+  "repoName": "freelens-product-navigation-extension",
+  "fullName": "MrYoda/freelens-product-navigation-extension",
+  "description": "Product-centric navigation extension",
+  "homepage": "https://github.com/MrYoda/freelens-product-navigation-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-08-14T17:02:47Z",
+  "updatedAt": "2026-08-14T17:02:48Z",
+  "pushedAt": "2026-08-14T17:02:48Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": null,
+  "owner": {
+    "login": "MrYoda",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/2728943?v=4",
+    "url": "https://github.com/MrYoda"
+  },
+  "repository": {
+    "url": "https://github.com/MrYoda/freelens-product-navigation-extension",
+    "cloneUrl": "https://github.com/MrYoda/freelens-product-navigation-extension.git",
+    "sshUrl": "git@github.com:MrYoda/freelens-product-navigation-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-08-14T17:07:12.511Z"
+}

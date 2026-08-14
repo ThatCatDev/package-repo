@@ -341,6 +341,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "freelens-product-navigation-extension",
+    "repoName": "freelens-product-navigation-extension",
+    "fullName": "MrYoda/freelens-product-navigation-extension",
+    "description": "Product-centric navigation extension",
+    "stars": 0,
+    "updatedAt": "2026-08-14T17:02:48Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@freelensapp/resource-map-extension",
     "repoName": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
