@@ -344,10 +344,10 @@
     "name": "freelens-product-navigation-extension",
     "repoName": "freelens-product-navigation-extension",
     "fullName": "MrYoda/freelens-product-navigation-extension",
-    "description": "Product-centric navigation extension",
+    "description": "Product-oriented navigation for Freelens",
     "stars": 0,
-    "updatedAt": "2026-08-14T17:16:28Z",
-    "latestVersion": null,
+    "updatedAt": "2026-08-15T15:09:24Z",
+    "latestVersion": "0.2.1",
     "hasReleases": false,
     "hasTarFiles": false
   },

@@ -2,17 +2,17 @@
   "name": "freelens-product-navigation-extension",
   "repoName": "freelens-product-navigation-extension",
   "fullName": "MrYoda/freelens-product-navigation-extension",
-  "description": "Product-centric navigation extension",
+  "description": "Product-oriented navigation for Freelens",
   "homepage": "https://github.com/MrYoda/freelens-product-navigation-extension",
   "stars": 0,
   "forks": 0,
-  "language": null,
+  "language": "TypeScript",
   "createdAt": "2026-08-14T17:02:47Z",
-  "updatedAt": "2026-08-14T17:16:28Z",
-  "pushedAt": "2026-08-15T08:50:19Z",
+  "updatedAt": "2026-08-15T15:09:24Z",
+  "pushedAt": "2026-08-15T15:09:01Z",
   "defaultBranch": "main",
   "topics": [],
-  "license": null,
+  "license": "NOASSERTION",
   "owner": {
     "login": "MrYoda",
     "avatarUrl": "https://avatars.githubusercontent.com/u/2728943?v=4",
@@ -23,7 +23,49 @@
     "cloneUrl": "https://github.com/MrYoda/freelens-product-navigation-extension.git",
     "sshUrl": "git@github.com:MrYoda/freelens-product-navigation-extension.git"
   },
-  "packageJson": null,
+  "packageJson": {
+    "name": "freelens-product-navigation-extension",
+    "version": "0.2.1",
+    "description": "Product-oriented navigation for Freelens",
+    "type": "module",
+    "main": "dist/main/index.cjs",
+    "renderer": "dist/renderer/index.cjs",
+    "files": [
+      "dist",
+      "README.md",
+      "LICENSE"
+    ],
+    "scripts": {
+      "build": "electron-vite build",
+      "dev": "electron-vite dev",
+      "test": "node --experimental-strip-types --test src/**/*.test.ts",
+      "typecheck": "tsc --noEmit",
+      "check:package": "node scripts/check-package.mjs",
+      "mock:kubernetes": "node scripts/gui/mock-kubernetes.mjs",
+      "smoke:gui": "node scripts/gui/smoke-test.mjs",
+      "smoke:settings": "node scripts/gui/settings-smoke-test.mjs",
+      "pack:extension": "pnpm build && pnpm check:package && pnpm pack"
+    },
+    "engines": {
+      "freelens": "^1.10.0"
+    },
+    "devDependencies": {
+      "@freelensapp/extensions": "^1.10.0",
+      "@types/react": "^17.0.93",
+      "electron-vite": "^3.1.0",
+      "mobx": "6.13.7",
+      "react": "17.0.2",
+      "typescript": "^5.7.0",
+      "vite": "^6.0.0"
+    },
+    "license": "MIT",
+    "lens": {
+      "metadata": {
+        "displayName": "Product Navigation",
+        "description": "Navigate from products and components to Kubernetes namespaces and Pods"
+      }
+    }
+  },
   "releases": [],
   "tags": [],
   "versionHistory": [],
@@ -31,5 +73,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-15T14:57:16.286Z"
+  "lastScanned": "2026-08-15T15:14:47.139Z"
 }
