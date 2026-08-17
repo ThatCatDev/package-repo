@@ -112,60 +112,7 @@
     ],
     "packageManager": "pnpm@10.22.0"
   },
-  "releases": [
-    {
-      "id": 283107407,
-      "tagName": "v0.1.1",
-      "name": "v0.1.1",
-      "draft": false,
-      "prerelease": false,
-      "createdAt": "2026-02-04T19:35:58Z",
-      "publishedAt": "2026-02-04T19:36:52Z",
-      "body": null,
-      "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "assets": [
-        {
-          "name": "freelens-hotkey-extension-0.1.1.tgz",
-          "size": 10300,
-          "downloadCount": 9,
-          "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
-          "createdAt": "2026-02-04T19:36:51Z",
-          "isTarGz": true,
-          "isTar": false
-        }
-      ]
-    },
-    {
-      "id": 283027498,
-      "tagName": "v0.1.0",
-      "name": "v0.1.0",
-      "draft": false,
-      "prerelease": false,
-      "createdAt": "2026-02-04T15:52:47Z",
-      "publishedAt": "2026-02-04T16:00:59Z",
-      "body": null,
-      "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "assets": [
-        {
-          "name": "freelens-hotkey-extension-0.1.0.tgz",
-          "size": 10299,
-          "downloadCount": 2,
-          "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.0/freelens-hotkey-extension-0.1.0.tgz",
-          "createdAt": "2026-02-04T16:00:59Z",
-          "isTarGz": true,
-          "isTar": false
-        }
-      ]
-    }
-  ],
+  "releases": [],
   "tags": [
     {
       "name": "v0.1.1",
@@ -182,71 +129,10 @@
       "tarballUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/tarball/refs/tags/v0.1.0"
     }
   ],
-  "versionHistory": [
-    {
-      "version": "v0.1.1",
-      "name": "v0.1.1",
-      "publishedAt": "2026-02-04T19:36:52Z",
-      "isPrerelease": false,
-      "notes": null
-    },
-    {
-      "version": "v0.1.0",
-      "name": "v0.1.0",
-      "publishedAt": "2026-02-04T16:00:59Z",
-      "isPrerelease": false,
-      "notes": null
-    }
-  ],
-  "tarFiles": [
-    {
-      "filename": "freelens-hotkey-extension-0.1.1.tgz",
-      "releaseTag": "v0.1.1",
-      "releaseName": "v0.1.1",
-      "size": 10300,
-      "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
-      "downloadCount": 9,
-      "type": "tar.gz",
-      "createdAt": "2026-02-04T19:36:51Z"
-    },
-    {
-      "filename": "freelens-hotkey-extension-0.1.0.tgz",
-      "releaseTag": "v0.1.0",
-      "releaseName": "v0.1.0",
-      "size": 10299,
-      "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.0/freelens-hotkey-extension-0.1.0.tgz",
-      "downloadCount": 2,
-      "type": "tar.gz",
-      "createdAt": "2026-02-04T16:00:59Z"
-    }
-  ],
-  "latestRelease": {
-    "id": 283107407,
-    "tagName": "v0.1.1",
-    "name": "v0.1.1",
-    "draft": false,
-    "prerelease": false,
-    "createdAt": "2026-02-04T19:35:58Z",
-    "publishedAt": "2026-02-04T19:36:52Z",
-    "body": null,
-    "author": {
-      "login": "github-actions[bot]",
-      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-    },
-    "assets": [
-      {
-        "name": "freelens-hotkey-extension-0.1.1.tgz",
-        "size": 10300,
-        "downloadCount": 9,
-        "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
-        "createdAt": "2026-02-04T19:36:51Z",
-        "isTarGz": true,
-        "isTar": false
-      }
-    ]
-  },
-  "totalReleases": 2,
-  "hasTarFiles": true,
-  "lastScanned": "2026-08-17T13:10:08.756Z"
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-08-17T13:51:48.519Z"
 }

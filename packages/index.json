@@ -28,9 +28,9 @@
     "description": "AI capabilities for Freelens",
     "stars": 34,
     "updatedAt": "2026-08-07T13:27:39Z",
-    "latestVersion": "v0.6.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.6.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/argocd-extension",
@@ -39,9 +39,9 @@
     "description": "Freelens extension for ArgoCD",
     "stars": 4,
     "updatedAt": "2026-07-27T14:55:47Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-claude-extension",
@@ -116,9 +116,9 @@
     "description": "Example of a Freelens extension",
     "stars": 5,
     "updatedAt": "2026-07-03T07:31:19Z",
-    "latestVersion": "v1.10.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.10.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@thatcatdev/k-menu",
@@ -127,9 +127,9 @@
     "description": "K-Menu: A powerful command palette for Freelens",
     "stars": 0,
     "updatedAt": "2025-11-24T03:27:11Z",
-    "latestVersion": "v1.0.3",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.3",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "package-manager",
@@ -138,9 +138,9 @@
     "description": "A Freelens extension for package management",
     "stars": 0,
     "updatedAt": "2025-11-24T03:49:51Z",
-    "latestVersion": "v1.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-extension-k8s-advisor",
@@ -171,9 +171,9 @@
     "description": "Freelens extension for External Secrets Operator",
     "stars": 0,
     "updatedAt": "2026-03-08T20:39:47Z",
-    "latestVersion": "v0.3.4",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.3.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-favorites-extension",
@@ -193,9 +193,9 @@
     "description": "Freelens extension for FluxCD",
     "stars": 124,
     "updatedAt": "2026-07-26T23:32:51Z",
-    "latestVersion": "v5.3.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "5.3.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/for-claude-extension",
@@ -226,9 +226,9 @@
     "description": "Freelens extension for Gateway API",
     "stars": 15,
     "updatedAt": "2026-08-11T10:00:25Z",
-    "latestVersion": "v0.2.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.2.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-gateway-extension",
@@ -237,9 +237,9 @@
     "description": "Freelens extension for Kubernetes Gateway API and NGINX Gateway Fabric resources",
     "stars": 0,
     "updatedAt": "2026-04-22T13:18:19Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-hotkey-extension",
@@ -248,9 +248,9 @@
     "description": "Hotkey helpers for Freelens",
     "stars": 0,
     "updatedAt": "2026-08-01T09:00:23Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-istio-extension",
@@ -259,9 +259,9 @@
     "description": "Freelens extension for Istio service mesh visibility",
     "stars": 0,
     "updatedAt": "2026-05-07T17:50:51Z",
-    "latestVersion": "v0.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@mike-callahan/jobset-extension",
@@ -270,9 +270,9 @@
     "description": "Extension that adds information on sigs.k8s.io JobSets",
     "stars": 3,
     "updatedAt": "2026-02-27T07:31:08Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0-0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/kamaji-extension",
@@ -281,9 +281,9 @@
     "description": "Kamaji extension",
     "stars": 5,
     "updatedAt": "2026-05-26T15:58:35Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/kargo-extension",
@@ -292,9 +292,9 @@
     "description": "Freelens extension for Kargo",
     "stars": 0,
     "updatedAt": "2026-04-01T07:17:18Z",
-    "latestVersion": "v0.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-karpenter-extension",
@@ -358,9 +358,9 @@
     "description": "FreeLens extension to visualize Kubernetes resources and their relations",
     "stars": 12,
     "updatedAt": "2026-05-21T11:02:09Z",
-    "latestVersion": "v1.0.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-stats-extension",
@@ -369,9 +369,9 @@
     "description": "SRE investigation stats for Freelens clusters",
     "stars": 0,
     "updatedAt": "2026-08-01T08:59:10Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/sveltos-extension",
@@ -380,9 +380,9 @@
     "description": "Sveltos Freelens extension",
     "stars": 5,
     "updatedAt": "2026-05-22T02:12:28Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens_ingressroute_extension",

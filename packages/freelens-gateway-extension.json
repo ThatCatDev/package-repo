@@ -80,34 +80,7 @@
     ],
     "license": "MIT"
   },
-  "releases": [
-    {
-      "id": 312226298,
-      "tagName": "v0.1.1",
-      "name": "v0.1.1",
-      "draft": false,
-      "prerelease": false,
-      "createdAt": "2026-04-22T13:18:13Z",
-      "publishedAt": "2026-04-22T13:19:31Z",
-      "body": null,
-      "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "assets": [
-        {
-          "name": "freelens-gateway-extension-0.1.1.tgz",
-          "size": 20460,
-          "downloadCount": 9,
-          "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/ganey/freelens-gateway-extension/releases/download/v0.1.1/freelens-gateway-extension-0.1.1.tgz",
-          "createdAt": "2026-04-22T13:19:30Z",
-          "isTarGz": true,
-          "isTar": false
-        }
-      ]
-    }
-  ],
+  "releases": [],
   "tags": [
     {
       "name": "v0.1.1",
@@ -117,54 +90,10 @@
       "tarballUrl": "https://api.github.com/repos/ganey/freelens-gateway-extension/tarball/refs/tags/v0.1.1"
     }
   ],
-  "versionHistory": [
-    {
-      "version": "v0.1.1",
-      "name": "v0.1.1",
-      "publishedAt": "2026-04-22T13:19:31Z",
-      "isPrerelease": false,
-      "notes": null
-    }
-  ],
-  "tarFiles": [
-    {
-      "filename": "freelens-gateway-extension-0.1.1.tgz",
-      "releaseTag": "v0.1.1",
-      "releaseName": "v0.1.1",
-      "size": 20460,
-      "downloadUrl": "https://github.com/ganey/freelens-gateway-extension/releases/download/v0.1.1/freelens-gateway-extension-0.1.1.tgz",
-      "downloadCount": 9,
-      "type": "tar.gz",
-      "createdAt": "2026-04-22T13:19:30Z"
-    }
-  ],
-  "latestRelease": {
-    "id": 312226298,
-    "tagName": "v0.1.1",
-    "name": "v0.1.1",
-    "draft": false,
-    "prerelease": false,
-    "createdAt": "2026-04-22T13:18:13Z",
-    "publishedAt": "2026-04-22T13:19:31Z",
-    "body": null,
-    "author": {
-      "login": "github-actions[bot]",
-      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-    },
-    "assets": [
-      {
-        "name": "freelens-gateway-extension-0.1.1.tgz",
-        "size": 20460,
-        "downloadCount": 9,
-        "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/ganey/freelens-gateway-extension/releases/download/v0.1.1/freelens-gateway-extension-0.1.1.tgz",
-        "createdAt": "2026-04-22T13:19:30Z",
-        "isTarGz": true,
-        "isTar": false
-      }
-    ]
-  },
-  "totalReleases": 1,
-  "hasTarFiles": true,
-  "lastScanned": "2026-08-17T13:10:11.701Z"
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-08-17T13:52:03.788Z"
 }

@@ -89,34 +89,7 @@
     ],
     "packageManager": "pnpm@10.33.2"
   },
-  "releases": [
-    {
-      "id": 318655629,
-      "tagName": "v0.1.0",
-      "name": "v0.1.0",
-      "draft": false,
-      "prerelease": false,
-      "createdAt": "2026-05-06T21:57:40Z",
-      "publishedAt": "2026-05-06T21:58:30Z",
-      "body": "First personal release\n\n**Full Changelog**: https://github.com/edwardccg/freelens-istio-extension/commits/v0.1.0",
-      "author": {
-        "login": "edwardccg",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/37487340?v=4"
-      },
-      "assets": [
-        {
-          "name": "freelens-istio-extension-0.1.0.tgz",
-          "size": 39987,
-          "downloadCount": 5,
-          "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/edwardccg/freelens-istio-extension/releases/download/v0.1.0/freelens-istio-extension-0.1.0.tgz",
-          "createdAt": "2026-05-06T21:58:55Z",
-          "isTarGz": true,
-          "isTar": false
-        }
-      ]
-    }
-  ],
+  "releases": [],
   "tags": [
     {
       "name": "v0.1.0",
@@ -126,54 +99,10 @@
       "tarballUrl": "https://api.github.com/repos/edwardccg/freelens-istio-extension/tarball/refs/tags/v0.1.0"
     }
   ],
-  "versionHistory": [
-    {
-      "version": "v0.1.0",
-      "name": "v0.1.0",
-      "publishedAt": "2026-05-06T21:58:30Z",
-      "isPrerelease": false,
-      "notes": "First personal release\n\n**Full Changelog**: https://github.com/edwardccg/freelens-istio-extension/commits/v0.1.0"
-    }
-  ],
-  "tarFiles": [
-    {
-      "filename": "freelens-istio-extension-0.1.0.tgz",
-      "releaseTag": "v0.1.0",
-      "releaseName": "v0.1.0",
-      "size": 39987,
-      "downloadUrl": "https://github.com/edwardccg/freelens-istio-extension/releases/download/v0.1.0/freelens-istio-extension-0.1.0.tgz",
-      "downloadCount": 5,
-      "type": "tar.gz",
-      "createdAt": "2026-05-06T21:58:55Z"
-    }
-  ],
-  "latestRelease": {
-    "id": 318655629,
-    "tagName": "v0.1.0",
-    "name": "v0.1.0",
-    "draft": false,
-    "prerelease": false,
-    "createdAt": "2026-05-06T21:57:40Z",
-    "publishedAt": "2026-05-06T21:58:30Z",
-    "body": "First personal release\n\n**Full Changelog**: https://github.com/edwardccg/freelens-istio-extension/commits/v0.1.0",
-    "author": {
-      "login": "edwardccg",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/37487340?v=4"
-    },
-    "assets": [
-      {
-        "name": "freelens-istio-extension-0.1.0.tgz",
-        "size": 39987,
-        "downloadCount": 5,
-        "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/edwardccg/freelens-istio-extension/releases/download/v0.1.0/freelens-istio-extension-0.1.0.tgz",
-        "createdAt": "2026-05-06T21:58:55Z",
-        "isTarGz": true,
-        "isTar": false
-      }
-    ]
-  },
-  "totalReleases": 1,
-  "hasTarFiles": true,
-  "lastScanned": "2026-08-17T13:10:07.138Z"
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-08-17T13:51:35.338Z"
 }
