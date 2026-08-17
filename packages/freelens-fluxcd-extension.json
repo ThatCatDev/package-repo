@@ -253,7 +253,7 @@
         {
           "name": "freelensapp-fluxcd-extension-5.2.1.tgz",
           "size": 288649,
-          "downloadCount": 124,
+          "downloadCount": 125,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.1/freelensapp-fluxcd-extension-5.2.1.tgz",
           "createdAt": "2025-11-26T23:21:41Z",
@@ -331,7 +331,7 @@
         {
           "name": "freelensapp-fluxcd-extension-5.0.0.tgz",
           "size": 254313,
-          "downloadCount": 27,
+          "downloadCount": 28,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.0.0/freelensapp-fluxcd-extension-5.0.0.tgz",
           "createdAt": "2025-10-25T21:28:28Z",
@@ -357,7 +357,7 @@
         {
           "name": "freelensapp-fluxcd-extension-4.0.1.tgz",
           "size": 227465,
-          "downloadCount": 99,
+          "downloadCount": 100,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.1/freelensapp-fluxcd-extension-4.0.1.tgz",
           "createdAt": "2025-09-10T13:34:24Z",
@@ -383,7 +383,7 @@
         {
           "name": "freelensapp-fluxcd-extension-4.0.0.tgz",
           "size": 226817,
-          "downloadCount": 41,
+          "downloadCount": 42,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.0/freelensapp-fluxcd-extension-4.0.0.tgz",
           "createdAt": "2025-08-18T17:51:28Z",
@@ -461,7 +461,7 @@
         {
           "name": "freelensapp-extension-fluxcd-3.1.0.tgz",
           "size": 225750,
-          "downloadCount": 23,
+          "downloadCount": 24,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.0/freelensapp-extension-fluxcd-3.1.0.tgz",
           "createdAt": "2025-05-22T13:28:04Z",
@@ -720,7 +720,7 @@
       "releaseName": "v5.2.1",
       "size": 288649,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.2.1/freelensapp-fluxcd-extension-5.2.1.tgz",
-      "downloadCount": 124,
+      "downloadCount": 125,
       "type": "tar.gz",
       "createdAt": "2025-11-26T23:21:41Z"
     },
@@ -750,7 +750,7 @@
       "releaseName": "v5.0.0",
       "size": 254313,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.0.0/freelensapp-fluxcd-extension-5.0.0.tgz",
-      "downloadCount": 27,
+      "downloadCount": 28,
       "type": "tar.gz",
       "createdAt": "2025-10-25T21:28:28Z"
     },
@@ -760,7 +760,7 @@
       "releaseName": "v4.0.1",
       "size": 227465,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.1/freelensapp-fluxcd-extension-4.0.1.tgz",
-      "downloadCount": 99,
+      "downloadCount": 100,
       "type": "tar.gz",
       "createdAt": "2025-09-10T13:34:24Z"
     },
@@ -770,7 +770,7 @@
       "releaseName": "v4.0.0",
       "size": 226817,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v4.0.0/freelensapp-fluxcd-extension-4.0.0.tgz",
-      "downloadCount": 41,
+      "downloadCount": 42,
       "type": "tar.gz",
       "createdAt": "2025-08-18T17:51:28Z"
     },
@@ -800,7 +800,7 @@
       "releaseName": "v3.1.0",
       "size": 225750,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.0/freelensapp-extension-fluxcd-3.1.0.tgz",
-      "downloadCount": 23,
+      "downloadCount": 24,
       "type": "tar.gz",
       "createdAt": "2025-05-22T13:28:04Z"
     },
@@ -873,5 +873,5 @@
   },
   "totalReleases": 13,
   "hasTarFiles": true,
-  "lastScanned": "2026-08-17T19:55:04.590Z"
+  "lastScanned": "2026-08-17T20:14:36.407Z"
 }
