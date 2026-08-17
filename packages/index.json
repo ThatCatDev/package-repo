@@ -341,13 +341,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-product-navigation-extension",
+    "name": "@mryoda/freelens-product-navigation-extension",
     "repoName": "freelens-product-navigation-extension",
     "fullName": "MrYoda/freelens-product-navigation-extension",
     "description": "Product-oriented navigation for Freelens",
     "stars": 0,
-    "updatedAt": "2026-08-15T15:25:24Z",
-    "latestVersion": "0.2.2",
+    "updatedAt": "2026-08-17T08:44:09Z",
+    "latestVersion": "0.3.1",
     "hasReleases": false,
     "hasTarFiles": false
   },
