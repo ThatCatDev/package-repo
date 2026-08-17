@@ -146,7 +146,86 @@
     },
     "packageManager": "pnpm@10.12.4+sha256.cadfd9e6c9fcc2cb76fe7c0779a5250b632898aea5f53d833a73690c77a778d9"
   },
-  "releases": [],
+  "releases": [
+    {
+      "id": 326822506,
+      "tagName": "v1.0.2",
+      "name": "v1.0.2",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-21T11:02:04Z",
+      "publishedAt": "2026-05-21T11:03:03Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-resource-map-extension-1.0.2.tgz",
+          "size": 1063257,
+          "downloadCount": 70,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
+          "createdAt": "2026-05-21T11:03:02Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 319975602,
+      "tagName": "v1.0.1",
+      "name": "v1.0.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-09T17:18:56Z",
+      "publishedAt": "2026-05-09T17:19:52Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-resource-map-extension-1.0.1.tgz",
+          "size": 1063257,
+          "downloadCount": 11,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.1/freelensapp-resource-map-extension-1.0.1.tgz",
+          "createdAt": "2026-05-09T17:19:51Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 319969473,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-09T16:15:48Z",
+      "publishedAt": "2026-05-09T16:32:51Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-resource-map-extension-1.0.0.tgz",
+          "size": 1063259,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.0/freelensapp-resource-map-extension-1.0.0.tgz",
+          "createdAt": "2026-05-09T16:32:50Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
   "tags": [
     {
       "name": "v1.0.2",
@@ -170,10 +249,88 @@
       "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-resource-map-extension/tarball/refs/tags/v1.0.0"
     }
   ],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-08-17T16:09:22.793Z"
+  "versionHistory": [
+    {
+      "version": "v1.0.2",
+      "name": "v1.0.2",
+      "publishedAt": "2026-05-21T11:03:03Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
+      "version": "v1.0.1",
+      "name": "v1.0.1",
+      "publishedAt": "2026-05-09T17:19:52Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2026-05-09T16:32:51Z",
+      "isPrerelease": false,
+      "notes": null
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-resource-map-extension-1.0.2.tgz",
+      "releaseTag": "v1.0.2",
+      "releaseName": "v1.0.2",
+      "size": 1063257,
+      "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
+      "downloadCount": 70,
+      "type": "tar.gz",
+      "createdAt": "2026-05-21T11:03:02Z"
+    },
+    {
+      "filename": "freelensapp-resource-map-extension-1.0.1.tgz",
+      "releaseTag": "v1.0.1",
+      "releaseName": "v1.0.1",
+      "size": 1063257,
+      "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.1/freelensapp-resource-map-extension-1.0.1.tgz",
+      "downloadCount": 11,
+      "type": "tar.gz",
+      "createdAt": "2026-05-09T17:19:51Z"
+    },
+    {
+      "filename": "freelensapp-resource-map-extension-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 1063259,
+      "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.0/freelensapp-resource-map-extension-1.0.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-05-09T16:32:50Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 326822506,
+    "tagName": "v1.0.2",
+    "name": "v1.0.2",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-05-21T11:02:04Z",
+    "publishedAt": "2026-05-21T11:03:03Z",
+    "body": null,
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-resource-map-extension-1.0.2.tgz",
+        "size": 1063257,
+        "downloadCount": 70,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
+        "createdAt": "2026-05-21T11:03:02Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 3,
+  "hasTarFiles": true,
+  "lastScanned": "2026-08-17T16:42:04.597Z"
 }

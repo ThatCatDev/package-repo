@@ -111,7 +111,34 @@
     ],
     "packageManager": "pnpm@10.12.4"
   },
-  "releases": [],
+  "releases": [
+    {
+      "id": 321444204,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-12T21:35:41Z",
+      "publishedAt": "2026-05-12T21:38:39Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-kamaji-extension-1.0.0.tgz",
+          "size": 184112,
+          "downloadCount": 7,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v1.0.0/freelensapp-kamaji-extension-1.0.0.tgz",
+          "createdAt": "2026-05-12T21:38:39Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
   "tags": [
     {
       "name": "v1.0.0",
@@ -121,10 +148,54 @@
       "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/tarball/refs/tags/v1.0.0"
     }
   ],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-08-17T16:09:36.195Z"
+  "versionHistory": [
+    {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2026-05-12T21:38:39Z",
+      "isPrerelease": false,
+      "notes": null
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-kamaji-extension-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 184112,
+      "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v1.0.0/freelensapp-kamaji-extension-1.0.0.tgz",
+      "downloadCount": 7,
+      "type": "tar.gz",
+      "createdAt": "2026-05-12T21:38:39Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 321444204,
+    "tagName": "v1.0.0",
+    "name": "v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-05-12T21:35:41Z",
+    "publishedAt": "2026-05-12T21:38:39Z",
+    "body": null,
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-kamaji-extension-1.0.0.tgz",
+        "size": 184112,
+        "downloadCount": 7,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v1.0.0/freelensapp-kamaji-extension-1.0.0.tgz",
+        "createdAt": "2026-05-12T21:38:39Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-08-17T16:42:06.975Z"
 }

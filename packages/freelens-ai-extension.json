@@ -133,7 +133,164 @@
     ],
     "packageManager": "pnpm@10.34.4+sha512.8768be55200ae3f2226b6527fcca2687e14bc4e5f12d7721a0f25da3df47915177058648db4177baf348120fa0ba2752d8d8d93f6beaf1fe64ae18da8de961af"
   },
-  "releases": [],
+  "releases": [
+    {
+      "id": 323397470,
+      "tagName": "v0.6.0",
+      "name": "v0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-15T17:42:51Z",
+      "publishedAt": "2026-05-15T17:43:49Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-0.6.0.tgz",
+          "size": 2373681,
+          "downloadCount": 30,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
+          "createdAt": "2026-05-15T17:43:49Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 319111306,
+      "tagName": "v0.5.0",
+      "name": "v0.5.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-05-07T18:38:09Z",
+      "publishedAt": "2026-05-07T18:39:51Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-0.5.0.tgz",
+          "size": 2371835,
+          "downloadCount": 5,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.5.0/freelensapp-ai-extension-0.5.0.tgz",
+          "createdAt": "2026-05-07T18:39:50Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 248870173,
+      "tagName": "v0.4.1",
+      "name": "v0.4.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-09-18T21:26:55Z",
+      "publishedAt": "2025-09-21T16:12:40Z",
+      "body": "What's Changed\r\n\r\nFixed multi tool calling causing agent loop\r\n\r\nFull Changelog: https://github.com/freelensapp/freelens-ai-extension/commits/v0.4.1",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-0.4.1.tgz",
+          "size": 2366502,
+          "downloadCount": 52,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.1/freelensapp-ai-extension-0.4.1.tgz",
+          "createdAt": "2025-09-21T16:12:41Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 246835213,
+      "tagName": "v0.4.0",
+      "name": "v0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-09-12T16:40:56Z",
+      "publishedAt": "2025-09-12T16:41:51Z",
+      "body": "## What's Changed\r\n* MCP Banner to know if MCP Agent is enabled or not\r\n* Available tools are now listed below the chat, so you can know which tools you have\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-ai-extension/commits/v0.4.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-0.4.0.tgz",
+          "size": 2366346,
+          "downloadCount": 4,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.0/freelensapp-ai-extension-0.4.0.tgz",
+          "createdAt": "2025-09-12T16:41:52Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 238856449,
+      "tagName": "v0.2.0",
+      "name": "v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-08-10T15:55:08Z",
+      "publishedAt": "2025-08-10T15:55:56Z",
+      "body": "",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-0.2.0.tgz",
+          "size": 2361659,
+          "downloadCount": 13,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.2.0/freelensapp-ai-extension-0.2.0.tgz",
+          "createdAt": "2025-08-10T15:55:56Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 232288311,
+      "tagName": "v0.1.0",
+      "name": "v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2025-07-14T17:00:22Z",
+      "publishedAt": "2025-07-14T17:01:12Z",
+      "body": "## What's Changed\r\n* Initial release!\r\n\r\n## New Contributors\r\n* @asTonyDev made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/23\r\n* @dex4er made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/33\r\n* @renovate[bot] made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/42\r\n* @freelensbot made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/37\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-ai-extension/commits/v0.1.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-0.1.0.tgz",
+          "size": 2361310,
+          "downloadCount": 22,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.1.0/freelensapp-ai-extension-0.1.0.tgz",
+          "createdAt": "2025-07-14T17:01:12Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
   "tags": [
     {
       "name": "v0.6.0",
@@ -178,10 +335,139 @@
       "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/tarball/refs/tags/v0.1.0"
     }
   ],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-08-17T16:09:10.763Z"
+  "versionHistory": [
+    {
+      "version": "v0.6.0",
+      "name": "v0.6.0",
+      "publishedAt": "2026-05-15T17:43:49Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
+      "version": "v0.5.0",
+      "name": "v0.5.0",
+      "publishedAt": "2026-05-07T18:39:51Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
+      "version": "v0.4.1",
+      "name": "v0.4.1",
+      "publishedAt": "2025-09-21T16:12:40Z",
+      "isPrerelease": false,
+      "notes": "What's Changed\r\n\r\nFixed multi tool calling causing agent loop\r\n\r\nFull Changelog: https://github.com/freelensapp/freelens-ai-extension/commits/v0.4.1"
+    },
+    {
+      "version": "v0.4.0",
+      "name": "v0.4.0",
+      "publishedAt": "2025-09-12T16:41:51Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* MCP Banner to know if MCP Agent is enabled or not\r\n* Available tools are now listed below the chat, so you can know which tools you have\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-ai-extension/commits/v0.4.0"
+    },
+    {
+      "version": "v0.2.0",
+      "name": "v0.2.0",
+      "publishedAt": "2025-08-10T15:55:56Z",
+      "isPrerelease": false,
+      "notes": ""
+    },
+    {
+      "version": "v0.1.0",
+      "name": "v0.1.0",
+      "publishedAt": "2025-07-14T17:01:12Z",
+      "isPrerelease": false,
+      "notes": "## What's Changed\r\n* Initial release!\r\n\r\n## New Contributors\r\n* @asTonyDev made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/23\r\n* @dex4er made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/33\r\n* @renovate[bot] made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/42\r\n* @freelensbot made their first contribution in https://github.com/freelensapp/freelens-ai-extension/pull/37\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-ai-extension/commits/v0.1.0"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-ai-extension-0.6.0.tgz",
+      "releaseTag": "v0.6.0",
+      "releaseName": "v0.6.0",
+      "size": 2373681,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
+      "downloadCount": 30,
+      "type": "tar.gz",
+      "createdAt": "2026-05-15T17:43:49Z"
+    },
+    {
+      "filename": "freelensapp-ai-extension-0.5.0.tgz",
+      "releaseTag": "v0.5.0",
+      "releaseName": "v0.5.0",
+      "size": 2371835,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.5.0/freelensapp-ai-extension-0.5.0.tgz",
+      "downloadCount": 5,
+      "type": "tar.gz",
+      "createdAt": "2026-05-07T18:39:50Z"
+    },
+    {
+      "filename": "freelensapp-ai-extension-0.4.1.tgz",
+      "releaseTag": "v0.4.1",
+      "releaseName": "v0.4.1",
+      "size": 2366502,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.1/freelensapp-ai-extension-0.4.1.tgz",
+      "downloadCount": 52,
+      "type": "tar.gz",
+      "createdAt": "2025-09-21T16:12:41Z"
+    },
+    {
+      "filename": "freelensapp-ai-extension-0.4.0.tgz",
+      "releaseTag": "v0.4.0",
+      "releaseName": "v0.4.0",
+      "size": 2366346,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.0/freelensapp-ai-extension-0.4.0.tgz",
+      "downloadCount": 4,
+      "type": "tar.gz",
+      "createdAt": "2025-09-12T16:41:52Z"
+    },
+    {
+      "filename": "freelensapp-ai-extension-0.2.0.tgz",
+      "releaseTag": "v0.2.0",
+      "releaseName": "v0.2.0",
+      "size": 2361659,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.2.0/freelensapp-ai-extension-0.2.0.tgz",
+      "downloadCount": 13,
+      "type": "tar.gz",
+      "createdAt": "2025-08-10T15:55:56Z"
+    },
+    {
+      "filename": "freelensapp-ai-extension-0.1.0.tgz",
+      "releaseTag": "v0.1.0",
+      "releaseName": "v0.1.0",
+      "size": 2361310,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.1.0/freelensapp-ai-extension-0.1.0.tgz",
+      "downloadCount": 22,
+      "type": "tar.gz",
+      "createdAt": "2025-07-14T17:01:12Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 323397470,
+    "tagName": "v0.6.0",
+    "name": "v0.6.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-05-15T17:42:51Z",
+    "publishedAt": "2026-05-15T17:43:49Z",
+    "body": null,
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-ai-extension-0.6.0.tgz",
+        "size": 2373681,
+        "downloadCount": 30,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
+        "createdAt": "2026-05-15T17:43:49Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 6,
+  "hasTarFiles": true,
+  "lastScanned": "2026-08-17T16:42:02.400Z"
 }
