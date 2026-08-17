@@ -33,13 +33,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-argocd-extension",
+    "name": "@freelensapp/argocd-extension",
     "repoName": "freelens-argocd-extension",
     "fullName": "jhajali/freelens-argocd-extension",
-    "description": "",
+    "description": "Freelens extension for ArgoCD",
     "stars": 4,
     "updatedAt": "2026-07-27T14:55:47Z",
-    "latestVersion": null,
+    "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -121,13 +121,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-ext-k-menu",
+    "name": "@thatcatdev/k-menu",
     "repoName": "freelens-ext-k-menu",
     "fullName": "ThatCatDev/freelens-ext-k-menu",
-    "description": "cmd+k searchable menu for freelens",
+    "description": "K-Menu: A powerful command palette for Freelens",
     "stars": 0,
     "updatedAt": "2025-11-24T03:27:11Z",
-    "latestVersion": null,
+    "latestVersion": "1.0.3",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -182,7 +182,7 @@
     "description": "FreeLens extension that adds a favorites/bookmarking system for sidebar navigation items with drag-and-drop reordering",
     "stars": 0,
     "updatedAt": "2025-12-04T10:02:18Z",
-    "latestVersion": null,
+    "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -209,13 +209,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-for-opencode-extension",
+    "name": "@freelensapp/ai-cli-extension",
     "repoName": "freelens-for-opencode-extension",
     "fullName": "freelensapp/freelens-for-opencode-extension",
-    "description": "Freelens for OpenCode Extension ",
+    "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 2,
     "updatedAt": "2026-08-08T18:17:37Z",
-    "latestVersion": null,
+    "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -245,10 +245,10 @@
     "name": "freelens-hotkey-extension",
     "repoName": "freelens-hotkey-extension",
     "fullName": "YoranSys/freelens-hotkey-extension",
-    "description": "",
+    "description": "Hotkey helpers for Freelens",
     "stars": 0,
     "updatedAt": "2026-08-01T09:00:23Z",
-    "latestVersion": null,
+    "latestVersion": "0.1.1",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -259,9 +259,9 @@
     "description": "Freelens extension for Istio service mesh visibility",
     "stars": 0,
     "updatedAt": "2026-05-07T17:50:51Z",
-    "latestVersion": "v0.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@mike-callahan/jobset-extension",
@@ -275,13 +275,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/kamaji-extension",
+    "name": "freelens-kamaji-extension",
     "repoName": "freelens-kamaji-extension",
     "fullName": "freelensapp/freelens-kamaji-extension",
-    "description": "Kamaji extension",
+    "description": "Freelens extension for Kamaji, the Kubernetes Control Plane Manager",
     "stars": 5,
     "updatedAt": "2026-05-26T15:58:35Z",
-    "latestVersion": "1.0.0",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -314,9 +314,9 @@
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
     "updatedAt": "2026-04-01T11:03:09Z",
-    "latestVersion": "0.1.2",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.2",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@b-iurea/k8s-ollama-extension",
