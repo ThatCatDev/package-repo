@@ -248,9 +248,9 @@
     "description": "Hotkey helpers for Freelens",
     "stars": 0,
     "updatedAt": "2026-08-01T09:00:23Z",
-    "latestVersion": "0.1.1",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.1",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-istio-extension",
@@ -314,9 +314,9 @@
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
     "updatedAt": "2026-04-01T11:03:09Z",
-    "latestVersion": "v0.1.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@b-iurea/k8s-ollama-extension",
