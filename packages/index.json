@@ -11,13 +11,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/agentbridge-extension",
+    "name": "freelens-agentbridge-extension",
     "repoName": "freelens-agentbridge-extension",
     "fullName": "freelensapp/freelens-agentbridge-extension",
-    "description": "Freelens extension for per-cluster AI CLI sessions",
+    "description": "Freelens Agent Bridge Extension",
     "stars": 2,
     "updatedAt": "2026-08-14T10:59:47Z",
-    "latestVersion": "1.0.0",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -33,13 +33,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/argocd-extension",
+    "name": "freelens-argocd-extension",
     "repoName": "freelens-argocd-extension",
     "fullName": "jhajali/freelens-argocd-extension",
-    "description": "Freelens extension for ArgoCD",
+    "description": "",
     "stars": 4,
     "updatedAt": "2026-07-27T14:55:47Z",
-    "latestVersion": "0.1.0",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -121,13 +121,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "@thatcatdev/k-menu",
+    "name": "freelens-ext-k-menu",
     "repoName": "freelens-ext-k-menu",
     "fullName": "ThatCatDev/freelens-ext-k-menu",
-    "description": "K-Menu: A powerful command palette for Freelens",
+    "description": "cmd+k searchable menu for freelens",
     "stars": 0,
     "updatedAt": "2025-11-24T03:27:11Z",
-    "latestVersion": "1.0.3",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -182,7 +182,7 @@
     "description": "FreeLens extension that adds a favorites/bookmarking system for sidebar navigation items with drag-and-drop reordering",
     "stars": 0,
     "updatedAt": "2025-12-04T10:02:18Z",
-    "latestVersion": "1.0.0",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -209,13 +209,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/ai-cli-extension",
+    "name": "freelens-for-opencode-extension",
     "repoName": "freelens-for-opencode-extension",
     "fullName": "freelensapp/freelens-for-opencode-extension",
-    "description": "Freelens extension for per-cluster AI CLI sessions",
+    "description": "Freelens for OpenCode Extension ",
     "stars": 2,
     "updatedAt": "2026-08-08T18:17:37Z",
-    "latestVersion": "1.0.0",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -245,12 +245,12 @@
     "name": "freelens-hotkey-extension",
     "repoName": "freelens-hotkey-extension",
     "fullName": "YoranSys/freelens-hotkey-extension",
-    "description": "Hotkey helpers for Freelens",
+    "description": "",
     "stars": 0,
     "updatedAt": "2026-08-01T09:00:23Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-istio-extension",
@@ -259,9 +259,9 @@
     "description": "Freelens extension for Istio service mesh visibility",
     "stars": 0,
     "updatedAt": "2026-05-07T17:50:51Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@mike-callahan/jobset-extension",
@@ -300,10 +300,10 @@
     "name": "freelens-karpenter-extension",
     "repoName": "freelens-karpenter-extension",
     "fullName": "ricardocunha/freelens-karpenter-extension",
-    "description": "FreeLens extension for Karpenter CRD visibility and operational insights",
+    "description": "",
     "stars": 0,
     "updatedAt": "2026-03-27T16:15:22Z",
-    "latestVersion": "0.1.0",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -352,13 +352,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/resource-map-extension",
+    "name": "freelens-resource-map-extension",
     "repoName": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
-    "description": "FreeLens extension to visualize Kubernetes resources and their relations",
+    "description": "Freelens - Free IDE for Kubernetes extension that displays Kubernetes resources and their relations as a force graph.",
     "stars": 12,
     "updatedAt": "2026-05-21T11:02:09Z",
-    "latestVersion": "1.0.2",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },

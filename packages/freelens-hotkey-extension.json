@@ -2,7 +2,7 @@
   "name": "freelens-hotkey-extension",
   "repoName": "freelens-hotkey-extension",
   "fullName": "YoranSys/freelens-hotkey-extension",
-  "description": "Hotkey helpers for Freelens",
+  "description": "",
   "homepage": "https://github.com/YoranSys/freelens-hotkey-extension",
   "stars": 0,
   "forks": 0,
@@ -23,149 +23,8 @@
     "cloneUrl": "https://github.com/YoranSys/freelens-hotkey-extension.git",
     "sshUrl": "git@github.com:YoranSys/freelens-hotkey-extension.git"
   },
-  "packageJson": {
-    "name": "freelens-hotkey-extension",
-    "version": "0.1.1",
-    "description": "Hotkey helpers for Freelens",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/yoransys/freelens-hotkey-extension.git",
-      "directory": "."
-    },
-    "main": "out/main/index.js",
-    "renderer": "out/renderer/index.js",
-    "files": [
-      "out/**/*"
-    ],
-    "engines": {
-      "node": ">= 22.16.0",
-      "freelens": "^1.6.0"
-    },
-    "copyright": "© 2026 Yoransys",
-    "license": "MIT",
-    "author": {
-      "name": "Yoransys"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org/"
-    },
-    "scripts": {
-      "biome": "corepack pnpm dlx @biomejs/biome@2.3.6",
-      "biome:check": "corepack pnpm biome check",
-      "biome:fix": "corepack pnpm biome check --fix",
-      "biome:migrate": "corepack pnpm biome migrate --write",
-      "prettier": "corepack pnpm dlx prettier@3.6.2",
-      "prettier:check": "corepack pnpm prettier --check .",
-      "prettier:fix": "corepack pnpm prettier --write .",
-      "trunk": "corepack pnpm dlx @trunkio/launcher@1.3.4",
-      "trunk:check": "corepack pnpm trunk check",
-      "trunk:check:all": "corepack pnpm trunk check --all",
-      "trunk:fix": "corepack pnpm trunk check --fix",
-      "trunk:fix:all": "corepack pnpm trunk check --fix --all",
-      "lint": "corepack pnpm lint:check",
-      "lint:check": "corepack pnpm \"/^(biome|prettier):check\\$/\"",
-      "lint:fix": "corepack pnpm \"/^(biome|prettier):fix\\$/\"",
-      "knip": "corepack pnpm dlx knip@5.70.0 --dependencies --no-gitignore",
-      "knip:check": "corepack pnpm \"/^knip:(development|production)\\$/\"",
-      "knip:development": "corepack pnpm knip",
-      "knip:production": "corepack pnpm knip --production --strict",
-      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
-      "prebuild": "corepack pnpm type:check",
-      "build": "electron-vite build",
-      "build:all": "corepack pnpm build && corepack pnpm pack",
-      "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
-      "build:force": "electron-vite build",
-      "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
-      "pack:dev": "corepack pnpm bump-version prerelease && corepack pnpm build:force && corepack pnpm build && corepack pnpm clean:tgz && corepack pnpm pack && corepack pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
-      "clean": "corepack pnpm clean:out",
-      "clean:dts": "corepack pnpm dlx shx@0.4.0 rm -f \"src/**/*.scss.d.ts\"",
-      "clean:node_modules": "corepack pnpm dlx shx@0.4.0 rm -rf node_modules",
-      "clean:out": "corepack pnpm dlx shx@0.4.0 rm -rf out",
-      "clean:tgz": "corepack pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
-      "clean:all": "corepack pnpm \"/^clean:(dts|node_modules|out|tgz)\\$/\"",
-      "postupdate": "corepack pnpm biome:migrate"
-    },
-    "devDependencies": {
-      "@babel/plugin-proposal-decorators": "^7.28.0",
-      "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.6.1",
-      "@types/node": "~22.15.35",
-      "@types/react": "^17.0.90",
-      "@vitejs/plugin-react": "^5.1.1",
-      "electron-vite": "^4.0.1",
-      "mobx": "6.13.7",
-      "mobx-react": "7.6.0",
-      "react": "17.0.2",
-      "sass": "^1.94.1",
-      "typescript": "5.9.3",
-      "vite": "^7.2.2",
-      "vite-plugin-external": "^6.2.2",
-      "vite-plugin-sass-dts": "^1.3.34"
-    },
-    "keywords": [
-      "extension",
-      "freelensapp",
-      "lens",
-      "openlens",
-      "freelens"
-    ],
-    "packageManager": "pnpm@10.22.0"
-  },
-  "releases": [
-    {
-      "id": 283107407,
-      "tagName": "v0.1.1",
-      "name": "v0.1.1",
-      "draft": false,
-      "prerelease": false,
-      "createdAt": "2026-02-04T19:35:58Z",
-      "publishedAt": "2026-02-04T19:36:52Z",
-      "body": null,
-      "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "assets": [
-        {
-          "name": "freelens-hotkey-extension-0.1.1.tgz",
-          "size": 10300,
-          "downloadCount": 9,
-          "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
-          "createdAt": "2026-02-04T19:36:51Z",
-          "isTarGz": true,
-          "isTar": false
-        }
-      ]
-    },
-    {
-      "id": 283027498,
-      "tagName": "v0.1.0",
-      "name": "v0.1.0",
-      "draft": false,
-      "prerelease": false,
-      "createdAt": "2026-02-04T15:52:47Z",
-      "publishedAt": "2026-02-04T16:00:59Z",
-      "body": null,
-      "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "assets": [
-        {
-          "name": "freelens-hotkey-extension-0.1.0.tgz",
-          "size": 10299,
-          "downloadCount": 2,
-          "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.0/freelens-hotkey-extension-0.1.0.tgz",
-          "createdAt": "2026-02-04T16:00:59Z",
-          "isTarGz": true,
-          "isTar": false
-        }
-      ]
-    }
-  ],
+  "packageJson": null,
+  "releases": [],
   "tags": [
     {
       "name": "v0.1.1",
@@ -182,71 +41,10 @@
       "tarballUrl": "https://api.github.com/repos/YoranSys/freelens-hotkey-extension/tarball/refs/tags/v0.1.0"
     }
   ],
-  "versionHistory": [
-    {
-      "version": "v0.1.1",
-      "name": "v0.1.1",
-      "publishedAt": "2026-02-04T19:36:52Z",
-      "isPrerelease": false,
-      "notes": null
-    },
-    {
-      "version": "v0.1.0",
-      "name": "v0.1.0",
-      "publishedAt": "2026-02-04T16:00:59Z",
-      "isPrerelease": false,
-      "notes": null
-    }
-  ],
-  "tarFiles": [
-    {
-      "filename": "freelens-hotkey-extension-0.1.1.tgz",
-      "releaseTag": "v0.1.1",
-      "releaseName": "v0.1.1",
-      "size": 10300,
-      "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
-      "downloadCount": 9,
-      "type": "tar.gz",
-      "createdAt": "2026-02-04T19:36:51Z"
-    },
-    {
-      "filename": "freelens-hotkey-extension-0.1.0.tgz",
-      "releaseTag": "v0.1.0",
-      "releaseName": "v0.1.0",
-      "size": 10299,
-      "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.0/freelens-hotkey-extension-0.1.0.tgz",
-      "downloadCount": 2,
-      "type": "tar.gz",
-      "createdAt": "2026-02-04T16:00:59Z"
-    }
-  ],
-  "latestRelease": {
-    "id": 283107407,
-    "tagName": "v0.1.1",
-    "name": "v0.1.1",
-    "draft": false,
-    "prerelease": false,
-    "createdAt": "2026-02-04T19:35:58Z",
-    "publishedAt": "2026-02-04T19:36:52Z",
-    "body": null,
-    "author": {
-      "login": "github-actions[bot]",
-      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-    },
-    "assets": [
-      {
-        "name": "freelens-hotkey-extension-0.1.1.tgz",
-        "size": 10300,
-        "downloadCount": 9,
-        "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/YoranSys/freelens-hotkey-extension/releases/download/v0.1.1/freelens-hotkey-extension-0.1.1.tgz",
-        "createdAt": "2026-02-04T19:36:51Z",
-        "isTarGz": true,
-        "isTar": false
-      }
-    ]
-  },
-  "totalReleases": 2,
-  "hasTarFiles": true,
-  "lastScanned": "2026-08-17T14:14:03.532Z"
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-08-17T14:48:22.913Z"
 }
