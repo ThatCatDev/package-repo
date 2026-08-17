@@ -1,12 +1,12 @@
 [
   {
-    "name": "argo-rollouts-freelens-extension",
+    "name": "@cardonexinc/freelens-argo-rollouts-extension",
     "repoName": "argo-rollouts-freelens-extension",
     "fullName": "CardonexInc/argo-rollouts-freelens-extension",
-    "description": "",
+    "description": "Argo Rollouts extension for Freelens",
     "stars": 1,
     "updatedAt": "2025-07-15T20:13:01Z",
-    "latestVersion": null,
+    "latestVersion": "0.0.4",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -110,24 +110,24 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-example-extension",
+    "name": "@freelensapp/example-extension",
     "repoName": "freelens-example-extension",
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
     "updatedAt": "2026-07-03T07:31:19Z",
-    "latestVersion": null,
+    "latestVersion": "1.10.2",
     "hasReleases": false,
     "hasTarFiles": false
   },
   {
-    "name": "freelens-ext-k-menu",
+    "name": "@thatcatdev/k-menu",
     "repoName": "freelens-ext-k-menu",
     "fullName": "ThatCatDev/freelens-ext-k-menu",
-    "description": "cmd+k searchable menu for freelens",
+    "description": "K-Menu: A powerful command palette for Freelens",
     "stars": 0,
     "updatedAt": "2025-11-24T03:27:11Z",
-    "latestVersion": null,
+    "latestVersion": "1.0.3",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -264,15 +264,15 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-jobset-extension",
+    "name": "@mike-callahan/jobset-extension",
     "repoName": "freelens-jobset-extension",
     "fullName": "mike-callahan/freelens-jobset-extension",
-    "description": "",
+    "description": "Extension that adds information on sigs.k8s.io JobSets",
     "stars": 3,
     "updatedAt": "2026-02-27T07:31:08Z",
-    "latestVersion": null,
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@freelensapp/kamaji-extension",
@@ -292,9 +292,9 @@
     "description": "Freelens extension for Kargo",
     "stars": 0,
     "updatedAt": "2026-04-01T07:17:18Z",
-    "latestVersion": "v0.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-karpenter-extension",
@@ -369,9 +369,9 @@
     "description": "SRE investigation stats for Freelens clusters",
     "stars": 0,
     "updatedAt": "2026-08-01T08:59:10Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/sveltos-extension",
