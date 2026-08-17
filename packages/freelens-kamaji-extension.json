@@ -1,8 +1,8 @@
 {
-  "name": "freelens-kamaji-extension",
+  "name": "@freelensapp/kamaji-extension",
   "repoName": "freelens-kamaji-extension",
   "fullName": "freelensapp/freelens-kamaji-extension",
-  "description": "Freelens extension for Kamaji, the Kubernetes Control Plane Manager",
+  "description": "Kamaji extension",
   "homepage": "https://freelens.app/",
   "stars": 5,
   "forks": 0,
@@ -39,7 +39,78 @@
     "cloneUrl": "https://github.com/freelensapp/freelens-kamaji-extension.git",
     "sshUrl": "git@github.com:freelensapp/freelens-kamaji-extension.git"
   },
-  "packageJson": null,
+  "packageJson": {
+    "name": "@freelensapp/kamaji-extension",
+    "version": "1.0.0",
+    "description": "Kamaji extension",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/freelensapp/freelens-kamaji-extension.git",
+      "directory": "."
+    },
+    "main": "out/main/index.js",
+    "renderer": "out/renderer/index.js",
+    "files": [
+      "out/**/*"
+    ],
+    "engines": {
+      "node": ">= 22.15.1",
+      "freelens": "^1.3.2"
+    },
+    "copyright": "© 2025-2026 Freelens Authors",
+    "license": "MIT",
+    "author": {
+      "name": "Freelens Authors",
+      "email": "freelens@freelens.app"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+      "biome": "corepack pnpm dlx @biomejs/biome@1.9.4",
+      "biome:check": "corepack pnpm biome check",
+      "biome:fix": "corepack pnpm biome check --fix",
+      "prebuild": "corepack pnpm typecheck",
+      "build": "electron-vite build",
+      "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
+      "clean": "corepack pnpm dlx rimraf@6.0.1 binaries dist static/build",
+      "clean:node_modules": "corepack pnpm dlx rimraf@6.0.1 node_modules",
+      "knip": "corepack pnpm dlx knip@5.61.0 --dependencies",
+      "knip:development": "corepack pnpm knip",
+      "knip:production": "corepack pnpm knip --production --strict",
+      "lint": "corepack pnpm biome:check",
+      "lint:fix": "corepack pnpm biome:fix",
+      "typecheck": "tsc --noEmit -p tsconfig.json --composite false"
+    },
+    "devDependencies": {
+      "@electron-toolkit/tsconfig": "^1.0.1",
+      "@freelensapp/extensions": "^1.5.3",
+      "@types/node": "^24.5.0",
+      "@types/react": "^19.1.13",
+      "@vitejs/plugin-react": "^5.0.2",
+      "electron-vite": "4.0.0",
+      "mobx": "6.13.7",
+      "mobx-react": "7.6.0",
+      "react": "^19.1.1",
+      "sass": "^1.92.1",
+      "typescript": "5.9.2",
+      "vite": "^7.1.5",
+      "vite-plugin-external": "^6.2.2",
+      "yaml": "^2.8.4"
+    },
+    "keywords": [
+      "kamaji",
+      "control-plane",
+      "tenant",
+      "extension",
+      "freelensapp",
+      "lens",
+      "openlens",
+      "freelens"
+    ],
+    "packageManager": "pnpm@10.12.4"
+  },
   "releases": [],
   "tags": [
     {
@@ -55,5 +126,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-17T15:03:21.939Z"
+  "lastScanned": "2026-08-17T15:32:10.804Z"
 }

@@ -1,23 +1,23 @@
 [
   {
-    "name": "@cardonexinc/freelens-argo-rollouts-extension",
+    "name": "argo-rollouts-freelens-extension",
     "repoName": "argo-rollouts-freelens-extension",
     "fullName": "CardonexInc/argo-rollouts-freelens-extension",
-    "description": "Argo Rollouts extension for Freelens",
+    "description": "",
     "stars": 1,
     "updatedAt": "2025-07-15T20:13:01Z",
-    "latestVersion": "0.0.4",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
   {
-    "name": "freelens-agentbridge-extension",
+    "name": "@freelensapp/agentbridge-extension",
     "repoName": "freelens-agentbridge-extension",
     "fullName": "freelensapp/freelens-agentbridge-extension",
-    "description": "Freelens Agent Bridge Extension",
+    "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 2,
     "updatedAt": "2026-08-14T10:59:47Z",
-    "latestVersion": null,
+    "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -110,24 +110,24 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/example-extension",
+    "name": "freelens-example-extension",
     "repoName": "freelens-example-extension",
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
     "updatedAt": "2026-07-03T07:31:19Z",
-    "latestVersion": "1.10.2",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
   {
-    "name": "@thatcatdev/k-menu",
+    "name": "freelens-ext-k-menu",
     "repoName": "freelens-ext-k-menu",
     "fullName": "ThatCatDev/freelens-ext-k-menu",
-    "description": "K-Menu: A powerful command palette for Freelens",
+    "description": "cmd+k searchable menu for freelens",
     "stars": 0,
     "updatedAt": "2025-11-24T03:27:11Z",
-    "latestVersion": "1.0.3",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -264,24 +264,24 @@
     "hasTarFiles": false
   },
   {
-    "name": "@mike-callahan/jobset-extension",
+    "name": "freelens-jobset-extension",
     "repoName": "freelens-jobset-extension",
     "fullName": "mike-callahan/freelens-jobset-extension",
-    "description": "Extension that adds information on sigs.k8s.io JobSets",
+    "description": "",
     "stars": 3,
     "updatedAt": "2026-02-27T07:31:08Z",
-    "latestVersion": "1.0.0-0",
+    "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
   },
   {
-    "name": "freelens-kamaji-extension",
+    "name": "@freelensapp/kamaji-extension",
     "repoName": "freelens-kamaji-extension",
     "fullName": "freelensapp/freelens-kamaji-extension",
-    "description": "Freelens extension for Kamaji, the Kubernetes Control Plane Manager",
+    "description": "Kamaji extension",
     "stars": 5,
     "updatedAt": "2026-05-26T15:58:35Z",
-    "latestVersion": null,
+    "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -292,18 +292,18 @@
     "description": "Freelens extension for Kargo",
     "stars": 0,
     "updatedAt": "2026-04-01T07:17:18Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-karpenter-extension",
     "repoName": "freelens-karpenter-extension",
     "fullName": "ricardocunha/freelens-karpenter-extension",
-    "description": "",
+    "description": "FreeLens extension for Karpenter CRD visibility and operational insights",
     "stars": 0,
     "updatedAt": "2026-03-27T16:15:22Z",
-    "latestVersion": null,
+    "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -314,9 +314,9 @@
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
     "updatedAt": "2026-04-01T11:03:09Z",
-    "latestVersion": "v0.1.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@b-iurea/k8s-ollama-extension",
@@ -352,13 +352,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "freelens-resource-map-extension",
+    "name": "@freelensapp/resource-map-extension",
     "repoName": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
-    "description": "Freelens - Free IDE for Kubernetes extension that displays Kubernetes resources and their relations as a force graph.",
+    "description": "FreeLens extension to visualize Kubernetes resources and their relations",
     "stars": 12,
     "updatedAt": "2026-05-21T11:02:09Z",
-    "latestVersion": null,
+    "latestVersion": "1.0.2",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -369,9 +369,9 @@
     "description": "SRE investigation stats for Freelens clusters",
     "stars": 0,
     "updatedAt": "2026-08-01T08:59:10Z",
-    "latestVersion": "0.1.1",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.1",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@freelensapp/sveltos-extension",
