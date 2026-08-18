@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-14T17:02:47Z",
-  "updatedAt": "2026-08-17T19:24:43Z",
-  "pushedAt": "2026-08-18T07:26:06Z",
+  "updatedAt": "2026-08-18T07:32:40Z",
+  "pushedAt": "2026-08-18T07:32:07Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "NOASSERTION",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@mryoda/freelens-product-navigation-extension",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Product-oriented navigation for Freelens",
     "repository": {
       "type": "git",
@@ -94,5 +94,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-18T07:31:41.648Z"
+  "lastScanned": "2026-08-18T08:04:04.513Z"
 }
