@@ -3,15 +3,24 @@
   "repoName": "freelens-agentbridge-extension",
   "fullName": "freelensapp/freelens-agentbridge-extension",
   "description": "Freelens extension for per-cluster AI CLI sessions",
-  "homepage": "https://github.com/freelensapp/freelens-agentbridge-extension",
+  "homepage": "https://freelens.app",
   "stars": 2,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
-  "updatedAt": "2026-08-20T14:43:19Z",
-  "pushedAt": "2026-08-20T14:51:33Z",
+  "updatedAt": "2026-08-20T15:09:50Z",
+  "pushedAt": "2026-08-20T15:16:27Z",
   "defaultBranch": "main",
-  "topics": [],
+  "topics": [
+    "agentbridge",
+    "ai-agent",
+    "claude-code",
+    "freelens",
+    "github-copilot",
+    "kubernetes",
+    "opencode",
+    "ui"
+  ],
   "license": "MIT",
   "owner": {
     "login": "freelensapp",
@@ -90,7 +99,7 @@
     "devDependencies": {
       "@babel/plugin-proposal-decorators": "^8.0.2",
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.10.2",
+      "@freelensapp/extensions": "^1.10.3",
       "@types/node": "~24.12.4",
       "@types/react": "^17.0.93",
       "@vitejs/plugin-react": "^6.0.3",
@@ -125,5 +134,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-20T14:51:44.377Z"
+  "lastScanned": "2026-08-20T15:19:17.183Z"
 }
