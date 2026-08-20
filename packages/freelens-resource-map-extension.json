@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-04-23T16:59:51Z",
   "updatedAt": "2026-05-21T11:02:09Z",
-  "pushedAt": "2026-08-19T06:58:45Z",
+  "pushedAt": "2026-08-20T06:59:52Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "NOASSERTION",
@@ -164,7 +164,7 @@
         {
           "name": "freelensapp-resource-map-extension-1.0.2.tgz",
           "size": 1063257,
-          "downloadCount": 71,
+          "downloadCount": 73,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
           "createdAt": "2026-05-21T11:03:02Z",
@@ -279,7 +279,7 @@
       "releaseName": "v1.0.2",
       "size": 1063257,
       "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
-      "downloadCount": 71,
+      "downloadCount": 73,
       "type": "tar.gz",
       "createdAt": "2026-05-21T11:03:02Z"
     },
@@ -321,7 +321,7 @@
       {
         "name": "freelensapp-resource-map-extension-1.0.2.tgz",
         "size": 1063257,
-        "downloadCount": 71,
+        "downloadCount": 73,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
         "createdAt": "2026-05-21T11:03:02Z",
@@ -332,5 +332,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-08-20T06:32:21.062Z"
+  "lastScanned": "2026-08-20T07:24:03.890Z"
 }
