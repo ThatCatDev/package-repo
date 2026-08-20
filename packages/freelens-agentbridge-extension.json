@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
-  "updatedAt": "2026-08-14T10:59:47Z",
-  "pushedAt": "2026-08-14T14:31:41Z",
+  "updatedAt": "2026-08-20T11:06:21Z",
+  "pushedAt": "2026-08-20T11:02:32Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -115,5 +115,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-20T10:47:45.263Z"
+  "lastScanned": "2026-08-20T11:10:08.233Z"
 }
