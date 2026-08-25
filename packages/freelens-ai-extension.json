@@ -8,8 +8,8 @@
   "forks": 8,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-08-07T13:27:39Z",
-  "pushedAt": "2026-08-25T06:45:04Z",
+  "updatedAt": "2026-08-25T13:43:02Z",
+  "pushedAt": "2026-08-25T13:28:45Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -469,5 +469,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-08-25T13:01:35.670Z"
+  "lastScanned": "2026-08-25T13:54:50.193Z"
 }
