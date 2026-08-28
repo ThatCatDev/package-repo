@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
   "updatedAt": "2026-08-27T19:28:49Z",
-  "pushedAt": "2026-08-27T21:30:14Z",
+  "pushedAt": "2026-08-28T07:54:22Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -151,7 +151,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0-spdx.json",
           "size": 1940000,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0-spdx.json",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -161,7 +161,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0-spdx.json.sha256",
           "size": 107,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0-spdx.json.sha256",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -171,7 +171,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0.tgz",
           "size": 2306187,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -181,7 +181,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0.tgz.sha256",
           "size": 101,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz.sha256",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -456,7 +456,7 @@
       "releaseName": "v0.7.0",
       "size": 2306187,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-08-27T13:29:47Z"
     },
@@ -538,7 +538,7 @@
       {
         "name": "freelensapp-ai-extension-0.7.0-spdx.json",
         "size": 1940000,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0-spdx.json",
         "createdAt": "2026-08-27T13:29:47Z",
@@ -548,7 +548,7 @@
       {
         "name": "freelensapp-ai-extension-0.7.0-spdx.json.sha256",
         "size": 107,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0-spdx.json.sha256",
         "createdAt": "2026-08-27T13:29:47Z",
@@ -558,7 +558,7 @@
       {
         "name": "freelensapp-ai-extension-0.7.0.tgz",
         "size": 2306187,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz",
         "createdAt": "2026-08-27T13:29:47Z",
@@ -568,7 +568,7 @@
       {
         "name": "freelensapp-ai-extension-0.7.0.tgz.sha256",
         "size": 101,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz.sha256",
         "createdAt": "2026-08-27T13:29:47Z",
@@ -579,5 +579,5 @@
   },
   "totalReleases": 7,
   "hasTarFiles": true,
-  "lastScanned": "2026-08-28T02:12:44.953Z"
+  "lastScanned": "2026-08-28T14:20:28.990Z"
 }

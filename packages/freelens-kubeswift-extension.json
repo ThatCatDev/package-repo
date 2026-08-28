@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-27T15:24:50Z",
-  "updatedAt": "2026-08-27T20:29:03Z",
-  "pushedAt": "2026-08-27T20:28:05Z",
+  "updatedAt": "2026-08-28T13:47:27Z",
+  "pushedAt": "2026-08-28T13:44:06Z",
   "defaultBranch": "main",
   "topics": [
     "cloud-hypervisor",
@@ -82,6 +82,8 @@
       "e2e": "e2e/scripts/e2e.sh",
       "e2e:cluster:up": "e2e/scripts/cluster-up.sh",
       "e2e:cluster:down": "e2e/scripts/cluster-down.sh",
+      "demo:up": "e2e/scripts/demo-up.sh",
+      "demo:down": "e2e/scripts/demo-down.sh",
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
       "prebuild": "pnpm type:check",
       "build": "electron-vite build",
@@ -133,5 +135,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-28T02:12:53.296Z"
+  "lastScanned": "2026-08-28T14:20:43.440Z"
 }
