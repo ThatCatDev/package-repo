@@ -27,7 +27,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 34,
-    "updatedAt": "2026-08-27T13:36:16Z",
+    "updatedAt": "2026-08-27T19:28:49Z",
     "latestVersion": "v0.7.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -203,8 +203,8 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 1,
-    "updatedAt": "2026-08-02T21:13:13Z",
-    "latestVersion": "0.1.0",
+    "updatedAt": "2026-08-27T22:53:35Z",
+    "latestVersion": "0.2.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -323,8 +323,8 @@
     "repoName": "freelens-kubeswift-extension",
     "fullName": "freelensapp/freelens-kubeswift-extension",
     "description": "Freelens extension for KubeSwift",
-    "stars": 1,
-    "updatedAt": "2026-08-27T17:47:38Z",
+    "stars": 2,
+    "updatedAt": "2026-08-27T20:29:03Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false

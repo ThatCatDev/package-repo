@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-07-02T19:58:37Z",
-  "updatedAt": "2026-08-02T21:13:13Z",
-  "pushedAt": "2026-08-27T17:31:16Z",
+  "updatedAt": "2026-08-27T22:53:35Z",
+  "pushedAt": "2026-08-28T01:51:40Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/for-claude-extension",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "homepage": "https://github.com/freelensapp/freelens-for-claude-extension",
     "repository": {
@@ -130,11 +130,19 @@
     "packageManager": "pnpm@10.34.4+sha512.8768be55200ae3f2226b6527fcca2687e14bc4e5f12d7721a0f25da3df47915177058648db4177baf348120fa0ba2752d8d8d93f6beaf1fe64ae18da8de961af"
   },
   "releases": [],
-  "tags": [],
+  "tags": [
+    {
+      "name": "v0.2.0",
+      "commitSha": "f74c332b032ff92a4c5db821ab474d2204bf58c7",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-for-claude-extension/commits/f74c332b032ff92a4c5db821ab474d2204bf58c7",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-for-claude-extension/zipball/refs/tags/v0.2.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-for-claude-extension/tarball/refs/tags/v0.2.0"
+    }
+  ],
   "versionHistory": [],
   "tarFiles": [],
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-27T18:21:27.423Z"
+  "lastScanned": "2026-08-28T02:13:06.171Z"
 }

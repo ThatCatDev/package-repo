@@ -4,12 +4,12 @@
   "fullName": "freelensapp/freelens-kubeswift-extension",
   "description": "Freelens extension for KubeSwift",
   "homepage": "https://freelens.app",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-27T15:24:50Z",
-  "updatedAt": "2026-08-27T17:47:38Z",
-  "pushedAt": "2026-08-27T18:18:08Z",
+  "updatedAt": "2026-08-27T20:29:03Z",
+  "pushedAt": "2026-08-27T20:28:05Z",
   "defaultBranch": "main",
   "topics": [
     "cloud-hypervisor",
@@ -79,6 +79,9 @@
       "knip:production": "pnpm knip --production --strict",
       "test": "pnpm test:unit",
       "test:unit": "vitest run",
+      "e2e": "e2e/scripts/e2e.sh",
+      "e2e:cluster:up": "e2e/scripts/cluster-up.sh",
+      "e2e:cluster:down": "e2e/scripts/cluster-down.sh",
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
       "prebuild": "pnpm type:check",
       "build": "electron-vite build",
@@ -130,5 +133,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-27T18:21:15.901Z"
+  "lastScanned": "2026-08-28T02:12:53.296Z"
 }
