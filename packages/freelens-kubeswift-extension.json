@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-27T15:24:50Z",
-  "updatedAt": "2026-08-28T18:31:56Z",
-  "pushedAt": "2026-08-28T19:00:57Z",
+  "updatedAt": "2026-08-29T11:08:26Z",
+  "pushedAt": "2026-08-29T11:08:30Z",
   "defaultBranch": "main",
   "topics": [
     "cloud-hypervisor",
@@ -73,7 +73,7 @@
       "lint": "pnpm lint:check",
       "lint:check": "pnpm biome:check",
       "lint:fix": "pnpm biome:fix",
-      "knip": "pnpm dlx knip@6.23.0 --dependencies --no-gitignore",
+      "knip": "pnpm dlx knip@6.33.0 --dependencies --no-gitignore",
       "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "pnpm knip",
       "knip:production": "pnpm knip --production --strict",
@@ -107,7 +107,7 @@
       "@testing-library/react": "^12.1.5",
       "@types/node": "~24.12.4",
       "@types/react": "^17.0.93",
-      "@vitejs/plugin-react": "^6.0.3",
+      "@vitejs/plugin-react": "^6.1.1",
       "electron-vite": "^5.0.0",
       "jsdom": "^29.1.1",
       "mobx": "6.13.7",
@@ -127,7 +127,7 @@
       "openlens",
       "freelens"
     ],
-    "packageManager": "pnpm@10.34.4+sha512.8768be55200ae3f2226b6527fcca2687e14bc4e5f12d7721a0f25da3df47915177058648db4177baf348120fa0ba2752d8d8d93f6beaf1fe64ae18da8de961af"
+    "packageManager": "pnpm@10.34.5"
   },
   "releases": [],
   "tags": [],
@@ -136,5 +136,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-08-29T04:18:04.554Z"
+  "lastScanned": "2026-08-29T11:09:38.364Z"
 }
