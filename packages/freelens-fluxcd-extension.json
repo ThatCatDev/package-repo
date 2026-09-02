@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
   "updatedAt": "2026-07-26T23:32:51Z",
-  "pushedAt": "2026-09-01T11:23:16Z",
+  "pushedAt": "2026-09-02T01:10:56Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -873,5 +873,5 @@
   },
   "totalReleases": 13,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-02T01:08:25.006Z"
+  "lastScanned": "2026-09-02T05:45:54.120Z"
 }
