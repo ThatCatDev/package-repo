@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-07-02T19:58:37Z",
   "updatedAt": "2026-09-02T14:32:46Z",
-  "pushedAt": "2026-09-03T14:52:57Z",
+  "pushedAt": "2026-09-04T00:19:52Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -147,7 +147,7 @@
         {
           "name": "freelensapp-for-claude-extension-0.2.0-prod-packages.json",
           "size": 11728,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v0.2.0/freelensapp-for-claude-extension-0.2.0-prod-packages.json",
           "createdAt": "2026-08-28T10:19:00Z",
@@ -167,7 +167,7 @@
         {
           "name": "freelensapp-for-claude-extension-0.2.0-spdx.json",
           "size": 2426996,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v0.2.0/freelensapp-for-claude-extension-0.2.0-spdx.json",
           "createdAt": "2026-08-28T10:19:00Z",
@@ -254,7 +254,7 @@
       {
         "name": "freelensapp-for-claude-extension-0.2.0-prod-packages.json",
         "size": 11728,
-        "downloadCount": 7,
+        "downloadCount": 8,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v0.2.0/freelensapp-for-claude-extension-0.2.0-prod-packages.json",
         "createdAt": "2026-08-28T10:19:00Z",
@@ -274,7 +274,7 @@
       {
         "name": "freelensapp-for-claude-extension-0.2.0-spdx.json",
         "size": 2426996,
-        "downloadCount": 7,
+        "downloadCount": 8,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v0.2.0/freelensapp-for-claude-extension-0.2.0-spdx.json",
         "createdAt": "2026-08-28T10:19:00Z",
@@ -315,5 +315,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-03T23:39:04.736Z"
+  "lastScanned": "2026-09-04T01:20:58.895Z"
 }
