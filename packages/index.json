@@ -324,10 +324,10 @@
     "fullName": "freelensapp/freelens-kubeswift-extension",
     "description": "Freelens extension for KubeSwift",
     "stars": 2,
-    "updatedAt": "2026-09-02T18:19:57Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-09-04T17:11:18Z",
+    "latestVersion": "v0.1.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@b-iurea/k8s-ollama-extension",
