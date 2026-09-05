@@ -1,0 +1,43 @@
+{
+  "name": "freelens-kafka-extension",
+  "repoName": "freelens-kafka-extension",
+  "fullName": "freelensapp/freelens-kafka-extension",
+  "description": "Freelens extension for Apache Kafka",
+  "homepage": "https://freelens.app",
+  "stars": 1,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-09-05T18:44:25Z",
+  "updatedAt": "2026-09-05T18:50:42Z",
+  "pushedAt": "2026-09-05T18:44:47Z",
+  "defaultBranch": "main",
+  "topics": [
+    "akhq",
+    "apache-kafka",
+    "freelens",
+    "kafka",
+    "kubernetes",
+    "messaging",
+    "streaming"
+  ],
+  "license": null,
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-kafka-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-kafka-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-kafka-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-09-05T19:27:52.824Z"
+}
