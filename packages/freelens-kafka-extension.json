@@ -9,7 +9,7 @@
   "language": null,
   "createdAt": "2026-09-05T18:44:25Z",
   "updatedAt": "2026-09-05T18:50:42Z",
-  "pushedAt": "2026-09-06T10:05:28Z",
+  "pushedAt": "2026-09-06T19:25:51Z",
   "defaultBranch": "main",
   "topics": [
     "akhq",
@@ -39,5 +39,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-09-06T17:55:46.827Z"
+  "lastScanned": "2026-09-06T19:47:42.695Z"
 }
