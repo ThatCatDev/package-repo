@@ -275,15 +275,15 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-kafka-extension",
+    "name": "@freelensapp/kafka-extension",
     "repoName": "freelens-kafka-extension",
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 1,
-    "updatedAt": "2026-09-05T18:50:42Z",
-    "latestVersion": null,
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-09-06T21:11:22Z",
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@freelensapp/kamaji-extension",
