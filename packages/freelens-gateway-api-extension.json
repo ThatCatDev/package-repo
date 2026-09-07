@@ -152,7 +152,7 @@
         {
           "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
           "size": 58460,
-          "downloadCount": 29,
+          "downloadCount": 30,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
           "createdAt": "2026-07-10T10:21:45Z",
@@ -208,7 +208,7 @@
         {
           "name": "freelensapp-gateway-api-extension-0.2.1.tgz",
           "size": 56735,
-          "downloadCount": 12,
+          "downloadCount": 13,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1.tgz",
           "createdAt": "2026-07-01T12:51:08Z",
@@ -347,7 +347,7 @@
       "releaseName": "v0.2.2",
       "size": 58460,
       "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
-      "downloadCount": 29,
+      "downloadCount": 30,
       "type": "tar.gz",
       "createdAt": "2026-07-10T10:21:45Z"
     },
@@ -357,7 +357,7 @@
       "releaseName": "v0.2.1",
       "size": 56735,
       "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.1/freelensapp-gateway-api-extension-0.2.1.tgz",
-      "downloadCount": 12,
+      "downloadCount": 13,
       "type": "tar.gz",
       "createdAt": "2026-07-01T12:51:08Z"
     },
@@ -419,7 +419,7 @@
       {
         "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
         "size": 58460,
-        "downloadCount": 29,
+        "downloadCount": 30,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
         "createdAt": "2026-07-10T10:21:45Z",
@@ -440,5 +440,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-07T05:51:15.625Z"
+  "lastScanned": "2026-09-07T10:45:51.236Z"
 }
