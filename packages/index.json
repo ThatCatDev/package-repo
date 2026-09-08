@@ -242,6 +242,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-gpu-extension",
+    "repoName": "freelens-gpu-extension",
+    "fullName": "Tal-Naeh/freelens-gpu-extension",
+    "description": "Per-pod GPU usage (utilisation, VRAM, power) for Freelens, scraped from dcgm-exporter or any per-process GPU exporter through the apiserver pod-proxy. Zero cluster footprint.",
+    "stars": 0,
+    "updatedAt": "2026-09-08T09:17:01Z",
+    "latestVersion": "0.1.3",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-hotkey-extension",
     "repoName": "freelens-hotkey-extension",
     "fullName": "YoranSys/freelens-hotkey-extension",
@@ -370,6 +381,17 @@
     "stars": 0,
     "updatedAt": "2026-08-24T06:11:01Z",
     "latestVersion": "0.3.3",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
+    "name": "@tal-naeh/freelens-rabbitmq-extension",
+    "repoName": "freelens-rabbitmq-extension",
+    "fullName": "Tal-Naeh/freelens-rabbitmq-extension",
+    "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
+    "stars": 0,
+    "updatedAt": "2026-09-08T09:20:52Z",
+    "latestVersion": "0.2.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
