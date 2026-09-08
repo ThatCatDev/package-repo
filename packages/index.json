@@ -389,8 +389,8 @@
     "repoName": "freelens-rabbitmq-extension",
     "fullName": "Tal-Naeh/freelens-rabbitmq-extension",
     "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
-    "stars": 0,
-    "updatedAt": "2026-09-08T11:23:56Z",
+    "stars": 1,
+    "updatedAt": "2026-09-08T15:13:00Z",
     "latestVersion": "v0.2.2",
     "hasReleases": true,
     "hasTarFiles": true

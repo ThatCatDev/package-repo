@@ -4,11 +4,11 @@
   "fullName": "Tal-Naeh/freelens-rabbitmq-extension",
   "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
   "homepage": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-08T06:09:35Z",
-  "updatedAt": "2026-09-08T11:23:56Z",
+  "updatedAt": "2026-09-08T15:13:00Z",
   "pushedAt": "2026-09-08T11:22:36Z",
   "defaultBranch": "main",
   "topics": [],
@@ -297,5 +297,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-08T13:43:33.941Z"
+  "lastScanned": "2026-09-08T17:31:13.912Z"
 }
