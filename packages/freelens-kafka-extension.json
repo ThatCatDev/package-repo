@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-kafka-extension",
   "description": "Freelens extension for Apache Kafka",
   "homepage": "https://freelens.app",
-  "stars": 2,
+  "stars": 4,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-05T18:44:25Z",
-  "updatedAt": "2026-09-08T11:02:31Z",
+  "updatedAt": "2026-09-09T06:34:32Z",
   "pushedAt": "2026-09-08T11:07:27Z",
   "defaultBranch": "main",
   "topics": [
@@ -252,5 +252,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-09T05:04:40.564Z"
+  "lastScanned": "2026-09-09T09:36:35.714Z"
 }
