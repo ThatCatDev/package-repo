@@ -1,0 +1,183 @@
+{
+  "name": "freelens-resource-filter-extension",
+  "repoName": "freelens-resource-filter-extension",
+  "fullName": "mojish/freelens-resource-filter-extension",
+  "description": "Freelens extension: field-based filtering for any Kubernetes resource, including CRDs",
+  "homepage": "https://github.com/mojish/freelens-resource-filter-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": "TypeScript",
+  "createdAt": "2026-09-09T11:49:55Z",
+  "updatedAt": "2026-09-09T12:13:23Z",
+  "pushedAt": "2026-09-09T12:15:11Z",
+  "defaultBranch": "master",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "mojish",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/25011258?v=4",
+    "url": "https://github.com/mojish"
+  },
+  "repository": {
+    "url": "https://github.com/mojish/freelens-resource-filter-extension",
+    "cloneUrl": "https://github.com/mojish/freelens-resource-filter-extension.git",
+    "sshUrl": "git@github.com:mojish/freelens-resource-filter-extension.git"
+  },
+  "packageJson": {
+    "name": "freelens-resource-filter-extension",
+    "version": "0.2.0",
+    "description": "Freelens extension: field-based filtering for any Kubernetes resource, including CRDs",
+    "author": {
+      "name": "Sotoon Delivery"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mojish/freelens-resource-filter-extension.git"
+    },
+    "homepage": "https://github.com/mojish/freelens-resource-filter-extension#readme",
+    "bugs": {
+      "url": "https://github.com/mojish/freelens-resource-filter-extension/issues"
+    },
+    "main": "out/main/index.js",
+    "renderer": "out/renderer/index.js",
+    "files": [
+      "out/**/*"
+    ],
+    "engines": {
+      "node": ">= 22.0.0",
+      "freelens": "^1.10.0"
+    },
+    "license": "MIT",
+    "publishConfig": {
+      "access": "public"
+    },
+    "scripts": {
+      "build": "electron-vite build",
+      "build:force": "electron-vite build --force",
+      "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
+      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
+      "prebuild": "pnpm type:check",
+      "pretest": "pnpm build",
+      "test": "vitest run",
+      "test:watch": "vitest",
+      "verify": "pnpm type:check && pnpm build && pnpm test && pnpm pack",
+      "pack:dev": "pnpm build:force && pnpm build && pnpm clean:tgz && pnpm pack",
+      "clean": "pnpm clean:out",
+      "clean:out": "pnpm dlx shx@0.4.0 rm -rf out",
+      "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\""
+    },
+    "devDependencies": {
+      "@electron-toolkit/tsconfig": "^2.0.0",
+      "@freelensapp/extensions": "^1.10.2",
+      "@types/node": "~24.12.4",
+      "@types/react": "^17.0.93",
+      "@vitejs/plugin-react": "^6.0.3",
+      "electron-vite": "^5.0.0",
+      "mobx": "6.13.7",
+      "mobx-react": "7.6.0",
+      "react": "17.0.2",
+      "react-dom": "17.0.2",
+      "shx": "^0.4.0",
+      "typescript": "5.9.3",
+      "vite": "^8.1.2",
+      "vitest": "^5.0.0"
+    },
+    "keywords": [
+      "extension",
+      "freelensapp",
+      "freelens",
+      "kubernetes",
+      "k8s",
+      "filter",
+      "crd",
+      "custom-resources"
+    ]
+  },
+  "releases": [
+    {
+      "id": 385486398,
+      "tagName": "v0.2.0",
+      "name": "v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-09-09T12:09:17Z",
+      "publishedAt": "2026-09-09T12:15:54Z",
+      "body": "**Full Changelog**: https://github.com/mojish/freelens-resource-filter-extension/commits/v0.2.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelens-resource-filter-extension-0.2.0.tgz",
+          "size": 36907,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.2.0/freelens-resource-filter-extension-0.2.0.tgz",
+          "createdAt": "2026-09-09T12:15:54Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.2.0",
+      "commitSha": "7dea1f30dcabbb9cbaa0857b7575c912e1927d44",
+      "commitUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/commits/7dea1f30dcabbb9cbaa0857b7575c912e1927d44",
+      "zipballUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/zipball/refs/tags/v0.2.0",
+      "tarballUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/tarball/refs/tags/v0.2.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v0.2.0",
+      "name": "v0.2.0",
+      "publishedAt": "2026-09-09T12:15:54Z",
+      "isPrerelease": false,
+      "notes": "**Full Changelog**: https://github.com/mojish/freelens-resource-filter-extension/commits/v0.2.0"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelens-resource-filter-extension-0.2.0.tgz",
+      "releaseTag": "v0.2.0",
+      "releaseName": "v0.2.0",
+      "size": 36907,
+      "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.2.0/freelens-resource-filter-extension-0.2.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-09-09T12:15:54Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 385486398,
+    "tagName": "v0.2.0",
+    "name": "v0.2.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-09-09T12:09:17Z",
+    "publishedAt": "2026-09-09T12:15:54Z",
+    "body": "**Full Changelog**: https://github.com/mojish/freelens-resource-filter-extension/commits/v0.2.0",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelens-resource-filter-extension-0.2.0.tgz",
+        "size": 36907,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.2.0/freelens-resource-filter-extension-0.2.0.tgz",
+        "createdAt": "2026-09-09T12:15:54Z",
+        "isTarGz": true,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-09-09T13:52:42.076Z"
+}
