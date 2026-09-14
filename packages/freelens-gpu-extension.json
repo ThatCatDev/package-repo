@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-08T06:04:21Z",
-  "updatedAt": "2026-09-08T12:42:34Z",
-  "pushedAt": "2026-09-08T12:41:48Z",
+  "updatedAt": "2026-09-14T09:25:21Z",
+  "pushedAt": "2026-09-14T09:25:23Z",
   "defaultBranch": "main",
   "topics": [
     "dcgm",
@@ -33,7 +33,7 @@
   },
   "packageJson": {
     "name": "@tal-naeh/freelens-gpu-extension",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "homepage": "https://github.com/Tal-Naeh/freelens-gpu-extension",
     "repository": {
@@ -120,6 +120,32 @@
   },
   "releases": [
     {
+      "id": 388276640,
+      "tagName": "v0.3.3",
+      "name": "v0.3.3",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-09-14T09:25:12Z",
+      "publishedAt": "2026-09-14T09:26:10Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "tal-naeh-freelens-gpu-extension-0.3.3.tgz",
+          "size": 53788,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.3/tal-naeh-freelens-gpu-extension-0.3.3.tgz",
+          "createdAt": "2026-09-14T09:26:10Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 384720647,
       "tagName": "v0.3.2",
       "name": "v0.3.2",
@@ -200,6 +226,13 @@
   ],
   "tags": [
     {
+      "name": "v0.3.3",
+      "commitSha": "234753459864eb58ff27df560ff0044ebe2a953f",
+      "commitUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/commits/234753459864eb58ff27df560ff0044ebe2a953f",
+      "zipballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/zipball/refs/tags/v0.3.3",
+      "tarballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/tarball/refs/tags/v0.3.3"
+    },
+    {
       "name": "v0.3.2",
       "commitSha": "370bd6fcd4f17fd31409449d81a0f5035b5a09a9",
       "commitUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/commits/370bd6fcd4f17fd31409449d81a0f5035b5a09a9",
@@ -223,6 +256,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.3.3",
+      "name": "v0.3.3",
+      "publishedAt": "2026-09-14T09:26:10Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v0.3.2",
       "name": "v0.3.2",
       "publishedAt": "2026-09-08T12:42:40Z",
@@ -245,6 +285,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "tal-naeh-freelens-gpu-extension-0.3.3.tgz",
+      "releaseTag": "v0.3.3",
+      "releaseName": "v0.3.3",
+      "size": 53788,
+      "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.3/tal-naeh-freelens-gpu-extension-0.3.3.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-09-14T09:26:10Z"
+    },
     {
       "filename": "tal-naeh-freelens-gpu-extension-0.3.2.tgz",
       "releaseTag": "v0.3.2",
@@ -277,32 +327,32 @@
     }
   ],
   "latestRelease": {
-    "id": 384720647,
-    "tagName": "v0.3.2",
-    "name": "v0.3.2",
+    "id": 388276640,
+    "tagName": "v0.3.3",
+    "name": "v0.3.3",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-08T12:41:42Z",
-    "publishedAt": "2026-09-08T12:42:40Z",
-    "body": "\n- Docs: screenshots of the GPUs (MIG) and Idle & waste views in the README.\n- UI: wider default widths for the \"VRAM held\" and \"Peak in window\" columns so the headers are not truncated.",
+    "createdAt": "2026-09-14T09:25:12Z",
+    "publishedAt": "2026-09-14T09:26:10Z",
+    "body": null,
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "tal-naeh-freelens-gpu-extension-0.3.2.tgz",
-        "size": 53220,
+        "name": "tal-naeh-freelens-gpu-extension-0.3.3.tgz",
+        "size": 53788,
         "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.2/tal-naeh-freelens-gpu-extension-0.3.2.tgz",
-        "createdAt": "2026-09-08T12:42:40Z",
+        "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.3/tal-naeh-freelens-gpu-extension-0.3.3.tgz",
+        "createdAt": "2026-09-14T09:26:10Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 3,
+  "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-14T07:01:02.384Z"
+  "lastScanned": "2026-09-14T13:47:01.095Z"
 }

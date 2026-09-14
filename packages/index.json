@@ -191,8 +191,8 @@
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
-    "stars": 125,
-    "updatedAt": "2026-09-14T06:35:21Z",
+    "stars": 126,
+    "updatedAt": "2026-09-14T13:34:44Z",
     "latestVersion": "v5.3.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -247,8 +247,8 @@
     "fullName": "Tal-Naeh/freelens-gpu-extension",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "stars": 0,
-    "updatedAt": "2026-09-08T12:42:34Z",
-    "latestVersion": "v0.3.2",
+    "updatedAt": "2026-09-14T09:25:21Z",
+    "latestVersion": "v0.3.3",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -390,7 +390,7 @@
     "fullName": "Tal-Naeh/freelens-rabbitmq-extension",
     "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
     "stars": 1,
-    "updatedAt": "2026-09-08T15:13:00Z",
+    "updatedAt": "2026-09-14T08:46:39Z",
     "latestVersion": "v0.2.2",
     "hasReleases": true,
     "hasTarFiles": true
