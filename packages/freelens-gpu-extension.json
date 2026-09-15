@@ -4,11 +4,11 @@
   "fullName": "Tal-Naeh/freelens-gpu-extension",
   "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
   "homepage": "https://www.npmjs.com/package/@tal-naeh/freelens-gpu-extension",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-08T06:04:21Z",
-  "updatedAt": "2026-09-14T09:25:21Z",
+  "updatedAt": "2026-09-15T20:48:13Z",
   "pushedAt": "2026-09-14T09:25:23Z",
   "defaultBranch": "main",
   "topics": [
@@ -354,5 +354,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-15T18:32:08.551Z"
+  "lastScanned": "2026-09-15T21:41:28.934Z"
 }
