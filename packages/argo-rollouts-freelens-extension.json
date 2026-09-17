@@ -4,11 +4,11 @@
   "fullName": "CardonexInc/argo-rollouts-freelens-extension",
   "description": "Argo Rollouts extension for Freelens",
   "homepage": "https://github.com/CardonexInc/argo-rollouts-freelens-extension",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-07-10T15:50:43Z",
-  "updatedAt": "2025-07-15T20:13:01Z",
+  "updatedAt": "2026-09-17T21:56:17Z",
   "pushedAt": "2025-07-15T20:12:58Z",
   "defaultBranch": "main",
   "topics": [],
@@ -105,5 +105,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-09-17T21:43:42.581Z"
+  "lastScanned": "2026-09-17T23:41:53.235Z"
 }
