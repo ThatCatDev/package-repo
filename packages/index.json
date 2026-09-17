@@ -246,8 +246,8 @@
     "repoName": "freelens-gpu-extension",
     "fullName": "Tal-Naeh/freelens-gpu-extension",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
-    "stars": 1,
-    "updatedAt": "2026-09-15T20:48:13Z",
+    "stars": 2,
+    "updatedAt": "2026-09-17T06:54:01Z",
     "latestVersion": "v0.3.3",
     "hasReleases": true,
     "hasTarFiles": true
