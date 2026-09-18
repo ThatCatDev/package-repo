@@ -129,7 +129,7 @@
         {
           "name": "tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
           "size": 1255586,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.2/tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
           "createdAt": "2026-09-08T11:23:27Z",
@@ -244,7 +244,7 @@
       "releaseName": "v0.2.2",
       "size": 1255586,
       "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.2/tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-09-08T11:23:27Z"
     },
@@ -286,7 +286,7 @@
       {
         "name": "tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
         "size": 1255586,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.2/tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
         "createdAt": "2026-09-08T11:23:27Z",
@@ -297,5 +297,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-18T06:24:36.096Z"
+  "lastScanned": "2026-09-18T11:30:51.262Z"
 }
