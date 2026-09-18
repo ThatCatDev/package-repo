@@ -55,6 +55,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "@freelensapp/cnpg-extension",
+    "repoName": "freelens-cnpg-extension",
+    "fullName": "freelensapp/freelens-cnpg-extension",
+    "description": "Freelens extension for CloudNativePG",
+    "stars": 1,
+    "updatedAt": "2026-09-18T14:10:49Z",
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@oguzhan-yilmaz/freelens-debug-extension",
     "repoName": "freelens-debug-extension",
     "fullName": "oguzhan-yilmaz/freelens-debug-extension",
