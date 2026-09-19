@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-18T13:53:42Z",
-  "updatedAt": "2026-09-18T20:21:54Z",
-  "pushedAt": "2026-09-18T21:02:55Z",
+  "updatedAt": "2026-09-19T09:37:29Z",
+  "pushedAt": "2026-09-19T09:38:24Z",
   "defaultBranch": "main",
   "topics": [
     "cloudnativepg",
@@ -81,6 +81,9 @@
       "e2e": "e2e/scripts/e2e.sh",
       "e2e:cluster:up": "e2e/scripts/cluster-up.sh",
       "e2e:cluster:down": "e2e/scripts/cluster-down.sh",
+      "demo:up": "e2e/scripts/demo-up.sh",
+      "demo:down": "e2e/scripts/demo-down.sh",
+      "pre-review": "e2e/scripts/pre-review.sh",
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
       "prebuild": "pnpm type:check",
       "build": "electron-vite build",
@@ -104,6 +107,7 @@
       "@types/node": "~24.12.4",
       "@types/react": "^17.0.93",
       "@vitejs/plugin-react": "^6.0.3",
+      "cronstrue": "3.27.0",
       "electron-vite": "^5.0.0",
       "jsdom": "^29.1.1",
       "mobx": "6.13.7",
@@ -137,5 +141,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-09-19T05:47:18.025Z"
+  "lastScanned": "2026-09-19T09:44:33.198Z"
 }
