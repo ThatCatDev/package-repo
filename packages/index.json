@@ -60,7 +60,7 @@
     "fullName": "freelensapp/freelens-cnpg-extension",
     "description": "Freelens extension for CloudNativePG",
     "stars": 1,
-    "updatedAt": "2026-09-19T15:41:55Z",
+    "updatedAt": "2026-09-20T17:49:21Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
@@ -412,8 +412,8 @@
     "fullName": "mojish/freelens-resource-filter-extension",
     "description": "Freelens extension: field-based filtering for any Kubernetes resource, including CRDs",
     "stars": 0,
-    "updatedAt": "2026-09-13T16:51:40Z",
-    "latestVersion": "v0.2.0",
+    "updatedAt": "2026-09-20T18:52:06Z",
+    "latestVersion": "v0.3.3",
     "hasReleases": true,
     "hasTarFiles": true
   },
