@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-09-05T18:44:25Z",
-  "updatedAt": "2026-09-11T10:06:25Z",
-  "pushedAt": "2026-09-20T09:14:31Z",
+  "updatedAt": "2026-09-20T16:43:50Z",
+  "pushedAt": "2026-09-20T16:43:57Z",
   "defaultBranch": "main",
   "topics": [
     "apache-kafka",
@@ -33,7 +33,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/kafka-extension",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "description": "Freelens extension for Apache Kafka",
     "repository": {
       "type": "git",
@@ -168,6 +168,32 @@
   },
   "releases": [
     {
+      "id": 392500265,
+      "tagName": "v1.3.1",
+      "name": "v1.3.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-09-20T16:43:45Z",
+      "publishedAt": "2026-09-20T16:44:44Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-kafka-extension-1.3.1.tgz",
+          "size": 2651264,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v1.3.1/freelensapp-kafka-extension-1.3.1.tgz",
+          "createdAt": "2026-09-20T16:44:43Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 386942281,
       "tagName": "v1.3.0",
       "name": "v1.3.0",
@@ -300,6 +326,13 @@
   ],
   "tags": [
     {
+      "name": "v1.3.1",
+      "commitSha": "edd079779a2a342e62db2867b29c3c1b26b075a8",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-kafka-extension/commits/edd079779a2a342e62db2867b29c3c1b26b075a8",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-kafka-extension/zipball/refs/tags/v1.3.1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-kafka-extension/tarball/refs/tags/v1.3.1"
+    },
+    {
       "name": "v1.3.0",
       "commitSha": "8924ed4df5c9ff44456f759478ee5840175873e5",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-kafka-extension/commits/8924ed4df5c9ff44456f759478ee5840175873e5",
@@ -337,6 +370,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v1.3.1",
+      "name": "v1.3.1",
+      "publishedAt": "2026-09-20T16:44:44Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v1.3.0",
       "name": "v1.3.0",
       "publishedAt": "2026-09-11T10:07:21Z",
@@ -373,6 +413,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-kafka-extension-1.3.1.tgz",
+      "releaseTag": "v1.3.1",
+      "releaseName": "v1.3.1",
+      "size": 2651264,
+      "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v1.3.1/freelensapp-kafka-extension-1.3.1.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-09-20T16:44:43Z"
+    },
     {
       "filename": "freelensapp-kafka-extension-1.3.0.tgz",
       "releaseTag": "v1.3.0",
@@ -425,13 +475,13 @@
     }
   ],
   "latestRelease": {
-    "id": 386942281,
-    "tagName": "v1.3.0",
-    "name": "v1.3.0",
+    "id": 392500265,
+    "tagName": "v1.3.1",
+    "name": "v1.3.1",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-11T10:06:20Z",
-    "publishedAt": "2026-09-11T10:07:21Z",
+    "createdAt": "2026-09-20T16:43:45Z",
+    "publishedAt": "2026-09-20T16:44:44Z",
     "body": null,
     "author": {
       "login": "github-actions[bot]",
@@ -439,18 +489,18 @@
     },
     "assets": [
       {
-        "name": "freelensapp-kafka-extension-1.3.0.tgz",
-        "size": 2639599,
-        "downloadCount": 0,
+        "name": "freelensapp-kafka-extension-1.3.1.tgz",
+        "size": 2651264,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v1.3.0/freelensapp-kafka-extension-1.3.0.tgz",
-        "createdAt": "2026-09-11T10:07:20Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v1.3.1/freelensapp-kafka-extension-1.3.1.tgz",
+        "createdAt": "2026-09-20T16:44:43Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 5,
+  "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-20T13:45:08.470Z"
+  "lastScanned": "2026-09-20T16:59:59.625Z"
 }
