@@ -16,7 +16,7 @@
     "fullName": "freelensapp/freelens-agentbridge-extension",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 3,
-    "updatedAt": "2026-09-19T13:06:18Z",
+    "updatedAt": "2026-09-21T20:00:48Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -60,7 +60,7 @@
     "fullName": "freelensapp/freelens-cnpg-extension",
     "description": "Freelens extension for CloudNativePG",
     "stars": 1,
-    "updatedAt": "2026-09-20T17:49:21Z",
+    "updatedAt": "2026-09-21T22:06:53Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
