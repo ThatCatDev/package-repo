@@ -4,11 +4,11 @@
   "fullName": "freelensapp/freelens-cnpg-extension",
   "description": "Freelens extension for CloudNativePG",
   "homepage": "https://freelens.app",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-18T13:53:42Z",
-  "updatedAt": "2026-09-22T21:20:25Z",
+  "updatedAt": "2026-09-23T07:27:19Z",
   "pushedAt": "2026-09-22T21:20:22Z",
   "defaultBranch": "main",
   "topics": [
@@ -142,5 +142,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-09-23T06:45:24.631Z"
+  "lastScanned": "2026-09-23T12:15:03.657Z"
 }
