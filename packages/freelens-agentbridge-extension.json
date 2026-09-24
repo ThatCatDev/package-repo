@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
-  "updatedAt": "2026-09-23T18:42:29Z",
-  "pushedAt": "2026-09-24T11:04:43Z",
+  "updatedAt": "2026-09-24T19:03:34Z",
+  "pushedAt": "2026-09-24T19:15:40Z",
   "defaultBranch": "main",
   "topics": [
     "agentbridge",
@@ -34,7 +34,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/agentbridge-extension",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "repository": {
       "type": "git",
@@ -189,6 +189,13 @@
   ],
   "tags": [
     {
+      "name": "v1.1.0",
+      "commitSha": "34433010f5bdf99825d1002b23f0e60d2fea6e70",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/commits/34433010f5bdf99825d1002b23f0e60d2fea6e70",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/zipball/refs/tags/v1.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/tarball/refs/tags/v1.1.0"
+    },
+    {
       "name": "v1.0.0",
       "commitSha": "c31ea435de44b80f76780e5159b712e50f7eb12d",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/commits/c31ea435de44b80f76780e5159b712e50f7eb12d",
@@ -275,5 +282,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-24T15:27:10.793Z"
+  "lastScanned": "2026-09-24T19:22:14.375Z"
 }

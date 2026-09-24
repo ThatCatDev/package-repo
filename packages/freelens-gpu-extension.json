@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-08T06:04:21Z",
-  "updatedAt": "2026-09-24T07:40:59Z",
-  "pushedAt": "2026-09-24T07:40:55Z",
+  "updatedAt": "2026-09-24T18:56:40Z",
+  "pushedAt": "2026-09-24T18:56:35Z",
   "defaultBranch": "main",
   "topics": [
     "dcgm",
@@ -116,7 +116,7 @@
       "kubernetes",
       "monitoring"
     ],
-    "packageManager": "pnpm@10.34.5"
+    "packageManager": "pnpm@12.6.0"
   },
   "releases": [
     {
@@ -454,5 +454,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-24T15:27:12.764Z"
+  "lastScanned": "2026-09-24T19:22:16.246Z"
 }
