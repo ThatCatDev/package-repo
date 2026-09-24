@@ -27,7 +27,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 34,
-    "updatedAt": "2026-09-06T10:06:05Z",
+    "updatedAt": "2026-09-24T06:03:28Z",
     "latestVersion": "v0.7.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -60,7 +60,7 @@
     "fullName": "freelensapp/freelens-cnpg-extension",
     "description": "Freelens extension for CloudNativePG",
     "stars": 2,
-    "updatedAt": "2026-09-23T07:27:19Z",
+    "updatedAt": "2026-09-24T08:41:19Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
@@ -258,8 +258,8 @@
     "fullName": "Tal-Naeh/freelens-gpu-extension",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "stars": 2,
-    "updatedAt": "2026-09-24T05:42:17Z",
-    "latestVersion": "v0.3.4",
+    "updatedAt": "2026-09-24T07:40:59Z",
+    "latestVersion": "v0.3.5",
     "hasReleases": true,
     "hasTarFiles": true
   },

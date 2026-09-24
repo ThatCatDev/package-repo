@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-08T06:04:21Z",
-  "updatedAt": "2026-09-24T05:42:17Z",
-  "pushedAt": "2026-09-24T05:42:17Z",
+  "updatedAt": "2026-09-24T07:40:59Z",
+  "pushedAt": "2026-09-24T07:40:55Z",
   "defaultBranch": "main",
   "topics": [
     "dcgm",
@@ -33,7 +33,7 @@
   },
   "packageJson": {
     "name": "@tal-naeh/freelens-gpu-extension",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "homepage": "https://github.com/Tal-Naeh/freelens-gpu-extension",
     "repository": {
@@ -61,13 +61,13 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "pnpm dlx @biomejs/biome@2.5.1",
+      "biome": "pnpm dlx @biomejs/biome@2.5.14",
       "biome:check": "pnpm biome check",
       "biome:fix": "pnpm biome check --fix",
       "lint": "pnpm lint:check",
       "lint:check": "pnpm biome:check",
       "lint:fix": "pnpm biome:fix",
-      "knip": "pnpm dlx knip@6.15.0 --dependencies --no-gitignore",
+      "knip": "pnpm dlx knip@6.38.0 --dependencies --no-gitignore",
       "knip:check": "pnpm clean:out && pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "pnpm knip",
       "knip:production": "pnpm knip --production --strict",
@@ -89,20 +89,20 @@
       "clean:all": "pnpm \"/^clean:(node_modules|out|tgz)\\$/\""
     },
     "devDependencies": {
-      "@babel/plugin-proposal-decorators": "^8.0.2",
       "@electron-toolkit/tsconfig": "^2.0.0",
+      "@freelensapp/core": "1.10.3",
       "@freelensapp/extensions": "^1.10.3",
       "@types/node": "~24.12.4",
       "@types/react": "^17.0.93",
-      "@vitejs/plugin-react": "^6.0.3",
+      "@vitejs/plugin-react": "^6.1.1",
       "electron-vite": "^5.0.0",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
       "react": "17.0.2",
       "react-dom": "17.0.2",
-      "typescript": "5.9.3",
-      "vite": "^8.1.2",
-      "vitest": "^4.1.9"
+      "typescript": "7.0.2",
+      "vite": "^8.3.0",
+      "vitest": "^5.0.1"
     },
     "keywords": [
       "extension",
@@ -116,9 +116,35 @@
       "kubernetes",
       "monitoring"
     ],
-    "packageManager": "pnpm@10.33.4"
+    "packageManager": "pnpm@10.34.5"
   },
   "releases": [
+    {
+      "id": 395380927,
+      "tagName": "v0.3.5",
+      "name": "v0.3.5",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-09-24T06:05:17Z",
+      "publishedAt": "2026-09-24T06:06:10Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "tal-naeh-freelens-gpu-extension-0.3.5.tgz",
+          "size": 56147,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.5/tal-naeh-freelens-gpu-extension-0.3.5.tgz",
+          "createdAt": "2026-09-24T06:06:09Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 395366675,
       "tagName": "v0.3.4",
@@ -252,6 +278,13 @@
   ],
   "tags": [
     {
+      "name": "v0.3.5",
+      "commitSha": "949720aeb317e7139fc7116d1c133e0f8aa2225a",
+      "commitUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/commits/949720aeb317e7139fc7116d1c133e0f8aa2225a",
+      "zipballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/zipball/refs/tags/v0.3.5",
+      "tarballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/tarball/refs/tags/v0.3.5"
+    },
+    {
       "name": "v0.3.4",
       "commitSha": "8b3587cd2ac3933740835258ba8831c034798ab7",
       "commitUrl": "https://api.github.com/repos/Tal-Naeh/freelens-gpu-extension/commits/8b3587cd2ac3933740835258ba8831c034798ab7",
@@ -289,6 +322,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.3.5",
+      "name": "v0.3.5",
+      "publishedAt": "2026-09-24T06:06:10Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v0.3.4",
       "name": "v0.3.4",
       "publishedAt": "2026-09-24T05:43:08Z",
@@ -325,6 +365,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "tal-naeh-freelens-gpu-extension-0.3.5.tgz",
+      "releaseTag": "v0.3.5",
+      "releaseName": "v0.3.5",
+      "size": 56147,
+      "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.5/tal-naeh-freelens-gpu-extension-0.3.5.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-09-24T06:06:09Z"
+    },
     {
       "filename": "tal-naeh-freelens-gpu-extension-0.3.4.tgz",
       "releaseTag": "v0.3.4",
@@ -377,13 +427,13 @@
     }
   ],
   "latestRelease": {
-    "id": 395366675,
-    "tagName": "v0.3.4",
-    "name": "v0.3.4",
+    "id": 395380927,
+    "tagName": "v0.3.5",
+    "name": "v0.3.5",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-24T05:42:13Z",
-    "publishedAt": "2026-09-24T05:43:08Z",
+    "createdAt": "2026-09-24T06:05:17Z",
+    "publishedAt": "2026-09-24T06:06:10Z",
     "body": null,
     "author": {
       "login": "github-actions[bot]",
@@ -391,18 +441,18 @@
     },
     "assets": [
       {
-        "name": "tal-naeh-freelens-gpu-extension-0.3.4.tgz",
-        "size": 55633,
+        "name": "tal-naeh-freelens-gpu-extension-0.3.5.tgz",
+        "size": 56147,
         "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.4/tal-naeh-freelens-gpu-extension-0.3.4.tgz",
-        "createdAt": "2026-09-24T05:43:07Z",
+        "downloadUrl": "https://github.com/Tal-Naeh/freelens-gpu-extension/releases/download/v0.3.5/tal-naeh-freelens-gpu-extension-0.3.5.tgz",
+        "createdAt": "2026-09-24T06:06:09Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 5,
+  "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-24T05:49:39.864Z"
+  "lastScanned": "2026-09-24T10:32:19.344Z"
 }
