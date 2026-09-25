@@ -173,7 +173,7 @@
         {
           "name": "freelensapp-cnpg-extension-1.0.0.tgz",
           "size": 748833,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz",
           "createdAt": "2026-09-25T19:08:59Z",
@@ -183,7 +183,7 @@
         {
           "name": "freelensapp-cnpg-extension-1.0.0.tgz.sha256",
           "size": 103,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz.sha256",
           "createdAt": "2026-09-25T19:08:59Z",
@@ -218,7 +218,7 @@
       "releaseName": "v1.0.0",
       "size": 748833,
       "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-09-25T19:08:59Z"
     }
@@ -260,7 +260,7 @@
       {
         "name": "freelensapp-cnpg-extension-1.0.0.tgz",
         "size": 748833,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz",
         "createdAt": "2026-09-25T19:08:59Z",
@@ -270,7 +270,7 @@
       {
         "name": "freelensapp-cnpg-extension-1.0.0.tgz.sha256",
         "size": 103,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz.sha256",
         "createdAt": "2026-09-25T19:08:59Z",
@@ -281,5 +281,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-25T19:19:50.515Z"
+  "lastScanned": "2026-09-25T22:29:02.406Z"
 }
