@@ -17,7 +17,7 @@
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 3,
     "updatedAt": "2026-09-25T15:05:47Z",
-    "latestVersion": "v1.0.0",
+    "latestVersion": "v1.3.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -60,10 +60,10 @@
     "fullName": "freelensapp/freelens-cnpg-extension",
     "description": "Freelens extension for CloudNativePG",
     "stars": 2,
-    "updatedAt": "2026-09-25T13:36:28Z",
-    "latestVersion": "0.1.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-09-25T19:07:55Z",
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@oguzhan-yilmaz/freelens-debug-extension",

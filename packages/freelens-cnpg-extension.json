@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-18T13:53:42Z",
-  "updatedAt": "2026-09-25T13:36:28Z",
-  "pushedAt": "2026-09-25T13:36:25Z",
+  "updatedAt": "2026-09-25T19:07:55Z",
+  "pushedAt": "2026-09-25T19:08:02Z",
   "defaultBranch": "main",
   "topics": [
     "cloudnativepg",
@@ -33,7 +33,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/cnpg-extension",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Freelens extension for CloudNativePG",
     "repository": {
       "type": "git",
@@ -135,12 +135,151 @@
     ],
     "packageManager": "pnpm@10.34.5+sha512.a4ee05f2f73658255bd6a89859c065a45c28a57daefae2c893a168ee2b73168c37b91e83e57ea67654ad03f03031746430e8bce38e362e042605fb8abc80192e"
   },
-  "releases": [],
-  "tags": [],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-09-25T15:20:26.719Z"
+  "releases": [
+    {
+      "id": 396860703,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-09-25T19:07:50Z",
+      "publishedAt": "2026-09-25T19:09:00Z",
+      "body": "The first release of the Freelens extension for CloudNativePG: every PostgreSQL cluster the operator manages, from the Kubernetes resources down to what happens inside the databases right now, inside Freelens.\n\n### What is in it\n\n- **Overview**: every cluster of the selected namespaces as a tile ordered by urgency, with instances, archiving, last and next backup, certificates and the declared objects that failed.\n- **Clusters**: the list and the drawer of every cluster (instances, replication, conditions, backups and archiving, certificates), the **Live View** (topology with quorum and lag, sessions, WAL, databases, replication slots, instance managers, trends), the **Logs** of every instance on one time axis, the **Timeline** and the **Failover Quorums**.\n- **Backups**: backups, scheduled backups with their next runs, object stores with the recovery windows the Barman Cloud plugin reports; volume snapshot backups.\n- **Databases**: declarative databases, roles, publications and subscriptions, with what PostgreSQL does not have as declared.\n- **Pooling, Images, Operator**: poolers with their live state, image catalogs, the operator card.\n- **Write actions** with a confirmation dialog that lists the exact API calls: backup now, switchover, restart, reload, fencing, hibernation, schedule suspend and resume; **creation forms** for clusters, backups, schedules, poolers and more; **Open psql** on any instance.\n\n### Install\n\nFrom the Freelens Extensions page, by npm name:\n\n```text\n@freelensapp/cnpg-extension\n```\n\nRequires Freelens 1.10.3 or newer and CloudNativePG 1.30.0 or newer. See the [README](https://github.com/freelensapp/freelens-cnpg-extension#readme) and the [video demo](https://github.com/user-attachments/assets/fa708e56-a775-4bf7-827f-a1a8b461b9a1).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-cnpg-extension-1.0.0-spdx.json",
+          "size": 1883630,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0-spdx.json",
+          "createdAt": "2026-09-25T19:08:59Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-cnpg-extension-1.0.0-spdx.json.sha256",
+          "size": 109,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0-spdx.json.sha256",
+          "createdAt": "2026-09-25T19:08:59Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-cnpg-extension-1.0.0.tgz",
+          "size": 748833,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz",
+          "createdAt": "2026-09-25T19:08:59Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-cnpg-extension-1.0.0.tgz.sha256",
+          "size": 103,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz.sha256",
+          "createdAt": "2026-09-25T19:08:59Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "v1.0.0",
+      "commitSha": "9b4600d475aa8107f3015134e1e7579e0a2aed1d",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-cnpg-extension/commits/9b4600d475aa8107f3015134e1e7579e0a2aed1d",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-cnpg-extension/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-cnpg-extension/tarball/refs/tags/v1.0.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2026-09-25T19:09:00Z",
+      "isPrerelease": false,
+      "notes": "The first release of the Freelens extension for CloudNativePG: every PostgreSQL cluster the operator manages, from the Kubernetes resources down to what happens inside the databases right now, inside Freelens.\n\n### What is in it\n\n- **Overview**: every cluster of the selected namespaces as a tile ordered by urgency, with instances, archiving, last and next backup, certificates and the declared objects that failed.\n- **Clusters**: the list and the drawer of every cluster (instances, replication, conditions, backups and archiving, certificates), the **Live View** (topology with quorum and lag, sessions, WAL, databases, replication slots, instance managers, trends), the **Logs** of every instance on one time axis, the **Timeline** and the **Failover Quorums**.\n- **Backups**: backups, scheduled backups with their next runs, object stores with the recovery windows the Barman Cloud plugin reports; volume snapshot backups.\n- **Databases**: declarative databases, roles, publications and subscriptions, with what PostgreSQL does not have as declared.\n- **Pooling, Images, Operator**: poolers with their live state, image catalogs, the operator card.\n- **Write actions** with a confirmation dialog that lists the exact API calls: backup now, switchover, restart, reload, fencing, hibernation, schedule suspend and resume; **creation forms** for clusters, backups, schedules, poolers and more; **Open psql** on any instance.\n\n### Install\n\nFrom the Freelens Extensions page, by npm name:\n\n```text\n@freelensapp/cnpg-extension\n```\n\nRequires Freelens 1.10.3 or newer and CloudNativePG 1.30.0 or newer. See the [README](https://github.com/freelensapp/freelens-cnpg-extension#readme) and the [video demo](https://github.com/user-attachments/assets/fa708e56-a775-4bf7-827f-a1a8b461b9a1).\n"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-cnpg-extension-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 748833,
+      "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-09-25T19:08:59Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 396860703,
+    "tagName": "v1.0.0",
+    "name": "v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-09-25T19:07:50Z",
+    "publishedAt": "2026-09-25T19:09:00Z",
+    "body": "The first release of the Freelens extension for CloudNativePG: every PostgreSQL cluster the operator manages, from the Kubernetes resources down to what happens inside the databases right now, inside Freelens.\n\n### What is in it\n\n- **Overview**: every cluster of the selected namespaces as a tile ordered by urgency, with instances, archiving, last and next backup, certificates and the declared objects that failed.\n- **Clusters**: the list and the drawer of every cluster (instances, replication, conditions, backups and archiving, certificates), the **Live View** (topology with quorum and lag, sessions, WAL, databases, replication slots, instance managers, trends), the **Logs** of every instance on one time axis, the **Timeline** and the **Failover Quorums**.\n- **Backups**: backups, scheduled backups with their next runs, object stores with the recovery windows the Barman Cloud plugin reports; volume snapshot backups.\n- **Databases**: declarative databases, roles, publications and subscriptions, with what PostgreSQL does not have as declared.\n- **Pooling, Images, Operator**: poolers with their live state, image catalogs, the operator card.\n- **Write actions** with a confirmation dialog that lists the exact API calls: backup now, switchover, restart, reload, fencing, hibernation, schedule suspend and resume; **creation forms** for clusters, backups, schedules, poolers and more; **Open psql** on any instance.\n\n### Install\n\nFrom the Freelens Extensions page, by npm name:\n\n```text\n@freelensapp/cnpg-extension\n```\n\nRequires Freelens 1.10.3 or newer and CloudNativePG 1.30.0 or newer. See the [README](https://github.com/freelensapp/freelens-cnpg-extension#readme) and the [video demo](https://github.com/user-attachments/assets/fa708e56-a775-4bf7-827f-a1a8b461b9a1).\n",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-cnpg-extension-1.0.0-spdx.json",
+        "size": 1883630,
+        "downloadCount": 0,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0-spdx.json",
+        "createdAt": "2026-09-25T19:08:59Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-cnpg-extension-1.0.0-spdx.json.sha256",
+        "size": 109,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0-spdx.json.sha256",
+        "createdAt": "2026-09-25T19:08:59Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-cnpg-extension-1.0.0.tgz",
+        "size": 748833,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz",
+        "createdAt": "2026-09-25T19:08:59Z",
+        "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-cnpg-extension-1.0.0.tgz.sha256",
+        "size": 103,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v1.0.0/freelensapp-cnpg-extension-1.0.0.tgz.sha256",
+        "createdAt": "2026-09-25T19:08:59Z",
+        "isTarGz": false,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-09-25T19:19:50.515Z"
 }
