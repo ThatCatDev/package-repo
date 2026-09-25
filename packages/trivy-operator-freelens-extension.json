@@ -1,0 +1,35 @@
+{
+  "name": "trivy-operator-freelens-extension",
+  "repoName": "trivy-operator-freelens-extension",
+  "fullName": "jynolen/trivy-operator-freelens-extension",
+  "description": "",
+  "homepage": "https://github.com/jynolen/trivy-operator-freelens-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-09-25T10:33:43Z",
+  "updatedAt": "2026-09-25T10:33:44Z",
+  "pushedAt": "2026-09-25T10:33:44Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": null,
+  "owner": {
+    "login": "jynolen",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/256358005?v=4",
+    "url": "https://github.com/jynolen"
+  },
+  "repository": {
+    "url": "https://github.com/jynolen/trivy-operator-freelens-extension",
+    "cloneUrl": "https://github.com/jynolen/trivy-operator-freelens-extension.git",
+    "sshUrl": "git@github.com:jynolen/trivy-operator-freelens-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-09-25T15:20:43.063Z"
+}

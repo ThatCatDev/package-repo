@@ -8,17 +8,24 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
-  "updatedAt": "2026-09-24T19:23:21Z",
-  "pushedAt": "2026-09-25T06:00:26Z",
+  "updatedAt": "2026-09-25T15:05:47Z",
+  "pushedAt": "2026-09-25T15:05:54Z",
   "defaultBranch": "main",
   "topics": [
     "agentbridge",
     "ai-agent",
+    "automation",
     "claude-code",
+    "codex",
     "freelens",
     "github-copilot",
+    "harness-ai",
+    "harness-engineering",
+    "k8s",
     "kubernetes",
     "opencode",
+    "pi",
+    "pi-agent",
     "ui"
   ],
   "license": "MIT",
@@ -34,7 +41,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/agentbridge-extension",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "repository": {
       "type": "git",
@@ -189,6 +196,13 @@
   ],
   "tags": [
     {
+      "name": "v1.3.0",
+      "commitSha": "5cfa4b4c965bbd44875eb6cfd5bef02901b5ddc0",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/commits/5cfa4b4c965bbd44875eb6cfd5bef02901b5ddc0",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/zipball/refs/tags/v1.3.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/tarball/refs/tags/v1.3.0"
+    },
+    {
       "name": "v1.2.0",
       "commitSha": "a4c84ab9243c2f7d52767936b026d9e895d6df70",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/commits/a4c84ab9243c2f7d52767936b026d9e895d6df70",
@@ -289,5 +303,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-25T10:20:19.617Z"
+  "lastScanned": "2026-09-25T15:20:22.978Z"
 }

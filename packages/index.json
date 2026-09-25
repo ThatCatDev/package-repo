@@ -16,7 +16,7 @@
     "fullName": "freelensapp/freelens-agentbridge-extension",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 3,
-    "updatedAt": "2026-09-24T19:23:21Z",
+    "updatedAt": "2026-09-25T15:05:47Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -60,7 +60,7 @@
     "fullName": "freelensapp/freelens-cnpg-extension",
     "description": "Freelens extension for CloudNativePG",
     "stars": 2,
-    "updatedAt": "2026-09-24T16:53:34Z",
+    "updatedAt": "2026-09-25T13:36:28Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
@@ -457,6 +457,17 @@
     "description": "",
     "stars": 0,
     "updatedAt": "2026-05-12T07:48:57Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
+    "name": "trivy-operator-freelens-extension",
+    "repoName": "trivy-operator-freelens-extension",
+    "fullName": "jynolen/trivy-operator-freelens-extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2026-09-25T10:33:44Z",
     "latestVersion": null,
     "hasReleases": false,
     "hasTarFiles": false
