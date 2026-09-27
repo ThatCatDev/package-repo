@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-27T08:54:54Z",
-  "updatedAt": "2026-09-27T12:36:34Z",
-  "pushedAt": "2026-09-27T16:06:28Z",
+  "updatedAt": "2026-09-27T17:36:54Z",
+  "pushedAt": "2026-09-27T19:37:30Z",
   "defaultBranch": "main",
   "topics": [
     "backup",
@@ -78,6 +78,11 @@
       "knip:production": "pnpm knip --production --strict",
       "test": "pnpm test:unit",
       "test:unit": "pnpm build && vitest run",
+      "e2e": "pnpm build && node e2e/scripts/local-demo.mts fixtures --context kind-freelens-velero-dev && node e2e/scripts/local-demo.mts transport-proof --context kind-freelens-velero-dev",
+      "e2e:cluster:up": "node e2e/scripts/local-demo.mts up --context kind-freelens-velero-dev",
+      "e2e:cluster:down": "node e2e/scripts/local-demo.mts down --context kind-freelens-velero-dev",
+      "demo:up": "pnpm e2e:cluster:up && node e2e/scripts/local-demo.mts fixtures-static --context kind-freelens-velero-dev && node e2e/scripts/local-demo.mts fixtures-live --context kind-freelens-velero-dev",
+      "demo:down": "pnpm e2e:cluster:down",
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
       "build": "pnpm type:check && electron-vite build",
       "build:production": "VITE_PRESERVE_MODULES=false pnpm build",
@@ -124,5 +129,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-09-27T16:07:15.808Z"
+  "lastScanned": "2026-09-27T19:44:10.270Z"
 }
