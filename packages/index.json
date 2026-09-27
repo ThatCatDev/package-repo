@@ -451,13 +451,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-velero-extension",
+    "name": "@freelensapp/velero-extension",
     "repoName": "freelens-velero-extension",
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 1,
-    "updatedAt": "2026-09-27T09:08:06Z",
-    "latestVersion": null,
+    "updatedAt": "2026-09-27T12:36:34Z",
+    "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
