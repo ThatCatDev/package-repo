@@ -1,0 +1,35 @@
+{
+  "name": "freelens-trivy-extension",
+  "repoName": "freelens-trivy-extension",
+  "fullName": "johnvox/freelens-trivy-extension",
+  "description": "",
+  "homepage": "https://github.com/johnvox/freelens-trivy-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-09-28T10:08:25Z",
+  "updatedAt": "2026-09-28T10:10:37Z",
+  "pushedAt": "2026-09-28T10:08:26Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": null,
+  "owner": {
+    "login": "johnvox",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1485801?v=4",
+    "url": "https://github.com/johnvox"
+  },
+  "repository": {
+    "url": "https://github.com/johnvox/freelens-trivy-extension",
+    "cloneUrl": "https://github.com/johnvox/freelens-trivy-extension.git",
+    "sshUrl": "git@github.com:johnvox/freelens-trivy-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-09-28T14:29:58.904Z"
+}

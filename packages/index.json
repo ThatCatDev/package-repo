@@ -451,12 +451,23 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-trivy-extension",
+    "repoName": "freelens-trivy-extension",
+    "fullName": "johnvox/freelens-trivy-extension",
+    "description": "",
+    "stars": 0,
+    "updatedAt": "2026-09-28T10:10:37Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@freelensapp/velero-extension",
     "repoName": "freelens-velero-extension",
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 1,
-    "updatedAt": "2026-09-28T06:05:18Z",
+    "updatedAt": "2026-09-28T11:22:30Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
