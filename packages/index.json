@@ -26,8 +26,8 @@
     "repoName": "freelens-ai-extension",
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
-    "stars": 34,
-    "updatedAt": "2026-09-24T06:03:28Z",
+    "stars": 35,
+    "updatedAt": "2026-09-28T16:22:20Z",
     "latestVersion": "v0.7.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -451,13 +451,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-trivy-extension",
+    "name": "@freelensapp/trivy-extension",
     "repoName": "freelens-trivy-extension",
     "fullName": "johnvox/freelens-trivy-extension",
-    "description": "",
+    "description": "Example of a Freelens extension",
     "stars": 0,
-    "updatedAt": "2026-09-28T10:10:37Z",
-    "latestVersion": null,
+    "updatedAt": "2026-09-28T19:12:01Z",
+    "latestVersion": "0.0.1-12",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -467,7 +467,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 1,
-    "updatedAt": "2026-09-28T11:22:30Z",
+    "updatedAt": "2026-09-28T18:51:38Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
