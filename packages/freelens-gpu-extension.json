@@ -5,7 +5,7 @@
   "description": "Freelens extension for GPUs",
   "homepage": "https://freelens.app",
   "stars": 1,
-  "forks": 0,
+  "forks": 1,
   "language": null,
   "createdAt": "2026-09-27T19:01:50Z",
   "updatedAt": "2026-09-27T19:05:40Z",
@@ -40,5 +40,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-09-27T22:33:49.242Z"
+  "lastScanned": "2026-09-28T01:06:09.432Z"
 }
