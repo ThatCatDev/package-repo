@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-09-18T13:53:42Z",
   "updatedAt": "2026-09-29T21:08:21Z",
-  "pushedAt": "2026-09-29T18:45:31Z",
+  "pushedAt": "2026-09-29T23:15:40Z",
   "defaultBranch": "main",
   "topics": [
     "cloudnativepg",
@@ -281,5 +281,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-09-29T22:15:43.877Z"
+  "lastScanned": "2026-09-30T01:18:33.638Z"
 }
