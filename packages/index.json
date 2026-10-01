@@ -302,8 +302,8 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-10-01T18:54:39Z",
-    "latestVersion": "v1.4.0",
+    "updatedAt": "2026-10-01T21:19:14Z",
+    "latestVersion": "v1.4.1",
     "hasReleases": true,
     "hasTarFiles": true
   },
