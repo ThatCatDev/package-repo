@@ -26,8 +26,8 @@
     "repoName": "freelens-ai-extension",
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
-    "stars": 35,
-    "updatedAt": "2026-09-28T16:22:20Z",
+    "stars": 36,
+    "updatedAt": "2026-10-01T15:34:42Z",
     "latestVersion": "v0.7.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -253,13 +253,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-gpu-extension",
+    "name": "@freelensapp/gpu-extension",
     "repoName": "freelens-gpu-extension",
     "fullName": "freelensapp/freelens-gpu-extension",
-    "description": "Freelens extension for GPUs",
+    "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "stars": 1,
-    "updatedAt": "2026-09-27T19:05:40Z",
-    "latestVersion": null,
+    "updatedAt": "2026-10-01T16:37:17Z",
+    "latestVersion": "0.7.1",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -302,8 +302,8 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-09-20T16:43:50Z",
-    "latestVersion": "v1.3.1",
+    "updatedAt": "2026-10-01T18:54:39Z",
+    "latestVersion": "v1.4.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
