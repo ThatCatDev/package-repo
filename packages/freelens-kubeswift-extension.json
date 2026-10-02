@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-08-27T15:24:50Z",
   "updatedAt": "2026-09-09T16:54:02Z",
-  "pushedAt": "2026-10-01T17:08:45Z",
+  "pushedAt": "2026-10-02T11:43:19Z",
   "defaultBranch": "main",
   "topics": [
     "cloud-hypervisor",
@@ -167,7 +167,7 @@
         {
           "name": "freelensapp-kubeswift-extension-0.1.0.tgz",
           "size": 766405,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
           "createdAt": "2026-09-04T17:31:06Z",
@@ -212,7 +212,7 @@
       "releaseName": "v0.1.0",
       "size": 766405,
       "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-09-04T17:31:06Z"
     }
@@ -254,7 +254,7 @@
       {
         "name": "freelensapp-kubeswift-extension-0.1.0.tgz",
         "size": 766405,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
         "createdAt": "2026-09-04T17:31:06Z",
@@ -275,5 +275,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-02T08:39:06.570Z"
+  "lastScanned": "2026-10-02T14:58:14.618Z"
 }

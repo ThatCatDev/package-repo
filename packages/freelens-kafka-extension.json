@@ -188,7 +188,7 @@
         {
           "name": "freelensapp-kafka-extension-1.4.1.tgz",
           "size": 3012122,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v1.4.1/freelensapp-kafka-extension-1.4.1.tgz",
           "createdAt": "2026-10-01T21:20:15Z",
@@ -503,7 +503,7 @@
       "releaseName": "v1.4.1",
       "size": 3012122,
       "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v1.4.1/freelensapp-kafka-extension-1.4.1.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-10-01T21:20:15Z"
     },
@@ -595,7 +595,7 @@
       {
         "name": "freelensapp-kafka-extension-1.4.1.tgz",
         "size": 3012122,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v1.4.1/freelensapp-kafka-extension-1.4.1.tgz",
         "createdAt": "2026-10-01T21:20:15Z",
@@ -606,5 +606,5 @@
   },
   "totalReleases": 8,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-02T08:39:00.990Z"
+  "lastScanned": "2026-10-02T14:58:08.401Z"
 }

@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-09-27T19:01:50Z",
-  "updatedAt": "2026-10-01T16:37:17Z",
-  "pushedAt": "2026-10-01T16:37:15Z",
+  "updatedAt": "2026-10-02T14:33:11Z",
+  "pushedAt": "2026-10-02T14:33:05Z",
   "defaultBranch": "main",
   "topics": [
     "dcgm",
@@ -34,7 +34,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/gpu-extension",
-    "version": "0.7.1",
+    "version": "0.8.1",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "homepage": "https://github.com/freelensapp/freelens-gpu-extension",
     "repository": {
@@ -109,7 +109,7 @@
       "react": "17.0.2",
       "react-dom": "17.0.2",
       "typescript": "7.0.2",
-      "vite": "^8.3.1",
+      "vite": "^8.3.2",
       "vitest": "^5.0.3"
     },
     "keywords": [
@@ -126,12 +126,231 @@
     ],
     "packageManager": "pnpm@12.8.1"
   },
-  "releases": [],
-  "tags": [],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-10-02T08:39:13.195Z"
+  "releases": [
+    {
+      "id": 401885945,
+      "tagName": "v0.8.1",
+      "name": "v0.8.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-02T14:23:50Z",
+      "publishedAt": "2026-10-02T14:25:01Z",
+      "body": "- Fix: the tables were wider than the page in a 1440 px window, so Health and Power were out of sight. Text columns\n  (pod, node, namespace, model, names, messages) now share the free width and shrink down to their minimum with an\n  ellipsis while staying readable, and Health and Power come right after the identity columns on the GPUs and\n  Allocation views and before the VRAM columns in the Pods table and drawers. Column widths resized by hand are stored under a new key, since some\n  views changed order (#10).\n- Fix: when a scrape failed, the rows of the last good one stayed on the page under the error with the status still\n  counting the exporters, and nothing said they were old. The status now reads \"stale: last good scrape HH:MM:SS\",\n  the pages built on the scrape (Pods, GPUs, Idle & waste, Allocation) and the drawer tables are dimmed, and the\n  pages built on the pod list keep full contrast. When every exporter scrape fails, discovery runs again at the next\n  tick instead of scraping the same dead pods until its cache expires (#9).\n- Fix: discovery took the node name inside a pod's name for a GPU keyword, so on a node called like `gpu-*` the\n  static control plane pods (kube-apiserver, etcd, scheduler, controller manager) were probed at every discovery pass.\n  The node name is now left out of the pod name before matching (#7).\n- Fix: on a cluster without exporters the whole cluster was listed again every 20 s (pods, services, nodes), also\n  when only a Pod or Node drawer was open. An empty discovery and a failed Prometheus search are now cached for 60 s\n  like a successful one, nodes are listed with the discovery instead of with every scrape, and the drawers poll only\n  for a pod that can use a GPU (or on a cluster known to have GPUs) and for a node that advertises one (#8).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-gpu-extension-0.8.1-spdx.json",
+          "size": 272701,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1-spdx.json",
+          "createdAt": "2026-10-02T14:25:00Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.8.1-spdx.json.sha256",
+          "size": 108,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1-spdx.json.sha256",
+          "createdAt": "2026-10-02T14:25:00Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.8.1.tgz",
+          "size": 116730,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz",
+          "createdAt": "2026-10-02T14:25:00Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.8.1.tgz.sha256",
+          "size": 102,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz.sha256",
+          "createdAt": "2026-10-02T14:25:00Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 401705163,
+      "tagName": "v0.8.0",
+      "name": "v0.8.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-02T09:57:12Z",
+      "publishedAt": "2026-10-02T09:58:15Z",
+      "body": "- Moved to the freelensapp organization as `@freelensapp/gpu-extension`: the organization workflows (release with\n  provenance, SBOM and checksums, Claude, npm audit and dedupe, trunk and biome upgrades), Playwright integration tests\n  inside a packaged Freelens on kind with a fake GPU fixture (`integration/fixtures/gpu/`), agent guides.\n- Supersedes `@tal-naeh/freelens-gpu-extension`: uninstall the old package before installing this one.\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-gpu-extension-0.8.0-spdx.json",
+          "size": 272701,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.0/freelensapp-gpu-extension-0.8.0-spdx.json",
+          "createdAt": "2026-10-02T09:58:14Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.8.0-spdx.json.sha256",
+          "size": 108,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.0/freelensapp-gpu-extension-0.8.0-spdx.json.sha256",
+          "createdAt": "2026-10-02T09:58:14Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.8.0.tgz",
+          "size": 112463,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.0/freelensapp-gpu-extension-0.8.0.tgz",
+          "createdAt": "2026-10-02T09:58:14Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.8.0.tgz.sha256",
+          "size": 102,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.0/freelensapp-gpu-extension-0.8.0.tgz.sha256",
+          "createdAt": "2026-10-02T09:58:14Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.8.1",
+      "commitSha": "10658de3bdbb8e125f0aeb5a0e8b2855f3d1367e",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/commits/10658de3bdbb8e125f0aeb5a0e8b2855f3d1367e",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/zipball/refs/tags/v0.8.1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/tarball/refs/tags/v0.8.1"
+    },
+    {
+      "name": "v0.8.0",
+      "commitSha": "9a42460bb232cf20ec24182e8266a6b85c7a65ea",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/commits/9a42460bb232cf20ec24182e8266a6b85c7a65ea",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/zipball/refs/tags/v0.8.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/tarball/refs/tags/v0.8.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v0.8.1",
+      "name": "v0.8.1",
+      "publishedAt": "2026-10-02T14:25:01Z",
+      "isPrerelease": false,
+      "notes": "- Fix: the tables were wider than the page in a 1440 px window, so Health and Power were out of sight. Text columns\n  (pod, node, namespace, model, names, messages) now share the free width and shrink down to their minimum with an\n  ellipsis while staying readable, and Health and Power come right after the identity columns on the GPUs and\n  Allocation views and before the VRAM columns in the Pods table and drawers. Column widths resized by hand are stored under a new key, since some\n  views changed order (#10).\n- Fix: when a scrape failed, the rows of the last good one stayed on the page under the error with the status still\n  counting the exporters, and nothing said they were old. The status now reads \"stale: last good scrape HH:MM:SS\",\n  the pages built on the scrape (Pods, GPUs, Idle & waste, Allocation) and the drawer tables are dimmed, and the\n  pages built on the pod list keep full contrast. When every exporter scrape fails, discovery runs again at the next\n  tick instead of scraping the same dead pods until its cache expires (#9).\n- Fix: discovery took the node name inside a pod's name for a GPU keyword, so on a node called like `gpu-*` the\n  static control plane pods (kube-apiserver, etcd, scheduler, controller manager) were probed at every discovery pass.\n  The node name is now left out of the pod name before matching (#7).\n- Fix: on a cluster without exporters the whole cluster was listed again every 20 s (pods, services, nodes), also\n  when only a Pod or Node drawer was open. An empty discovery and a failed Prometheus search are now cached for 60 s\n  like a successful one, nodes are listed with the discovery instead of with every scrape, and the drawers poll only\n  for a pod that can use a GPU (or on a cluster known to have GPUs) and for a node that advertises one (#8).\n"
+    },
+    {
+      "version": "v0.8.0",
+      "name": "v0.8.0",
+      "publishedAt": "2026-10-02T09:58:15Z",
+      "isPrerelease": false,
+      "notes": "- Moved to the freelensapp organization as `@freelensapp/gpu-extension`: the organization workflows (release with\n  provenance, SBOM and checksums, Claude, npm audit and dedupe, trunk and biome upgrades), Playwright integration tests\n  inside a packaged Freelens on kind with a fake GPU fixture (`integration/fixtures/gpu/`), agent guides.\n- Supersedes `@tal-naeh/freelens-gpu-extension`: uninstall the old package before installing this one.\n"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-gpu-extension-0.8.1.tgz",
+      "releaseTag": "v0.8.1",
+      "releaseName": "v0.8.1",
+      "size": 116730,
+      "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-02T14:25:00Z"
+    },
+    {
+      "filename": "freelensapp-gpu-extension-0.8.0.tgz",
+      "releaseTag": "v0.8.0",
+      "releaseName": "v0.8.0",
+      "size": 112463,
+      "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.0/freelensapp-gpu-extension-0.8.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-02T09:58:14Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 401885945,
+    "tagName": "v0.8.1",
+    "name": "v0.8.1",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-10-02T14:23:50Z",
+    "publishedAt": "2026-10-02T14:25:01Z",
+    "body": "- Fix: the tables were wider than the page in a 1440 px window, so Health and Power were out of sight. Text columns\n  (pod, node, namespace, model, names, messages) now share the free width and shrink down to their minimum with an\n  ellipsis while staying readable, and Health and Power come right after the identity columns on the GPUs and\n  Allocation views and before the VRAM columns in the Pods table and drawers. Column widths resized by hand are stored under a new key, since some\n  views changed order (#10).\n- Fix: when a scrape failed, the rows of the last good one stayed on the page under the error with the status still\n  counting the exporters, and nothing said they were old. The status now reads \"stale: last good scrape HH:MM:SS\",\n  the pages built on the scrape (Pods, GPUs, Idle & waste, Allocation) and the drawer tables are dimmed, and the\n  pages built on the pod list keep full contrast. When every exporter scrape fails, discovery runs again at the next\n  tick instead of scraping the same dead pods until its cache expires (#9).\n- Fix: discovery took the node name inside a pod's name for a GPU keyword, so on a node called like `gpu-*` the\n  static control plane pods (kube-apiserver, etcd, scheduler, controller manager) were probed at every discovery pass.\n  The node name is now left out of the pod name before matching (#7).\n- Fix: on a cluster without exporters the whole cluster was listed again every 20 s (pods, services, nodes), also\n  when only a Pod or Node drawer was open. An empty discovery and a failed Prometheus search are now cached for 60 s\n  like a successful one, nodes are listed with the discovery instead of with every scrape, and the drawers poll only\n  for a pod that can use a GPU (or on a cluster known to have GPUs) and for a node that advertises one (#8).\n",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-gpu-extension-0.8.1-spdx.json",
+        "size": 272701,
+        "downloadCount": 1,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1-spdx.json",
+        "createdAt": "2026-10-02T14:25:00Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-gpu-extension-0.8.1-spdx.json.sha256",
+        "size": 108,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1-spdx.json.sha256",
+        "createdAt": "2026-10-02T14:25:00Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-gpu-extension-0.8.1.tgz",
+        "size": 116730,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz",
+        "createdAt": "2026-10-02T14:25:00Z",
+        "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-gpu-extension-0.8.1.tgz.sha256",
+        "size": 102,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz.sha256",
+        "createdAt": "2026-10-02T14:25:00Z",
+        "isTarGz": false,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 2,
+  "hasTarFiles": true,
+  "lastScanned": "2026-10-02T14:58:19.272Z"
 }

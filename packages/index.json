@@ -258,10 +258,10 @@
     "fullName": "freelensapp/freelens-gpu-extension",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "stars": 1,
-    "updatedAt": "2026-10-01T16:37:17Z",
-    "latestVersion": "0.7.1",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-10-02T14:33:11Z",
+    "latestVersion": "v0.8.1",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens-hotkey-extension",
