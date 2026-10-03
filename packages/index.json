@@ -454,10 +454,10 @@
     "name": "@freelensapp/trivy-extension",
     "repoName": "freelens-trivy-extension",
     "fullName": "johnvox/freelens-trivy-extension",
-    "description": "Example of a Freelens extension",
+    "description": "Trivy Operator Freelens extension",
     "stars": 0,
-    "updatedAt": "2026-09-28T19:12:01Z",
-    "latestVersion": "0.0.1-12",
+    "updatedAt": "2026-10-03T07:31:23Z",
+    "latestVersion": "0.0.1-63",
     "hasReleases": false,
     "hasTarFiles": false
   },

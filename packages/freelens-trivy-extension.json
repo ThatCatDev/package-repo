@@ -2,14 +2,14 @@
   "name": "@freelensapp/trivy-extension",
   "repoName": "freelens-trivy-extension",
   "fullName": "johnvox/freelens-trivy-extension",
-  "description": "Example of a Freelens extension",
+  "description": "Trivy Operator Freelens extension",
   "homepage": "https://github.com/johnvox/freelens-trivy-extension",
   "stars": 0,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-28T10:08:25Z",
-  "updatedAt": "2026-09-28T19:12:01Z",
-  "pushedAt": "2026-09-28T19:11:55Z",
+  "updatedAt": "2026-10-03T07:31:23Z",
+  "pushedAt": "2026-10-03T07:31:18Z",
   "defaultBranch": "dev",
   "topics": [],
   "license": null,
@@ -25,8 +25,8 @@
   },
   "packageJson": {
     "name": "@freelensapp/trivy-extension",
-    "version": "0.0.1-12",
-    "description": "Example of a Freelens extension",
+    "version": "0.0.1-63",
+    "description": "Trivy Operator Freelens extension",
     "repository": {
       "type": "git",
       "url": "git+https://github.com/freelensapp/freelens-example-extension.git",
@@ -76,7 +76,7 @@
       "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
       "build:force": "electron-vite build",
       "bump-version": "pnpm version --no-commit-hooks --no-git-tag-version",
-      "pack:dev": "pnpm bump-version prerelease && pnpm build:force && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
+      "pack:dev": "pnpm bump-version prerelease --no-git-checks && pnpm build:force && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
       "clean": "pnpm clean:out",
       "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
       "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
@@ -112,7 +112,7 @@
       "openlens",
       "freelens"
     ],
-    "packageManager": "pnpm@10.34.4+sha512.8768be55200ae3f2226b6527fcca2687e14bc4e5f12d7721a0f25da3df47915177058648db4177baf348120fa0ba2752d8d8d93f6beaf1fe64ae18da8de961af"
+    "packageManager": "pnpm@12.6.0+sha512.3ef68f951cb111ac204b4a5a16f0b2ddf0da56a96e0413e81d855d9f0b55ef926714709028e1cd00c405c2c5fb7b9e8ec4dc46777c805d0373c2f2ff00fd20ec"
   },
   "releases": [],
   "tags": [],
@@ -121,5 +121,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-10-03T02:01:45.991Z"
+  "lastScanned": "2026-10-03T07:54:57.303Z"
 }
