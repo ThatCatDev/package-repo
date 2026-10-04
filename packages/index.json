@@ -60,7 +60,7 @@
     "fullName": "freelensapp/freelens-cnpg-extension",
     "description": "Freelens extension for CloudNativePG",
     "stars": 4,
-    "updatedAt": "2026-09-29T21:08:21Z",
+    "updatedAt": "2026-10-04T20:30:59Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -302,7 +302,7 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-10-01T21:19:14Z",
+    "updatedAt": "2026-10-04T20:31:02Z",
     "latestVersion": "v1.4.1",
     "hasReleases": true,
     "hasTarFiles": true

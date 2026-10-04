@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-09-05T18:44:25Z",
-  "updatedAt": "2026-10-01T21:19:14Z",
-  "pushedAt": "2026-10-04T01:23:40Z",
+  "updatedAt": "2026-10-04T20:31:02Z",
+  "pushedAt": "2026-10-04T20:30:58Z",
   "defaultBranch": "main",
   "topics": [
     "apache-kafka",
@@ -606,5 +606,5 @@
   },
   "totalReleases": 8,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-04T19:54:10.553Z"
+  "lastScanned": "2026-10-04T22:34:27.013Z"
 }
