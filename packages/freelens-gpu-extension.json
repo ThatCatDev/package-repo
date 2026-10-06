@@ -164,7 +164,7 @@
         {
           "name": "freelensapp-gpu-extension-0.8.1.tgz",
           "size": 116730,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz",
           "createdAt": "2026-10-02T14:25:00Z",
@@ -279,7 +279,7 @@
       "releaseName": "v0.8.1",
       "size": 116730,
       "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-10-02T14:25:00Z"
     },
@@ -331,7 +331,7 @@
       {
         "name": "freelensapp-gpu-extension-0.8.1.tgz",
         "size": 116730,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz",
         "createdAt": "2026-10-02T14:25:00Z",
@@ -352,5 +352,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-06T02:17:36.538Z"
+  "lastScanned": "2026-10-06T09:03:56.423Z"
 }
