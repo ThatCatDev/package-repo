@@ -126,7 +126,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-10-04T19:12:49Z",
+    "updatedAt": "2026-10-08T11:30:34Z",
     "latestVersion": "v1.10.2",
     "hasReleases": true,
     "hasTarFiles": true
@@ -447,6 +447,17 @@
     "stars": 5,
     "updatedAt": "2026-05-22T02:12:28Z",
     "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
+  },
+  {
+    "name": "freelens-teleport-extension",
+    "repoName": "freelens-teleport-extension",
+    "fullName": "baptisterajaut/freelens-teleport-extension",
+    "description": "Teleport Kubernetes clusters in the Freelens catalog, with local proxy management",
+    "stars": 0,
+    "updatedAt": "2026-10-08T10:21:58Z",
+    "latestVersion": "v0.1.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
