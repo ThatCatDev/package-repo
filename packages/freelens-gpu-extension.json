@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-09-27T19:01:50Z",
-  "updatedAt": "2026-10-07T17:54:34Z",
-  "pushedAt": "2026-10-07T20:10:44Z",
+  "updatedAt": "2026-10-08T18:14:24Z",
+  "pushedAt": "2026-10-08T18:14:18Z",
   "defaultBranch": "main",
   "topics": [
     "dcgm",
@@ -352,5 +352,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-08T16:48:01.700Z"
+  "lastScanned": "2026-10-08T21:33:34.729Z"
 }
