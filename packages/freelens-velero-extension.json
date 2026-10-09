@@ -4,12 +4,12 @@
   "fullName": "freelensapp/freelens-velero-extension",
   "description": "Freelens extension for Velero",
   "homepage": "https://freelens.app",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-27T08:54:54Z",
-  "updatedAt": "2026-10-07T07:08:14Z",
-  "pushedAt": "2026-10-08T16:40:57Z",
+  "updatedAt": "2026-10-09T07:49:52Z",
+  "pushedAt": "2026-10-09T09:44:57Z",
   "defaultBranch": "main",
   "topics": [
     "backup",
@@ -140,5 +140,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-10-09T07:30:15.860Z"
+  "lastScanned": "2026-10-09T14:32:05.619Z"
 }

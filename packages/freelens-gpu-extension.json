@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-09-27T19:01:50Z",
-  "updatedAt": "2026-10-08T18:14:24Z",
-  "pushedAt": "2026-10-08T18:14:18Z",
+  "updatedAt": "2026-10-09T09:26:35Z",
+  "pushedAt": "2026-10-09T09:26:42Z",
   "defaultBranch": "main",
   "topics": [
     "dcgm",
@@ -34,7 +34,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/gpu-extension",
-    "version": "0.8.1",
+    "version": "0.9.0",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "homepage": "https://github.com/freelensapp/freelens-gpu-extension",
     "repository": {
@@ -74,7 +74,7 @@
       "lint": "pnpm lint:check",
       "lint:check": "pnpm biome:check",
       "lint:fix": "pnpm biome:fix",
-      "knip": "pnpm dlx knip@6.39.0 --dependencies --no-gitignore",
+      "knip": "pnpm dlx knip@6.40.0 --dependencies --no-gitignore",
       "knip:check": "pnpm clean:out && pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "pnpm knip",
       "knip:production": "pnpm knip --production --strict",
@@ -102,14 +102,14 @@
       "@freelensapp/extensions": "^1.10.3",
       "@types/node": "~24.12.4",
       "@types/react": "^17.0.93",
-      "@vitejs/plugin-react": "^6.1.1",
+      "@vitejs/plugin-react": "^6.1.2",
       "electron-vite": "^5.0.0",
       "mobx": "6.13.7",
       "mobx-react": "7.6.0",
       "react": "17.0.2",
       "react-dom": "17.0.2",
       "typescript": "7.0.2",
-      "vite": "^8.3.2",
+      "vite": "^8.3.3",
       "vitest": "^5.0.3"
     },
     "keywords": [
@@ -124,9 +124,65 @@
       "kubernetes",
       "monitoring"
     ],
-    "packageManager": "pnpm@12.8.1"
+    "packageManager": "pnpm@12.10.1"
   },
   "releases": [
+    {
+      "id": 407759099,
+      "tagName": "v0.9.0",
+      "name": "v0.9.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-09T09:26:30Z",
+      "publishedAt": "2026-10-09T09:27:29Z",
+      "body": "- GPUs allocated with Dynamic Resource Allocation (`resource.k8s.io`, NVIDIA's DRA driver `gpu.nvidia.com`): pods\n  that hold a GPU or a MIG slice through a `ResourceClaim` instead of `nvidia.com/gpu` count for their pod, namespace\n  and node; the devices each node publishes in its `ResourceSlice` count as capacity on the Allocation view; pending\n  claims show in Pending with what they ask for against what the nodes offer; and without pod labels on dcgm-exporter\n  the claim names the pod holding each card, by UUID. Reads v1, v1beta2 and v1beta1, and needs `list` on\n  `resourceslices` and `resourceclaims`; clusters without DRA or without that permission work as before (#25).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-gpu-extension-0.9.0-spdx.json",
+          "size": 278466,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0-spdx.json",
+          "createdAt": "2026-10-09T09:27:29Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.9.0-spdx.json.sha256",
+          "size": 108,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0-spdx.json.sha256",
+          "createdAt": "2026-10-09T09:27:29Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.9.0.tgz",
+          "size": 128963,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0.tgz",
+          "createdAt": "2026-10-09T09:27:29Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-gpu-extension-0.9.0.tgz.sha256",
+          "size": 102,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0.tgz.sha256",
+          "createdAt": "2026-10-09T09:27:29Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 401885945,
       "tagName": "v0.8.1",
@@ -242,6 +298,13 @@
   ],
   "tags": [
     {
+      "name": "v0.9.0",
+      "commitSha": "32a5003aa9bf08c213fb3322101c109cb97eb3fe",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/commits/32a5003aa9bf08c213fb3322101c109cb97eb3fe",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/zipball/refs/tags/v0.9.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/tarball/refs/tags/v0.9.0"
+    },
+    {
       "name": "v0.8.1",
       "commitSha": "10658de3bdbb8e125f0aeb5a0e8b2855f3d1367e",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-gpu-extension/commits/10658de3bdbb8e125f0aeb5a0e8b2855f3d1367e",
@@ -258,6 +321,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.9.0",
+      "name": "v0.9.0",
+      "publishedAt": "2026-10-09T09:27:29Z",
+      "isPrerelease": false,
+      "notes": "- GPUs allocated with Dynamic Resource Allocation (`resource.k8s.io`, NVIDIA's DRA driver `gpu.nvidia.com`): pods\n  that hold a GPU or a MIG slice through a `ResourceClaim` instead of `nvidia.com/gpu` count for their pod, namespace\n  and node; the devices each node publishes in its `ResourceSlice` count as capacity on the Allocation view; pending\n  claims show in Pending with what they ask for against what the nodes offer; and without pod labels on dcgm-exporter\n  the claim names the pod holding each card, by UUID. Reads v1, v1beta2 and v1beta1, and needs `list` on\n  `resourceslices` and `resourceclaims`; clusters without DRA or without that permission work as before (#25).\n"
+    },
+    {
       "version": "v0.8.1",
       "name": "v0.8.1",
       "publishedAt": "2026-10-02T14:25:01Z",
@@ -273,6 +343,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-gpu-extension-0.9.0.tgz",
+      "releaseTag": "v0.9.0",
+      "releaseName": "v0.9.0",
+      "size": 128963,
+      "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-09T09:27:29Z"
+    },
     {
       "filename": "freelensapp-gpu-extension-0.8.1.tgz",
       "releaseTag": "v0.8.1",
@@ -295,62 +375,62 @@
     }
   ],
   "latestRelease": {
-    "id": 401885945,
-    "tagName": "v0.8.1",
-    "name": "v0.8.1",
+    "id": 407759099,
+    "tagName": "v0.9.0",
+    "name": "v0.9.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-10-02T14:23:50Z",
-    "publishedAt": "2026-10-02T14:25:01Z",
-    "body": "- Fix: the tables were wider than the page in a 1440 px window, so Health and Power were out of sight. Text columns\n  (pod, node, namespace, model, names, messages) now share the free width and shrink down to their minimum with an\n  ellipsis while staying readable, and Health and Power come right after the identity columns on the GPUs and\n  Allocation views and before the VRAM columns in the Pods table and drawers. Column widths resized by hand are stored under a new key, since some\n  views changed order (#10).\n- Fix: when a scrape failed, the rows of the last good one stayed on the page under the error with the status still\n  counting the exporters, and nothing said they were old. The status now reads \"stale: last good scrape HH:MM:SS\",\n  the pages built on the scrape (Pods, GPUs, Idle & waste, Allocation) and the drawer tables are dimmed, and the\n  pages built on the pod list keep full contrast. When every exporter scrape fails, discovery runs again at the next\n  tick instead of scraping the same dead pods until its cache expires (#9).\n- Fix: discovery took the node name inside a pod's name for a GPU keyword, so on a node called like `gpu-*` the\n  static control plane pods (kube-apiserver, etcd, scheduler, controller manager) were probed at every discovery pass.\n  The node name is now left out of the pod name before matching (#7).\n- Fix: on a cluster without exporters the whole cluster was listed again every 20 s (pods, services, nodes), also\n  when only a Pod or Node drawer was open. An empty discovery and a failed Prometheus search are now cached for 60 s\n  like a successful one, nodes are listed with the discovery instead of with every scrape, and the drawers poll only\n  for a pod that can use a GPU (or on a cluster known to have GPUs) and for a node that advertises one (#8).\n",
+    "createdAt": "2026-10-09T09:26:30Z",
+    "publishedAt": "2026-10-09T09:27:29Z",
+    "body": "- GPUs allocated with Dynamic Resource Allocation (`resource.k8s.io`, NVIDIA's DRA driver `gpu.nvidia.com`): pods\n  that hold a GPU or a MIG slice through a `ResourceClaim` instead of `nvidia.com/gpu` count for their pod, namespace\n  and node; the devices each node publishes in its `ResourceSlice` count as capacity on the Allocation view; pending\n  claims show in Pending with what they ask for against what the nodes offer; and without pod labels on dcgm-exporter\n  the claim names the pod holding each card, by UUID. Reads v1, v1beta2 and v1beta1, and needs `list` on\n  `resourceslices` and `resourceclaims`; clusters without DRA or without that permission work as before (#25).\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-gpu-extension-0.8.1-spdx.json",
-        "size": 272701,
-        "downloadCount": 1,
+        "name": "freelensapp-gpu-extension-0.9.0-spdx.json",
+        "size": 278466,
+        "downloadCount": 0,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1-spdx.json",
-        "createdAt": "2026-10-02T14:25:00Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0-spdx.json",
+        "createdAt": "2026-10-09T09:27:29Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-gpu-extension-0.8.1-spdx.json.sha256",
+        "name": "freelensapp-gpu-extension-0.9.0-spdx.json.sha256",
         "size": 108,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0-spdx.json.sha256",
+        "createdAt": "2026-10-09T09:27:29Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-gpu-extension-0.9.0.tgz",
+        "size": 128963,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1-spdx.json.sha256",
-        "createdAt": "2026-10-02T14:25:00Z",
-        "isTarGz": false,
-        "isTar": false
-      },
-      {
-        "name": "freelensapp-gpu-extension-0.8.1.tgz",
-        "size": 116730,
-        "downloadCount": 2,
-        "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz",
-        "createdAt": "2026-10-02T14:25:00Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0.tgz",
+        "createdAt": "2026-10-09T09:27:29Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-gpu-extension-0.8.1.tgz.sha256",
+        "name": "freelensapp-gpu-extension-0.9.0.tgz.sha256",
         "size": 102,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.8.1/freelensapp-gpu-extension-0.8.1.tgz.sha256",
-        "createdAt": "2026-10-02T14:25:00Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-gpu-extension/releases/download/v0.9.0/freelensapp-gpu-extension-0.9.0.tgz.sha256",
+        "createdAt": "2026-10-09T09:27:29Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-09T07:30:00.153Z"
+  "lastScanned": "2026-10-09T14:32:03.718Z"
 }
