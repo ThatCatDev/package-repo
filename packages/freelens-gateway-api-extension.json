@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-10-09T19:34:33Z",
-  "pushedAt": "2026-10-09T19:39:27Z",
+  "updatedAt": "2026-10-09T23:02:39Z",
+  "pushedAt": "2026-10-09T23:06:06Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -57,7 +57,7 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "pnpm dlx @biomejs/biome@2.5.4",
+      "biome": "pnpm dlx @biomejs/biome@2.5.15",
       "biome:check": "pnpm biome check",
       "biome:fix": "pnpm biome check --fix",
       "biome:migrate": "pnpm biome migrate --write",
@@ -90,8 +90,7 @@
       "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
       "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
       "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
-      "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\"",
-      "postupdate": "pnpm biome:migrate"
+      "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
     },
     "devDependencies": {
       "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-09",
@@ -449,5 +448,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-09T19:39:41.056Z"
+  "lastScanned": "2026-10-09T23:28:33.641Z"
 }
