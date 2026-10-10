@@ -473,6 +473,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "@hellboyhha/freelens-trivy-operator-extension",
+    "repoName": "freelens-trivy-operator-extension",
+    "fullName": "hellboyhha/freelens-trivy-operator-extension",
+    "description": "Freelens extension for Trivy Operator: vulnerability, config audit, exposed secret, RBAC, SBOM and compliance reports",
+    "stars": 0,
+    "updatedAt": "2026-10-10T13:52:08Z",
+    "latestVersion": "v0.1.2",
+    "hasReleases": true,
+    "hasTarFiles": true
+  },
+  {
     "name": "@freelensapp/velero-extension",
     "repoName": "freelens-velero-extension",
     "fullName": "freelensapp/freelens-velero-extension",

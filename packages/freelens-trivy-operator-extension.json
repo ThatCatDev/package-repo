@@ -1,0 +1,235 @@
+{
+  "name": "@hellboyhha/freelens-trivy-operator-extension",
+  "repoName": "freelens-trivy-operator-extension",
+  "fullName": "hellboyhha/freelens-trivy-operator-extension",
+  "description": "Freelens extension for Trivy Operator: vulnerability, config audit, exposed secret, RBAC, SBOM and compliance reports",
+  "homepage": "https://github.com/hellboyhha/freelens-trivy-operator-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": "TypeScript",
+  "createdAt": "2026-10-09T11:35:53Z",
+  "updatedAt": "2026-10-10T13:52:08Z",
+  "pushedAt": "2026-10-10T13:59:56Z",
+  "defaultBranch": "main",
+  "topics": [
+    "freelens",
+    "kubernetes",
+    "sbom",
+    "security",
+    "trivy-operator",
+    "vulnerability"
+  ],
+  "license": "MIT",
+  "owner": {
+    "login": "hellboyhha",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/57698984?v=4",
+    "url": "https://github.com/hellboyhha"
+  },
+  "repository": {
+    "url": "https://github.com/hellboyhha/freelens-trivy-operator-extension",
+    "cloneUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension.git",
+    "sshUrl": "git@github.com:hellboyhha/freelens-trivy-operator-extension.git"
+  },
+  "packageJson": {
+    "name": "@hellboyhha/freelens-trivy-operator-extension",
+    "version": "0.1.2",
+    "description": "Freelens extension for Trivy Operator: vulnerability, config audit, exposed secret, RBAC, SBOM and compliance reports",
+    "homepage": "https://github.com/hellboyhha/freelens-trivy-operator-extension#readme",
+    "bugs": {
+      "url": "https://github.com/hellboyhha/freelens-trivy-operator-extension/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hellboyhha/freelens-trivy-operator-extension.git",
+      "directory": "."
+    },
+    "main": "out/main/index.js",
+    "renderer": "out/renderer/index.js",
+    "files": [
+      "out/**/*",
+      "NOTICE"
+    ],
+    "engines": {
+      "node": ">= 22.0.0",
+      "freelens": "^1.10.0"
+    },
+    "copyright": "© 2026 hellboyhha",
+    "license": "MIT",
+    "author": {
+      "name": "hellboyhha"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+      "biome": "biome",
+      "biome:check": "biome check",
+      "biome:fix": "biome check --fix",
+      "biome:migrate": "biome migrate --write",
+      "lint": "pnpm biome:check",
+      "lint:fix": "pnpm biome:fix",
+      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
+      "test": "vitest run",
+      "knip": "knip --dependencies --no-gitignore",
+      "check": "node tools/check.mjs",
+      "check:fast": "node tools/check.mjs --fast",
+      "check:arch": "node tools/architecture.mjs",
+      "check:leaks": "node tools/leaks.mjs",
+      "check:pack": "node tools/pack.mjs",
+      "hooks:install": "lefthook install",
+      "prebuild": "pnpm type:check",
+      "build": "electron-vite build",
+      "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
+      "pack:dev": "pnpm build && pnpm clean:tgz && pnpm pack && shx ls \"$PWD\"/*.tgz",
+      "clean": "pnpm clean:out",
+      "clean:node_modules": "shx rm -rf node_modules",
+      "clean:out": "shx rm -rf out",
+      "clean:tgz": "shx rm -f \"*.tgz\"",
+      "clean:all": "pnpm \"/^clean:(node_modules|out|tgz)\\$/\""
+    },
+    "devDependencies": {
+      "@babel/plugin-proposal-decorators": "^8.0.2",
+      "@biomejs/biome": "2.5.1",
+      "@electron-toolkit/tsconfig": "^2.0.0",
+      "@freelensapp/extensions": "^1.10.2",
+      "@testing-library/react": "^12.1.5",
+      "@types/node": "~24.12.4",
+      "@types/react": "^17.0.93",
+      "@vitejs/plugin-react": "^6.0.3",
+      "electron-vite": "^5.0.0",
+      "jsdom": "^29.1.1",
+      "knip": "6.23.0",
+      "lefthook": "2.2.1",
+      "mobx": "6.13.7",
+      "mobx-react": "7.6.0",
+      "react": "17.0.2",
+      "react-dom": "17.0.2",
+      "sass": "^1.101.0",
+      "shx": "0.4.0",
+      "typescript": "5.9.3",
+      "vite": "^8.1.2",
+      "vite-plugin-sass-dts": "^1.3.37",
+      "vitest": "^4.1.9"
+    },
+    "keywords": [
+      "freelens",
+      "freelensapp",
+      "extension",
+      "kubernetes",
+      "trivy",
+      "trivy-operator",
+      "security",
+      "vulnerability",
+      "sbom"
+    ],
+    "packageManager": "pnpm@10.34.4"
+  },
+  "releases": [
+    {
+      "id": 408982072,
+      "tagName": "v0.1.2",
+      "name": "v0.1.2",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-10T13:52:28Z",
+      "publishedAt": "2026-10-10T13:53:20Z",
+      "body": "### Fixed\n\n- The Export menu no longer pushes the page down when it opens. It is positioned over the list again.\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "hellboyhha-freelens-trivy-operator-extension-0.1.2.tgz",
+          "size": 153963,
+          "downloadCount": 1,
+          "contentType": "application/x-gtar",
+          "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.2/hellboyhha-freelens-trivy-operator-extension-0.1.2.tgz",
+          "createdAt": "2026-10-10T13:53:19Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 123,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.2/SHA256SUMS",
+          "createdAt": "2026-10-10T13:53:19Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.1.2",
+      "commitSha": "1bc48d9077fed13504e2f359e1bdb420895e582e",
+      "commitUrl": "https://api.github.com/repos/hellboyhha/freelens-trivy-operator-extension/commits/1bc48d9077fed13504e2f359e1bdb420895e582e",
+      "zipballUrl": "https://api.github.com/repos/hellboyhha/freelens-trivy-operator-extension/zipball/refs/tags/v0.1.2",
+      "tarballUrl": "https://api.github.com/repos/hellboyhha/freelens-trivy-operator-extension/tarball/refs/tags/v0.1.2"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v0.1.2",
+      "name": "v0.1.2",
+      "publishedAt": "2026-10-10T13:53:20Z",
+      "isPrerelease": false,
+      "notes": "### Fixed\n\n- The Export menu no longer pushes the page down when it opens. It is positioned over the list again.\n"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "hellboyhha-freelens-trivy-operator-extension-0.1.2.tgz",
+      "releaseTag": "v0.1.2",
+      "releaseName": "v0.1.2",
+      "size": 153963,
+      "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.2/hellboyhha-freelens-trivy-operator-extension-0.1.2.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-10T13:53:19Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 408982072,
+    "tagName": "v0.1.2",
+    "name": "v0.1.2",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-10-10T13:52:28Z",
+    "publishedAt": "2026-10-10T13:53:20Z",
+    "body": "### Fixed\n\n- The Export menu no longer pushes the page down when it opens. It is positioned over the list again.\n",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "hellboyhha-freelens-trivy-operator-extension-0.1.2.tgz",
+        "size": 153963,
+        "downloadCount": 1,
+        "contentType": "application/x-gtar",
+        "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.2/hellboyhha-freelens-trivy-operator-extension-0.1.2.tgz",
+        "createdAt": "2026-10-10T13:53:19Z",
+        "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "SHA256SUMS",
+        "size": 123,
+        "downloadCount": 0,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.2/SHA256SUMS",
+        "createdAt": "2026-10-10T13:53:19Z",
+        "isTarGz": false,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-10-10T14:50:34.954Z"
+}
