@@ -8,8 +8,8 @@
   "forks": 5,
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
-  "updatedAt": "2026-10-09T23:02:39Z",
-  "pushedAt": "2026-10-10T12:34:00Z",
+  "updatedAt": "2026-10-10T18:52:10Z",
+  "pushedAt": "2026-10-10T18:52:08Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -93,13 +93,13 @@
       "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
     },
     "devDependencies": {
-      "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-09",
+      "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-10",
       "@testing-library/dom": "10.4.2",
       "@testing-library/react": "16.3.3",
       "@types/node": "24.19.1",
       "@types/react": "19.3.0",
       "@types/react-dom": "19.3.0",
-      "@vitejs/plugin-react": "6.1.1",
+      "@vitejs/plugin-react": "6.1.2",
       "electron": "43.7.9",
       "esbuild": "0.28.2",
       "jsdom": "30.1.1",
@@ -109,7 +109,7 @@
       "react-dom": "19.3.0",
       "sass-embedded": "1.105.1",
       "typescript": "7.0.2",
-      "vite": "8.3.2",
+      "vite": "8.3.4",
       "vitest": "5.0.3"
     },
     "keywords": [
@@ -120,7 +120,7 @@
       "freelens",
       "gateway"
     ],
-    "packageManager": "pnpm@12.9.1+sha512.06b055fff5cd20dc12781de173ced3310ce0951bf2ec620211a16045d5444d5c93a663210764ef29a653a610459ba0368f0e74f84d80c54723cf95aae7bc0d6d"
+    "packageManager": "pnpm@12.11.1+sha512.5b0e3288239a7ea4155d2094f547066e122a1376b3cd785a680c9112e116913e64aaaecf20dd83cc34030fa67013f5c5511f9cf430dd8384188b4c60b8a2ad1e"
   },
   "releases": [
     {
@@ -448,5 +448,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-10T14:50:00.317Z"
+  "lastScanned": "2026-10-10T18:55:44.353Z"
 }
