@@ -126,7 +126,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-10-11T19:18:28Z",
+    "updatedAt": "2026-10-12T22:31:33Z",
     "latestVersion": "v1.10.2",
     "hasReleases": true,
     "hasTarFiles": true
@@ -214,7 +214,7 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 2,
-    "updatedAt": "2026-10-12T15:45:24Z",
+    "updatedAt": "2026-10-12T20:20:29Z",
     "latestVersion": "v0.2.0",
     "hasReleases": true,
     "hasTarFiles": true
