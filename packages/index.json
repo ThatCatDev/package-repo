@@ -214,7 +214,7 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 2,
-    "updatedAt": "2026-10-11T21:45:48Z",
+    "updatedAt": "2026-10-11T23:04:50Z",
     "latestVersion": "v0.2.0",
     "hasReleases": true,
     "hasTarFiles": true
