@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-07-02T19:58:37Z",
-  "updatedAt": "2026-10-11T23:04:50Z",
-  "pushedAt": "2026-10-11T23:10:23Z",
+  "updatedAt": "2026-10-12T15:45:24Z",
+  "pushedAt": "2026-10-12T15:47:47Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -92,7 +92,7 @@
     },
     "devDependencies": {
       "@anthropic-ai/claude-agent-sdk": "^0.3.220",
-      "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-11",
+      "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-12",
       "@testing-library/dom": "10.4.2",
       "@testing-library/react": "16.3.3",
       "@types/node": "24.19.1",
@@ -318,5 +318,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-12T07:20:03.537Z"
+  "lastScanned": "2026-10-12T16:48:48.798Z"
 }
