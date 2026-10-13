@@ -202,8 +202,8 @@
     "repoName": "freelens-fluxcd-extension",
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
-    "stars": 128,
-    "updatedAt": "2026-10-12T09:48:13Z",
+    "stars": 129,
+    "updatedAt": "2026-10-13T12:28:00Z",
     "latestVersion": "v5.3.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -390,8 +390,8 @@
     "fullName": "MrYoda/freelens-product-navigation-extension",
     "description": "Product-oriented navigation for Freelens",
     "stars": 0,
-    "updatedAt": "2026-10-12T11:53:08Z",
-    "latestVersion": "0.3.3",
+    "updatedAt": "2026-10-13T18:02:48Z",
+    "latestVersion": "0.3.4",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -489,7 +489,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 2,
-    "updatedAt": "2026-10-13T10:55:18Z",
+    "updatedAt": "2026-10-13T13:46:20Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
