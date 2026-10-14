@@ -347,9 +347,9 @@
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
     "updatedAt": "2026-04-01T11:03:09Z",
-    "latestVersion": "v0.1.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/kubeswift-extension",
