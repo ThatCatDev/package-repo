@@ -27,7 +27,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 37,
-    "updatedAt": "2026-10-13T18:58:34Z",
+    "updatedAt": "2026-10-14T11:12:55Z",
     "latestVersion": "v0.7.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -126,7 +126,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-10-12T22:31:33Z",
+    "updatedAt": "2026-10-14T11:10:33Z",
     "latestVersion": "v1.10.2",
     "hasReleases": true,
     "hasTarFiles": true
@@ -203,7 +203,7 @@
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
     "stars": 129,
-    "updatedAt": "2026-10-13T12:28:00Z",
+    "updatedAt": "2026-10-14T11:12:59Z",
     "latestVersion": "v5.3.1",
     "hasReleases": true,
     "hasTarFiles": true
@@ -214,7 +214,7 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 2,
-    "updatedAt": "2026-10-12T20:20:29Z",
+    "updatedAt": "2026-10-14T11:13:03Z",
     "latestVersion": "v0.2.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -236,7 +236,7 @@
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
     "stars": 15,
-    "updatedAt": "2026-10-11T18:26:53Z",
+    "updatedAt": "2026-10-14T11:13:07Z",
     "latestVersion": "v0.2.2",
     "hasReleases": true,
     "hasTarFiles": true
@@ -347,9 +347,9 @@
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
     "updatedAt": "2026-04-01T11:03:09Z",
-    "latestVersion": "0.1.2",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "latestVersion": "v0.1.2",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@freelensapp/kubeswift-extension",
