@@ -4,12 +4,12 @@
   "fullName": "freelensapp/freelens-for-claude-extension",
   "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
   "homepage": "https://github.com/freelensapp/freelens-for-claude-extension",
-  "stars": 2,
+  "stars": 3,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-07-02T19:58:37Z",
-  "updatedAt": "2026-10-14T11:13:03Z",
-  "pushedAt": "2026-10-15T10:52:22Z",
+  "updatedAt": "2026-10-15T12:55:55Z",
+  "pushedAt": "2026-10-15T15:16:06Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -318,5 +318,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-15T11:11:10.512Z"
+  "lastScanned": "2026-10-15T15:34:45.843Z"
 }
