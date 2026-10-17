@@ -8,8 +8,8 @@
   "forks": 9,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-10-17T17:36:42Z",
-  "pushedAt": "2026-10-17T18:20:52Z",
+  "updatedAt": "2026-10-17T19:46:54Z",
+  "pushedAt": "2026-10-17T19:47:00Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "2.0.0-1",
+    "version": "2.0.0-2",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -92,25 +92,25 @@
       "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
     },
     "devDependencies": {
-      "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-15",
+      "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-17",
       "@testing-library/dom": "10.4.2",
       "@testing-library/react": "16.3.3",
       "@types/node": "24.19.2",
       "@types/react": "19.3.0",
       "@types/react-dom": "19.3.0",
       "@vitejs/plugin-react": "6.1.2",
-      "electron": "43.7.11",
+      "electron": "43.8.0",
       "esbuild": "0.28.2",
-      "jsdom": "30.1.2",
+      "jsdom": "30.1.3",
       "mobx": "7.0.6",
       "mobx-react": "10.0.2",
       "playwright": "1.64.1",
       "react": "19.3.1",
       "react-dom": "19.3.1",
-      "sass-embedded": "1.105.1",
+      "sass-embedded": "1.105.2",
       "typescript": "7.0.2",
       "vite": "8.3.4",
-      "vitest": "5.0.4"
+      "vitest": "5.0.5"
     },
     "keywords": [
       "extension",
@@ -119,9 +119,65 @@
       "openlens",
       "freelens"
     ],
-    "packageManager": "pnpm@12.11.2+sha512.25a51652a196785af5f28bda6dfe8dc582ebefa4ac1d180221ce1390231c5fb76637822ea4b6e4633ce74acdcb0a77f725af11bad38177fdeddaee818a955cb9"
+    "packageManager": "pnpm@12.14.0+sha512.c18ba6d87993d3d164cb5e8948f32b2c06ee854487e06cd8d86781342fb3e5bb4634367034711e86802baa9c37bea906ce1929ad08d70884c97d801df13389a6"
   },
   "releases": [
+    {
+      "id": 416022950,
+      "tagName": "v2.0.0-2",
+      "name": "v2.0.0-2",
+      "draft": false,
+      "prerelease": true,
+      "createdAt": "2026-10-17T19:46:49Z",
+      "publishedAt": "2026-10-17T19:47:38Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-example-extension-2.0.0-2-spdx.json",
+          "size": 197583,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2-spdx.json",
+          "createdAt": "2026-10-17T19:47:39Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.0-2-spdx.json.sha256",
+          "size": 114,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2-spdx.json.sha256",
+          "createdAt": "2026-10-17T19:47:39Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.0-2.tgz",
+          "size": 21766,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2.tgz",
+          "createdAt": "2026-10-17T19:47:39Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.0-2.tgz.sha256",
+          "size": 108,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2.tgz.sha256",
+          "createdAt": "2026-10-17T19:47:39Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 412676950,
       "tagName": "v2.0.0-1",
@@ -735,6 +791,13 @@
   ],
   "tags": [
     {
+      "name": "v2.0.0-2",
+      "commitSha": "428be60cd8093c7ba4859c474c6735eccf2b3852",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/428be60cd8093c7ba4859c474c6735eccf2b3852",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/zipball/refs/tags/v2.0.0-2",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/tarball/refs/tags/v2.0.0-2"
+    },
+    {
       "name": "v2.0.0-1",
       "commitSha": "40955fd6b042966bbee97d4ad05c6df6dd21b928",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/40955fd6b042966bbee97d4ad05c6df6dd21b928",
@@ -877,6 +940,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.0.0-2",
+      "name": "v2.0.0-2",
+      "publishedAt": "2026-10-17T19:47:38Z",
+      "isPrerelease": true,
+      "notes": null
+    },
+    {
       "version": "v2.0.0-1",
       "name": "v2.0.0-1",
       "publishedAt": "2026-10-14T12:12:16Z",
@@ -1018,6 +1088,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-example-extension-2.0.0-2.tgz",
+      "releaseTag": "v2.0.0-2",
+      "releaseName": "v2.0.0-2",
+      "size": 21766,
+      "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-10-17T19:47:39Z"
+    },
     {
       "filename": "freelensapp-example-extension-2.0.0-1.tgz",
       "releaseTag": "v2.0.0-1",
@@ -1275,7 +1355,7 @@
       }
     ]
   },
-  "totalReleases": 20,
+  "totalReleases": 21,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-17T18:24:30.635Z"
+  "lastScanned": "2026-10-17T20:45:50.749Z"
 }
