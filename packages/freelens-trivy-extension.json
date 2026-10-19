@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-28T10:08:25Z",
-  "updatedAt": "2026-10-03T07:31:23Z",
-  "pushedAt": "2026-10-03T07:31:18Z",
+  "updatedAt": "2026-10-19T20:46:50Z",
+  "pushedAt": "2026-10-19T20:46:46Z",
   "defaultBranch": "dev",
   "topics": [],
   "license": null,
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/trivy-extension",
-    "version": "0.0.1-63",
+    "version": "0.0.1-180",
     "description": "Trivy Operator Freelens extension",
     "repository": {
       "type": "git",
@@ -112,7 +112,10 @@
       "openlens",
       "freelens"
     ],
-    "packageManager": "pnpm@12.6.0+sha512.3ef68f951cb111ac204b4a5a16f0b2ddf0da56a96e0413e81d855d9f0b55ef926714709028e1cd00c405c2c5fb7b9e8ec4dc46777c805d0373c2f2ff00fd20ec"
+    "packageManager": "pnpm@12.6.0+sha512.3ef68f951cb111ac204b4a5a16f0b2ddf0da56a96e0413e81d855d9f0b55ef926714709028e1cd00c405c2c5fb7b9e8ec4dc46777c805d0373c2f2ff00fd20ec",
+    "dependencies": {
+      "@ood/singleton": "^1.1.2"
+    }
   },
   "releases": [],
   "tags": [],
@@ -121,5 +124,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-10-19T17:32:14.440Z"
+  "lastScanned": "2026-10-19T21:42:50.072Z"
 }
