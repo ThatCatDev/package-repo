@@ -16,7 +16,7 @@
     "fullName": "freelensapp/freelens-agentbridge-extension",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 3,
-    "updatedAt": "2026-10-15T19:40:23Z",
+    "updatedAt": "2026-10-20T15:03:06Z",
     "latestVersion": "v1.3.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -302,8 +302,8 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-10-19T14:29:25Z",
-    "latestVersion": "v1.4.2",
+    "updatedAt": "2026-10-20T15:56:31Z",
+    "latestVersion": "v1.4.3",
     "hasReleases": true,
     "hasTarFiles": true
   },
