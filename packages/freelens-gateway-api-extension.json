@@ -160,7 +160,7 @@
         {
           "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
           "size": 58460,
-          "downloadCount": 79,
+          "downloadCount": 80,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
           "createdAt": "2026-07-10T10:21:45Z",
@@ -170,7 +170,7 @@
         {
           "name": "freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
           "size": 110,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
           "createdAt": "2026-07-10T10:21:45Z",
@@ -355,7 +355,7 @@
       "releaseName": "v0.2.2",
       "size": 58460,
       "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
-      "downloadCount": 79,
+      "downloadCount": 80,
       "type": "tar.gz",
       "createdAt": "2026-07-10T10:21:45Z"
     },
@@ -427,7 +427,7 @@
       {
         "name": "freelensapp-gateway-api-extension-0.2.2.tgz",
         "size": 58460,
-        "downloadCount": 79,
+        "downloadCount": 80,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz",
         "createdAt": "2026-07-10T10:21:45Z",
@@ -437,7 +437,7 @@
       {
         "name": "freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
         "size": 110,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v0.2.2/freelensapp-gateway-api-extension-0.2.2.tgz.sha256",
         "createdAt": "2026-07-10T10:21:45Z",
@@ -448,5 +448,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-22T05:16:05.546Z"
+  "lastScanned": "2026-10-22T10:14:39.525Z"
 }
