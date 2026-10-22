@@ -61,9 +61,9 @@
     "description": "Freelens extension for CloudNativePG",
     "stars": 4,
     "updatedAt": "2026-10-04T20:30:59Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@oguzhan-yilmaz/freelens-debug-extension",
@@ -149,9 +149,9 @@
     "description": "A Freelens extension for package management",
     "stars": 0,
     "updatedAt": "2025-11-24T03:49:51Z",
-    "latestVersion": "v1.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-extension-k8s-advisor",
@@ -204,9 +204,9 @@
     "description": "Freelens extension for FluxCD",
     "stars": 129,
     "updatedAt": "2026-10-15T22:10:53Z",
-    "latestVersion": "v5.3.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "6.0.0-0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/for-claude-extension",
@@ -270,9 +270,9 @@
     "description": "Hotkey helpers for Freelens",
     "stars": 0,
     "updatedAt": "2026-08-01T09:00:23Z",
-    "latestVersion": "v0.1.1",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.1",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-istio-extension",
@@ -281,9 +281,9 @@
     "description": "Freelens extension for Istio service mesh visibility",
     "stars": 0,
     "updatedAt": "2026-05-07T17:50:51Z",
-    "latestVersion": "v0.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@mike-callahan/jobset-extension",
@@ -292,9 +292,9 @@
     "description": "Extension that adds information on sigs.k8s.io JobSets",
     "stars": 3,
     "updatedAt": "2026-02-27T07:31:08Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0-0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/kafka-extension",
@@ -325,9 +325,9 @@
     "description": "Freelens extension for Kargo",
     "stars": 0,
     "updatedAt": "2026-04-01T07:17:18Z",
-    "latestVersion": "v0.1.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-karpenter-extension",
@@ -347,9 +347,9 @@
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
     "updatedAt": "2026-04-01T11:03:09Z",
-    "latestVersion": "v0.1.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.1.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "@freelensapp/kubeswift-extension",
@@ -402,9 +402,9 @@
     "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
     "stars": 1,
     "updatedAt": "2026-10-21T14:13:16Z",
-    "latestVersion": "v0.2.2",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "0.2.2",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-resource-filter-extension",
@@ -446,9 +446,9 @@
     "description": "Sveltos Freelens extension",
     "stars": 5,
     "updatedAt": "2026-05-22T02:12:28Z",
-    "latestVersion": "v1.0.0",
-    "hasReleases": true,
-    "hasTarFiles": true
+    "latestVersion": "1.0.0",
+    "hasReleases": false,
+    "hasTarFiles": false
   },
   {
     "name": "freelens-teleport-extension",
