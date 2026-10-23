@@ -176,7 +176,7 @@
         {
           "name": "freelensapp-kubeswift-extension-0.1.0.tgz",
           "size": 766405,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
           "createdAt": "2026-09-04T17:31:06Z",
@@ -186,7 +186,7 @@
         {
           "name": "freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
           "size": 108,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
           "createdAt": "2026-09-04T17:31:06Z",
@@ -221,7 +221,7 @@
       "releaseName": "v0.1.0",
       "size": 766405,
       "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2026-09-04T17:31:06Z"
     }
@@ -263,7 +263,7 @@
       {
         "name": "freelensapp-kubeswift-extension-0.1.0.tgz",
         "size": 766405,
-        "downloadCount": 2,
+        "downloadCount": 3,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
         "createdAt": "2026-09-04T17:31:06Z",
@@ -273,7 +273,7 @@
       {
         "name": "freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
         "size": 108,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
         "createdAt": "2026-09-04T17:31:06Z",
@@ -284,5 +284,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-23T19:06:48.526Z"
+  "lastScanned": "2026-10-23T22:02:40.149Z"
 }
