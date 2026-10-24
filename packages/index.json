@@ -126,10 +126,10 @@
     "fullName": "nidiodolfini/freelens-eso-extension",
     "description": "Freelens extension for External Secrets Operator",
     "stars": 0,
-    "updatedAt": "2026-10-24T13:03:29Z",
-    "latestVersion": "1.0.4",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-10-24T14:55:39Z",
+    "latestVersion": "v1.0.5",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@freelensapp/example-extension",
@@ -357,10 +357,10 @@
     "fullName": "nidiodolfini/freelens-keda-extension",
     "description": "Freelens extension for KEDA",
     "stars": 0,
-    "updatedAt": "2026-10-24T11:55:41Z",
-    "latestVersion": "1.0.2",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-10-24T14:36:29Z",
+    "latestVersion": "v1.0.3",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "@freelensapp/kubeblocks-extension",
