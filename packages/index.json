@@ -121,6 +121,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "freelens-eso-extension",
+    "repoName": "freelens-eso-extension",
+    "fullName": "nidiodolfini/freelens-eso-extension",
+    "description": "Freelens extension for External Secrets Operator",
+    "stars": 0,
+    "updatedAt": "2026-10-24T13:03:29Z",
+    "latestVersion": "1.0.4",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@freelensapp/example-extension",
     "repoName": "freelens-example-extension",
     "fullName": "freelensapp/freelens-example-extension",
@@ -337,6 +348,17 @@
     "stars": 0,
     "updatedAt": "2026-03-27T16:15:22Z",
     "latestVersion": "0.1.0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
+    "name": "freelens-keda-extension",
+    "repoName": "freelens-keda-extension",
+    "fullName": "nidiodolfini/freelens-keda-extension",
+    "description": "Freelens extension for KEDA",
+    "stars": 0,
+    "updatedAt": "2026-10-24T11:55:41Z",
+    "latestVersion": "1.0.2",
     "hasReleases": false,
     "hasTarFiles": false
   },
