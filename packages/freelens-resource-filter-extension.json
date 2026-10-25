@@ -4,11 +4,11 @@
   "fullName": "mojish/freelens-resource-filter-extension",
   "description": "Freelens extension: field-based filtering for any Kubernetes resource, including CRDs",
   "homepage": "https://github.com/mojish/freelens-resource-filter-extension",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-09T11:49:55Z",
-  "updatedAt": "2026-09-20T18:52:06Z",
+  "updatedAt": "2026-10-25T13:01:18Z",
   "pushedAt": "2026-09-20T18:52:03Z",
   "defaultBranch": "master",
   "topics": [],
@@ -229,5 +229,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-25T11:47:50.224Z"
+  "lastScanned": "2026-10-25T15:04:23.118Z"
 }
