@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-09T11:49:55Z",
-  "updatedAt": "2026-10-25T13:01:18Z",
-  "pushedAt": "2026-09-20T18:52:03Z",
+  "updatedAt": "2026-10-26T15:35:25Z",
+  "pushedAt": "2026-10-26T15:41:01Z",
   "defaultBranch": "master",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "freelens-resource-filter-extension",
-    "version": "0.3.3",
+    "version": "0.4.0",
     "description": "Freelens extension: field-based filtering for any Kubernetes resource, including CRDs",
     "author": {
       "name": "Sotoon Delivery"
@@ -80,7 +80,8 @@
       "shx": "^0.4.0",
       "typescript": "5.9.3",
       "vite": "^8.1.2",
-      "vitest": "^5.0.0"
+      "vitest": "^5.0.0",
+      "yaml": "2.9.1"
     },
     "keywords": [
       "extension",
@@ -94,6 +95,32 @@
     ]
   },
   "releases": [
+    {
+      "id": 424439780,
+      "tagName": "v0.4.0",
+      "name": "v0.4.0 — YAML downloads and filtering reliability",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-26T15:40:59Z",
+      "publishedAt": "2026-10-26T15:41:57Z",
+      "body": "## What's new\n\n- Download matching resources as YAML in yq mode or JSON in jq mode, including namespace scope and selected output fields.\n- Keep the resource picker at its current scroll position while the page refreshes.\n- Refresh counts, field suggestions and age filters as resources change; switch kinds with the correct resource subscription.\n- Support quoted map keys, including dotted labels and literal `*` / `?` keys. Apply manually entered fields even when they are absent from the sampled catalog.\n- Preserve existence filters, quoted AND/OR values and escaped strings in the query bar; reject malformed queries without changing active filters.\n- Fix yq/jq traversal, comparisons, timestamp handling and wildcard projections. Commands now request the selected API version.\n- Preserve removed favorites during preference migration and improve pinned columns and local updates.\n\n## Install or update\n\nInstall `freelens-resource-filter-extension@0.4.0` in Freelens, or download the attached `.tgz` and install it from Extensions. Restart Freelens after updating. Source-checkout users should quit Freelens completely before running `./update-installed.sh`.\n\nRequires Freelens 1.10+. The yq command dialect requires mikefarah/yq v4; jq mode uses JSON. Resource Filter favorites remain separate from the Freelens sidebar favorites.\n\n## Validation\n\n`pnpm verify` passed locally: 176 tests, with no skips, plus type-check, build and pack. This includes real yq/jq execution, Chromium regressions and updater fixtures. Packaged YAML/JSON downloads and the original menu-scrolling scenario were also verified.\n\nGitHub CI and the release workflow also passed. The published npm and GitHub archives were checked and contain identical runtime files and equivalent package metadata.\n\n[Full changelog](https://github.com/mojish/freelens-resource-filter-extension/compare/v0.3.3...v0.4.0)\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelens-resource-filter-extension-0.4.0.tgz",
+          "size": 180799,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.4.0/freelens-resource-filter-extension-0.4.0.tgz",
+          "createdAt": "2026-10-26T15:41:56Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 392537635,
       "tagName": "v0.3.3",
@@ -149,6 +176,13 @@
   ],
   "tags": [
     {
+      "name": "v0.4.0",
+      "commitSha": "e4f21e6ba5a93ad277243b922fffd6534392b280",
+      "commitUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/commits/e4f21e6ba5a93ad277243b922fffd6534392b280",
+      "zipballUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/zipball/refs/tags/v0.4.0",
+      "tarballUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/tarball/refs/tags/v0.4.0"
+    },
+    {
       "name": "v0.3.3",
       "commitSha": "5dde3b5c84ad2e79ee3badf6913736e5dd5bb351",
       "commitUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/commits/5dde3b5c84ad2e79ee3badf6913736e5dd5bb351",
@@ -165,6 +199,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.4.0",
+      "name": "v0.4.0 — YAML downloads and filtering reliability",
+      "publishedAt": "2026-10-26T15:41:57Z",
+      "isPrerelease": false,
+      "notes": "## What's new\n\n- Download matching resources as YAML in yq mode or JSON in jq mode, including namespace scope and selected output fields.\n- Keep the resource picker at its current scroll position while the page refreshes.\n- Refresh counts, field suggestions and age filters as resources change; switch kinds with the correct resource subscription.\n- Support quoted map keys, including dotted labels and literal `*` / `?` keys. Apply manually entered fields even when they are absent from the sampled catalog.\n- Preserve existence filters, quoted AND/OR values and escaped strings in the query bar; reject malformed queries without changing active filters.\n- Fix yq/jq traversal, comparisons, timestamp handling and wildcard projections. Commands now request the selected API version.\n- Preserve removed favorites during preference migration and improve pinned columns and local updates.\n\n## Install or update\n\nInstall `freelens-resource-filter-extension@0.4.0` in Freelens, or download the attached `.tgz` and install it from Extensions. Restart Freelens after updating. Source-checkout users should quit Freelens completely before running `./update-installed.sh`.\n\nRequires Freelens 1.10+. The yq command dialect requires mikefarah/yq v4; jq mode uses JSON. Resource Filter favorites remain separate from the Freelens sidebar favorites.\n\n## Validation\n\n`pnpm verify` passed locally: 176 tests, with no skips, plus type-check, build and pack. This includes real yq/jq execution, Chromium regressions and updater fixtures. Packaged YAML/JSON downloads and the original menu-scrolling scenario were also verified.\n\nGitHub CI and the release workflow also passed. The published npm and GitHub archives were checked and contain identical runtime files and equivalent package metadata.\n\n[Full changelog](https://github.com/mojish/freelens-resource-filter-extension/compare/v0.3.3...v0.4.0)\n"
+    },
+    {
       "version": "v0.3.3",
       "name": "v0.3.3",
       "publishedAt": "2026-09-20T18:51:36Z",
@@ -180,6 +221,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelens-resource-filter-extension-0.4.0.tgz",
+      "releaseTag": "v0.4.0",
+      "releaseName": "v0.4.0 — YAML downloads and filtering reliability",
+      "size": 180799,
+      "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.4.0/freelens-resource-filter-extension-0.4.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-26T15:41:56Z"
+    },
     {
       "filename": "freelens-resource-filter-extension-0.3.3.tgz",
       "releaseTag": "v0.3.3",
@@ -202,32 +253,32 @@
     }
   ],
   "latestRelease": {
-    "id": 392537635,
-    "tagName": "v0.3.3",
-    "name": "v0.3.3",
+    "id": 424439780,
+    "tagName": "v0.4.0",
+    "name": "v0.4.0 — YAML downloads and filtering reliability",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-20T18:50:42Z",
-    "publishedAt": "2026-09-20T18:51:36Z",
-    "body": "**Full Changelog**: https://github.com/mojish/freelens-resource-filter-extension/compare/v0.2.0...v0.3.3",
+    "createdAt": "2026-10-26T15:40:59Z",
+    "publishedAt": "2026-10-26T15:41:57Z",
+    "body": "## What's new\n\n- Download matching resources as YAML in yq mode or JSON in jq mode, including namespace scope and selected output fields.\n- Keep the resource picker at its current scroll position while the page refreshes.\n- Refresh counts, field suggestions and age filters as resources change; switch kinds with the correct resource subscription.\n- Support quoted map keys, including dotted labels and literal `*` / `?` keys. Apply manually entered fields even when they are absent from the sampled catalog.\n- Preserve existence filters, quoted AND/OR values and escaped strings in the query bar; reject malformed queries without changing active filters.\n- Fix yq/jq traversal, comparisons, timestamp handling and wildcard projections. Commands now request the selected API version.\n- Preserve removed favorites during preference migration and improve pinned columns and local updates.\n\n## Install or update\n\nInstall `freelens-resource-filter-extension@0.4.0` in Freelens, or download the attached `.tgz` and install it from Extensions. Restart Freelens after updating. Source-checkout users should quit Freelens completely before running `./update-installed.sh`.\n\nRequires Freelens 1.10+. The yq command dialect requires mikefarah/yq v4; jq mode uses JSON. Resource Filter favorites remain separate from the Freelens sidebar favorites.\n\n## Validation\n\n`pnpm verify` passed locally: 176 tests, with no skips, plus type-check, build and pack. This includes real yq/jq execution, Chromium regressions and updater fixtures. Packaged YAML/JSON downloads and the original menu-scrolling scenario were also verified.\n\nGitHub CI and the release workflow also passed. The published npm and GitHub archives were checked and contain identical runtime files and equivalent package metadata.\n\n[Full changelog](https://github.com/mojish/freelens-resource-filter-extension/compare/v0.3.3...v0.4.0)\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelens-resource-filter-extension-0.3.3.tgz",
-        "size": 81167,
-        "downloadCount": 0,
+        "name": "freelens-resource-filter-extension-0.4.0.tgz",
+        "size": 180799,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.3.3/freelens-resource-filter-extension-0.3.3.tgz",
-        "createdAt": "2026-09-20T18:51:36Z",
+        "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.4.0/freelens-resource-filter-extension-0.4.0.tgz",
+        "createdAt": "2026-10-26T15:41:56Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-26T12:33:31.286Z"
+  "lastScanned": "2026-10-26T18:50:27.666Z"
 }
