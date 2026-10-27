@@ -114,8 +114,8 @@
     "repoName": "freelens-duplicate-extension",
     "fullName": "omarluq/freelens-duplicate-extension",
     "description": "Create duplicate debug pods from freelens",
-    "stars": 5,
-    "updatedAt": "2026-02-27T07:31:04Z",
+    "stars": 6,
+    "updatedAt": "2026-10-27T14:32:31Z",
     "latestVersion": "1.0.0",
     "hasReleases": false,
     "hasTarFiles": false
@@ -264,13 +264,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "@freelensapp/gpu-extension",
+    "name": "@tal-naeh/freelens-gpu-extension",
     "repoName": "freelens-gpu-extension",
-    "fullName": "freelensapp/freelens-gpu-extension",
+    "fullName": "Tal-Naeh/freelens-gpu-extension",
     "description": "Freelens extension for GPUs — per-pod and per-device GPU utilisation, VRAM and power from dcgm-exporter or a per-process exporter, zero cluster footprint",
     "stars": 3,
-    "updatedAt": "2026-10-12T08:48:25Z",
-    "latestVersion": "v0.9.0",
+    "updatedAt": "2026-10-02T13:16:50Z",
+    "latestVersion": "v0.7.1",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -313,7 +313,7 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-10-20T15:56:31Z",
+    "updatedAt": "2026-10-27T11:51:58Z",
     "latestVersion": "v1.4.3",
     "hasReleases": true,
     "hasTarFiles": true
@@ -418,13 +418,13 @@
     "hasTarFiles": false
   },
   {
-    "name": "@freelensapp/rabbitmq-extension",
+    "name": "@tal-naeh/freelens-rabbitmq-extension",
     "repoName": "freelens-rabbitmq-extension",
-    "fullName": "freelensapp/freelens-rabbitmq-extension",
+    "fullName": "Tal-Naeh/freelens-rabbitmq-extension",
     "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
-    "stars": 4,
-    "updatedAt": "2026-10-06T09:52:45Z",
-    "latestVersion": "v0.4.0",
+    "stars": 1,
+    "updatedAt": "2026-10-21T14:13:16Z",
+    "latestVersion": "v0.2.2",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -511,7 +511,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 2,
-    "updatedAt": "2026-10-26T20:17:52Z",
+    "updatedAt": "2026-10-27T16:06:36Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
