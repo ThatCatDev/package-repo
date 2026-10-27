@@ -1,35 +1,43 @@
 {
-  "name": "@tal-naeh/freelens-rabbitmq-extension",
+  "name": "@freelensapp/rabbitmq-extension",
   "repoName": "freelens-rabbitmq-extension",
-  "fullName": "Tal-Naeh/freelens-rabbitmq-extension",
+  "fullName": "freelensapp/freelens-rabbitmq-extension",
   "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
-  "homepage": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension",
-  "stars": 1,
-  "forks": 0,
+  "homepage": "https://freelens.app",
+  "stars": 4,
+  "forks": 1,
   "language": "TypeScript",
-  "createdAt": "2026-09-08T06:09:35Z",
-  "updatedAt": "2026-10-21T14:13:16Z",
-  "pushedAt": "2026-09-20T12:24:38Z",
+  "createdAt": "2026-09-18T09:21:13Z",
+  "updatedAt": "2026-10-06T09:52:45Z",
+  "pushedAt": "2026-10-27T11:33:11Z",
   "defaultBranch": "main",
-  "topics": [],
+  "topics": [
+    "amqp",
+    "freelens",
+    "kubernetes",
+    "message-broker",
+    "messaging",
+    "rabbitmq",
+    "rabbitmq-cluster-operator"
+  ],
   "license": "MIT",
   "owner": {
-    "login": "Tal-Naeh",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/99549310?v=4",
-    "url": "https://github.com/Tal-Naeh"
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
   },
   "repository": {
-    "url": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension",
-    "cloneUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension.git",
-    "sshUrl": "git@github.com:Tal-Naeh/freelens-rabbitmq-extension.git"
+    "url": "https://github.com/freelensapp/freelens-rabbitmq-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-rabbitmq-extension.git"
   },
   "packageJson": {
-    "name": "@tal-naeh/freelens-rabbitmq-extension",
-    "version": "0.2.2",
+    "name": "@freelensapp/rabbitmq-extension",
+    "version": "0.4.0",
     "description": "Freelens extension for RabbitMQ — cluster-native queue, exchange, connection and message inspection",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/Tal-Naeh/freelens-rabbitmq-extension.git",
+      "url": "git+https://github.com/freelensapp/freelens-rabbitmq-extension.git",
       "directory": "."
     },
     "main": "out/main/index.js",
@@ -52,16 +60,23 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "pnpm dlx @biomejs/biome@2.5.1",
+      "biome": "pnpm dlx @biomejs/biome@2.5.14",
       "biome:check": "pnpm biome check",
       "biome:fix": "pnpm biome check --fix",
+      "biome:migrate": "pnpm biome migrate --write",
+      "trunk": "pnpm dlx @trunkio/launcher@1.3.4",
+      "trunk:check": "pnpm trunk check",
+      "trunk:check:all": "pnpm trunk check --all",
+      "trunk:fix": "pnpm trunk check --fix",
+      "trunk:fix:all": "pnpm trunk check --fix --all",
       "lint": "pnpm lint:check",
       "lint:check": "pnpm biome:check",
       "lint:fix": "pnpm biome:fix",
-      "knip": "pnpm dlx knip@6.15.0 --dependencies --no-gitignore",
+      "knip": "pnpm dlx knip@6.38.0 --dependencies --no-gitignore",
       "knip:check": "pnpm clean:out && pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "pnpm knip",
       "knip:production": "pnpm knip --production --strict",
+      "test": "pnpm test:unit",
       "test:unit": "vitest run",
       "smoke:main": "node scripts/smoke-main.cjs",
       "type:check": "tsc --noEmit -p tsconfig.json --composite false",
@@ -73,32 +88,35 @@
       "bump-version": "pnpm version --no-commit-hooks --no-git-tag-version",
       "pack:dev": "pnpm bump-version prerelease && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
       "clean": "pnpm clean:out",
+      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
       "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
       "clean:out": "pnpm dlx shx@0.4.0 rm -rf out",
       "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
-      "clean:all": "pnpm \"/^clean:(node_modules|out|tgz)\\$/\"",
+      "clean:all": "pnpm \"/^clean:(dts|node_modules|out|tgz)\\$/\"",
       "rabbitmq:up": "docker compose -f test/e2e/docker-compose.yml up -d --wait",
       "rabbitmq:down": "docker compose -f test/e2e/docker-compose.yml down -v",
-      "itest": "node --import tsx test/e2e/integration.local.ts"
+      "itest": "node --import tsx test/e2e/integration.local.ts",
+      "postupdate": "pnpm biome:migrate"
     },
     "devDependencies": {
       "@electron-toolkit/tsconfig": "^2.0.0",
+      "@freelensapp/core": "1.10.3",
       "@freelensapp/extensions": "^1.10.3",
       "@kubernetes/client-node": "^1.4.0",
       "@types/node": "~24.12.4",
-      "@types/react": "^17.0.91",
-      "@vitejs/plugin-react": "^6.0.1",
+      "@types/react": "^17.0.93",
+      "@vitejs/plugin-react": "^6.1.1",
       "electron-vite": "^5.0.0",
       "encoding": "^0.1.13",
       "jsdom": "^26.1.0",
       "react": "17.0.2",
       "react-dom": "17.0.2",
-      "sass": "^1.99.0",
-      "tsx": "^4.19.2",
-      "typescript": "5.9.3",
-      "vite": "^8.0.16",
-      "vite-plugin-sass-dts": "^1.3.37",
-      "vitest": "^4.1.8"
+      "sass": "^1.105.0",
+      "tsx": "^4.23.15",
+      "typescript": "7.0.2",
+      "vite": "^8.3.1",
+      "vite-plugin-sass-dts": "^1.3.39",
+      "vitest": "^4.1.11"
     },
     "keywords": [
       "extension",
@@ -109,43 +127,129 @@
       "rabbitmq",
       "amqp"
     ],
-    "packageManager": "pnpm@10.33.4"
+    "packageManager": "pnpm@10.34.5"
   },
   "releases": [
     {
-      "id": 384668725,
-      "tagName": "v0.2.2",
-      "name": "v0.2.2",
+      "id": 396560024,
+      "tagName": "v0.4.0",
+      "name": "v0.4.0",
       "draft": false,
       "prerelease": false,
-      "createdAt": "2026-09-08T11:22:32Z",
-      "publishedAt": "2026-09-08T11:23:28Z",
-      "body": null,
+      "createdAt": "2026-09-25T11:45:58Z",
+      "publishedAt": "2026-09-25T11:49:13Z",
+      "body": "### Added\n\n- **Health** page: runs read-only checks against the selected cluster and lists what needs attention, critical first, each with a link to the queue, channel or node concerned. It flags nodes that are down or partitioned, memory and disk alarms and the headroom before them, file descriptors, sockets and Erlang processes near their limits, crashed or minority queues, quorum queues with offline or too few replicas (replicas on a stopped node are counted in that node's finding, not warned per queue), backlogs with no consumers (dead-letter queues reported as info, streams skipped), growing backlogs, low consumer capacity, redeliveries, channels that stay full to their prefetch with no acks for five minutes or hold unacked messages without a prefetch limit, and unroutable publishes, dropped or returned. It refreshes every 15 seconds from the overview, queues and channels endpoints the other pages already use.\n- Queue summaries carry the quorum and stream replica lists (`members`, `online`), and the overview carries the dropped unroutable rate (`drop_unroutable`) next to the returned one.\n- **Clients** tab on the Connections page: groups the connections by the workload (Deployment, StatefulSet…) or the pod that opened them, busiest first, with each client's connections, share of the total, channels, client library, traffic and the age of its oldest connection. A client that holds most of the broker's connections, such as a leaking connection pool, stands out as one row instead of thousands. Peer addresses are matched to pod IPs through the Freelens cluster connection (a pod behind a ReplicaSet is reported as its Deployment); addresses that match no pod, and loopback addresses from a service-mesh sidecar, are labelled as such. A workload row opens exactly its pods, a pod row its connections.\n- **Dead letters in the Message Inspector**: dead-letter headers (`x-death`, `x-first-death-*`) are decoded for every peeked message: the reason in plain words (rejected, expired, maxlen, delivery_limit), the queue it died in, how many times, the full history for messages that were dead-lettered more than once, and the exchange and routing key it was first published to. A summary above the messages counts them by reason and by queue, and the peeked messages can be searched (payload, routing key, properties, headers) and filtered by reason. Read-only; nothing changes on the broker.\n\n### Changed\n\n- Dependency updates via Renovate (Vite 8.3.1, sass 1.105, knip 6.38).\n\n### Fixed\n\n- The Overview **Unroutable** rate now includes publishes the broker dropped for matching no binding, not only mandatory publishes returned to the publisher; the common non-mandatory case was shown as zero.\n- The Message Inspector no longer keeps the previous queue's peeked messages when the queue drawer switches to another queue.\n- Tables that scroll sideways (a narrow window, or zoomed in) no longer cut their rows short: the row background, borders and header now continue under every column instead of stopping at the visible edge. The growing column (Name, Client...) is measured at its minimum width, so long names do not widen the rows.\n- The queue drawer refreshes live at the same interval as the Queues table, so its message counts no longer stay stale after a purge and Ready, Unacked and the rates stay current while the drawer is open (#39, #41).\n- The cluster card shows the Management API port number instead of the named tunnel port (`15672 (management)`), and the Overview **Ready** counter is highlighted only when messages are waiting and the broker has no consumers at all (#40, #42).\n\n### Install\n\nInstall or update from the Freelens **Extensions** page by npm name, `@freelensapp/rabbitmq-extension`, or download the `.tgz` below and drag it into the Freelens window. The npm package is published with provenance from this repository.\n",
       "author": {
         "login": "github-actions[bot]",
         "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
       },
       "assets": [
         {
-          "name": "tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
-          "size": 1255586,
+          "name": "freelensapp-rabbitmq-extension-0.4.0-spdx.json",
+          "size": 1743143,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0-spdx.json",
+          "createdAt": "2026-09-25T11:49:13Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.4.0-spdx.json.sha256",
+          "size": 113,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0-spdx.json.sha256",
+          "createdAt": "2026-09-25T11:49:13Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.4.0.tgz",
+          "size": 1301236,
           "downloadCount": 2,
           "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.2/tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
-          "createdAt": "2026-09-08T11:23:27Z",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0.tgz",
+          "createdAt": "2026-09-25T11:49:13Z",
           "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.4.0.tgz.sha256",
+          "size": 107,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0.tgz.sha256",
+          "createdAt": "2026-09-25T11:49:13Z",
+          "isTarGz": false,
           "isTar": false
         }
       ]
     },
     {
-      "id": 384638948,
-      "tagName": "v0.2.1",
-      "name": "v0.2.1",
+      "id": 392394613,
+      "tagName": "v0.3.1",
+      "name": "v0.3.1",
       "draft": false,
       "prerelease": false,
-      "createdAt": "2026-09-08T10:44:32Z",
-      "publishedAt": "2026-09-08T10:33:25Z",
+      "createdAt": "2026-09-20T10:27:11Z",
+      "publishedAt": "2026-09-20T10:28:13Z",
+      "body": "### Fixed\n\n- Requests through the port-forward no longer time out when an idle keep-alive socket is reused: the HTTP client now opens a fresh connection per request, because the `@kubernetes/client-node` port-forward does not close the local socket when the pod closes the tunnel (#27).\n- Discovery no longer lists the RabbitMQ Cluster Operator's own metrics Service as a cluster: Services labelled as operator components are skipped, and a Management port recognised only by its name now needs an AMQP port next to it (#25).\n- Sidebar entries keep the selected RabbitMQ cluster: the target is remembered per Kubernetes cluster in the renderer session, so Queues, Exchanges and Connections no longer fall back to the first discovered cluster when opened from the sidebar (#26).\n\n### Changed\n\n- TypeScript 7. `moduleResolution=node10` is gone, so the Freelens core typings are now pinned through `tsconfig.json` `paths` (core's `exports` map has no `types` condition); `@freelensapp/core` is a devDependency for that reason only (#21, #33).\n\n### Install\n\nInstall or update from the Freelens **Extensions** page by npm name, `@freelensapp/rabbitmq-extension`, or download the `.tgz` below and drag it into the Freelens window. The npm package is published with provenance from this repository.\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-rabbitmq-extension-0.3.1-spdx.json",
+          "size": 1742919,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.1/freelensapp-rabbitmq-extension-0.3.1-spdx.json",
+          "createdAt": "2026-09-20T10:28:12Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.3.1-spdx.json.sha256",
+          "size": 113,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.1/freelensapp-rabbitmq-extension-0.3.1-spdx.json.sha256",
+          "createdAt": "2026-09-20T10:28:13Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.3.1.tgz",
+          "size": 1258432,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.1/freelensapp-rabbitmq-extension-0.3.1.tgz",
+          "createdAt": "2026-09-20T10:28:13Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.3.1.tgz.sha256",
+          "size": 107,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.1/freelensapp-rabbitmq-extension-0.3.1.tgz.sha256",
+          "createdAt": "2026-09-20T10:28:12Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 392044411,
+      "tagName": "v0.3.0",
+      "name": "v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-09-19T11:19:06Z",
+      "publishedAt": "2026-09-19T11:20:21Z",
       "body": null,
       "author": {
         "login": "github-actions[bot]",
@@ -153,39 +257,43 @@
       },
       "assets": [
         {
-          "name": "tal-naeh-freelens-rabbitmq-extension-0.2.1.tgz",
-          "size": 1254795,
+          "name": "freelensapp-rabbitmq-extension-0.3.0-spdx.json",
+          "size": 1670083,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.0/freelensapp-rabbitmq-extension-0.3.0-spdx.json",
+          "createdAt": "2026-09-19T11:20:20Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.3.0-spdx.json.sha256",
+          "size": 113,
           "downloadCount": 0,
           "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.1/tal-naeh-freelens-rabbitmq-extension-0.2.1.tgz",
-          "createdAt": "2026-09-08T10:45:23Z",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.0/freelensapp-rabbitmq-extension-0.3.0-spdx.json.sha256",
+          "createdAt": "2026-09-19T11:20:20Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-rabbitmq-extension-0.3.0.tgz",
+          "size": 1257369,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.0/freelensapp-rabbitmq-extension-0.3.0.tgz",
+          "createdAt": "2026-09-19T11:20:20Z",
           "isTarGz": true,
           "isTar": false
-        }
-      ]
-    },
-    {
-      "id": 384604297,
-      "tagName": "v0.2.0",
-      "name": "v0.2.0",
-      "draft": false,
-      "prerelease": false,
-      "createdAt": "2026-09-08T09:39:04Z",
-      "publishedAt": "2026-09-08T09:39:52Z",
-      "body": null,
-      "author": {
-        "login": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "assets": [
+        },
         {
-          "name": "tal-naeh-freelens-rabbitmq-extension-0.2.0.tgz",
-          "size": 1255020,
-          "downloadCount": 0,
+          "name": "freelensapp-rabbitmq-extension-0.3.0.tgz.sha256",
+          "size": 107,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
-          "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.0/tal-naeh-freelens-rabbitmq-extension-0.2.0.tgz",
-          "createdAt": "2026-09-08T09:39:51Z",
-          "isTarGz": true,
+          "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.0/freelensapp-rabbitmq-extension-0.3.0.tgz.sha256",
+          "createdAt": "2026-09-19T11:20:20Z",
+          "isTarGz": false,
           "isTar": false
         }
       ]
@@ -193,109 +301,139 @@
   ],
   "tags": [
     {
-      "name": "v0.2.2",
-      "commitSha": "68f2537b147cfc6c8c13f6929a1fdb99d9df62f3",
-      "commitUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/commits/68f2537b147cfc6c8c13f6929a1fdb99d9df62f3",
-      "zipballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/zipball/refs/tags/v0.2.2",
-      "tarballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/tarball/refs/tags/v0.2.2"
+      "name": "v0.4.0",
+      "commitSha": "f1b337ee6ad3c2449234f44674f601b07698c127",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/commits/f1b337ee6ad3c2449234f44674f601b07698c127",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/zipball/refs/tags/v0.4.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/tarball/refs/tags/v0.4.0"
     },
     {
-      "name": "v0.2.1",
-      "commitSha": "36589ccf8e1f252dc6c8d57f0fff52c7e56630f9",
-      "commitUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/commits/36589ccf8e1f252dc6c8d57f0fff52c7e56630f9",
-      "zipballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/zipball/refs/tags/v0.2.1",
-      "tarballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/tarball/refs/tags/v0.2.1"
+      "name": "v0.3.1",
+      "commitSha": "9d53c06d44a0240edca5f88783dc42c01f04aed4",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/commits/9d53c06d44a0240edca5f88783dc42c01f04aed4",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/zipball/refs/tags/v0.3.1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/tarball/refs/tags/v0.3.1"
     },
     {
-      "name": "v0.2.0",
-      "commitSha": "611e0a4e7839950b46441ae923e4d17e21102449",
-      "commitUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/commits/611e0a4e7839950b46441ae923e4d17e21102449",
-      "zipballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/zipball/refs/tags/v0.2.0",
-      "tarballUrl": "https://api.github.com/repos/Tal-Naeh/freelens-rabbitmq-extension/tarball/refs/tags/v0.2.0"
+      "name": "v0.3.0",
+      "commitSha": "ff50836b48764a4cf483dd9393e8230127206859",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/commits/ff50836b48764a4cf483dd9393e8230127206859",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/zipball/refs/tags/v0.3.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-rabbitmq-extension/tarball/refs/tags/v0.3.0"
     }
   ],
   "versionHistory": [
     {
-      "version": "v0.2.2",
-      "name": "v0.2.2",
-      "publishedAt": "2026-09-08T11:23:28Z",
+      "version": "v0.4.0",
+      "name": "v0.4.0",
+      "publishedAt": "2026-09-25T11:49:13Z",
       "isPrerelease": false,
-      "notes": null
+      "notes": "### Added\n\n- **Health** page: runs read-only checks against the selected cluster and lists what needs attention, critical first, each with a link to the queue, channel or node concerned. It flags nodes that are down or partitioned, memory and disk alarms and the headroom before them, file descriptors, sockets and Erlang processes near their limits, crashed or minority queues, quorum queues with offline or too few replicas (replicas on a stopped node are counted in that node's finding, not warned per queue), backlogs with no consumers (dead-letter queues reported as info, streams skipped), growing backlogs, low consumer capacity, redeliveries, channels that stay full to their prefetch with no acks for five minutes or hold unacked messages without a prefetch limit, and unroutable publishes, dropped or returned. It refreshes every 15 seconds from the overview, queues and channels endpoints the other pages already use.\n- Queue summaries carry the quorum and stream replica lists (`members`, `online`), and the overview carries the dropped unroutable rate (`drop_unroutable`) next to the returned one.\n- **Clients** tab on the Connections page: groups the connections by the workload (Deployment, StatefulSet…) or the pod that opened them, busiest first, with each client's connections, share of the total, channels, client library, traffic and the age of its oldest connection. A client that holds most of the broker's connections, such as a leaking connection pool, stands out as one row instead of thousands. Peer addresses are matched to pod IPs through the Freelens cluster connection (a pod behind a ReplicaSet is reported as its Deployment); addresses that match no pod, and loopback addresses from a service-mesh sidecar, are labelled as such. A workload row opens exactly its pods, a pod row its connections.\n- **Dead letters in the Message Inspector**: dead-letter headers (`x-death`, `x-first-death-*`) are decoded for every peeked message: the reason in plain words (rejected, expired, maxlen, delivery_limit), the queue it died in, how many times, the full history for messages that were dead-lettered more than once, and the exchange and routing key it was first published to. A summary above the messages counts them by reason and by queue, and the peeked messages can be searched (payload, routing key, properties, headers) and filtered by reason. Read-only; nothing changes on the broker.\n\n### Changed\n\n- Dependency updates via Renovate (Vite 8.3.1, sass 1.105, knip 6.38).\n\n### Fixed\n\n- The Overview **Unroutable** rate now includes publishes the broker dropped for matching no binding, not only mandatory publishes returned to the publisher; the common non-mandatory case was shown as zero.\n- The Message Inspector no longer keeps the previous queue's peeked messages when the queue drawer switches to another queue.\n- Tables that scroll sideways (a narrow window, or zoomed in) no longer cut their rows short: the row background, borders and header now continue under every column instead of stopping at the visible edge. The growing column (Name, Client...) is measured at its minimum width, so long names do not widen the rows.\n- The queue drawer refreshes live at the same interval as the Queues table, so its message counts no longer stay stale after a purge and Ready, Unacked and the rates stay current while the drawer is open (#39, #41).\n- The cluster card shows the Management API port number instead of the named tunnel port (`15672 (management)`), and the Overview **Ready** counter is highlighted only when messages are waiting and the broker has no consumers at all (#40, #42).\n\n### Install\n\nInstall or update from the Freelens **Extensions** page by npm name, `@freelensapp/rabbitmq-extension`, or download the `.tgz` below and drag it into the Freelens window. The npm package is published with provenance from this repository.\n"
     },
     {
-      "version": "v0.2.1",
-      "name": "v0.2.1",
-      "publishedAt": "2026-09-08T10:33:25Z",
+      "version": "v0.3.1",
+      "name": "v0.3.1",
+      "publishedAt": "2026-09-20T10:28:13Z",
       "isPrerelease": false,
-      "notes": null
+      "notes": "### Fixed\n\n- Requests through the port-forward no longer time out when an idle keep-alive socket is reused: the HTTP client now opens a fresh connection per request, because the `@kubernetes/client-node` port-forward does not close the local socket when the pod closes the tunnel (#27).\n- Discovery no longer lists the RabbitMQ Cluster Operator's own metrics Service as a cluster: Services labelled as operator components are skipped, and a Management port recognised only by its name now needs an AMQP port next to it (#25).\n- Sidebar entries keep the selected RabbitMQ cluster: the target is remembered per Kubernetes cluster in the renderer session, so Queues, Exchanges and Connections no longer fall back to the first discovered cluster when opened from the sidebar (#26).\n\n### Changed\n\n- TypeScript 7. `moduleResolution=node10` is gone, so the Freelens core typings are now pinned through `tsconfig.json` `paths` (core's `exports` map has no `types` condition); `@freelensapp/core` is a devDependency for that reason only (#21, #33).\n\n### Install\n\nInstall or update from the Freelens **Extensions** page by npm name, `@freelensapp/rabbitmq-extension`, or download the `.tgz` below and drag it into the Freelens window. The npm package is published with provenance from this repository.\n"
     },
     {
-      "version": "v0.2.0",
-      "name": "v0.2.0",
-      "publishedAt": "2026-09-08T09:39:52Z",
+      "version": "v0.3.0",
+      "name": "v0.3.0",
+      "publishedAt": "2026-09-19T11:20:21Z",
       "isPrerelease": false,
       "notes": null
     }
   ],
   "tarFiles": [
     {
-      "filename": "tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
-      "releaseTag": "v0.2.2",
-      "releaseName": "v0.2.2",
-      "size": 1255586,
-      "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.2/tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
+      "filename": "freelensapp-rabbitmq-extension-0.4.0.tgz",
+      "releaseTag": "v0.4.0",
+      "releaseName": "v0.4.0",
+      "size": 1301236,
+      "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0.tgz",
       "downloadCount": 2,
       "type": "tar.gz",
-      "createdAt": "2026-09-08T11:23:27Z"
+      "createdAt": "2026-09-25T11:49:13Z"
     },
     {
-      "filename": "tal-naeh-freelens-rabbitmq-extension-0.2.1.tgz",
-      "releaseTag": "v0.2.1",
-      "releaseName": "v0.2.1",
-      "size": 1254795,
-      "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.1/tal-naeh-freelens-rabbitmq-extension-0.2.1.tgz",
-      "downloadCount": 0,
+      "filename": "freelensapp-rabbitmq-extension-0.3.1.tgz",
+      "releaseTag": "v0.3.1",
+      "releaseName": "v0.3.1",
+      "size": 1258432,
+      "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.1/freelensapp-rabbitmq-extension-0.3.1.tgz",
+      "downloadCount": 2,
       "type": "tar.gz",
-      "createdAt": "2026-09-08T10:45:23Z"
+      "createdAt": "2026-09-20T10:28:13Z"
     },
     {
-      "filename": "tal-naeh-freelens-rabbitmq-extension-0.2.0.tgz",
-      "releaseTag": "v0.2.0",
-      "releaseName": "v0.2.0",
-      "size": 1255020,
-      "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.0/tal-naeh-freelens-rabbitmq-extension-0.2.0.tgz",
-      "downloadCount": 0,
+      "filename": "freelensapp-rabbitmq-extension-0.3.0.tgz",
+      "releaseTag": "v0.3.0",
+      "releaseName": "v0.3.0",
+      "size": 1257369,
+      "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.3.0/freelensapp-rabbitmq-extension-0.3.0.tgz",
+      "downloadCount": 1,
       "type": "tar.gz",
-      "createdAt": "2026-09-08T09:39:51Z"
+      "createdAt": "2026-09-19T11:20:20Z"
     }
   ],
   "latestRelease": {
-    "id": 384668725,
-    "tagName": "v0.2.2",
-    "name": "v0.2.2",
+    "id": 396560024,
+    "tagName": "v0.4.0",
+    "name": "v0.4.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-08T11:22:32Z",
-    "publishedAt": "2026-09-08T11:23:28Z",
-    "body": null,
+    "createdAt": "2026-09-25T11:45:58Z",
+    "publishedAt": "2026-09-25T11:49:13Z",
+    "body": "### Added\n\n- **Health** page: runs read-only checks against the selected cluster and lists what needs attention, critical first, each with a link to the queue, channel or node concerned. It flags nodes that are down or partitioned, memory and disk alarms and the headroom before them, file descriptors, sockets and Erlang processes near their limits, crashed or minority queues, quorum queues with offline or too few replicas (replicas on a stopped node are counted in that node's finding, not warned per queue), backlogs with no consumers (dead-letter queues reported as info, streams skipped), growing backlogs, low consumer capacity, redeliveries, channels that stay full to their prefetch with no acks for five minutes or hold unacked messages without a prefetch limit, and unroutable publishes, dropped or returned. It refreshes every 15 seconds from the overview, queues and channels endpoints the other pages already use.\n- Queue summaries carry the quorum and stream replica lists (`members`, `online`), and the overview carries the dropped unroutable rate (`drop_unroutable`) next to the returned one.\n- **Clients** tab on the Connections page: groups the connections by the workload (Deployment, StatefulSet…) or the pod that opened them, busiest first, with each client's connections, share of the total, channels, client library, traffic and the age of its oldest connection. A client that holds most of the broker's connections, such as a leaking connection pool, stands out as one row instead of thousands. Peer addresses are matched to pod IPs through the Freelens cluster connection (a pod behind a ReplicaSet is reported as its Deployment); addresses that match no pod, and loopback addresses from a service-mesh sidecar, are labelled as such. A workload row opens exactly its pods, a pod row its connections.\n- **Dead letters in the Message Inspector**: dead-letter headers (`x-death`, `x-first-death-*`) are decoded for every peeked message: the reason in plain words (rejected, expired, maxlen, delivery_limit), the queue it died in, how many times, the full history for messages that were dead-lettered more than once, and the exchange and routing key it was first published to. A summary above the messages counts them by reason and by queue, and the peeked messages can be searched (payload, routing key, properties, headers) and filtered by reason. Read-only; nothing changes on the broker.\n\n### Changed\n\n- Dependency updates via Renovate (Vite 8.3.1, sass 1.105, knip 6.38).\n\n### Fixed\n\n- The Overview **Unroutable** rate now includes publishes the broker dropped for matching no binding, not only mandatory publishes returned to the publisher; the common non-mandatory case was shown as zero.\n- The Message Inspector no longer keeps the previous queue's peeked messages when the queue drawer switches to another queue.\n- Tables that scroll sideways (a narrow window, or zoomed in) no longer cut their rows short: the row background, borders and header now continue under every column instead of stopping at the visible edge. The growing column (Name, Client...) is measured at its minimum width, so long names do not widen the rows.\n- The queue drawer refreshes live at the same interval as the Queues table, so its message counts no longer stay stale after a purge and Ready, Unacked and the rates stay current while the drawer is open (#39, #41).\n- The cluster card shows the Management API port number instead of the named tunnel port (`15672 (management)`), and the Overview **Ready** counter is highlighted only when messages are waiting and the broker has no consumers at all (#40, #42).\n\n### Install\n\nInstall or update from the Freelens **Extensions** page by npm name, `@freelensapp/rabbitmq-extension`, or download the `.tgz` below and drag it into the Freelens window. The npm package is published with provenance from this repository.\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
-        "size": 1255586,
+        "name": "freelensapp-rabbitmq-extension-0.4.0-spdx.json",
+        "size": 1743143,
+        "downloadCount": 1,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0-spdx.json",
+        "createdAt": "2026-09-25T11:49:13Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-rabbitmq-extension-0.4.0-spdx.json.sha256",
+        "size": 113,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0-spdx.json.sha256",
+        "createdAt": "2026-09-25T11:49:13Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-rabbitmq-extension-0.4.0.tgz",
+        "size": 1301236,
         "downloadCount": 2,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/Tal-Naeh/freelens-rabbitmq-extension/releases/download/v0.2.2/tal-naeh-freelens-rabbitmq-extension-0.2.2.tgz",
-        "createdAt": "2026-09-08T11:23:27Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0.tgz",
+        "createdAt": "2026-09-25T11:49:13Z",
         "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-rabbitmq-extension-0.4.0.tgz.sha256",
+        "size": 107,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-rabbitmq-extension/releases/download/v0.4.0/freelensapp-rabbitmq-extension-0.4.0.tgz.sha256",
+        "createdAt": "2026-09-25T11:49:13Z",
+        "isTarGz": false,
         "isTar": false
       }
     ]
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-27T06:48:34.682Z"
+  "lastScanned": "2026-10-27T12:43:47.002Z"
 }
