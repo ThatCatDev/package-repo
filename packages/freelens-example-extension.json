@@ -8,8 +8,8 @@
   "forks": 9,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-10-27T23:11:14Z",
-  "pushedAt": "2026-10-28T01:25:32Z",
+  "updatedAt": "2026-10-28T13:23:12Z",
+  "pushedAt": "2026-10-28T13:23:20Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "2.0.0-3",
+    "version": "2.0.0",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -92,14 +92,14 @@
       "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
     },
     "devDependencies": {
-      "@freelensapp/extensions": "2.0.0-0-nightly-2026-10-26",
+      "@freelensapp/extensions": "2.0.0",
       "@testing-library/dom": "10.4.2",
       "@testing-library/react": "16.3.3",
       "@types/node": "24.19.2",
       "@types/react": "19.3.0",
       "@types/react-dom": "19.3.0",
       "@vitejs/plugin-react": "6.1.2",
-      "electron": "44.9.3",
+      "electron": "44.10.0",
       "esbuild": "0.28.2",
       "jsdom": "30.1.3",
       "mobx": "7.0.6",
@@ -122,6 +122,62 @@
     "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
   },
   "releases": [
+    {
+      "id": 426699471,
+      "tagName": "v2.0.0",
+      "name": "v2.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-28T13:23:05Z",
+      "publishedAt": "2026-10-28T13:24:14Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-example-extension-2.0.0-spdx.json",
+          "size": 197583,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json",
+          "createdAt": "2026-10-28T13:24:13Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.0-spdx.json.sha256",
+          "size": 112,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json.sha256",
+          "createdAt": "2026-10-28T13:24:13Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.0.tgz",
+          "size": 21770,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz",
+          "createdAt": "2026-10-28T13:24:13Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.0.tgz.sha256",
+          "size": 106,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz.sha256",
+          "createdAt": "2026-10-28T13:24:13Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 424305897,
       "tagName": "v2.0.0-3",
@@ -847,6 +903,13 @@
   ],
   "tags": [
     {
+      "name": "v2.0.0",
+      "commitSha": "b289791de1c26626fbde0534e758803228096129",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/b289791de1c26626fbde0534e758803228096129",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/zipball/refs/tags/v2.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/tarball/refs/tags/v2.0.0"
+    },
+    {
       "name": "v2.0.0-3",
       "commitSha": "c4f91f0d489dd16809ff89bb1557ae3ff4e3c2ae",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/c4f91f0d489dd16809ff89bb1557ae3ff4e3c2ae",
@@ -1003,6 +1066,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.0.0",
+      "name": "v2.0.0",
+      "publishedAt": "2026-10-28T13:24:14Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v2.0.0-3",
       "name": "v2.0.0-3",
       "publishedAt": "2026-10-26T13:48:05Z",
@@ -1158,6 +1228,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-example-extension-2.0.0.tgz",
+      "releaseTag": "v2.0.0",
+      "releaseName": "v2.0.0",
+      "size": 21770,
+      "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-10-28T13:24:13Z"
+    },
     {
       "filename": "freelensapp-example-extension-2.0.0-3.tgz",
       "releaseTag": "v2.0.0-3",
@@ -1380,62 +1460,62 @@
     }
   ],
   "latestRelease": {
-    "id": 347450995,
-    "tagName": "v1.10.2",
-    "name": "v1.10.2",
+    "id": 426699471,
+    "tagName": "v2.0.0",
+    "name": "v2.0.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-07-01T12:39:39Z",
-    "publishedAt": "2026-07-01T12:40:49Z",
-    "body": "## What's Changed\r\n* Update dependency vite to ^8.1.2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/302\r\n* Update dependency knip to v6.23.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/300\r\n* Update dependency @freelensapp/extensions to ^1.10.2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/305\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.1...v1.10.2",
+    "createdAt": "2026-10-28T13:23:05Z",
+    "publishedAt": "2026-10-28T13:24:14Z",
+    "body": null,
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-example-extension-1.10.2-spdx.json",
-        "size": 1883636,
-        "downloadCount": 5,
+        "name": "freelensapp-example-extension-2.0.0-spdx.json",
+        "size": 197583,
+        "downloadCount": 0,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json",
-        "createdAt": "2026-07-01T12:40:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json",
+        "createdAt": "2026-10-28T13:24:13Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-example-extension-1.10.2-spdx.json.sha256",
-        "size": 113,
-        "downloadCount": 4,
+        "name": "freelensapp-example-extension-2.0.0-spdx.json.sha256",
+        "size": 112,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json.sha256",
-        "createdAt": "2026-07-01T12:40:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json.sha256",
+        "createdAt": "2026-10-28T13:24:13Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-example-extension-1.10.2.tgz",
-        "size": 16078,
-        "downloadCount": 6,
+        "name": "freelensapp-example-extension-2.0.0.tgz",
+        "size": 21770,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz",
-        "createdAt": "2026-07-01T12:40:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz",
+        "createdAt": "2026-10-28T13:24:13Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-example-extension-1.10.2.tgz.sha256",
-        "size": 107,
-        "downloadCount": 4,
+        "name": "freelensapp-example-extension-2.0.0.tgz.sha256",
+        "size": 106,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz.sha256",
-        "createdAt": "2026-07-01T12:40:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz.sha256",
+        "createdAt": "2026-10-28T13:24:13Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 22,
+  "totalReleases": 23,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-28T07:05:59.362Z"
+  "lastScanned": "2026-10-28T13:57:27.558Z"
 }
