@@ -153,7 +153,7 @@
         {
           "name": "freelensapp-for-claude-extension-1.0.0-prod-packages.json",
           "size": 9260,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0-prod-packages.json",
           "createdAt": "2026-10-29T13:58:43Z",
@@ -163,7 +163,7 @@
         {
           "name": "freelensapp-for-claude-extension-1.0.0-prod-packages.json.sha256",
           "size": 124,
-          "downloadCount": 1,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0-prod-packages.json.sha256",
           "createdAt": "2026-10-29T13:58:43Z",
@@ -173,7 +173,7 @@
         {
           "name": "freelensapp-for-claude-extension-1.0.0-spdx.json",
           "size": 228575,
-          "downloadCount": 1,
+          "downloadCount": 3,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0-spdx.json",
           "createdAt": "2026-10-29T13:58:43Z",
@@ -193,7 +193,7 @@
         {
           "name": "freelensapp-for-claude-extension-1.0.0.tgz",
           "size": 1849598,
-          "downloadCount": 1,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0.tgz",
           "createdAt": "2026-10-29T13:58:43Z",
@@ -203,7 +203,7 @@
         {
           "name": "freelensapp-for-claude-extension-1.0.0.tgz.sha256",
           "size": 109,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0.tgz.sha256",
           "createdAt": "2026-10-29T13:58:43Z",
@@ -229,7 +229,7 @@
         {
           "name": "freelensapp-for-claude-extension-0.2.0-prod-packages.json",
           "size": 11728,
-          "downloadCount": 68,
+          "downloadCount": 69,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v0.2.0/freelensapp-for-claude-extension-0.2.0-prod-packages.json",
           "createdAt": "2026-08-28T10:19:00Z",
@@ -249,7 +249,7 @@
         {
           "name": "freelensapp-for-claude-extension-0.2.0-spdx.json",
           "size": 2426996,
-          "downloadCount": 65,
+          "downloadCount": 66,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v0.2.0/freelensapp-for-claude-extension-0.2.0-spdx.json",
           "createdAt": "2026-08-28T10:19:00Z",
@@ -259,7 +259,7 @@
         {
           "name": "freelensapp-for-claude-extension-0.2.0-spdx.json.sha256",
           "size": 115,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v0.2.0/freelensapp-for-claude-extension-0.2.0-spdx.json.sha256",
           "createdAt": "2026-08-28T10:19:00Z",
@@ -328,7 +328,7 @@
       "releaseName": "v1.0.0",
       "size": 1849598,
       "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2026-10-29T13:58:43Z"
     },
@@ -360,7 +360,7 @@
       {
         "name": "freelensapp-for-claude-extension-1.0.0-prod-packages.json",
         "size": 9260,
-        "downloadCount": 2,
+        "downloadCount": 3,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0-prod-packages.json",
         "createdAt": "2026-10-29T13:58:43Z",
@@ -370,7 +370,7 @@
       {
         "name": "freelensapp-for-claude-extension-1.0.0-prod-packages.json.sha256",
         "size": 124,
-        "downloadCount": 1,
+        "downloadCount": 3,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0-prod-packages.json.sha256",
         "createdAt": "2026-10-29T13:58:43Z",
@@ -380,7 +380,7 @@
       {
         "name": "freelensapp-for-claude-extension-1.0.0-spdx.json",
         "size": 228575,
-        "downloadCount": 1,
+        "downloadCount": 3,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0-spdx.json",
         "createdAt": "2026-10-29T13:58:43Z",
@@ -400,7 +400,7 @@
       {
         "name": "freelensapp-for-claude-extension-1.0.0.tgz",
         "size": 1849598,
-        "downloadCount": 1,
+        "downloadCount": 5,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0.tgz",
         "createdAt": "2026-10-29T13:58:43Z",
@@ -410,7 +410,7 @@
       {
         "name": "freelensapp-for-claude-extension-1.0.0.tgz.sha256",
         "size": 109,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-for-claude-extension/releases/download/v1.0.0/freelensapp-for-claude-extension-1.0.0.tgz.sha256",
         "createdAt": "2026-10-29T13:58:43Z",
@@ -421,5 +421,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-29T15:35:08.051Z"
+  "lastScanned": "2026-10-29T20:30:28.334Z"
 }
