@@ -143,7 +143,7 @@
         {
           "name": "hellboyhha-freelens-trivy-operator-extension-0.1.4.tgz",
           "size": 154030,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/x-gtar",
           "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.4/hellboyhha-freelens-trivy-operator-extension-0.1.4.tgz",
           "createdAt": "2026-10-13T22:58:48Z",
@@ -288,7 +288,7 @@
       "releaseName": "v0.1.4",
       "size": 154030,
       "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.4/hellboyhha-freelens-trivy-operator-extension-0.1.4.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-10-13T22:58:48Z"
     },
@@ -330,7 +330,7 @@
       {
         "name": "hellboyhha-freelens-trivy-operator-extension-0.1.4.tgz",
         "size": 154030,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/x-gtar",
         "downloadUrl": "https://github.com/hellboyhha/freelens-trivy-operator-extension/releases/download/v0.1.4/hellboyhha-freelens-trivy-operator-extension-0.1.4.tgz",
         "createdAt": "2026-10-13T22:58:48Z",
@@ -351,5 +351,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-29T08:45:57.525Z"
+  "lastScanned": "2026-10-29T15:35:29.638Z"
 }
