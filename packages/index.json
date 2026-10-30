@@ -27,7 +27,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 37,
-    "updatedAt": "2026-10-29T21:21:46Z",
+    "updatedAt": "2026-10-30T17:05:35Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -137,7 +137,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-10-29T22:40:48Z",
+    "updatedAt": "2026-10-30T17:05:26Z",
     "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -214,7 +214,7 @@
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
     "stars": 128,
-    "updatedAt": "2026-10-30T00:46:48Z",
+    "updatedAt": "2026-10-30T17:05:45Z",
     "latestVersion": "v6.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -225,7 +225,7 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 3,
-    "updatedAt": "2026-10-29T13:52:02Z",
+    "updatedAt": "2026-10-30T17:05:30Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -247,7 +247,7 @@
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
     "stars": 16,
-    "updatedAt": "2026-10-28T21:09:01Z",
+    "updatedAt": "2026-10-30T17:05:40Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -313,8 +313,8 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-10-27T11:51:58Z",
-    "latestVersion": "v1.4.3",
+    "updatedAt": "2026-10-30T15:29:06Z",
+    "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -379,7 +379,7 @@
     "fullName": "freelensapp/freelens-kubeswift-extension",
     "description": "Freelens extension for KubeSwift",
     "stars": 2,
-    "updatedAt": "2026-10-20T10:16:06Z",
+    "updatedAt": "2026-10-30T17:07:23Z",
     "latestVersion": "v0.1.0",
     "hasReleases": true,
     "hasTarFiles": true
