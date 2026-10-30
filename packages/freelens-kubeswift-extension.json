@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-27T15:24:50Z",
-  "updatedAt": "2026-10-30T17:07:23Z",
-  "pushedAt": "2026-10-30T17:08:00Z",
+  "updatedAt": "2026-10-30T17:32:54Z",
+  "pushedAt": "2026-10-30T17:33:01Z",
   "defaultBranch": "main",
   "topics": [
     "cloud-hypervisor",
@@ -34,7 +34,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/kubeswift-extension",
-    "version": "1.0.0-0",
+    "version": "1.0.0",
     "description": "Freelens extension for KubeSwift",
     "repository": {
       "type": "git",
@@ -140,6 +140,62 @@
   },
   "releases": [
     {
+      "id": 429370172,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-30T17:32:49Z",
+      "publishedAt": "2026-10-30T18:39:43Z",
+      "body": "The first release for Freelens 2.x, on the v2 extension API, aligned with KubeSwift v0.18.0. It needs Freelens 2.0.0 or later; versions 0.x are for Freelens 1.x.\n\nKnown issue: on Windows the serial console and the workload console do not connect yet. PowerShell, the default shell of the Freelens terminal there, breaks their command line (#144).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-kubeswift-extension-1.0.0-spdx.json",
+          "size": 204402,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0-spdx.json",
+          "createdAt": "2026-10-30T18:39:42Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-kubeswift-extension-1.0.0-spdx.json.sha256",
+          "size": 114,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0-spdx.json.sha256",
+          "createdAt": "2026-10-30T18:39:42Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-kubeswift-extension-1.0.0.tgz",
+          "size": 924027,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0.tgz",
+          "createdAt": "2026-10-30T18:39:42Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-kubeswift-extension-1.0.0.tgz.sha256",
+          "size": 108,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0.tgz.sha256",
+          "createdAt": "2026-10-30T18:39:42Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 382905712,
       "tagName": "v0.1.0",
       "name": "v0.1.0",
@@ -156,7 +212,7 @@
         {
           "name": "freelensapp-kubeswift-extension-0.1.0-spdx.json",
           "size": 1907098,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0-spdx.json",
           "createdAt": "2026-09-04T17:31:06Z",
@@ -166,7 +222,7 @@
         {
           "name": "freelensapp-kubeswift-extension-0.1.0-spdx.json.sha256",
           "size": 114,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0-spdx.json.sha256",
           "createdAt": "2026-09-04T17:31:06Z",
@@ -176,7 +232,7 @@
         {
           "name": "freelensapp-kubeswift-extension-0.1.0.tgz",
           "size": 766405,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
           "createdAt": "2026-09-04T17:31:06Z",
@@ -186,7 +242,7 @@
         {
           "name": "freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
           "size": 108,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
           "createdAt": "2026-09-04T17:31:06Z",
@@ -198,6 +254,13 @@
   ],
   "tags": [
     {
+      "name": "v1.0.0",
+      "commitSha": "49e92dedb54d08931f4cc5c53c11695e8a85a26e",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-kubeswift-extension/commits/49e92dedb54d08931f4cc5c53c11695e8a85a26e",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-kubeswift-extension/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-kubeswift-extension/tarball/refs/tags/v1.0.0"
+    },
+    {
       "name": "v0.1.0",
       "commitSha": "93c137ef186fdd1cb6985ee2643d1229ebfff88a",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-kubeswift-extension/commits/93c137ef186fdd1cb6985ee2643d1229ebfff88a",
@@ -206,6 +269,13 @@
     }
   ],
   "versionHistory": [
+    {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2026-10-30T18:39:43Z",
+      "isPrerelease": false,
+      "notes": "The first release for Freelens 2.x, on the v2 extension API, aligned with KubeSwift v0.18.0. It needs Freelens 2.0.0 or later; versions 0.x are for Freelens 1.x.\n\nKnown issue: on Windows the serial console and the workload console do not connect yet. PowerShell, the default shell of the Freelens terminal there, breaks their command line (#144).\n"
+    },
     {
       "version": "v0.1.0",
       "name": "v0.1.0",
@@ -216,73 +286,83 @@
   ],
   "tarFiles": [
     {
+      "filename": "freelensapp-kubeswift-extension-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 924027,
+      "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-30T18:39:42Z"
+    },
+    {
       "filename": "freelensapp-kubeswift-extension-0.1.0.tgz",
       "releaseTag": "v0.1.0",
       "releaseName": "v0.1.0",
       "size": 766405,
       "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
-      "downloadCount": 4,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2026-09-04T17:31:06Z"
     }
   ],
   "latestRelease": {
-    "id": 382905712,
-    "tagName": "v0.1.0",
-    "name": "v0.1.0",
+    "id": 429370172,
+    "tagName": "v1.0.0",
+    "name": "v1.0.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-04T17:11:09Z",
-    "publishedAt": "2026-09-04T17:31:07Z",
-    "body": null,
+    "createdAt": "2026-10-30T17:32:49Z",
+    "publishedAt": "2026-10-30T18:39:43Z",
+    "body": "The first release for Freelens 2.x, on the v2 extension API, aligned with KubeSwift v0.18.0. It needs Freelens 2.0.0 or later; versions 0.x are for Freelens 1.x.\n\nKnown issue: on Windows the serial console and the workload console do not connect yet. PowerShell, the default shell of the Freelens terminal there, breaks their command line (#144).\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-kubeswift-extension-0.1.0-spdx.json",
-        "size": 1907098,
+        "name": "freelensapp-kubeswift-extension-1.0.0-spdx.json",
+        "size": 204402,
         "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0-spdx.json",
-        "createdAt": "2026-09-04T17:31:06Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0-spdx.json",
+        "createdAt": "2026-10-30T18:39:42Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-kubeswift-extension-0.1.0-spdx.json.sha256",
+        "name": "freelensapp-kubeswift-extension-1.0.0-spdx.json.sha256",
         "size": 114,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0-spdx.json.sha256",
-        "createdAt": "2026-09-04T17:31:06Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0-spdx.json.sha256",
+        "createdAt": "2026-10-30T18:39:42Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-kubeswift-extension-0.1.0.tgz",
-        "size": 766405,
-        "downloadCount": 4,
+        "name": "freelensapp-kubeswift-extension-1.0.0.tgz",
+        "size": 924027,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz",
-        "createdAt": "2026-09-04T17:31:06Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0.tgz",
+        "createdAt": "2026-10-30T18:39:42Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
+        "name": "freelensapp-kubeswift-extension-1.0.0.tgz.sha256",
         "size": 108,
-        "downloadCount": 2,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v0.1.0/freelensapp-kubeswift-extension-0.1.0.tgz.sha256",
-        "createdAt": "2026-09-04T17:31:06Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kubeswift-extension/releases/download/v1.0.0/freelensapp-kubeswift-extension-1.0.0.tgz.sha256",
+        "createdAt": "2026-10-30T18:39:42Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 1,
+  "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-30T17:08:05.929Z"
+  "lastScanned": "2026-10-30T21:27:04.276Z"
 }

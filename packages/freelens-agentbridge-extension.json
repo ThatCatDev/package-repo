@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
-  "updatedAt": "2026-10-27T18:55:34Z",
-  "pushedAt": "2026-10-30T12:05:32Z",
+  "updatedAt": "2026-10-30T19:36:56Z",
+  "pushedAt": "2026-10-30T19:37:03Z",
   "defaultBranch": "main",
   "topics": [
     "agentbridge",
@@ -41,28 +41,25 @@
   },
   "packageJson": {
     "name": "@freelensapp/agentbridge-extension",
-    "version": "1.3.0",
+    "version": "2.0.0",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "repository": {
       "type": "git",
       "url": "git+https://github.com/freelensapp/freelens-agentbridge-extension.git",
       "directory": "."
     },
-    "main": "out/main/index.js",
-    "renderer": "out/renderer/index.js",
+    "main": "dist/main.js",
+    "renderer": "dist/renderer.js",
     "files": [
-      "out/**/*"
+      "dist/**/*"
     ],
     "engines": {
-      "node": ">= 22.0.0",
-      "freelens": "^1.8.0"
-    },
-    "dependencies": {
-      "@monaco-editor/react": "^4.7.0",
-      "monaco-editor": "^0.52.2"
+      "node": ">= 24.0.0",
+      "freelens": "^2.0.0"
     },
     "copyright": "© 2025-2026 Freelens Authors",
     "license": "MIT",
+    "type": "module",
     "author": {
       "name": "Freelens Authors",
       "email": "freelens@freelens.app"
@@ -72,7 +69,7 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "pnpm dlx @biomejs/biome@2.5.9",
+      "biome": "pnpm dlx @biomejs/biome@2.5.15",
       "biome:check": "pnpm biome check",
       "biome:fix": "pnpm biome check --fix",
       "biome:migrate": "pnpm biome migrate --write",
@@ -84,41 +81,53 @@
       "lint": "pnpm lint:check",
       "lint:check": "pnpm biome:check",
       "lint:fix": "pnpm biome:fix",
-      "knip": "pnpm dlx knip@6.32.2 --dependencies --no-gitignore",
+      "knip": "pnpm dlx knip@6.39.0 --dependencies --files --no-gitignore --no-config-hints",
       "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "pnpm knip",
       "knip:production": "pnpm knip --production --strict",
       "test": "pnpm test:unit",
       "test:unit": "vitest run",
-      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
-      "prebuild": "pnpm type:check",
-      "build": "electron-vite build",
-      "build:production": "cross-env VITE_PRESERVE_MODULES=false electron-vite build",
-      "build:force": "electron-vite build",
-      "bump-version": "pnpm version --no-commit-hooks --no-git-tag-version",
-      "pack:dev": "pnpm bump-version prerelease && pnpm build:force && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
-      "clean": "pnpm clean:out",
+      "test:integration": "vitest run --config vitest.integration.config.ts",
+      "type:check": "pnpm type:check:sources && pnpm type:check:tests && pnpm type:check:tooling && pnpm type:check:integration && pnpm type:check:environments",
+      "type:check:sources": "tsc -p src/main && tsc -p src/renderer",
+      "type:check:tests": "tsc -p src/tsconfig.json",
+      "type:check:tooling": "tsc -p tsconfig.json",
+      "type:check:integration": "tsc -p integration",
+      "type:check:environments": "tsc -p environment-tests/tsconfig.main.json && tsc -p environment-tests/tsconfig.renderer.json && tsc -p environment-tests",
+      "build": "vite build && vite build --mode main",
+      "dev": "pnpm \"/^dev:(renderer|main)\\$/\"",
+      "dev:main": "vite build --watch --mode main",
+      "dev:renderer": "vite build --watch --no-emptyOutDir",
+      "bump-version": "pnpm version --no-commit-hooks --no-git-checks --no-git-tag-version",
+      "pack:dev": "pnpm bump-version prerelease && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
+      "clean": "pnpm clean:dist",
+      "clean:dist": "pnpm dlx shx@0.4.0 rm -rf dist",
+      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
       "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
-      "clean:out": "pnpm dlx shx@0.4.0 rm -rf out",
       "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
-      "clean:all": "pnpm \"/^clean:(node_modules|out|tgz)\\$/\""
+      "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
     },
     "devDependencies": {
-      "@babel/plugin-proposal-decorators": "^8.0.2",
-      "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.10.3",
-      "@types/node": "~24.12.4",
-      "@types/react": "^17.0.93",
-      "@vitejs/plugin-react": "^6.1.2",
-      "cross-env": "^10.1.0",
-      "electron-vite": "^5.0.0",
-      "mobx": "6.13.7",
-      "mobx-react": "7.6.0",
-      "react": "17.0.2",
-      "react-dom": "17.0.2",
-      "typescript": "5.9.3",
-      "vite": "^8.3.4",
-      "vitest": "^5.0.5"
+      "@freelensapp/extensions": "2.0.0",
+      "@testing-library/dom": "10.4.2",
+      "@testing-library/react": "16.3.3",
+      "@types/node": "24.19.2",
+      "@types/react": "19.3.0",
+      "@types/react-dom": "19.3.0",
+      "@vitejs/plugin-react": "6.1.2",
+      "electron": "44.10.0",
+      "esbuild": "0.28.2",
+      "jsdom": "30.1.3",
+      "mobx": "7.0.6",
+      "mobx-react": "10.0.2",
+      "monaco-editor": "0.57.0",
+      "playwright": "1.64.1",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
+      "sass-embedded": "1.105.2",
+      "typescript": "7.0.2",
+      "vite": "8.3.5",
+      "vitest": "5.0.5"
     },
     "keywords": [
       "extension",
@@ -134,9 +143,65 @@
       "ai-agent",
       "agentbridge"
     ],
-    "packageManager": "pnpm@10.34.7+sha512.ba98abc585539933375b5971f4bc6d6c73a1b4b7edc4a879e7d102fe5423d1e02309d67c60a11f04955093a96e521ad9c3b138cdd654ca5be563f378b3ae48bd"
+    "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
   },
   "releases": [
+    {
+      "id": 429419691,
+      "tagName": "v2.0.0",
+      "name": "v2.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-30T19:36:51Z",
+      "publishedAt": "2026-10-30T19:37:49Z",
+      "body": "The first release for Freelens 2.x, on the v2 extension API. It needs Freelens 2.0.0 or later; versions 1.x are for Freelens 1.x.\n\nThe port comes from #76 and #77, aligned with the Freelens 2.0.0 release in #85.\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-agentbridge-extension-2.0.0-spdx.json",
+          "size": 199900,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0-spdx.json",
+          "createdAt": "2026-10-30T19:37:48Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-agentbridge-extension-2.0.0-spdx.json.sha256",
+          "size": 116,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0-spdx.json.sha256",
+          "createdAt": "2026-10-30T19:37:48Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-agentbridge-extension-2.0.0.tgz",
+          "size": 93340,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz",
+          "createdAt": "2026-10-30T19:37:48Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-agentbridge-extension-2.0.0.tgz.sha256",
+          "size": 110,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz.sha256",
+          "createdAt": "2026-10-30T19:37:48Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 396848829,
       "tagName": "v1.3.0",
@@ -154,7 +219,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.3.0-spdx.json",
           "size": 1438444,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0-spdx.json",
           "createdAt": "2026-09-25T18:48:39Z",
@@ -164,7 +229,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.3.0-spdx.json.sha256",
           "size": 116,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0-spdx.json.sha256",
           "createdAt": "2026-09-25T18:48:39Z",
@@ -174,7 +239,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.3.0.tgz",
           "size": 9000601,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0.tgz",
           "createdAt": "2026-09-25T18:48:39Z",
@@ -184,7 +249,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.3.0.tgz.sha256",
           "size": 110,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0.tgz.sha256",
           "createdAt": "2026-09-25T18:48:39Z",
@@ -210,7 +275,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.0.0-spdx.json",
           "size": 1438444,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.0.0/freelensapp-agentbridge-extension-1.0.0-spdx.json",
           "createdAt": "2026-08-20T18:13:52Z",
@@ -220,7 +285,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.0.0-spdx.json.sha256",
           "size": 116,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.0.0/freelensapp-agentbridge-extension-1.0.0-spdx.json.sha256",
           "createdAt": "2026-08-20T18:13:52Z",
@@ -230,7 +295,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.0.0.tgz",
           "size": 4321496,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.0.0/freelensapp-agentbridge-extension-1.0.0.tgz",
           "createdAt": "2026-08-20T18:13:52Z",
@@ -240,7 +305,7 @@
         {
           "name": "freelensapp-agentbridge-extension-1.0.0.tgz.sha256",
           "size": 110,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.0.0/freelensapp-agentbridge-extension-1.0.0.tgz.sha256",
           "createdAt": "2026-08-20T18:13:52Z",
@@ -251,6 +316,13 @@
     }
   ],
   "tags": [
+    {
+      "name": "v2.0.0",
+      "commitSha": "4d678a22f64772dbe8e67e883400f1b60056ed82",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/commits/4d678a22f64772dbe8e67e883400f1b60056ed82",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/zipball/refs/tags/v2.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/tarball/refs/tags/v2.0.0"
+    },
     {
       "name": "v1.3.0",
       "commitSha": "5cfa4b4c965bbd44875eb6cfd5bef02901b5ddc0",
@@ -282,6 +354,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.0.0",
+      "name": "v2.0.0",
+      "publishedAt": "2026-10-30T19:37:49Z",
+      "isPrerelease": false,
+      "notes": "The first release for Freelens 2.x, on the v2 extension API. It needs Freelens 2.0.0 or later; versions 1.x are for Freelens 1.x.\n\nThe port comes from #76 and #77, aligned with the Freelens 2.0.0 release in #85.\n"
+    },
+    {
       "version": "v1.3.0",
       "name": "v1.3.0",
       "publishedAt": "2026-09-25T18:48:40Z",
@@ -298,12 +377,22 @@
   ],
   "tarFiles": [
     {
+      "filename": "freelensapp-agentbridge-extension-2.0.0.tgz",
+      "releaseTag": "v2.0.0",
+      "releaseName": "v2.0.0",
+      "size": 93340,
+      "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-30T19:37:48Z"
+    },
+    {
       "filename": "freelensapp-agentbridge-extension-1.3.0.tgz",
       "releaseTag": "v1.3.0",
       "releaseName": "v1.3.0",
       "size": 9000601,
       "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0.tgz",
-      "downloadCount": 7,
+      "downloadCount": 8,
       "type": "tar.gz",
       "createdAt": "2026-09-25T18:48:39Z"
     },
@@ -313,68 +402,68 @@
       "releaseName": "v1.0.0",
       "size": 4321496,
       "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.0.0/freelensapp-agentbridge-extension-1.0.0.tgz",
-      "downloadCount": 4,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2026-08-20T18:13:52Z"
     }
   ],
   "latestRelease": {
-    "id": 396848829,
-    "tagName": "v1.3.0",
-    "name": "v1.3.0",
+    "id": 429419691,
+    "tagName": "v2.0.0",
+    "name": "v2.0.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-25T15:05:41Z",
-    "publishedAt": "2026-09-25T18:48:40Z",
-    "body": "# What's new in 1.3.0\r\n## Two new AI CLI providers — five in total\r\n\r\n- Codex CLI — seeds AGENTS.md, .codex/config.toml and a build-cluster-map skill. It launches with the trust and network flags already set, so kubectl reaches your cluster on the first run with no manual setup.\r\n- Pi — seeds AGENTS.md, .pi/settings.json and a kubectl guard extension. Pi ships no permission file of its own, so AgentBridge provides a real interceptor: read-only kubectl/helm/oc commands run freely, anything else asks you first.\r\n\r\n## Bring your own model\r\n\r\nAgentBridge seeds behavior and guardrails only — it never pins a model. Pick whichever model your CLI supports.\r\n\r\n## Clearer editing and recovery\r\n\r\nThe built-in editor now highlights TOML and TypeScript, alongside the existing formats.\r\nReset restores the seeded guardrail and command files for the selected provider; the README now spells out exactly which files each provider's Reset touches, and what it leaves alone.\r\nA broken Pi guard file stops Pi from starting — Reset gets you back to a working state.\r\n\r\n## Better error messages\r\n\r\nAfter installing an update, selecting a newly added provider could fail with a raw Unsupported AI CLI provider error. You now get a plain explanation that Freelens needs a restart, instead of a message with no obvious fix.",
+    "createdAt": "2026-10-30T19:36:51Z",
+    "publishedAt": "2026-10-30T19:37:49Z",
+    "body": "The first release for Freelens 2.x, on the v2 extension API. It needs Freelens 2.0.0 or later; versions 1.x are for Freelens 1.x.\n\nThe port comes from #76 and #77, aligned with the Freelens 2.0.0 release in #85.\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-agentbridge-extension-1.3.0-spdx.json",
-        "size": 1438444,
+        "name": "freelensapp-agentbridge-extension-2.0.0-spdx.json",
+        "size": 199900,
         "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0-spdx.json",
-        "createdAt": "2026-09-25T18:48:39Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0-spdx.json",
+        "createdAt": "2026-10-30T19:37:48Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-agentbridge-extension-1.3.0-spdx.json.sha256",
+        "name": "freelensapp-agentbridge-extension-2.0.0-spdx.json.sha256",
         "size": 116,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0-spdx.json.sha256",
-        "createdAt": "2026-09-25T18:48:39Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0-spdx.json.sha256",
+        "createdAt": "2026-10-30T19:37:48Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-agentbridge-extension-1.3.0.tgz",
-        "size": 9000601,
-        "downloadCount": 7,
+        "name": "freelensapp-agentbridge-extension-2.0.0.tgz",
+        "size": 93340,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0.tgz",
-        "createdAt": "2026-09-25T18:48:39Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz",
+        "createdAt": "2026-10-30T19:37:48Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-agentbridge-extension-1.3.0.tgz.sha256",
+        "name": "freelensapp-agentbridge-extension-2.0.0.tgz.sha256",
         "size": 110,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v1.3.0/freelensapp-agentbridge-extension-1.3.0.tgz.sha256",
-        "createdAt": "2026-09-25T18:48:39Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz.sha256",
+        "createdAt": "2026-10-30T19:37:48Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-30T17:08:03.808Z"
+  "lastScanned": "2026-10-30T21:27:02.562Z"
 }
