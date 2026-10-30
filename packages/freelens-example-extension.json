@@ -8,8 +8,8 @@
   "forks": 9,
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
-  "updatedAt": "2026-10-28T20:06:02Z",
-  "pushedAt": "2026-10-29T11:54:11Z",
+  "updatedAt": "2026-10-29T22:40:48Z",
+  "pushedAt": "2026-10-29T22:40:45Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "2.0.0",
+    "version": "2.0.1-0",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -123,6 +123,62 @@
   },
   "releases": [
     {
+      "id": 428417110,
+      "tagName": "v2.0.1-0",
+      "name": "v2.0.1-0",
+      "draft": false,
+      "prerelease": true,
+      "createdAt": "2026-10-29T21:30:54Z",
+      "publishedAt": "2026-10-29T21:31:49Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-example-extension-2.0.1-0-spdx.json",
+          "size": 197583,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.1-0/freelensapp-example-extension-2.0.1-0-spdx.json",
+          "createdAt": "2026-10-29T21:31:51Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.1-0-spdx.json.sha256",
+          "size": 114,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.1-0/freelensapp-example-extension-2.0.1-0-spdx.json.sha256",
+          "createdAt": "2026-10-29T21:31:51Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.1-0.tgz",
+          "size": 21775,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.1-0/freelensapp-example-extension-2.0.1-0.tgz",
+          "createdAt": "2026-10-29T21:31:51Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.0.1-0.tgz.sha256",
+          "size": 108,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.1-0/freelensapp-example-extension-2.0.1-0.tgz.sha256",
+          "createdAt": "2026-10-29T21:31:51Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 426699471,
       "tagName": "v2.0.0",
       "name": "v2.0.0",
@@ -130,7 +186,7 @@
       "prerelease": false,
       "createdAt": "2026-10-28T13:23:05Z",
       "publishedAt": "2026-10-28T13:24:14Z",
-      "body": null,
+      "body": "The first release of the example extension for the Freelens extension API v2. It needs Freelens 2.0.0 or newer; v1.10.2 stays the release for Freelens 1.x.\n\nThe repository is the reference template for building, type-checking, testing and releasing a Freelens v2 extension. The Freelens extension docs (`docs/extensions/` in freelensapp/freelens) define the API contract and point here for the rest; `AGENTS.md` explains every pattern and why it is there.\n\n## Breaking changes\n\n* Requires Freelens `^2.0.0` (`engines.freelens`) and Node.js 24 (`engines.node: >= 24.0.0`).\n* `dist/main.js` and `dist/renderer.js` are ES modules (`\"type\": \"module\"`), built by two Vite library-mode runs instead of electron-vite. The renderer CSS is extracted to `dist/renderer.css`.\n* The stack follows Freelens 2.0.0: React 19.3, mobx 7 with mobx-react 10 (standard decorators only, `@observable accessor`), TypeScript 7, Vite 8, Vitest 5, Electron 44, pnpm 12.\n\n| Library                   | v1.10.2   | v2.0.0 |\n| ------------------------- | --------- | ------ |\n| `@freelensapp/extensions` | `^1.10.2` | 2.0.0  |\n| react, react-dom          | 17.0.2    | 19.3.1 |\n| mobx                      | 6.13.7    | 7.0.6  |\n| mobx-react                | 7.6.0     | 10.0.2 |\n| typescript                | 5.9.3     | 7.0.2  |\n| vitest                    | `^4.1.9`  | 5.0.5  |\n| node                      | 22        | 24     |\n| pnpm                      | 10.34.4   | 12.15.0 |\n\n## What's Changed\n\n### Extension API v2\n\n* Migrate the build stack and shared sources to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/328\n* Adapt the Example feature to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/336\n* Re-render the available version page when the host serves a version by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/353\n* Register the Example models in customResources by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/364\n* Register details and menu items with the typed helpers of the extension API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/368\n* Keep a render error of the extension inside its page, panel or menu item by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/370\n\n### Build and type check\n\n* Write the CSS module declarations with a plugin that cannot leave one empty by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/344\n* Check for unused files with knip by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/349\n* Type-check src/common/ through the main, renderer and environment programs by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/351\n* Build the main entry for Rolldown's node platform by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/373\n* Define `__dirname` and `__filename` in the main bundle, so that a bundled CommonJS package loads in the ESM main, by @dex4er in bd206b2\n\n### Tests\n\n* Click through the extension's views in the integration tests, one session per API version by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/376\n* Follow Freelens changes since the 2026-10-12 nightly: React test helpers, CI agent and integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/382\n* Run the integration tests against Freelens dev over CDP by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/383\n* Name the URL of a console error, and match the host's getNs() in the test stub by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/400\n* Seed the kubeconfig sync of the Freelens dev profile for the integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/402\n\n### Agent skills and documentation\n\n* Agent skills for creating a Freelens extension and porting one to v2 by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/341\n* Document how to check the extension in Freelens dev by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/347\n* Add the observer props rule and the monaco-editor devDependency from the fluxcd port by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/360\n* Let the CI agent do several steps of a port in one run by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/361\n* Take optional fields from the kubebuilder markers when adding an API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/367\n* Fold the findings of the freelens-for-claude-extension port into the template and the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/374\n* Fold the findings of the freelens-ai-extension port into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/378\n* Describe the integration tests as an optional pattern in the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/386\n* Move the migration issue template into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/388\n* Move the port's pin to Freelens 14a491f12 and nightly 2026-10-26 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/398\n\n### CI and Renovate\n\n* Fix the title of the automated npm audit pull request by @robertobandini in https://github.com/freelensapp/freelens-example-extension/pull/325\n* Update Biome to 2.5.15 and run biome migrate on the Renovate branch by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/354\n* Renovate follows the versions Freelens has on `main`, in one \"Freelens dependencies\" group; pnpm updates come from the npm registry in pull requests of their own\n* Prerelease versions are tagged too, and their GitHub releases are marked as prereleases\n\n## Updates\n\n* Update trunk-io/trunk-action action to v2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/335\n* Update EndBug/add-and-commit action to v11 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/334\n* Update actions/setup-node action to v7 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/313\n* Update dependency kubernetes-sigs/kind to v0.33.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/322\n* Update kindest/node Docker tag to v1.37.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/333\n* Update dependency electron to v43.7.9 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/337\n* Update dependency electron to v44 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/397\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-12 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/365\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-15 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/381\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/358, https://github.com/freelensapp/freelens-example-extension/pull/380, https://github.com/freelensapp/freelens-example-extension/pull/390 and https://github.com/freelensapp/freelens-example-extension/pull/394\n* Update Freelens dependencies to v2.0.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/399\n* Update pnpm to v12.11.1, v12.11.2, v12.14.0 and v12.15.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/355, https://github.com/freelensapp/freelens-example-extension/pull/363, https://github.com/freelensapp/freelens-example-extension/pull/385 and https://github.com/freelensapp/freelens-example-extension/pull/395\n* Update dependency jdx/mise to v2026.10.4, v2026.10.11, v2026.10.13 and v2026.10.19 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/330, https://github.com/freelensapp/freelens-example-extension/pull/338, https://github.com/freelensapp/freelens-example-extension/pull/389 and https://github.com/freelensapp/freelens-example-extension/pull/391\n\n## New Contributors\n\n* @robertobandini made their first contribution in https://github.com/freelensapp/freelens-example-extension/pull/325\n\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.2...v2.0.0\n",
       "author": {
         "login": "github-actions[bot]",
         "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
@@ -139,7 +195,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-spdx.json",
           "size": 197583,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json",
           "createdAt": "2026-10-28T13:24:13Z",
@@ -149,7 +205,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-spdx.json.sha256",
           "size": 112,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json.sha256",
           "createdAt": "2026-10-28T13:24:13Z",
@@ -159,7 +215,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0.tgz",
           "size": 21770,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz",
           "createdAt": "2026-10-28T13:24:13Z",
@@ -169,7 +225,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0.tgz.sha256",
           "size": 106,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz.sha256",
           "createdAt": "2026-10-28T13:24:13Z",
@@ -195,7 +251,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-3-spdx.json",
           "size": 197583,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-3/freelensapp-example-extension-2.0.0-3-spdx.json",
           "createdAt": "2026-10-26T13:48:06Z",
@@ -205,7 +261,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-3-spdx.json.sha256",
           "size": 114,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-3/freelensapp-example-extension-2.0.0-3-spdx.json.sha256",
           "createdAt": "2026-10-26T13:48:06Z",
@@ -215,7 +271,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-3.tgz",
           "size": 21798,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-3/freelensapp-example-extension-2.0.0-3.tgz",
           "createdAt": "2026-10-26T13:48:06Z",
@@ -225,7 +281,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-3.tgz.sha256",
           "size": 108,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-3/freelensapp-example-extension-2.0.0-3.tgz.sha256",
           "createdAt": "2026-10-26T13:48:06Z",
@@ -251,7 +307,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-2-spdx.json",
           "size": 197583,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2-spdx.json",
           "createdAt": "2026-10-17T19:47:39Z",
@@ -261,7 +317,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-2-spdx.json.sha256",
           "size": 114,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2-spdx.json.sha256",
           "createdAt": "2026-10-17T19:47:39Z",
@@ -271,7 +327,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-2.tgz",
           "size": 21766,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2.tgz",
           "createdAt": "2026-10-17T19:47:39Z",
@@ -281,7 +337,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-2.tgz.sha256",
           "size": 108,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2.tgz.sha256",
           "createdAt": "2026-10-17T19:47:39Z",
@@ -307,7 +363,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-1-spdx.json",
           "size": 193777,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-1/freelensapp-example-extension-2.0.0-1-spdx.json",
           "createdAt": "2026-10-14T12:12:17Z",
@@ -317,7 +373,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-1-spdx.json.sha256",
           "size": 114,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-1/freelensapp-example-extension-2.0.0-1-spdx.json.sha256",
           "createdAt": "2026-10-14T12:12:17Z",
@@ -327,7 +383,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-1.tgz",
           "size": 21276,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-1/freelensapp-example-extension-2.0.0-1.tgz",
           "createdAt": "2026-10-14T12:12:17Z",
@@ -337,7 +393,7 @@
         {
           "name": "freelensapp-example-extension-2.0.0-1.tgz.sha256",
           "size": 108,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-1/freelensapp-example-extension-2.0.0-1.tgz.sha256",
           "createdAt": "2026-10-14T12:12:17Z",
@@ -363,7 +419,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2-spdx.json",
           "size": 1883636,
-          "downloadCount": 5,
+          "downloadCount": 6,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -373,7 +429,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2-spdx.json.sha256",
           "size": 113,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2-spdx.json.sha256",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -383,7 +439,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2.tgz",
           "size": 16078,
-          "downloadCount": 6,
+          "downloadCount": 7,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -393,7 +449,7 @@
         {
           "name": "freelensapp-example-extension-1.10.2.tgz.sha256",
           "size": 107,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz.sha256",
           "createdAt": "2026-07-01T12:40:48Z",
@@ -429,7 +485,7 @@
         {
           "name": "freelensapp-example-extension-1.10.1-spdx.json.sha256",
           "size": 113,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1-spdx.json.sha256",
           "createdAt": "2026-06-26T20:55:03Z",
@@ -439,7 +495,7 @@
         {
           "name": "freelensapp-example-extension-1.10.1.tgz",
           "size": 16079,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz",
           "createdAt": "2026-06-26T20:55:03Z",
@@ -449,7 +505,7 @@
         {
           "name": "freelensapp-example-extension-1.10.1.tgz.sha256",
           "size": 107,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz.sha256",
           "createdAt": "2026-06-26T20:55:03Z",
@@ -475,7 +531,7 @@
         {
           "name": "freelensapp-example-extension-1.10.0.tgz",
           "size": 16116,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.0/freelensapp-example-extension-1.10.0.tgz",
           "createdAt": "2026-06-26T15:35:38Z",
@@ -501,7 +557,7 @@
         {
           "name": "freelensapp-example-extension-1.9.0.tgz",
           "size": 15354,
-          "downloadCount": 5,
+          "downloadCount": 6,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
           "createdAt": "2026-05-09T21:57:20Z",
@@ -527,7 +583,7 @@
         {
           "name": "freelensapp-example-extension-1.8.0.tgz",
           "size": 17561,
-          "downloadCount": 9,
+          "downloadCount": 10,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.8.0/freelensapp-example-extension-1.8.0.tgz",
           "createdAt": "2026-02-04T18:19:22Z",
@@ -553,7 +609,7 @@
         {
           "name": "freelensapp-example-extension-1.6.2.tgz",
           "size": 17553,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.2/freelensapp-example-extension-1.6.2.tgz",
           "createdAt": "2025-11-19T21:04:08Z",
@@ -579,7 +635,7 @@
         {
           "name": "freelensapp-example-extension-1.6.1.tgz",
           "size": 15678,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.1/freelensapp-example-extension-1.6.1.tgz",
           "createdAt": "2025-10-24T14:27:34Z",
@@ -605,7 +661,7 @@
         {
           "name": "freelensapp-example-extension-1.6.0.tgz",
           "size": 16223,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.0/freelensapp-example-extension-1.6.0.tgz",
           "createdAt": "2025-10-14T18:36:32Z",
@@ -631,7 +687,7 @@
         {
           "name": "freelensapp-example-extension-1.5.3.tgz",
           "size": 14575,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.3/freelensapp-example-extension-1.5.3.tgz",
           "createdAt": "2025-08-18T17:37:58Z",
@@ -657,7 +713,7 @@
         {
           "name": "freelensapp-example-extension-1.5.2.tgz",
           "size": 14222,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.2/freelensapp-example-extension-1.5.2.tgz",
           "createdAt": "2025-07-20T20:44:35Z",
@@ -683,7 +739,7 @@
         {
           "name": "freelensapp-example-extension-1.5.1.tgz",
           "size": 14196,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.1/freelensapp-example-extension-1.5.1.tgz",
           "createdAt": "2025-07-18T09:14:09Z",
@@ -709,7 +765,7 @@
         {
           "name": "freelensapp-example-extension-1.5.0.tgz",
           "size": 14165,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.0/freelensapp-example-extension-1.5.0.tgz",
           "createdAt": "2025-07-15T07:50:50Z",
@@ -735,7 +791,7 @@
         {
           "name": "freelensapp-example-extension-1.4.2.tgz",
           "size": 15186,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.4.2/freelensapp-example-extension-1.4.2.tgz",
           "createdAt": "2025-07-05T23:18:24Z",
@@ -761,7 +817,7 @@
         {
           "name": "freelensapp-example-extension-1.4.1.tgz",
           "size": 14385,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.4.1/freelensapp-example-extension-1.4.1.tgz",
           "createdAt": "2025-07-04T22:29:29Z",
@@ -787,7 +843,7 @@
         {
           "name": "freelensapp-example-extension-1.4.0.tgz",
           "size": 11436,
-          "downloadCount": 2,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.4.0/freelensapp-example-extension-1.4.0.tgz",
           "createdAt": "2025-06-29T22:31:35Z",
@@ -813,7 +869,7 @@
         {
           "name": "freelensapp-example-extension-1.3.0.tgz",
           "size": 9279,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.3.0/freelensapp-example-extension-1.3.0.tgz",
           "createdAt": "2025-06-09T21:48:18Z",
@@ -839,7 +895,7 @@
         {
           "name": "freelensapp-extension-example-1.2.0.tgz",
           "size": 6121,
-          "downloadCount": 2,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.2.0/freelensapp-extension-example-1.2.0.tgz",
           "createdAt": "2025-05-15T14:35:32Z",
@@ -865,7 +921,7 @@
         {
           "name": "freelensapp-extension-example-1.0.1.tgz",
           "size": 7635,
-          "downloadCount": 5,
+          "downloadCount": 7,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
           "createdAt": "2025-05-09T16:42:07Z",
@@ -891,7 +947,7 @@
         {
           "name": "freelensapp-extension-example-1.0.0.tgz",
           "size": 7634,
-          "downloadCount": 2,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.0/freelensapp-extension-example-1.0.0.tgz",
           "createdAt": "2025-05-06T19:33:04Z",
@@ -902,6 +958,13 @@
     }
   ],
   "tags": [
+    {
+      "name": "v2.0.1-0",
+      "commitSha": "da2b6ec2ea32e81ff5c82a4b48fab8c00c801838",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/da2b6ec2ea32e81ff5c82a4b48fab8c00c801838",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/zipball/refs/tags/v2.0.1-0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/tarball/refs/tags/v2.0.1-0"
+    },
     {
       "name": "v2.0.0",
       "commitSha": "b289791de1c26626fbde0534e758803228096129",
@@ -1066,11 +1129,18 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.0.1-0",
+      "name": "v2.0.1-0",
+      "publishedAt": "2026-10-29T21:31:49Z",
+      "isPrerelease": true,
+      "notes": null
+    },
+    {
       "version": "v2.0.0",
       "name": "v2.0.0",
       "publishedAt": "2026-10-28T13:24:14Z",
       "isPrerelease": false,
-      "notes": null
+      "notes": "The first release of the example extension for the Freelens extension API v2. It needs Freelens 2.0.0 or newer; v1.10.2 stays the release for Freelens 1.x.\n\nThe repository is the reference template for building, type-checking, testing and releasing a Freelens v2 extension. The Freelens extension docs (`docs/extensions/` in freelensapp/freelens) define the API contract and point here for the rest; `AGENTS.md` explains every pattern and why it is there.\n\n## Breaking changes\n\n* Requires Freelens `^2.0.0` (`engines.freelens`) and Node.js 24 (`engines.node: >= 24.0.0`).\n* `dist/main.js` and `dist/renderer.js` are ES modules (`\"type\": \"module\"`), built by two Vite library-mode runs instead of electron-vite. The renderer CSS is extracted to `dist/renderer.css`.\n* The stack follows Freelens 2.0.0: React 19.3, mobx 7 with mobx-react 10 (standard decorators only, `@observable accessor`), TypeScript 7, Vite 8, Vitest 5, Electron 44, pnpm 12.\n\n| Library                   | v1.10.2   | v2.0.0 |\n| ------------------------- | --------- | ------ |\n| `@freelensapp/extensions` | `^1.10.2` | 2.0.0  |\n| react, react-dom          | 17.0.2    | 19.3.1 |\n| mobx                      | 6.13.7    | 7.0.6  |\n| mobx-react                | 7.6.0     | 10.0.2 |\n| typescript                | 5.9.3     | 7.0.2  |\n| vitest                    | `^4.1.9`  | 5.0.5  |\n| node                      | 22        | 24     |\n| pnpm                      | 10.34.4   | 12.15.0 |\n\n## What's Changed\n\n### Extension API v2\n\n* Migrate the build stack and shared sources to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/328\n* Adapt the Example feature to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/336\n* Re-render the available version page when the host serves a version by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/353\n* Register the Example models in customResources by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/364\n* Register details and menu items with the typed helpers of the extension API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/368\n* Keep a render error of the extension inside its page, panel or menu item by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/370\n\n### Build and type check\n\n* Write the CSS module declarations with a plugin that cannot leave one empty by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/344\n* Check for unused files with knip by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/349\n* Type-check src/common/ through the main, renderer and environment programs by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/351\n* Build the main entry for Rolldown's node platform by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/373\n* Define `__dirname` and `__filename` in the main bundle, so that a bundled CommonJS package loads in the ESM main, by @dex4er in bd206b2\n\n### Tests\n\n* Click through the extension's views in the integration tests, one session per API version by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/376\n* Follow Freelens changes since the 2026-10-12 nightly: React test helpers, CI agent and integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/382\n* Run the integration tests against Freelens dev over CDP by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/383\n* Name the URL of a console error, and match the host's getNs() in the test stub by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/400\n* Seed the kubeconfig sync of the Freelens dev profile for the integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/402\n\n### Agent skills and documentation\n\n* Agent skills for creating a Freelens extension and porting one to v2 by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/341\n* Document how to check the extension in Freelens dev by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/347\n* Add the observer props rule and the monaco-editor devDependency from the fluxcd port by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/360\n* Let the CI agent do several steps of a port in one run by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/361\n* Take optional fields from the kubebuilder markers when adding an API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/367\n* Fold the findings of the freelens-for-claude-extension port into the template and the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/374\n* Fold the findings of the freelens-ai-extension port into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/378\n* Describe the integration tests as an optional pattern in the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/386\n* Move the migration issue template into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/388\n* Move the port's pin to Freelens 14a491f12 and nightly 2026-10-26 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/398\n\n### CI and Renovate\n\n* Fix the title of the automated npm audit pull request by @robertobandini in https://github.com/freelensapp/freelens-example-extension/pull/325\n* Update Biome to 2.5.15 and run biome migrate on the Renovate branch by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/354\n* Renovate follows the versions Freelens has on `main`, in one \"Freelens dependencies\" group; pnpm updates come from the npm registry in pull requests of their own\n* Prerelease versions are tagged too, and their GitHub releases are marked as prereleases\n\n## Updates\n\n* Update trunk-io/trunk-action action to v2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/335\n* Update EndBug/add-and-commit action to v11 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/334\n* Update actions/setup-node action to v7 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/313\n* Update dependency kubernetes-sigs/kind to v0.33.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/322\n* Update kindest/node Docker tag to v1.37.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/333\n* Update dependency electron to v43.7.9 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/337\n* Update dependency electron to v44 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/397\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-12 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/365\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-15 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/381\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/358, https://github.com/freelensapp/freelens-example-extension/pull/380, https://github.com/freelensapp/freelens-example-extension/pull/390 and https://github.com/freelensapp/freelens-example-extension/pull/394\n* Update Freelens dependencies to v2.0.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/399\n* Update pnpm to v12.11.1, v12.11.2, v12.14.0 and v12.15.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/355, https://github.com/freelensapp/freelens-example-extension/pull/363, https://github.com/freelensapp/freelens-example-extension/pull/385 and https://github.com/freelensapp/freelens-example-extension/pull/395\n* Update dependency jdx/mise to v2026.10.4, v2026.10.11, v2026.10.13 and v2026.10.19 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/330, https://github.com/freelensapp/freelens-example-extension/pull/338, https://github.com/freelensapp/freelens-example-extension/pull/389 and https://github.com/freelensapp/freelens-example-extension/pull/391\n\n## New Contributors\n\n* @robertobandini made their first contribution in https://github.com/freelensapp/freelens-example-extension/pull/325\n\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.2...v2.0.0\n"
     },
     {
       "version": "v2.0.0-3",
@@ -1229,12 +1299,22 @@
   ],
   "tarFiles": [
     {
+      "filename": "freelensapp-example-extension-2.0.1-0.tgz",
+      "releaseTag": "v2.0.1-0",
+      "releaseName": "v2.0.1-0",
+      "size": 21775,
+      "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.1-0/freelensapp-example-extension-2.0.1-0.tgz",
+      "downloadCount": 2,
+      "type": "tar.gz",
+      "createdAt": "2026-10-29T21:31:51Z"
+    },
+    {
       "filename": "freelensapp-example-extension-2.0.0.tgz",
       "releaseTag": "v2.0.0",
       "releaseName": "v2.0.0",
       "size": 21770,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-10-28T13:24:13Z"
     },
@@ -1244,7 +1324,7 @@
       "releaseName": "v2.0.0-3",
       "size": 21798,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-3/freelensapp-example-extension-2.0.0-3.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-10-26T13:48:06Z"
     },
@@ -1254,7 +1334,7 @@
       "releaseName": "v2.0.0-2",
       "size": 21766,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-2/freelensapp-example-extension-2.0.0-2.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-10-17T19:47:39Z"
     },
@@ -1264,7 +1344,7 @@
       "releaseName": "v2.0.0-1",
       "size": 21276,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0-1/freelensapp-example-extension-2.0.0-1.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-10-14T12:12:17Z"
     },
@@ -1274,7 +1354,7 @@
       "releaseName": "v1.10.2",
       "size": 16078,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.2/freelensapp-example-extension-1.10.2.tgz",
-      "downloadCount": 6,
+      "downloadCount": 7,
       "type": "tar.gz",
       "createdAt": "2026-07-01T12:40:48Z"
     },
@@ -1284,7 +1364,7 @@
       "releaseName": "v1.10.1",
       "size": 16079,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2026-06-26T20:55:03Z"
     },
@@ -1294,7 +1374,7 @@
       "releaseName": "v1.10.0",
       "size": 16116,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.0/freelensapp-example-extension-1.10.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2026-06-26T15:35:38Z"
     },
@@ -1304,7 +1384,7 @@
       "releaseName": "v1.9.0",
       "size": 15354,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.9.0/freelensapp-example-extension-1.9.0.tgz",
-      "downloadCount": 5,
+      "downloadCount": 6,
       "type": "tar.gz",
       "createdAt": "2026-05-09T21:57:20Z"
     },
@@ -1314,7 +1394,7 @@
       "releaseName": "v1.8.0",
       "size": 17561,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.8.0/freelensapp-example-extension-1.8.0.tgz",
-      "downloadCount": 9,
+      "downloadCount": 10,
       "type": "tar.gz",
       "createdAt": "2026-02-04T18:19:22Z"
     },
@@ -1324,7 +1404,7 @@
       "releaseName": "v1.6.2",
       "size": 17553,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.2/freelensapp-example-extension-1.6.2.tgz",
-      "downloadCount": 7,
+      "downloadCount": 8,
       "type": "tar.gz",
       "createdAt": "2025-11-19T21:04:08Z"
     },
@@ -1334,7 +1414,7 @@
       "releaseName": "v1.6.1",
       "size": 15678,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.1/freelensapp-example-extension-1.6.1.tgz",
-      "downloadCount": 7,
+      "downloadCount": 8,
       "type": "tar.gz",
       "createdAt": "2025-10-24T14:27:34Z"
     },
@@ -1344,7 +1424,7 @@
       "releaseName": "v1.6.0",
       "size": 16223,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.6.0/freelensapp-example-extension-1.6.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2025-10-14T18:36:32Z"
     },
@@ -1354,7 +1434,7 @@
       "releaseName": "v1.5.3",
       "size": 14575,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.3/freelensapp-example-extension-1.5.3.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-08-18T17:37:58Z"
     },
@@ -1364,7 +1444,7 @@
       "releaseName": "v1.5.2",
       "size": 14222,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.2/freelensapp-example-extension-1.5.2.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-07-20T20:44:35Z"
     },
@@ -1374,7 +1454,7 @@
       "releaseName": "v1.5.1",
       "size": 14196,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.1/freelensapp-example-extension-1.5.1.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2025-07-18T09:14:09Z"
     },
@@ -1384,7 +1464,7 @@
       "releaseName": "v1.5.0",
       "size": 14165,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.5.0/freelensapp-example-extension-1.5.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2025-07-15T07:50:50Z"
     },
@@ -1394,7 +1474,7 @@
       "releaseName": "v1.4.2",
       "size": 15186,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.4.2/freelensapp-example-extension-1.4.2.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-07-05T23:18:24Z"
     },
@@ -1404,7 +1484,7 @@
       "releaseName": "v1.4.1",
       "size": 14385,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.4.1/freelensapp-example-extension-1.4.1.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2025-07-04T22:29:29Z"
     },
@@ -1414,7 +1494,7 @@
       "releaseName": "v1.4.0",
       "size": 11436,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.4.0/freelensapp-example-extension-1.4.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-06-29T22:31:35Z"
     },
@@ -1424,7 +1504,7 @@
       "releaseName": "v1.3.0",
       "size": 9279,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.3.0/freelensapp-example-extension-1.3.0.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2025-06-09T21:48:18Z"
     },
@@ -1434,7 +1514,7 @@
       "releaseName": "v1.2.0",
       "size": 6121,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.2.0/freelensapp-extension-example-1.2.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2025-05-15T14:35:32Z"
     },
@@ -1444,7 +1524,7 @@
       "releaseName": "v1.0.1",
       "size": 7635,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
-      "downloadCount": 5,
+      "downloadCount": 7,
       "type": "tar.gz",
       "createdAt": "2025-05-09T16:42:07Z"
     },
@@ -1454,7 +1534,7 @@
       "releaseName": "v1.0.0",
       "size": 7634,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.0/freelensapp-extension-example-1.0.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2025-05-06T19:33:04Z"
     }
@@ -1467,7 +1547,7 @@
     "prerelease": false,
     "createdAt": "2026-10-28T13:23:05Z",
     "publishedAt": "2026-10-28T13:24:14Z",
-    "body": null,
+    "body": "The first release of the example extension for the Freelens extension API v2. It needs Freelens 2.0.0 or newer; v1.10.2 stays the release for Freelens 1.x.\n\nThe repository is the reference template for building, type-checking, testing and releasing a Freelens v2 extension. The Freelens extension docs (`docs/extensions/` in freelensapp/freelens) define the API contract and point here for the rest; `AGENTS.md` explains every pattern and why it is there.\n\n## Breaking changes\n\n* Requires Freelens `^2.0.0` (`engines.freelens`) and Node.js 24 (`engines.node: >= 24.0.0`).\n* `dist/main.js` and `dist/renderer.js` are ES modules (`\"type\": \"module\"`), built by two Vite library-mode runs instead of electron-vite. The renderer CSS is extracted to `dist/renderer.css`.\n* The stack follows Freelens 2.0.0: React 19.3, mobx 7 with mobx-react 10 (standard decorators only, `@observable accessor`), TypeScript 7, Vite 8, Vitest 5, Electron 44, pnpm 12.\n\n| Library                   | v1.10.2   | v2.0.0 |\n| ------------------------- | --------- | ------ |\n| `@freelensapp/extensions` | `^1.10.2` | 2.0.0  |\n| react, react-dom          | 17.0.2    | 19.3.1 |\n| mobx                      | 6.13.7    | 7.0.6  |\n| mobx-react                | 7.6.0     | 10.0.2 |\n| typescript                | 5.9.3     | 7.0.2  |\n| vitest                    | `^4.1.9`  | 5.0.5  |\n| node                      | 22        | 24     |\n| pnpm                      | 10.34.4   | 12.15.0 |\n\n## What's Changed\n\n### Extension API v2\n\n* Migrate the build stack and shared sources to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/328\n* Adapt the Example feature to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/336\n* Re-render the available version page when the host serves a version by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/353\n* Register the Example models in customResources by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/364\n* Register details and menu items with the typed helpers of the extension API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/368\n* Keep a render error of the extension inside its page, panel or menu item by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/370\n\n### Build and type check\n\n* Write the CSS module declarations with a plugin that cannot leave one empty by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/344\n* Check for unused files with knip by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/349\n* Type-check src/common/ through the main, renderer and environment programs by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/351\n* Build the main entry for Rolldown's node platform by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/373\n* Define `__dirname` and `__filename` in the main bundle, so that a bundled CommonJS package loads in the ESM main, by @dex4er in bd206b2\n\n### Tests\n\n* Click through the extension's views in the integration tests, one session per API version by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/376\n* Follow Freelens changes since the 2026-10-12 nightly: React test helpers, CI agent and integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/382\n* Run the integration tests against Freelens dev over CDP by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/383\n* Name the URL of a console error, and match the host's getNs() in the test stub by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/400\n* Seed the kubeconfig sync of the Freelens dev profile for the integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/402\n\n### Agent skills and documentation\n\n* Agent skills for creating a Freelens extension and porting one to v2 by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/341\n* Document how to check the extension in Freelens dev by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/347\n* Add the observer props rule and the monaco-editor devDependency from the fluxcd port by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/360\n* Let the CI agent do several steps of a port in one run by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/361\n* Take optional fields from the kubebuilder markers when adding an API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/367\n* Fold the findings of the freelens-for-claude-extension port into the template and the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/374\n* Fold the findings of the freelens-ai-extension port into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/378\n* Describe the integration tests as an optional pattern in the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/386\n* Move the migration issue template into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/388\n* Move the port's pin to Freelens 14a491f12 and nightly 2026-10-26 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/398\n\n### CI and Renovate\n\n* Fix the title of the automated npm audit pull request by @robertobandini in https://github.com/freelensapp/freelens-example-extension/pull/325\n* Update Biome to 2.5.15 and run biome migrate on the Renovate branch by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/354\n* Renovate follows the versions Freelens has on `main`, in one \"Freelens dependencies\" group; pnpm updates come from the npm registry in pull requests of their own\n* Prerelease versions are tagged too, and their GitHub releases are marked as prereleases\n\n## Updates\n\n* Update trunk-io/trunk-action action to v2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/335\n* Update EndBug/add-and-commit action to v11 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/334\n* Update actions/setup-node action to v7 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/313\n* Update dependency kubernetes-sigs/kind to v0.33.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/322\n* Update kindest/node Docker tag to v1.37.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/333\n* Update dependency electron to v43.7.9 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/337\n* Update dependency electron to v44 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/397\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-12 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/365\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-15 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/381\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/358, https://github.com/freelensapp/freelens-example-extension/pull/380, https://github.com/freelensapp/freelens-example-extension/pull/390 and https://github.com/freelensapp/freelens-example-extension/pull/394\n* Update Freelens dependencies to v2.0.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/399\n* Update pnpm to v12.11.1, v12.11.2, v12.14.0 and v12.15.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/355, https://github.com/freelensapp/freelens-example-extension/pull/363, https://github.com/freelensapp/freelens-example-extension/pull/385 and https://github.com/freelensapp/freelens-example-extension/pull/395\n* Update dependency jdx/mise to v2026.10.4, v2026.10.11, v2026.10.13 and v2026.10.19 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/330, https://github.com/freelensapp/freelens-example-extension/pull/338, https://github.com/freelensapp/freelens-example-extension/pull/389 and https://github.com/freelensapp/freelens-example-extension/pull/391\n\n## New Contributors\n\n* @robertobandini made their first contribution in https://github.com/freelensapp/freelens-example-extension/pull/325\n\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.2...v2.0.0\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
@@ -1476,7 +1556,7 @@
       {
         "name": "freelensapp-example-extension-2.0.0-spdx.json",
         "size": 197583,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json",
         "createdAt": "2026-10-28T13:24:13Z",
@@ -1486,7 +1566,7 @@
       {
         "name": "freelensapp-example-extension-2.0.0-spdx.json.sha256",
         "size": 112,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json.sha256",
         "createdAt": "2026-10-28T13:24:13Z",
@@ -1496,7 +1576,7 @@
       {
         "name": "freelensapp-example-extension-2.0.0.tgz",
         "size": 21770,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz",
         "createdAt": "2026-10-28T13:24:13Z",
@@ -1506,7 +1586,7 @@
       {
         "name": "freelensapp-example-extension-2.0.0.tgz.sha256",
         "size": 106,
-        "downloadCount": 0,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz.sha256",
         "createdAt": "2026-10-28T13:24:13Z",
@@ -1515,7 +1595,7 @@
       }
     ]
   },
-  "totalReleases": 23,
+  "totalReleases": 24,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-29T20:30:12.895Z"
+  "lastScanned": "2026-10-30T00:08:19.210Z"
 }

@@ -8,8 +8,8 @@
   "forks": 9,
   "language": "TypeScript",
   "createdAt": "2025-05-06T08:04:54Z",
-  "updatedAt": "2026-10-29T20:15:43Z",
-  "pushedAt": "2026-10-29T20:30:07Z",
+  "updatedAt": "2026-10-29T21:21:46Z",
+  "pushedAt": "2026-10-29T21:21:53Z",
   "defaultBranch": "main",
   "topics": [
     "ai",
@@ -34,7 +34,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/ai-extension",
-    "version": "1.0.0-0",
+    "version": "1.0.0",
     "description": "AI capabilities for Freelens",
     "repository": {
       "type": "git",
@@ -146,6 +146,62 @@
   },
   "releases": [
     {
+      "id": 428409969,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-10-29T21:21:41Z",
+      "publishedAt": "2026-10-29T21:22:40Z",
+      "body": "The first release for Freelens 2. Freelens AI now runs on the Freelens v2 extension API, and its agents run in the main process of Freelens.\n\n**This release requires Freelens 2.0.0 or later.** It does not load in Freelens 1; keep using v0.7.1 there. The 1.x releases are for Freelens 2, the 0.x releases for Freelens 1.\n\n## Highlights\n\n### Freelens v2 extension API (#298)\n\n- The extension is built for the Freelens v2 extension API as an ES module, and uses the React 19, mobx and Monaco editor of Freelens instead of copies of its own.\n- Installed from a directory, the extension reloads on a rebuild without a restart of Freelens.\n- Every page, menu item and preference of the extension has its own error boundary: an error in one of them shows an error page or leaves the item out, instead of taking down the whole cluster view or preferences page.\n\n### The agents run in the main process (#298)\n\n- The LangGraph agents, the Kubernetes tools, the MCP servers and the calls to the model run in the main process of Freelens. The chat talks to them over a local bridge on `127.0.0.1` that answers only to the token of the current launch, and the API key never leaves the main process.\n- Every cluster has its own agents, conversation and memory: two clusters open at once never share a run, and the conversation of each cluster survives a restart of Freelens.\n- Every request to the model endpoint, and for the model pricing, follows the proxy and certificate preferences of Freelens.\n- The Kubernetes tools reach every kind by its path, custom resources included, and still ask for approval before every change.\n- A stdio MCP server runs with the kubeconfig of the cluster the chat is open for, not with the current context of your kubeconfig. The servers stop when MCP is turned off, its configuration changes, the cluster is disconnected or the extension stops.\n\n### New default models (#328)\n\n- The default model list is now the flagship models of the OpenAI API: `gpt-6.1-sol` (selected by default), `gpt-6-astra`, `gpt-6.1-terra` and `gpt-6-luna`. A saved model list is kept; \"Reset to defaults\" loads the new one.\n- GPT-6 models, and `gpt-5.6`, `gpt-5.x-pro` and `codex`, go through the OpenAI Responses API, which they need for tools.\n\n## Fixes\n\n- The pod logs tool no longer returns the logs of the previous container when the model does not ask for them (#312).\n- Deleting a pod with its finalizers now removes the finalizers, and the tool reports whether the pod is gone instead of always reporting success (#313).\n- \"Clear chat\" while an approval is pending leaves a usable chat: the next message is a new prompt, not an answer to the cleared approval (#314).\n- Disabling or reloading the extension while an answer streams ends the answer with a note in the chat instead of a network error (#315).\n- \"Explain\" on a warning Event no longer shows `[object Object]` for models served through the Responses API (#328).\n\n## Other changes\n\n- The chat renders Markdown with `react-markdown` 10 and `remark-gfm` 4 (#9).\n- Dependencies updated: `@freelensapp/extensions` 2.0.0, `@langchain/core` 1.3, `@langchain/langgraph` 1.5, `@langchain/openai` 1.8, `@langchain/mcp-adapters` 2.0, `lucide-react` 1.63, `yaml` 2.9, and the toolchain of Freelens 2.0.0.\n- The integration tests run against Freelens dev v2.0.0 with a kind cluster, including a prompt and \"Explain\" against a real model (#326).\n- The repository is aligned with freelensapp/freelens-example-extension (#306).\n\n## Install\n\nIn Freelens, go to Extensions, enter `@freelensapp/ai-extension` and press Install, or enter the URL of the `freelensapp-ai-extension-1.0.0.tgz` asset below; Freelens checks it against the `.tgz.sha256` next to it. Then set the API key in the extension's preferences, as described in the [set up guide](https://github.com/freelensapp/freelens-ai-extension/blob/v1.0.0/docs/SET_UP_EXTENSION.md).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-ai-extension/compare/v0.7.1...v1.0.0\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-ai-extension-1.0.0-spdx.json",
+          "size": 204247,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0-spdx.json",
+          "createdAt": "2026-10-29T21:22:39Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-ai-extension-1.0.0-spdx.json.sha256",
+          "size": 107,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0-spdx.json.sha256",
+          "createdAt": "2026-10-29T21:22:39Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-ai-extension-1.0.0.tgz",
+          "size": 3315102,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0.tgz",
+          "createdAt": "2026-10-29T21:22:39Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-ai-extension-1.0.0.tgz.sha256",
+          "size": 101,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0.tgz.sha256",
+          "createdAt": "2026-10-29T21:22:39Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 383538643,
       "tagName": "v0.7.1",
       "name": "v0.7.1",
@@ -162,7 +218,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.1-spdx.json",
           "size": 1940000,
-          "downloadCount": 4,
+          "downloadCount": 6,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1-spdx.json",
           "createdAt": "2026-09-06T10:07:09Z",
@@ -172,7 +228,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.1-spdx.json.sha256",
           "size": 107,
-          "downloadCount": 3,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1-spdx.json.sha256",
           "createdAt": "2026-09-06T10:07:09Z",
@@ -182,7 +238,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.1.tgz",
           "size": 2306658,
-          "downloadCount": 32,
+          "downloadCount": 33,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1.tgz",
           "createdAt": "2026-09-06T10:07:09Z",
@@ -192,7 +248,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.1.tgz.sha256",
           "size": 101,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1.tgz.sha256",
           "createdAt": "2026-09-06T10:07:09Z",
@@ -218,7 +274,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0-spdx.json",
           "size": 1940000,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0-spdx.json",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -228,7 +284,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0-spdx.json.sha256",
           "size": 107,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0-spdx.json.sha256",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -238,7 +294,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0.tgz",
           "size": 2306187,
-          "downloadCount": 5,
+          "downloadCount": 7,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -248,7 +304,7 @@
         {
           "name": "freelensapp-ai-extension-0.7.0.tgz.sha256",
           "size": 101,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz.sha256",
           "createdAt": "2026-08-27T13:29:47Z",
@@ -274,7 +330,7 @@
         {
           "name": "freelensapp-ai-extension-0.6.0.tgz",
           "size": 2373681,
-          "downloadCount": 35,
+          "downloadCount": 36,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
           "createdAt": "2026-05-15T17:43:49Z",
@@ -300,7 +356,7 @@
         {
           "name": "freelensapp-ai-extension-0.5.0.tgz",
           "size": 2371835,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.5.0/freelensapp-ai-extension-0.5.0.tgz",
           "createdAt": "2026-05-07T18:39:50Z",
@@ -326,7 +382,7 @@
         {
           "name": "freelensapp-ai-extension-0.4.1.tgz",
           "size": 2366502,
-          "downloadCount": 53,
+          "downloadCount": 54,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.1/freelensapp-ai-extension-0.4.1.tgz",
           "createdAt": "2025-09-21T16:12:41Z",
@@ -352,7 +408,7 @@
         {
           "name": "freelensapp-ai-extension-0.4.0.tgz",
           "size": 2366346,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.0/freelensapp-ai-extension-0.4.0.tgz",
           "createdAt": "2025-09-12T16:41:52Z",
@@ -378,7 +434,7 @@
         {
           "name": "freelensapp-ai-extension-0.2.0.tgz",
           "size": 2361659,
-          "downloadCount": 13,
+          "downloadCount": 15,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.2.0/freelensapp-ai-extension-0.2.0.tgz",
           "createdAt": "2025-08-10T15:55:56Z",
@@ -404,7 +460,7 @@
         {
           "name": "freelensapp-ai-extension-0.1.0.tgz",
           "size": 2361310,
-          "downloadCount": 22,
+          "downloadCount": 23,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.1.0/freelensapp-ai-extension-0.1.0.tgz",
           "createdAt": "2025-07-14T17:01:12Z",
@@ -415,6 +471,13 @@
     }
   ],
   "tags": [
+    {
+      "name": "v1.0.0",
+      "commitSha": "20382a7dc8f1159c38a15d7f795208a7c40a4280",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/commits/20382a7dc8f1159c38a15d7f795208a7c40a4280",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-ai-extension/tarball/refs/tags/v1.0.0"
+    },
     {
       "name": "v0.7.1",
       "commitSha": "35136a2bcf5dbb7443c2e3cd4ba0636766293ff6",
@@ -474,6 +537,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2026-10-29T21:22:40Z",
+      "isPrerelease": false,
+      "notes": "The first release for Freelens 2. Freelens AI now runs on the Freelens v2 extension API, and its agents run in the main process of Freelens.\n\n**This release requires Freelens 2.0.0 or later.** It does not load in Freelens 1; keep using v0.7.1 there. The 1.x releases are for Freelens 2, the 0.x releases for Freelens 1.\n\n## Highlights\n\n### Freelens v2 extension API (#298)\n\n- The extension is built for the Freelens v2 extension API as an ES module, and uses the React 19, mobx and Monaco editor of Freelens instead of copies of its own.\n- Installed from a directory, the extension reloads on a rebuild without a restart of Freelens.\n- Every page, menu item and preference of the extension has its own error boundary: an error in one of them shows an error page or leaves the item out, instead of taking down the whole cluster view or preferences page.\n\n### The agents run in the main process (#298)\n\n- The LangGraph agents, the Kubernetes tools, the MCP servers and the calls to the model run in the main process of Freelens. The chat talks to them over a local bridge on `127.0.0.1` that answers only to the token of the current launch, and the API key never leaves the main process.\n- Every cluster has its own agents, conversation and memory: two clusters open at once never share a run, and the conversation of each cluster survives a restart of Freelens.\n- Every request to the model endpoint, and for the model pricing, follows the proxy and certificate preferences of Freelens.\n- The Kubernetes tools reach every kind by its path, custom resources included, and still ask for approval before every change.\n- A stdio MCP server runs with the kubeconfig of the cluster the chat is open for, not with the current context of your kubeconfig. The servers stop when MCP is turned off, its configuration changes, the cluster is disconnected or the extension stops.\n\n### New default models (#328)\n\n- The default model list is now the flagship models of the OpenAI API: `gpt-6.1-sol` (selected by default), `gpt-6-astra`, `gpt-6.1-terra` and `gpt-6-luna`. A saved model list is kept; \"Reset to defaults\" loads the new one.\n- GPT-6 models, and `gpt-5.6`, `gpt-5.x-pro` and `codex`, go through the OpenAI Responses API, which they need for tools.\n\n## Fixes\n\n- The pod logs tool no longer returns the logs of the previous container when the model does not ask for them (#312).\n- Deleting a pod with its finalizers now removes the finalizers, and the tool reports whether the pod is gone instead of always reporting success (#313).\n- \"Clear chat\" while an approval is pending leaves a usable chat: the next message is a new prompt, not an answer to the cleared approval (#314).\n- Disabling or reloading the extension while an answer streams ends the answer with a note in the chat instead of a network error (#315).\n- \"Explain\" on a warning Event no longer shows `[object Object]` for models served through the Responses API (#328).\n\n## Other changes\n\n- The chat renders Markdown with `react-markdown` 10 and `remark-gfm` 4 (#9).\n- Dependencies updated: `@freelensapp/extensions` 2.0.0, `@langchain/core` 1.3, `@langchain/langgraph` 1.5, `@langchain/openai` 1.8, `@langchain/mcp-adapters` 2.0, `lucide-react` 1.63, `yaml` 2.9, and the toolchain of Freelens 2.0.0.\n- The integration tests run against Freelens dev v2.0.0 with a kind cluster, including a prompt and \"Explain\" against a real model (#326).\n- The repository is aligned with freelensapp/freelens-example-extension (#306).\n\n## Install\n\nIn Freelens, go to Extensions, enter `@freelensapp/ai-extension` and press Install, or enter the URL of the `freelensapp-ai-extension-1.0.0.tgz` asset below; Freelens checks it against the `.tgz.sha256` next to it. Then set the API key in the extension's preferences, as described in the [set up guide](https://github.com/freelensapp/freelens-ai-extension/blob/v1.0.0/docs/SET_UP_EXTENSION.md).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-ai-extension/compare/v0.7.1...v1.0.0\n"
+    },
+    {
       "version": "v0.7.1",
       "name": "v0.7.1",
       "publishedAt": "2026-09-06T10:07:10Z",
@@ -532,12 +602,22 @@
   ],
   "tarFiles": [
     {
+      "filename": "freelensapp-ai-extension-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 3315102,
+      "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-10-29T21:22:39Z"
+    },
+    {
       "filename": "freelensapp-ai-extension-0.7.1.tgz",
       "releaseTag": "v0.7.1",
       "releaseName": "v0.7.1",
       "size": 2306658,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1.tgz",
-      "downloadCount": 32,
+      "downloadCount": 33,
       "type": "tar.gz",
       "createdAt": "2026-09-06T10:07:09Z"
     },
@@ -547,7 +627,7 @@
       "releaseName": "v0.7.0",
       "size": 2306187,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.0/freelensapp-ai-extension-0.7.0.tgz",
-      "downloadCount": 5,
+      "downloadCount": 7,
       "type": "tar.gz",
       "createdAt": "2026-08-27T13:29:47Z"
     },
@@ -557,7 +637,7 @@
       "releaseName": "v0.6.0",
       "size": 2373681,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.6.0/freelensapp-ai-extension-0.6.0.tgz",
-      "downloadCount": 35,
+      "downloadCount": 36,
       "type": "tar.gz",
       "createdAt": "2026-05-15T17:43:49Z"
     },
@@ -567,7 +647,7 @@
       "releaseName": "v0.5.0",
       "size": 2371835,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.5.0/freelensapp-ai-extension-0.5.0.tgz",
-      "downloadCount": 7,
+      "downloadCount": 8,
       "type": "tar.gz",
       "createdAt": "2026-05-07T18:39:50Z"
     },
@@ -577,7 +657,7 @@
       "releaseName": "v0.4.1",
       "size": 2366502,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.1/freelensapp-ai-extension-0.4.1.tgz",
-      "downloadCount": 53,
+      "downloadCount": 54,
       "type": "tar.gz",
       "createdAt": "2025-09-21T16:12:41Z"
     },
@@ -587,7 +667,7 @@
       "releaseName": "v0.4.0",
       "size": 2366346,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.4.0/freelensapp-ai-extension-0.4.0.tgz",
-      "downloadCount": 4,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2025-09-12T16:41:52Z"
     },
@@ -597,7 +677,7 @@
       "releaseName": "v0.2.0",
       "size": 2361659,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.2.0/freelensapp-ai-extension-0.2.0.tgz",
-      "downloadCount": 13,
+      "downloadCount": 15,
       "type": "tar.gz",
       "createdAt": "2025-08-10T15:55:56Z"
     },
@@ -607,68 +687,68 @@
       "releaseName": "v0.1.0",
       "size": 2361310,
       "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.1.0/freelensapp-ai-extension-0.1.0.tgz",
-      "downloadCount": 22,
+      "downloadCount": 23,
       "type": "tar.gz",
       "createdAt": "2025-07-14T17:01:12Z"
     }
   ],
   "latestRelease": {
-    "id": 383538643,
-    "tagName": "v0.7.1",
-    "name": "v0.7.1",
+    "id": 428409969,
+    "tagName": "v1.0.0",
+    "name": "v1.0.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-09-06T10:06:01Z",
-    "publishedAt": "2026-09-06T10:07:10Z",
-    "body": null,
+    "createdAt": "2026-10-29T21:21:41Z",
+    "publishedAt": "2026-10-29T21:22:40Z",
+    "body": "The first release for Freelens 2. Freelens AI now runs on the Freelens v2 extension API, and its agents run in the main process of Freelens.\n\n**This release requires Freelens 2.0.0 or later.** It does not load in Freelens 1; keep using v0.7.1 there. The 1.x releases are for Freelens 2, the 0.x releases for Freelens 1.\n\n## Highlights\n\n### Freelens v2 extension API (#298)\n\n- The extension is built for the Freelens v2 extension API as an ES module, and uses the React 19, mobx and Monaco editor of Freelens instead of copies of its own.\n- Installed from a directory, the extension reloads on a rebuild without a restart of Freelens.\n- Every page, menu item and preference of the extension has its own error boundary: an error in one of them shows an error page or leaves the item out, instead of taking down the whole cluster view or preferences page.\n\n### The agents run in the main process (#298)\n\n- The LangGraph agents, the Kubernetes tools, the MCP servers and the calls to the model run in the main process of Freelens. The chat talks to them over a local bridge on `127.0.0.1` that answers only to the token of the current launch, and the API key never leaves the main process.\n- Every cluster has its own agents, conversation and memory: two clusters open at once never share a run, and the conversation of each cluster survives a restart of Freelens.\n- Every request to the model endpoint, and for the model pricing, follows the proxy and certificate preferences of Freelens.\n- The Kubernetes tools reach every kind by its path, custom resources included, and still ask for approval before every change.\n- A stdio MCP server runs with the kubeconfig of the cluster the chat is open for, not with the current context of your kubeconfig. The servers stop when MCP is turned off, its configuration changes, the cluster is disconnected or the extension stops.\n\n### New default models (#328)\n\n- The default model list is now the flagship models of the OpenAI API: `gpt-6.1-sol` (selected by default), `gpt-6-astra`, `gpt-6.1-terra` and `gpt-6-luna`. A saved model list is kept; \"Reset to defaults\" loads the new one.\n- GPT-6 models, and `gpt-5.6`, `gpt-5.x-pro` and `codex`, go through the OpenAI Responses API, which they need for tools.\n\n## Fixes\n\n- The pod logs tool no longer returns the logs of the previous container when the model does not ask for them (#312).\n- Deleting a pod with its finalizers now removes the finalizers, and the tool reports whether the pod is gone instead of always reporting success (#313).\n- \"Clear chat\" while an approval is pending leaves a usable chat: the next message is a new prompt, not an answer to the cleared approval (#314).\n- Disabling or reloading the extension while an answer streams ends the answer with a note in the chat instead of a network error (#315).\n- \"Explain\" on a warning Event no longer shows `[object Object]` for models served through the Responses API (#328).\n\n## Other changes\n\n- The chat renders Markdown with `react-markdown` 10 and `remark-gfm` 4 (#9).\n- Dependencies updated: `@freelensapp/extensions` 2.0.0, `@langchain/core` 1.3, `@langchain/langgraph` 1.5, `@langchain/openai` 1.8, `@langchain/mcp-adapters` 2.0, `lucide-react` 1.63, `yaml` 2.9, and the toolchain of Freelens 2.0.0.\n- The integration tests run against Freelens dev v2.0.0 with a kind cluster, including a prompt and \"Explain\" against a real model (#326).\n- The repository is aligned with freelensapp/freelens-example-extension (#306).\n\n## Install\n\nIn Freelens, go to Extensions, enter `@freelensapp/ai-extension` and press Install, or enter the URL of the `freelensapp-ai-extension-1.0.0.tgz` asset below; Freelens checks it against the `.tgz.sha256` next to it. Then set the API key in the extension's preferences, as described in the [set up guide](https://github.com/freelensapp/freelens-ai-extension/blob/v1.0.0/docs/SET_UP_EXTENSION.md).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-ai-extension/compare/v0.7.1...v1.0.0\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-ai-extension-0.7.1-spdx.json",
-        "size": 1940000,
-        "downloadCount": 4,
+        "name": "freelensapp-ai-extension-1.0.0-spdx.json",
+        "size": 204247,
+        "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1-spdx.json",
-        "createdAt": "2026-09-06T10:07:09Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0-spdx.json",
+        "createdAt": "2026-10-29T21:22:39Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-ai-extension-0.7.1-spdx.json.sha256",
+        "name": "freelensapp-ai-extension-1.0.0-spdx.json.sha256",
         "size": 107,
-        "downloadCount": 3,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1-spdx.json.sha256",
-        "createdAt": "2026-09-06T10:07:09Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0-spdx.json.sha256",
+        "createdAt": "2026-10-29T21:22:39Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-ai-extension-0.7.1.tgz",
-        "size": 2306658,
-        "downloadCount": 32,
+        "name": "freelensapp-ai-extension-1.0.0.tgz",
+        "size": 3315102,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1.tgz",
-        "createdAt": "2026-09-06T10:07:09Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0.tgz",
+        "createdAt": "2026-10-29T21:22:39Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-ai-extension-0.7.1.tgz.sha256",
+        "name": "freelensapp-ai-extension-1.0.0.tgz.sha256",
         "size": 101,
-        "downloadCount": 3,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v0.7.1/freelensapp-ai-extension-0.7.1.tgz.sha256",
-        "createdAt": "2026-09-06T10:07:09Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-ai-extension/releases/download/v1.0.0/freelensapp-ai-extension-1.0.0.tgz.sha256",
+        "createdAt": "2026-10-29T21:22:39Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 8,
+  "totalReleases": 9,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-29T20:30:11.859Z"
+  "lastScanned": "2026-10-30T00:08:18.198Z"
 }
