@@ -475,7 +475,7 @@
         {
           "name": "freelensapp-example-extension-1.10.1-spdx.json",
           "size": 1883636,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.10.1/freelensapp-example-extension-1.10.1-spdx.json",
           "createdAt": "2026-06-26T20:55:03Z",
@@ -1597,5 +1597,5 @@
   },
   "totalReleases": 24,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-30T21:26:49.581Z"
+  "lastScanned": "2026-10-31T00:55:21.340Z"
 }

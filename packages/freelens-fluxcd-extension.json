@@ -272,7 +272,7 @@
         {
           "name": "freelensapp-fluxcd-extension-5.3.1-spdx.json.sha256",
           "size": 111,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.3.1/freelensapp-fluxcd-extension-5.3.1-spdx.json.sha256",
           "createdAt": "2026-07-22T18:48:27Z",
@@ -1038,5 +1038,5 @@
   },
   "totalReleases": 15,
   "hasTarFiles": true,
-  "lastScanned": "2026-10-30T21:26:47.635Z"
+  "lastScanned": "2026-10-31T00:55:19.621Z"
 }
