@@ -465,9 +465,9 @@
     "name": "@freelensapp/sveltos-extension",
     "repoName": "freelens-sveltos-extension",
     "fullName": "freelensapp/freelens-sveltos-extension",
-    "description": "Sveltos Freelens extension",
+    "description": "ProjectSveltos UI for Freelens",
     "stars": 5,
-    "updatedAt": "2026-05-22T02:12:28Z",
+    "updatedAt": "2026-10-31T11:41:34Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
