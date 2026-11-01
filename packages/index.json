@@ -27,7 +27,7 @@
     "fullName": "freelensapp/freelens-ai-extension",
     "description": "AI capabilities for Freelens",
     "stars": 37,
-    "updatedAt": "2026-11-01T09:17:37Z",
+    "updatedAt": "2026-11-01T15:03:48Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -137,7 +137,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-11-01T09:14:20Z",
+    "updatedAt": "2026-11-01T14:49:13Z",
     "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -214,8 +214,8 @@
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
     "stars": 128,
-    "updatedAt": "2026-11-01T09:17:17Z",
-    "latestVersion": "v6.0.0",
+    "updatedAt": "2026-11-01T15:39:07Z",
+    "latestVersion": "v6.1.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -225,7 +225,7 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 3,
-    "updatedAt": "2026-11-01T09:17:30Z",
+    "updatedAt": "2026-11-01T15:03:44Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -246,8 +246,8 @@
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
-    "stars": 16,
-    "updatedAt": "2026-11-01T09:17:24Z",
+    "stars": 17,
+    "updatedAt": "2026-11-01T15:03:40Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -313,7 +313,7 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-10-30T15:29:06Z",
+    "updatedAt": "2026-11-01T14:14:52Z",
     "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -379,7 +379,7 @@
     "fullName": "freelensapp/freelens-kubeswift-extension",
     "description": "Freelens extension for KubeSwift",
     "stars": 2,
-    "updatedAt": "2026-10-30T17:32:54Z",
+    "updatedAt": "2026-11-01T14:15:02Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -443,10 +443,10 @@
     "name": "@freelensapp/resource-map-extension",
     "repoName": "freelens-resource-map-extension",
     "fullName": "freelensapp/freelens-resource-map-extension",
-    "description": "FreeLens extension to visualize Kubernetes resources and their relations",
-    "stars": 13,
-    "updatedAt": "2026-10-20T01:02:16Z",
-    "latestVersion": "v1.0.2",
+    "description": "Freelens extension to visualize Kubernetes resources and their relations",
+    "stars": 14,
+    "updatedAt": "2026-11-01T14:14:41Z",
+    "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -510,8 +510,8 @@
     "repoName": "freelens-velero-extension",
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
-    "stars": 2,
-    "updatedAt": "2026-10-29T21:51:56Z",
+    "stars": 3,
+    "updatedAt": "2026-11-01T11:52:03Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false

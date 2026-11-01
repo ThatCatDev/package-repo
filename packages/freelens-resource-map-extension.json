@@ -2,17 +2,22 @@
   "name": "@freelensapp/resource-map-extension",
   "repoName": "freelens-resource-map-extension",
   "fullName": "freelensapp/freelens-resource-map-extension",
-  "description": "FreeLens extension to visualize Kubernetes resources and their relations",
-  "homepage": "https://github.com/freelensapp/freelens-resource-map-extension",
-  "stars": 13,
+  "description": "Freelens extension to visualize Kubernetes resources and their relations",
+  "homepage": "https://freelens.app/",
+  "stars": 14,
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2025-04-23T16:59:51Z",
-  "updatedAt": "2026-10-20T01:02:16Z",
-  "pushedAt": "2026-10-31T12:11:23Z",
+  "updatedAt": "2026-11-01T14:14:41Z",
+  "pushedAt": "2026-11-01T14:17:17Z",
   "defaultBranch": "main",
-  "topics": [],
-  "license": "NOASSERTION",
+  "topics": [
+    "force-graph",
+    "freelens",
+    "kubernetes",
+    "visualization"
+  ],
+  "license": "MIT",
   "owner": {
     "login": "freelensapp",
     "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
@@ -25,10 +30,24 @@
   },
   "packageJson": {
     "name": "@freelensapp/resource-map-extension",
-    "version": "1.0.2",
-    "description": "FreeLens extension to visualize Kubernetes resources and their relations",
-    "homepage": "https://github.com/freelensapp/freelens-resource-map-extension",
+    "version": "2.0.0",
+    "description": "Freelens extension to visualize Kubernetes resources and their relations",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/freelensapp/freelens-resource-map-extension.git",
+      "directory": "."
+    },
+    "main": "dist/main.js",
+    "renderer": "dist/renderer.js",
+    "files": [
+      "dist/**/*"
+    ],
+    "engines": {
+      "node": ">= 24.0.0",
+      "freelens": "^2.0.0"
+    },
     "license": "MIT",
+    "type": "module",
     "author": "Yasmine Gharbi <gyasmine29@gmail.com>",
     "contributors": [
       {
@@ -44,109 +63,143 @@
         "url": "https://github.com/nevalla"
       }
     ],
-    "publisher": "freelens",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/freelensapp/freelens-resource-map-extension.git"
-    },
-    "main": "out/main/index.js",
-    "renderer": "out/renderer/index.js",
-    "engines": {
-      "node": ">=22.0.0",
-      "freelens": "^1.6.0"
-    },
     "publishConfig": {
       "access": "public",
       "registry": "https://registry.npmjs.org/"
     },
+    "scripts": {
+      "biome": "pnpm dlx @biomejs/biome@2.6.3",
+      "biome:check": "pnpm biome check",
+      "biome:fix": "pnpm biome check --fix",
+      "biome:migrate": "pnpm biome migrate --write",
+      "trunk": "pnpm dlx @trunkio/launcher@1.3.4",
+      "trunk:check": "pnpm trunk check",
+      "trunk:check:all": "pnpm trunk check --all",
+      "trunk:fix": "pnpm trunk check --fix",
+      "trunk:fix:all": "pnpm trunk check --fix --all",
+      "lint": "pnpm lint:check",
+      "lint:check": "pnpm biome:check",
+      "lint:fix": "pnpm biome:fix",
+      "knip": "pnpm dlx knip@6.41.0 --dependencies --files --no-gitignore --no-config-hints",
+      "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
+      "knip:development": "pnpm knip",
+      "knip:production": "pnpm knip --production --strict",
+      "test": "pnpm test:unit",
+      "test:unit": "vitest run",
+      "test:integration": "vitest run --config vitest.integration.config.ts",
+      "type:check": "pnpm type:check:sources && pnpm type:check:tests && pnpm type:check:tooling && pnpm type:check:integration && pnpm type:check:environments",
+      "type:check:sources": "tsc -p src/main && tsc -p src/renderer",
+      "type:check:tests": "tsc -p src/tsconfig.json",
+      "type:check:tooling": "tsc -p tsconfig.json",
+      "type:check:integration": "tsc -p integration",
+      "type:check:environments": "tsc -p environment-tests/tsconfig.main.json && tsc -p environment-tests/tsconfig.renderer.json && tsc -p environment-tests",
+      "build": "vite build && vite build --mode main",
+      "dev": "pnpm \"/^dev:(renderer|main)\\$/\"",
+      "dev:main": "vite build --watch --mode main",
+      "dev:renderer": "vite build --watch --no-emptyOutDir",
+      "bump-version": "pnpm version --no-commit-hooks --no-git-checks --no-git-tag-version",
+      "pack:dev": "pnpm bump-version prerelease && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
+      "clean": "pnpm clean:dist",
+      "clean:dist": "pnpm dlx shx@0.4.0 rm -rf dist",
+      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
+      "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
+      "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
+      "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
+    },
+    "dependencies": {
+      "d3-force": "^3.0.0",
+      "react-force-graph-2d": "^1.29.2"
+    },
+    "devDependencies": {
+      "@freelensapp/extensions": "^2.0.0",
+      "@testing-library/dom": "10.4.2",
+      "@testing-library/react": "16.3.3",
+      "@types/d3-force": "3.0.10",
+      "@types/node": "24.19.2",
+      "@types/react": "19.3.0",
+      "@types/react-dom": "19.3.0",
+      "@vitejs/plugin-react": "6.1.2",
+      "electron": "44.10.0",
+      "esbuild": "0.28.2",
+      "jsdom": "30.1.3",
+      "mobx": "7.0.6",
+      "mobx-react": "10.0.2",
+      "playwright": "1.64.1",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
+      "sass-embedded": "1.105.2",
+      "typescript": "7.0.2",
+      "vite": "8.3.5",
+      "vitest": "5.0.5"
+    },
     "keywords": [
-      "lens",
       "extension",
-      "k8slens",
-      "kubernetes",
       "freelensapp",
-      "extension",
       "lens",
       "openlens",
       "freelens",
       "resource",
       "map"
     ],
-    "files": [
-      "out/**/*"
-    ],
-    "updateSource": "github|npmjs",
-    "scripts": {
-      "biome": "corepack pnpm dlx @biomejs/biome@2.3.6",
-      "biome:check": "corepack pnpm biome check",
-      "biome:fix": "corepack pnpm biome check --fix",
-      "biome:migrate": "corepack pnpm biome migrate --write",
-      "prettier": "corepack pnpm dlx prettier@3.6.2",
-      "prettier:check": "corepack pnpm prettier --check .",
-      "prettier:fix": "corepack pnpm prettier --write .",
-      "trunk": "corepack pnpm dlx @trunkio/launcher@1.3.4",
-      "trunk:check": "corepack pnpm trunk check",
-      "trunk:check:all": "corepack pnpm trunk check --all",
-      "trunk:fix": "corepack pnpm trunk check --fix",
-      "trunk:fix:all": "corepack pnpm trunk check --fix --all",
-      "lint": "corepack pnpm lint:check",
-      "lint:check": "corepack pnpm \"/^(biome|prettier):check\\$/\"",
-      "lint:fix": "corepack pnpm \"/^(biome|prettier):fix\\$/\"",
-      "knip": "corepack pnpm dlx knip@5.70.0 --dependencies --no-gitignore",
-      "knip:check": "corepack pnpm \"/^knip:(development|production)\\$/\"",
-      "knip:development": "corepack pnpm knip",
-      "knip:production": "corepack pnpm knip --production --strict",
-      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
-      "prebuild": "corepack pnpm type:check",
-      "build": "electron-vite build",
-      "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
-      "build:force": "electron-vite build",
-      "bump-version": "corepack pnpm version --no-commit-hooks --no-git-tag-version",
-      "pack:dev": "corepack pnpm bump-version prerelease && corepack pnpm build:force && corepack pnpm build && corepack pnpm clean:tgz && corepack pnpm pack && corepack pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
-      "clean": "corepack pnpm clean:out",
-      "clean:dts": "corepack pnpm dlx shx@0.4.0 rm -f \"src/**/*.scss.d.ts\"",
-      "clean:node_modules": "corepack pnpm dlx shx@0.4.0 rm -rf node_modules",
-      "clean:out": "corepack pnpm dlx shx@0.4.0 rm -rf out",
-      "clean:tgz": "corepack pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
-      "clean:all": "corepack pnpm \"/^clean:(dts|node_modules|out|tgz)\\$/\"",
-      "postupdate": "corepack pnpm biome:migrate"
-    },
-    "contributes": {
-      "crds": [],
-      "cloudProviders": [],
-      "kubernetesDistros": []
-    },
-    "overrides": {
-      "react": "^17.0.2",
-      "@types/react": "^17.0.85"
-    },
-    "devDependencies": {
-      "@babel/plugin-proposal-decorators": "^7.28.0",
-      "@electron-toolkit/tsconfig": "^2.0.0",
-      "@vitejs/plugin-react": "^5.1.1",
-      "electron-vite": "^4.0.1",
-      "vite": "^7.3.2",
-      "vite-plugin-external": "^6.2.2",
-      "vite-plugin-sass-dts": "^1.3.35",
-      "@freelensapp/extensions": "^1.6.0",
-      "@freelensapp/utilities": "^1.6.0",
-      "@types/d3-force": "^3.0.10",
-      "@types/node": "^22.14.0",
-      "@types/react": "^17.0.85",
-      "@types/react-dom": "^17.0.26",
-      "d3-force": "^3.0.0",
-      "mobx": "^6.10.2",
-      "mobx-react": "^7.6.0",
-      "react": "^17.0.2",
-      "react-dom": "^17.0.2",
-      "react-force-graph-2d": "^1.27.1",
-      "sass": "^1.97.3",
-      "type-fest": "^2.19.0",
-      "typescript": "^5.8.2"
-    },
-    "packageManager": "pnpm@10.12.4+sha256.cadfd9e6c9fcc2cb76fe7c0779a5250b632898aea5f53d833a73690c77a778d9"
+    "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
   },
   "releases": [
+    {
+      "id": 430604044,
+      "tagName": "v2.0.0",
+      "name": "v2.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-01T13:29:11Z",
+      "publishedAt": "2026-11-01T13:30:13Z",
+      "body": "The first release for Freelens 2.x. It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`), and 1.0.2 stays the release for Freelens 1.6 and later 1.x, which is why this is a major version.\n\n### Changed\n\n- **Ported to the Freelens v2 extension API** (#43): ESM bundles in `dist/` built with Vite after freelens-example-extension, the host's React 19 and mobx 7 with standard decorators, the stylesheet as `dist/renderer.css`, error boundaries around the page, the details maps and the Workloads Overview panel, and one TypeScript program per runtime environment. Built against `@freelensapp/extensions` 2.0.0 with the stack of Freelens 2.0.0; the integration tests run against the Freelens `v2.0.0` tag.\n- **The maps follow the cluster and the namespace filter.** The page and the panel load and watch the stores of Freelens for the selected namespaces, and the map in the details of an object also works when the filter does not select the namespace of the object. A kind that the user may not list is left out, and the maps draw the others.\n- **The whole graph stays inside its canvas** (#47): the first zoom leaves room for the names below the nodes of the bottom row, and a small graph that went past the canvas is zoomed out to fit.\n- Fixed while porting, as they were in 1.x:\n  - a click on a Helm release opens it under Helm > Releases;\n  - an Ingress without rules, with a rule without `http` or with a `resource` backend no longer breaks the maps;\n  - two objects of the same kind and name in two namespaces are two nodes;\n  - the canvas takes the size of its container, so the bottom of the graph is visible;\n  - Ingresses have their tooltip on the page;\n  - the maps of a pod, a Service and an Ingress find the Deployment of a pod in its own namespace only, and a Deployment without `matchLabels` takes no pod;\n  - the legend shows readable names of the kinds.\n- The README has a video demo, screenshots, the authors of the extension and new sections on the supported resources, the features and the limits (#49).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-resource-map-extension-2.0.0-spdx.json",
+          "size": 196868,
+          "downloadCount": 2,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0-spdx.json",
+          "createdAt": "2026-11-01T13:30:12Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-resource-map-extension-2.0.0-spdx.json.sha256",
+          "size": 117,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0-spdx.json.sha256",
+          "createdAt": "2026-11-01T13:30:12Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-resource-map-extension-2.0.0.tgz",
+          "size": 324111,
+          "downloadCount": 4,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz",
+          "createdAt": "2026-11-01T13:30:12Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-resource-map-extension-2.0.0.tgz.sha256",
+          "size": 111,
+          "downloadCount": 4,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz.sha256",
+          "createdAt": "2026-11-01T13:30:12Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 326822506,
       "tagName": "v1.0.2",
@@ -164,7 +217,7 @@
         {
           "name": "freelensapp-resource-map-extension-1.0.2.tgz",
           "size": 1063257,
-          "downloadCount": 112,
+          "downloadCount": 114,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
           "createdAt": "2026-05-21T11:03:02Z",
@@ -190,7 +243,7 @@
         {
           "name": "freelensapp-resource-map-extension-1.0.1.tgz",
           "size": 1063257,
-          "downloadCount": 11,
+          "downloadCount": 12,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.1/freelensapp-resource-map-extension-1.0.1.tgz",
           "createdAt": "2026-05-09T17:19:51Z",
@@ -216,7 +269,7 @@
         {
           "name": "freelensapp-resource-map-extension-1.0.0.tgz",
           "size": 1063259,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.0/freelensapp-resource-map-extension-1.0.0.tgz",
           "createdAt": "2026-05-09T16:32:50Z",
@@ -227,6 +280,13 @@
     }
   ],
   "tags": [
+    {
+      "name": "v2.0.0",
+      "commitSha": "ed5f1ad00b1f1b80e8c970c3995112d5476f6af8",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-resource-map-extension/commits/ed5f1ad00b1f1b80e8c970c3995112d5476f6af8",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-resource-map-extension/zipball/refs/tags/v2.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-resource-map-extension/tarball/refs/tags/v2.0.0"
+    },
     {
       "name": "v1.0.2",
       "commitSha": "84bd3e77e1f3710a22a2131e2640c425683aa3c7",
@@ -251,6 +311,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.0.0",
+      "name": "v2.0.0",
+      "publishedAt": "2026-11-01T13:30:13Z",
+      "isPrerelease": false,
+      "notes": "The first release for Freelens 2.x. It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`), and 1.0.2 stays the release for Freelens 1.6 and later 1.x, which is why this is a major version.\n\n### Changed\n\n- **Ported to the Freelens v2 extension API** (#43): ESM bundles in `dist/` built with Vite after freelens-example-extension, the host's React 19 and mobx 7 with standard decorators, the stylesheet as `dist/renderer.css`, error boundaries around the page, the details maps and the Workloads Overview panel, and one TypeScript program per runtime environment. Built against `@freelensapp/extensions` 2.0.0 with the stack of Freelens 2.0.0; the integration tests run against the Freelens `v2.0.0` tag.\n- **The maps follow the cluster and the namespace filter.** The page and the panel load and watch the stores of Freelens for the selected namespaces, and the map in the details of an object also works when the filter does not select the namespace of the object. A kind that the user may not list is left out, and the maps draw the others.\n- **The whole graph stays inside its canvas** (#47): the first zoom leaves room for the names below the nodes of the bottom row, and a small graph that went past the canvas is zoomed out to fit.\n- Fixed while porting, as they were in 1.x:\n  - a click on a Helm release opens it under Helm > Releases;\n  - an Ingress without rules, with a rule without `http` or with a `resource` backend no longer breaks the maps;\n  - two objects of the same kind and name in two namespaces are two nodes;\n  - the canvas takes the size of its container, so the bottom of the graph is visible;\n  - Ingresses have their tooltip on the page;\n  - the maps of a pod, a Service and an Ingress find the Deployment of a pod in its own namespace only, and a Deployment without `matchLabels` takes no pod;\n  - the legend shows readable names of the kinds.\n- The README has a video demo, screenshots, the authors of the extension and new sections on the supported resources, the features and the limits (#49).\n"
+    },
+    {
       "version": "v1.0.2",
       "name": "v1.0.2",
       "publishedAt": "2026-05-21T11:03:03Z",
@@ -274,12 +341,22 @@
   ],
   "tarFiles": [
     {
+      "filename": "freelensapp-resource-map-extension-2.0.0.tgz",
+      "releaseTag": "v2.0.0",
+      "releaseName": "v2.0.0",
+      "size": 324111,
+      "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz",
+      "downloadCount": 4,
+      "type": "tar.gz",
+      "createdAt": "2026-11-01T13:30:12Z"
+    },
+    {
       "filename": "freelensapp-resource-map-extension-1.0.2.tgz",
       "releaseTag": "v1.0.2",
       "releaseName": "v1.0.2",
       "size": 1063257,
       "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
-      "downloadCount": 112,
+      "downloadCount": 114,
       "type": "tar.gz",
       "createdAt": "2026-05-21T11:03:02Z"
     },
@@ -289,7 +366,7 @@
       "releaseName": "v1.0.1",
       "size": 1063257,
       "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.1/freelensapp-resource-map-extension-1.0.1.tgz",
-      "downloadCount": 11,
+      "downloadCount": 12,
       "type": "tar.gz",
       "createdAt": "2026-05-09T17:19:51Z"
     },
@@ -299,38 +376,68 @@
       "releaseName": "v1.0.0",
       "size": 1063259,
       "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.0/freelensapp-resource-map-extension-1.0.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-05-09T16:32:50Z"
     }
   ],
   "latestRelease": {
-    "id": 326822506,
-    "tagName": "v1.0.2",
-    "name": "v1.0.2",
+    "id": 430604044,
+    "tagName": "v2.0.0",
+    "name": "v2.0.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-05-21T11:02:04Z",
-    "publishedAt": "2026-05-21T11:03:03Z",
-    "body": null,
+    "createdAt": "2026-11-01T13:29:11Z",
+    "publishedAt": "2026-11-01T13:30:13Z",
+    "body": "The first release for Freelens 2.x. It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`), and 1.0.2 stays the release for Freelens 1.6 and later 1.x, which is why this is a major version.\n\n### Changed\n\n- **Ported to the Freelens v2 extension API** (#43): ESM bundles in `dist/` built with Vite after freelens-example-extension, the host's React 19 and mobx 7 with standard decorators, the stylesheet as `dist/renderer.css`, error boundaries around the page, the details maps and the Workloads Overview panel, and one TypeScript program per runtime environment. Built against `@freelensapp/extensions` 2.0.0 with the stack of Freelens 2.0.0; the integration tests run against the Freelens `v2.0.0` tag.\n- **The maps follow the cluster and the namespace filter.** The page and the panel load and watch the stores of Freelens for the selected namespaces, and the map in the details of an object also works when the filter does not select the namespace of the object. A kind that the user may not list is left out, and the maps draw the others.\n- **The whole graph stays inside its canvas** (#47): the first zoom leaves room for the names below the nodes of the bottom row, and a small graph that went past the canvas is zoomed out to fit.\n- Fixed while porting, as they were in 1.x:\n  - a click on a Helm release opens it under Helm > Releases;\n  - an Ingress without rules, with a rule without `http` or with a `resource` backend no longer breaks the maps;\n  - two objects of the same kind and name in two namespaces are two nodes;\n  - the canvas takes the size of its container, so the bottom of the graph is visible;\n  - Ingresses have their tooltip on the page;\n  - the maps of a pod, a Service and an Ingress find the Deployment of a pod in its own namespace only, and a Deployment without `matchLabels` takes no pod;\n  - the legend shows readable names of the kinds.\n- The README has a video demo, screenshots, the authors of the extension and new sections on the supported resources, the features and the limits (#49).\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-resource-map-extension-1.0.2.tgz",
-        "size": 1063257,
-        "downloadCount": 112,
+        "name": "freelensapp-resource-map-extension-2.0.0-spdx.json",
+        "size": 196868,
+        "downloadCount": 2,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0-spdx.json",
+        "createdAt": "2026-11-01T13:30:12Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-resource-map-extension-2.0.0-spdx.json.sha256",
+        "size": 117,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v1.0.2/freelensapp-resource-map-extension-1.0.2.tgz",
-        "createdAt": "2026-05-21T11:03:02Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0-spdx.json.sha256",
+        "createdAt": "2026-11-01T13:30:12Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-resource-map-extension-2.0.0.tgz",
+        "size": 324111,
+        "downloadCount": 4,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz",
+        "createdAt": "2026-11-01T13:30:12Z",
         "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-resource-map-extension-2.0.0.tgz.sha256",
+        "size": 111,
+        "downloadCount": 4,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz.sha256",
+        "createdAt": "2026-11-01T13:30:12Z",
+        "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 3,
+  "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-01T09:35:57.024Z"
+  "lastScanned": "2026-11-01T16:17:34.309Z"
 }

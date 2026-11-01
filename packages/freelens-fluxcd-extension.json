@@ -8,8 +8,8 @@
   "forks": 13,
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
-  "updatedAt": "2026-11-01T09:17:17Z",
-  "pushedAt": "2026-11-01T09:33:37Z",
+  "updatedAt": "2026-11-01T15:39:07Z",
+  "pushedAt": "2026-11-01T15:39:17Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -31,7 +31,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/fluxcd-extension",
-    "version": "6.0.1-0",
+    "version": "6.1.0",
     "description": "Freelens extension for FluxCD",
     "repository": {
       "type": "git",
@@ -107,7 +107,7 @@
       "@vitejs/plugin-react": "6.1.2",
       "electron": "44.10.0",
       "esbuild": "0.28.2",
-      "js-base64": "^3.9.4",
+      "js-base64": "^3.9.5",
       "js-yaml": "5.5.0",
       "jsdom": "30.1.3",
       "mobx": "7.0.6",
@@ -130,9 +130,65 @@
       "flux",
       "fluxcd"
     ],
-    "packageManager": "pnpm@12.11.2+sha512.25a51652a196785af5f28bda6dfe8dc582ebefa4ac1d180221ce1390231c5fb76637822ea4b6e4633ce74acdcb0a77f725af11bad38177fdeddaee818a955cb9"
+    "packageManager": "pnpm@12.16.1+sha512.091d1dee7927575661b25dab3c2ae31cafc1c54d6b71ed6a6600cf0c1cb10434a447eae14015f1b23e2e6bedeed79df94a932e2164d2832280dce3fb32f656d1"
   },
   "releases": [
+    {
+      "id": 430677814,
+      "tagName": "v6.1.0",
+      "name": "v6.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-01T15:39:03Z",
+      "publishedAt": "2026-11-01T15:39:57Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json",
+          "size": 190168,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json",
+          "createdAt": "2026-11-01T15:39:56Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json.sha256",
+          "size": 111,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json.sha256",
+          "createdAt": "2026-11-01T15:39:56Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.1.0.tgz",
+          "size": 215668,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz",
+          "createdAt": "2026-11-01T15:39:56Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
+          "size": 105,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
+          "createdAt": "2026-11-01T15:39:56Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 428524383,
       "tagName": "v6.0.1-0",
@@ -226,7 +282,7 @@
         {
           "name": "freelensapp-fluxcd-extension-6.0.0.tgz",
           "size": 209008,
-          "downloadCount": 12,
+          "downloadCount": 15,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz",
           "createdAt": "2026-10-28T18:27:16Z",
@@ -236,7 +292,7 @@
         {
           "name": "freelensapp-fluxcd-extension-6.0.0.tgz.sha256",
           "size": 105,
-          "downloadCount": 5,
+          "downloadCount": 7,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz.sha256",
           "createdAt": "2026-10-28T18:27:16Z",
@@ -616,6 +672,13 @@
   ],
   "tags": [
     {
+      "name": "v6.1.0",
+      "commitSha": "b3bac026fade1a9880968349e4726ecaf18baa6a",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/b3bac026fade1a9880968349e4726ecaf18baa6a",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v6.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v6.1.0"
+    },
+    {
       "name": "v6.0.1-0",
       "commitSha": "0225b34e2ee75c36db81c072b79dac93991c1df3",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/0225b34e2ee75c36db81c072b79dac93991c1df3",
@@ -722,6 +785,13 @@
     }
   ],
   "versionHistory": [
+    {
+      "version": "v6.1.0",
+      "name": "v6.1.0",
+      "publishedAt": "2026-11-01T15:39:57Z",
+      "isPrerelease": false,
+      "notes": null
+    },
     {
       "version": "v6.0.1-0",
       "name": "v6.0.1-0",
@@ -830,6 +900,16 @@
   ],
   "tarFiles": [
     {
+      "filename": "freelensapp-fluxcd-extension-6.1.0.tgz",
+      "releaseTag": "v6.1.0",
+      "releaseName": "v6.1.0",
+      "size": 215668,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-11-01T15:39:56Z"
+    },
+    {
       "filename": "freelensapp-fluxcd-extension-6.0.1-0.tgz",
       "releaseTag": "v6.0.1-0",
       "releaseName": "v6.0.1-0",
@@ -845,7 +925,7 @@
       "releaseName": "v6.0.0",
       "size": 209008,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz",
-      "downloadCount": 12,
+      "downloadCount": 15,
       "type": "tar.gz",
       "createdAt": "2026-10-28T18:27:16Z"
     },
@@ -981,62 +1061,62 @@
     }
   ],
   "latestRelease": {
-    "id": 427037657,
-    "tagName": "v6.0.0",
-    "name": "v6.0.0",
+    "id": 430677814,
+    "tagName": "v6.1.0",
+    "name": "v6.1.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-10-28T18:25:58Z",
-    "publishedAt": "2026-10-28T18:27:17Z",
-    "body": "The first release for Freelens 2.0. The extension now uses the v2 extension API, so it needs Freelens 2.0.0 or later. With Freelens 1.x, keep using a 5.x release.\n\n## Requirements\n\n- Freelens >= 2.0.0\n- Flux >= v2.0.0, <= 2.9.x\n- flux-operator >= v0.6.0, for the `fluxcd.controlplane.io` kinds\n- source-watcher >= v2.0.0, for `ArtifactGenerator` (optional)\n\n## Install or upgrade\n\nIn Freelens 2.0, open Extensions, enter `@freelensapp/fluxcd-extension` and press Install. You can also install the `.tgz` of this release by its URL: Freelens checks it against the `.tgz.sha256` next to it.\n\n## New\n\n- **ExternalArtifact** (`source.toolkit.fluxcd.io/v1`): a page in the Source group, details with the source and the artifact, and a chart on the Overview. A Kustomization or HelmRelease that uses one as its source links to it.\n- **ArtifactGenerator** (`source.extensions.fluxcd.io/v1beta1`, source-watcher): a page, details, a chart on the Overview, and the Reconcile and Suspend/Resume menu items.\n- **ImagePolicy**: the details show Resumed, Interval, Digest Reflection Policy, and the latest and previous image references. ImagePolicy `v1` and `v1beta2` get the Suspend/Resume menu item.\n- **One sidebar entry per Flux kind**: while the extension is enabled, the Flux kinds are no longer listed a second time in the Custom Resources tree of the cluster sidebar, only under \"FluxCD\".\n\n## Fixed\n\n- **Overview charts**: each object is counted in one category. A suspended object without conditions no longer makes \"In progress\" negative. The Flux Operator kinds and `ArtifactGenerator` show as suspended when their reconcile annotation is `disabled`.\n- **Condition badges**: a stalled object shows as an error, a suspended one as Suspended. Sorting the conditions no longer reorders them in the object itself.\n- **Links in the details**: references whose field implies the kind now link to the object, opened at the newest API version the cluster serves:\n  - `dependsOn` of a Kustomization or HelmRelease;\n  - `providerRef` of an Alert;\n  - `imageRepositoryRef` of an ImagePolicy;\n  - the included repositories of a GitRepository.\n- **Render errors**: an error in a page, details panel or menu item of the extension stays in its place, as an error message or a missing menu item. It no longer replaces the whole cluster view. This also fixes a crash in the details of an ImageRepository `v1beta2` without latest tags.\n- **Optional fields**: the model types follow the kubebuilder markers of the Flux APIs, so a panel no longer fails on a field that the API does not require.\n\n## What's Changed\n\n- Migrate to the Freelens v2 extension API in #297\n- Replace moment with the date helpers of the host in #312\n- Count each object of the Overview chart in one category in #313\n- Fix the condition badges of stalled and suspended objects and sort a copy of the conditions in #316\n- Add suspend, interval, digestReflectionPolicy and latestRef to ImagePolicy in #317\n- Link references in the details that imply their kind in #318\n- Register the models with pages in customResources in #321\n- Add ExternalArtifact in #323\n- Add ArtifactGenerator in #325\n- Register details and menu items with the typed helpers of the extension API in #328\n- Take the optional fields of the model types from the kubebuilder markers in #329\n- Keep a render error of the extension inside its page, panel or menu item in #331\n- Run the integration tests against Freelens dev over CDP in #339\n\nThe rest are dependency updates and changes to the build and the workflows, which follow freelensapp/freelens-example-extension (#332, #335).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v5.3.1...v6.0.0\n",
+    "createdAt": "2026-11-01T15:39:03Z",
+    "publishedAt": "2026-11-01T15:39:57Z",
+    "body": null,
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-fluxcd-extension-6.0.0-spdx.json",
-        "size": 197583,
-        "downloadCount": 2,
+        "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json",
+        "size": 190168,
+        "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0-spdx.json",
-        "createdAt": "2026-10-28T18:27:16Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json",
+        "createdAt": "2026-11-01T15:39:56Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-fluxcd-extension-6.0.0-spdx.json.sha256",
+        "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json.sha256",
         "size": 111,
-        "downloadCount": 2,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0-spdx.json.sha256",
-        "createdAt": "2026-10-28T18:27:16Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json.sha256",
+        "createdAt": "2026-11-01T15:39:56Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-fluxcd-extension-6.0.0.tgz",
-        "size": 209008,
-        "downloadCount": 12,
+        "name": "freelensapp-fluxcd-extension-6.1.0.tgz",
+        "size": 215668,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz",
-        "createdAt": "2026-10-28T18:27:16Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz",
+        "createdAt": "2026-11-01T15:39:56Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-fluxcd-extension-6.0.0.tgz.sha256",
+        "name": "freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
         "size": 105,
-        "downloadCount": 5,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz.sha256",
-        "createdAt": "2026-10-28T18:27:16Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
+        "createdAt": "2026-11-01T15:39:56Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 15,
+  "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-01T09:35:52.099Z"
+  "lastScanned": "2026-11-01T16:17:28.176Z"
 }
