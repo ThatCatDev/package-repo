@@ -60,8 +60,8 @@
     "fullName": "freelensapp/freelens-cnpg-extension",
     "description": "Freelens extension for CloudNativePG",
     "stars": 4,
-    "updatedAt": "2026-11-02T16:42:22Z",
-    "latestVersion": "v1.0.0",
+    "updatedAt": "2026-11-03T09:02:59Z",
+    "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
