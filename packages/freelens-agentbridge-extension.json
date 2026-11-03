@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
   "updatedAt": "2026-10-30T19:36:56Z",
-  "pushedAt": "2026-11-02T21:03:02Z",
+  "pushedAt": "2026-11-03T13:34:58Z",
   "defaultBranch": "main",
   "topics": [
     "agentbridge",
@@ -183,7 +183,7 @@
         {
           "name": "freelensapp-agentbridge-extension-2.0.0.tgz",
           "size": 93340,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz",
           "createdAt": "2026-10-30T19:37:48Z",
@@ -382,7 +382,7 @@
       "releaseName": "v2.0.0",
       "size": 93340,
       "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2026-10-30T19:37:48Z"
     },
@@ -444,7 +444,7 @@
       {
         "name": "freelensapp-agentbridge-extension-2.0.0.tgz",
         "size": 93340,
-        "downloadCount": 2,
+        "downloadCount": 3,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz",
         "createdAt": "2026-10-30T19:37:48Z",
@@ -465,5 +465,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-03T09:31:37.216Z"
+  "lastScanned": "2026-11-03T17:15:28.790Z"
 }
