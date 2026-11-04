@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-09-21T15:51:23Z",
-  "updatedAt": "2026-10-31T14:31:35Z",
-  "pushedAt": "2026-11-04T09:00:17Z",
+  "updatedAt": "2026-11-04T14:13:56Z",
+  "pushedAt": "2026-11-04T14:14:03Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -28,7 +28,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/sveltos-extension",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "ProjectSveltos UI for Freelens",
     "repository": {
       "type": "git",
@@ -132,6 +132,62 @@
   },
   "releases": [
     {
+      "id": 434016131,
+      "tagName": "v2.1.0",
+      "name": "v2.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-04T14:13:50Z",
+      "publishedAt": "2026-11-04T14:14:44Z",
+      "body": "Support for Sveltos sharding, and three fixes found after 2.0.0, all by [Alberto](https://github.com/albyrex). It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`).\n\n### Added\n\n- **Sveltos sharding** (#44). The Sveltos Clusters table groups the clusters by their `sharding.projectsveltos.io/key`, default shard first, and `shard:` searches by shard. The Overview has a Shards section with a card for each shard: its controllers, the number of its clusters and a color, which the table uses too. A shard controller, whose image is pinned by digest, shows the release read from its `--version`.\n\n### Fixed\n\n- With an add-on selected, Deployment Errors shows only the failures of the add-on's own cluster and profile, and keeps the profile level error of its ClusterSummary (#47, fixes #39).\n- A chart logo that failed to download is asked for again the next time the page is opened, and an HTTP error is kept for 5 minutes instead of until Freelens restarts (#46, fixes #40).\n- A controller whose image is pinned by digest shows the release from its `--version`, or its short digest when it has none, instead of `?` (#45 and #44, fixes #41).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-sveltos-extension-2.1.0-spdx.json",
+          "size": 196868,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0-spdx.json",
+          "createdAt": "2026-11-04T14:14:43Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-sveltos-extension-2.1.0-spdx.json.sha256",
+          "size": 112,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0-spdx.json.sha256",
+          "createdAt": "2026-11-04T14:14:43Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-sveltos-extension-2.1.0.tgz",
+          "size": 313452,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
+          "createdAt": "2026-11-04T14:14:43Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-sveltos-extension-2.1.0.tgz.sha256",
+          "size": 106,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz.sha256",
+          "createdAt": "2026-11-04T14:14:43Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 429987751,
       "tagName": "v2.0.0",
       "name": "v2.0.0",
@@ -216,6 +272,13 @@
   ],
   "tags": [
     {
+      "name": "v2.1.0",
+      "commitSha": "2fec578097b93eda67ba1e3b148d842dc42fcdb6",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-sveltos-extension/commits/2fec578097b93eda67ba1e3b148d842dc42fcdb6",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-sveltos-extension/zipball/refs/tags/v2.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-sveltos-extension/tarball/refs/tags/v2.1.0"
+    },
+    {
       "name": "v2.0.0",
       "commitSha": "9d7dbe5741be784811f8422f4df98480a87a9611",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-sveltos-extension/commits/9d7dbe5741be784811f8422f4df98480a87a9611",
@@ -232,6 +295,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.1.0",
+      "name": "v2.1.0",
+      "publishedAt": "2026-11-04T14:14:44Z",
+      "isPrerelease": false,
+      "notes": "Support for Sveltos sharding, and three fixes found after 2.0.0, all by [Alberto](https://github.com/albyrex). It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`).\n\n### Added\n\n- **Sveltos sharding** (#44). The Sveltos Clusters table groups the clusters by their `sharding.projectsveltos.io/key`, default shard first, and `shard:` searches by shard. The Overview has a Shards section with a card for each shard: its controllers, the number of its clusters and a color, which the table uses too. A shard controller, whose image is pinned by digest, shows the release read from its `--version`.\n\n### Fixed\n\n- With an add-on selected, Deployment Errors shows only the failures of the add-on's own cluster and profile, and keeps the profile level error of its ClusterSummary (#47, fixes #39).\n- A chart logo that failed to download is asked for again the next time the page is opened, and an HTTP error is kept for 5 minutes instead of until Freelens restarts (#46, fixes #40).\n- A controller whose image is pinned by digest shows the release from its `--version`, or its short digest when it has none, instead of `?` (#45 and #44, fixes #41).\n"
+    },
+    {
       "version": "v2.0.0",
       "name": "v2.0.0",
       "publishedAt": "2026-10-31T14:32:29Z",
@@ -247,6 +317,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-sveltos-extension-2.1.0.tgz",
+      "releaseTag": "v2.1.0",
+      "releaseName": "v2.1.0",
+      "size": 313452,
+      "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-11-04T14:14:43Z"
+    },
     {
       "filename": "freelensapp-sveltos-extension-2.0.0.tgz",
       "releaseTag": "v2.0.0",
@@ -269,62 +349,62 @@
     }
   ],
   "latestRelease": {
-    "id": 429987751,
-    "tagName": "v2.0.0",
-    "name": "v2.0.0",
+    "id": 434016131,
+    "tagName": "v2.1.0",
+    "name": "v2.1.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-10-31T14:31:30Z",
-    "publishedAt": "2026-10-31T14:32:29Z",
-    "body": "The first release for Freelens 2.x. It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`), and 1.0.0 stays the release for Freelens 1.8 and later 1.x, which is why this is a major version.\n\n### Changed\n\n- **A new dashboard, modeled on the official Sveltos dashboard**, by [Alberto](https://github.com/albyrex) (#30). The Overview reports the Sveltos release and a counter for every kind. The Sveltos Clusters page shows the clusters as cards or a table with the add-ons of each one, down to the Helm release read from the managed cluster, the deployment errors and the charts that have a newer version. The Dependencies page draws the deployment stages of the profiles, and there are pages for cluster profiles, profiles, add-ons, dry runs, event sources, event triggers and classifiers.\n- **Ported to the Freelens v2 extension API** (#34): ESM bundles in `dist/` built with Vite after freelens-example-extension, the host's React 19 and mobx 7 with standard decorators, the stylesheet as `dist/renderer.css`, error boundaries around every page, details panel and menu item, and one TypeScript program per runtime environment. Built against `@freelensapp/extensions` 2.0.0 with the stack of Freelens 2.0.0; the integration tests run against the Freelens `v2.0.0` tag.\n- The latest Sveltos release and the chart logos are downloaded with the HTTP client of Freelens, so they follow its proxy and certificate settings.\n- The README has a video demo, screenshots and the authors of the extension (#38).\n",
+    "createdAt": "2026-11-04T14:13:50Z",
+    "publishedAt": "2026-11-04T14:14:44Z",
+    "body": "Support for Sveltos sharding, and three fixes found after 2.0.0, all by [Alberto](https://github.com/albyrex). It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`).\n\n### Added\n\n- **Sveltos sharding** (#44). The Sveltos Clusters table groups the clusters by their `sharding.projectsveltos.io/key`, default shard first, and `shard:` searches by shard. The Overview has a Shards section with a card for each shard: its controllers, the number of its clusters and a color, which the table uses too. A shard controller, whose image is pinned by digest, shows the release read from its `--version`.\n\n### Fixed\n\n- With an add-on selected, Deployment Errors shows only the failures of the add-on's own cluster and profile, and keeps the profile level error of its ClusterSummary (#47, fixes #39).\n- A chart logo that failed to download is asked for again the next time the page is opened, and an HTTP error is kept for 5 minutes instead of until Freelens restarts (#46, fixes #40).\n- A controller whose image is pinned by digest shows the release from its `--version`, or its short digest when it has none, instead of `?` (#45 and #44, fixes #41).\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-sveltos-extension-2.0.0-spdx.json",
+        "name": "freelensapp-sveltos-extension-2.1.0-spdx.json",
         "size": 196868,
-        "downloadCount": 3,
+        "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.0.0/freelensapp-sveltos-extension-2.0.0-spdx.json",
-        "createdAt": "2026-10-31T14:32:28Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0-spdx.json",
+        "createdAt": "2026-11-04T14:14:43Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-sveltos-extension-2.0.0-spdx.json.sha256",
+        "name": "freelensapp-sveltos-extension-2.1.0-spdx.json.sha256",
         "size": 112,
-        "downloadCount": 2,
-        "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.0.0/freelensapp-sveltos-extension-2.0.0-spdx.json.sha256",
-        "createdAt": "2026-10-31T14:32:28Z",
-        "isTarGz": false,
-        "isTar": false
-      },
-      {
-        "name": "freelensapp-sveltos-extension-2.0.0.tgz",
-        "size": 305639,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.0.0/freelensapp-sveltos-extension-2.0.0.tgz",
-        "createdAt": "2026-10-31T14:32:28Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0-spdx.json.sha256",
+        "createdAt": "2026-11-04T14:14:43Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-sveltos-extension-2.1.0.tgz",
+        "size": 313452,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
+        "createdAt": "2026-11-04T14:14:43Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-sveltos-extension-2.0.0.tgz.sha256",
+        "name": "freelensapp-sveltos-extension-2.1.0.tgz.sha256",
         "size": 106,
-        "downloadCount": 2,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.0.0/freelensapp-sveltos-extension-2.0.0.tgz.sha256",
-        "createdAt": "2026-10-31T14:32:28Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz.sha256",
+        "createdAt": "2026-11-04T14:14:43Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-04T09:31:28.173Z"
+  "lastScanned": "2026-11-04T17:26:24.530Z"
 }
