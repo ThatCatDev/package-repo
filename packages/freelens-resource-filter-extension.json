@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-09T11:49:55Z",
-  "updatedAt": "2026-10-27T21:59:35Z",
-  "pushedAt": "2026-10-26T15:41:01Z",
+  "updatedAt": "2026-11-04T18:37:39Z",
+  "pushedAt": "2026-11-04T18:39:04Z",
   "defaultBranch": "master",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "freelens-resource-filter-extension",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "description": "Freelens extension: field-based filtering for any Kubernetes resource, including CRDs",
     "author": {
       "name": "Sotoon Delivery"
@@ -39,13 +39,13 @@
       "url": "https://github.com/mojish/freelens-resource-filter-extension/issues"
     },
     "main": "out/main/index.js",
-    "renderer": "out/renderer/index.js",
+    "renderer": "out/renderer/index.mjs",
     "files": [
       "out/**/*"
     ],
     "engines": {
       "node": ">= 22.0.0",
-      "freelens": "^1.10.0"
+      "freelens": "^2.0.0"
     },
     "license": "MIT",
     "publishConfig": {
@@ -55,7 +55,7 @@
       "build": "electron-vite build",
       "build:force": "electron-vite build --force",
       "build:production": "VITE_PRESERVE_MODULES=false electron-vite build",
-      "type:check": "tsc --noEmit -p tsconfig.json --composite false",
+      "type:check": "tsc --noEmit -p tsconfig.json --composite false && tsc --noEmit -p tsconfig.renderer.json --composite false",
       "prebuild": "pnpm type:check",
       "pretest": "pnpm build",
       "test": "vitest run",
@@ -68,15 +68,17 @@
     },
     "devDependencies": {
       "@electron-toolkit/tsconfig": "^2.0.0",
-      "@freelensapp/extensions": "^1.10.2",
+      "@freelensapp/extensions": "^2.0.0",
       "@types/node": "~24.12.4",
-      "@types/react": "^17.0.93",
+      "@types/react": "^19.3.0",
+      "@types/react-dom": "^19.3.0",
       "@vitejs/plugin-react": "^6.0.3",
+      "electron": "44.10.0",
       "electron-vite": "^5.0.0",
-      "mobx": "6.13.7",
-      "mobx-react": "7.6.0",
-      "react": "17.0.2",
-      "react-dom": "17.0.2",
+      "mobx": "7.0.6",
+      "mobx-react": "10.0.2",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
       "shx": "^0.4.0",
       "typescript": "5.9.3",
       "vite": "^8.1.2",
@@ -95,6 +97,32 @@
     ]
   },
   "releases": [
+    {
+      "id": 434305784,
+      "tagName": "v0.5.0",
+      "name": "v0.5.0 — Freelens 2 support",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-04T18:39:02Z",
+      "publishedAt": "2026-11-04T18:40:07Z",
+      "body": "This release ports Resource Filter to **Freelens 2.x** and fixes the Incompatible status after upgrading the host.\n\n**Compatibility:** requires Freelens 2.x. Keep extension **0.4.0** for Freelens 1.x.\n\n- Uses the v2 extension API, React 19, MobX 7, and mobx-react 10.\n- Loads the renderer as browser ESM through the host's shared libraries.\n- Preserves resource discovery, filtering, exports, and nested filter-row reactivity.\n- Updates the local installer for the Freelens 2 application-data directory.\n\nInstall the attached `freelens-resource-filter-extension-0.5.0.tgz` through Freelens → Extensions, or install `freelens-resource-filter-extension@0.5.0` from npm.\n\nValidation: `pnpm verify` passed locally with 183 tests, including Chromium regressions. GitHub CI and the release workflow passed.\n\n**Full changelog:** https://github.com/mojish/freelens-resource-filter-extension/compare/v0.4.0...v0.5.0\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelens-resource-filter-extension-0.5.0.tgz",
+          "size": 178851,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.5.0/freelens-resource-filter-extension-0.5.0.tgz",
+          "createdAt": "2026-11-04T18:40:06Z",
+          "isTarGz": true,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 424439780,
       "tagName": "v0.4.0",
@@ -164,7 +192,7 @@
         {
           "name": "freelens-resource-filter-extension-0.2.0.tgz",
           "size": 36907,
-          "downloadCount": 0,
+          "downloadCount": 1,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.2.0/freelens-resource-filter-extension-0.2.0.tgz",
           "createdAt": "2026-09-09T12:15:54Z",
@@ -175,6 +203,13 @@
     }
   ],
   "tags": [
+    {
+      "name": "v0.5.0",
+      "commitSha": "fd023a0ddb7ca4412dc7aea64dea83b6768ffaf0",
+      "commitUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/commits/fd023a0ddb7ca4412dc7aea64dea83b6768ffaf0",
+      "zipballUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/zipball/refs/tags/v0.5.0",
+      "tarballUrl": "https://api.github.com/repos/mojish/freelens-resource-filter-extension/tarball/refs/tags/v0.5.0"
+    },
     {
       "name": "v0.4.0",
       "commitSha": "e4f21e6ba5a93ad277243b922fffd6534392b280",
@@ -199,6 +234,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v0.5.0",
+      "name": "v0.5.0 — Freelens 2 support",
+      "publishedAt": "2026-11-04T18:40:07Z",
+      "isPrerelease": false,
+      "notes": "This release ports Resource Filter to **Freelens 2.x** and fixes the Incompatible status after upgrading the host.\n\n**Compatibility:** requires Freelens 2.x. Keep extension **0.4.0** for Freelens 1.x.\n\n- Uses the v2 extension API, React 19, MobX 7, and mobx-react 10.\n- Loads the renderer as browser ESM through the host's shared libraries.\n- Preserves resource discovery, filtering, exports, and nested filter-row reactivity.\n- Updates the local installer for the Freelens 2 application-data directory.\n\nInstall the attached `freelens-resource-filter-extension-0.5.0.tgz` through Freelens → Extensions, or install `freelens-resource-filter-extension@0.5.0` from npm.\n\nValidation: `pnpm verify` passed locally with 183 tests, including Chromium regressions. GitHub CI and the release workflow passed.\n\n**Full changelog:** https://github.com/mojish/freelens-resource-filter-extension/compare/v0.4.0...v0.5.0\n"
+    },
+    {
       "version": "v0.4.0",
       "name": "v0.4.0 — YAML downloads and filtering reliability",
       "publishedAt": "2026-10-26T15:41:57Z",
@@ -221,6 +263,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelens-resource-filter-extension-0.5.0.tgz",
+      "releaseTag": "v0.5.0",
+      "releaseName": "v0.5.0 — Freelens 2 support",
+      "size": 178851,
+      "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.5.0/freelens-resource-filter-extension-0.5.0.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-11-04T18:40:06Z"
+    },
     {
       "filename": "freelens-resource-filter-extension-0.4.0.tgz",
       "releaseTag": "v0.4.0",
@@ -247,38 +299,38 @@
       "releaseName": "v0.2.0",
       "size": 36907,
       "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.2.0/freelens-resource-filter-extension-0.2.0.tgz",
-      "downloadCount": 0,
+      "downloadCount": 1,
       "type": "tar.gz",
       "createdAt": "2026-09-09T12:15:54Z"
     }
   ],
   "latestRelease": {
-    "id": 424439780,
-    "tagName": "v0.4.0",
-    "name": "v0.4.0 — YAML downloads and filtering reliability",
+    "id": 434305784,
+    "tagName": "v0.5.0",
+    "name": "v0.5.0 — Freelens 2 support",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-10-26T15:40:59Z",
-    "publishedAt": "2026-10-26T15:41:57Z",
-    "body": "## What's new\n\n- Download matching resources as YAML in yq mode or JSON in jq mode, including namespace scope and selected output fields.\n- Keep the resource picker at its current scroll position while the page refreshes.\n- Refresh counts, field suggestions and age filters as resources change; switch kinds with the correct resource subscription.\n- Support quoted map keys, including dotted labels and literal `*` / `?` keys. Apply manually entered fields even when they are absent from the sampled catalog.\n- Preserve existence filters, quoted AND/OR values and escaped strings in the query bar; reject malformed queries without changing active filters.\n- Fix yq/jq traversal, comparisons, timestamp handling and wildcard projections. Commands now request the selected API version.\n- Preserve removed favorites during preference migration and improve pinned columns and local updates.\n\n## Install or update\n\nInstall `freelens-resource-filter-extension@0.4.0` in Freelens, or download the attached `.tgz` and install it from Extensions. Restart Freelens after updating. Source-checkout users should quit Freelens completely before running `./update-installed.sh`.\n\nRequires Freelens 1.10+. The yq command dialect requires mikefarah/yq v4; jq mode uses JSON. Resource Filter favorites remain separate from the Freelens sidebar favorites.\n\n## Validation\n\n`pnpm verify` passed locally: 176 tests, with no skips, plus type-check, build and pack. This includes real yq/jq execution, Chromium regressions and updater fixtures. Packaged YAML/JSON downloads and the original menu-scrolling scenario were also verified.\n\nGitHub CI and the release workflow also passed. The published npm and GitHub archives were checked and contain identical runtime files and equivalent package metadata.\n\n[Full changelog](https://github.com/mojish/freelens-resource-filter-extension/compare/v0.3.3...v0.4.0)\n",
+    "createdAt": "2026-11-04T18:39:02Z",
+    "publishedAt": "2026-11-04T18:40:07Z",
+    "body": "This release ports Resource Filter to **Freelens 2.x** and fixes the Incompatible status after upgrading the host.\n\n**Compatibility:** requires Freelens 2.x. Keep extension **0.4.0** for Freelens 1.x.\n\n- Uses the v2 extension API, React 19, MobX 7, and mobx-react 10.\n- Loads the renderer as browser ESM through the host's shared libraries.\n- Preserves resource discovery, filtering, exports, and nested filter-row reactivity.\n- Updates the local installer for the Freelens 2 application-data directory.\n\nInstall the attached `freelens-resource-filter-extension-0.5.0.tgz` through Freelens → Extensions, or install `freelens-resource-filter-extension@0.5.0` from npm.\n\nValidation: `pnpm verify` passed locally with 183 tests, including Chromium regressions. GitHub CI and the release workflow passed.\n\n**Full changelog:** https://github.com/mojish/freelens-resource-filter-extension/compare/v0.4.0...v0.5.0\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelens-resource-filter-extension-0.4.0.tgz",
-        "size": 180799,
-        "downloadCount": 1,
+        "name": "freelens-resource-filter-extension-0.5.0.tgz",
+        "size": 178851,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.4.0/freelens-resource-filter-extension-0.4.0.tgz",
-        "createdAt": "2026-10-26T15:41:56Z",
+        "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.5.0/freelens-resource-filter-extension-0.5.0.tgz",
+        "createdAt": "2026-11-04T18:40:06Z",
         "isTarGz": true,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 3,
+  "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-04T17:27:04.660Z"
+  "lastScanned": "2026-11-04T22:44:42.852Z"
 }

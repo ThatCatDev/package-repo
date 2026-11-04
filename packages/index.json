@@ -434,8 +434,8 @@
     "fullName": "mojish/freelens-resource-filter-extension",
     "description": "Freelens extension: field-based filtering for any Kubernetes resource, including CRDs",
     "stars": 1,
-    "updatedAt": "2026-10-27T21:59:35Z",
-    "latestVersion": "v0.4.0",
+    "updatedAt": "2026-11-04T18:37:39Z",
+    "latestVersion": "v0.5.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -511,7 +511,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 3,
-    "updatedAt": "2026-11-02T19:46:34Z",
+    "updatedAt": "2026-11-04T20:54:06Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false

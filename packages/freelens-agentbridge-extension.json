@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
   "updatedAt": "2026-10-30T19:36:56Z",
-  "pushedAt": "2026-11-04T13:44:55Z",
+  "pushedAt": "2026-11-04T22:35:47Z",
   "defaultBranch": "main",
   "topics": [
     "agentbridge",
@@ -465,5 +465,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-04T17:26:33.616Z"
+  "lastScanned": "2026-11-04T22:44:09.372Z"
 }
