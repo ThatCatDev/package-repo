@@ -1,0 +1,35 @@
+{
+  "name": "freelens-map-extension",
+  "repoName": "freelens-map-extension",
+  "fullName": "jhajali/freelens-map-extension",
+  "description": "freelens service map viewer",
+  "homepage": "https://github.com/jhajali/freelens-map-extension",
+  "stars": 0,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-11-05T09:25:32Z",
+  "updatedAt": "2026-11-05T09:25:34Z",
+  "pushedAt": "2026-11-05T09:25:34Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": null,
+  "owner": {
+    "login": "jhajali",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/123369524?v=4",
+    "url": "https://github.com/jhajali"
+  },
+  "repository": {
+    "url": "https://github.com/jhajali/freelens-map-extension",
+    "cloneUrl": "https://github.com/jhajali/freelens-map-extension.git",
+    "sshUrl": "git@github.com:jhajali/freelens-map-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-11-05T09:54:05.989Z"
+}

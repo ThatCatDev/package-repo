@@ -385,6 +385,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-map-extension",
+    "repoName": "freelens-map-extension",
+    "fullName": "jhajali/freelens-map-extension",
+    "description": "freelens service map viewer",
+    "stars": 0,
+    "updatedAt": "2026-11-05T09:25:34Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "@b-iurea/k8s-ollama-extension",
     "repoName": "freelens-ollama-extension",
     "fullName": "b-iurea/freelens-ollama-extension",
