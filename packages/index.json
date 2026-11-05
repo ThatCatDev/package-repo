@@ -323,8 +323,8 @@
     "repoName": "freelens-kamaji-extension",
     "fullName": "freelensapp/freelens-kamaji-extension",
     "description": "Kamaji extension",
-    "stars": 5,
-    "updatedAt": "2026-11-01T19:16:12Z",
+    "stars": 6,
+    "updatedAt": "2026-11-05T19:09:59Z",
     "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -385,13 +385,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-map-extension",
+    "name": "freelens-service-map-extension",
     "repoName": "freelens-map-extension",
     "fullName": "jhajali/freelens-map-extension",
-    "description": "freelens service map viewer",
+    "description": "Live service map for Freelens: namespaces, services, databases and traffic from Cilium Hubble",
     "stars": 0,
-    "updatedAt": "2026-11-05T09:25:34Z",
-    "latestVersion": null,
+    "updatedAt": "2026-11-05T20:44:04Z",
+    "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
