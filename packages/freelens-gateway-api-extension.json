@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-05-10T21:47:03Z",
   "updatedAt": "2026-11-02T18:08:35Z",
-  "pushedAt": "2026-11-04T21:28:38Z",
+  "pushedAt": "2026-11-05T13:47:52Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -143,7 +143,7 @@
         {
           "name": "freelensapp-gateway-api-extension-1.0.0-spdx.json",
           "size": 198160,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v1.0.0/freelensapp-gateway-api-extension-1.0.0-spdx.json",
           "createdAt": "2026-10-28T21:09:54Z",
@@ -163,7 +163,7 @@
         {
           "name": "freelensapp-gateway-api-extension-1.0.0.tgz",
           "size": 70700,
-          "downloadCount": 12,
+          "downloadCount": 13,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v1.0.0/freelensapp-gateway-api-extension-1.0.0.tgz",
           "createdAt": "2026-10-28T21:09:54Z",
@@ -428,7 +428,7 @@
       "releaseName": "v1.0.0",
       "size": 70700,
       "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v1.0.0/freelensapp-gateway-api-extension-1.0.0.tgz",
-      "downloadCount": 12,
+      "downloadCount": 13,
       "type": "tar.gz",
       "createdAt": "2026-10-28T21:09:54Z"
     },
@@ -490,7 +490,7 @@
       {
         "name": "freelensapp-gateway-api-extension-1.0.0-spdx.json",
         "size": 198160,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v1.0.0/freelensapp-gateway-api-extension-1.0.0-spdx.json",
         "createdAt": "2026-10-28T21:09:54Z",
@@ -510,7 +510,7 @@
       {
         "name": "freelensapp-gateway-api-extension-1.0.0.tgz",
         "size": 70700,
-        "downloadCount": 12,
+        "downloadCount": 13,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-gateway-api-extension/releases/download/v1.0.0/freelensapp-gateway-api-extension-1.0.0.tgz",
         "createdAt": "2026-10-28T21:09:54Z",
@@ -531,5 +531,5 @@
   },
   "totalReleases": 5,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-05T09:53:45.698Z"
+  "lastScanned": "2026-11-05T17:41:53.208Z"
 }
