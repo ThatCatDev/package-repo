@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-27T08:54:54Z",
-  "updatedAt": "2026-11-04T20:54:06Z",
-  "pushedAt": "2026-11-06T14:01:12Z",
+  "updatedAt": "2026-11-06T21:05:05Z",
+  "pushedAt": "2026-11-06T21:44:33Z",
   "defaultBranch": "main",
   "topics": [
     "backup",
@@ -81,6 +81,7 @@
       "test:integration": "vitest run --config vitest.integration.config.ts",
       "e2e": "pnpm build && node e2e/scripts/local-demo.mts fixtures --context kind-freelens-velero-dev && node e2e/scripts/local-demo.mts transport-proof --context kind-freelens-velero-dev",
       "e2e:cluster:up": "node e2e/scripts/local-demo.mts up --context kind-freelens-velero-dev",
+      "e2e:cluster:up:definitions": "node e2e/scripts/local-demo.mts up-definitions --context kind-freelens-velero-dev",
       "e2e:cluster:down": "node e2e/scripts/local-demo.mts down --context kind-freelens-velero-dev",
       "demo:up": "pnpm e2e:cluster:up && node e2e/scripts/local-demo.mts fixtures-static --context kind-freelens-velero-dev && node e2e/scripts/local-demo.mts fixtures-live --context kind-freelens-velero-dev",
       "demo:views": "node e2e/scripts/local-demo.mts demo --context kind-freelens-velero-dev",
@@ -152,5 +153,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-06T17:10:07.754Z"
+  "lastScanned": "2026-11-06T22:03:35.219Z"
 }
