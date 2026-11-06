@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-09-18T13:53:42Z",
   "updatedAt": "2026-11-03T09:02:59Z",
-  "pushedAt": "2026-11-06T03:11:28Z",
+  "pushedAt": "2026-11-06T14:39:01Z",
   "defaultBranch": "main",
   "topics": [
     "cloudnativepg",
@@ -184,7 +184,7 @@
         {
           "name": "freelensapp-cnpg-extension-2.0.0.tgz",
           "size": 908250,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz",
           "createdAt": "2026-11-03T09:12:03Z",
@@ -194,7 +194,7 @@
         {
           "name": "freelensapp-cnpg-extension-2.0.0.tgz.sha256",
           "size": 103,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz.sha256",
           "createdAt": "2026-11-03T09:12:03Z",
@@ -299,7 +299,7 @@
       "releaseName": "v2.0.0",
       "size": 908250,
       "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2026-11-03T09:12:03Z"
     },
@@ -351,7 +351,7 @@
       {
         "name": "freelensapp-cnpg-extension-2.0.0.tgz",
         "size": 908250,
-        "downloadCount": 2,
+        "downloadCount": 3,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz",
         "createdAt": "2026-11-03T09:12:03Z",
@@ -361,7 +361,7 @@
       {
         "name": "freelensapp-cnpg-extension-2.0.0.tgz.sha256",
         "size": 103,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz.sha256",
         "createdAt": "2026-11-03T09:12:03Z",
@@ -372,5 +372,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-06T09:58:12.737Z"
+  "lastScanned": "2026-11-06T17:10:04.479Z"
 }

@@ -121,6 +121,17 @@
     "hasTarFiles": false
   },
   {
+    "name": "@maltazar/freelens-envoy-gateway-extension",
+    "repoName": "freelens-envoy-extension",
+    "fullName": "Maltazar/freelens-envoy-extension",
+    "description": "Envoy Gateway policies, proxies and attachment visibility for Freelens 2",
+    "stars": 0,
+    "updatedAt": "2026-11-06T15:19:39Z",
+    "latestVersion": "v0.1.2",
+    "hasReleases": true,
+    "hasTarFiles": true
+  },
+  {
     "name": "freelens-eso-extension",
     "repoName": "freelens-eso-extension",
     "fullName": "nidiodolfini/freelens-eso-extension",
