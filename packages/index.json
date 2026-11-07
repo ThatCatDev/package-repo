@@ -16,7 +16,7 @@
     "fullName": "freelensapp/freelens-agentbridge-extension",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 3,
-    "updatedAt": "2026-11-06T07:47:51Z",
+    "updatedAt": "2026-11-07T16:33:56Z",
     "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -324,7 +324,7 @@
     "fullName": "freelensapp/freelens-kafka-extension",
     "description": "Freelens extension for Apache Kafka",
     "stars": 4,
-    "updatedAt": "2026-11-01T14:14:52Z",
+    "updatedAt": "2026-11-07T16:33:36Z",
     "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -390,7 +390,7 @@
     "fullName": "freelensapp/freelens-kubeswift-extension",
     "description": "Freelens extension for KubeSwift",
     "stars": 2,
-    "updatedAt": "2026-11-01T14:15:02Z",
+    "updatedAt": "2026-11-07T16:34:21Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-07T11:17:42Z",
+    "updatedAt": "2026-11-07T16:34:51Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
