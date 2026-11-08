@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
-  "updatedAt": "2026-11-08T13:11:53Z",
-  "pushedAt": "2026-11-08T13:11:49Z",
+  "updatedAt": "2026-11-08T17:03:06Z",
+  "pushedAt": "2026-11-08T17:03:18Z",
   "defaultBranch": "main",
   "topics": [
     "agentbridge",
@@ -41,7 +41,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/agentbridge-extension",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "repository": {
       "type": "git",
@@ -146,6 +146,62 @@
     "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
   },
   "releases": [
+    {
+      "id": 438388581,
+      "tagName": "v2.1.0",
+      "name": "v2.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-08T17:03:01Z",
+      "publishedAt": "2026-11-08T17:03:50Z",
+      "body": "## [2.1.0] - 2026-11-08\r\n\r\nA redesigned cluster page. The workspace is now an explorer, the provider\r\nchoice survives a Freelens restart, and the page keeps working in both host\r\nthemes. AgentBridge 2.1.0 requires Freelens 2.0.0 or later.\r\n\r\n### Added\r\n\r\n- A bridge strip at the top of the page that names the cluster, the selected\r\n  provider, and its workspace path, with dashed connection wires that fill\r\n  teal once the provider answers and the workspace exists.\r\n- A workspace explorer: a list of the workspace's configuration files,\r\n  capabilities, skills, and agents on the left, and the selected item in a\r\n  full-height pane on the right. Files open in the host Monaco editor with\r\n  autosave.\r\n- A session bar that shows the selected provider's status, version, and\r\n  workspace actions next to the one primary action, **Open session**.\r\n- A `Ctrl`+`Enter` (`⌘`+`Enter` on macOS) shortcut that opens a session from\r\n  anywhere on the page except an editor or text field.\r\n- Provider marks for OpenCode, Claude Code, GitHub Copilot CLI, OpenAI Codex\r\n  CLI, and Pi, drawn in `currentColor` beside every provider name.\r\n- Capability progress in the explorer: **Built 4m ago** once the capability's\r\n  artifact exists in the workspace, or **Not built yet** before it has run.\r\n- Copy buttons for the workspace path, a capability's invocation command, and\r\n  an artifact's path.\r\n- First-visit, loading, and blocked states: an introduction when no provider is\r\n  selected, skeleton rows while the CLI is checked, and an installation guide\r\n  when it is missing.\r\n- Rescan, Try again, and Check again controls for the workspace scan and the\r\n  provider version probe.\r\n- Per-cluster provider selections persisted in the main process under\r\n  `userData/agentbridge-provider-selections.json` through two new IPC\r\n  channels, so they survive a Freelens restart.\r\n\r\n### Changed\r\n\r\n- The cluster page is now a two-pane workspace explorer instead of a single\r\n  column that stacked every editor and showed capabilities in a side rail.\r\n- The provider picker is a segmented radio group with provider marks instead of\r\n  a dropdown; the full provider name remains its tooltip and accessible name.\r\n- The Reset confirmation now lists every file it restores, keeps instructions,\r\n  skills, and agents untouched, and confirms when the reset completes.\r\n- The file editor shows the full file path and an autosave status\r\n  (Autosaves as you type, Saving…, Saved, Not saved), and writes a pending save\r\n  immediately when another file, provider, or cluster is selected.\r\n- Skills and agents moved from the collapsible Workspace artifacts panel into\r\n  the explorer's own groups, newest first, with the artifact's details shown on\r\n  selection.\r\n- The two extension preferences (version probe timeout and editor command) now\r\n  share one preferences block, and failed saves report **Not saved**.\r\n- `Reveal workspace` is now **Reveal**, `Retry` is now **Check again** (probe)\r\n  or **Try again** (scan), and `Reset` is now **Reset…**.\r\n- The README and configuration guide describe the explorer, and the demos and\r\n  screenshots were refreshed.\r\n\r\n### Fixed\r\n\r\n- The provider selection no longer disappears on every Freelens restart.\r\n  Renderer `localStorage` does not persist in Freelens 2, so the choice is now\r\n  stored in the main process instead.\r\n- A provider file that fails to read is no longer replaced by an empty,\r\n  editable buffer; the editor shows the read error instead.\r\n- A pending debounced save is no longer dropped when switching files,\r\n  providers, or clusters.\r\n- Late provider-selection answers from a cluster the user has already left are\r\n  discarded, and a selection made while the saved choice is still loading wins.\r\n- Corrupt or invalid persisted selections are treated as no selection, and\r\n  writes reject unknown providers and invalid cluster IDs.\r\n- A failed workspace scan no longer reads as an authoritative zero count; it\r\n  shows the error and a Try again action.\r\n- Accessibility: decorative Material icons no longer pollute accessible names,\r\n  the provider switcher uses native radio semantics, copy and scan buttons have\r\n  labels, status and error regions are announced, focus rings are visible, and\r\n  reduced-motion preferences are respected.\r\n- Secondary actions now draw a visible border around the host's outlined\r\n  `Button`, and code in preferences hints is readable in the light theme.\r\n\r\n### Internal\r\n\r\n- Updated tooling and dependencies: pnpm 12.18.0, Electron 44.10.1, Biome\r\n  2.6.4, knip 6.41.0, and refreshed Trunk and mise versions.\r\n- Biome now excludes Markdown, YAML, and SCSS, which Trunk already formats and\r\n  which Biome 2.6 would rewrite destructively.\r\n- The npm dedupe workflow no longer tries to commit an empty result when the\r\n  automation branch already contains it.\r\n- Added tests for the bridge strip, workspace explorer, file editor, page\r\n  model, and the main-process provider-selection store.\r\n\r\n[2.1.0]: https://github.com/freelensapp/freelens-agentbridge-extension/compare/v2.0.0...v2.1.0\r\n\r\n## What's Changed\r\n* Align the npm dedupe workflow with the example extension by @robertobandini in https://github.com/freelensapp/freelens-agentbridge-extension/pull/89\r\n* Update dependency jdx/mise to v2026.11.4 by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/87\r\n* Update pnpm to v12.18.0 by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/72\r\n* Automated trunk upgrade cli upgraded 1.25.0 → 1.29.0, markdownlint 0.49.1 → 0.50.0 [skip ci] by @freelensbot in https://github.com/freelensapp/freelens-agentbridge-extension/pull/66\r\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/88\r\n* Automated npm version v2.1.0 by @freelensbot in https://github.com/freelensapp/freelens-agentbridge-extension/pull/90\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-agentbridge-extension/compare/v2.0.0...v2.1.0",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-agentbridge-extension-2.1.0-spdx.json",
+          "size": 199900,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0-spdx.json",
+          "createdAt": "2026-11-08T17:03:49Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-agentbridge-extension-2.1.0-spdx.json.sha256",
+          "size": 116,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0-spdx.json.sha256",
+          "createdAt": "2026-11-08T17:03:49Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-agentbridge-extension-2.1.0.tgz",
+          "size": 122617,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz",
+          "createdAt": "2026-11-08T17:03:49Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
+          "size": 110,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
+          "createdAt": "2026-11-08T17:03:49Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 429419691,
       "tagName": "v2.0.0",
@@ -317,6 +373,13 @@
   ],
   "tags": [
     {
+      "name": "v2.1.0",
+      "commitSha": "acd92ea01b59bc70c062db0b9a94089e2a69d814",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/commits/acd92ea01b59bc70c062db0b9a94089e2a69d814",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/zipball/refs/tags/v2.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/tarball/refs/tags/v2.1.0"
+    },
+    {
       "name": "v2.0.0",
       "commitSha": "4d678a22f64772dbe8e67e883400f1b60056ed82",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-agentbridge-extension/commits/4d678a22f64772dbe8e67e883400f1b60056ed82",
@@ -354,6 +417,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.1.0",
+      "name": "v2.1.0",
+      "publishedAt": "2026-11-08T17:03:50Z",
+      "isPrerelease": false,
+      "notes": "## [2.1.0] - 2026-11-08\r\n\r\nA redesigned cluster page. The workspace is now an explorer, the provider\r\nchoice survives a Freelens restart, and the page keeps working in both host\r\nthemes. AgentBridge 2.1.0 requires Freelens 2.0.0 or later.\r\n\r\n### Added\r\n\r\n- A bridge strip at the top of the page that names the cluster, the selected\r\n  provider, and its workspace path, with dashed connection wires that fill\r\n  teal once the provider answers and the workspace exists.\r\n- A workspace explorer: a list of the workspace's configuration files,\r\n  capabilities, skills, and agents on the left, and the selected item in a\r\n  full-height pane on the right. Files open in the host Monaco editor with\r\n  autosave.\r\n- A session bar that shows the selected provider's status, version, and\r\n  workspace actions next to the one primary action, **Open session**.\r\n- A `Ctrl`+`Enter` (`⌘`+`Enter` on macOS) shortcut that opens a session from\r\n  anywhere on the page except an editor or text field.\r\n- Provider marks for OpenCode, Claude Code, GitHub Copilot CLI, OpenAI Codex\r\n  CLI, and Pi, drawn in `currentColor` beside every provider name.\r\n- Capability progress in the explorer: **Built 4m ago** once the capability's\r\n  artifact exists in the workspace, or **Not built yet** before it has run.\r\n- Copy buttons for the workspace path, a capability's invocation command, and\r\n  an artifact's path.\r\n- First-visit, loading, and blocked states: an introduction when no provider is\r\n  selected, skeleton rows while the CLI is checked, and an installation guide\r\n  when it is missing.\r\n- Rescan, Try again, and Check again controls for the workspace scan and the\r\n  provider version probe.\r\n- Per-cluster provider selections persisted in the main process under\r\n  `userData/agentbridge-provider-selections.json` through two new IPC\r\n  channels, so they survive a Freelens restart.\r\n\r\n### Changed\r\n\r\n- The cluster page is now a two-pane workspace explorer instead of a single\r\n  column that stacked every editor and showed capabilities in a side rail.\r\n- The provider picker is a segmented radio group with provider marks instead of\r\n  a dropdown; the full provider name remains its tooltip and accessible name.\r\n- The Reset confirmation now lists every file it restores, keeps instructions,\r\n  skills, and agents untouched, and confirms when the reset completes.\r\n- The file editor shows the full file path and an autosave status\r\n  (Autosaves as you type, Saving…, Saved, Not saved), and writes a pending save\r\n  immediately when another file, provider, or cluster is selected.\r\n- Skills and agents moved from the collapsible Workspace artifacts panel into\r\n  the explorer's own groups, newest first, with the artifact's details shown on\r\n  selection.\r\n- The two extension preferences (version probe timeout and editor command) now\r\n  share one preferences block, and failed saves report **Not saved**.\r\n- `Reveal workspace` is now **Reveal**, `Retry` is now **Check again** (probe)\r\n  or **Try again** (scan), and `Reset` is now **Reset…**.\r\n- The README and configuration guide describe the explorer, and the demos and\r\n  screenshots were refreshed.\r\n\r\n### Fixed\r\n\r\n- The provider selection no longer disappears on every Freelens restart.\r\n  Renderer `localStorage` does not persist in Freelens 2, so the choice is now\r\n  stored in the main process instead.\r\n- A provider file that fails to read is no longer replaced by an empty,\r\n  editable buffer; the editor shows the read error instead.\r\n- A pending debounced save is no longer dropped when switching files,\r\n  providers, or clusters.\r\n- Late provider-selection answers from a cluster the user has already left are\r\n  discarded, and a selection made while the saved choice is still loading wins.\r\n- Corrupt or invalid persisted selections are treated as no selection, and\r\n  writes reject unknown providers and invalid cluster IDs.\r\n- A failed workspace scan no longer reads as an authoritative zero count; it\r\n  shows the error and a Try again action.\r\n- Accessibility: decorative Material icons no longer pollute accessible names,\r\n  the provider switcher uses native radio semantics, copy and scan buttons have\r\n  labels, status and error regions are announced, focus rings are visible, and\r\n  reduced-motion preferences are respected.\r\n- Secondary actions now draw a visible border around the host's outlined\r\n  `Button`, and code in preferences hints is readable in the light theme.\r\n\r\n### Internal\r\n\r\n- Updated tooling and dependencies: pnpm 12.18.0, Electron 44.10.1, Biome\r\n  2.6.4, knip 6.41.0, and refreshed Trunk and mise versions.\r\n- Biome now excludes Markdown, YAML, and SCSS, which Trunk already formats and\r\n  which Biome 2.6 would rewrite destructively.\r\n- The npm dedupe workflow no longer tries to commit an empty result when the\r\n  automation branch already contains it.\r\n- Added tests for the bridge strip, workspace explorer, file editor, page\r\n  model, and the main-process provider-selection store.\r\n\r\n[2.1.0]: https://github.com/freelensapp/freelens-agentbridge-extension/compare/v2.0.0...v2.1.0\r\n\r\n## What's Changed\r\n* Align the npm dedupe workflow with the example extension by @robertobandini in https://github.com/freelensapp/freelens-agentbridge-extension/pull/89\r\n* Update dependency jdx/mise to v2026.11.4 by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/87\r\n* Update pnpm to v12.18.0 by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/72\r\n* Automated trunk upgrade cli upgraded 1.25.0 → 1.29.0, markdownlint 0.49.1 → 0.50.0 [skip ci] by @freelensbot in https://github.com/freelensapp/freelens-agentbridge-extension/pull/66\r\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/88\r\n* Automated npm version v2.1.0 by @freelensbot in https://github.com/freelensapp/freelens-agentbridge-extension/pull/90\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-agentbridge-extension/compare/v2.0.0...v2.1.0"
+    },
+    {
       "version": "v2.0.0",
       "name": "v2.0.0",
       "publishedAt": "2026-10-30T19:37:49Z",
@@ -376,6 +446,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-agentbridge-extension-2.1.0.tgz",
+      "releaseTag": "v2.1.0",
+      "releaseName": "v2.1.0",
+      "size": 122617,
+      "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-11-08T17:03:49Z"
+    },
     {
       "filename": "freelensapp-agentbridge-extension-2.0.0.tgz",
       "releaseTag": "v2.0.0",
@@ -408,62 +488,62 @@
     }
   ],
   "latestRelease": {
-    "id": 429419691,
-    "tagName": "v2.0.0",
-    "name": "v2.0.0",
+    "id": 438388581,
+    "tagName": "v2.1.0",
+    "name": "v2.1.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-10-30T19:36:51Z",
-    "publishedAt": "2026-10-30T19:37:49Z",
-    "body": "The first release for Freelens 2.x, on the v2 extension API. It needs Freelens 2.0.0 or later; versions 1.x are for Freelens 1.x.\n\nThe port comes from #76 and #77, aligned with the Freelens 2.0.0 release in #85.\n",
+    "createdAt": "2026-11-08T17:03:01Z",
+    "publishedAt": "2026-11-08T17:03:50Z",
+    "body": "## [2.1.0] - 2026-11-08\r\n\r\nA redesigned cluster page. The workspace is now an explorer, the provider\r\nchoice survives a Freelens restart, and the page keeps working in both host\r\nthemes. AgentBridge 2.1.0 requires Freelens 2.0.0 or later.\r\n\r\n### Added\r\n\r\n- A bridge strip at the top of the page that names the cluster, the selected\r\n  provider, and its workspace path, with dashed connection wires that fill\r\n  teal once the provider answers and the workspace exists.\r\n- A workspace explorer: a list of the workspace's configuration files,\r\n  capabilities, skills, and agents on the left, and the selected item in a\r\n  full-height pane on the right. Files open in the host Monaco editor with\r\n  autosave.\r\n- A session bar that shows the selected provider's status, version, and\r\n  workspace actions next to the one primary action, **Open session**.\r\n- A `Ctrl`+`Enter` (`⌘`+`Enter` on macOS) shortcut that opens a session from\r\n  anywhere on the page except an editor or text field.\r\n- Provider marks for OpenCode, Claude Code, GitHub Copilot CLI, OpenAI Codex\r\n  CLI, and Pi, drawn in `currentColor` beside every provider name.\r\n- Capability progress in the explorer: **Built 4m ago** once the capability's\r\n  artifact exists in the workspace, or **Not built yet** before it has run.\r\n- Copy buttons for the workspace path, a capability's invocation command, and\r\n  an artifact's path.\r\n- First-visit, loading, and blocked states: an introduction when no provider is\r\n  selected, skeleton rows while the CLI is checked, and an installation guide\r\n  when it is missing.\r\n- Rescan, Try again, and Check again controls for the workspace scan and the\r\n  provider version probe.\r\n- Per-cluster provider selections persisted in the main process under\r\n  `userData/agentbridge-provider-selections.json` through two new IPC\r\n  channels, so they survive a Freelens restart.\r\n\r\n### Changed\r\n\r\n- The cluster page is now a two-pane workspace explorer instead of a single\r\n  column that stacked every editor and showed capabilities in a side rail.\r\n- The provider picker is a segmented radio group with provider marks instead of\r\n  a dropdown; the full provider name remains its tooltip and accessible name.\r\n- The Reset confirmation now lists every file it restores, keeps instructions,\r\n  skills, and agents untouched, and confirms when the reset completes.\r\n- The file editor shows the full file path and an autosave status\r\n  (Autosaves as you type, Saving…, Saved, Not saved), and writes a pending save\r\n  immediately when another file, provider, or cluster is selected.\r\n- Skills and agents moved from the collapsible Workspace artifacts panel into\r\n  the explorer's own groups, newest first, with the artifact's details shown on\r\n  selection.\r\n- The two extension preferences (version probe timeout and editor command) now\r\n  share one preferences block, and failed saves report **Not saved**.\r\n- `Reveal workspace` is now **Reveal**, `Retry` is now **Check again** (probe)\r\n  or **Try again** (scan), and `Reset` is now **Reset…**.\r\n- The README and configuration guide describe the explorer, and the demos and\r\n  screenshots were refreshed.\r\n\r\n### Fixed\r\n\r\n- The provider selection no longer disappears on every Freelens restart.\r\n  Renderer `localStorage` does not persist in Freelens 2, so the choice is now\r\n  stored in the main process instead.\r\n- A provider file that fails to read is no longer replaced by an empty,\r\n  editable buffer; the editor shows the read error instead.\r\n- A pending debounced save is no longer dropped when switching files,\r\n  providers, or clusters.\r\n- Late provider-selection answers from a cluster the user has already left are\r\n  discarded, and a selection made while the saved choice is still loading wins.\r\n- Corrupt or invalid persisted selections are treated as no selection, and\r\n  writes reject unknown providers and invalid cluster IDs.\r\n- A failed workspace scan no longer reads as an authoritative zero count; it\r\n  shows the error and a Try again action.\r\n- Accessibility: decorative Material icons no longer pollute accessible names,\r\n  the provider switcher uses native radio semantics, copy and scan buttons have\r\n  labels, status and error regions are announced, focus rings are visible, and\r\n  reduced-motion preferences are respected.\r\n- Secondary actions now draw a visible border around the host's outlined\r\n  `Button`, and code in preferences hints is readable in the light theme.\r\n\r\n### Internal\r\n\r\n- Updated tooling and dependencies: pnpm 12.18.0, Electron 44.10.1, Biome\r\n  2.6.4, knip 6.41.0, and refreshed Trunk and mise versions.\r\n- Biome now excludes Markdown, YAML, and SCSS, which Trunk already formats and\r\n  which Biome 2.6 would rewrite destructively.\r\n- The npm dedupe workflow no longer tries to commit an empty result when the\r\n  automation branch already contains it.\r\n- Added tests for the bridge strip, workspace explorer, file editor, page\r\n  model, and the main-process provider-selection store.\r\n\r\n[2.1.0]: https://github.com/freelensapp/freelens-agentbridge-extension/compare/v2.0.0...v2.1.0\r\n\r\n## What's Changed\r\n* Align the npm dedupe workflow with the example extension by @robertobandini in https://github.com/freelensapp/freelens-agentbridge-extension/pull/89\r\n* Update dependency jdx/mise to v2026.11.4 by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/87\r\n* Update pnpm to v12.18.0 by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/72\r\n* Automated trunk upgrade cli upgraded 1.25.0 → 1.29.0, markdownlint 0.49.1 → 0.50.0 [skip ci] by @freelensbot in https://github.com/freelensapp/freelens-agentbridge-extension/pull/66\r\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-agentbridge-extension/pull/88\r\n* Automated npm version v2.1.0 by @freelensbot in https://github.com/freelensapp/freelens-agentbridge-extension/pull/90\r\n\r\n\r\n**Full Changelog**: https://github.com/freelensapp/freelens-agentbridge-extension/compare/v2.0.0...v2.1.0",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-agentbridge-extension-2.0.0-spdx.json",
+        "name": "freelensapp-agentbridge-extension-2.1.0-spdx.json",
         "size": 199900,
         "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0-spdx.json",
-        "createdAt": "2026-10-30T19:37:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0-spdx.json",
+        "createdAt": "2026-11-08T17:03:49Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-agentbridge-extension-2.0.0-spdx.json.sha256",
+        "name": "freelensapp-agentbridge-extension-2.1.0-spdx.json.sha256",
         "size": 116,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0-spdx.json.sha256",
-        "createdAt": "2026-10-30T19:37:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0-spdx.json.sha256",
+        "createdAt": "2026-11-08T17:03:49Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-agentbridge-extension-2.0.0.tgz",
-        "size": 93340,
-        "downloadCount": 3,
+        "name": "freelensapp-agentbridge-extension-2.1.0.tgz",
+        "size": 122617,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz",
-        "createdAt": "2026-10-30T19:37:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz",
+        "createdAt": "2026-11-08T17:03:49Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-agentbridge-extension-2.0.0.tgz.sha256",
+        "name": "freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
         "size": 110,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.0.0/freelensapp-agentbridge-extension-2.0.0.tgz.sha256",
-        "createdAt": "2026-10-30T19:37:48Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
+        "createdAt": "2026-11-08T17:03:49Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 3,
+  "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-08T14:36:33.227Z"
+  "lastScanned": "2026-11-08T19:04:16.341Z"
 }

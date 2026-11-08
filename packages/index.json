@@ -16,8 +16,8 @@
     "fullName": "freelensapp/freelens-agentbridge-extension",
     "description": "Freelens extension for per-cluster AI CLI sessions",
     "stars": 3,
-    "updatedAt": "2026-11-08T13:11:53Z",
-    "latestVersion": "v2.0.0",
+    "updatedAt": "2026-11-08T17:03:06Z",
+    "latestVersion": "v2.1.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -137,8 +137,8 @@
     "fullName": "nidiodolfini/freelens-eso-extension",
     "description": "Freelens extension for External Secrets Operator",
     "stars": 0,
-    "updatedAt": "2026-11-08T14:18:27Z",
-    "latestVersion": "v2.2.0",
+    "updatedAt": "2026-11-08T15:10:38Z",
+    "latestVersion": "v2.3.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-08T14:27:46Z",
+    "updatedAt": "2026-11-08T18:30:16Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false

@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-27T08:54:54Z",
-  "updatedAt": "2026-11-08T14:27:46Z",
-  "pushedAt": "2026-11-08T14:30:21Z",
+  "updatedAt": "2026-11-08T18:30:16Z",
+  "pushedAt": "2026-11-08T18:40:07Z",
   "defaultBranch": "main",
   "topics": [
     "backup",
@@ -153,5 +153,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-08T14:36:29.669Z"
+  "lastScanned": "2026-11-08T19:04:12.597Z"
 }

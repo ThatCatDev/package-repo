@@ -8,8 +8,8 @@
   "forks": 1,
   "language": "TypeScript",
   "createdAt": "2026-10-24T09:58:43Z",
-  "updatedAt": "2026-11-08T14:18:27Z",
-  "pushedAt": "2026-11-08T14:35:01Z",
+  "updatedAt": "2026-11-08T15:10:38Z",
+  "pushedAt": "2026-11-08T15:15:58Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "freelens-eso-extension",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "description": "Freelens extension for External Secrets Operator",
     "repository": {
       "type": "git",
@@ -121,6 +121,62 @@
     "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
   },
   "releases": [
+    {
+      "id": 438358165,
+      "tagName": "v2.3.0",
+      "name": "v2.3.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-08T15:10:33Z",
+      "publishedAt": "2026-11-08T16:10:59Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelens-eso-extension-2.3.0-spdx.json",
+          "size": 197583,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0-spdx.json",
+          "createdAt": "2026-11-08T16:10:59Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelens-eso-extension-2.3.0-spdx.json.sha256",
+          "size": 105,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0-spdx.json.sha256",
+          "createdAt": "2026-11-08T16:10:58Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelens-eso-extension-2.3.0.tgz",
+          "size": 44565,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0.tgz",
+          "createdAt": "2026-11-08T16:10:59Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelens-eso-extension-2.3.0.tgz.sha256",
+          "size": 99,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0.tgz.sha256",
+          "createdAt": "2026-11-08T16:10:58Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 437994584,
       "tagName": "v2.2.0",
@@ -404,6 +460,13 @@
   ],
   "tags": [
     {
+      "name": "v2.3.0",
+      "commitSha": "f75dd5449fdab03c0b12a31e79884e6ee0f7a7fe",
+      "commitUrl": "https://api.github.com/repos/nidiodolfini/freelens-eso-extension/commits/f75dd5449fdab03c0b12a31e79884e6ee0f7a7fe",
+      "zipballUrl": "https://api.github.com/repos/nidiodolfini/freelens-eso-extension/zipball/refs/tags/v2.3.0",
+      "tarballUrl": "https://api.github.com/repos/nidiodolfini/freelens-eso-extension/tarball/refs/tags/v2.3.0"
+    },
+    {
       "name": "v2.2.0",
       "commitSha": "24c371ead30a7913a108d808bffa443974d6371f",
       "commitUrl": "https://api.github.com/repos/nidiodolfini/freelens-eso-extension/commits/24c371ead30a7913a108d808bffa443974d6371f",
@@ -448,6 +511,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.3.0",
+      "name": "v2.3.0",
+      "publishedAt": "2026-11-08T16:10:59Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v2.2.0",
       "name": "v2.2.0",
       "publishedAt": "2026-11-08T02:51:56Z",
@@ -484,6 +554,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelens-eso-extension-2.3.0.tgz",
+      "releaseTag": "v2.3.0",
+      "releaseName": "v2.3.0",
+      "size": 44565,
+      "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-11-08T16:10:59Z"
+    },
     {
       "filename": "freelens-eso-extension-2.2.0.tgz",
       "releaseTag": "v2.2.0",
@@ -536,13 +616,13 @@
     }
   ],
   "latestRelease": {
-    "id": 437994584,
-    "tagName": "v2.2.0",
-    "name": "v2.2.0",
+    "id": 438358165,
+    "tagName": "v2.3.0",
+    "name": "v2.3.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-11-08T02:50:05Z",
-    "publishedAt": "2026-11-08T02:51:56Z",
+    "createdAt": "2026-11-08T15:10:33Z",
+    "publishedAt": "2026-11-08T16:10:59Z",
     "body": null,
     "author": {
       "login": "github-actions[bot]",
@@ -550,48 +630,48 @@
     },
     "assets": [
       {
-        "name": "freelens-eso-extension-2.2.0-spdx.json",
+        "name": "freelens-eso-extension-2.3.0-spdx.json",
         "size": 197583,
         "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.2.0/freelens-eso-extension-2.2.0-spdx.json",
-        "createdAt": "2026-11-08T02:51:55Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0-spdx.json",
+        "createdAt": "2026-11-08T16:10:59Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelens-eso-extension-2.2.0-spdx.json.sha256",
+        "name": "freelens-eso-extension-2.3.0-spdx.json.sha256",
         "size": 105,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.2.0/freelens-eso-extension-2.2.0-spdx.json.sha256",
-        "createdAt": "2026-11-08T02:51:55Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0-spdx.json.sha256",
+        "createdAt": "2026-11-08T16:10:58Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelens-eso-extension-2.2.0.tgz",
-        "size": 43496,
+        "name": "freelens-eso-extension-2.3.0.tgz",
+        "size": 44565,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.2.0/freelens-eso-extension-2.2.0.tgz",
-        "createdAt": "2026-11-08T02:51:55Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0.tgz",
+        "createdAt": "2026-11-08T16:10:59Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelens-eso-extension-2.2.0.tgz.sha256",
+        "name": "freelens-eso-extension-2.3.0.tgz.sha256",
         "size": 99,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.2.0/freelens-eso-extension-2.2.0.tgz.sha256",
-        "createdAt": "2026-11-08T02:51:55Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.3.0/freelens-eso-extension-2.3.0.tgz.sha256",
+        "createdAt": "2026-11-08T16:10:58Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 5,
+  "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-08T14:36:38.356Z"
+  "lastScanned": "2026-11-08T19:04:22.596Z"
 }
