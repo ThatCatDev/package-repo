@@ -137,8 +137,8 @@
     "fullName": "nidiodolfini/freelens-eso-extension",
     "description": "Freelens extension for External Secrets Operator",
     "stars": 0,
-    "updatedAt": "2026-11-08T01:15:24Z",
-    "latestVersion": "v2.0.0",
+    "updatedAt": "2026-11-08T02:50:10Z",
+    "latestVersion": "v2.2.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -368,8 +368,8 @@
     "fullName": "nidiodolfini/freelens-keda-extension",
     "description": "Freelens extension for KEDA",
     "stars": 0,
-    "updatedAt": "2026-10-24T14:36:29Z",
-    "latestVersion": "v1.0.3",
+    "updatedAt": "2026-11-08T03:25:43Z",
+    "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-08T00:46:01Z",
+    "updatedAt": "2026-11-08T07:07:15Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
