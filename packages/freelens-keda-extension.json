@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-10-24T11:21:22Z",
-  "updatedAt": "2026-11-08T03:25:43Z",
-  "pushedAt": "2026-11-08T03:26:01Z",
+  "updatedAt": "2026-11-08T14:22:14Z",
+  "pushedAt": "2026-11-08T14:22:26Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "freelens-keda-extension",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Freelens extension for KEDA",
     "repository": {
       "type": "git",
@@ -119,6 +119,62 @@
     "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
   },
   "releases": [
+    {
+      "id": 438295977,
+      "tagName": "v2.0.1",
+      "name": "v2.0.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-08T14:22:09Z",
+      "publishedAt": "2026-11-08T14:23:30Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelens-keda-extension-2.0.1-spdx.json",
+          "size": 186400,
+          "downloadCount": 0,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1-spdx.json",
+          "createdAt": "2026-11-08T14:23:29Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelens-keda-extension-2.0.1-spdx.json.sha256",
+          "size": 106,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1-spdx.json.sha256",
+          "createdAt": "2026-11-08T14:23:29Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelens-keda-extension-2.0.1.tgz",
+          "size": 46177,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1.tgz",
+          "createdAt": "2026-11-08T14:23:29Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelens-keda-extension-2.0.1.tgz.sha256",
+          "size": 100,
+          "downloadCount": 0,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1.tgz.sha256",
+          "createdAt": "2026-11-08T14:23:29Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 438010379,
       "tagName": "v2.0.0",
@@ -234,6 +290,13 @@
   ],
   "tags": [
     {
+      "name": "v2.0.1",
+      "commitSha": "730bdc4077ef0795a10d6a308815c6d3da953290",
+      "commitUrl": "https://api.github.com/repos/nidiodolfini/freelens-keda-extension/commits/730bdc4077ef0795a10d6a308815c6d3da953290",
+      "zipballUrl": "https://api.github.com/repos/nidiodolfini/freelens-keda-extension/zipball/refs/tags/v2.0.1",
+      "tarballUrl": "https://api.github.com/repos/nidiodolfini/freelens-keda-extension/tarball/refs/tags/v2.0.1"
+    },
+    {
       "name": "v2.0.0",
       "commitSha": "9ecb3f33eaab1b278c5157a4f126d1bde7937258",
       "commitUrl": "https://api.github.com/repos/nidiodolfini/freelens-keda-extension/commits/9ecb3f33eaab1b278c5157a4f126d1bde7937258",
@@ -250,6 +313,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.0.1",
+      "name": "v2.0.1",
+      "publishedAt": "2026-11-08T14:23:30Z",
+      "isPrerelease": false,
+      "notes": null
+    },
+    {
       "version": "v2.0.0",
       "name": "v2.0.0",
       "publishedAt": "2026-11-08T03:32:45Z",
@@ -265,6 +335,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelens-keda-extension-2.0.1.tgz",
+      "releaseTag": "v2.0.1",
+      "releaseName": "v2.0.1",
+      "size": 46177,
+      "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1.tgz",
+      "downloadCount": 0,
+      "type": "tar.gz",
+      "createdAt": "2026-11-08T14:23:29Z"
+    },
     {
       "filename": "freelens-keda-extension-2.0.0.tgz",
       "releaseTag": "v2.0.0",
@@ -287,13 +367,13 @@
     }
   ],
   "latestRelease": {
-    "id": 438010379,
-    "tagName": "v2.0.0",
-    "name": "v2.0.0",
+    "id": 438295977,
+    "tagName": "v2.0.1",
+    "name": "v2.0.1",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-11-08T03:25:38Z",
-    "publishedAt": "2026-11-08T03:32:45Z",
+    "createdAt": "2026-11-08T14:22:09Z",
+    "publishedAt": "2026-11-08T14:23:30Z",
     "body": null,
     "author": {
       "login": "github-actions[bot]",
@@ -301,48 +381,48 @@
     },
     "assets": [
       {
-        "name": "freelens-keda-extension-2.0.0-spdx.json",
+        "name": "freelens-keda-extension-2.0.1-spdx.json",
         "size": 186400,
-        "downloadCount": 1,
+        "downloadCount": 0,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.0/freelens-keda-extension-2.0.0-spdx.json",
-        "createdAt": "2026-11-08T03:32:45Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1-spdx.json",
+        "createdAt": "2026-11-08T14:23:29Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelens-keda-extension-2.0.0-spdx.json.sha256",
+        "name": "freelens-keda-extension-2.0.1-spdx.json.sha256",
         "size": 106,
-        "downloadCount": 1,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.0/freelens-keda-extension-2.0.0-spdx.json.sha256",
-        "createdAt": "2026-11-08T03:32:45Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1-spdx.json.sha256",
+        "createdAt": "2026-11-08T14:23:29Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelens-keda-extension-2.0.0.tgz",
-        "size": 47478,
-        "downloadCount": 1,
+        "name": "freelens-keda-extension-2.0.1.tgz",
+        "size": 46177,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.0/freelens-keda-extension-2.0.0.tgz",
-        "createdAt": "2026-11-08T03:32:45Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1.tgz",
+        "createdAt": "2026-11-08T14:23:29Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelens-keda-extension-2.0.0.tgz.sha256",
+        "name": "freelens-keda-extension-2.0.1.tgz.sha256",
         "size": 100,
-        "downloadCount": 1,
+        "downloadCount": 0,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.0/freelens-keda-extension-2.0.0.tgz.sha256",
-        "createdAt": "2026-11-08T03:32:45Z",
+        "downloadUrl": "https://github.com/nidiodolfini/freelens-keda-extension/releases/download/v2.0.1/freelens-keda-extension-2.0.1.tgz.sha256",
+        "createdAt": "2026-11-08T14:23:29Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-08T07:54:38.137Z"
+  "lastScanned": "2026-11-08T14:36:41.916Z"
 }
