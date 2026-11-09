@@ -82,8 +82,8 @@
     "fullName": "rguleryuz/freelens-debug-pod-extension",
     "description": "Freelens extension that adds kubectl debug action for pods",
     "stars": 0,
-    "updatedAt": "2026-04-15T09:57:07Z",
-    "latestVersion": "0.2.0",
+    "updatedAt": "2026-11-09T06:51:47Z",
+    "latestVersion": "0.3.0",
     "hasReleases": false,
     "hasTarFiles": false
   },
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-08T20:55:36Z",
+    "updatedAt": "2026-11-09T09:02:05Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
