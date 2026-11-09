@@ -269,8 +269,8 @@
     "fullName": "ganey/freelens-gateway-extension",
     "description": "Freelens extension for Kubernetes Gateway API and NGINX Gateway Fabric resources",
     "stars": 0,
-    "updatedAt": "2026-10-29T22:34:01Z",
-    "latestVersion": "v0.1.1",
+    "updatedAt": "2026-11-09T09:57:16Z",
+    "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
   },
@@ -346,7 +346,7 @@
     "fullName": "jhajali/freelens-kargo-extension",
     "description": "Freelens extension for Kargo",
     "stars": 0,
-    "updatedAt": "2026-04-01T07:17:18Z",
+    "updatedAt": "2026-11-09T11:39:19Z",
     "latestVersion": "v0.1.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -379,7 +379,7 @@
     "fullName": "jhajali/freelens-kubeblocks-extension",
     "description": "Freelens extension for KubeBlocks",
     "stars": 0,
-    "updatedAt": "2026-04-01T11:03:09Z",
+    "updatedAt": "2026-11-09T11:39:24Z",
     "latestVersion": "v0.1.2",
     "hasReleases": true,
     "hasTarFiles": true
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-09T09:02:05Z",
+    "updatedAt": "2026-11-09T19:51:20Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
