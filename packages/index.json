@@ -257,8 +257,8 @@
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
-    "stars": 17,
-    "updatedAt": "2026-11-02T18:08:35Z",
+    "stars": 18,
+    "updatedAt": "2026-11-10T10:39:44Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-10T10:01:29Z",
+    "updatedAt": "2026-11-10T14:12:50Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
