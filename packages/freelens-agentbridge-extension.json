@@ -4,12 +4,12 @@
   "fullName": "freelensapp/freelens-agentbridge-extension",
   "description": "Freelens extension for per-cluster AI CLI sessions",
   "homepage": "https://freelens.app",
-  "stars": 3,
+  "stars": 4,
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-08-08T18:04:42Z",
-  "updatedAt": "2026-11-08T17:03:06Z",
-  "pushedAt": "2026-11-09T04:33:16Z",
+  "updatedAt": "2026-11-09T21:11:21Z",
+  "pushedAt": "2026-11-09T22:51:26Z",
   "defaultBranch": "main",
   "topics": [
     "agentbridge",
@@ -545,5 +545,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-09T19:58:13.977Z"
+  "lastScanned": "2026-11-10T02:31:49.780Z"
 }

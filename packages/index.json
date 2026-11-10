@@ -15,8 +15,8 @@
     "repoName": "freelens-agentbridge-extension",
     "fullName": "freelensapp/freelens-agentbridge-extension",
     "description": "Freelens extension for per-cluster AI CLI sessions",
-    "stars": 3,
-    "updatedAt": "2026-11-08T17:03:06Z",
+    "stars": 4,
+    "updatedAt": "2026-11-09T21:11:21Z",
     "latestVersion": "v2.1.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-09T19:51:20Z",
+    "updatedAt": "2026-11-09T21:07:27Z",
     "latestVersion": "0.1.0-alpha.0",
     "hasReleases": false,
     "hasTarFiles": false
