@@ -533,10 +533,10 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-09T21:07:27Z",
-    "latestVersion": "0.1.0-alpha.0",
-    "hasReleases": false,
-    "hasTarFiles": false
+    "updatedAt": "2026-11-10T10:01:29Z",
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
   },
   {
     "name": "freelens_ingressroute_extension",

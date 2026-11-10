@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-27T08:54:54Z",
-  "updatedAt": "2026-11-09T21:07:27Z",
-  "pushedAt": "2026-11-09T21:07:52Z",
+  "updatedAt": "2026-11-10T10:01:29Z",
+  "pushedAt": "2026-11-10T10:14:22Z",
   "defaultBranch": "main",
   "topics": [
     "backup",
@@ -32,7 +32,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/velero-extension",
-    "version": "0.1.0-alpha.0",
+    "version": "1.0.0",
     "description": "Freelens extension for Velero",
     "repository": {
       "type": "git",
@@ -146,12 +146,151 @@
     ],
     "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
   },
-  "releases": [],
-  "tags": [],
-  "versionHistory": [],
-  "tarFiles": [],
-  "latestRelease": null,
-  "totalReleases": 0,
-  "hasTarFiles": false,
-  "lastScanned": "2026-11-10T02:31:48.836Z"
+  "releases": [
+    {
+      "id": 440164183,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-10T09:31:30Z",
+      "publishedAt": "2026-11-10T09:32:30Z",
+      "body": "The first release of the extension: the backups, the restores, the schedules and\nthe storage locations of Velero, with their logs and their results, inside\nFreelens and across every cluster it connects to. It needs Freelens 2.0.0 or a\nlater 2.x release (`engines.freelens: ^2.0.0`) and a cluster with Velero, read\nthrough `velero.io/v1` and `velero.io/v2alpha1`, and nothing installed in the\ncluster beside Velero. It was tested with Freelens 2.0.0, Velero v1.18.4 and its\nAWS plugin v1.14.4, on Kubernetes 1.34.11, on Linux ARM64 and on macOS; any other\nversion or platform, Velero 1.19 and Windows among them, is untested.\n\n### New\n\n- **Discovery and backups.** The Velero installations of a cluster, discovered\n  or configured, with the choice among several, and the states of an\n  installation that is missing, forbidden to the identity or empty. The Backups,\n  in a list and in a workspace for each backup: its phase and its progress, its\n  storage location, its schedule, the restores made from it, and what failed.\n- **Restores, schedules, locations and the Overview.** The Restores, with the\n  backup or the schedule they come from and the progress of the recovery. The\n  Schedules, with what a pause and a skipped run do, and the backups of each.\n  The backup storage locations and the volume snapshot locations: the default,\n  the access mode, the availability, the times of the last validation and of the\n  last sync, and the errors. The Overview of an installation: what needs\n  attention beside what was read, with no single value for the installation,\n  and the way into each object.\n- **Logs and diagnostics.** The log, the results, the resource list and the\n  volume information of a backup and of a restore, in the tabs of its workspace,\n  each loaded only when it is asked for, through a DownloadRequest, and the\n  version of the server and its plugins, through a ServerStatusRequest.\n- **Schedule adherence and the volumes.** For each schedule, the run it was\n  expected to make, the one it made last, the next one, and whether it is\n  overdue, with the reason, in its list, its view, the details in Freelens and\n  the Overview. The backup repositories, the pod volume backups and restores,\n  and the data uploads and downloads of the data movement.\n- **Actions.** Back up now from a schedule, create a backup, create a schedule,\n  restore a backup, from its view or from the view of the schedule that made it,\n  with the mappings of the namespaces and the policy for the resources that\n  exist, pause and resume a schedule, and delete one backup through a\n  DeleteBackupRequest.\n- **Permissions.** The README lists what each feature asks of the cluster, with\n  two example roles, a reader for the views and an operator for the actions,\n  both proven with identities of the test environment.\n\n### Safety\n\nThe extension reads first, and writes nothing until writes are turned on for\none installation of Velero of one cluster. Then each write is confirmed on the\nexact request it sends, a restore and a deletion ask for the name of the backup\ntyped, and a backup is deleted only through a DeleteBackupRequest, one at a\ntime. Signed URLs stay in the main process and are never logged, stored or\nshown, TLS is verified by default, and missing data is shown as unknown, never\nas healthy.\n\n### Install\n\nEnter `@freelensapp/velero-extension` on the Extensions page of Freelens, or\ngive it the URL of the tarball of this release: Freelens checks it against the\n`.sha256` beside it. The\n[README](https://github.com/freelensapp/freelens-velero-extension#install) says\nevery way.\n\n### Known limits\n\n- The data movement, and the phases of a failure other than FailedValidation,\n  were proven on synthetic objects only.\n- Editing a schedule and the panels of backup coverage are not in this version.\n- The README lists every limit under\n  [Limits](https://github.com/freelensapp/freelens-velero-extension#limits).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-velero-extension-1.0.0-spdx.json",
+          "size": 220318,
+          "downloadCount": 2,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0-spdx.json",
+          "createdAt": "2026-11-10T09:32:29Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-velero-extension-1.0.0-spdx.json.sha256",
+          "size": 111,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0-spdx.json.sha256",
+          "createdAt": "2026-11-10T09:32:29Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-velero-extension-1.0.0.tgz",
+          "size": 991901,
+          "downloadCount": 3,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0.tgz",
+          "createdAt": "2026-11-10T09:32:29Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-velero-extension-1.0.0.tgz.sha256",
+          "size": 105,
+          "downloadCount": 3,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0.tgz.sha256",
+          "createdAt": "2026-11-10T09:32:29Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "v1.0.0",
+      "commitSha": "fd6826210756c9cba34f24876dd7844342e6347a",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-velero-extension/commits/fd6826210756c9cba34f24876dd7844342e6347a",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-velero-extension/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-velero-extension/tarball/refs/tags/v1.0.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2026-11-10T09:32:30Z",
+      "isPrerelease": false,
+      "notes": "The first release of the extension: the backups, the restores, the schedules and\nthe storage locations of Velero, with their logs and their results, inside\nFreelens and across every cluster it connects to. It needs Freelens 2.0.0 or a\nlater 2.x release (`engines.freelens: ^2.0.0`) and a cluster with Velero, read\nthrough `velero.io/v1` and `velero.io/v2alpha1`, and nothing installed in the\ncluster beside Velero. It was tested with Freelens 2.0.0, Velero v1.18.4 and its\nAWS plugin v1.14.4, on Kubernetes 1.34.11, on Linux ARM64 and on macOS; any other\nversion or platform, Velero 1.19 and Windows among them, is untested.\n\n### New\n\n- **Discovery and backups.** The Velero installations of a cluster, discovered\n  or configured, with the choice among several, and the states of an\n  installation that is missing, forbidden to the identity or empty. The Backups,\n  in a list and in a workspace for each backup: its phase and its progress, its\n  storage location, its schedule, the restores made from it, and what failed.\n- **Restores, schedules, locations and the Overview.** The Restores, with the\n  backup or the schedule they come from and the progress of the recovery. The\n  Schedules, with what a pause and a skipped run do, and the backups of each.\n  The backup storage locations and the volume snapshot locations: the default,\n  the access mode, the availability, the times of the last validation and of the\n  last sync, and the errors. The Overview of an installation: what needs\n  attention beside what was read, with no single value for the installation,\n  and the way into each object.\n- **Logs and diagnostics.** The log, the results, the resource list and the\n  volume information of a backup and of a restore, in the tabs of its workspace,\n  each loaded only when it is asked for, through a DownloadRequest, and the\n  version of the server and its plugins, through a ServerStatusRequest.\n- **Schedule adherence and the volumes.** For each schedule, the run it was\n  expected to make, the one it made last, the next one, and whether it is\n  overdue, with the reason, in its list, its view, the details in Freelens and\n  the Overview. The backup repositories, the pod volume backups and restores,\n  and the data uploads and downloads of the data movement.\n- **Actions.** Back up now from a schedule, create a backup, create a schedule,\n  restore a backup, from its view or from the view of the schedule that made it,\n  with the mappings of the namespaces and the policy for the resources that\n  exist, pause and resume a schedule, and delete one backup through a\n  DeleteBackupRequest.\n- **Permissions.** The README lists what each feature asks of the cluster, with\n  two example roles, a reader for the views and an operator for the actions,\n  both proven with identities of the test environment.\n\n### Safety\n\nThe extension reads first, and writes nothing until writes are turned on for\none installation of Velero of one cluster. Then each write is confirmed on the\nexact request it sends, a restore and a deletion ask for the name of the backup\ntyped, and a backup is deleted only through a DeleteBackupRequest, one at a\ntime. Signed URLs stay in the main process and are never logged, stored or\nshown, TLS is verified by default, and missing data is shown as unknown, never\nas healthy.\n\n### Install\n\nEnter `@freelensapp/velero-extension` on the Extensions page of Freelens, or\ngive it the URL of the tarball of this release: Freelens checks it against the\n`.sha256` beside it. The\n[README](https://github.com/freelensapp/freelens-velero-extension#install) says\nevery way.\n\n### Known limits\n\n- The data movement, and the phases of a failure other than FailedValidation,\n  were proven on synthetic objects only.\n- Editing a schedule and the panels of backup coverage are not in this version.\n- The README lists every limit under\n  [Limits](https://github.com/freelensapp/freelens-velero-extension#limits).\n"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-velero-extension-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 991901,
+      "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0.tgz",
+      "downloadCount": 3,
+      "type": "tar.gz",
+      "createdAt": "2026-11-10T09:32:29Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 440164183,
+    "tagName": "v1.0.0",
+    "name": "v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-11-10T09:31:30Z",
+    "publishedAt": "2026-11-10T09:32:30Z",
+    "body": "The first release of the extension: the backups, the restores, the schedules and\nthe storage locations of Velero, with their logs and their results, inside\nFreelens and across every cluster it connects to. It needs Freelens 2.0.0 or a\nlater 2.x release (`engines.freelens: ^2.0.0`) and a cluster with Velero, read\nthrough `velero.io/v1` and `velero.io/v2alpha1`, and nothing installed in the\ncluster beside Velero. It was tested with Freelens 2.0.0, Velero v1.18.4 and its\nAWS plugin v1.14.4, on Kubernetes 1.34.11, on Linux ARM64 and on macOS; any other\nversion or platform, Velero 1.19 and Windows among them, is untested.\n\n### New\n\n- **Discovery and backups.** The Velero installations of a cluster, discovered\n  or configured, with the choice among several, and the states of an\n  installation that is missing, forbidden to the identity or empty. The Backups,\n  in a list and in a workspace for each backup: its phase and its progress, its\n  storage location, its schedule, the restores made from it, and what failed.\n- **Restores, schedules, locations and the Overview.** The Restores, with the\n  backup or the schedule they come from and the progress of the recovery. The\n  Schedules, with what a pause and a skipped run do, and the backups of each.\n  The backup storage locations and the volume snapshot locations: the default,\n  the access mode, the availability, the times of the last validation and of the\n  last sync, and the errors. The Overview of an installation: what needs\n  attention beside what was read, with no single value for the installation,\n  and the way into each object.\n- **Logs and diagnostics.** The log, the results, the resource list and the\n  volume information of a backup and of a restore, in the tabs of its workspace,\n  each loaded only when it is asked for, through a DownloadRequest, and the\n  version of the server and its plugins, through a ServerStatusRequest.\n- **Schedule adherence and the volumes.** For each schedule, the run it was\n  expected to make, the one it made last, the next one, and whether it is\n  overdue, with the reason, in its list, its view, the details in Freelens and\n  the Overview. The backup repositories, the pod volume backups and restores,\n  and the data uploads and downloads of the data movement.\n- **Actions.** Back up now from a schedule, create a backup, create a schedule,\n  restore a backup, from its view or from the view of the schedule that made it,\n  with the mappings of the namespaces and the policy for the resources that\n  exist, pause and resume a schedule, and delete one backup through a\n  DeleteBackupRequest.\n- **Permissions.** The README lists what each feature asks of the cluster, with\n  two example roles, a reader for the views and an operator for the actions,\n  both proven with identities of the test environment.\n\n### Safety\n\nThe extension reads first, and writes nothing until writes are turned on for\none installation of Velero of one cluster. Then each write is confirmed on the\nexact request it sends, a restore and a deletion ask for the name of the backup\ntyped, and a backup is deleted only through a DeleteBackupRequest, one at a\ntime. Signed URLs stay in the main process and are never logged, stored or\nshown, TLS is verified by default, and missing data is shown as unknown, never\nas healthy.\n\n### Install\n\nEnter `@freelensapp/velero-extension` on the Extensions page of Freelens, or\ngive it the URL of the tarball of this release: Freelens checks it against the\n`.sha256` beside it. The\n[README](https://github.com/freelensapp/freelens-velero-extension#install) says\nevery way.\n\n### Known limits\n\n- The data movement, and the phases of a failure other than FailedValidation,\n  were proven on synthetic objects only.\n- Editing a schedule and the panels of backup coverage are not in this version.\n- The README lists every limit under\n  [Limits](https://github.com/freelensapp/freelens-velero-extension#limits).\n",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-velero-extension-1.0.0-spdx.json",
+        "size": 220318,
+        "downloadCount": 2,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0-spdx.json",
+        "createdAt": "2026-11-10T09:32:29Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-velero-extension-1.0.0-spdx.json.sha256",
+        "size": 111,
+        "downloadCount": 2,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0-spdx.json.sha256",
+        "createdAt": "2026-11-10T09:32:29Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-velero-extension-1.0.0.tgz",
+        "size": 991901,
+        "downloadCount": 3,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0.tgz",
+        "createdAt": "2026-11-10T09:32:29Z",
+        "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-velero-extension-1.0.0.tgz.sha256",
+        "size": 105,
+        "downloadCount": 3,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-velero-extension/releases/download/v1.0.0/freelensapp-velero-extension-1.0.0.tgz.sha256",
+        "createdAt": "2026-11-10T09:32:29Z",
+        "isTarGz": false,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 1,
+  "hasTarFiles": true,
+  "lastScanned": "2026-11-10T10:16:56.499Z"
 }
