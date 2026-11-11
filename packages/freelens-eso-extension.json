@@ -214,7 +214,7 @@
         {
           "name": "freelens-eso-extension-2.2.0.tgz",
           "size": 43496,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.2.0/freelens-eso-extension-2.2.0.tgz",
           "createdAt": "2026-11-08T02:51:55Z",
@@ -570,7 +570,7 @@
       "releaseName": "v2.2.0",
       "size": 43496,
       "downloadUrl": "https://github.com/nidiodolfini/freelens-eso-extension/releases/download/v2.2.0/freelens-eso-extension-2.2.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-11-08T02:51:55Z"
     },
@@ -673,5 +673,5 @@
   },
   "totalReleases": 6,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-11T09:21:16.481Z"
+  "lastScanned": "2026-11-11T17:16:46.375Z"
 }

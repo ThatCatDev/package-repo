@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
-  "updatedAt": "2026-11-05T19:09:59Z",
-  "pushedAt": "2026-11-11T05:56:05Z",
+  "updatedAt": "2026-11-11T16:00:16Z",
+  "pushedAt": "2026-11-11T15:23:23Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -41,7 +41,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/kamaji-extension",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Kamaji extension",
     "repository": {
       "type": "git",
@@ -144,6 +144,62 @@
   },
   "releases": [
     {
+      "id": 441867752,
+      "tagName": "v2.0.1",
+      "name": "v2.0.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-11T15:23:03Z",
+      "publishedAt": "2026-11-11T15:24:08Z",
+      "body": "A patch release for Freelens 2.x, which needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`).\n\n### Changed\n\n- **The details panels no longer repeat what Freelens shows above them** (#88, #89). The drawer of a tenant or a DataStore starts with the details that Freelens shows for every custom resource: the printer columns of the CRD and the conditions. The panels now leave those out: Status, Kubernetes Version, Control Plane Endpoint and Data Store Name of a tenant, and Driver, Ready and the conditions of a DataStore. A user who may not list CRDs gets no printer columns from Freelens, so for that user the panels keep those values. The conditions of a tenant stay in its panel, as they are those of its Deployment, which Freelens does not show (freelensapp/freelens#2916).\n- The README shows the two drawers as they are now.\n- Development tooling updated: Biome 2.6.4, pnpm 12.16.1 and mise 2026.10.25 (#77, #78, #79).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-kamaji-extension-2.0.1-spdx.json",
+          "size": 196868,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1-spdx.json",
+          "createdAt": "2026-11-11T15:24:06Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-kamaji-extension-2.0.1-spdx.json.sha256",
+          "size": 111,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1-spdx.json.sha256",
+          "createdAt": "2026-11-11T15:24:06Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-kamaji-extension-2.0.1.tgz",
+          "size": 214815,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz",
+          "createdAt": "2026-11-11T15:24:06Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-kamaji-extension-2.0.1.tgz.sha256",
+          "size": 105,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz.sha256",
+          "createdAt": "2026-11-11T15:24:06Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 430786849,
       "tagName": "v2.0.0",
       "name": "v2.0.0",
@@ -228,6 +284,13 @@
   ],
   "tags": [
     {
+      "name": "v2.0.1",
+      "commitSha": "87266d15cb4a73b76b390753cb9a5bf66e53b03c",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/commits/87266d15cb4a73b76b390753cb9a5bf66e53b03c",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/zipball/refs/tags/v2.0.1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/tarball/refs/tags/v2.0.1"
+    },
+    {
       "name": "v2.0.0",
       "commitSha": "ec4f2016a9a267ece710632dc351704d90ee703a",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-kamaji-extension/commits/ec4f2016a9a267ece710632dc351704d90ee703a",
@@ -244,6 +307,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.0.1",
+      "name": "v2.0.1",
+      "publishedAt": "2026-11-11T15:24:08Z",
+      "isPrerelease": false,
+      "notes": "A patch release for Freelens 2.x, which needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`).\n\n### Changed\n\n- **The details panels no longer repeat what Freelens shows above them** (#88, #89). The drawer of a tenant or a DataStore starts with the details that Freelens shows for every custom resource: the printer columns of the CRD and the conditions. The panels now leave those out: Status, Kubernetes Version, Control Plane Endpoint and Data Store Name of a tenant, and Driver, Ready and the conditions of a DataStore. A user who may not list CRDs gets no printer columns from Freelens, so for that user the panels keep those values. The conditions of a tenant stay in its panel, as they are those of its Deployment, which Freelens does not show (freelensapp/freelens#2916).\n- The README shows the two drawers as they are now.\n- Development tooling updated: Biome 2.6.4, pnpm 12.16.1 and mise 2026.10.25 (#77, #78, #79).\n"
+    },
+    {
       "version": "v2.0.0",
       "name": "v2.0.0",
       "publishedAt": "2026-11-01T18:53:11Z",
@@ -259,6 +329,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-kamaji-extension-2.0.1.tgz",
+      "releaseTag": "v2.0.1",
+      "releaseName": "v2.0.1",
+      "size": 214815,
+      "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz",
+      "downloadCount": 2,
+      "type": "tar.gz",
+      "createdAt": "2026-11-11T15:24:06Z"
+    },
     {
       "filename": "freelensapp-kamaji-extension-2.0.0.tgz",
       "releaseTag": "v2.0.0",
@@ -281,62 +361,62 @@
     }
   ],
   "latestRelease": {
-    "id": 430786849,
-    "tagName": "v2.0.0",
-    "name": "v2.0.0",
+    "id": 441867752,
+    "tagName": "v2.0.1",
+    "name": "v2.0.1",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-11-01T18:52:21Z",
-    "publishedAt": "2026-11-01T18:53:11Z",
-    "body": "The first release for Freelens 2.x. It needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`), and 1.0.0 stays the release for Freelens 1.x, which is why this is a major version.\n\n### Changed\n\n- **Ported to the Freelens v2 extension API** (#71, #76): ESM bundles in `dist/` built with Vite after freelens-example-extension, the host's React 19 and mobx 7 with standard decorators, the stylesheet as `dist/renderer.css`, error boundaries around the pages, the details panels and the menu item, and one TypeScript program per runtime environment. Built against `@freelensapp/extensions` 2.0.0 with the stack of Freelens 2.0.0; the integration tests run against the Freelens `v2.0.0` tag, with the CRDs of Kamaji 26.10.5-edge.\n- **Tenant Control Planes follow Kamaji 26.10.5-edge** (#72). The form writes the CIDR lists `podCidrs` and `serviceCidrs`, one CIDR or two of different families for a dual-stack tenant, and never the deprecated `podCidr` and `serviceCidr`. It sets the IP family policy and families of the Service of the control plane, node ports for a load balancer and a headless Service, takes Kubernetes versions up to v1.37, sets the cgroup driver of the kubelet as a patch of its configuration, and leaves the DNS Service IPs to Kamaji unless they are given. It says what is wrong with a field before Kamaji refuses it.\n- **DataStores of every driver** (#73). The form creates etcd, PostgreSQL, MySQL and NATS DataStores, with TLS, basic auth or both as the driver allows, and the key of each value in its Secret, so it proposes the etcd that the chart of Kamaji deploys. The list has an Endpoints and a Ready column.\n- **Details of both kinds.** A tenant shows its conditions, its CIDR lists, IP families and DNS Service IPs, its schema and user in its datastore, its write permissions and Konnectivity. A DataStore shows whether Kamaji validated it, how Kamaji authenticates to it and where each credential comes from, never the values, and the tenants that use it.\n- Tenant Control Planes and DataStores leave the Custom Resources tree of the cluster sidebar, where they were listed a second time next to the pages of the extension.\n- Fixed while porting, as they were in 1.0.0:\n  - the details of a tenant read fields that the CRD does not have, so some of their rows were always empty or wrong;\n  - the tenant form always wrote `10.96.0.10` as the DNS Service IP, whatever the Service CIDR;\n  - the DataStore form wrote the TLS configuration of etcd whatever the driver, and read the certificate authority of etcd from keys that the etcd of the chart of Kamaji does not have;\n  - the kubeconfig download guessed the name of the Secret, decoded it as Latin-1 and failed without a word to the user: it reads the Secret that Kamaji records, as UTF-8, and shows an error when it fails;\n  - the YAML editor of the tenant dialog posted to the namespace of the form whatever the namespace of the YAML, and two of its messages were in Italian.\n- The README has a video demo and new screenshots (#80).\n",
+    "createdAt": "2026-11-11T15:23:03Z",
+    "publishedAt": "2026-11-11T15:24:08Z",
+    "body": "A patch release for Freelens 2.x, which needs Freelens 2.0.0 or a later 2.x (`engines.freelens: ^2.0.0`).\n\n### Changed\n\n- **The details panels no longer repeat what Freelens shows above them** (#88, #89). The drawer of a tenant or a DataStore starts with the details that Freelens shows for every custom resource: the printer columns of the CRD and the conditions. The panels now leave those out: Status, Kubernetes Version, Control Plane Endpoint and Data Store Name of a tenant, and Driver, Ready and the conditions of a DataStore. A user who may not list CRDs gets no printer columns from Freelens, so for that user the panels keep those values. The conditions of a tenant stay in its panel, as they are those of its Deployment, which Freelens does not show (freelensapp/freelens#2916).\n- The README shows the two drawers as they are now.\n- Development tooling updated: Biome 2.6.4, pnpm 12.16.1 and mise 2026.10.25 (#77, #78, #79).\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-kamaji-extension-2.0.0-spdx.json",
+        "name": "freelensapp-kamaji-extension-2.0.1-spdx.json",
         "size": 196868,
         "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.0/freelensapp-kamaji-extension-2.0.0-spdx.json",
-        "createdAt": "2026-11-01T18:53:11Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1-spdx.json",
+        "createdAt": "2026-11-11T15:24:06Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-kamaji-extension-2.0.0-spdx.json.sha256",
+        "name": "freelensapp-kamaji-extension-2.0.1-spdx.json.sha256",
         "size": 111,
-        "downloadCount": 2,
-        "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.0/freelensapp-kamaji-extension-2.0.0-spdx.json.sha256",
-        "createdAt": "2026-11-01T18:53:11Z",
-        "isTarGz": false,
-        "isTar": false
-      },
-      {
-        "name": "freelensapp-kamaji-extension-2.0.0.tgz",
-        "size": 214170,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.0/freelensapp-kamaji-extension-2.0.0.tgz",
-        "createdAt": "2026-11-01T18:53:11Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1-spdx.json.sha256",
+        "createdAt": "2026-11-11T15:24:06Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-kamaji-extension-2.0.1.tgz",
+        "size": 214815,
+        "downloadCount": 2,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz",
+        "createdAt": "2026-11-11T15:24:06Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-kamaji-extension-2.0.0.tgz.sha256",
+        "name": "freelensapp-kamaji-extension-2.0.1.tgz.sha256",
         "size": 105,
         "downloadCount": 2,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.0/freelensapp-kamaji-extension-2.0.0.tgz.sha256",
-        "createdAt": "2026-11-01T18:53:11Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz.sha256",
+        "createdAt": "2026-11-11T15:24:06Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-11T09:20:54.932Z"
+  "lastScanned": "2026-11-11T17:16:26.677Z"
 }
