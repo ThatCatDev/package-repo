@@ -8,8 +8,8 @@
   "forks": 0,
   "language": "TypeScript",
   "createdAt": "2026-09-27T08:54:54Z",
-  "updatedAt": "2026-11-10T14:12:50Z",
-  "pushedAt": "2026-11-12T02:51:42Z",
+  "updatedAt": "2026-11-12T10:59:40Z",
+  "pushedAt": "2026-11-12T11:38:18Z",
   "defaultBranch": "main",
   "topics": [
     "backup",
@@ -144,7 +144,7 @@
       "restore",
       "kubernetes"
     ],
-    "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
+    "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
   },
   "releases": [
     {
@@ -292,5 +292,5 @@
   },
   "totalReleases": 1,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-12T04:00:52.446Z"
+  "lastScanned": "2026-11-12T12:24:27.444Z"
 }
