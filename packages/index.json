@@ -148,7 +148,7 @@
     "fullName": "freelensapp/freelens-example-extension",
     "description": "Example of a Freelens extension",
     "stars": 5,
-    "updatedAt": "2026-11-02T18:06:45Z",
+    "updatedAt": "2026-11-12T16:32:57Z",
     "latestVersion": "v2.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -225,7 +225,7 @@
     "fullName": "freelensapp/freelens-fluxcd-extension",
     "description": "Freelens extension for FluxCD",
     "stars": 128,
-    "updatedAt": "2026-11-02T18:08:30Z",
+    "updatedAt": "2026-11-12T16:42:17Z",
     "latestVersion": "v6.1.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -236,7 +236,7 @@
     "fullName": "freelensapp/freelens-for-claude-extension",
     "description": "Claude-powered chat for Freelens that drives the user's own Claude Code installation with permission-gated Kubernetes tools",
     "stars": 3,
-    "updatedAt": "2026-11-01T15:03:44Z",
+    "updatedAt": "2026-11-12T16:42:27Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -257,8 +257,8 @@
     "repoName": "freelens-gateway-api-extension",
     "fullName": "freelensapp/freelens-gateway-api-extension",
     "description": "Freelens extension for Gateway API",
-    "stars": 18,
-    "updatedAt": "2026-11-10T10:39:44Z",
+    "stars": 19,
+    "updatedAt": "2026-11-12T16:42:22Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true
@@ -357,7 +357,7 @@
     "fullName": "ricardocunha/freelens-karpenter-extension",
     "description": "FreeLens extension for Karpenter CRD visibility and operational insights",
     "stars": 0,
-    "updatedAt": "2026-03-27T16:15:22Z",
+    "updatedAt": "2026-11-12T14:41:14Z",
     "latestVersion": "0.1.0",
     "hasReleases": false,
     "hasTarFiles": false
@@ -533,7 +533,7 @@
     "fullName": "freelensapp/freelens-velero-extension",
     "description": "Freelens extension for Velero",
     "stars": 4,
-    "updatedAt": "2026-11-12T10:59:40Z",
+    "updatedAt": "2026-11-12T12:38:19Z",
     "latestVersion": "v1.0.0",
     "hasReleases": true,
     "hasTarFiles": true

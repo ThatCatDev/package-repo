@@ -5,7 +5,7 @@
   "description": "Freelens extension for External Secrets Operator",
   "homepage": "https://freelens.app",
   "stars": 1,
-  "forks": 0,
+  "forks": 1,
   "language": null,
   "createdAt": "2026-11-11T21:00:06Z",
   "updatedAt": "2026-11-11T22:58:25Z",
@@ -37,5 +37,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-12T12:25:03.122Z"
+  "lastScanned": "2026-11-12T20:10:55.738Z"
 }

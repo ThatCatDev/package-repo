@@ -183,7 +183,7 @@
         {
           "name": "freelensapp-agentbridge-extension-2.1.0.tgz",
           "size": 122617,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz",
           "createdAt": "2026-11-08T17:03:49Z",
@@ -193,7 +193,7 @@
         {
           "name": "freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
           "size": 110,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
           "createdAt": "2026-11-08T17:03:49Z",
@@ -452,7 +452,7 @@
       "releaseName": "v2.1.0",
       "size": 122617,
       "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2026-11-08T17:03:49Z"
     },
@@ -524,7 +524,7 @@
       {
         "name": "freelensapp-agentbridge-extension-2.1.0.tgz",
         "size": 122617,
-        "downloadCount": 3,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz",
         "createdAt": "2026-11-08T17:03:49Z",
@@ -534,7 +534,7 @@
       {
         "name": "freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
         "size": 110,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-agentbridge-extension/releases/download/v2.1.0/freelensapp-agentbridge-extension-2.1.0.tgz.sha256",
         "createdAt": "2026-11-08T17:03:49Z",
@@ -545,5 +545,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-12T12:24:22.439Z"
+  "lastScanned": "2026-11-12T20:10:18.933Z"
 }
