@@ -132,13 +132,13 @@
     "hasTarFiles": true
   },
   {
-    "name": "freelens-eso-extension",
+    "name": "@freelensapp/eso-extension",
     "repoName": "freelens-eso-extension",
     "fullName": "freelensapp/freelens-eso-extension",
     "description": "Freelens extension for External Secrets Operator",
     "stars": 1,
-    "updatedAt": "2026-11-11T22:58:25Z",
-    "latestVersion": null,
+    "updatedAt": "2026-11-14T11:36:34Z",
+    "latestVersion": "2.3.0",
     "hasReleases": false,
     "hasTarFiles": false
   },

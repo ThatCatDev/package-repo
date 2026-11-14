@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-04-23T16:59:51Z",
   "updatedAt": "2026-11-01T14:14:41Z",
-  "pushedAt": "2026-11-13T15:05:03Z",
+  "pushedAt": "2026-11-14T13:22:43Z",
   "defaultBranch": "main",
   "topics": [
     "force-graph",
@@ -439,5 +439,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-14T08:01:11.538Z"
+  "lastScanned": "2026-11-14T14:55:08.888Z"
 }
