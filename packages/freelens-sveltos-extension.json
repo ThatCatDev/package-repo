@@ -168,7 +168,7 @@
         {
           "name": "freelensapp-sveltos-extension-2.1.0.tgz",
           "size": 313452,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
           "createdAt": "2026-11-04T14:14:43Z",
@@ -323,7 +323,7 @@
       "releaseName": "v2.1.0",
       "size": 313452,
       "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2026-11-04T14:14:43Z"
     },
@@ -385,7 +385,7 @@
       {
         "name": "freelensapp-sveltos-extension-2.1.0.tgz",
         "size": 313452,
-        "downloadCount": 3,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
         "createdAt": "2026-11-04T14:14:43Z",
@@ -406,5 +406,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-14T01:43:23.213Z"
+  "lastScanned": "2026-11-14T08:01:16.025Z"
 }

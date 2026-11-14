@@ -180,7 +180,7 @@
         {
           "name": "freelensapp-kamaji-extension-2.0.1.tgz",
           "size": 214815,
-          "downloadCount": 2,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz",
           "createdAt": "2026-11-11T15:24:06Z",
@@ -335,7 +335,7 @@
       "releaseName": "v2.0.1",
       "size": 214815,
       "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz",
-      "downloadCount": 2,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2026-11-11T15:24:06Z"
     },
@@ -397,7 +397,7 @@
       {
         "name": "freelensapp-kamaji-extension-2.0.1.tgz",
         "size": 214815,
-        "downloadCount": 2,
+        "downloadCount": 3,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.1/freelensapp-kamaji-extension-2.0.1.tgz",
         "createdAt": "2026-11-11T15:24:06Z",
@@ -418,5 +418,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-14T01:43:21.658Z"
+  "lastScanned": "2026-11-14T08:01:14.334Z"
 }
