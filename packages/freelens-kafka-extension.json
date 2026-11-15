@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-09-05T18:44:25Z",
   "updatedAt": "2026-11-07T16:33:36Z",
-  "pushedAt": "2026-11-14T13:23:14Z",
+  "pushedAt": "2026-11-15T00:46:52Z",
   "defaultBranch": "main",
   "topics": [
     "apache-kafka",
@@ -838,5 +838,5 @@
   },
   "totalReleases": 11,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-14T23:18:57.101Z"
+  "lastScanned": "2026-11-15T02:47:25.472Z"
 }
