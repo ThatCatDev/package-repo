@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-11-11T21:00:06Z",
   "updatedAt": "2026-11-14T11:36:34Z",
-  "pushedAt": "2026-11-14T15:32:12Z",
+  "pushedAt": "2026-11-15T14:13:29Z",
   "defaultBranch": "main",
   "topics": [
     "external-secrets",
@@ -31,7 +31,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/eso-extension",
-    "version": "2.3.1",
+    "version": "2.3.2-0",
     "description": "Freelens extension for External Secrets Operator",
     "repository": {
       "type": "git",
@@ -128,6 +128,62 @@
   },
   "releases": [
     {
+      "id": 446109228,
+      "tagName": "v2.3.2-0",
+      "name": "v2.3.2-0",
+      "draft": false,
+      "prerelease": true,
+      "createdAt": "2026-11-15T14:13:14Z",
+      "publishedAt": "2026-11-15T14:14:05Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-eso-extension-2.3.2-0-spdx.json",
+          "size": 190168,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.2-0/freelensapp-eso-extension-2.3.2-0-spdx.json",
+          "createdAt": "2026-11-15T14:14:05Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-eso-extension-2.3.2-0-spdx.json.sha256",
+          "size": 110,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.2-0/freelensapp-eso-extension-2.3.2-0-spdx.json.sha256",
+          "createdAt": "2026-11-15T14:14:05Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-eso-extension-2.3.2-0.tgz",
+          "size": 44126,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.2-0/freelensapp-eso-extension-2.3.2-0.tgz",
+          "createdAt": "2026-11-15T14:14:05Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-eso-extension-2.3.2-0.tgz.sha256",
+          "size": 104,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.2-0/freelensapp-eso-extension-2.3.2-0.tgz.sha256",
+          "createdAt": "2026-11-15T14:14:05Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
       "id": 445395233,
       "tagName": "v2.3.1",
       "name": "v2.3.1",
@@ -164,7 +220,7 @@
         {
           "name": "freelensapp-eso-extension-2.3.1.tgz",
           "size": 44132,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.1/freelensapp-eso-extension-2.3.1.tgz",
           "createdAt": "2026-11-14T15:32:48Z",
@@ -186,6 +242,13 @@
   ],
   "tags": [
     {
+      "name": "v2.3.2-0",
+      "commitSha": "87cd48a73d4aed8330ac7035f33ab68d06575e14",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-eso-extension/commits/87cd48a73d4aed8330ac7035f33ab68d06575e14",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-eso-extension/zipball/refs/tags/v2.3.2-0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-eso-extension/tarball/refs/tags/v2.3.2-0"
+    },
+    {
       "name": "v2.3.1",
       "commitSha": "f7876a5439ffc42280e7e3bfe9c5f94a591f624d",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-eso-extension/commits/f7876a5439ffc42280e7e3bfe9c5f94a591f624d",
@@ -194,6 +257,13 @@
     }
   ],
   "versionHistory": [
+    {
+      "version": "v2.3.2-0",
+      "name": "v2.3.2-0",
+      "publishedAt": "2026-11-15T14:14:05Z",
+      "isPrerelease": true,
+      "notes": null
+    },
     {
       "version": "v2.3.1",
       "name": "v2.3.1",
@@ -204,12 +274,22 @@
   ],
   "tarFiles": [
     {
+      "filename": "freelensapp-eso-extension-2.3.2-0.tgz",
+      "releaseTag": "v2.3.2-0",
+      "releaseName": "v2.3.2-0",
+      "size": 44126,
+      "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.2-0/freelensapp-eso-extension-2.3.2-0.tgz",
+      "downloadCount": 2,
+      "type": "tar.gz",
+      "createdAt": "2026-11-15T14:14:05Z"
+    },
+    {
       "filename": "freelensapp-eso-extension-2.3.1.tgz",
       "releaseTag": "v2.3.1",
       "releaseName": "v2.3.1",
       "size": 44132,
       "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.1/freelensapp-eso-extension-2.3.1.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2026-11-14T15:32:48Z"
     }
@@ -251,7 +331,7 @@
       {
         "name": "freelensapp-eso-extension-2.3.1.tgz",
         "size": 44132,
-        "downloadCount": 3,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-eso-extension/releases/download/v2.3.1/freelensapp-eso-extension-2.3.1.tgz",
         "createdAt": "2026-11-14T15:32:48Z",
@@ -270,7 +350,7 @@
       }
     ]
   },
-  "totalReleases": 1,
+  "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-15T09:57:44.499Z"
+  "lastScanned": "2026-11-15T16:46:07.114Z"
 }
