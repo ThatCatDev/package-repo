@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-06-07T17:06:04Z",
   "updatedAt": "2026-11-11T16:00:16Z",
-  "pushedAt": "2026-11-15T13:38:17Z",
+  "pushedAt": "2026-11-16T15:09:00Z",
   "defaultBranch": "main",
   "topics": [
     "aws",
@@ -226,7 +226,7 @@
         {
           "name": "freelensapp-kamaji-extension-2.0.0-spdx.json.sha256",
           "size": 111,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.0/freelensapp-kamaji-extension-2.0.0-spdx.json.sha256",
           "createdAt": "2026-11-01T18:53:11Z",
@@ -418,5 +418,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-16T07:54:14.738Z"
+  "lastScanned": "2026-11-16T17:33:53.484Z"
 }
