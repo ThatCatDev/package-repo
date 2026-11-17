@@ -226,7 +226,7 @@
         {
           "name": "freelensapp-kamaji-extension-2.0.0-spdx.json.sha256",
           "size": 111,
-          "downloadCount": 5,
+          "downloadCount": 6,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kamaji-extension/releases/download/v2.0.0/freelensapp-kamaji-extension-2.0.0-spdx.json.sha256",
           "createdAt": "2026-11-01T18:53:11Z",
@@ -418,5 +418,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-17T01:00:25.964Z"
+  "lastScanned": "2026-11-17T08:55:10.733Z"
 }
