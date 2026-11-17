@@ -1,0 +1,355 @@
+{
+  "name": "@freelensapp/vals-extension",
+  "repoName": "freelens-vals-extension",
+  "fullName": "freelensapp/freelens-vals-extension",
+  "description": "Freelens extension for vals-operator",
+  "homepage": "https://freelens.app",
+  "stars": 1,
+  "forks": 0,
+  "language": "TypeScript",
+  "createdAt": "2026-11-16T18:35:24Z",
+  "updatedAt": "2026-11-16T21:14:46Z",
+  "pushedAt": "2026-11-16T21:45:01Z",
+  "defaultBranch": "main",
+  "topics": [],
+  "license": "MIT",
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-vals-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-vals-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-vals-extension.git"
+  },
+  "packageJson": {
+    "name": "@freelensapp/vals-extension",
+    "version": "1.0.1-1",
+    "description": "Freelens extension for vals-operator",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/freelensapp/freelens-vals-extension.git",
+      "directory": "."
+    },
+    "main": "dist/main.js",
+    "renderer": "dist/renderer.js",
+    "files": [
+      "dist/**/*"
+    ],
+    "engines": {
+      "node": ">= 24.0.0",
+      "freelens": "^2.0.0"
+    },
+    "copyright": "© 2026 Freelens Authors",
+    "license": "MIT",
+    "type": "module",
+    "author": {
+      "name": "Freelens Authors",
+      "email": "freelens@freelens.app"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+      "biome": "pnpm dlx @biomejs/biome@2.6.3",
+      "biome:check": "pnpm biome check",
+      "biome:fix": "pnpm biome check --fix",
+      "biome:migrate": "pnpm biome migrate --write",
+      "trunk": "pnpm dlx @trunkio/launcher@1.3.4",
+      "trunk:check": "pnpm trunk check",
+      "trunk:check:all": "pnpm trunk check --all",
+      "trunk:fix": "pnpm trunk check --fix",
+      "trunk:fix:all": "pnpm trunk check --fix --all",
+      "lint": "pnpm lint:check",
+      "lint:check": "pnpm biome:check",
+      "lint:fix": "pnpm biome:fix",
+      "knip": "pnpm dlx knip@6.41.0 --dependencies --files --no-gitignore --no-config-hints",
+      "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
+      "knip:development": "pnpm knip",
+      "knip:production": "pnpm knip --production --strict",
+      "test": "pnpm test:unit",
+      "test:unit": "vitest run",
+      "test:integration": "vitest run --config vitest.integration.config.ts",
+      "type:check": "pnpm type:check:sources && pnpm type:check:tests && pnpm type:check:tooling && pnpm type:check:integration && pnpm type:check:environments",
+      "type:check:sources": "tsc -p src/main && tsc -p src/renderer",
+      "type:check:tests": "tsc -p src/tsconfig.json",
+      "type:check:tooling": "tsc -p tsconfig.json",
+      "type:check:integration": "tsc -p integration",
+      "type:check:environments": "tsc -p environment-tests/tsconfig.main.json && tsc -p environment-tests/tsconfig.renderer.json && tsc -p environment-tests",
+      "build": "vite build && vite build --mode main",
+      "dev": "pnpm \"/^dev:(renderer|main)\\$/\"",
+      "dev:main": "vite build --watch --mode main",
+      "dev:renderer": "vite build --watch --no-emptyOutDir",
+      "bump-version": "pnpm version --no-commit-hooks --no-git-checks --no-git-tag-version",
+      "pack:dev": "pnpm bump-version prerelease && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
+      "clean": "pnpm clean:dist",
+      "clean:dist": "pnpm dlx shx@0.4.0 rm -rf dist",
+      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
+      "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
+      "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
+      "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
+    },
+    "devDependencies": {
+      "@freelensapp/extensions": "2.0.0",
+      "@testing-library/dom": "10.4.2",
+      "@testing-library/react": "16.3.3",
+      "@types/node": "24.19.2",
+      "@types/react": "19.3.0",
+      "@types/react-dom": "19.3.0",
+      "@vitejs/plugin-react": "6.1.2",
+      "electron": "44.10.0",
+      "esbuild": "0.28.2",
+      "jsdom": "30.1.3",
+      "mobx": "7.0.6",
+      "mobx-react": "10.0.2",
+      "monaco-editor": "0.57.0",
+      "playwright": "1.64.1",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
+      "sass-embedded": "1.105.2",
+      "typescript": "7.0.2",
+      "vite": "8.3.5",
+      "vitest": "5.0.5"
+    },
+    "keywords": [
+      "vals",
+      "vals-operator",
+      "secrets",
+      "extension",
+      "freelensapp",
+      "lens",
+      "openlens",
+      "freelens"
+    ],
+    "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
+  },
+  "releases": [
+    {
+      "id": 447655691,
+      "tagName": "v1.0.1-1",
+      "name": "v1.0.1-1",
+      "draft": false,
+      "prerelease": true,
+      "createdAt": "2026-11-16T21:44:38Z",
+      "publishedAt": "2026-11-16T21:45:40Z",
+      "body": null,
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-vals-extension-1.0.1-1-spdx.json",
+          "size": 190168,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.1-1/freelensapp-vals-extension-1.0.1-1-spdx.json",
+          "createdAt": "2026-11-16T21:45:41Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-vals-extension-1.0.1-1-spdx.json.sha256",
+          "size": 111,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.1-1/freelensapp-vals-extension-1.0.1-1-spdx.json.sha256",
+          "createdAt": "2026-11-16T21:45:41Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-vals-extension-1.0.1-1.tgz",
+          "size": 27160,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.1-1/freelensapp-vals-extension-1.0.1-1.tgz",
+          "createdAt": "2026-11-16T21:45:41Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-vals-extension-1.0.1-1.tgz.sha256",
+          "size": 105,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.1-1/freelensapp-vals-extension-1.0.1-1.tgz.sha256",
+          "createdAt": "2026-11-16T21:45:41Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
+    {
+      "id": 447640034,
+      "tagName": "v1.0.0",
+      "name": "v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-16T21:28:27Z",
+      "publishedAt": "2026-11-16T21:29:25Z",
+      "body": "The first release of the Freelens extension for [vals-operator](https://github.com/digitalis-io/vals-operator): the `ValsSecret`s and `DbSecret`s that sync secrets from Vault, AWS Secrets Manager, GCP Secret Manager and the other backends of [vals](https://github.com/helmfile/vals) into Kubernetes `Secret`s, inside Freelens.\n\n### What is in it\n\n- **Vals** in the cluster sidebar, with a list page for each kind of vals-operator v0.12.0. The `ValsSecret`s and `DbSecret`s are no longer listed a second time under Custom Resources.\n- **Vals Secrets**: each `ValsSecret` with the `Secret` it writes and the number of its data keys. Its details show:\n  - the annotations of the written `Secret` (with the time of its last update) or of the object of a custom target,\n  - the `ref` of every data source,\n  - the templates, in a read-only editor,\n  - the databases whose password the operator updates,\n  - the rollout targets,\n  - the custom target, with its template and its last apply.\n- **DB Secrets**: each `DbSecret` with its `Secret`, the Vault mount and role that issue its credentials, and whether the operator renews their lease. Its details show the annotations of the `Secret`, with the lease and its expiry, the templates and the rollout targets.\n- **Read only, and no secret values**: the written `Secret`, the database login and the rollout targets link to their own details in Freelens. The extension never reads the data of a `Secret`: it shows the reference of a secret, never its value, and reads only the metadata of the objects that the operator writes.\n\n### Install\n\nFrom the Freelens Extensions page, by npm name:\n\n```text\n@freelensapp/vals-extension\n```\n\nRequires Freelens 2.0.0 or newer and vals-operator v0.12.0. See the [README](https://github.com/freelensapp/freelens-vals-extension#readme).\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-vals-extension-1.0.0-spdx.json",
+          "size": 190168,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0-spdx.json",
+          "createdAt": "2026-11-16T21:29:24Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-vals-extension-1.0.0-spdx.json.sha256",
+          "size": 109,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0-spdx.json.sha256",
+          "createdAt": "2026-11-16T21:29:24Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-vals-extension-1.0.0.tgz",
+          "size": 27143,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0.tgz",
+          "createdAt": "2026-11-16T21:29:24Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-vals-extension-1.0.0.tgz.sha256",
+          "size": 103,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0.tgz.sha256",
+          "createdAt": "2026-11-16T21:29:24Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "v1.0.1-1",
+      "commitSha": "c12fcaf7c108d4792aadfee7247500c2628d66fe",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-vals-extension/commits/c12fcaf7c108d4792aadfee7247500c2628d66fe",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-vals-extension/zipball/refs/tags/v1.0.1-1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-vals-extension/tarball/refs/tags/v1.0.1-1"
+    },
+    {
+      "name": "v1.0.0",
+      "commitSha": "3e48b743b5abc61ad2280a72cd3c95a5d16db79c",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-vals-extension/commits/3e48b743b5abc61ad2280a72cd3c95a5d16db79c",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-vals-extension/zipball/refs/tags/v1.0.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-vals-extension/tarball/refs/tags/v1.0.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v1.0.1-1",
+      "name": "v1.0.1-1",
+      "publishedAt": "2026-11-16T21:45:40Z",
+      "isPrerelease": true,
+      "notes": null
+    },
+    {
+      "version": "v1.0.0",
+      "name": "v1.0.0",
+      "publishedAt": "2026-11-16T21:29:25Z",
+      "isPrerelease": false,
+      "notes": "The first release of the Freelens extension for [vals-operator](https://github.com/digitalis-io/vals-operator): the `ValsSecret`s and `DbSecret`s that sync secrets from Vault, AWS Secrets Manager, GCP Secret Manager and the other backends of [vals](https://github.com/helmfile/vals) into Kubernetes `Secret`s, inside Freelens.\n\n### What is in it\n\n- **Vals** in the cluster sidebar, with a list page for each kind of vals-operator v0.12.0. The `ValsSecret`s and `DbSecret`s are no longer listed a second time under Custom Resources.\n- **Vals Secrets**: each `ValsSecret` with the `Secret` it writes and the number of its data keys. Its details show:\n  - the annotations of the written `Secret` (with the time of its last update) or of the object of a custom target,\n  - the `ref` of every data source,\n  - the templates, in a read-only editor,\n  - the databases whose password the operator updates,\n  - the rollout targets,\n  - the custom target, with its template and its last apply.\n- **DB Secrets**: each `DbSecret` with its `Secret`, the Vault mount and role that issue its credentials, and whether the operator renews their lease. Its details show the annotations of the `Secret`, with the lease and its expiry, the templates and the rollout targets.\n- **Read only, and no secret values**: the written `Secret`, the database login and the rollout targets link to their own details in Freelens. The extension never reads the data of a `Secret`: it shows the reference of a secret, never its value, and reads only the metadata of the objects that the operator writes.\n\n### Install\n\nFrom the Freelens Extensions page, by npm name:\n\n```text\n@freelensapp/vals-extension\n```\n\nRequires Freelens 2.0.0 or newer and vals-operator v0.12.0. See the [README](https://github.com/freelensapp/freelens-vals-extension#readme).\n"
+    }
+  ],
+  "tarFiles": [
+    {
+      "filename": "freelensapp-vals-extension-1.0.1-1.tgz",
+      "releaseTag": "v1.0.1-1",
+      "releaseName": "v1.0.1-1",
+      "size": 27160,
+      "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.1-1/freelensapp-vals-extension-1.0.1-1.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-11-16T21:45:41Z"
+    },
+    {
+      "filename": "freelensapp-vals-extension-1.0.0.tgz",
+      "releaseTag": "v1.0.0",
+      "releaseName": "v1.0.0",
+      "size": 27143,
+      "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-11-16T21:29:24Z"
+    }
+  ],
+  "latestRelease": {
+    "id": 447640034,
+    "tagName": "v1.0.0",
+    "name": "v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-11-16T21:28:27Z",
+    "publishedAt": "2026-11-16T21:29:25Z",
+    "body": "The first release of the Freelens extension for [vals-operator](https://github.com/digitalis-io/vals-operator): the `ValsSecret`s and `DbSecret`s that sync secrets from Vault, AWS Secrets Manager, GCP Secret Manager and the other backends of [vals](https://github.com/helmfile/vals) into Kubernetes `Secret`s, inside Freelens.\n\n### What is in it\n\n- **Vals** in the cluster sidebar, with a list page for each kind of vals-operator v0.12.0. The `ValsSecret`s and `DbSecret`s are no longer listed a second time under Custom Resources.\n- **Vals Secrets**: each `ValsSecret` with the `Secret` it writes and the number of its data keys. Its details show:\n  - the annotations of the written `Secret` (with the time of its last update) or of the object of a custom target,\n  - the `ref` of every data source,\n  - the templates, in a read-only editor,\n  - the databases whose password the operator updates,\n  - the rollout targets,\n  - the custom target, with its template and its last apply.\n- **DB Secrets**: each `DbSecret` with its `Secret`, the Vault mount and role that issue its credentials, and whether the operator renews their lease. Its details show the annotations of the `Secret`, with the lease and its expiry, the templates and the rollout targets.\n- **Read only, and no secret values**: the written `Secret`, the database login and the rollout targets link to their own details in Freelens. The extension never reads the data of a `Secret`: it shows the reference of a secret, never its value, and reads only the metadata of the objects that the operator writes.\n\n### Install\n\nFrom the Freelens Extensions page, by npm name:\n\n```text\n@freelensapp/vals-extension\n```\n\nRequires Freelens 2.0.0 or newer and vals-operator v0.12.0. See the [README](https://github.com/freelensapp/freelens-vals-extension#readme).\n",
+    "author": {
+      "login": "github-actions[bot]",
+      "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+    },
+    "assets": [
+      {
+        "name": "freelensapp-vals-extension-1.0.0-spdx.json",
+        "size": 190168,
+        "downloadCount": 1,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0-spdx.json",
+        "createdAt": "2026-11-16T21:29:24Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-vals-extension-1.0.0-spdx.json.sha256",
+        "size": 109,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0-spdx.json.sha256",
+        "createdAt": "2026-11-16T21:29:24Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-vals-extension-1.0.0.tgz",
+        "size": 27143,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0.tgz",
+        "createdAt": "2026-11-16T21:29:24Z",
+        "isTarGz": true,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-vals-extension-1.0.0.tgz.sha256",
+        "size": 103,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-vals-extension/releases/download/v1.0.0/freelensapp-vals-extension-1.0.0.tgz.sha256",
+        "createdAt": "2026-11-16T21:29:24Z",
+        "isTarGz": false,
+        "isTar": false
+      }
+    ]
+  },
+  "totalReleases": 2,
+  "hasTarFiles": true,
+  "lastScanned": "2026-11-17T01:00:46.899Z"
+}

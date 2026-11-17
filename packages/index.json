@@ -528,6 +528,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "@freelensapp/vals-extension",
+    "repoName": "freelens-vals-extension",
+    "fullName": "freelensapp/freelens-vals-extension",
+    "description": "Freelens extension for vals-operator",
+    "stars": 1,
+    "updatedAt": "2026-11-16T21:14:46Z",
+    "latestVersion": "v1.0.0",
+    "hasReleases": true,
+    "hasTarFiles": true
+  },
+  {
     "name": "@freelensapp/velero-extension",
     "repoName": "freelens-velero-extension",
     "fullName": "freelensapp/freelens-velero-extension",
