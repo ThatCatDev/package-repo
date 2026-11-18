@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
   "updatedAt": "2026-11-12T16:42:17Z",
-  "pushedAt": "2026-11-17T15:43:50Z",
+  "pushedAt": "2026-11-18T15:23:39Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -150,7 +150,7 @@
         {
           "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json",
           "size": 190168,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/json",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json",
           "createdAt": "2026-11-01T15:39:56Z",
@@ -170,7 +170,7 @@
         {
           "name": "freelensapp-fluxcd-extension-6.1.0.tgz",
           "size": 215668,
-          "downloadCount": 74,
+          "downloadCount": 96,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz",
           "createdAt": "2026-11-01T15:39:56Z",
@@ -180,7 +180,7 @@
         {
           "name": "freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
           "size": 105,
-          "downloadCount": 26,
+          "downloadCount": 29,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
           "createdAt": "2026-11-01T15:39:56Z",
@@ -282,7 +282,7 @@
         {
           "name": "freelensapp-fluxcd-extension-6.0.0.tgz",
           "size": 209008,
-          "downloadCount": 20,
+          "downloadCount": 21,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz",
           "createdAt": "2026-10-28T18:27:16Z",
@@ -292,7 +292,7 @@
         {
           "name": "freelensapp-fluxcd-extension-6.0.0.tgz.sha256",
           "size": 105,
-          "downloadCount": 10,
+          "downloadCount": 11,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz.sha256",
           "createdAt": "2026-10-28T18:27:16Z",
@@ -338,7 +338,7 @@
         {
           "name": "freelensapp-fluxcd-extension-5.3.1.tgz",
           "size": 258678,
-          "downloadCount": 150,
+          "downloadCount": 151,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.3.1/freelensapp-fluxcd-extension-5.3.1.tgz",
           "createdAt": "2026-07-22T18:48:27Z",
@@ -905,7 +905,7 @@
       "releaseName": "v6.1.0",
       "size": 215668,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz",
-      "downloadCount": 74,
+      "downloadCount": 96,
       "type": "tar.gz",
       "createdAt": "2026-11-01T15:39:56Z"
     },
@@ -925,7 +925,7 @@
       "releaseName": "v6.0.0",
       "size": 209008,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.0.0/freelensapp-fluxcd-extension-6.0.0.tgz",
-      "downloadCount": 20,
+      "downloadCount": 21,
       "type": "tar.gz",
       "createdAt": "2026-10-28T18:27:16Z"
     },
@@ -935,7 +935,7 @@
       "releaseName": "v5.3.1",
       "size": 258678,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v5.3.1/freelensapp-fluxcd-extension-5.3.1.tgz",
-      "downloadCount": 150,
+      "downloadCount": 151,
       "type": "tar.gz",
       "createdAt": "2026-07-22T18:48:27Z"
     },
@@ -1077,7 +1077,7 @@
       {
         "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json",
         "size": 190168,
-        "downloadCount": 4,
+        "downloadCount": 5,
         "contentType": "application/json",
         "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json",
         "createdAt": "2026-11-01T15:39:56Z",
@@ -1097,7 +1097,7 @@
       {
         "name": "freelensapp-fluxcd-extension-6.1.0.tgz",
         "size": 215668,
-        "downloadCount": 74,
+        "downloadCount": 96,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz",
         "createdAt": "2026-11-01T15:39:56Z",
@@ -1107,7 +1107,7 @@
       {
         "name": "freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
         "size": 105,
-        "downloadCount": 26,
+        "downloadCount": 29,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
         "createdAt": "2026-11-01T15:39:56Z",
@@ -1118,5 +1118,5 @@
   },
   "totalReleases": 16,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-18T07:53:31.043Z"
+  "lastScanned": "2026-11-18T16:44:15.224Z"
 }

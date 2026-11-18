@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-04-23T16:59:51Z",
   "updatedAt": "2026-11-01T14:14:41Z",
-  "pushedAt": "2026-11-17T21:00:15Z",
+  "pushedAt": "2026-11-18T15:30:37Z",
   "defaultBranch": "main",
   "topics": [
     "force-graph",
@@ -181,7 +181,7 @@
         {
           "name": "freelensapp-resource-map-extension-2.0.0.tgz",
           "size": 324111,
-          "downloadCount": 20,
+          "downloadCount": 22,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz",
           "createdAt": "2026-11-01T13:30:12Z",
@@ -191,7 +191,7 @@
         {
           "name": "freelensapp-resource-map-extension-2.0.0.tgz.sha256",
           "size": 111,
-          "downloadCount": 10,
+          "downloadCount": 11,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz.sha256",
           "createdAt": "2026-11-01T13:30:12Z",
@@ -346,7 +346,7 @@
       "releaseName": "v2.0.0",
       "size": 324111,
       "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz",
-      "downloadCount": 20,
+      "downloadCount": 22,
       "type": "tar.gz",
       "createdAt": "2026-11-01T13:30:12Z"
     },
@@ -418,7 +418,7 @@
       {
         "name": "freelensapp-resource-map-extension-2.0.0.tgz",
         "size": 324111,
-        "downloadCount": 20,
+        "downloadCount": 22,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz",
         "createdAt": "2026-11-01T13:30:12Z",
@@ -428,7 +428,7 @@
       {
         "name": "freelensapp-resource-map-extension-2.0.0.tgz.sha256",
         "size": 111,
-        "downloadCount": 10,
+        "downloadCount": 11,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-resource-map-extension/releases/download/v2.0.0/freelensapp-resource-map-extension-2.0.0.tgz.sha256",
         "createdAt": "2026-11-01T13:30:12Z",
@@ -439,5 +439,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-18T07:53:37.059Z"
+  "lastScanned": "2026-11-18T16:44:20.808Z"
 }
