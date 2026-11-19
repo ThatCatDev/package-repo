@@ -44,6 +44,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "freelens-cert-manager-extension",
+    "repoName": "freelens-cert-manager-extension",
+    "fullName": "freelensapp/freelens-cert-manager-extension",
+    "description": "Freelens extension for cert-manager",
+    "stars": 1,
+    "updatedAt": "2026-11-19T15:04:12Z",
+    "latestVersion": null,
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-claude-extension",
     "repoName": "freelens-claude-extension",
     "fullName": "freelensapp/freelens-claude-extension",

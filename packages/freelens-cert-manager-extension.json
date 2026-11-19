@@ -1,0 +1,41 @@
+{
+  "name": "freelens-cert-manager-extension",
+  "repoName": "freelens-cert-manager-extension",
+  "fullName": "freelensapp/freelens-cert-manager-extension",
+  "description": "Freelens extension for cert-manager",
+  "homepage": "https://freelens.app",
+  "stars": 1,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-11-19T14:49:55Z",
+  "updatedAt": "2026-11-19T15:04:12Z",
+  "pushedAt": "2026-11-19T14:50:07Z",
+  "defaultBranch": "main",
+  "topics": [
+    "cert-manager",
+    "certificates",
+    "freelens",
+    "kubernetes",
+    "tls"
+  ],
+  "license": null,
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-cert-manager-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-cert-manager-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-cert-manager-extension.git"
+  },
+  "packageJson": null,
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-11-19T21:02:24.799Z"
+}
