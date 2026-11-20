@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-09-18T13:53:42Z",
   "updatedAt": "2026-11-03T09:02:59Z",
-  "pushedAt": "2026-11-20T04:45:49Z",
+  "pushedAt": "2026-11-20T18:09:50Z",
   "defaultBranch": "main",
   "topics": [
     "cloudnativepg",
@@ -184,7 +184,7 @@
         {
           "name": "freelensapp-cnpg-extension-2.0.0.tgz",
           "size": 908250,
-          "downloadCount": 5,
+          "downloadCount": 7,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz",
           "createdAt": "2026-11-03T09:12:03Z",
@@ -299,7 +299,7 @@
       "releaseName": "v2.0.0",
       "size": 908250,
       "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz",
-      "downloadCount": 5,
+      "downloadCount": 7,
       "type": "tar.gz",
       "createdAt": "2026-11-03T09:12:03Z"
     },
@@ -351,7 +351,7 @@
       {
         "name": "freelensapp-cnpg-extension-2.0.0.tgz",
         "size": 908250,
-        "downloadCount": 5,
+        "downloadCount": 7,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0.tgz",
         "createdAt": "2026-11-03T09:12:03Z",
@@ -372,5 +372,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-20T09:59:00.663Z"
+  "lastScanned": "2026-11-20T18:21:18.968Z"
 }
