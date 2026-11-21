@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-04-14T15:33:57Z",
   "updatedAt": "2026-11-12T16:32:57Z",
-  "pushedAt": "2026-11-20T23:15:06Z",
+  "pushedAt": "2026-11-21T14:31:42Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/example-extension",
-    "version": "2.0.1-0",
+    "version": "2.1.1-0",
     "description": "Example of a Freelens extension",
     "repository": {
       "type": "git",
@@ -53,7 +53,7 @@
       "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-      "biome": "pnpm dlx @biomejs/biome@2.6.3",
+      "biome": "pnpm dlx @biomejs/biome@2.6.8",
       "biome:check": "pnpm biome check",
       "biome:fix": "pnpm biome check --fix",
       "biome:migrate": "pnpm biome migrate --write",
@@ -65,7 +65,7 @@
       "lint": "pnpm lint:check",
       "lint:check": "pnpm biome:check",
       "lint:fix": "pnpm biome:fix",
-      "knip": "pnpm dlx knip@6.41.0 --dependencies --files --no-gitignore --no-config-hints",
+      "knip": "pnpm dlx knip@6.45.1 --dependencies --files --no-gitignore --no-config-hints",
       "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
       "knip:development": "pnpm knip",
       "knip:production": "pnpm knip --production --strict",
@@ -86,31 +86,31 @@
       "pack:dev": "pnpm bump-version prerelease && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
       "clean": "pnpm clean:dist",
       "clean:dist": "pnpm dlx shx@0.4.0 rm -rf dist",
-      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.scss.ts\"",
+      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.css.ts\" \"src/**/*.d.scss.ts\"",
       "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
       "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
       "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
     },
     "devDependencies": {
-      "@freelensapp/extensions": "2.0.0",
+      "@freelensapp/extensions": "2.1.0",
       "@testing-library/dom": "10.4.2",
       "@testing-library/react": "16.3.3",
       "@types/node": "24.19.2",
       "@types/react": "19.3.0",
       "@types/react-dom": "19.3.0",
-      "@vitejs/plugin-react": "6.1.2",
-      "electron": "44.10.0",
+      "@vitejs/plugin-react": "6.3.0",
+      "electron": "44.11.5",
       "esbuild": "0.28.2",
-      "jsdom": "30.1.3",
-      "mobx": "7.0.6",
-      "mobx-react": "10.0.2",
-      "playwright": "1.64.1",
+      "jsdom": "31.0.1",
+      "mobx": "7.1.7",
+      "mobx-react": "10.0.4",
+      "playwright": "1.65.1",
       "react": "19.3.1",
       "react-dom": "19.3.1",
-      "sass-embedded": "1.105.2",
+      "sass-embedded": "1.108.2",
       "typescript": "7.0.2",
-      "vite": "8.3.5",
-      "vitest": "5.0.5"
+      "vite": "8.3.8",
+      "vitest": "5.1.1"
     },
     "keywords": [
       "extension",
@@ -119,9 +119,65 @@
       "openlens",
       "freelens"
     ],
-    "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
+    "packageManager": "pnpm@12.21.0+sha512.66fd8278ee28935ce951792d34367ff3af5c432a2756445823029533835b8da529bbe0be5130afd56ed0713fb8789e47bad82d93bd5ae2fe54b15562d6276ef0"
   },
   "releases": [
+    {
+      "id": 453730862,
+      "tagName": "v2.1.0",
+      "name": "v2.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-21T13:58:24Z",
+      "publishedAt": "2026-11-21T13:59:18Z",
+      "body": "The example extension follows Freelens 2.1.0. It still needs Freelens 2.0.0 or newer (`engines.freelens: ^2.0.0`), and the integration tests now run against both 2.0.0 and 2.1.0.\n\n## For extensions made from the template\n\n* **`LICENSE`** lacked the last word of the MIT text, \"SOFTWARE.\". An extension that copied it should add the word.\n* **Error boundaries** now cover `appPreferences` (`withPreferenceErrorBoundary`) and `kubeWorkloadsOverviewItems` (`withWorkloadsOverviewErrorBoundary`) as well. In \"Renderer Components\", `AGENTS.md` now has a table of every registration field that takes components: what the host replaces when the component throws, and which wrapper or `fallback` covers it.\n* **Plain CSS modules** (`.module.css`) work next to SCSS modules: knip, `clean:dts` and `AGENTS.md` cover both.\n* **`svgo.config.mjs` is removed.** Nothing ran it, because Biome formats the SVG files.\n* **The agent skills** `create-extension` and `port-extension-to-v2` moved to the `freelens` plugin of Claude Code in freelensapp/freelens.\n\n| Library                   | v2.0.0  | v2.1.0  |\n| ------------------------- | ------- | ------- |\n| `@freelensapp/extensions` | 2.0.0   | 2.1.0   |\n| mobx                      | 7.0.6   | 7.1.7   |\n| mobx-react                | 10.0.2  | 10.0.4  |\n| electron                  | 44.10.0 | 44.11.5 |\n| vite                      | 8.3.5   | 8.3.8   |\n| vitest                    | 5.0.5   | 5.1.1   |\n| node                      | 24.22.1 | 24.22.3 |\n| pnpm                      | 12.15.0 | 12.21.0 |\n\n## What's Changed\n\n### Extension\n\n* Complete the LICENSE text and remove the unused SVGO config by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/425\n* Wrap preferences and Workloads Overview items in an error boundary by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/426\n* Support plain CSS modules next to SCSS modules by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/427\n\n### Integration tests\n\n* Describe a renderer error whose text says nothing in the integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/406\n* Take over the findings of the gateway extension's CDP integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/408\n* Keep an in-place installation of the checkout in the integration tests by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/412\n* Reload the cluster frame when the dev file route of Freelens dev failed a module by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/416\n* Require one integration tests job that collects the matrix by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/418\n* Count Electron's IPC send errors in the main log of the integration tests, and check that a store's `toJSON()` returns plain data, by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/424\n* Scope dismissNotifications to the notifications and call it before Install by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/428\n* Run the integration tests against Freelens v2.1.0 too by @dex4er in 0cf0848\n\n### Agent skills and documentation\n\n* Move the agent skills to the freelens plugin in freelensapp/freelens by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/422\n* Remove testing with unpublished Freelens from README.md by @dex4er in e599f13\n\n### CI and release\n\n* Delete the caches of a pull request when it is closed by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/413\n* Run the workflows on Ubuntu 26.04 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/414\n* Run the CI workflows on pull requests to any branch, and on automated trunk upgrade commits and pull requests\n* Run Biome under Trunk without `--config-path`, and reformat with the new Biome version in the biome migrate workflow\n* Remove the npm audit workflow, and skip the npm dedupe commit when the branch already has the result\n* Let the CI agent write to discussions, and run pnpm and node on the pull requests it opened\n* Choose the bump of Automated npm version from a list, and do not tag the X.Y.Z-0 prerelease\n\n## Updates\n\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/417\n* Update pnpm to v12.21.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/407\n* Update dependency jdx/mise to v2026.11.12 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/403\n* Update dependency jsdom to v31 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/423\n* Automated trunk upgrade: cli 1.25.0 → 1.29.0, actionlint 1.17.0 → 1.17.1 by @freelensbot in https://github.com/freelensapp/freelens-example-extension/pull/421\n\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v2.0.0...v2.1.0\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-example-extension-2.1.0-spdx.json",
+          "size": 192103,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0-spdx.json",
+          "createdAt": "2026-11-21T13:59:18Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.1.0-spdx.json.sha256",
+          "size": 112,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0-spdx.json.sha256",
+          "createdAt": "2026-11-21T13:59:18Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.1.0.tgz",
+          "size": 21759,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0.tgz",
+          "createdAt": "2026-11-21T13:59:18Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-example-extension-2.1.0.tgz.sha256",
+          "size": 106,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0.tgz.sha256",
+          "createdAt": "2026-11-21T13:59:18Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 428417110,
       "tagName": "v2.0.1-0",
@@ -895,7 +951,7 @@
         {
           "name": "freelensapp-extension-example-1.2.0.tgz",
           "size": 6121,
-          "downloadCount": 5,
+          "downloadCount": 6,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.2.0/freelensapp-extension-example-1.2.0.tgz",
           "createdAt": "2025-05-15T14:35:32Z",
@@ -921,7 +977,7 @@
         {
           "name": "freelensapp-extension-example-1.0.1.tgz",
           "size": 7635,
-          "downloadCount": 7,
+          "downloadCount": 8,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
           "createdAt": "2025-05-09T16:42:07Z",
@@ -947,7 +1003,7 @@
         {
           "name": "freelensapp-extension-example-1.0.0.tgz",
           "size": 7634,
-          "downloadCount": 5,
+          "downloadCount": 6,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.0/freelensapp-extension-example-1.0.0.tgz",
           "createdAt": "2025-05-06T19:33:04Z",
@@ -958,6 +1014,13 @@
     }
   ],
   "tags": [
+    {
+      "name": "v2.1.0",
+      "commitSha": "89fe34a73df8315010a861b10ba0c3ecba280fe7",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/commits/89fe34a73df8315010a861b10ba0c3ecba280fe7",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/zipball/refs/tags/v2.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-example-extension/tarball/refs/tags/v2.1.0"
+    },
     {
       "name": "v2.0.1-0",
       "commitSha": "da2b6ec2ea32e81ff5c82a4b48fab8c00c801838",
@@ -1129,6 +1192,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v2.1.0",
+      "name": "v2.1.0",
+      "publishedAt": "2026-11-21T13:59:18Z",
+      "isPrerelease": false,
+      "notes": "The example extension follows Freelens 2.1.0. It still needs Freelens 2.0.0 or newer (`engines.freelens: ^2.0.0`), and the integration tests now run against both 2.0.0 and 2.1.0.\n\n## For extensions made from the template\n\n* **`LICENSE`** lacked the last word of the MIT text, \"SOFTWARE.\". An extension that copied it should add the word.\n* **Error boundaries** now cover `appPreferences` (`withPreferenceErrorBoundary`) and `kubeWorkloadsOverviewItems` (`withWorkloadsOverviewErrorBoundary`) as well. In \"Renderer Components\", `AGENTS.md` now has a table of every registration field that takes components: what the host replaces when the component throws, and which wrapper or `fallback` covers it.\n* **Plain CSS modules** (`.module.css`) work next to SCSS modules: knip, `clean:dts` and `AGENTS.md` cover both.\n* **`svgo.config.mjs` is removed.** Nothing ran it, because Biome formats the SVG files.\n* **The agent skills** `create-extension` and `port-extension-to-v2` moved to the `freelens` plugin of Claude Code in freelensapp/freelens.\n\n| Library                   | v2.0.0  | v2.1.0  |\n| ------------------------- | ------- | ------- |\n| `@freelensapp/extensions` | 2.0.0   | 2.1.0   |\n| mobx                      | 7.0.6   | 7.1.7   |\n| mobx-react                | 10.0.2  | 10.0.4  |\n| electron                  | 44.10.0 | 44.11.5 |\n| vite                      | 8.3.5   | 8.3.8   |\n| vitest                    | 5.0.5   | 5.1.1   |\n| node                      | 24.22.1 | 24.22.3 |\n| pnpm                      | 12.15.0 | 12.21.0 |\n\n## What's Changed\n\n### Extension\n\n* Complete the LICENSE text and remove the unused SVGO config by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/425\n* Wrap preferences and Workloads Overview items in an error boundary by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/426\n* Support plain CSS modules next to SCSS modules by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/427\n\n### Integration tests\n\n* Describe a renderer error whose text says nothing in the integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/406\n* Take over the findings of the gateway extension's CDP integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/408\n* Keep an in-place installation of the checkout in the integration tests by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/412\n* Reload the cluster frame when the dev file route of Freelens dev failed a module by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/416\n* Require one integration tests job that collects the matrix by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/418\n* Count Electron's IPC send errors in the main log of the integration tests, and check that a store's `toJSON()` returns plain data, by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/424\n* Scope dismissNotifications to the notifications and call it before Install by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/428\n* Run the integration tests against Freelens v2.1.0 too by @dex4er in 0cf0848\n\n### Agent skills and documentation\n\n* Move the agent skills to the freelens plugin in freelensapp/freelens by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/422\n* Remove testing with unpublished Freelens from README.md by @dex4er in e599f13\n\n### CI and release\n\n* Delete the caches of a pull request when it is closed by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/413\n* Run the workflows on Ubuntu 26.04 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/414\n* Run the CI workflows on pull requests to any branch, and on automated trunk upgrade commits and pull requests\n* Run Biome under Trunk without `--config-path`, and reformat with the new Biome version in the biome migrate workflow\n* Remove the npm audit workflow, and skip the npm dedupe commit when the branch already has the result\n* Let the CI agent write to discussions, and run pnpm and node on the pull requests it opened\n* Choose the bump of Automated npm version from a list, and do not tag the X.Y.Z-0 prerelease\n\n## Updates\n\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/417\n* Update pnpm to v12.21.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/407\n* Update dependency jdx/mise to v2026.11.12 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/403\n* Update dependency jsdom to v31 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/423\n* Automated trunk upgrade: cli 1.25.0 → 1.29.0, actionlint 1.17.0 → 1.17.1 by @freelensbot in https://github.com/freelensapp/freelens-example-extension/pull/421\n\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v2.0.0...v2.1.0\n"
+    },
+    {
       "version": "v2.0.1-0",
       "name": "v2.0.1-0",
       "publishedAt": "2026-10-29T21:31:49Z",
@@ -1298,6 +1368,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-example-extension-2.1.0.tgz",
+      "releaseTag": "v2.1.0",
+      "releaseName": "v2.1.0",
+      "size": 21759,
+      "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0.tgz",
+      "downloadCount": 1,
+      "type": "tar.gz",
+      "createdAt": "2026-11-21T13:59:18Z"
+    },
     {
       "filename": "freelensapp-example-extension-2.0.1-0.tgz",
       "releaseTag": "v2.0.1-0",
@@ -1514,7 +1594,7 @@
       "releaseName": "v1.2.0",
       "size": 6121,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.2.0/freelensapp-extension-example-1.2.0.tgz",
-      "downloadCount": 5,
+      "downloadCount": 6,
       "type": "tar.gz",
       "createdAt": "2025-05-15T14:35:32Z"
     },
@@ -1524,7 +1604,7 @@
       "releaseName": "v1.0.1",
       "size": 7635,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.1/freelensapp-extension-example-1.0.1.tgz",
-      "downloadCount": 7,
+      "downloadCount": 8,
       "type": "tar.gz",
       "createdAt": "2025-05-09T16:42:07Z"
     },
@@ -1534,68 +1614,68 @@
       "releaseName": "v1.0.0",
       "size": 7634,
       "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v1.0.0/freelensapp-extension-example-1.0.0.tgz",
-      "downloadCount": 5,
+      "downloadCount": 6,
       "type": "tar.gz",
       "createdAt": "2025-05-06T19:33:04Z"
     }
   ],
   "latestRelease": {
-    "id": 426699471,
-    "tagName": "v2.0.0",
-    "name": "v2.0.0",
+    "id": 453730862,
+    "tagName": "v2.1.0",
+    "name": "v2.1.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-10-28T13:23:05Z",
-    "publishedAt": "2026-10-28T13:24:14Z",
-    "body": "The first release of the example extension for the Freelens extension API v2. It needs Freelens 2.0.0 or newer; v1.10.2 stays the release for Freelens 1.x.\n\nThe repository is the reference template for building, type-checking, testing and releasing a Freelens v2 extension. The Freelens extension docs (`docs/extensions/` in freelensapp/freelens) define the API contract and point here for the rest; `AGENTS.md` explains every pattern and why it is there.\n\n## Breaking changes\n\n* Requires Freelens `^2.0.0` (`engines.freelens`) and Node.js 24 (`engines.node: >= 24.0.0`).\n* `dist/main.js` and `dist/renderer.js` are ES modules (`\"type\": \"module\"`), built by two Vite library-mode runs instead of electron-vite. The renderer CSS is extracted to `dist/renderer.css`.\n* The stack follows Freelens 2.0.0: React 19.3, mobx 7 with mobx-react 10 (standard decorators only, `@observable accessor`), TypeScript 7, Vite 8, Vitest 5, Electron 44, pnpm 12.\n\n| Library                   | v1.10.2   | v2.0.0 |\n| ------------------------- | --------- | ------ |\n| `@freelensapp/extensions` | `^1.10.2` | 2.0.0  |\n| react, react-dom          | 17.0.2    | 19.3.1 |\n| mobx                      | 6.13.7    | 7.0.6  |\n| mobx-react                | 7.6.0     | 10.0.2 |\n| typescript                | 5.9.3     | 7.0.2  |\n| vitest                    | `^4.1.9`  | 5.0.5  |\n| node                      | 22        | 24     |\n| pnpm                      | 10.34.4   | 12.15.0 |\n\n## What's Changed\n\n### Extension API v2\n\n* Migrate the build stack and shared sources to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/328\n* Adapt the Example feature to the Freelens v2 extension API by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/336\n* Re-render the available version page when the host serves a version by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/353\n* Register the Example models in customResources by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/364\n* Register details and menu items with the typed helpers of the extension API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/368\n* Keep a render error of the extension inside its page, panel or menu item by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/370\n\n### Build and type check\n\n* Write the CSS module declarations with a plugin that cannot leave one empty by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/344\n* Check for unused files with knip by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/349\n* Type-check src/common/ through the main, renderer and environment programs by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/351\n* Build the main entry for Rolldown's node platform by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/373\n* Define `__dirname` and `__filename` in the main bundle, so that a bundled CommonJS package loads in the ESM main, by @dex4er in bd206b2\n\n### Tests\n\n* Click through the extension's views in the integration tests, one session per API version by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/376\n* Follow Freelens changes since the 2026-10-12 nightly: React test helpers, CI agent and integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/382\n* Run the integration tests against Freelens dev over CDP by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/383\n* Name the URL of a console error, and match the host's getNs() in the test stub by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/400\n* Seed the kubeconfig sync of the Freelens dev profile for the integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/402\n\n### Agent skills and documentation\n\n* Agent skills for creating a Freelens extension and porting one to v2 by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/341\n* Document how to check the extension in Freelens dev by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/347\n* Add the observer props rule and the monaco-editor devDependency from the fluxcd port by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/360\n* Let the CI agent do several steps of a port in one run by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/361\n* Take optional fields from the kubebuilder markers when adding an API by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/367\n* Fold the findings of the freelens-for-claude-extension port into the template and the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/374\n* Fold the findings of the freelens-ai-extension port into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/378\n* Describe the integration tests as an optional pattern in the skills by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/386\n* Move the migration issue template into the port skill by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/388\n* Move the port's pin to Freelens 14a491f12 and nightly 2026-10-26 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/398\n\n### CI and Renovate\n\n* Fix the title of the automated npm audit pull request by @robertobandini in https://github.com/freelensapp/freelens-example-extension/pull/325\n* Update Biome to 2.5.15 and run biome migrate on the Renovate branch by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/354\n* Renovate follows the versions Freelens has on `main`, in one \"Freelens dependencies\" group; pnpm updates come from the npm registry in pull requests of their own\n* Prerelease versions are tagged too, and their GitHub releases are marked as prereleases\n\n## Updates\n\n* Update trunk-io/trunk-action action to v2 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/335\n* Update EndBug/add-and-commit action to v11 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/334\n* Update actions/setup-node action to v7 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/313\n* Update dependency kubernetes-sigs/kind to v0.33.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/322\n* Update kindest/node Docker tag to v1.37.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/333\n* Update dependency electron to v43.7.9 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/337\n* Update dependency electron to v44 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/397\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-12 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/365\n* Update dependency @freelensapp/extensions to v2.0.0-0-nightly-2026-10-15 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/381\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/358, https://github.com/freelensapp/freelens-example-extension/pull/380, https://github.com/freelensapp/freelens-example-extension/pull/390 and https://github.com/freelensapp/freelens-example-extension/pull/394\n* Update Freelens dependencies to v2.0.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/399\n* Update pnpm to v12.11.1, v12.11.2, v12.14.0 and v12.15.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/355, https://github.com/freelensapp/freelens-example-extension/pull/363, https://github.com/freelensapp/freelens-example-extension/pull/385 and https://github.com/freelensapp/freelens-example-extension/pull/395\n* Update dependency jdx/mise to v2026.10.4, v2026.10.11, v2026.10.13 and v2026.10.19 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/330, https://github.com/freelensapp/freelens-example-extension/pull/338, https://github.com/freelensapp/freelens-example-extension/pull/389 and https://github.com/freelensapp/freelens-example-extension/pull/391\n\n## New Contributors\n\n* @robertobandini made their first contribution in https://github.com/freelensapp/freelens-example-extension/pull/325\n\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v1.10.2...v2.0.0\n",
+    "createdAt": "2026-11-21T13:58:24Z",
+    "publishedAt": "2026-11-21T13:59:18Z",
+    "body": "The example extension follows Freelens 2.1.0. It still needs Freelens 2.0.0 or newer (`engines.freelens: ^2.0.0`), and the integration tests now run against both 2.0.0 and 2.1.0.\n\n## For extensions made from the template\n\n* **`LICENSE`** lacked the last word of the MIT text, \"SOFTWARE.\". An extension that copied it should add the word.\n* **Error boundaries** now cover `appPreferences` (`withPreferenceErrorBoundary`) and `kubeWorkloadsOverviewItems` (`withWorkloadsOverviewErrorBoundary`) as well. In \"Renderer Components\", `AGENTS.md` now has a table of every registration field that takes components: what the host replaces when the component throws, and which wrapper or `fallback` covers it.\n* **Plain CSS modules** (`.module.css`) work next to SCSS modules: knip, `clean:dts` and `AGENTS.md` cover both.\n* **`svgo.config.mjs` is removed.** Nothing ran it, because Biome formats the SVG files.\n* **The agent skills** `create-extension` and `port-extension-to-v2` moved to the `freelens` plugin of Claude Code in freelensapp/freelens.\n\n| Library                   | v2.0.0  | v2.1.0  |\n| ------------------------- | ------- | ------- |\n| `@freelensapp/extensions` | 2.0.0   | 2.1.0   |\n| mobx                      | 7.0.6   | 7.1.7   |\n| mobx-react                | 10.0.2  | 10.0.4  |\n| electron                  | 44.10.0 | 44.11.5 |\n| vite                      | 8.3.5   | 8.3.8   |\n| vitest                    | 5.0.5   | 5.1.1   |\n| node                      | 24.22.1 | 24.22.3 |\n| pnpm                      | 12.15.0 | 12.21.0 |\n\n## What's Changed\n\n### Extension\n\n* Complete the LICENSE text and remove the unused SVGO config by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/425\n* Wrap preferences and Workloads Overview items in an error boundary by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/426\n* Support plain CSS modules next to SCSS modules by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/427\n\n### Integration tests\n\n* Describe a renderer error whose text says nothing in the integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/406\n* Take over the findings of the gateway extension's CDP integration tests by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/408\n* Keep an in-place installation of the checkout in the integration tests by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/412\n* Reload the cluster frame when the dev file route of Freelens dev failed a module by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/416\n* Require one integration tests job that collects the matrix by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/418\n* Count Electron's IPC send errors in the main log of the integration tests, and check that a store's `toJSON()` returns plain data, by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/424\n* Scope dismissNotifications to the notifications and call it before Install by @claude[bot] in https://github.com/freelensapp/freelens-example-extension/pull/428\n* Run the integration tests against Freelens v2.1.0 too by @dex4er in 0cf0848\n\n### Agent skills and documentation\n\n* Move the agent skills to the freelens plugin in freelensapp/freelens by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/422\n* Remove testing with unpublished Freelens from README.md by @dex4er in e599f13\n\n### CI and release\n\n* Delete the caches of a pull request when it is closed by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/413\n* Run the workflows on Ubuntu 26.04 by @dex4er in https://github.com/freelensapp/freelens-example-extension/pull/414\n* Run the CI workflows on pull requests to any branch, and on automated trunk upgrade commits and pull requests\n* Run Biome under Trunk without `--config-path`, and reformat with the new Biome version in the biome migrate workflow\n* Remove the npm audit workflow, and skip the npm dedupe commit when the branch already has the result\n* Let the CI agent write to discussions, and run pnpm and node on the pull requests it opened\n* Choose the bump of Automated npm version from a list, and do not tag the X.Y.Z-0 prerelease\n\n## Updates\n\n* Update Freelens dependencies by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/417\n* Update pnpm to v12.21.0 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/407\n* Update dependency jdx/mise to v2026.11.12 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/403\n* Update dependency jsdom to v31 by @renovate[bot] in https://github.com/freelensapp/freelens-example-extension/pull/423\n* Automated trunk upgrade: cli 1.25.0 → 1.29.0, actionlint 1.17.0 → 1.17.1 by @freelensbot in https://github.com/freelensapp/freelens-example-extension/pull/421\n\n**Full Changelog**: https://github.com/freelensapp/freelens-example-extension/compare/v2.0.0...v2.1.0\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-example-extension-2.0.0-spdx.json",
-        "size": 197583,
+        "name": "freelensapp-example-extension-2.1.0-spdx.json",
+        "size": 192103,
         "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json",
-        "createdAt": "2026-10-28T13:24:13Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0-spdx.json",
+        "createdAt": "2026-11-21T13:59:18Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-example-extension-2.0.0-spdx.json.sha256",
+        "name": "freelensapp-example-extension-2.1.0-spdx.json.sha256",
         "size": 112,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0-spdx.json.sha256",
-        "createdAt": "2026-10-28T13:24:13Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0-spdx.json.sha256",
+        "createdAt": "2026-11-21T13:59:18Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-example-extension-2.0.0.tgz",
-        "size": 21770,
-        "downloadCount": 3,
+        "name": "freelensapp-example-extension-2.1.0.tgz",
+        "size": 21759,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz",
-        "createdAt": "2026-10-28T13:24:13Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0.tgz",
+        "createdAt": "2026-11-21T13:59:18Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-example-extension-2.0.0.tgz.sha256",
+        "name": "freelensapp-example-extension-2.1.0.tgz.sha256",
         "size": 106,
         "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.0.0/freelensapp-example-extension-2.0.0.tgz.sha256",
-        "createdAt": "2026-10-28T13:24:13Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-example-extension/releases/download/v2.1.0/freelensapp-example-extension-2.1.0.tgz.sha256",
+        "createdAt": "2026-11-21T13:59:18Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 24,
+  "totalReleases": 25,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-21T06:50:35.819Z"
+  "lastScanned": "2026-11-21T14:57:27.738Z"
 }
