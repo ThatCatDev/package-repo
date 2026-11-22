@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-11-21T23:04:27Z",
   "updatedAt": "2026-11-21T23:11:37Z",
-  "pushedAt": "2026-11-22T13:06:28Z",
+  "pushedAt": "2026-11-22T15:36:29Z",
   "defaultBranch": "main",
   "topics": [
     "capi",
@@ -144,5 +144,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-22T15:30:22.822Z"
+  "lastScanned": "2026-11-22T21:09:41.679Z"
 }
