@@ -44,6 +44,17 @@
     "hasTarFiles": true
   },
   {
+    "name": "@freelensapp/capi-extension",
+    "repoName": "freelens-capi-extension",
+    "fullName": "freelensapp/freelens-capi-extension",
+    "description": "Freelens extension for Cluster API",
+    "stars": 1,
+    "updatedAt": "2026-11-21T23:11:37Z",
+    "latestVersion": "1.0.0-0",
+    "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
     "name": "freelens-cert-manager-extension",
     "repoName": "freelens-cert-manager-extension",
     "fullName": "freelensapp/freelens-cert-manager-extension",
@@ -195,6 +206,17 @@
     "updatedAt": "2026-06-16T06:54:39Z",
     "latestVersion": "1.0.2",
     "hasReleases": false,
+    "hasTarFiles": false
+  },
+  {
+    "name": "freelens-extension-kit",
+    "repoName": "freelens-extension-kit",
+    "fullName": "freelensapp/freelens-extension-kit",
+    "description": "The method for building a Freelens extension with an AI coding agent",
+    "stars": 1,
+    "updatedAt": "2026-11-21T22:56:31Z",
+    "latestVersion": "v0.1.1",
+    "hasReleases": true,
     "hasTarFiles": false
   },
   {

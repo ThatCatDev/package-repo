@@ -1,0 +1,115 @@
+{
+  "name": "freelens-extension-kit",
+  "repoName": "freelens-extension-kit",
+  "fullName": "freelensapp/freelens-extension-kit",
+  "description": "The method for building a Freelens extension with an AI coding agent",
+  "homepage": "https://freelens.app",
+  "stars": 1,
+  "forks": 0,
+  "language": null,
+  "createdAt": "2026-11-21T22:25:57Z",
+  "updatedAt": "2026-11-21T22:56:31Z",
+  "pushedAt": "2026-11-21T22:43:42Z",
+  "defaultBranch": "main",
+  "topics": [
+    "ai-agents",
+    "extensions",
+    "freelens",
+    "kubernetes"
+  ],
+  "license": "MIT",
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-extension-kit",
+    "cloneUrl": "https://github.com/freelensapp/freelens-extension-kit.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-extension-kit.git"
+  },
+  "packageJson": null,
+  "releases": [
+    {
+      "id": 454036470,
+      "tagName": "v0.1.1",
+      "name": "v0.1.1",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-21T22:43:26Z",
+      "publishedAt": "2026-11-21T22:43:42Z",
+      "body": "The brief asks the maintainer whether a rule of the template that restricts\na model stays, or is replaced by the rule of choosing the model for the\ntask.\n",
+      "author": {
+        "login": "robertobandini",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11294865?v=4"
+      },
+      "assets": []
+    },
+    {
+      "id": 454027383,
+      "tagName": "v0.1.0",
+      "name": "v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-21T22:25:48Z",
+      "publishedAt": "2026-11-21T22:26:29Z",
+      "body": "The first version of the Freelens extension kit: the method for building a\nFreelens extension with an AI coding agent, from the first brief to the\nrelease.\n\n## What is in it\n\n- `AGENTS.md`: the path of an extension in ten steps, and the rules that hold\n  at every step.\n- `docs/`: one document for each step, from the brief to maintenance; two\n  optional ones, on the README of an extension with its screenshots and\n  video, and on dividing the work among machines, coding agents and models;\n  and how an extension written in the community becomes an official one.\n- `templates/`: the brief, the session notes, the roadmap, the three forms of\n  a spec, the method sections for the `AGENTS.md` of an extension, a task\n  brief, the report of the pre-review pass and the outcome of a review.\n- `skills/build-extension`: a thin pointer to `AGENTS.md`, in the Agent\n  Skills format.\n\n## Status\n\n- Last checked against Freelens 2.1.0 and against the template at commit\n  `5c75d60`.\n- Proven with Claude Code. For GitHub Copilot, Codex, Cursor, Gemini CLI and\n  OpenCode it follows what their documentation says.\n- The kit is being proven on the first extension built with it, for Cluster\n  API.\n\n## Using it\n\nStart from \"How to use it\" in the README. An extension names the version of\nthe kit it follows in its `AGENTS.md`:\n`https://github.com/freelensapp/freelens-extension-kit/tree/v0.1.0`.\n",
+      "author": {
+        "login": "robertobandini",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11294865?v=4"
+      },
+      "assets": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.1.1",
+      "commitSha": "bbb09b0093c225dbcf32348fce9ebb1e7a341042",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/commits/bbb09b0093c225dbcf32348fce9ebb1e7a341042",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/zipball/refs/tags/v0.1.1",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/tarball/refs/tags/v0.1.1"
+    },
+    {
+      "name": "v0.1.0",
+      "commitSha": "f106812e5d8876bfa6345e826b4a87b5dd9bd244",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/commits/f106812e5d8876bfa6345e826b4a87b5dd9bd244",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/zipball/refs/tags/v0.1.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/tarball/refs/tags/v0.1.0"
+    }
+  ],
+  "versionHistory": [
+    {
+      "version": "v0.1.1",
+      "name": "v0.1.1",
+      "publishedAt": "2026-11-21T22:43:42Z",
+      "isPrerelease": false,
+      "notes": "The brief asks the maintainer whether a rule of the template that restricts\na model stays, or is replaced by the rule of choosing the model for the\ntask.\n"
+    },
+    {
+      "version": "v0.1.0",
+      "name": "v0.1.0",
+      "publishedAt": "2026-11-21T22:26:29Z",
+      "isPrerelease": false,
+      "notes": "The first version of the Freelens extension kit: the method for building a\nFreelens extension with an AI coding agent, from the first brief to the\nrelease.\n\n## What is in it\n\n- `AGENTS.md`: the path of an extension in ten steps, and the rules that hold\n  at every step.\n- `docs/`: one document for each step, from the brief to maintenance; two\n  optional ones, on the README of an extension with its screenshots and\n  video, and on dividing the work among machines, coding agents and models;\n  and how an extension written in the community becomes an official one.\n- `templates/`: the brief, the session notes, the roadmap, the three forms of\n  a spec, the method sections for the `AGENTS.md` of an extension, a task\n  brief, the report of the pre-review pass and the outcome of a review.\n- `skills/build-extension`: a thin pointer to `AGENTS.md`, in the Agent\n  Skills format.\n\n## Status\n\n- Last checked against Freelens 2.1.0 and against the template at commit\n  `5c75d60`.\n- Proven with Claude Code. For GitHub Copilot, Codex, Cursor, Gemini CLI and\n  OpenCode it follows what their documentation says.\n- The kit is being proven on the first extension built with it, for Cluster\n  API.\n\n## Using it\n\nStart from \"How to use it\" in the README. An extension names the version of\nthe kit it follows in its `AGENTS.md`:\n`https://github.com/freelensapp/freelens-extension-kit/tree/v0.1.0`.\n"
+    }
+  ],
+  "tarFiles": [],
+  "latestRelease": {
+    "id": 454036470,
+    "tagName": "v0.1.1",
+    "name": "v0.1.1",
+    "draft": false,
+    "prerelease": false,
+    "createdAt": "2026-11-21T22:43:26Z",
+    "publishedAt": "2026-11-21T22:43:42Z",
+    "body": "The brief asks the maintainer whether a rule of the template that restricts\na model stays, or is replaced by the rule of choosing the model for the\ntask.\n",
+    "author": {
+      "login": "robertobandini",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/11294865?v=4"
+    },
+    "assets": []
+  },
+  "totalReleases": 2,
+  "hasTarFiles": false,
+  "lastScanned": "2026-11-22T00:41:44.760Z"
+}

@@ -1,0 +1,141 @@
+{
+  "name": "@freelensapp/capi-extension",
+  "repoName": "freelens-capi-extension",
+  "fullName": "freelensapp/freelens-capi-extension",
+  "description": "Freelens extension for Cluster API",
+  "homepage": "https://freelens.app",
+  "stars": 1,
+  "forks": 0,
+  "language": "TypeScript",
+  "createdAt": "2026-11-21T23:04:27Z",
+  "updatedAt": "2026-11-21T23:11:37Z",
+  "pushedAt": "2026-11-21T23:04:42Z",
+  "defaultBranch": "main",
+  "topics": [
+    "capi",
+    "cluster-api",
+    "cluster-management",
+    "freelens",
+    "kubernetes"
+  ],
+  "license": "MIT",
+  "owner": {
+    "login": "freelensapp",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
+    "url": "https://github.com/freelensapp"
+  },
+  "repository": {
+    "url": "https://github.com/freelensapp/freelens-capi-extension",
+    "cloneUrl": "https://github.com/freelensapp/freelens-capi-extension.git",
+    "sshUrl": "git@github.com:freelensapp/freelens-capi-extension.git"
+  },
+  "packageJson": {
+    "name": "@freelensapp/capi-extension",
+    "version": "1.0.0-0",
+    "description": "Freelens extension for Cluster API",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/freelensapp/freelens-capi-extension.git",
+      "directory": "."
+    },
+    "main": "dist/main.js",
+    "renderer": "dist/renderer.js",
+    "files": [
+      "dist/**/*"
+    ],
+    "engines": {
+      "node": ">= 24.0.0",
+      "freelens": "^2.0.0"
+    },
+    "copyright": "© 2026 Freelens Authors",
+    "license": "MIT",
+    "type": "module",
+    "author": {
+      "name": "Freelens Authors",
+      "email": "freelens@freelens.app"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+      "biome": "pnpm dlx @biomejs/biome@2.6.8",
+      "biome:check": "pnpm biome check",
+      "biome:fix": "pnpm biome check --fix",
+      "biome:migrate": "pnpm biome migrate --write",
+      "trunk": "pnpm dlx @trunkio/launcher@1.3.4",
+      "trunk:check": "pnpm trunk check",
+      "trunk:check:all": "pnpm trunk check --all",
+      "trunk:fix": "pnpm trunk check --fix",
+      "trunk:fix:all": "pnpm trunk check --fix --all",
+      "lint": "pnpm lint:check",
+      "lint:check": "pnpm biome:check",
+      "lint:fix": "pnpm biome:fix",
+      "knip": "pnpm dlx knip@6.45.1 --dependencies --files --no-gitignore --no-config-hints",
+      "knip:check": "pnpm \"/^knip:(development|production)\\$/\"",
+      "knip:development": "pnpm knip",
+      "knip:production": "pnpm knip --production --strict",
+      "test": "pnpm test:unit",
+      "test:unit": "vitest run",
+      "test:integration": "vitest run --config vitest.integration.config.ts",
+      "type:check": "pnpm type:check:sources && pnpm type:check:tests && pnpm type:check:tooling && pnpm type:check:integration && pnpm type:check:environments",
+      "type:check:sources": "tsc -p src/main && tsc -p src/renderer",
+      "type:check:tests": "tsc -p src/tsconfig.json",
+      "type:check:tooling": "tsc -p tsconfig.json",
+      "type:check:integration": "tsc -p integration",
+      "type:check:environments": "tsc -p environment-tests/tsconfig.main.json && tsc -p environment-tests/tsconfig.renderer.json && tsc -p environment-tests",
+      "build": "vite build && vite build --mode main",
+      "dev": "pnpm \"/^dev:(renderer|main)\\$/\"",
+      "dev:main": "vite build --watch --mode main",
+      "dev:renderer": "vite build --watch --no-emptyOutDir",
+      "bump-version": "pnpm version --no-commit-hooks --no-git-checks --no-git-tag-version",
+      "pack:dev": "pnpm bump-version prerelease && pnpm build && pnpm clean:tgz && pnpm pack && pnpm dlx shx@0.4.0 ls \"$PWD/*.tgz\"",
+      "clean": "pnpm clean:dist",
+      "clean:dist": "pnpm dlx shx@0.4.0 rm -rf dist",
+      "clean:dts": "pnpm dlx shx@0.4.0 rm -f \"src/**/*.d.css.ts\" \"src/**/*.d.scss.ts\"",
+      "clean:node_modules": "pnpm dlx shx@0.4.0 rm -rf node_modules",
+      "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\"",
+      "clean:all": "pnpm \"/^clean:(dist|dts|node_modules|tgz)\\$/\""
+    },
+    "devDependencies": {
+      "@freelensapp/extensions": "2.1.0",
+      "@testing-library/dom": "10.4.2",
+      "@testing-library/react": "16.3.3",
+      "@types/node": "24.19.2",
+      "@types/react": "19.3.0",
+      "@types/react-dom": "19.3.0",
+      "@vitejs/plugin-react": "6.3.0",
+      "electron": "44.11.5",
+      "esbuild": "0.28.2",
+      "jsdom": "31.0.1",
+      "mobx": "7.1.7",
+      "mobx-react": "10.0.4",
+      "playwright": "1.65.1",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
+      "sass-embedded": "1.108.2",
+      "typescript": "7.0.2",
+      "vite": "8.3.8",
+      "vitest": "5.1.1"
+    },
+    "keywords": [
+      "extension",
+      "freelensapp",
+      "lens",
+      "openlens",
+      "freelens",
+      "cluster-api",
+      "capi",
+      "kubernetes"
+    ],
+    "packageManager": "pnpm@12.21.0+sha512.66fd8278ee28935ce951792d34367ff3af5c432a2756445823029533835b8da529bbe0be5130afd56ed0713fb8789e47bad82d93bd5ae2fe54b15562d6276ef0"
+  },
+  "releases": [],
+  "tags": [],
+  "versionHistory": [],
+  "tarFiles": [],
+  "latestRelease": null,
+  "totalReleases": 0,
+  "hasTarFiles": false,
+  "lastScanned": "2026-11-22T00:41:41.188Z"
+}
