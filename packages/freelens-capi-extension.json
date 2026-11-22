@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-11-21T23:04:27Z",
   "updatedAt": "2026-11-21T23:11:37Z",
-  "pushedAt": "2026-11-21T23:04:42Z",
+  "pushedAt": "2026-11-22T13:06:28Z",
   "defaultBranch": "main",
   "topics": [
     "capi",
@@ -78,11 +78,18 @@
       "test": "pnpm test:unit",
       "test:unit": "vitest run",
       "test:integration": "vitest run --config vitest.integration.config.ts",
-      "type:check": "pnpm type:check:sources && pnpm type:check:tests && pnpm type:check:tooling && pnpm type:check:integration && pnpm type:check:environments",
+      "e2e:cluster:up": "node e2e/scripts/environment.mts up",
+      "e2e:cluster:up:definitions": "node e2e/scripts/environment.mts up-definitions",
+      "e2e:cluster:down": "node e2e/scripts/environment.mts down",
+      "e2e:pins:check": "node e2e/scripts/environment.mts check-pins",
+      "demo:up": "pnpm e2e:cluster:up && node e2e/scripts/environment.mts demo",
+      "demo:down": "pnpm e2e:cluster:down",
+      "type:check": "pnpm type:check:sources && pnpm type:check:tests && pnpm type:check:tooling && pnpm type:check:integration && pnpm type:check:scripts && pnpm type:check:environments",
       "type:check:sources": "tsc -p src/main && tsc -p src/renderer",
       "type:check:tests": "tsc -p src/tsconfig.json",
       "type:check:tooling": "tsc -p tsconfig.json",
       "type:check:integration": "tsc -p integration",
+      "type:check:scripts": "tsc -p e2e/scripts",
       "type:check:environments": "tsc -p environment-tests/tsconfig.main.json && tsc -p environment-tests/tsconfig.renderer.json && tsc -p environment-tests",
       "build": "vite build && vite build --mode main",
       "dev": "pnpm \"/^dev:(renderer|main)\\$/\"",
@@ -137,5 +144,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-22T07:27:19.045Z"
+  "lastScanned": "2026-11-22T15:30:22.822Z"
 }

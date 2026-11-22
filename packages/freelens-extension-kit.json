@@ -9,7 +9,7 @@
   "language": null,
   "createdAt": "2026-11-21T22:25:57Z",
   "updatedAt": "2026-11-21T22:56:31Z",
-  "pushedAt": "2026-11-21T22:43:42Z",
+  "pushedAt": "2026-11-22T08:43:48Z",
   "defaultBranch": "main",
   "topics": [
     "ai-agents",
@@ -30,6 +30,21 @@
   },
   "packageJson": null,
   "releases": [
+    {
+      "id": 454312233,
+      "tagName": "v0.1.2",
+      "name": "v0.1.2",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-22T08:43:30Z",
+      "publishedAt": "2026-11-22T08:43:48Z",
+      "body": "`docs/repository.md` says how a new repository follows the standard of its organization, with the ruleset of the default branch last, and three things the repository holds before its first spec that the `create-extension` skill does not say.\n",
+      "author": {
+        "login": "robertobandini",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11294865?v=4"
+      },
+      "assets": []
+    },
     {
       "id": 454036470,
       "tagName": "v0.1.1",
@@ -63,6 +78,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.2",
+      "commitSha": "920ea401d804133c229fbc6abd715d9c02d61296",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/commits/920ea401d804133c229fbc6abd715d9c02d61296",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/zipball/refs/tags/v0.1.2",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/tarball/refs/tags/v0.1.2"
+    },
+    {
       "name": "v0.1.1",
       "commitSha": "bbb09b0093c225dbcf32348fce9ebb1e7a341042",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/commits/bbb09b0093c225dbcf32348fce9ebb1e7a341042",
@@ -78,6 +100,13 @@
     }
   ],
   "versionHistory": [
+    {
+      "version": "v0.1.2",
+      "name": "v0.1.2",
+      "publishedAt": "2026-11-22T08:43:48Z",
+      "isPrerelease": false,
+      "notes": "`docs/repository.md` says how a new repository follows the standard of its organization, with the ruleset of the default branch last, and three things the repository holds before its first spec that the `create-extension` skill does not say.\n"
+    },
     {
       "version": "v0.1.1",
       "name": "v0.1.1",
@@ -95,21 +124,21 @@
   ],
   "tarFiles": [],
   "latestRelease": {
-    "id": 454036470,
-    "tagName": "v0.1.1",
-    "name": "v0.1.1",
+    "id": 454312233,
+    "tagName": "v0.1.2",
+    "name": "v0.1.2",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-11-21T22:43:26Z",
-    "publishedAt": "2026-11-21T22:43:42Z",
-    "body": "The brief asks the maintainer whether a rule of the template that restricts\na model stays, or is replaced by the rule of choosing the model for the\ntask.\n",
+    "createdAt": "2026-11-22T08:43:30Z",
+    "publishedAt": "2026-11-22T08:43:48Z",
+    "body": "`docs/repository.md` says how a new repository follows the standard of its organization, with the ruleset of the default branch last, and three things the repository holds before its first spec that the `create-extension` skill does not say.\n",
     "author": {
       "login": "robertobandini",
       "avatarUrl": "https://avatars.githubusercontent.com/u/11294865?v=4"
     },
     "assets": []
   },
-  "totalReleases": 2,
+  "totalReleases": 3,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-22T07:27:22.623Z"
+  "lastScanned": "2026-11-22T15:30:25.992Z"
 }
