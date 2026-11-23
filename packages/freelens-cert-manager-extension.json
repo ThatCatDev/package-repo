@@ -1,15 +1,15 @@
 {
-  "name": "freelens-cert-manager-extension",
+  "name": "@freelensapp/cert-manager-extension",
   "repoName": "freelens-cert-manager-extension",
   "fullName": "freelensapp/freelens-cert-manager-extension",
-  "description": "Freelens extension for cert-manager",
+  "description": "Freelens v2 extension for managing cert-manager resources",
   "homepage": "https://freelens.app",
   "stars": 1,
   "forks": 1,
-  "language": null,
+  "language": "TypeScript",
   "createdAt": "2026-11-19T14:49:55Z",
-  "updatedAt": "2026-11-19T15:04:12Z",
-  "pushedAt": "2026-11-19T14:50:07Z",
+  "updatedAt": "2026-11-23T09:28:32Z",
+  "pushedAt": "2026-11-23T09:28:20Z",
   "defaultBranch": "main",
   "topics": [
     "cert-manager",
@@ -18,7 +18,7 @@
     "kubernetes",
     "tls"
   ],
-  "license": null,
+  "license": "MIT",
   "owner": {
     "login": "freelensapp",
     "avatarUrl": "https://avatars.githubusercontent.com/u/172038998?v=4",
@@ -29,7 +29,88 @@
     "cloneUrl": "https://github.com/freelensapp/freelens-cert-manager-extension.git",
     "sshUrl": "git@github.com:freelensapp/freelens-cert-manager-extension.git"
   },
-  "packageJson": null,
+  "packageJson": {
+    "name": "@freelensapp/cert-manager-extension",
+    "version": "0.7.0",
+    "description": "Freelens v2 extension for managing cert-manager resources",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/freelensapp/freelens-cert-manager-extension.git"
+    },
+    "main": "dist/main.js",
+    "renderer": "dist/renderer.js",
+    "files": [
+      "dist/**/*"
+    ],
+    "engines": {
+      "node": ">= 24.0.0",
+      "freelens": "^2.0.0"
+    },
+    "copyright": "© 2025-2026 Maifee Ul Asad",
+    "license": "MIT",
+    "type": "module",
+    "author": {
+      "name": "Maifee Ul Asad",
+      "email": "maifeeulasad@gmail.com"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+      "build": "vite build && vite build --mode main",
+      "dev": "pnpm \"/^dev:(renderer|main)$/\"",
+      "dev:main": "vite build --watch --mode main",
+      "dev:renderer": "vite build --watch --no-emptyOutDir",
+      "prepare": "git config core.hooksPath .githooks || true",
+      "test": "pnpm test:unit",
+      "test:unit": "vitest run",
+      "test:e2e": "vitest run --config vitest.e2e.config.ts",
+      "type:check": "tsc -p src/main && tsc -p src/renderer",
+      "lint": "pnpm lint:check",
+      "lint:check": "biome check",
+      "lint:fix": "biome check --fix",
+      "clean": "pnpm dlx shx@0.4.0 rm -rf dist",
+      "pack:dev": "pnpm version --no-commit-hooks --no-git-checks --no-git-tag-version prerelease && pnpm build && pnpm clean:tgz && pnpm pack",
+      "clean:tgz": "pnpm dlx shx@0.4.0 rm -f \"*.tgz\""
+    },
+    "devDependencies": {
+      "@biomejs/biome": "2.6.3",
+      "@freelensapp/extensions": "2.0.0",
+      "@testing-library/dom": "10.4.2",
+      "@testing-library/react": "16.3.3",
+      "@types/js-yaml": "^4.0.9",
+      "@types/node": "24.19.2",
+      "@types/react": "19.3.0",
+      "@types/react-dom": "19.3.0",
+      "@vitejs/plugin-react": "6.1.2",
+      "electron": "44.10.0",
+      "esbuild": "0.28.2",
+      "jsdom": "30.1.3",
+      "mobx": "7.0.6",
+      "mobx-react": "10.0.2",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
+      "typescript": "7.0.2",
+      "vite": "8.3.5",
+      "vitest": "5.0.5"
+    },
+    "keywords": [
+      "cert-manager",
+      "certificates",
+      "tls",
+      "kubernetes",
+      "extension",
+      "freelensapp",
+      "freelens"
+    ],
+    "packageManager": "pnpm@12.15.0",
+    "dependencies": {
+      "@peculiar/x509": "^3.1.0",
+      "js-yaml": "^5.5.0",
+      "reflect-metadata": "^0.2.2"
+    }
+  },
   "releases": [],
   "tags": [],
   "versionHistory": [],
@@ -37,5 +118,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-23T01:37:30.908Z"
+  "lastScanned": "2026-11-23T09:43:36.883Z"
 }
