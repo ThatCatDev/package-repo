@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-09-05T18:44:25Z",
   "updatedAt": "2026-11-07T16:33:36Z",
-  "pushedAt": "2026-11-23T23:41:45Z",
+  "pushedAt": "2026-11-24T13:16:51Z",
   "defaultBranch": "main",
   "topics": [
     "apache-kafka",
@@ -230,7 +230,7 @@
         {
           "name": "freelensapp-kafka-extension-2.0.0.tgz",
           "size": 1488544,
-          "downloadCount": 3,
+          "downloadCount": 4,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v2.0.0/freelensapp-kafka-extension-2.0.0.tgz",
           "createdAt": "2026-10-30T15:29:57Z",
@@ -675,7 +675,7 @@
       "releaseName": "v2.0.0",
       "size": 1488544,
       "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v2.0.0/freelensapp-kafka-extension-2.0.0.tgz",
-      "downloadCount": 3,
+      "downloadCount": 4,
       "type": "tar.gz",
       "createdAt": "2026-10-30T15:29:57Z"
     },
@@ -817,7 +817,7 @@
       {
         "name": "freelensapp-kafka-extension-2.0.0.tgz",
         "size": 1488544,
-        "downloadCount": 3,
+        "downloadCount": 4,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-kafka-extension/releases/download/v2.0.0/freelensapp-kafka-extension-2.0.0.tgz",
         "createdAt": "2026-10-30T15:29:57Z",
@@ -838,5 +838,5 @@
   },
   "totalReleases": 11,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-24T05:30:41.966Z"
+  "lastScanned": "2026-11-24T16:11:51.653Z"
 }
