@@ -267,7 +267,7 @@
         {
           "name": "freelensapp-cert-manager-extension-0.7.1.tgz",
           "size": 337750,
-          "downloadCount": 4,
+          "downloadCount": 5,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-cert-manager-extension/releases/download/v0.7.1/freelensapp-cert-manager-extension-0.7.1.tgz",
           "createdAt": "2026-11-23T20:35:17Z",
@@ -336,7 +336,7 @@
       "releaseName": "v0.7.1",
       "size": 337750,
       "downloadUrl": "https://github.com/freelensapp/freelens-cert-manager-extension/releases/download/v0.7.1/freelensapp-cert-manager-extension-0.7.1.tgz",
-      "downloadCount": 4,
+      "downloadCount": 5,
       "type": "tar.gz",
       "createdAt": "2026-11-23T20:35:17Z"
     }
@@ -398,7 +398,7 @@
       {
         "name": "freelensapp-cert-manager-extension-0.7.1.tgz",
         "size": 337750,
-        "downloadCount": 4,
+        "downloadCount": 5,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-cert-manager-extension/releases/download/v0.7.1/freelensapp-cert-manager-extension-0.7.1.tgz",
         "createdAt": "2026-11-23T20:35:17Z",
@@ -419,5 +419,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-25T00:40:58.894Z"
+  "lastScanned": "2026-11-25T09:08:30.933Z"
 }
