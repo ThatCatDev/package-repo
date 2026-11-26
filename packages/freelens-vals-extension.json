@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-11-16T18:35:24Z",
   "updatedAt": "2026-11-16T21:14:46Z",
-  "pushedAt": "2026-11-25T17:41:47Z",
+  "pushedAt": "2026-11-26T18:57:52Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -123,7 +123,7 @@
       "openlens",
       "freelens"
     ],
-    "packageManager": "pnpm@12.21.0+sha512.66fd8278ee28935ce951792d34367ff3af5c432a2756445823029533835b8da529bbe0be5130afd56ed0713fb8789e47bad82d93bd5ae2fe54b15562d6276ef0"
+    "packageManager": "pnpm@12.21.0"
   },
   "releases": [
     {
@@ -471,5 +471,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-26T10:47:38.175Z"
+  "lastScanned": "2026-11-26T19:51:20.578Z"
 }

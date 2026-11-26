@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-07-02T19:58:37Z",
   "updatedAt": "2026-11-12T16:42:27Z",
-  "pushedAt": "2026-11-26T01:11:25Z",
+  "pushedAt": "2026-11-26T19:00:43Z",
   "defaultBranch": "main",
   "topics": [],
   "license": "MIT",
@@ -133,7 +133,7 @@
       "kubernetes",
       "anthropic"
     ],
-    "packageManager": "pnpm@12.11.2+sha512.25a51652a196785af5f28bda6dfe8dc582ebefa4ac1d180221ce1390231c5fb76637822ea4b6e4633ce74acdcb0a77f725af11bad38177fdeddaee818a955cb9"
+    "packageManager": "pnpm@12.11.2"
   },
   "releases": [
     {
@@ -421,5 +421,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-26T10:47:27.705Z"
+  "lastScanned": "2026-11-26T19:51:12.484Z"
 }
