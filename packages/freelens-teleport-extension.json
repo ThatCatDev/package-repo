@@ -108,7 +108,7 @@
         {
           "name": "freelens-teleport-extension-0.2.0.tgz",
           "size": 15817,
-          "downloadCount": 1,
+          "downloadCount": 3,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/baptisterajaut/freelens-teleport-extension/releases/download/v0.2.0/freelens-teleport-extension-0.2.0.tgz",
           "createdAt": "2026-10-29T16:27:48Z",
@@ -118,7 +118,7 @@
         {
           "name": "freelens-teleport-extension-0.2.0.tgz.sha256",
           "size": 104,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/baptisterajaut/freelens-teleport-extension/releases/download/v0.2.0/freelens-teleport-extension-0.2.0.tgz.sha256",
           "createdAt": "2026-10-29T16:27:48Z",
@@ -253,7 +253,7 @@
       "releaseName": "v0.2.0",
       "size": 15817,
       "downloadUrl": "https://github.com/baptisterajaut/freelens-teleport-extension/releases/download/v0.2.0/freelens-teleport-extension-0.2.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 3,
       "type": "tar.gz",
       "createdAt": "2026-10-29T16:27:48Z"
     },
@@ -295,7 +295,7 @@
       {
         "name": "freelens-teleport-extension-0.2.0.tgz",
         "size": 15817,
-        "downloadCount": 1,
+        "downloadCount": 3,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/baptisterajaut/freelens-teleport-extension/releases/download/v0.2.0/freelens-teleport-extension-0.2.0.tgz",
         "createdAt": "2026-10-29T16:27:48Z",
@@ -305,7 +305,7 @@
       {
         "name": "freelens-teleport-extension-0.2.0.tgz.sha256",
         "size": 104,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/baptisterajaut/freelens-teleport-extension/releases/download/v0.2.0/freelens-teleport-extension-0.2.0.tgz.sha256",
         "createdAt": "2026-10-29T16:27:48Z",
@@ -316,5 +316,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-26T02:09:52.471Z"
+  "lastScanned": "2026-11-26T10:47:49.204Z"
 }

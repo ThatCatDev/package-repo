@@ -9,7 +9,7 @@
   "language": null,
   "createdAt": "2026-11-21T22:25:57Z",
   "updatedAt": "2026-11-21T22:56:31Z",
-  "pushedAt": "2026-11-25T19:40:39Z",
+  "pushedAt": "2026-11-26T08:39:15Z",
   "defaultBranch": "main",
   "topics": [
     "ai-agents",
@@ -30,6 +30,21 @@
   },
   "packageJson": null,
   "releases": [
+    {
+      "id": 459142150,
+      "tagName": "v0.1.4",
+      "name": "v0.1.4",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-26T08:38:59Z",
+      "publishedAt": "2026-11-26T08:39:15Z",
+      "body": "Freelens is read at every release that `engines.freelens` admits; a list hands the host a store that selects and removes nothing, and stays live through the host's own subscription; the screenshots of a view come before its review, and a test of the stylesheets holds a cell to one line; a draft that designs how the views read the cluster expects about four rounds of review, each after the first on the diff of the last revision, and the reviewer of a diff gets the log of the checks seen failing; a session in Freelens written where it cannot run goes to CI at once, CI can take the screenshots of the themes, a check that nothing was written records the session's own writes from the answer of the server, the checks at the end of a session report every failure, and a hover or a click waits for the host to apply an input; a long step on a second machine runs in the foreground of a remote command of its own.\n",
+      "author": {
+        "login": "robertobandini",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11294865?v=4"
+      },
+      "assets": []
+    },
     {
       "id": 458567354,
       "tagName": "v0.1.3",
@@ -93,6 +108,13 @@
   ],
   "tags": [
     {
+      "name": "v0.1.4",
+      "commitSha": "72ae44b49b68a8ba444f05922f4eea446f32e58f",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/commits/72ae44b49b68a8ba444f05922f4eea446f32e58f",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/zipball/refs/tags/v0.1.4",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/tarball/refs/tags/v0.1.4"
+    },
+    {
       "name": "v0.1.3",
       "commitSha": "1bc0caca3c632cb800c2f990534a52896a720768",
       "commitUrl": "https://api.github.com/repos/freelensapp/freelens-extension-kit/commits/1bc0caca3c632cb800c2f990534a52896a720768",
@@ -122,6 +144,13 @@
     }
   ],
   "versionHistory": [
+    {
+      "version": "v0.1.4",
+      "name": "v0.1.4",
+      "publishedAt": "2026-11-26T08:39:15Z",
+      "isPrerelease": false,
+      "notes": "Freelens is read at every release that `engines.freelens` admits; a list hands the host a store that selects and removes nothing, and stays live through the host's own subscription; the screenshots of a view come before its review, and a test of the stylesheets holds a cell to one line; a draft that designs how the views read the cluster expects about four rounds of review, each after the first on the diff of the last revision, and the reviewer of a diff gets the log of the checks seen failing; a session in Freelens written where it cannot run goes to CI at once, CI can take the screenshots of the themes, a check that nothing was written records the session's own writes from the answer of the server, the checks at the end of a session report every failure, and a hover or a click waits for the host to apply an input; a long step on a second machine runs in the foreground of a remote command of its own.\n"
+    },
     {
       "version": "v0.1.3",
       "name": "v0.1.3",
@@ -153,21 +182,21 @@
   ],
   "tarFiles": [],
   "latestRelease": {
-    "id": 458567354,
-    "tagName": "v0.1.3",
-    "name": "v0.1.3",
+    "id": 459142150,
+    "tagName": "v0.1.4",
+    "name": "v0.1.4",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-11-25T19:40:20Z",
-    "publishedAt": "2026-11-25T19:40:39Z",
-    "body": "The reconnaissance asks about the host and says how a large project is read; a reviewer leaves the index of git alone and a long report is saved to the notes; the roadmap can be approved in words and has a row for the pass before a milestone review; a health is never held while an operation is in flight; a captured fixture waits for its state to settle and is cleaned of the capture machine; an expected error is left out narrowly.\n",
+    "createdAt": "2026-11-26T08:38:59Z",
+    "publishedAt": "2026-11-26T08:39:15Z",
+    "body": "Freelens is read at every release that `engines.freelens` admits; a list hands the host a store that selects and removes nothing, and stays live through the host's own subscription; the screenshots of a view come before its review, and a test of the stylesheets holds a cell to one line; a draft that designs how the views read the cluster expects about four rounds of review, each after the first on the diff of the last revision, and the reviewer of a diff gets the log of the checks seen failing; a session in Freelens written where it cannot run goes to CI at once, CI can take the screenshots of the themes, a check that nothing was written records the session's own writes from the answer of the server, the checks at the end of a session report every failure, and a hover or a click waits for the host to apply an input; a long step on a second machine runs in the foreground of a remote command of its own.\n",
     "author": {
       "login": "robertobandini",
       "avatarUrl": "https://avatars.githubusercontent.com/u/11294865?v=4"
     },
     "assets": []
   },
-  "totalReleases": 4,
+  "totalReleases": 5,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-26T02:09:53.685Z"
+  "lastScanned": "2026-11-26T10:47:50.544Z"
 }

@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-11-21T23:04:27Z",
   "updatedAt": "2026-11-21T23:11:37Z",
-  "pushedAt": "2026-11-26T01:39:12Z",
+  "pushedAt": "2026-11-26T09:37:37Z",
   "defaultBranch": "main",
   "topics": [
     "capi",
@@ -78,6 +78,8 @@
       "test": "pnpm test:unit",
       "test:unit": "vitest run",
       "test:integration": "vitest run --config vitest.integration.config.ts",
+      "test:integration:real-project": "vitest run --config vitest.integration-real-project.config.ts",
+      "test:real-project": "vitest run --config vitest.real-project.config.ts",
       "e2e:cluster:up": "node e2e/scripts/environment.mts up",
       "e2e:cluster:up:definitions": "node e2e/scripts/environment.mts up-definitions",
       "e2e:cluster:down": "node e2e/scripts/environment.mts down",
@@ -139,7 +141,7 @@
       "capi",
       "kubernetes"
     ],
-    "packageManager": "pnpm@12.21.0+sha512.66fd8278ee28935ce951792d34367ff3af5c432a2756445823029533835b8da529bbe0be5130afd56ed0713fb8789e47bad82d93bd5ae2fe54b15562d6276ef0"
+    "packageManager": "pnpm@12.23.0+sha512.02da94ffaf133f46074322afe552f90d40b5f71ae259aefbccdacc5085b1d617e98d65e0131f5748b9b67445978ee5055d7d59a473f1eef0d504854fefcd5975"
   },
   "releases": [],
   "tags": [],
@@ -148,5 +150,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-26T02:09:49.643Z"
+  "lastScanned": "2026-11-26T10:47:45.177Z"
 }

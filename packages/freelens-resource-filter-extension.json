@@ -114,7 +114,7 @@
         {
           "name": "freelens-resource-filter-extension-0.5.0.tgz",
           "size": 178851,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.5.0/freelens-resource-filter-extension-0.5.0.tgz",
           "createdAt": "2026-11-04T18:40:06Z",
@@ -140,7 +140,7 @@
         {
           "name": "freelens-resource-filter-extension-0.4.0.tgz",
           "size": 180799,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.4.0/freelens-resource-filter-extension-0.4.0.tgz",
           "createdAt": "2026-10-26T15:41:56Z",
@@ -269,7 +269,7 @@
       "releaseName": "v0.5.0 — Freelens 2 support",
       "size": 178851,
       "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.5.0/freelens-resource-filter-extension-0.5.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-11-04T18:40:06Z"
     },
@@ -279,7 +279,7 @@
       "releaseName": "v0.4.0 — YAML downloads and filtering reliability",
       "size": 180799,
       "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.4.0/freelens-resource-filter-extension-0.4.0.tgz",
-      "downloadCount": 1,
+      "downloadCount": 2,
       "type": "tar.gz",
       "createdAt": "2026-10-26T15:41:56Z"
     },
@@ -321,7 +321,7 @@
       {
         "name": "freelens-resource-filter-extension-0.5.0.tgz",
         "size": 178851,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/mojish/freelens-resource-filter-extension/releases/download/v0.5.0/freelens-resource-filter-extension-0.5.0.tgz",
         "createdAt": "2026-11-04T18:40:06Z",
@@ -332,5 +332,5 @@
   },
   "totalReleases": 4,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-26T02:10:07.604Z"
+  "lastScanned": "2026-11-26T10:48:11.310Z"
 }
