@@ -174,7 +174,7 @@
         {
           "name": "freelensapp-cnpg-extension-2.0.0-spdx.json.sha256",
           "size": 109,
-          "downloadCount": 1,
+          "downloadCount": 2,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0-spdx.json.sha256",
           "createdAt": "2026-11-03T09:12:03Z",
@@ -341,7 +341,7 @@
       {
         "name": "freelensapp-cnpg-extension-2.0.0-spdx.json.sha256",
         "size": 109,
-        "downloadCount": 1,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-cnpg-extension/releases/download/v2.0.0/freelensapp-cnpg-extension-2.0.0-spdx.json.sha256",
         "createdAt": "2026-11-03T09:12:03Z",
@@ -372,5 +372,5 @@
   },
   "totalReleases": 2,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-26T19:51:09.283Z"
+  "lastScanned": "2026-11-27T02:26:37.322Z"
 }

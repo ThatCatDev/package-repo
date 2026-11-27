@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2026-11-21T23:04:27Z",
   "updatedAt": "2026-11-21T23:11:37Z",
-  "pushedAt": "2026-11-26T19:18:58Z",
+  "pushedAt": "2026-11-27T02:17:16Z",
   "defaultBranch": "main",
   "topics": [
     "capi",
@@ -45,7 +45,7 @@
     ],
     "engines": {
       "node": ">= 24.0.0",
-      "freelens": "^2.0.0"
+      "freelens": "^2.1.0"
     },
     "copyright": "© 2026 Freelens Authors",
     "license": "MIT",
@@ -150,5 +150,5 @@
   "latestRelease": null,
   "totalReleases": 0,
   "hasTarFiles": false,
-  "lastScanned": "2026-11-26T19:51:26.075Z"
+  "lastScanned": "2026-11-27T02:26:53.258Z"
 }
