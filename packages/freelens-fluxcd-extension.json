@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-05-13T15:46:23Z",
   "updatedAt": "2026-11-12T16:42:17Z",
-  "pushedAt": "2026-11-27T11:02:29Z",
+  "pushedAt": "2026-11-27T14:52:40Z",
   "defaultBranch": "main",
   "topics": [
     "fluxcd",
@@ -31,7 +31,7 @@
   },
   "packageJson": {
     "name": "@freelensapp/fluxcd-extension",
-    "version": "6.2.0-0",
+    "version": "6.2.1-0",
     "description": "Freelens extension for FluxCD",
     "repository": {
       "type": "git",
@@ -133,6 +133,82 @@
     "packageManager": "pnpm@12.23.0"
   },
   "releases": [
+    {
+      "id": 460704331,
+      "tagName": "v6.2.0",
+      "name": "v6.2.0",
+      "draft": false,
+      "prerelease": false,
+      "createdAt": "2026-11-27T14:28:17Z",
+      "publishedAt": "2026-11-27T14:29:22Z",
+      "body": "The Overview as cards on Freelens 2.1, the suspended state shown as the `flux` CLI shows it, the fields of the Flux Operator v0.64, and details panels that show every field of the Flux 2.10 APIs.\n\n## Requirements\n\n- Freelens >= 2.0.0 (the Overview cards need Freelens >= 2.1.0)\n- Flux >= v2.0.0, <= 2.10.x\n- flux-operator >= v0.6.0, for the `fluxcd.controlplane.io` kinds\n- source-watcher >= v2.0.0, for `ArtifactGenerator` (optional)\n\n## Install or upgrade\n\nIn Freelens 2.0, open Extensions, enter `@freelensapp/fluxcd-extension` and press Install. You can also install the `.tgz` of this release by its URL: Freelens checks it against the `.tgz.sha256` next to it.\n\n## Changed\n\n- **Suspended in place of Resumed**: the list pages and the details panels say whether an object is suspended as the `SUSPENDED` column of the `flux` CLI does. A `Suspended` column and a `Suspended` item replace `Resumed`, `Enabled` and `Reconciliation Enabled`. `False` shows in the color of success and `True` in the color of an error. The Flux Operator kinds and ArtifactGenerator show the item in their details only, because their `Condition` column already shows a suspended object. The `Suspended` column of FluxReport is still the number of suspended objects that its reconcilers count.\n- **Alert and Provider `v1beta3` and `v1`**: these objects are static from notification-controller v1.2.0 (Flux v2.2.0) on, so they no longer get a Reconcile item, which did nothing, and they no longer model a status, which the API server never returns. The Overview counts them as Ready unless they are suspended. `v1beta2` keeps Reconcile and is counted by its `Ready` condition.\n\n## New\n\n- **Overview cards**: with the Cards overview style of Freelens 2.1 (Preferences -> Personalization -> Overview style), the Overview shows a status card per kind in place of its pie chart, and switches while it is open. A click on a card opens the page of the kind.\n- **Flux Operator v0.64**:\n  - FluxInstance shows the Source Watcher settings of the cluster.\n  - ResourceSetInputProvider shows the `namespaceSelector` of a selector and the last handled force request.\n- **Sources `v1`**:\n  - Every kind shows the last handled reconcile request.\n  - GitRepository shows the URL, the observed ignore, the observed recurse submodules and the observed sparse checkout, and the included artifacts with their revisions and digests.\n  - HelmRepository shows the type and the URL.\n  - HelmChart shows the observed chart name, source revision and values files.\n  - Bucket shows the endpoint and the observed ignore.\n  - OCIRepository shows the URL, the source ignore and its observed value, and the observed layer selector.\n  - The four artifact kinds show the latest artifact URL.\n- **HelmRelease `v2`**: the details show every field of helm-controller v1.7. The install, upgrade, rollback, test and uninstall settings each get a section with their remediation. The panel also shows:\n  - the kubeconfig, the persistent client and the drift detection ignore rules;\n  - the chart metadata, reconcile strategy and verification;\n  - the full OCIRepository template;\n  - the failure counters and the last attempted release;\n  - the history action, deleted and OCI digest columns, and the test hooks.\n- **Kustomization `v1`**: the key of the kubeconfig Secret, `value` or `value.yaml` by default.\n- **Alert `v1`**: an event source shows its namespace when it differs from the Alert's, and its `matchLabels`.\n- **Provider `v1`**: the type, in the details too.\n- **Image kinds `v1`**: the short names of the CRDs, such as `imgrepo`, `imgpol` and `iua`.\n- **SBOM**: the release has a CycloneDX SBOM next to the SPDX one, and attests the build provenance of its assets.\n\n## Fixed\n\n- **HelmRelease and Kustomization details**: a ConfigMap and a Secret of the same name in `valuesFrom` or `postBuild.substituteFrom` no longer show each other's contents. The same goes for two keys of one source.\n- **Alert details**: event sources named `*` that differ only in their namespace or `matchLabels` no longer share a React key, in `v1` and `v1beta2`.\n- **OCIRepository, HelmChart and the OCI chart template of HelmRelease**:\n  - an empty `matchOIDCIdentity` no longer shows an empty OIDC Identity;\n  - identities whose issuer and subject join to the same text no longer share a React key.\n- **ImageRepository**: Timeout shows the interval, its default, when it is not set.\n- **ImageUpdateAutomation**: Update Path shows `./`, its default, when it is not set.\n- **OCIRepository layer selector**: without a media type the item is hidden, and without an operation it shows `extract`, the default.\n\n## What's Changed\n\n- Show the Overview as cards when the user chooses the Cards overview style in #368\n- No Reconcile for Alert and Provider, and count them as Ready on the Overview in #371\n- Tell sources of the same name apart in valuesFrom and substituteFrom, and hide an empty OIDC Identity in #372\n- Model and show the flux-operator v0.64 fields, and test against its CRDs in #374\n- Fix the remaining details and model bugs of #256 in #376\n- Show the missing fields of the source-controller v1 kinds in their details in #378\n- Show the missing fields of HelmRelease v2 in its details in #382\n- Show the last missing fields of Kustomization, Provider and Alert, and name the enum aliases of ArtifactGenerator and ImagePolicy in #381\n- Show the suspended state as Suspended, as the flux CLI does in #385\n\nThe rest are dependency updates, the integration tests against Freelens v2.1.0, and changes to the build, the release and the workflows (#355, #360, #361, #362, #366, #369, #383, #386).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v6.1.0...v6.2.0\n",
+      "author": {
+        "login": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "assets": [
+        {
+          "name": "freelensapp-fluxcd-extension-6.2.0-cdx.json",
+          "size": 116604,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-cdx.json",
+          "createdAt": "2026-11-27T14:29:21Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.2.0-cdx.json.sha256",
+          "size": 110,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-cdx.json.sha256",
+          "createdAt": "2026-11-27T14:29:21Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.2.0-spdx.json",
+          "size": 212149,
+          "downloadCount": 1,
+          "contentType": "application/json",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-spdx.json",
+          "createdAt": "2026-11-27T14:29:21Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.2.0-spdx.json.sha256",
+          "size": 111,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-spdx.json.sha256",
+          "createdAt": "2026-11-27T14:29:21Z",
+          "isTarGz": false,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.2.0.tgz",
+          "size": 229454,
+          "downloadCount": 2,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0.tgz",
+          "createdAt": "2026-11-27T14:29:21Z",
+          "isTarGz": true,
+          "isTar": false
+        },
+        {
+          "name": "freelensapp-fluxcd-extension-6.2.0.tgz.sha256",
+          "size": 105,
+          "downloadCount": 1,
+          "contentType": "application/octet-stream",
+          "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0.tgz.sha256",
+          "createdAt": "2026-11-27T14:29:21Z",
+          "isTarGz": false,
+          "isTar": false
+        }
+      ]
+    },
     {
       "id": 430677814,
       "tagName": "v6.1.0",
@@ -608,7 +684,7 @@
         {
           "name": "freelensapp-extension-fluxcd-3.1.1-0.tgz",
           "size": 225760,
-          "downloadCount": 19,
+          "downloadCount": 20,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.1-0/freelensapp-extension-fluxcd-3.1.1-0.tgz",
           "createdAt": "2025-05-28T20:44:28Z",
@@ -634,7 +710,7 @@
         {
           "name": "freelensapp-extension-fluxcd-3.1.0.tgz",
           "size": 225750,
-          "downloadCount": 26,
+          "downloadCount": 27,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.0/freelensapp-extension-fluxcd-3.1.0.tgz",
           "createdAt": "2025-05-22T13:28:04Z",
@@ -660,7 +736,7 @@
         {
           "name": "freelensapp-extension-fluxcd-3.0.0.tgz",
           "size": 145415,
-          "downloadCount": 21,
+          "downloadCount": 22,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.0.0/freelensapp-extension-fluxcd-3.0.0.tgz",
           "createdAt": "2025-05-15T18:51:11Z",
@@ -671,6 +747,13 @@
     }
   ],
   "tags": [
+    {
+      "name": "v6.2.0",
+      "commitSha": "d2332df7baf3a59b6f358cbc40adf44b1bd288a6",
+      "commitUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/commits/d2332df7baf3a59b6f358cbc40adf44b1bd288a6",
+      "zipballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/zipball/refs/tags/v6.2.0",
+      "tarballUrl": "https://api.github.com/repos/freelensapp/freelens-fluxcd-extension/tarball/refs/tags/v6.2.0"
+    },
     {
       "name": "v6.1.0",
       "commitSha": "b3bac026fade1a9880968349e4726ecaf18baa6a",
@@ -786,6 +869,13 @@
   ],
   "versionHistory": [
     {
+      "version": "v6.2.0",
+      "name": "v6.2.0",
+      "publishedAt": "2026-11-27T14:29:22Z",
+      "isPrerelease": false,
+      "notes": "The Overview as cards on Freelens 2.1, the suspended state shown as the `flux` CLI shows it, the fields of the Flux Operator v0.64, and details panels that show every field of the Flux 2.10 APIs.\n\n## Requirements\n\n- Freelens >= 2.0.0 (the Overview cards need Freelens >= 2.1.0)\n- Flux >= v2.0.0, <= 2.10.x\n- flux-operator >= v0.6.0, for the `fluxcd.controlplane.io` kinds\n- source-watcher >= v2.0.0, for `ArtifactGenerator` (optional)\n\n## Install or upgrade\n\nIn Freelens 2.0, open Extensions, enter `@freelensapp/fluxcd-extension` and press Install. You can also install the `.tgz` of this release by its URL: Freelens checks it against the `.tgz.sha256` next to it.\n\n## Changed\n\n- **Suspended in place of Resumed**: the list pages and the details panels say whether an object is suspended as the `SUSPENDED` column of the `flux` CLI does. A `Suspended` column and a `Suspended` item replace `Resumed`, `Enabled` and `Reconciliation Enabled`. `False` shows in the color of success and `True` in the color of an error. The Flux Operator kinds and ArtifactGenerator show the item in their details only, because their `Condition` column already shows a suspended object. The `Suspended` column of FluxReport is still the number of suspended objects that its reconcilers count.\n- **Alert and Provider `v1beta3` and `v1`**: these objects are static from notification-controller v1.2.0 (Flux v2.2.0) on, so they no longer get a Reconcile item, which did nothing, and they no longer model a status, which the API server never returns. The Overview counts them as Ready unless they are suspended. `v1beta2` keeps Reconcile and is counted by its `Ready` condition.\n\n## New\n\n- **Overview cards**: with the Cards overview style of Freelens 2.1 (Preferences -> Personalization -> Overview style), the Overview shows a status card per kind in place of its pie chart, and switches while it is open. A click on a card opens the page of the kind.\n- **Flux Operator v0.64**:\n  - FluxInstance shows the Source Watcher settings of the cluster.\n  - ResourceSetInputProvider shows the `namespaceSelector` of a selector and the last handled force request.\n- **Sources `v1`**:\n  - Every kind shows the last handled reconcile request.\n  - GitRepository shows the URL, the observed ignore, the observed recurse submodules and the observed sparse checkout, and the included artifacts with their revisions and digests.\n  - HelmRepository shows the type and the URL.\n  - HelmChart shows the observed chart name, source revision and values files.\n  - Bucket shows the endpoint and the observed ignore.\n  - OCIRepository shows the URL, the source ignore and its observed value, and the observed layer selector.\n  - The four artifact kinds show the latest artifact URL.\n- **HelmRelease `v2`**: the details show every field of helm-controller v1.7. The install, upgrade, rollback, test and uninstall settings each get a section with their remediation. The panel also shows:\n  - the kubeconfig, the persistent client and the drift detection ignore rules;\n  - the chart metadata, reconcile strategy and verification;\n  - the full OCIRepository template;\n  - the failure counters and the last attempted release;\n  - the history action, deleted and OCI digest columns, and the test hooks.\n- **Kustomization `v1`**: the key of the kubeconfig Secret, `value` or `value.yaml` by default.\n- **Alert `v1`**: an event source shows its namespace when it differs from the Alert's, and its `matchLabels`.\n- **Provider `v1`**: the type, in the details too.\n- **Image kinds `v1`**: the short names of the CRDs, such as `imgrepo`, `imgpol` and `iua`.\n- **SBOM**: the release has a CycloneDX SBOM next to the SPDX one, and attests the build provenance of its assets.\n\n## Fixed\n\n- **HelmRelease and Kustomization details**: a ConfigMap and a Secret of the same name in `valuesFrom` or `postBuild.substituteFrom` no longer show each other's contents. The same goes for two keys of one source.\n- **Alert details**: event sources named `*` that differ only in their namespace or `matchLabels` no longer share a React key, in `v1` and `v1beta2`.\n- **OCIRepository, HelmChart and the OCI chart template of HelmRelease**:\n  - an empty `matchOIDCIdentity` no longer shows an empty OIDC Identity;\n  - identities whose issuer and subject join to the same text no longer share a React key.\n- **ImageRepository**: Timeout shows the interval, its default, when it is not set.\n- **ImageUpdateAutomation**: Update Path shows `./`, its default, when it is not set.\n- **OCIRepository layer selector**: without a media type the item is hidden, and without an operation it shows `extract`, the default.\n\n## What's Changed\n\n- Show the Overview as cards when the user chooses the Cards overview style in #368\n- No Reconcile for Alert and Provider, and count them as Ready on the Overview in #371\n- Tell sources of the same name apart in valuesFrom and substituteFrom, and hide an empty OIDC Identity in #372\n- Model and show the flux-operator v0.64 fields, and test against its CRDs in #374\n- Fix the remaining details and model bugs of #256 in #376\n- Show the missing fields of the source-controller v1 kinds in their details in #378\n- Show the missing fields of HelmRelease v2 in its details in #382\n- Show the last missing fields of Kustomization, Provider and Alert, and name the enum aliases of ArtifactGenerator and ImagePolicy in #381\n- Show the suspended state as Suspended, as the flux CLI does in #385\n\nThe rest are dependency updates, the integration tests against Freelens v2.1.0, and changes to the build, the release and the workflows (#355, #360, #361, #362, #366, #369, #383, #386).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v6.1.0...v6.2.0\n"
+    },
+    {
       "version": "v6.1.0",
       "name": "v6.1.0",
       "publishedAt": "2026-11-01T15:39:57Z",
@@ -899,6 +989,16 @@
     }
   ],
   "tarFiles": [
+    {
+      "filename": "freelensapp-fluxcd-extension-6.2.0.tgz",
+      "releaseTag": "v6.2.0",
+      "releaseName": "v6.2.0",
+      "size": 229454,
+      "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0.tgz",
+      "downloadCount": 2,
+      "type": "tar.gz",
+      "createdAt": "2026-11-27T14:29:21Z"
+    },
     {
       "filename": "freelensapp-fluxcd-extension-6.1.0.tgz",
       "releaseTag": "v6.1.0",
@@ -1035,7 +1135,7 @@
       "releaseName": "v3.1.1-0",
       "size": 225760,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.1-0/freelensapp-extension-fluxcd-3.1.1-0.tgz",
-      "downloadCount": 19,
+      "downloadCount": 20,
       "type": "tar.gz",
       "createdAt": "2025-05-28T20:44:28Z"
     },
@@ -1045,7 +1145,7 @@
       "releaseName": "v3.1.0",
       "size": 225750,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.1.0/freelensapp-extension-fluxcd-3.1.0.tgz",
-      "downloadCount": 26,
+      "downloadCount": 27,
       "type": "tar.gz",
       "createdAt": "2025-05-22T13:28:04Z"
     },
@@ -1055,68 +1155,88 @@
       "releaseName": "v3.0.0",
       "size": 145415,
       "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v3.0.0/freelensapp-extension-fluxcd-3.0.0.tgz",
-      "downloadCount": 21,
+      "downloadCount": 22,
       "type": "tar.gz",
       "createdAt": "2025-05-15T18:51:11Z"
     }
   ],
   "latestRelease": {
-    "id": 430677814,
-    "tagName": "v6.1.0",
-    "name": "v6.1.0",
+    "id": 460704331,
+    "tagName": "v6.2.0",
+    "name": "v6.2.0",
     "draft": false,
     "prerelease": false,
-    "createdAt": "2026-11-01T15:39:03Z",
-    "publishedAt": "2026-11-01T15:39:57Z",
-    "body": "Support for Flux 2.10, the `v1` API of Alert and Provider, and models brought up to the Go APIs of the Flux 2.10 controllers and of the Flux Operator v0.62.1.\n\n## Requirements\n\n- Freelens >= 2.0.0\n- Flux >= v2.0.0, <= 2.10.x\n- flux-operator >= v0.6.0, for the `fluxcd.controlplane.io` kinds\n- source-watcher >= v2.0.0, for `ArtifactGenerator` (optional)\n\n## Install or upgrade\n\nIn Freelens 2.0, open Extensions, enter `@freelensapp/fluxcd-extension` and press Install. You can also install the `.tgz` of this release by its URL: Freelens checks it against the `.tgz.sha256` next to it.\n\n## New\n\n- **Flux 2.10**: the models follow the Go APIs at the controller releases that Flux 2.10.0 pins (source-controller and kustomize-controller v1.10.1, helm-controller v1.7.1, notification-controller v1.10.0, image-reflector-controller and image-automation-controller v1.3.0, source-watcher v2.3.1) and the Flux Operator v0.62.1.\n- **Alert and Provider `v1`** (`notification.toolkit.fluxcd.io/v1`): models, pages and details, with the Reconcile and Suspend/Resume menu items. The pages and the Overview take `v1` where the cluster serves it.\n- **HelmRelease `v2`**:\n  - A chart template of `kind: OCIRepository`: the Source column and the details link the generated OCIRepository, and the details show the chart kind, the URL and the OCI reference.\n  - The details show the new fields of helm-controller, such as `commonMetadata`, `postRenderStrategy`, `waitStrategy`, `serverSideApply`, the install and upgrade `strategy`, the health check expressions and the inventory.\n- **Kustomization `v1`**: the details show `commonMetadata`, `deletionPolicy`, the name prefix and suffix, `wait`, `components`, the health check expressions, `ignore`, `substituteStrategy`, the last applied origin revision and the history.\n- **Sources**: GitRepository, OCIRepository, HelmRepository, HelmChart and Bucket get the new fields of source-controller, among them the source verification fingerprint, the `notation` provider of OCIRepository, and the STS, prefix and proxy settings of Bucket. ExternalArtifact shows its exported inputs.\n- **Notification**: Receiver gets the `generic-oidc` and `cdevents` types and shows its webhook path; Alert `v1beta3` gets `inclusionList`, and Provider `v1beta3` the fields it lacked.\n- **Image**: ImageRepository gets `insecure` and the proxy secret; ImageUpdateAutomation gets `policyChangeDelay`, `policySelector` and the message template values.\n- **ArtifactGenerator**: `serviceAccountName`, `managedNamespaces`, `inputsFrom`, and an inventory table with a Kind column.\n- **Flux Operator**: FluxInstance gets the SPIFFE settings and the object identity settings of the cluster; ResourceSet gets `steps`, `includeEmptyProviders` and `externalChecksumRefs`; ResourceSetInputProvider gets the types and filters it lacked.\n\n## Fixed\n\n- **HelmRelease `v2` with an OCI chart template**: the HelmReleases page and the details no longer fall to the error page when the chart template has no `sourceRef`.\n- **HelmRelease and Kustomization details**: a ConfigMap or Secret of `valuesFrom` or `postBuild.substituteFrom` that does not exist, which is valid when it is optional or not created yet, is skipped. It no longer leaves an error in the renderer or hides the sources after it.\n- **Menu items**: a failed Reconcile, Suspend or Resume, such as one without the RBAC to patch the object, now shows an error notification naming the action and the object, instead of failing silently.\n- **HelmChart**: the API base of every version pointed at `helmrepositories`.\n- **ResourceSet**: the `inputsFrom` link opens the ResourceSetInputProvider, not a ServiceAccount.\n- **FluxInstance**: `objectLevelWorkloadIdentity: true` is shown; it used to show nothing.\n- **HelmRelease details**: a dependency shows its chart version, and an optional values reference shows its badge.\n- **Kustomization details**: an empty Last Applied Revision is hidden.\n- **Enums**: the HelmRepository `type` is `default` or `oci`, and the ResourceSetInputProvider type `GARArtifactTag` lost a stray `;`.\n- **Receiver**: the rows of the `*` resources no longer share a React key.\n\n## Removed\n\nThe API versions that no Flux from v2.0.0 on serves as the newest of their kind, so their pages and panels were never used: `GitRepository` and `Kustomization` `v1beta1` and `v1beta2`, `Receiver` `v1beta1` and `v1beta2`, and `v1beta1` of `Alert`, `Provider`, `Bucket`, `HelmChart`, `HelmRepository`, `ImagePolicy` and `ImageRepository`. `Receiver` `v1beta3`, which never existed, is gone too. The supported range stays Flux >= v2.0.0.\n\n## What's Changed\n\n- Support Flux 2.10 in #347\n- Remove the Flux API versions that no supported Flux serves as newest in #351\n- Run the integration tests against every Flux version that a model needs in #352\n- Bring the models up to the Flux 2.10 APIs in #349\n- Report a failed patch of the menu items, and test the menu items in #356\n- Unit tests of the details panels and models brought up to Flux 2.10 in #357\n- Hide an empty Last Applied Revision of a Kustomization in #358\n\nThe rest are dependency updates and changes to the integration tests, the build and the workflows (#333, #334, #338, #342, #343, #346).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v6.0.0...v6.1.0\n",
+    "createdAt": "2026-11-27T14:28:17Z",
+    "publishedAt": "2026-11-27T14:29:22Z",
+    "body": "The Overview as cards on Freelens 2.1, the suspended state shown as the `flux` CLI shows it, the fields of the Flux Operator v0.64, and details panels that show every field of the Flux 2.10 APIs.\n\n## Requirements\n\n- Freelens >= 2.0.0 (the Overview cards need Freelens >= 2.1.0)\n- Flux >= v2.0.0, <= 2.10.x\n- flux-operator >= v0.6.0, for the `fluxcd.controlplane.io` kinds\n- source-watcher >= v2.0.0, for `ArtifactGenerator` (optional)\n\n## Install or upgrade\n\nIn Freelens 2.0, open Extensions, enter `@freelensapp/fluxcd-extension` and press Install. You can also install the `.tgz` of this release by its URL: Freelens checks it against the `.tgz.sha256` next to it.\n\n## Changed\n\n- **Suspended in place of Resumed**: the list pages and the details panels say whether an object is suspended as the `SUSPENDED` column of the `flux` CLI does. A `Suspended` column and a `Suspended` item replace `Resumed`, `Enabled` and `Reconciliation Enabled`. `False` shows in the color of success and `True` in the color of an error. The Flux Operator kinds and ArtifactGenerator show the item in their details only, because their `Condition` column already shows a suspended object. The `Suspended` column of FluxReport is still the number of suspended objects that its reconcilers count.\n- **Alert and Provider `v1beta3` and `v1`**: these objects are static from notification-controller v1.2.0 (Flux v2.2.0) on, so they no longer get a Reconcile item, which did nothing, and they no longer model a status, which the API server never returns. The Overview counts them as Ready unless they are suspended. `v1beta2` keeps Reconcile and is counted by its `Ready` condition.\n\n## New\n\n- **Overview cards**: with the Cards overview style of Freelens 2.1 (Preferences -> Personalization -> Overview style), the Overview shows a status card per kind in place of its pie chart, and switches while it is open. A click on a card opens the page of the kind.\n- **Flux Operator v0.64**:\n  - FluxInstance shows the Source Watcher settings of the cluster.\n  - ResourceSetInputProvider shows the `namespaceSelector` of a selector and the last handled force request.\n- **Sources `v1`**:\n  - Every kind shows the last handled reconcile request.\n  - GitRepository shows the URL, the observed ignore, the observed recurse submodules and the observed sparse checkout, and the included artifacts with their revisions and digests.\n  - HelmRepository shows the type and the URL.\n  - HelmChart shows the observed chart name, source revision and values files.\n  - Bucket shows the endpoint and the observed ignore.\n  - OCIRepository shows the URL, the source ignore and its observed value, and the observed layer selector.\n  - The four artifact kinds show the latest artifact URL.\n- **HelmRelease `v2`**: the details show every field of helm-controller v1.7. The install, upgrade, rollback, test and uninstall settings each get a section with their remediation. The panel also shows:\n  - the kubeconfig, the persistent client and the drift detection ignore rules;\n  - the chart metadata, reconcile strategy and verification;\n  - the full OCIRepository template;\n  - the failure counters and the last attempted release;\n  - the history action, deleted and OCI digest columns, and the test hooks.\n- **Kustomization `v1`**: the key of the kubeconfig Secret, `value` or `value.yaml` by default.\n- **Alert `v1`**: an event source shows its namespace when it differs from the Alert's, and its `matchLabels`.\n- **Provider `v1`**: the type, in the details too.\n- **Image kinds `v1`**: the short names of the CRDs, such as `imgrepo`, `imgpol` and `iua`.\n- **SBOM**: the release has a CycloneDX SBOM next to the SPDX one, and attests the build provenance of its assets.\n\n## Fixed\n\n- **HelmRelease and Kustomization details**: a ConfigMap and a Secret of the same name in `valuesFrom` or `postBuild.substituteFrom` no longer show each other's contents. The same goes for two keys of one source.\n- **Alert details**: event sources named `*` that differ only in their namespace or `matchLabels` no longer share a React key, in `v1` and `v1beta2`.\n- **OCIRepository, HelmChart and the OCI chart template of HelmRelease**:\n  - an empty `matchOIDCIdentity` no longer shows an empty OIDC Identity;\n  - identities whose issuer and subject join to the same text no longer share a React key.\n- **ImageRepository**: Timeout shows the interval, its default, when it is not set.\n- **ImageUpdateAutomation**: Update Path shows `./`, its default, when it is not set.\n- **OCIRepository layer selector**: without a media type the item is hidden, and without an operation it shows `extract`, the default.\n\n## What's Changed\n\n- Show the Overview as cards when the user chooses the Cards overview style in #368\n- No Reconcile for Alert and Provider, and count them as Ready on the Overview in #371\n- Tell sources of the same name apart in valuesFrom and substituteFrom, and hide an empty OIDC Identity in #372\n- Model and show the flux-operator v0.64 fields, and test against its CRDs in #374\n- Fix the remaining details and model bugs of #256 in #376\n- Show the missing fields of the source-controller v1 kinds in their details in #378\n- Show the missing fields of HelmRelease v2 in its details in #382\n- Show the last missing fields of Kustomization, Provider and Alert, and name the enum aliases of ArtifactGenerator and ImagePolicy in #381\n- Show the suspended state as Suspended, as the flux CLI does in #385\n\nThe rest are dependency updates, the integration tests against Freelens v2.1.0, and changes to the build, the release and the workflows (#355, #360, #361, #362, #366, #369, #383, #386).\n\n**Full Changelog**: https://github.com/freelensapp/freelens-fluxcd-extension/compare/v6.1.0...v6.2.0\n",
     "author": {
       "login": "github-actions[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
     },
     "assets": [
       {
-        "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json",
-        "size": 190168,
-        "downloadCount": 6,
+        "name": "freelensapp-fluxcd-extension-6.2.0-cdx.json",
+        "size": 116604,
+        "downloadCount": 1,
         "contentType": "application/json",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json",
-        "createdAt": "2026-11-01T15:39:56Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-cdx.json",
+        "createdAt": "2026-11-27T14:29:21Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-fluxcd-extension-6.1.0-spdx.json.sha256",
+        "name": "freelensapp-fluxcd-extension-6.2.0-cdx.json.sha256",
+        "size": 110,
+        "downloadCount": 1,
+        "contentType": "application/octet-stream",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-cdx.json.sha256",
+        "createdAt": "2026-11-27T14:29:21Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-fluxcd-extension-6.2.0-spdx.json",
+        "size": 212149,
+        "downloadCount": 1,
+        "contentType": "application/json",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-spdx.json",
+        "createdAt": "2026-11-27T14:29:21Z",
+        "isTarGz": false,
+        "isTar": false
+      },
+      {
+        "name": "freelensapp-fluxcd-extension-6.2.0-spdx.json.sha256",
         "size": 111,
-        "downloadCount": 3,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0-spdx.json.sha256",
-        "createdAt": "2026-11-01T15:39:56Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0-spdx.json.sha256",
+        "createdAt": "2026-11-27T14:29:21Z",
         "isTarGz": false,
         "isTar": false
       },
       {
-        "name": "freelensapp-fluxcd-extension-6.1.0.tgz",
-        "size": 215668,
-        "downloadCount": 111,
+        "name": "freelensapp-fluxcd-extension-6.2.0.tgz",
+        "size": 229454,
+        "downloadCount": 2,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz",
-        "createdAt": "2026-11-01T15:39:56Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0.tgz",
+        "createdAt": "2026-11-27T14:29:21Z",
         "isTarGz": true,
         "isTar": false
       },
       {
-        "name": "freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
+        "name": "freelensapp-fluxcd-extension-6.2.0.tgz.sha256",
         "size": 105,
-        "downloadCount": 35,
+        "downloadCount": 1,
         "contentType": "application/octet-stream",
-        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.1.0/freelensapp-fluxcd-extension-6.1.0.tgz.sha256",
-        "createdAt": "2026-11-01T15:39:56Z",
+        "downloadUrl": "https://github.com/freelensapp/freelens-fluxcd-extension/releases/download/v6.2.0/freelensapp-fluxcd-extension-6.2.0.tgz.sha256",
+        "createdAt": "2026-11-27T14:29:21Z",
         "isTarGz": false,
         "isTar": false
       }
     ]
   },
-  "totalReleases": 16,
+  "totalReleases": 17,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-27T11:06:52.018Z"
+  "lastScanned": "2026-11-27T19:53:32.179Z"
 }

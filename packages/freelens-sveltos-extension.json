@@ -9,7 +9,7 @@
   "language": "TypeScript",
   "createdAt": "2025-09-21T15:51:23Z",
   "updatedAt": "2026-11-04T14:13:56Z",
-  "pushedAt": "2026-11-26T16:43:00Z",
+  "pushedAt": "2026-11-27T16:28:38Z",
   "defaultBranch": "main",
   "topics": [
     "freelens",
@@ -168,7 +168,7 @@
         {
           "name": "freelensapp-sveltos-extension-2.1.0.tgz",
           "size": 313452,
-          "downloadCount": 9,
+          "downloadCount": 10,
           "contentType": "application/octet-stream",
           "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
           "createdAt": "2026-11-04T14:14:43Z",
@@ -323,7 +323,7 @@
       "releaseName": "v2.1.0",
       "size": 313452,
       "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
-      "downloadCount": 9,
+      "downloadCount": 10,
       "type": "tar.gz",
       "createdAt": "2026-11-04T14:14:43Z"
     },
@@ -385,7 +385,7 @@
       {
         "name": "freelensapp-sveltos-extension-2.1.0.tgz",
         "size": 313452,
-        "downloadCount": 9,
+        "downloadCount": 10,
         "contentType": "application/octet-stream",
         "downloadUrl": "https://github.com/freelensapp/freelens-sveltos-extension/releases/download/v2.1.0/freelensapp-sveltos-extension-2.1.0.tgz",
         "createdAt": "2026-11-04T14:14:43Z",
@@ -406,5 +406,5 @@
   },
   "totalReleases": 3,
   "hasTarFiles": true,
-  "lastScanned": "2026-11-27T11:07:03.542Z"
+  "lastScanned": "2026-11-27T19:53:43.796Z"
 }
